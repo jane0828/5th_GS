@@ -1,0 +1,9 @@
+[00:35:43]  Connect to Switch Box.............Success.
+[00:35:43]  Connect to Rotator................Success.
+[00:35:43]  Connect to GS100..................Success.
+[00:35:43]  TM Port 13 bind success.
+[00:35:43]  BCN Port 31 bind success.
+[00:35:43]  RPT Port 25 bind success.
+[00:35:46]  Forked Safe Amplifier Process.(ON, Timer)
+[00:35:50]  Ping Failed.
+[00:36:01]  Forked Safe Amplifier Process. (OFF)

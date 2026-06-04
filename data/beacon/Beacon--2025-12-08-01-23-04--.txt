@@ -1,0 +1,78 @@
+================= BEACON SAVE =================
+
+[CCSDS HEADER]
+MID        : 08 15
+SEQ        : C0 0B
+LEN        : 00 5D
+TimeCode   : 00 1D C3 21 E0 D2
+
+[FSW - RPT]
+Cmd Counter   : 0
+Err Counter   : 0
+Report Q Cnt  : 0
+Critical Q Cnt: 0
+Boot Count    : 259
+SC Time Sec   : 4103274496
+SC Time Sub   : 544210944
+Sequence(LSB) : 5
+
+[COMS - STX]
+Symbol Rate        : 0
+Tx Power           : 185
+MODCOD             : 82
+Roll-off           : 152
+Pilot Signal       : 69
+FEC Frame Size     : 6
+Pre-Tx Delay       : 0
+Center Frequency   : 268211047145718453108736.000000
+Mod Interface Type : 47
+LVDS IO Type       : 97
+System State       : 100
+Status Flag        : 99
+
+[COMS - UANT]
+UANT1 (0/1/BK) : 115 46 (BK:115)
+UANT2 (0/1/BK) : 111 0 (BK:0)
+
+[COMS - UTRX]
+UTRX ActiveConf : 0
+UTRX BootCount  : 0
+UTRX BootCause  : 0
+UTRX Temp       : 0
+
+[PCDU - P60 DOCK]
+Cout[0..8]    : 0 0 0 0 0 0 0 0 0 
+Vout[0..8]    : 0 0 0 0 0 0 0 0 0 
+OutEn         : 0x0000
+BootCause     : 0
+BootCount     : 0
+BattMode      : 0
+HeaterOn      : 0
+VBAT          : 0
+VCC Current   : 0
+BattV         : 0
+BattTemp      : 0 0
+WDT CAN Left  : 0
+Batt Chg Curr : 0
+Batt Dis Curr : 0
+
+[PCDU - P60 PDU]
+Cout : 0 0 0 0 0 0 0 0 0 
+Vout : 0 0 0 0 0 0 0 0 0 
+Vcc     : 0
+ConvEn  : 0
+OutEn   : 0x0000
+
+[PCDU - P60 ACU]
+Cin : 0 0 0 0 0 0 
+Vin : 0 0 0 0 0 0 
+
+[ADCS]
+PowerState       : 0x00
+ControlMode      : 0
+GYR0 Calib X     : 0.000000
+GYR0 Calib Y     : 0.000000
+GYR0 Calib Z     : 0.000000
+
+[BINARY DATA]
+08 15 C0 0B 00 5D 00 1D C3 21 E0 D2 00 00 00 00 03 01 00 00 93 F4 00 00 70 20 05 00 B9 52 98 45 06 00 00 00 2F 63 66 2F 61 64 63 73 2E 73 6F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 

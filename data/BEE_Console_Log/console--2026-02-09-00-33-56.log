@@ -1,0 +1,24 @@
+2026-02-09 00:33
+[00:34:09]  Connect to Switch Box.............Success.
+[00:34:09]  Connect to Rotator................Success.
+[00:34:09]  Connect to GS100..................Success.
+[00:34:09]  TM Port 13 bind success.
+[00:34:09]  BCN Port 31 bind success.
+[00:34:09]  RPT Port 25 bind success.
+[00:34:09]  Event Port 27 bind success.
+[00:34:09]  COSMIC Beacon Port 23 bind success.
+[00:34:09]  COSMIC Report Port 24 bind success.
+[00:34:20]  TLE "cubesat" Download Completed.
+[00:34:50]  TLE "cubesat" Download Completed.
+[00:34:58]  TLE "cubesat" Download Completed.
+[00:35:38]  TLE "active" Download Completed.
+[00:35:45]  TLE "active" Download Completed.
+[00:36:39]  TLE "active" Download Completed.
+[00:36:41]  TLE "active" Download Completed.
+[00:37:38]  TLE "cubesat" Download Completed.
+[00:38:23]  TLE "cubesat" Download Completed.
+[00:38:47]  TLE "active" Download Completed.
+[00:40:03]  TLE "active" Download Completed.
+[00:40:03]  Invalid type of TLE File. Please check again.
+[00:40:14]  TLE "active" Download Completed.
+[00:40:24]  TLE "cubesat" Download Completed.

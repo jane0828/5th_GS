@@ -1,0 +1,152 @@
+2025-12-20 11:51
+[11:52:04]  Connect to Switch Box.............Success.
+[11:52:04]  Connect to Rotator................Success.
+[11:52:04]  Connect to GS100..................Success.
+[11:52:04]  TM Port 13 bind success.
+[11:52:04]  BCN Port 31 bind success.
+[11:52:04]  RPT Port 25 bind success.
+[11:52:04]  Event Port 27 bind success.
+[11:53:18]  TLE "cubesat" Download Completed.
+[11:53:32]  Start Doppler Correction.
+[11:53:32]  You tried doppler correction with no engaging
+[11:53:41]  Start Engaging.
+[11:53:41]  Tracking : Az 127, El 2.
+[11:53:43]  Tracking : Az 127, El 2.
+[11:53:45]  Tracking : Az 127, El 2.
+[11:53:45]  Start Doppler Correction.
+[11:53:47]  Tracking : Az 127, El 2.
+[11:53:49]  Tracking : Az 126, El 2.
+[11:53:51]  Tracking : Az 126, El 2.
+[11:53:53]  Tracking : Az 126, El 2.
+[11:53:55]  Ping Failed.
+[11:53:55]  Tracking : Az 126, El 2.
+[11:53:55]  Forked Safe Amplifier Process.(ON, Timer)
+[11:53:57]  Tracking : Az 126, El 3.
+[11:53:59]  Tracking : Az 125, El 3.
+[11:54:01]  Tracking : Az 125, El 3.
+[11:54:02]  Ping Failed.
+[11:54:05]  Ping Success at node 5, 467ms
+[11:54:14]  Ping Success at node 5, 473ms
+[11:54:17]  Ping Success at node 5, 472ms
+[11:54:19]  Ping Success at node 5, 469ms
+[11:54:20]  Ping Success at node 5, 480ms
+[11:54:29]  Tracking : Az 122, El 4.
+[11:54:36]  Ping Success at node 5, 469ms
+[11:54:45]  Tracking : Az 121, El 6.
+[11:54:46]  AX100 Boot Count : 22178
+[11:54:54]  AX100 Boot Count : 22178
+[11:55:02]  Tracking : Az 118, El 7.
+[11:55:04]  Cannot Load Remote Parameter.
+[11:55:17]  Tracking : Az 116, El 8.
+[11:55:37]  Tracking : Az 113, El 9.
+[11:55:55]  Tracking : Az 110, El 10.
+[11:56:12]  Tracking : Az 107, El 11.
+[11:56:31]  Tracking : Az 103, El 13.
+[11:56:32]  Cannot Load Remote Parameter.
+[11:56:36]  Cannot Load Remote Parameter.
+[11:56:41]  Cannot Load Remote Parameter.
+[11:56:45]  Tracking : Az 100, El 14.
+[11:56:47]  Ping Failed.
+[11:56:54]  Ping Failed.
+[11:56:58]  Tracking : Az 97, El 15.
+[11:57:02]  Ping Failed.
+[11:57:10]  Tracking : Az 94, El 15.
+[11:57:11]  Ping Failed.
+[11:57:18]  Ping Failed.
+[11:57:21]  Tracking : Az 91, El 16.
+[11:57:26]  Ping Success at node 5, 466ms
+[11:57:30]  AX100 Boot Count : 22182
+[11:57:32]  Tracking : Az 88, El 17.
+[11:57:35]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x81 0x4 0xb7
+[11:57:39]  Tracking : Az 86, El 17.
+[11:57:40]  AX100 Boot Count : 22182
+[11:57:45]  AX100 Boot Count : 22182
+[11:57:47]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x81 0x4 0xb7
+[11:57:50]  Tracking : Az 83, El 17.
+[11:57:50]  AX100 Boot Count : 22182
+[11:57:53]  AX100 Boot Count : 22182
+[11:57:55]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x81 0x4 0xb7
+[11:57:58]  AX100 Boot Count : 22182
+[11:58:00]  AX100 Boot Count : 22182
+[11:58:00]  Tracking : Az 80, El 18.
+[11:58:02]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x81 0x4 0xb7
+[11:58:06]  Tracking : Az 78, El 18.
+[11:58:14]  AX100 Boot Count : 22183
+[11:58:16]  Tracking : Az 75, El 18.
+[11:58:18]  Tracking : Az 75, El 18.
+[11:58:20]  AX100 Boot Count : 22183
+[11:58:24]  Tracking : Az 73, El 18.
+[11:58:25]  AX100 Boot Count : 22183
+[11:58:30]  AX100 Boot Count : 22183
+[11:58:31]  Tracking : Az 70, El 18.
+[11:58:34]  AX100 Boot Count : 22183
+[11:58:38]  Tracking : Az 68, El 18.
+[11:58:40]  AX100 Boot Count : 22183
+[11:58:44]  AX100 Boot Count : 22183
+[11:58:47]  Tracking : Az 65, El 18.
+[11:58:48]  AX100 Boot Count : 22183
+[11:58:53]  AX100 Boot Count : 22183
+[11:58:56]  Tracking : Az 62, El 18.
+[11:58:58]  AX100 Boot Count : 22183
+[11:59:03]  Tracking : Az 60, El 18.
+[11:59:05]  AX100 Boot Count : 22183
+[11:59:12]  Tracking : Az 57, El 18.
+[11:59:13]  AX100 Boot Count : 22183
+[11:59:16]  AX100 Boot Count : 22183
+[11:59:21]  AX100 Boot Count : 22183
+[11:59:22]  Tracking : Az 54, El 18.
+[11:59:32]  Tracking : Az 51, El 17.
+[11:59:38]  AX100 Boot Count : 22183
+[11:59:42]  Tracking : Az 48, El 17.
+[11:59:47]  AX100 Boot Count : 22183
+[11:59:55]  AX100 Boot Count : 22183
+[11:59:57]  Tracking : Az 44, El 16.
+[12:00:03]  AX100 Boot Count : 22183
+[12:00:08]  Tracking : Az 41, El 16.
+[12:00:20]  Tracking : Az 38, El 15.
+[12:00:33]  Tracking : Az 35, El 14.
+[12:00:41]  Tracking : Az 33, El 13.
+[12:00:55]  Tracking : Az 30, El 13.
+[12:00:56]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x6 0x3
+[12:00:59]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x6 0x3
+[12:01:02]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x6 0x3
+[12:01:11]  Tracking : Az 27, El 11.
+[12:01:17]  [OK]CMD Packet Header: 0x18 0x20 0xc0 0x0 0x0 0x5 0x7 0xd
+[12:01:20]  [OK]CMD Packet Header: 0x18 0x20 0xc0 0x0 0x0 0x5 0x7 0xd
+[12:01:23]  [OK]CMD Packet Header: 0x18 0x20 0xc0 0x0 0x0 0x5 0x7 0xd
+[12:01:27]  Tracking : Az 24, El 10.
+[12:01:39]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[12:01:39]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[12:01:39]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[12:01:46]  Tracking : Az 21, El 9.
+[12:02:13]  Tracking : Az 17, El 7.
+[12:02:20]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[12:02:20]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[12:02:20]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[12:02:29]  Cannot Load Remote Parameter.
+[12:02:35]  Ping Failed.
+[12:02:37]  Tracking : Az 14, El 6.
+[12:02:43]  Ping Failed.
+[12:02:46]  Cannot Load Remote Parameter.
+[12:02:52]  Cannot Load Remote Parameter.
+[12:03:03]  Cannot Load Remote Parameter.
+[12:03:05]  Tracking : Az 11, El 4.
+[12:03:07]  Cannot Load Remote Parameter.
+[12:03:10]  Ping Failed.
+[12:03:14]  Ping Failed.
+[12:03:37]  Tracking : Az 8, El 2.
+[12:04:14]  Tracking : Az 5, El 0.
+[12:04:40]  Tracking : Az 129, El 0.
+[12:04:42]  Tracking : Az 129, El 0.
+[12:04:44]  Tracking : Az 129, El 0.
+[12:04:46]  Tracking : Az 129, El 0.
+[12:04:48]  Tracking : Az 129, El 0.
+[12:04:50]  Tracking : Az 129, El 0.
+[12:04:52]  Tracking : Az 129, El 0.
+[12:04:54]  Forked Safe Amplifier Process. (OFF)
+[12:04:54]  Tracking : Az 129, El 0.
+[12:04:56]  Tracking : Az 129, El 0.
+[12:04:58]  Tracking : Az 129, El 0.
+[12:05:00]  Tracking : Az 129, El 0.
+[12:05:03]  Finish Engaging.
+[12:05:03]  Beacon Success : 0, Ping Success : 7

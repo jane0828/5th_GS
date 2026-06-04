@@ -1,0 +1,19 @@
+Uplink packet. Length: 8
+18	81	c0	00	00	01	af	08	
+
+Downlink.
+08	7d	c0	01	00	bd	35	46	0f	00	
+2f	b0	0b	04	00	00	c8	00	00	08	
+00	00	00	00	
+Uplink packet. Length: 8
+18	83	c0	00	00	01	ad	08	
+
+Downlink.
+08	7a	c0	00	00	45	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	08	7c	
+c0	01	00	bd	4c	46	0f	00	6c	94	
+09	00	00	00	00	00	00	08	00	18	
+00	00	3d	0a	57	bd	c2	f5	a8	bd	
+52	b8	1e	3e	3d	0a	57	bd	c2	f5	
+a8	bd	52	b8	1e	3e	d1	00	00	00	

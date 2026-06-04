@@ -1,0 +1,41 @@
+file(REMOVE_RECURSE
+  "CMakeFiles/sgp4.dir/CoordGeodetic.o"
+  "CMakeFiles/sgp4.dir/CoordGeodetic.o.d"
+  "CMakeFiles/sgp4.dir/CoordTopocentric.o"
+  "CMakeFiles/sgp4.dir/CoordTopocentric.o.d"
+  "CMakeFiles/sgp4.dir/DateTime.o"
+  "CMakeFiles/sgp4.dir/DateTime.o.d"
+  "CMakeFiles/sgp4.dir/DecayedException.o"
+  "CMakeFiles/sgp4.dir/DecayedException.o.d"
+  "CMakeFiles/sgp4.dir/Eci.o"
+  "CMakeFiles/sgp4.dir/Eci.o.d"
+  "CMakeFiles/sgp4.dir/Globals.o"
+  "CMakeFiles/sgp4.dir/Globals.o.d"
+  "CMakeFiles/sgp4.dir/Observer.o"
+  "CMakeFiles/sgp4.dir/Observer.o.d"
+  "CMakeFiles/sgp4.dir/OrbitalElements.o"
+  "CMakeFiles/sgp4.dir/OrbitalElements.o.d"
+  "CMakeFiles/sgp4.dir/SGP4.o"
+  "CMakeFiles/sgp4.dir/SGP4.o.d"
+  "CMakeFiles/sgp4.dir/SatelliteException.o"
+  "CMakeFiles/sgp4.dir/SatelliteException.o.d"
+  "CMakeFiles/sgp4.dir/SolarPosition.o"
+  "CMakeFiles/sgp4.dir/SolarPosition.o.d"
+  "CMakeFiles/sgp4.dir/TimeSpan.o"
+  "CMakeFiles/sgp4.dir/TimeSpan.o.d"
+  "CMakeFiles/sgp4.dir/Tle.o"
+  "CMakeFiles/sgp4.dir/Tle.o.d"
+  "CMakeFiles/sgp4.dir/TleException.o"
+  "CMakeFiles/sgp4.dir/TleException.o.d"
+  "CMakeFiles/sgp4.dir/Util.o"
+  "CMakeFiles/sgp4.dir/Util.o.d"
+  "CMakeFiles/sgp4.dir/Vector.o"
+  "CMakeFiles/sgp4.dir/Vector.o.d"
+  "libsgp4.a"
+  "libsgp4.pdb"
+)
+
+# Per-language clean rules from dependency scanning.
+foreach(lang CXX)
+  include(CMakeFiles/sgp4.dir/cmake_clean_${lang}.cmake OPTIONAL)
+endforeach()

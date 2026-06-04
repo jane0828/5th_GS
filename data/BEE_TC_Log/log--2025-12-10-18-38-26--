@@ -1,0 +1,56 @@
+[18:38:27]  Connect to Switch Box.............Success.
+[18:38:27]  Connect to Rotator................Success.
+[18:38:27]  Connect to GS100..................Success.
+[18:38:27]  TM Port 13 bind success.
+[18:38:27]  BCN Port 31 bind success.
+[18:38:27]  RPT Port 25 bind success.
+[18:38:39]  Forked Safe Amplifier Process.(ON, Timer)
+Unknown MsgID
+[18:38:46]   Start Uplink Task.
+[18:38:46]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:38:46]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x7 0xa 0x1e
+|| Uplink || Length: 14
+18	30	c0	00	00	07	0a	1e	01	02	
+03	00	04	00	
+
+[18:38:47]  Communication Time : 347
+Unknown MsgID
+[18:38:47]   Start Uplink Task.
+[18:38:47]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:38:47]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x7 0xa 0x1e
+|| Uplink || Length: 14
+18	30	c0	00	00	07	0a	1e	01	02	
+03	00	04	00	
+
+[18:38:48]  Communication Time : 347
+Unknown MsgID
+[18:38:48]   Start Uplink Task.
+[18:38:48]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:38:48]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x7 0xa 0x1e
+|| Uplink || Length: 14
+18	30	c0	00	00	07	0a	1e	01	02	
+03	00	04	00	
+
+[18:38:49]  Communication Time : 347
+Unknown MsgID
+[18:38:49]   Start Uplink Task.
+[18:38:49]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:38:49]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x7 0xa 0x1e
+|| Uplink || Length: 14
+18	30	c0	00	00	07	0a	1e	01	02	
+03	00	04	00	
+
+[18:38:49]  Communication Time : 347
+Unknown MsgID
+[18:38:50]   Start Uplink Task.
+[18:38:50]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:38:50]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x7 0xa 0x1e
+|| Uplink || Length: 14
+18	30	c0	00	00	07	0a	1e	01	02	
+03	00	04	00	
+
+[18:38:50]  Communication Time : 347
+[18:38:55]  Forked Safe Amplifier Process. (OFF)
+[20:51:45]  FTP task DONE.
+[20:51:45]  Fail to complete ftp_upload. Retcode : -2001
+[20:51:53]  Ping Success at node 5, 455ms

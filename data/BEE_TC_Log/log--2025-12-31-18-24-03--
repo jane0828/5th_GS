@@ -1,0 +1,23 @@
+[18:24:07]  Connect to Switch Box.............Success.
+[18:24:07]  Connect to Rotator................Success.
+[18:24:07]  Connect to GS100..................Success.
+[18:24:07]  TM Port 13 bind success.
+[18:24:07]  BCN Port 31 bind success.
+[18:24:07]  RPT Port 25 bind success.
+[18:24:07]  Event Port 27 bind success.
+[18:24:07]  COSMIC Beacon Port 23 bind success.
+[18:24:07]  COSMIC Report Port 24 bind success.
+[18:24:15]   Start Uplink Task.
+[18:24:15]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:24:15]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x49 0xf 0x5d
+|| Uplink || Length: 80
+18	15	c0	00	00	49	0f	5d	2f	63	
+66	2f	73	64	63	61	72	64	2f	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+
+[18:24:15]  Communication Time : 459

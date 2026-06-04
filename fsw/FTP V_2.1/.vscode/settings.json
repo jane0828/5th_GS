@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.hpp": "cpp",
+        "types.h": "c",
+        "stdint.h": "c",
+        "cfe.h": "c",
+        "stdio.h": "c",
+        "io_csp.h": "c",
+        "csp_types.h": "c"
+    }
+}

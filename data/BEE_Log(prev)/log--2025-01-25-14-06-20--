@@ -1,0 +1,122 @@
+Uplink packet. Length: 8
+18	81	c0	00	00	01	a6	01	
+
+Downlink.
+08	7d	c0	02	00	bd	f7	46	0f	00	
+1c	9a	07	00	00	00	00	00	00	01	
+00	00	00	00	
+Uplink packet. Length: 8
+18	81	c0	00	00	01	a5	02	
+
+Downlink.
+08	7d	c0	03	00	bd	08	47	0f	00	
+0d	64	07	00	00	00	00	00	00	02	
+00	00	00	00	
+Uplink packet. Length: 8
+18	81	c0	00	00	01	a4	03	
+
+Downlink.
+08	7d	c0	04	00	bd	1d	47	0f	00	
+0d	8a	07	00	00	00	00	00	00	03	
+00	00	00	00	
+Uplink packet. Length: 8
+18	81	c0	00	00	01	a3	04	
+
+Downlink.
+08	7d	c0	05	00	bd	47	47	0f	00	
+17	70	07	00	00	00	00	00	00	04	
+00	00	00	00	
+Uplink packet. Length: 8
+18	81	c0	00	00	01	a2	05	
+
+Downlink.
+08	7d	c0	06	00	bd	51	47	0f	00	
+0e	ec	07	00	00	00	00	00	00	05	
+00	00	00	00	
+Uplink packet. Length: 8
+18	81	c0	00	00	01	a1	06	
+
+Downlink.
+08	7d	c0	07	00	bd	6d	47	0f	00	
+28	d0	09	00	00	00	00	00	00	06	
+00	00	00	00	
+Uplink packet. Length: 8
+18	81	c0	00	00	01	ad	0a	
+
+Downlink.
+08	7d	c0	08	00	bd	75	47	0f	00	
+19	da	09	00	00	00	00	00	00	0a	
+00	00	00	00	
+Uplink packet. Length: 8
+18	83	c0	00	00	01	80	25	
+
+Uplink packet. Length: 8
+18	81	c0	00	00	01	ac	0b	
+
+Downlink.
+08	7d	c0	01	00	bd	3f	46	0f	00	
+04	9e	09	1a	00	00	00	00	00	0b	
+00	00	00	00	
+Uplink packet. Length: 8
+18	81	c0	00	00	01	a7	00	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	80	25	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+
+Uplink packet. Length: 8
+18	83	c0	00	00	01	8c	29	
+

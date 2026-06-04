@@ -1,0 +1,7 @@
+Filesystem                Size      Used Available Use% Mounted on
+ubi0:rootfs             215.1M     26.1M    189.0M  12% /
+devtmpfs                123.6M         0    123.6M   0% /dev
+tmpfs                   123.7M         0    123.7M   0% /dev/shm
+tmpfs                   123.7M     40.0K    123.6M   0% /tmp
+tmpfs                   123.7M     20.0K    123.7M   0% /run
+/dev/mmcblk0p1            3.4G    561.4M      2.7G  17% /mnt

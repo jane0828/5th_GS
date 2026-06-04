@@ -1,0 +1,57 @@
+[01:58:57]  Connect to Switch Box.............Success.
+[01:58:57]  Connect to Rotator................Success.
+[01:58:57]  Connect to GS100..................Success.
+[01:58:57]  TM Port 13 bind success.
+[01:58:57]  BCN Port 31 bind success.
+[01:58:57]  RPT Port 25 bind success.
+[01:58:57]  Event Port 27 bind success.
+[01:59:13]  Forked Safe Amplifier Process.(ON, Timer)
+[01:59:26]   Start Uplink Task.
+[01:59:26]  Send Packet of Ptype : 10. Check Terminal Log.
+[01:59:26]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+|| Uplink || Length: 8
+18	23	c0	00	00	01	1b	1e	
+
+[01:59:26]  Communication Time : 337
+[01:59:26]   Start Uplink Task.
+[01:59:26]  Send Packet of Ptype : 10. Check Terminal Log.
+[01:59:26]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+|| Uplink || Length: 15
+18	23	c0	00	00	08	02	18	1a	08	
+00	00	00	00	04	
+
+[01:59:27]  Communication Time : 349
+[01:59:27]   Start Uplink Task.
+[01:59:27]  Send Packet of Ptype : 10. Check Terminal Log.
+[01:59:27]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+|| Uplink || Length: 12
+18	19	c0	00	00	05	00	29	1a	08	
+00	00	
+
+[01:59:27]  Communication Time : 343
+[01:59:35]   Start Uplink Task.
+[01:59:35]  Send Packet of Ptype : 10. Check Terminal Log.
+[01:59:35]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+|| Uplink || Length: 8
+18	23	c0	00	00	01	1b	1e	
+
+[01:59:36]  Communication Time : 337
+[01:59:36]   Start Uplink Task.
+[01:59:36]  Send Packet of Ptype : 10. Check Terminal Log.
+[01:59:36]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+|| Uplink || Length: 15
+18	23	c0	00	00	08	02	18	1a	08	
+00	00	00	00	04	
+
+[01:59:36]  Communication Time : 349
+[01:59:36]   Start Uplink Task.
+[01:59:36]  Send Packet of Ptype : 10. Check Terminal Log.
+[01:59:36]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+|| Uplink || Length: 12
+18	19	c0	00	00	05	00	29	1a	08	
+00	00	
+
+[01:59:37]  Communication Time : 344
+[02:00:16]  Forked Safe Amplifier Process. (OFF)
+[11:51:00]  TLE "cubesat" Download Completed.
+[11:51:00]  Invalid type of TLE File. Please check again.

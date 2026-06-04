@@ -1,0 +1,72 @@
+2026-01-10 13:08
+[13:08:07]  Connect to Switch Box.............Success.
+[13:08:07]  Connect to Rotator................Success.
+[13:08:07]  Connect to GS100..................Success.
+[13:08:07]  TM Port 13 bind success.
+[13:08:07]  BCN Port 31 bind success.
+[13:08:07]  RPT Port 25 bind success.
+[13:08:07]  Event Port 27 bind success.
+[13:08:07]  COSMIC Beacon Port 23 bind success.
+[13:08:07]  COSMIC Report Port 24 bind success.
+[13:08:11]  TLE "cubesat" Download Completed.
+[13:08:16]  Start Engaging.
+[13:08:16]  Tracking : Az 335, El 29.
+[13:08:16]  Start Doppler Correction.
+[13:08:18]  Tracking : Az 336, El 28.
+[13:08:20]  Tracking : Az 336, El 28.
+[13:08:20]  Forked Safe Amplifier Process.(ON, Timer)
+[13:08:22]  Tracking : Az 336, El 27.
+[13:08:24]  Tracking : Az 336, El 27.
+[13:08:26]  Tracking : Az 336, El 27.
+[13:08:27]  Ping Failed.
+[13:08:28]  Tracking : Az 337, El 26.
+[13:08:30]  Tracking : Az 337, El 26.
+[13:08:31]  Ping Failed.
+[13:08:32]  Tracking : Az 337, El 25.
+[13:08:34]  Tracking : Az 337, El 25.
+[13:08:36]  Tracking : Az 337, El 25.
+[13:08:38]  Tracking : Az 337, El 24.
+[13:08:40]  Tracking : Az 338, El 24.
+[13:08:42]  Tracking : Az 338, El 23.
+[13:08:44]  Tracking : Az 338, El 23.
+[13:08:46]  Tracking : Az 338, El 23.
+[13:08:48]  Tracking : Az 338, El 22.
+[13:08:50]  Tracking : Az 338, El 22.
+[13:08:52]  Tracking : Az 338, El 22.
+[13:08:54]  Tracking : Az 339, El 21.
+[13:08:56]  Tracking : Az 339, El 21.
+[13:08:58]  Tracking : Az 339, El 21.
+[13:09:00]  Tracking : Az 339, El 20.
+[13:09:01]  Ping Failed.
+[13:09:02]  Tracking : Az 339, El 20.
+[13:09:02]  Start Doppler Correction.
+[13:09:04]  Tracking : Az 339, El 20.
+[13:09:06]  Tracking : Az 339, El 19.
+[13:09:06]  Ping Failed.
+[13:09:08]  Tracking : Az 339, El 19.
+[13:09:09]  Ping Success at node 5, 469ms
+[13:09:10]  Tracking : Az 340, El 19.
+[13:09:12]  Tracking : Az 340, El 18.
+[13:09:12]  Remote Param Control OK. csp_rtable : 0/0 AX100, 3/5 CAN, 6/5 CAN
+[13:09:14]  Tracking : Az 340, El 18.
+[13:09:21]  Remote Param Control OK.
+[13:09:23]  Remote Param Control OK. tx_pwr : 3
+[13:09:24]  Remote Param Control OK. csp_rtable : 0/0 AX100, 3/5 CAN
+[13:09:31]  Ping Failed at node 3.
+[13:09:32]  Ping Success at node 5, 464ms
+[13:09:33]  Tracking : Az 341, El 15.
+[13:09:35]  Tracking : Az 341, El 15.
+[13:09:37]  Ping Failed at node 3.
+[13:09:42]  Ping Failed at node 3.
+[13:09:51]  Ping Failed at node 3.
+[13:09:55]  Ping Failed at node 3.
+[13:09:57]  Tracking : Az 342, El 12.
+[13:10:04]  Ping Failed at node 3.
+[13:10:06]  Ping Success at node 5, 459ms
+[13:10:10]  Ping Failed at node 3.
+[13:10:15]  Ping Failed at node 5.
+[13:10:16]  Ping Success at node 5, 473ms
+[13:10:26]  Tracking : Az 343, El 9.
+[13:10:28]  Forked Safe Amplifier Process. (OFF)
+[13:10:30]  Finish Engaging.
+[13:10:30]  Beacon Success : 0, Ping Success : 4

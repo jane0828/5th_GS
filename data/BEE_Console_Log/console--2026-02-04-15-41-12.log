@@ -1,0 +1,14 @@
+2026-02-04 15:41
+[15:41:15]  Connect to Switch Box.............Success.
+[15:41:15]  Connect to Rotator................Success.
+[15:41:15]  Connect to GS100..................Success.
+[15:41:15]  TM Port 13 bind success.
+[15:41:15]  BCN Port 31 bind success.
+[15:41:15]  RPT Port 25 bind success.
+[15:41:15]  Event Port 27 bind success.
+[15:41:15]  COSMIC Beacon Port 23 bind success.
+[15:41:15]  COSMIC Report Port 24 bind success.
+[15:41:21]  Forked Safe Amplifier Process.(ON, Timer)
+[00:13:53]  [OK]CMD Packet Header: 0x18 0x0 0xc0 0x0 0x0 0x15 0x5 0x22
+[15:41:35]  Forked Safe Amplifier Process. (OFF)
+[15:48:56]  TLE "active" Download Completed.

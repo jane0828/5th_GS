@@ -1,0 +1,8 @@
+/home/miman/hvd_tc_tool-main/lib/libsgp4/CMakeFiles/sgp4.dir
+/home/miman/hvd_tc_tool-main/lib/libsgp4/CMakeFiles/sgp4s.dir
+/home/miman/hvd_tc_tool-main/lib/libsgp4/CMakeFiles/edit_cache.dir
+/home/miman/hvd_tc_tool-main/lib/libsgp4/CMakeFiles/rebuild_cache.dir
+/home/miman/hvd_tc_tool-main/lib/libsgp4/CMakeFiles/list_install_components.dir
+/home/miman/hvd_tc_tool-main/lib/libsgp4/CMakeFiles/install.dir
+/home/miman/hvd_tc_tool-main/lib/libsgp4/CMakeFiles/install/local.dir
+/home/miman/hvd_tc_tool-main/lib/libsgp4/CMakeFiles/install/strip.dir

@@ -1,0 +1,136 @@
+2026-01-09 20:16
+[20:16:50]  Connect to Switch Box.............Success.
+[20:16:50]  Connect to Rotator................Success.
+[20:16:50]  Connect to GS100..................Success.
+[20:16:50]  TM Port 13 bind success.
+[20:16:50]  BCN Port 31 bind success.
+[20:16:50]  RPT Port 25 bind success.
+[20:16:50]  Event Port 27 bind success.
+[20:16:50]  COSMIC Beacon Port 23 bind success.
+[20:16:50]  COSMIC Report Port 24 bind success.
+[20:17:05]  TLE "cubesat" Download Completed.
+[20:17:27]  [Auto]Start AutoPilot.
+[20:17:27]  [Auto]Start Autopilot. Next Valuable AOS : 1/9 20:21:28
+[20:17:27]  [Auto]Max Elevation : 35.85° Please Keep Devices On.
+[20:17:27]  [Auto]Start Engaging.
+[20:17:27]  [Auto]Start Doppler Correction.
+[20:17:27]  Tracking : Az 189, El 0.
+[20:17:28]  [DBG][AMP] waiting: min_to_los=16.667 (cond: 16.667 > 15) now=1/9 11:17:28
+[20:17:29]  [DBG][AMP] waiting: min_to_los=16.650 (cond: 16.650 > 15) now=1/9 11:17:29
+[20:17:29]  Tracking : Az 189, El 0.
+[20:17:30]  [DBG][AMP] waiting: min_to_los=16.633 (cond: 16.633 > 15) now=1/9 11:17:30
+[20:17:31]  [DBG][AMP] waiting: min_to_los=16.617 (cond: 16.617 > 15) now=1/9 11:17:31
+[20:17:31]  Tracking : Az 189, El 0.
+[20:17:32]  [DBG][AMP] waiting: min_to_los=16.600 (cond: 16.600 > 15) now=1/9 11:17:32
+[20:17:33]  [DBG][AMP] waiting: min_to_los=16.583 (cond: 16.583 > 15) now=1/9 11:17:33
+[20:17:33]  Tracking : Az 189, El 0.
+[20:17:34]  [DBG][AMP] waiting: min_to_los=16.567 (cond: 16.567 > 15) now=1/9 11:17:34
+[20:17:35]  [DBG][AMP] waiting: min_to_los=16.550 (cond: 16.550 > 15) now=1/9 11:17:35
+[20:17:35]  Tracking : Az 189, El 0.
+[20:17:35]  [DBG][AMP] exit-wait: min_to_los=16.550 Autopilot=0
+[20:17:36]  [Auto]Stop Doppler Correction.
+[20:17:37]  [Auto]Finish Engaging.
+[20:17:37]  Tracking : Az 0, El 0.
+[20:17:38]  [Auto]Beacon Success : 0, Ping Success : 0 CMD Success : 0
+[20:17:43]  [Auto]Start AutoPilot.
+[20:17:43]  [Auto]Start Autopilot. Next Valuable AOS : 1/9 20:21:28
+[20:17:43]  [Auto]Max Elevation : 35.85° Please Keep Devices On.
+[20:17:43]  [Auto]Start Engaging.
+[20:17:43]  [Auto]Start Doppler Correction.
+[20:17:43]  Tracking : Az 189, El 0.
+[20:17:44]  [DBG][AMP] waiting: min_to_los=16.400 (cond: 16.400 > 15) now=1/9 11:17:44
+[20:17:45]  [DBG][AMP] waiting: min_to_los=16.383 (cond: 16.383 > 15) now=1/9 11:17:45
+[20:17:45]  Tracking : Az 189, El 0.
+[20:17:45]  [DBG][AMP] waiting: min_to_los=16.367 (cond: 16.367 > 15) now=1/9 11:17:46
+[20:17:47]  [DBG][AMP] waiting: min_to_los=16.350 (cond: 16.350 > 15) now=1/9 11:17:47
+[20:17:47]  Tracking : Az 189, El 0.
+[20:17:48]  [DBG][AMP] waiting: min_to_los=16.333 (cond: 16.333 > 15) now=1/9 11:17:48
+[20:17:49]  [DBG][AMP] waiting: min_to_los=16.317 (cond: 16.317 > 15) now=1/9 11:17:49
+[20:17:49]  Tracking : Az 189, El 0.
+[20:17:50]  [DBG][AMP] waiting: min_to_los=16.300 (cond: 16.300 > 15) now=1/9 11:17:50
+[20:17:51]  [DBG][AMP] waiting: min_to_los=16.283 (cond: 16.283 > 15) now=1/9 11:17:51
+[20:17:52]  [DBG][AMP] waiting: min_to_los=16.267 (cond: 16.267 > 15) now=1/9 11:17:52
+[20:17:53]  [DBG][AMP] waiting: min_to_los=16.250 (cond: 16.250 > 15) now=1/9 11:17:53
+[20:17:54]  [DBG][AMP] waiting: min_to_los=16.233 (cond: 16.233 > 15) now=1/9 11:17:54
+[20:17:55]  [DBG][AMP] waiting: min_to_los=16.217 (cond: 16.217 > 15) now=1/9 11:17:55
+[20:17:56]  [DBG][AMP] waiting: min_to_los=16.200 (cond: 16.200 > 15) now=1/9 11:17:56
+[20:17:57]  [DBG][AMP] waiting: min_to_los=16.183 (cond: 16.183 > 15) now=1/9 11:17:57
+[20:17:58]  [DBG][AMP] waiting: min_to_los=16.167 (cond: 16.167 > 15) now=1/9 11:17:58
+[20:17:59]  [DBG][AMP] waiting: min_to_los=16.150 (cond: 16.150 > 15) now=1/9 11:17:59
+[20:18:00]  [DBG][AMP] waiting: min_to_los=16.133 (cond: 16.133 > 15) now=1/9 11:18:00
+[20:18:01]  [DBG][AMP] waiting: min_to_los=16.117 (cond: 16.117 > 15) now=1/9 11:18:01
+[20:18:02]  [DBG][AMP] waiting: min_to_los=16.100 (cond: 16.100 > 15) now=1/9 11:18:02
+[20:18:03]  [DBG][AMP] waiting: min_to_los=16.083 (cond: 16.083 > 15) now=1/9 11:18:03
+[20:18:04]  [DBG][AMP] waiting: min_to_los=16.067 (cond: 16.067 > 15) now=1/9 11:18:04
+[20:18:05]  [DBG][AMP] waiting: min_to_los=16.050 (cond: 16.050 > 15) now=1/9 11:18:05
+[20:18:06]  [DBG][AMP] waiting: min_to_los=16.033 (cond: 16.033 > 15) now=1/9 11:18:06
+[20:18:07]  [DBG][AMP] waiting: min_to_los=16.017 (cond: 16.017 > 15) now=1/9 11:18:07
+[20:18:08]  [DBG][AMP] waiting: min_to_los=16.000 (cond: 16.000 > 15) now=1/9 11:18:08
+[20:18:09]  [DBG][AMP] waiting: min_to_los=15.983 (cond: 15.983 > 15) now=1/9 11:18:09
+[20:18:10]  [DBG][AMP] waiting: min_to_los=15.967 (cond: 15.967 > 15) now=1/9 11:18:10
+[20:18:11]  [DBG][AMP] waiting: min_to_los=15.950 (cond: 15.950 > 15) now=1/9 11:18:11
+[20:18:12]  [DBG][AMP] waiting: min_to_los=15.933 (cond: 15.933 > 15) now=1/9 11:18:12
+[20:18:13]  [DBG][AMP] waiting: min_to_los=15.917 (cond: 15.917 > 15) now=1/9 11:18:13
+[20:18:14]  [DBG][AMP] waiting: min_to_los=15.900 (cond: 15.900 > 15) now=1/9 11:18:14
+[20:18:15]  [DBG][AMP] waiting: min_to_los=15.883 (cond: 15.883 > 15) now=1/9 11:18:15
+[20:18:16]  [DBG][AMP] waiting: min_to_los=15.867 (cond: 15.867 > 15) now=1/9 11:18:16
+[20:18:17]  [DBG][AMP] waiting: min_to_los=15.850 (cond: 15.850 > 15) now=1/9 11:18:17
+[20:18:18]  [DBG][AMP] waiting: min_to_los=15.833 (cond: 15.833 > 15) now=1/9 11:18:18
+[20:18:19]  [DBG][AMP] waiting: min_to_los=15.817 (cond: 15.817 > 15) now=1/9 11:18:19
+[20:18:20]  [DBG][AMP] waiting: min_to_los=15.800 (cond: 15.800 > 15) now=1/9 11:18:20
+[20:18:21]  [DBG][AMP] waiting: min_to_los=15.783 (cond: 15.783 > 15) now=1/9 11:18:21
+[20:18:22]  [DBG][AMP] waiting: min_to_los=15.767 (cond: 15.767 > 15) now=1/9 11:18:22
+[20:18:23]  [DBG][AMP] waiting: min_to_los=15.750 (cond: 15.750 > 15) now=1/9 11:18:23
+[20:18:24]  [DBG][AMP] waiting: min_to_los=15.733 (cond: 15.733 > 15) now=1/9 11:18:24
+[20:18:25]  [DBG][AMP] waiting: min_to_los=15.717 (cond: 15.717 > 15) now=1/9 11:18:25
+[20:18:26]  [DBG][AMP] waiting: min_to_los=15.700 (cond: 15.700 > 15) now=1/9 11:18:26
+[20:18:27]  [DBG][AMP] waiting: min_to_los=15.683 (cond: 15.683 > 15) now=1/9 11:18:27
+[20:18:28]  [DBG][AMP] waiting: min_to_los=15.667 (cond: 15.667 > 15) now=1/9 11:18:28
+[20:18:29]  [DBG][AMP] waiting: min_to_los=15.650 (cond: 15.650 > 15) now=1/9 11:18:29
+[20:18:30]  [DBG][AMP] waiting: min_to_los=15.633 (cond: 15.633 > 15) now=1/9 11:18:30
+[20:18:31]  [DBG][AMP] waiting: min_to_los=15.617 (cond: 15.617 > 15) now=1/9 11:18:31
+[20:18:32]  [DBG][AMP] waiting: min_to_los=15.600 (cond: 15.600 > 15) now=1/9 11:18:32
+[20:18:33]  [DBG][AMP] waiting: min_to_los=15.583 (cond: 15.583 > 15) now=1/9 11:18:33
+[20:18:34]  [DBG][AMP] waiting: min_to_los=15.567 (cond: 15.567 > 15) now=1/9 11:18:34
+[20:18:35]  [DBG][AMP] waiting: min_to_los=15.550 (cond: 15.550 > 15) now=1/9 11:18:35
+[20:18:36]  [DBG][AMP] waiting: min_to_los=15.533 (cond: 15.533 > 15) now=1/9 11:18:36
+[20:18:37]  [DBG][AMP] waiting: min_to_los=15.517 (cond: 15.517 > 15) now=1/9 11:18:37
+[20:18:38]  [DBG][AMP] waiting: min_to_los=15.500 (cond: 15.500 > 15) now=1/9 11:18:38
+[20:18:39]  [DBG][AMP] waiting: min_to_los=15.483 (cond: 15.483 > 15) now=1/9 11:18:39
+[20:18:40]  [DBG][AMP] waiting: min_to_los=15.467 (cond: 15.467 > 15) now=1/9 11:18:40
+[20:18:41]  [DBG][AMP] waiting: min_to_los=15.450 (cond: 15.450 > 15) now=1/9 11:18:41
+[20:18:42]  [DBG][AMP] waiting: min_to_los=15.433 (cond: 15.433 > 15) now=1/9 11:18:42
+[20:18:43]  [DBG][AMP] waiting: min_to_los=15.417 (cond: 15.417 > 15) now=1/9 11:18:43
+[20:18:44]  [DBG][AMP] waiting: min_to_los=15.400 (cond: 15.400 > 15) now=1/9 11:18:44
+[20:18:45]  [DBG][AMP] waiting: min_to_los=15.383 (cond: 15.383 > 15) now=1/9 11:18:45
+[20:18:46]  [DBG][AMP] waiting: min_to_los=15.367 (cond: 15.367 > 15) now=1/9 11:18:46
+[20:18:47]  [DBG][AMP] waiting: min_to_los=15.350 (cond: 15.350 > 15) now=1/9 11:18:47
+[20:18:48]  [DBG][AMP] waiting: min_to_los=15.333 (cond: 15.333 > 15) now=1/9 11:18:48
+[20:18:49]  [DBG][AMP] waiting: min_to_los=15.317 (cond: 15.317 > 15) now=1/9 11:18:49
+[20:18:50]  [DBG][AMP] waiting: min_to_los=15.300 (cond: 15.300 > 15) now=1/9 11:18:50
+[20:18:51]  [DBG][AMP] waiting: min_to_los=15.283 (cond: 15.283 > 15) now=1/9 11:18:51
+[20:18:52]  [DBG][AMP] waiting: min_to_los=15.267 (cond: 15.267 > 15) now=1/9 11:18:52
+[20:18:53]  [DBG][AMP] waiting: min_to_los=15.250 (cond: 15.250 > 15) now=1/9 11:18:53
+[20:18:54]  [DBG][AMP] waiting: min_to_los=15.233 (cond: 15.233 > 15) now=1/9 11:18:54
+[20:18:55]  [DBG][AMP] waiting: min_to_los=15.217 (cond: 15.217 > 15) now=1/9 11:18:55
+[20:18:56]  [DBG][AMP] waiting: min_to_los=15.200 (cond: 15.200 > 15) now=1/9 11:18:56
+[20:18:57]  [DBG][AMP] waiting: min_to_los=15.183 (cond: 15.183 > 15) now=1/9 11:18:57
+[20:18:58]  [DBG][AMP] waiting: min_to_los=15.167 (cond: 15.167 > 15) now=1/9 11:18:58
+[20:18:59]  [DBG][AMP] waiting: min_to_los=15.150 (cond: 15.150 > 15) now=1/9 11:18:59
+[20:19:00]  [DBG][AMP] waiting: min_to_los=15.133 (cond: 15.133 > 15) now=1/9 11:19:00
+[20:19:01]  [DBG][AMP] waiting: min_to_los=15.117 (cond: 15.117 > 15) now=1/9 11:19:01
+[20:19:02]  [DBG][AMP] waiting: min_to_los=15.100 (cond: 15.100 > 15) now=1/9 11:19:02
+[20:19:03]  [DBG][AMP] waiting: min_to_los=15.083 (cond: 15.083 > 15) now=1/9 11:19:03
+[20:19:04]  [DBG][AMP] waiting: min_to_los=15.067 (cond: 15.067 > 15) now=1/9 11:19:04
+[20:19:05]  [DBG][AMP] waiting: min_to_los=15.050 (cond: 15.050 > 15) now=1/9 11:19:05
+[20:19:06]  [DBG][AMP] waiting: min_to_los=15.033 (cond: 15.033 > 15) now=1/9 11:19:06
+[20:19:07]  [DBG][AMP] waiting: min_to_los=15.017 (cond: 15.017 > 15) now=1/9 11:19:07
+[20:19:08]  [DBG][AMP] exit-wait: min_to_los=15.000 Autopilot=1
+[20:19:08]  Forked Safe Amplifier Process.(ON, Timer)
+[20:22:16]  Tracking : Az 187, El 3.
+[20:22:48]  Forked Safe Amplifier Process. (OFF)
+[20:23:01]  Tracking : Az 184, El 6.
+[20:23:41]  Tracking : Az 182, El 9.
+[20:24:04]  Tracking : Az 180, El 11.
+[20:24:26]  Tracking : Az 178, El 13.
+[20:24:52]  Tracking : Az 174, El 15.

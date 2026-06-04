@@ -1,0 +1,213 @@
+2026-02-08 00:40
+[00:41:01]  Connect to Switch Box.............Success.
+[00:41:01]  Connect to Rotator................Success.
+[00:41:01]  Connect to GS100..................Success.
+[00:41:01]  TM Port 13 bind success.
+[00:41:01]  BCN Port 31 bind success.
+[00:41:01]  RPT Port 25 bind success.
+[00:41:01]  Event Port 27 bind success.
+[00:41:01]  COSMIC Beacon Port 23 bind success.
+[00:41:01]  COSMIC Report Port 24 bind success.
+[00:41:23]  TLE "active" Download Completed.
+[00:41:32]  Start Engaging.
+[00:41:32]  Tracking : Az 38, El 4.
+[00:41:33]  Start Doppler Correction.
+[00:41:34]  Tracking : Az 38, El 4.
+[00:41:41]  Forked Safe Amplifier Process.(ON, Timer)
+[00:41:54]  Ping Failed.
+[00:41:55]  Tracking : Az 41, El 6.
+[00:41:57]  Tracking : Az 41, El 6.
+[00:41:59]  Received Event from port : 27.
+
+[00:42:09]  Received Event from port : 27.
+
+[00:42:17]  Tracking : Az 44, El 7.
+[00:42:18]  Received Event from port : 27.
+
+[00:42:19]  Tracking : Az 44, El 7.
+[00:42:20]  Received Event from port : 27.
+
+[00:42:29]  Received Event from port : 27.
+
+[00:42:30]  Ping Success at node 5, 466ms
+[00:42:37]  Tracking : Az 47, El 8.
+[00:42:39]  Tracking : Az 47, El 8.
+[00:42:39]  Received Event from port : 27.
+
+[00:42:39]  Ping Success at node 5, 471ms
+[00:42:49]  Received Event from port : 27.
+
+[00:42:50]  Tracking : Az 49, El 9.
+[00:42:50]  Ping Success at node 5, 463ms
+[00:42:52]  Tracking : Az 49, El 9.
+[00:42:52]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x4 0x66 0x20
+[00:42:59]  Received Event from port : 27.
+
+[00:43:01]  Received Event from port : 27.
+
+[00:43:07]  Tracking : Az 52, El 10.
+[00:43:09]  Tracking : Az 52, El 10.
+[00:43:09]  Received Event from port : 27.
+
+[00:43:19]  Received Event from port : 27.
+
+[00:43:23]  Tracking : Az 55, El 11.
+[00:43:23]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:43:24]  Received Report from port : 25.
+[00:43:25]  Tracking : Az 55, El 11.
+[00:43:26]  Received Report from port : 25.
+[00:43:28]  Received Report from port : 25.
+[00:43:30]  Received Event from port : 27.
+
+[00:43:33]  Tracking : Az 57, El 12.
+[00:43:35]  Tracking : Az 57, El 12.
+[00:43:39]  Received Event from port : 27.
+
+[00:43:41]  Received Event from port : 27.
+
+[00:43:47]  Tracking : Az 60, El 13.
+[00:43:49]  Tracking : Az 60, El 13.
+[00:43:49]  Received Event from port : 27.
+
+[00:43:50]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[00:43:51]  Received Report from port : 25.
+[00:43:53]  Received Report from port : 25.
+[00:43:55]  Received Report from port : 25.
+[00:43:59]  Received Event from port : 27.
+
+[00:44:00]  Tracking : Az 63, El 14.
+[00:44:02]  Tracking : Az 63, El 14.
+[00:44:06]  Tracking : Az 64, El 14.
+[00:44:09]  Received Event from port : 27.
+
+[00:44:12]  Tracking : Az 66, El 14.
+[00:44:19]  Received Event from port : 27.
+
+[00:44:19]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x49
+[00:44:20]  Tracking : Az 68, El 15.
+[00:44:21]  Received Report from port : 25.
+[00:44:22]  Tracking : Az 68, El 15.
+[00:44:23]  Received Report from port : 25.
+[00:44:25]  Received Report from port : 25.
+[00:44:27]  Received Event from port : 27.
+
+[00:44:29]  Received Event from port : 27.
+
+[00:44:32]  Tracking : Az 71, El 15.
+[00:44:34]  Tracking : Az 71, El 15.
+[00:44:39]  AX100 Boot Count : 193
+[00:44:39]  Tracking : Az 73, El 16.
+[00:44:39]  Received Event from port : 27.
+
+[00:44:43]  Remote Param Control OK. rssi_busy : 0
+[00:44:49]  Received Event from port : 27.
+
+[00:44:50]  Tracking : Az 76, El 16.
+[00:44:52]  Tracking : Az 76, El 16.
+[00:44:56]  Tracking : Az 77, El 16.
+[00:44:59]  Received Event from port : 27.
+
+[00:45:02]  Tracking : Az 79, El 17.
+[00:45:02]  Received Event from port : 27.
+
+[00:45:08]  Tracking : Az 81, El 17.
+[00:45:09]  Received Event from port : 27.
+
+[00:45:10]  Tracking : Az 82, El 17.
+[00:45:17]  Tracking : Az 84, El 17.
+[00:45:19]  Received Event from port : 27.
+
+[00:45:26]  Tracking : Az 87, El 17.
+[00:45:28]  Tracking : Az 87, El 17.
+[00:45:29]  Received Event from port : 27.
+
+[00:45:36]  Tracking : Az 90, El 17.
+[00:45:38]  Tracking : Az 90, El 17.
+[00:45:38]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[00:45:39]  Received Report from port : 25.
+[00:45:41]  Received Report from port : 25.
+[00:45:42]  Tracking : Az 92, El 17.
+[00:45:43]  Received Report from port : 25.
+[00:45:44]  Tracking : Az 92, El 17.
+[00:45:45]  Received Event from port : 27.
+
+[00:45:47]  Received Event from port : 27.
+
+[00:45:49]  Received Event from port : 27.
+
+[00:45:52]  Tracking : Az 95, El 17.
+[00:45:54]  Tracking : Az 95, El 17.
+[00:45:58]  Tracking : Az 97, El 17.
+[00:45:59]  Received Event from port : 27.
+
+[00:46:08]  Tracking : Az 100, El 17.
+[00:46:09]  Received Event from port : 27.
+
+[00:46:10]  Tracking : Az 100, El 17.
+[00:46:12]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[00:46:13]  Received Event from port : 27.
+
+[00:46:15]  Received Event from port : 27.
+
+[00:46:17]  Received Report from port : 25.
+[00:46:18]  Tracking : Az 103, El 17.
+[00:46:18]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[00:46:19]  Received Report from port : 25.
+[00:46:20]  Tracking : Az 103, El 17.
+[00:46:21]  Received Report from port : 25.
+[00:46:23]  Received Event from port : 27.
+
+[00:46:24]  Tracking : Az 105, El 17.
+[00:46:25]  Received Event from port : 27.
+
+[00:46:26]  Tracking : Az 105, El 17.
+[00:46:27]  Received Report from port : 25.
+[00:46:29]  Received Report from port : 25.
+[00:46:31]  Received Report from port : 25.
+[00:46:33]  Received Event from port : 27.
+
+[00:46:34]  Tracking : Az 108, El 17.
+[00:46:35]  Received Event from port : 27.
+
+[00:46:36]  Tracking : Az 108, El 17.
+[00:46:37]  Received Event from port : 27.
+
+[00:46:39]  Received Event from port : 27.
+
+[00:46:40]  Tracking : Az 109, El 16.
+[00:46:42]  Tracking : Az 110, El 16.
+[00:46:42]  Ping Success at node 5, 468ms
+[00:46:49]  Received Event from port : 27.
+
+[00:46:52]  Tracking : Az 113, El 16.
+[00:46:54]  Tracking : Az 113, El 16.
+[00:46:59]  Received Event from port : 27.
+
+[00:47:02]  Tracking : Az 116, El 16.
+[00:47:04]  Tracking : Az 116, El 15.
+[00:47:05]  Received Event from port : 27.
+
+[00:47:09]  Received Event from port : 27.
+
+[00:47:14]  Tracking : Az 119, El 15.
+[00:47:16]  Tracking : Az 119, El 15.
+[00:47:21]  Tracking : Az 121, El 15.
+[00:47:34]  Tracking : Az 124, El 14.
+[00:47:36]  Tracking : Az 124, El 14.
+[00:47:39]  Received Event from port : 27.
+
+[00:47:46]  Tracking : Az 127, El 13.
+[00:47:46]  Received Event from port : 27.
+
+[00:47:48]  Tracking : Az 127, El 13.
+[00:48:00]  Tracking : Az 130, El 12.
+[00:48:02]  Tracking : Az 130, El 12.
+[00:48:15]  Tracking : Az 133, El 11.
+[00:48:17]  Tracking : Az 133, El 11.
+[00:48:25]  Tracking : Az 135, El 11.
+[00:48:42]  Tracking : Az 138, El 9.
+[00:48:44]  Tracking : Az 138, El 9.
+[00:48:52]  Ping Failed.
+[00:48:53]  Forked Safe Amplifier Process. (OFF)
+[00:48:56]  Finish Engaging.
+[00:48:56]  Beacon Success : 0, Ping Success : 4

@@ -1,0 +1,73 @@
+================= MISSION BEACON SAVE =================
+
+[CCSDS HEADER]
+MID        : 08 1B
+SEQ        : C0 8D
+LEN        : 00 66
+TimeCode   : 00 28 5E 1B 17 32
+
+[SRL HOUSEKEEPING]
+SRL Command Counter        : 0
+SRL Command Error Counter  : 0
+IOHandleStatus[0]         : 0
+IOHandleTxCount[0]        : 0
+IOHandleStatus[1]         : 0
+IOHandleTxCount[1]        : 0
+IOHandleStatus[2]         : 0
+IOHandleTxCount[2]        : 0
+IOHandleStatus[3]         : 0
+IOHandleTxCount[3]        : 0
+
+[RPT PAYLOAD SUMMARY]
+CmdCounter                : 0
+CmdErrCounter             : 0
+
+[RPT QUEUE INFO]
+ReportQueueCnt            : 10
+CriticalQueueCnt          : 0
+
+[OPERATION DATA]
+BootCount                 : 6
+TimeSec                   : 2645525
+TimeSubsec                : 1078691344
+Sequence                  : 82224
+ResetCause                : 0x21
+
+[MISSION BEACON PAYLOAD]
+CommandCounter             : 0
+CommandErrorCounter        : 0
+System Status              : 0
+NTC Temp 0                 : 0
+NTC Temp 1                 : 0
+NTC Temp 2                 : 0
+NTC Temp 3                 : 0
+NTC Temp 4                 : 0
+NTC Temp 5                 : 0
+NTC Temp 6                 : 0
+NTC Temp 7                 : 0
+NTC Temp 8                 : 0
+NTC Temp 9                 : 0
+NTC Temp 10                : 0
+NTC Temp 11                : 0
+
+[MISSION HOUSEKEEPING]
+HK CommandCounter          : 0
+HK CommandErrorCounter     : 0
+HK System Status           : 1
+HK NTC Temp 0              : 0
+HK NTC Temp 1              : 0
+HK NTC Temp 2              : 0
+HK NTC Temp 3              : 0
+HK NTC Temp 4              : 0
+HK NTC Temp 5              : 0
+HK NTC Temp 6              : 0
+HK NTC Temp 7              : 0
+HK NTC Temp 8              : 0
+HK NTC Temp 9              : 0
+HK NTC Temp 10             : 0
+HK NTC Temp 11             : 0
+HK Sensor1 Data 0           : 198
+HK Sensor1 Data 1           : 1134
+
+[BINARY DATA]
+08 1B C0 8D 00 66 00 28 5E 1B 17 32 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 0A 00 06 00 15 5E 28 00 10 86 4B 40 30 41 01 00 21 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 C6 00 00 00 6E 04 00 00 

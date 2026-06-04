@@ -1,0 +1,37 @@
+2025-12-15 02:20
+[02:20:45]  Connect to Switch Box.............Success.
+[02:20:45]  Connect to Rotator................Success.
+[02:20:45]  Connect to GS100..................Success.
+[02:20:45]  TM Port 13 bind success.
+[02:20:45]  BCN Port 31 bind success.
+[02:20:45]  RPT Port 25 bind success.
+[02:20:49]  TLE "cubesat" Download Completed.
+[02:20:52]  Start Engaging.
+[02:20:52]  Tracking : Az 326, El 24.
+[02:20:53]  Start Doppler Correction.
+[02:20:54]  Forked Safe Amplifier Process.(ON, Timer)
+[02:20:54]  Tracking : Az 325, El 25.
+[02:20:56]  Ping Success at node 5, 469ms
+[02:21:02]  Tracking : Az 322, El 26.
+[02:21:05]  Tracking : Az 321, El 26.
+[02:21:07]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[02:21:14]  Tracking : Az 318, El 27.
+[02:21:16]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x0
+[02:21:16]  Tracking : Az 317, El 27.
+[02:21:24]  Tracking : Az 314, El 28.
+[02:21:27]  Tracking : Az 313, El 28.
+[02:21:34]  Tracking : Az 310, El 29.
+[02:21:42]  Tracking : Az 307, El 30.
+[02:21:48]  Tracking : Az 304, El 30.
+[02:21:55]  Tracking : Az 301, El 30.
+[02:22:01]  Tracking : Az 298, El 31.
+[02:22:03]  Tracking : Az 297, El 31.
+[02:22:09]  Tracking : Az 294, El 31.
+[02:22:15]  Tracking : Az 291, El 31.
+[02:22:21]  Tracking : Az 288, El 31.
+[02:22:28]  Tracking : Az 285, El 31.
+[02:22:30]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[02:22:34]  Tracking : Az 282, El 31.
+[02:22:36]  Ping Success at node 5, 455ms
+[02:22:36]  Tracking : Az 281, El 31.
+[02:22:38]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x0

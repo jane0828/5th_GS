@@ -1,0 +1,11 @@
+[14:08:32]  Connect to Switch Box.............Success.
+[14:08:32]  Connect to Rotator................Success.
+[14:08:32]  Connect to GS100..................Success.
+[14:08:32]  TM Port 13 bind success.
+[14:08:32]  BCN Port 31 bind success.
+[14:08:32]  RPT Port 25 bind success.
+[14:08:32]  Event Port 27 bind success.
+[14:08:32]  COSMIC Beacon Port 23 bind success.
+[14:08:32]  COSMIC Report Port 24 bind success.
+[14:08:43]  TLE "active" Download Completed.
+[14:08:51]  [Track]SetNowTracking rejected. index=13455 ptr=(nil) caller=/home/miman/Desktop/BEE-1000_GS/src/miman_imgui.cpp:416

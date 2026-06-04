@@ -1,0 +1,139 @@
+[00:45:42]  Connect to Switch Box.............Success.
+[00:45:42]  Connect to Rotator................Success.
+[00:45:42]  Connect to GS100..................Success.
+[00:45:42]  TM Port 13 bind success.
+[00:45:42]  BCN Port 31 bind success.
+[00:45:42]  RPT Port 25 bind success.
+[00:45:53]  TLE "cubesat" Download Completed.
+[00:47:28]  Start Engaging.
+[00:47:28]  Tracking : Az 21, El 0.
+[00:47:30]  Tracking : Az 21, El 0.
+[00:47:32]  Tracking : Az 21, El 0.
+[01:02:01]  Start Doppler Correction.
+[01:05:25]  Forked Safe Amplifier Process.(ON, Timer)
+[01:05:34]  Ping Failed.
+[01:05:47]  Ping Failed.
+[01:05:59]  Ping Failed.
+[01:06:09]  Tracking : Az 24, El 3.
+[01:06:11]  Tracking : Az 24, El 3.
+[01:06:24]  Ping Failed.
+[01:06:52]  Tracking : Az 26, El 6.
+[01:07:03]  Ping Failed.
+[01:07:11]  Ping Failed.
+[01:07:18]  Tracking : Az 29, El 8.
+[01:07:20]  Tracking : Az 29, El 8.
+[01:07:26]  Ping Failed.
+[01:07:38]  Ping Success at node 5, 465ms
+[01:07:44]  AX100 Boot Count : 183
+[01:07:50]  Tracking : Az 32, El 10.
+[01:07:52]  Tracking : Az 32, El 11.
+[01:07:56]  Ping Success at node 3, 466ms
+[01:08:02]  Remote Param Control OK. csp_rtable : 0/0 AX100, 3/5 CAN, 23/5 CAN
+[01:08:07]  AX100 Boot Count : 183
+[01:08:10]  [OK]CMD Packet Header: 0x18 0x20 0xc0 0x0 0x0 0x5 0x7 0x6
+[01:08:13]  Tracking : Az 34, El 13.
+[01:08:21]  [OK]CMD Packet Header: 0x18 0x20 0xc0 0x0 0x0 0x5 0x7 0x6
+[01:08:31]  [OK]CMD Packet Header: 0x18 0x20 0xc0 0x0 0x0 0x5 0x7 0x6
+[01:08:31]  Tracking : Az 37, El 14.
+[01:08:41]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x11 0x6 0x3d
+[01:08:50]  Tracking : Az 39, El 17.
+[01:08:52]  Tracking : Az 40, El 17.
+[01:08:52]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x11 0x6 0x3d
+[01:08:59]  Received Beacon from port : 13.
+[01:09:08]  Tracking : Az 43, El 19.
+[01:09:09]  Received Beacon from port : 13.
+[01:09:22]  Tracking : Az 46, El 20.
+[01:09:29]  Received Beacon from port : 13.
+[01:09:35]  Tracking : Az 49, El 22.
+[01:09:39]  Received Beacon from port : 13.
+[01:09:47]  Tracking : Az 52, El 24.
+[01:09:49]  Received Beacon from port : 13.
+[01:09:57]  Tracking : Az 55, El 25.
+[01:09:59]  Received Beacon from port : 13.
+[01:10:04]  Tracking : Az 57, El 26.
+[01:10:13]  Tracking : Az 60, El 27.
+[01:10:16]  Tracking : Az 61, El 28.
+[01:10:19]  Received Beacon from port : 13.
+[01:10:24]  Tracking : Az 64, El 29.
+[01:10:30]  Tracking : Az 66, El 29.
+[01:10:36]  Tracking : Az 69, El 30.
+[01:10:38]  Tracking : Az 69, El 30.
+[01:10:41]  Tracking : Az 71, El 31.
+[01:10:43]  Tracking : Az 72, El 31.
+[01:10:48]  Tracking : Az 74, El 32.
+[01:10:54]  Tracking : Az 77, El 32.
+[01:11:00]  Tracking : Az 80, El 33.
+[01:11:01]  Ping Failed.
+[01:11:02]  Tracking : Az 81, El 33.
+[01:11:08]  Tracking : Az 84, El 33.
+[01:11:10]  Tracking : Az 85, El 33.
+[01:11:10]  Ping Failed.
+[01:11:16]  Tracking : Az 88, El 34.
+[01:11:18]  Tracking : Az 89, El 34.
+[01:11:23]  Tracking : Az 92, El 34.
+[01:11:25]  Tracking : Az 93, El 34.
+[01:11:26]  Ping Success at node 5, 463ms
+[01:11:29]  Received Beacon from port : 13.
+[01:11:31]  Tracking : Az 96, El 34.
+[01:11:34]  Tracking : Az 98, El 34.
+[01:11:40]  Tracking : Az 101, El 34.
+[01:11:42]  Tracking : Az 102, El 34.
+[01:11:47]  Tracking : Az 105, El 34.
+[01:11:49]  Received Beacon from port : 13.
+[01:11:49]  Tracking : Az 106, El 34.
+[01:11:55]  Tracking : Az 109, El 33.
+[01:11:57]  Tracking : Az 110, El 33.
+[01:11:59]  Received Beacon from port : 13.
+[01:11:59]  Tracking : Az 111, El 33.
+[01:12:05]  Tracking : Az 114, El 33.
+[01:12:07]  Tracking : Az 115, El 33.
+[01:12:09]  Received Beacon from port : 13.
+[01:12:11]  Tracking : Az 117, El 32.
+[01:12:13]  Tracking : Az 118, El 32.
+[01:12:17]  Tracking : Az 120, El 32.
+[01:12:19]  Received Beacon from port : 13.
+[01:12:19]  Ping Success at node 5, 457ms
+[01:12:23]  Tracking : Az 122, El 31.
+[01:12:28]  Tracking : Az 125, El 30.
+[01:12:29]  Received Beacon from port : 13.
+[01:12:35]  Tracking : Az 128, El 30.
+[01:12:38]  Tracking : Az 129, El 29.
+[01:12:39]  Received Beacon from port : 13.
+[01:12:44]  Tracking : Az 131, El 28.
+[01:12:51]  Tracking : Az 134, El 28.
+[01:12:59]  Received Beacon from port : 13.
+[01:13:00]  Tracking : Az 137, El 26.
+[01:13:09]  Received Beacon from port : 13.
+[01:13:09]  Tracking : Az 140, El 25.
+[01:13:12]  Tracking : Az 141, El 25.
+[01:13:19]  Received Beacon from port : 13.
+[01:13:23]  Tracking : Az 144, El 23.
+[01:13:35]  Tracking : Az 147, El 22.
+[01:13:39]  Received Beacon from port : 13.
+[01:13:48]  Tracking : Az 150, El 20.
+[01:13:58]  Tracking : Az 152, El 19.
+[01:13:59]  Received Beacon from port : 13.
+[01:14:09]  Received Beacon from port : 13.
+[01:14:15]  Tracking : Az 155, El 17.
+[01:14:19]  Received Beacon from port : 13.
+[01:14:34]  Tracking : Az 158, El 14.
+[01:14:39]  Received Beacon from port : 13.
+[01:14:49]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[01:14:57]  Tracking : Az 161, El 12.
+[01:15:07]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x45 0xa 0x5e
+[01:15:09]  Received Something but brocken.
+[01:15:24]  Tracking : Az 164, El 9.
+[01:15:39]  Ping Failed.
+[01:15:51]  Ping Failed.
+[01:15:58]  Tracking : Az 167, El 7.
+[01:16:00]  Ping Failed.
+[01:16:30]  Ping Failed.
+[01:16:34]  Ping Failed.
+[01:16:40]  Tracking : Az 170, El 3.
+[01:16:49]  Ping Success at node 5, 488ms
+[01:16:56]  Ping Success at node 5, 467ms
+[01:17:25]  Tracking : Az 172, El 0.
+[01:17:29]  Forked Safe Amplifier Process. (OFF)
+[01:17:33]  Finish Engaging.
+[01:17:33]  Beacon Success : 22, Ping Success : 6
+

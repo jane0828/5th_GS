@@ -1,0 +1,29 @@
+2026-02-06 00:29
+[00:29:30]  Connect to Switch Box.............Success.
+[00:29:30]  Connect to Rotator................Success.
+[00:29:30]  Connect to GS100..................Success.
+[00:29:30]  TM Port 13 bind success.
+[00:29:30]  BCN Port 31 bind success.
+[00:29:30]  RPT Port 25 bind success.
+[00:29:30]  Event Port 27 bind success.
+[00:29:30]  COSMIC Beacon Port 23 bind success.
+[00:29:30]  COSMIC Report Port 24 bind success.
+[00:29:36]  TLE "cubesat" Download Completed.
+[00:29:54]  Start Engaging.
+[00:29:54]  Tracking : Az 107, El 10.
+[00:29:55]  Start Doppler Correction.
+[00:29:56]  Tracking : Az 107, El 10.
+[00:29:58]  Tracking : Az 108, El 10.
+[00:29:59]  Forked Safe Amplifier Process.(ON, Timer)
+[00:30:00]  Ping Failed.
+[00:30:11]  Ping Failed.
+[00:30:12]  Tracking : Az 111, El 9.
+[00:30:14]  Tracking : Az 111, El 9.
+[00:30:16]  Ping Failed.
+[00:30:23]  Ping Failed.
+[00:30:26]  Tracking : Az 114, El 9.
+[00:30:28]  Tracking : Az 114, El 9.
+[00:30:32]  Ping Failed.
+[00:30:40]  Tracking : Az 117, El 8.
+[00:30:40]  Ping Failed.
+[00:30:42]  Tracking : Az 117, El 8.

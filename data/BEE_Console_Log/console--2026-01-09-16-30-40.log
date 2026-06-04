@@ -1,0 +1,11 @@
+2026-01-09 16:30
+[16:30:49]  Connect to Switch Box.............Success.
+[16:30:49]  Connect to Rotator................Success.
+[16:30:49]  Connect to GS100..................Success.
+[16:30:49]  TM Port 13 bind success.
+[16:30:49]  BCN Port 31 bind success.
+[16:30:49]  RPT Port 25 bind success.
+[16:30:49]  Event Port 27 bind success.
+[16:30:49]  COSMIC Beacon Port 23 bind success.
+[16:30:49]  COSMIC Report Port 24 bind success.
+[16:31:18]  TLE "cubesat" Download Completed.

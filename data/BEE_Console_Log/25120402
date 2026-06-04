@@ -1,0 +1,143 @@
+[18:45:15]  Connect to Switch Box.............Success.
+[18:45:15]  Connect to Rotator................Success.
+[18:45:15]  Connect to GS100..................Success.
+[18:45:15]  TM Port 13 bind success.
+[18:45:15]  BCN Port 31 bind success.
+[18:45:15]  RPT Port 25 bind success.
+[18:45:32]  TLE "cubesat" Download Completed.
+[18:47:01]  TLE "cubesat" Download Completed.
+[01:48:05]  TLE "cubesat" Download Completed.
+[02:07:46]  Start Engaging.
+[02:07:48]  Start Doppler Correction.
+[02:07:56]  Finish Engaging.
+[02:07:56]  Beacon Success : 0, Ping Success : 0
+[02:08:32]  Start Engaging.
+[02:08:42]  Start Doppler Correction.
+[02:09:23]  Finish Engaging.
+[02:09:23]  Beacon Success : 0, Ping Success : 0
+[02:12:39]  Start Engaging.
+[02:14:27]  Start Doppler Correction.
+[02:14:29]  Tracking : Az 359, El 2.
+[02:14:31]  Tracking : Az 359, El 2.
+[02:14:33]  Tracking : Az 359, El 2.
+[02:14:35]  Tracking : Az 359, El 2.
+[02:14:37]  Tracking : Az 359, El 2.
+[02:14:39]  Tracking : Az 359, El 2.
+[02:14:41]  Tracking : Az 359, El 3.
+[02:14:43]  Tracking : Az 359, El 3.
+[02:14:45]  Tracking : Az 359, El 3.
+[02:14:47]  Tracking : Az 359, El 3.
+[02:14:49]  Tracking : Az 358, El 3.
+[02:14:51]  Tracking : Az 358, El 3.
+[02:14:53]  Tracking : Az 358, El 3.
+[02:14:55]  Tracking : Az 358, El 4.
+[02:14:57]  Tracking : Az 358, El 4.
+[02:14:59]  Tracking : Az 358, El 4.
+[02:15:01]  Tracking : Az 358, El 4.
+[02:15:03]  Tracking : Az 358, El 4.
+[02:15:05]  Tracking : Az 357, El 4.
+[02:15:07]  Tracking : Az 357, El 4.
+[02:15:09]  Tracking : Az 357, El 5.
+[02:15:11]  Tracking : Az 357, El 5.
+[02:15:13]  Tracking : Az 357, El 5.
+[02:15:15]  Tracking : Az 357, El 5.
+[02:15:17]  Tracking : Az 357, El 5.
+[02:15:19]  Tracking : Az 357, El 5.
+[02:15:21]  Tracking : Az 356, El 5.
+[02:15:23]  Tracking : Az 356, El 6.
+[02:15:25]  Tracking : Az 356, El 6.
+[02:15:27]  Tracking : Az 356, El 6.
+[02:15:29]  Tracking : Az 356, El 6.
+[02:15:50]  Forked Safe Amplifier Process.(ON, Timer)
+[02:16:00]  Tracking : Az 353, El 9.
+[02:16:02]  Tracking : Az 353, El 9.
+[02:16:22]  Tracking : Az 351, El 11.
+[02:16:24]  Tracking : Az 351, El 11.
+[02:16:30]  Ping Failed.
+[02:16:40]  Tracking : Az 349, El 12.
+[02:16:43]  Tracking : Az 349, El 13.
+[02:17:03]  Tracking : Az 346, El 15.
+[02:17:05]  Tracking : Az 346, El 15.
+[02:17:16]  Tracking : Az 344, El 16.
+[02:17:29]  Tracking : Az 342, El 18.
+[02:17:31]  Tracking : Az 342, El 18.
+[02:17:44]  Tracking : Az 339, El 19.
+[02:17:46]  Tracking : Az 339, El 20.
+[02:17:52]  Ping Success at node 5, 461ms
+[02:17:58]  Tracking : Az 336, El 21.
+[02:18:11]  Tracking : Az 333, El 23.
+[02:18:14]  Tracking : Az 332, El 23.
+[02:18:24]  Tracking : Az 330, El 25.
+[02:18:26]  Tracking : Az 329, El 25.
+[02:18:35]  Tracking : Az 326, El 26.
+[02:18:38]  Tracking : Az 325, El 27.
+[02:18:47]  Tracking : Az 322, El 28.
+[02:18:49]  Tracking : Az 321, El 28.
+[02:18:57]  Tracking : Az 318, El 29.
+[02:19:00]  Tracking : Az 317, El 29.
+[02:19:07]  Tracking : Az 314, El 30.
+[02:19:09]  Ping Success at node 5, 468ms
+[02:19:09]  Tracking : Az 313, El 30.
+[02:19:16]  Tracking : Az 310, El 31.
+[02:19:18]  Tracking : Az 309, El 31.
+[02:19:25]  Tracking : Az 306, El 32.
+[02:19:27]  Tracking : Az 305, El 32.
+[02:19:33]  Tracking : Az 302, El 33.
+[02:19:35]  Tracking : Az 301, El 33.
+[02:19:43]  Tracking : Az 297, El 33.
+[02:19:45]  Tracking : Az 296, El 33.
+[02:19:51]  Tracking : Az 293, El 33.
+[02:19:53]  Tracking : Az 292, El 34.
+[02:19:58]  Ping Failed.
+[02:20:00]  Tracking : Az 288, El 34.
+[02:20:02]  Tracking : Az 287, El 34.
+[02:20:08]  Tracking : Az 284, El 34.
+[02:20:10]  Tracking : Az 283, El 34.
+[02:20:14]  Tracking : Az 281, El 33.
+[02:20:17]  Tracking : Az 279, El 33.
+[02:20:23]  Tracking : Az 276, El 33.
+[02:20:25]  Tracking : Az 275, El 33.
+[02:20:29]  Ping Success at node 5, 463ms
+[02:20:31]  Tracking : Az 272, El 32.
+[02:20:33]  Tracking : Az 271, El 32.
+[02:20:39]  Tracking : Az 268, El 32.
+[02:20:41]  Tracking : Az 267, El 32.
+[02:20:48]  Tracking : Az 264, El 31.
+[02:20:50]  Tracking : Az 263, El 31.
+[02:20:57]  Tracking : Az 260, El 30.
+[02:20:59]  Tracking : Az 259, El 30.
+[02:21:04]  Ping Success at node 5, 468ms
+[02:21:07]  Tracking : Az 256, El 29.
+[02:21:09]  Tracking : Az 255, El 28.
+[02:21:17]  Tracking : Az 252, El 27.
+[02:21:20]  Tracking : Az 251, El 27.
+[02:21:26]  Tracking : Az 249, El 26.
+[02:21:35]  Tracking : Az 246, El 25.
+[02:21:46]  Tracking : Az 243, El 23.
+[02:21:57]  Tracking : Az 240, El 22.
+[02:21:59]  Tracking : Az 240, El 22.
+[02:22:10]  Tracking : Az 237, El 20.
+[02:22:12]  Tracking : Az 237, El 20.
+[02:22:20]  Ping Success at node 5, 457ms
+[02:22:25]  Tracking : Az 234, El 18.
+[02:22:27]  Tracking : Az 234, El 18.
+[02:22:42]  Tracking : Az 231, El 16.
+[02:22:47]  Ping Success at node 5, 471ms
+[02:23:01]  Tracking : Az 228, El 14.
+[02:23:24]  Tracking : Az 225, El 12.
+[02:23:26]  Ping Success at node 5, 464ms
+[02:23:26]  Tracking : Az 225, El 12.
+[02:23:50]  Tracking : Az 223, El 9.
+[02:23:52]  Ping Success at node 5, 475ms
+[02:23:52]  Tracking : Az 223, El 9.
+[02:24:16]  Tracking : Az 220, El 7.
+[02:24:18]  Ping Success at node 5, 471ms
+[02:24:18]  Tracking : Az 220, El 7.
+[02:24:57]  Tracking : Az 217, El 4.
+[02:24:59]  Tracking : Az 217, El 4.
+[02:25:01]  Ping Failed.
+[02:25:27]  Forked Safe Amplifier Process. (OFF)
+[02:25:31]  Finish Engaging.
+[02:25:31]  Beacon Success : 0, Ping Success : 9
+[02:25:41]  Tracking : Az 0, El 0.
+

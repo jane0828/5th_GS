@@ -1,0 +1,92 @@
+2026-01-08 13:30
+[13:30:59]  Connect to Switch Box.............Success.
+[13:30:59]  Connect to Rotator................Success.
+[13:30:59]  Connect to GS100..................Success.
+[13:30:59]  TM Port 13 bind success.
+[13:30:59]  BCN Port 31 bind success.
+[13:30:59]  RPT Port 25 bind success.
+[13:30:59]  Event Port 27 bind success.
+[13:30:59]  COSMIC Beacon Port 23 bind success.
+[13:30:59]  COSMIC Report Port 24 bind success.
+[13:31:02]  TLE "cubesat" Download Completed.
+[13:31:07]  Start Engaging.
+[13:31:07]  Tracking : Az 273, El 33.
+[13:31:08]  Start Doppler Correction.
+[13:31:09]  Tracking : Az 274, El 33.
+[13:31:11]  Tracking : Az 275, El 33.
+[13:31:14]  Ping Failed.
+[13:31:16]  Tracking : Az 278, El 33.
+[13:31:16]  Forked Safe Amplifier Process.(ON, Timer)
+[13:31:17]  Ping Failed.
+[13:31:19]  Ping Success at node 5, 457ms
+[13:31:22]  Tracking : Az 281, El 32.
+[13:31:28]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:31:28]  Tracking : Az 284, El 32.
+[13:31:29]  Received Report from port : 25.
+[13:31:31]  Received Report from port : 25.
+[13:31:33]  Received Report from port : 25.
+[13:31:35]  Tracking : Az 287, El 31.
+[13:31:42]  Tracking : Az 290, El 30.
+[13:31:49]  Tracking : Az 293, El 29.
+[13:31:51]  Tracking : Az 294, El 29.
+[13:31:59]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[13:31:59]  Tracking : Az 297, El 28.
+[13:32:00]  Received Report from port : 25.
+[13:32:02]  Received Report from port : 25.
+[13:32:04]  Received Report from port : 25.
+[13:32:07]  Tracking : Az 299, El 27.
+[13:32:07]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[13:32:08]  Received Report from port : 25.
+[13:32:10]  Received Report from port : 25.
+[13:32:12]  Received Report from port : 25.
+[13:32:14]  Tracking : Az 302, El 26.
+[13:32:18]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:32:18]  Received Report from port : 25.
+[13:32:20]  Received Report from port : 25.
+[13:32:23]  Received Report from port : 25.
+[13:32:23]  Tracking : Az 305, El 25.
+[13:32:34]  Tracking : Az 308, El 23.
+[13:32:41]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x1 0x0 0x16
+[13:32:42]  Received Report from port : 25.
+[13:32:44]  Received Report from port : 25.
+[13:32:45]  Tracking : Az 311, El 22.
+[13:32:46]  Received Report from port : 25.
+[13:32:54]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x2 0x3 0x17
+[13:32:55]  Received Report from port : 25.
+[13:32:57]  Received Report from port : 25.
+[13:32:58]  Tracking : Az 314, El 20.
+[13:33:13]  Tracking : Az 317, El 18.
+[13:33:17]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x3 0x6 0x13
+[13:33:30]  Tracking : Az 320, El 16.
+[13:33:34]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x2 0x3 0x17
+[13:33:35]  Received Report from port : 25.
+[13:33:37]  Received Report from port : 25.
+[13:33:39]  Received Report from port : 25.
+[13:33:48]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x3 0x6 0x13
+[13:33:49]  Received Report from port : 25.
+[13:33:50]  Tracking : Az 323, El 14.
+[13:33:51]  Received Report from port : 25.
+[13:33:53]  Received Report from port : 25.
+[13:34:04]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x3 0x6 0x10
+[13:34:10]  Tracking : Az 325, El 12.
+[13:34:17]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x3 0x6 0x10
+[13:34:37]  Tracking : Az 328, El 9.
+[13:34:42]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x1 0x0 0x16
+[13:34:46]  Ping Success at node 5, 470ms
+[13:34:51]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x1 0x0 0x16
+[13:35:03]  Tracking : Az 331, El 7.
+[13:35:05]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:35:12]  Cannot Load Remote Parameter.
+[13:35:16]  Ping Failed.
+[13:35:23]  Ping Success at node 5, 480ms
+[13:35:27]  Cannot Load Remote Parameter.
+[13:35:28]  Tracking : Az 333, El 5.
+[13:35:33]  Cannot Load Remote Parameter.
+[13:35:37]  Ping Failed.
+[13:35:42]  Ping Failed.
+[13:35:49]  Ping Failed.
+[13:35:50]  Forked Safe Amplifier Process. (OFF)
+[13:35:52]  Finish Engaging.
+[13:35:52]  Beacon Success : 0, Ping Success : 3
+[13:35:52]  Tracking : Az 0, El 0.
+[13:39:20]  TLE "cubesat" Download Completed.

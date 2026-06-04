@@ -1,0 +1,1977 @@
+[19:29:28]  Connect to Switch Box.............Success.
+[19:29:28]  Connect to Rotator................Success.
+[19:29:28]  Connect to GS100..................Success.
+[19:29:28]  TM Port 13 bind success.
+[19:29:28]  BCN Port 31 bind success.
+[19:29:28]  RPT Port 25 bind success.
+[19:29:28]  Event Port 27 bind success.
+[19:29:28]  COSMIC Beacon Port 23 bind success.
+[19:29:28]  COSMIC Report Port 24 bind success.
+[19:29:39]  TLE "cubesat" Download Completed.
+[19:29:43]  CUTE-1 (CO-55)	Error: (e <= -0.001)	
+[19:29:47]  AEROCUBE 8C	Error: (e <= -0.001)	
+[19:29:51]  CORVUS BC2	Error: (e <= -0.001)	
+[19:29:54]  CORVUS BC1	Error: (e <= -0.001)	
+[19:29:56]  SIRION PATHFINDER-2	Error: (e <= -0.001)	
+[19:29:58]  WILDTRACKCUBE-SIMBA	Error: (e <= -0.001)	
+[19:30:04]  [Auto]Start AutoPilot.
+[19:30:04]  [Auto]Start Autopilot. Next Valuable AOS : 1/9 19:29:59
+[19:30:04]  [Auto]Max Elevation : 50.48° Please Keep Devices On.
+[19:30:04]  [Auto]Start Engaging.
+[19:30:04]  Azimuth : 236, Elevation : 12
+
+[19:30:04]  Tracking : Az 236, El 12.
+[19:30:04]  [Auto]Start Doppler Correction.
+[19:30:04]  TX : 436496502, RX : 436503497
+[19:30:04]  AMP Process running
+[19:30:04]  AMP Process running
+[19:30:04]  AMP Process running
+[19:30:04]  AMP Process running
+[19:30:04]  AMP Process running
+[19:30:04]  AMP Process running
+[19:30:04]  AMP Process running
+[19:30:04]  AMP Process running
+[19:30:05]  AMP Process running
+[19:30:05]  AMP Process running
+[19:30:05]  AMP Process running
+[19:30:05]  AMP Process running
+[19:30:05]  TX : 436496502, RX : 436503497
+[19:30:05]  AMP Process running
+[19:30:05]  TX : 436496502, RX : 436503497
+[19:30:05]  AMP Process running
+[19:30:05]  AMP Process running
+[19:30:05]  TX : 436496502, RX : 436503497
+[19:30:05]  AMP Process running
+[19:30:05]  TX : 436496502, RX : 436503497
+[19:30:05]  AMP Process running
+[19:30:05]  TX : 436496502, RX : 436503497
+[19:30:05]  AMP Process running
+[19:30:05]  AMP Process running
+[19:30:05]  TX : 436496502, RX : 436503497
+[19:30:05]  AMP Process running
+[19:30:05]  TX : 436496502, RX : 436503497
+[19:30:05]  AMP Process running
+[19:30:05]  TX : 436496502, RX : 436503497
+[19:30:05]  AMP Process running
+[19:30:05]  TX : 436496503, RX : 436503496
+[19:30:05]  AMP Process running
+[19:30:05]  AMP Process running
+[19:30:05]  TX : 436496503, RX : 436503496
+[19:30:05]  AMP Process running
+[19:30:05]  TX : 436496503, RX : 436503496
+[19:30:05]  AMP Process running
+[19:30:05]  TX : 436496503, RX : 436503496
+[19:30:05]  AMP Process running
+[19:30:05]  TX : 436496503, RX : 436503496
+[19:30:05]  AMP Process running
+[19:30:06]  AMP Process running
+[19:30:06]  TX : 436496503, RX : 436503496
+[19:30:06]  AMP Process running
+[19:30:06]  TX : 436496503, RX : 436503496
+[19:30:06]  AMP Process running
+[19:30:06]  TX : 436496503, RX : 436503496
+[19:30:06]  AMP Process running
+[19:30:06]  AMP Process running
+[19:30:06]  TX : 436496503, RX : 436503496
+[19:30:06]  AMP Process running
+[19:30:06]  TX : 436496503, RX : 436503496
+[19:30:06]  AMP Process running
+[19:30:06]  TX : 436496503, RX : 436503496
+[19:30:06]  AMP Process running
+[19:30:06]  TX : 436496503, RX : 436503496
+[19:30:06]  AMP Process running
+[19:30:06]  AMP Process running
+[19:30:06]  TX : 436496503, RX : 436503496
+[19:30:06]  AMP Process running
+[19:30:06]  TX : 436496503, RX : 436503496
+[19:30:06]  AMP Process running
+[19:30:06]  TX : 436496503, RX : 436503496
+[19:30:06]  AMP Process running
+[19:30:06]  Azimuth : 236, Elevation : 12
+
+[19:30:06]  Tracking : Az 236, El 12.
+[19:30:06]  AMP Process running
+[19:30:06]  AMP Process running
+[19:30:06]  AMP Process running
+[19:30:06]  AMP Process running
+[19:30:06]  AMP Process running
+[19:30:06]  AMP Process running
+[19:30:06]  AMP Process running
+[19:30:07]  AMP Process running
+[19:30:07]  AMP Process running
+[19:30:07]  AMP Process running
+[19:30:07]  AMP Process running
+[19:30:07]  TX : 436496504, RX : 436503495
+[19:30:07]  AMP Process running
+[19:30:07]  TX : 436496504, RX : 436503495
+[19:30:07]  AMP Process running
+[19:30:07]  AMP Process running
+[19:30:07]  TX : 436496504, RX : 436503495
+[19:30:07]  AMP Process running
+[19:30:07]  TX : 436496504, RX : 436503495
+[19:30:07]  AMP Process running
+[19:30:07]  TX : 436496504, RX : 436503495
+[19:30:07]  AMP Process running
+[19:30:07]  TX : 436496504, RX : 436503495
+[19:30:07]  AMP Process running
+[19:30:07]  AMP Process running
+[19:30:07]  TX : 436496504, RX : 436503495
+[19:30:07]  AMP Process running
+[19:30:07]  TX : 436496504, RX : 436503495
+[19:30:07]  AMP Process running
+[19:30:07]  TX : 436496504, RX : 436503495
+[19:30:07]  AMP Process running
+[19:30:07]  TX : 436496504, RX : 436503495
+[19:30:07]  AMP Process running
+[19:30:07]  AMP Process running
+[19:30:07]  TX : 436496504, RX : 436503495
+[19:30:07]  AMP Process running
+[19:30:07]  TX : 436496504, RX : 436503495
+[19:30:07]  AMP Process running
+[19:30:07]  TX : 436496504, RX : 436503495
+[19:30:07]  AMP Process running
+[19:30:08]  AMP Process running
+[19:30:08]  TX : 436496504, RX : 436503495
+[19:30:08]  AMP Process running
+[19:30:08]  TX : 436496504, RX : 436503495
+[19:30:08]  AMP Process running
+[19:30:08]  TX : 436496504, RX : 436503495
+[19:30:08]  AMP Process running
+[19:30:08]  TX : 436496504, RX : 436503495
+[19:30:08]  AMP Process running
+[19:30:08]  AMP Process running
+[19:30:08]  TX : 436496504, RX : 436503495
+[19:30:08]  AMP Process running
+[19:30:08]  TX : 436496504, RX : 436503495
+[19:30:08]  AMP Process running
+[19:30:08]  TX : 436496505, RX : 436503494
+[19:30:08]  AMP Process running
+[19:30:08]  AMP Process running
+[19:30:08]  TX : 436496505, RX : 436503494
+[19:30:08]  AMP Process running
+[19:30:08]  TX : 436496505, RX : 436503494
+[19:30:08]  AMP Process running
+[19:30:08]  TX : 436496505, RX : 436503494
+[19:30:08]  AMP Process running
+[19:30:08]  Azimuth : 236, Elevation : 12
+
+[19:30:08]  Tracking : Az 236, El 12.
+[19:30:08]  AMP Process running
+[19:30:08]  AMP Process running
+[19:30:08]  AMP Process running
+[19:30:08]  AMP Process running
+[19:30:08]  AMP Process running
+[19:30:08]  AMP Process running
+[19:30:09]  AMP Process running
+[19:30:09]  AMP Process running
+[19:30:09]  AMP Process running
+[19:30:09]  AMP Process running
+[19:30:09]  AMP Process running
+[19:30:09]  TX : 436496505, RX : 436503494
+[19:30:09]  AMP Process running
+[19:30:09]  TX : 436496505, RX : 436503494
+[19:30:09]  AMP Process running
+[19:30:09]  TX : 436496505, RX : 436503494
+[19:30:09]  AMP Process running
+[19:30:09]  AMP Process running
+[19:30:09]  TX : 436496505, RX : 436503494
+[19:30:09]  AMP Process running
+[19:30:09]  TX : 436496505, RX : 436503494
+[19:30:09]  AMP Process running
+[19:30:09]  TX : 436496505, RX : 436503494
+[19:30:09]  AMP Process running
+[19:30:09]  AMP Process running
+[19:30:09]  TX : 436496505, RX : 436503494
+[19:30:09]  AMP Process running
+[19:30:09]  TX : 436496505, RX : 436503494
+[19:30:09]  AMP Process running
+[19:30:09]  TX : 436496506, RX : 436503493
+[19:30:09]  AMP Process running
+[19:30:09]  TX : 436496506, RX : 436503493
+[19:30:09]  AMP Process running
+[19:30:09]  AMP Process running
+[19:30:09]  TX : 436496506, RX : 436503493
+[19:30:09]  AMP Process running
+[19:30:09]  TX : 436496506, RX : 436503493
+[19:30:09]  AMP Process running
+[19:30:09]  TX : 436496506, RX : 436503493
+[19:30:10]  AMP Process running
+[19:30:10]  TX : 436496506, RX : 436503493
+[19:30:10]  AMP Process running
+[19:30:10]  AMP Process running
+[19:30:10]  TX : 436496506, RX : 436503493
+[19:30:10]  AMP Process running
+[19:30:10]  TX : 436496506, RX : 436503493
+[19:30:10]  AMP Process running
+[19:30:10]  TX : 436496506, RX : 436503493
+[19:30:10]  AMP Process running
+[19:30:10]  AMP Process running
+[19:30:10]  TX : 436496506, RX : 436503493
+[19:30:10]  AMP Process running
+[19:30:10]  TX : 436496506, RX : 436503493
+[19:30:10]  AMP Process running
+[19:30:10]  TX : 436496506, RX : 436503493
+[19:30:10]  AMP Process running
+[19:30:10]  TX : 436496506, RX : 436503493
+[19:30:10]  AMP Process running
+[19:30:10]  AMP Process running
+[19:30:10]  TX : 436496506, RX : 436503493
+[19:30:10]  AMP Process running
+[19:30:10]  TX : 436496506, RX : 436503493
+[19:30:10]  AMP Process running
+[19:30:10]  Azimuth : 236, Elevation : 12
+
+[19:30:10]  Tracking : Az 236, El 12.
+[19:30:10]  AMP Process running
+[19:30:10]  AMP Process running
+[19:30:10]  AMP Process running
+[19:30:10]  AMP Process running
+[19:30:10]  AMP Process running
+[19:30:10]  AMP Process running
+[19:30:11]  AMP Process running
+[19:30:11]  AMP Process running
+[19:30:11]  AMP Process running
+[19:30:11]  AMP Process running
+[19:30:11]  AMP Process running
+[19:30:11]  TX : 436496507, RX : 436503492
+[19:30:11]  AMP Process running
+[19:30:11]  TX : 436496507, RX : 436503492
+[19:30:11]  AMP Process running
+[19:30:11]  TX : 436496507, RX : 436503492
+[19:30:11]  AMP Process running
+[19:30:11]  AMP Process running
+[19:30:11]  TX : 436496507, RX : 436503492
+[19:30:11]  AMP Process running
+[19:30:11]  TX : 436496507, RX : 436503492
+[19:30:11]  AMP Process running
+[19:30:11]  TX : 436496507, RX : 436503492
+[19:30:11]  AMP Process running
+[19:30:11]  TX : 436496507, RX : 436503492
+[19:30:11]  AMP Process running
+[19:30:11]  AMP Process running
+[19:30:11]  TX : 436496507, RX : 436503492
+[19:30:11]  AMP Process running
+[19:30:11]  TX : 436496507, RX : 436503492
+[19:30:11]  AMP Process running
+[19:30:11]  TX : 436496507, RX : 436503492
+[19:30:11]  AMP Process running
+[19:30:11]  AMP Process running
+[19:30:11]  TX : 436496507, RX : 436503492
+[19:30:11]  AMP Process running
+[19:30:11]  TX : 436496507, RX : 436503492
+[19:30:11]  AMP Process running
+[19:30:11]  TX : 436496507, RX : 436503492
+[19:30:12]  AMP Process running
+[19:30:12]  TX : 436496507, RX : 436503492
+[19:30:12]  AMP Process running
+[19:30:12]  AMP Process running
+[19:30:12]  TX : 436496507, RX : 436503492
+[19:30:12]  AMP Process running
+[19:30:12]  TX : 436496507, RX : 436503492
+[19:30:12]  AMP Process running
+[19:30:12]  TX : 436496507, RX : 436503492
+[19:30:12]  AMP Process running
+[19:30:12]  TX : 436496507, RX : 436503492
+[19:30:12]  AMP Process running
+[19:30:12]  AMP Process running
+[19:30:12]  TX : 436496508, RX : 436503491
+[19:30:12]  AMP Process running
+[19:30:12]  TX : 436496508, RX : 436503491
+[19:30:12]  AMP Process running
+[19:30:12]  TX : 436496508, RX : 436503491
+[19:30:12]  AMP Process running
+[19:30:12]  AMP Process running
+[19:30:12]  TX : 436496508, RX : 436503491
+[19:30:12]  AMP Process running
+[19:30:12]  TX : 436496508, RX : 436503491
+[19:30:12]  AMP Process running
+[19:30:12]  Azimuth : 236, Elevation : 12
+
+[19:30:12]  Tracking : Az 236, El 12.
+[19:30:12]  AMP Process running
+[19:30:12]  AMP Process running
+[19:30:12]  AMP Process running
+[19:30:12]  AMP Process running
+[19:30:12]  AMP Process running
+[19:30:12]  AMP Process running
+[19:30:13]  AMP Process running
+[19:30:13]  AMP Process running
+[19:30:13]  AMP Process running
+[19:30:13]  AMP Process running
+[19:30:13]  AMP Process running
+[19:30:13]  TX : 436496508, RX : 436503491
+[19:30:13]  AMP Process running
+[19:30:13]  TX : 436496508, RX : 436503491
+[19:30:13]  AMP Process running
+[19:30:13]  TX : 436496508, RX : 436503491
+[19:30:13]  AMP Process running
+[19:30:13]  AMP Process running
+[19:30:13]  TX : 436496508, RX : 436503491
+[19:30:13]  AMP Process running
+[19:30:13]  TX : 436496508, RX : 436503491
+[19:30:13]  AMP Process running
+[19:30:13]  TX : 436496508, RX : 436503491
+[19:30:13]  AMP Process running
+[19:30:13]  TX : 436496508, RX : 436503491
+[19:30:13]  AMP Process running
+[19:30:13]  AMP Process running
+[19:30:13]  TX : 436496508, RX : 436503491
+[19:30:13]  AMP Process running
+[19:30:13]  TX : 436496509, RX : 436503490
+[19:30:13]  AMP Process running
+[19:30:13]  TX : 436496509, RX : 436503490
+[19:30:13]  AMP Process running
+[19:30:13]  TX : 436496509, RX : 436503490
+[19:30:13]  AMP Process running
+[19:30:13]  AMP Process running
+[19:30:13]  TX : 436496509, RX : 436503490
+[19:30:13]  AMP Process running
+[19:30:13]  TX : 436496509, RX : 436503490
+[19:30:14]  AMP Process running
+[19:30:14]  TX : 436496509, RX : 436503490
+[19:30:14]  AMP Process running
+[19:30:14]  AMP Process running
+[19:30:14]  TX : 436496509, RX : 436503490
+[19:30:14]  AMP Process running
+[19:30:14]  TX : 436496509, RX : 436503490
+[19:30:14]  AMP Process running
+[19:30:14]  TX : 436496509, RX : 436503490
+[19:30:14]  AMP Process running
+[19:30:14]  TX : 436496509, RX : 436503490
+[19:30:14]  AMP Process running
+[19:30:14]  AMP Process running
+[19:30:14]  TX : 436496509, RX : 436503490
+[19:30:14]  AMP Process running
+[19:30:14]  TX : 436496509, RX : 436503490
+[19:30:14]  AMP Process running
+[19:30:14]  TX : 436496509, RX : 436503490
+[19:30:14]  AMP Process running
+[19:30:14]  TX : 436496509, RX : 436503490
+[19:30:14]  AMP Process running
+[19:30:14]  AMP Process running
+[19:30:14]  TX : 436496509, RX : 436503490
+[19:30:14]  AMP Process running
+[19:30:14]  Azimuth : 236, Elevation : 12
+
+[19:30:14]  Tracking : Az 236, El 12.
+[19:30:14]  AMP Process running
+[19:30:14]  AMP Process running
+[19:30:14]  AMP Process running
+[19:30:14]  AMP Process running
+[19:30:14]  AMP Process running
+[19:30:14]  AMP Process running
+[19:30:15]  AMP Process running
+[19:30:15]  AMP Process running
+[19:30:15]  AMP Process running
+[19:30:15]  AMP Process running
+[19:30:15]  AMP Process running
+[19:30:15]  TX : 436496510, RX : 436503489
+[19:30:15]  AMP Process running
+[19:30:15]  TX : 436496510, RX : 436503489
+[19:30:15]  AMP Process running
+[19:30:15]  TX : 436496510, RX : 436503489
+[19:30:15]  AMP Process running
+[19:30:15]  TX : 436496510, RX : 436503489
+[19:30:15]  AMP Process running
+[19:30:15]  AMP Process running
+[19:30:15]  TX : 436496510, RX : 436503489
+[19:30:15]  AMP Process running
+[19:30:15]  TX : 436496510, RX : 436503489
+[19:30:15]  AMP Process running
+[19:30:15]  TX : 436496510, RX : 436503489
+[19:30:15]  AMP Process running
+[19:30:15]  AMP Process running
+[19:30:15]  TX : 436496510, RX : 436503489
+[19:30:15]  AMP Process running
+[19:30:15]  TX : 436496510, RX : 436503489
+[19:30:15]  AMP Process running
+[19:30:15]  TX : 436496510, RX : 436503489
+[19:30:15]  AMP Process running
+[19:30:15]  TX : 436496510, RX : 436503489
+[19:30:15]  AMP Process running
+[19:30:15]  AMP Process running
+[19:30:15]  TX : 436496510, RX : 436503489
+[19:30:15]  AMP Process running
+[19:30:15]  TX : 436496510, RX : 436503489
+[19:30:16]  AMP Process running
+[19:30:16]  TX : 436496510, RX : 436503489
+[19:30:16]  AMP Process running
+[19:30:16]  TX : 436496510, RX : 436503489
+[19:30:16]  AMP Process running
+[19:30:16]  AMP Process running
+[19:30:16]  TX : 436496510, RX : 436503489
+[19:30:16]  AMP Process running
+[19:30:16]  TX : 436496510, RX : 436503489
+[19:30:16]  AMP Process running
+[19:30:16]  TX : 436496510, RX : 436503489
+[19:30:16]  AMP Process running
+[19:30:16]  AMP Process running
+[19:30:16]  TX : 436496511, RX : 436503488
+[19:30:16]  AMP Process running
+[19:30:16]  TX : 436496511, RX : 436503488
+[19:30:16]  AMP Process running
+[19:30:16]  TX : 436496511, RX : 436503488
+[19:30:16]  AMP Process running
+[19:30:16]  TX : 436496511, RX : 436503488
+[19:30:16]  AMP Process running
+[19:30:16]  AMP Process running
+[19:30:16]  TX : 436496511, RX : 436503488
+[19:30:16]  AMP Process running
+[19:30:16]  Azimuth : 236, Elevation : 12
+
+[19:30:16]  Tracking : Az 236, El 12.
+[19:30:16]  AMP Process running
+[19:30:16]  AMP Process running
+[19:30:16]  AMP Process running
+[19:30:16]  AMP Process running
+[19:30:16]  AMP Process running
+[19:30:16]  AMP Process running
+[19:30:17]  AMP Process running
+[19:30:17]  AMP Process running
+[19:30:17]  AMP Process running
+[19:30:17]  AMP Process running
+[19:30:17]  AMP Process running
+[19:30:17]  TX : 436496511, RX : 436503488
+[19:30:17]  AMP Process running
+[19:30:17]  TX : 436496511, RX : 436503488
+[19:30:17]  AMP Process running
+[19:30:17]  TX : 436496511, RX : 436503488
+[19:30:17]  AMP Process running
+[19:30:17]  TX : 436496511, RX : 436503488
+[19:30:17]  AMP Process running
+[19:30:17]  AMP Process running
+[19:30:17]  TX : 436496511, RX : 436503488
+[19:30:17]  AMP Process running
+[19:30:17]  TX : 436496511, RX : 436503488
+[19:30:17]  AMP Process running
+[19:30:17]  TX : 436496511, RX : 436503488
+[19:30:17]  AMP Process running
+[19:30:17]  TX : 436496512, RX : 436503487
+[19:30:17]  AMP Process running
+[19:30:17]  AMP Process running
+[19:30:17]  TX : 436496512, RX : 436503487
+[19:30:17]  AMP Process running
+[19:30:17]  TX : 436496512, RX : 436503487
+[19:30:17]  AMP Process running
+[19:30:17]  TX : 436496512, RX : 436503487
+[19:30:17]  AMP Process running
+[19:30:17]  AMP Process running
+[19:30:17]  TX : 436496512, RX : 436503487
+[19:30:17]  AMP Process running
+[19:30:17]  TX : 436496512, RX : 436503487
+[19:30:18]  AMP Process running
+[19:30:18]  TX : 436496512, RX : 436503487
+[19:30:18]  AMP Process running
+[19:30:18]  TX : 436496512, RX : 436503487
+[19:30:18]  AMP Process running
+[19:30:18]  AMP Process running
+[19:30:18]  TX : 436496512, RX : 436503487
+[19:30:18]  AMP Process running
+[19:30:18]  TX : 436496512, RX : 436503487
+[19:30:18]  AMP Process running
+[19:30:18]  TX : 436496512, RX : 436503487
+[19:30:18]  AMP Process running
+[19:30:18]  TX : 436496512, RX : 436503487
+[19:30:18]  AMP Process running
+[19:30:18]  AMP Process running
+[19:30:18]  TX : 436496512, RX : 436503487
+[19:30:18]  AMP Process running
+[19:30:18]  TX : 436496512, RX : 436503487
+[19:30:18]  AMP Process running
+[19:30:18]  TX : 436496512, RX : 436503487
+[19:30:18]  AMP Process running
+[19:30:18]  AMP Process running
+[19:30:18]  TX : 436496512, RX : 436503487
+[19:30:18]  AMP Process running
+[19:30:18]  Azimuth : 237, Elevation : 12
+
+[19:30:18]  Tracking : Az 237, El 12.
+[19:30:18]  AMP Process running
+[19:30:18]  AMP Process running
+[19:30:18]  AMP Process running
+[19:30:18]  AMP Process running
+[19:30:18]  AMP Process running
+[19:30:18]  AMP Process running
+[19:30:19]  AMP Process running
+[19:30:19]  AMP Process running
+[19:30:19]  AMP Process running
+[19:30:19]  AMP Process running
+[19:30:19]  AMP Process running
+[19:30:19]  TX : 436496513, RX : 436503486
+[19:30:19]  AMP Process running
+[19:30:19]  TX : 436496513, RX : 436503486
+[19:30:19]  AMP Process running
+[19:30:19]  TX : 436496513, RX : 436503486
+[19:30:19]  AMP Process running
+[19:30:19]  TX : 436496513, RX : 436503486
+[19:30:19]  AMP Process running
+[19:30:19]  TX : 436496513, RX : 436503486
+[19:30:19]  AMP Process running
+[19:30:19]  AMP Process running
+[19:30:19]  TX : 436496513, RX : 436503486
+[19:30:19]  AMP Process running
+[19:30:19]  TX : 436496513, RX : 436503486
+[19:30:19]  AMP Process running
+[19:30:19]  TX : 436496513, RX : 436503486
+[19:30:19]  AMP Process running
+[19:30:19]  AMP Process running
+[19:30:19]  TX : 436496513, RX : 436503486
+[19:30:19]  AMP Process running
+[19:30:19]  TX : 436496513, RX : 436503486
+[19:30:19]  AMP Process running
+[19:30:19]  TX : 436496513, RX : 436503486
+[19:30:19]  AMP Process running
+[19:30:19]  TX : 436496513, RX : 436503486
+[19:30:19]  AMP Process running
+[19:30:19]  AMP Process running
+[19:30:19]  TX : 436496513, RX : 436503486
+[19:30:20]  AMP Process running
+[19:30:20]  TX : 436496513, RX : 436503486
+[19:30:20]  AMP Process running
+[19:30:20]  TX : 436496513, RX : 436503486
+[19:30:20]  AMP Process running
+[19:30:20]  AMP Process running
+[19:30:20]  TX : 436496513, RX : 436503486
+[19:30:20]  AMP Process running
+[19:30:20]  TX : 436496513, RX : 436503486
+[19:30:20]  AMP Process running
+[19:30:20]  TX : 436496514, RX : 436503485
+[19:30:20]  AMP Process running
+[19:30:20]  TX : 436496514, RX : 436503485
+[19:30:20]  AMP Process running
+[19:30:20]  AMP Process running
+[19:30:20]  TX : 436496514, RX : 436503485
+[19:30:20]  AMP Process running
+[19:30:20]  TX : 436496514, RX : 436503485
+[19:30:20]  AMP Process running
+[19:30:20]  TX : 436496514, RX : 436503485
+[19:30:20]  AMP Process running
+[19:30:20]  TX : 436496514, RX : 436503485
+[19:30:20]  AMP Process running
+[19:30:20]  AMP Process running
+[19:30:20]  Azimuth : 237, Elevation : 12
+
+[19:30:20]  Tracking : Az 237, El 12.
+[19:30:20]  AMP Process running
+[19:30:20]  AMP Process running
+[19:30:20]  AMP Process running
+[19:30:20]  AMP Process running
+[19:30:20]  AMP Process running
+[19:30:20]  AMP Process running
+[19:30:21]  AMP Process running
+[19:30:21]  AMP Process running
+[19:30:21]  AMP Process running
+[19:30:21]  AMP Process running
+[19:30:21]  TX : 436496514, RX : 436503485
+[19:30:21]  AMP Process running
+[19:30:21]  AMP Process running
+[19:30:21]  TX : 436496514, RX : 436503485
+[19:30:21]  AMP Process running
+[19:30:21]  TX : 436496514, RX : 436503485
+[19:30:21]  AMP Process running
+[19:30:21]  TX : 436496514, RX : 436503485
+[19:30:21]  AMP Process running
+[19:30:21]  TX : 436496514, RX : 436503485
+[19:30:21]  AMP Process running
+[19:30:21]  AMP Process running
+[19:30:21]  TX : 436496514, RX : 436503485
+[19:30:21]  AMP Process running
+[19:30:21]  TX : 436496515, RX : 436503484
+[19:30:21]  AMP Process running
+[19:30:21]  TX : 436496515, RX : 436503484
+[19:30:21]  AMP Process running
+[19:30:21]  TX : 436496515, RX : 436503484
+[19:30:21]  AMP Process running
+[19:30:21]  AMP Process running
+[19:30:21]  TX : 436496515, RX : 436503484
+[19:30:21]  AMP Process running
+[19:30:21]  TX : 436496515, RX : 436503484
+[19:30:21]  AMP Process running
+[19:30:21]  TX : 436496515, RX : 436503484
+[19:30:21]  AMP Process running
+[19:30:21]  AMP Process running
+[19:30:21]  TX : 436496515, RX : 436503484
+[19:30:22]  AMP Process running
+[19:30:22]  TX : 436496515, RX : 436503484
+[19:30:22]  AMP Process running
+[19:30:22]  TX : 436496515, RX : 436503484
+[19:30:22]  AMP Process running
+[19:30:22]  TX : 436496515, RX : 436503484
+[19:30:22]  AMP Process running
+[19:30:22]  AMP Process running
+[19:30:22]  TX : 436496515, RX : 436503484
+[19:30:22]  AMP Process running
+[19:30:22]  TX : 436496515, RX : 436503484
+[19:30:22]  AMP Process running
+[19:30:22]  TX : 436496515, RX : 436503484
+[19:30:22]  AMP Process running
+[19:30:22]  AMP Process running
+[19:30:22]  TX : 436496515, RX : 436503484
+[19:30:22]  AMP Process running
+[19:30:22]  TX : 436496515, RX : 436503484
+[19:30:22]  AMP Process running
+[19:30:22]  TX : 436496515, RX : 436503484
+[19:30:22]  AMP Process running
+[19:30:22]  TX : 436496515, RX : 436503484
+[19:30:22]  AMP Process running
+[19:30:22]  AMP Process running
+[19:30:22]  Azimuth : 237, Elevation : 12
+
+[19:30:22]  Tracking : Az 237, El 12.
+[19:30:22]  AMP Process running
+[19:30:22]  AMP Process running
+[19:30:22]  AMP Process running
+[19:30:22]  AMP Process running
+[19:30:22]  AMP Process running
+[19:30:22]  AMP Process running
+[19:30:23]  AMP Process running
+[19:30:23]  AMP Process running
+[19:30:23]  AMP Process running
+[19:30:23]  AMP Process running
+[19:30:23]  TX : 436496516, RX : 436503483
+[19:30:23]  AMP Process running
+[19:30:23]  TX : 436496516, RX : 436503483
+[19:30:23]  AMP Process running
+[19:30:23]  AMP Process running
+[19:30:23]  TX : 436496516, RX : 436503483
+[19:30:23]  AMP Process running
+[19:30:23]  TX : 436496516, RX : 436503483
+[19:30:23]  AMP Process running
+[19:30:23]  TX : 436496516, RX : 436503483
+[19:30:23]  AMP Process running
+[19:30:23]  AMP Process running
+[19:30:23]  TX : 436496516, RX : 436503483
+[19:30:23]  AMP Process running
+[19:30:23]  TX : 436496516, RX : 436503483
+[19:30:23]  AMP Process running
+[19:30:23]  TX : 436496516, RX : 436503483
+[19:30:23]  AMP Process running
+[19:30:23]  TX : 436496516, RX : 436503483
+[19:30:23]  AMP Process running
+[19:30:23]  AMP Process running
+[19:30:23]  TX : 436496516, RX : 436503483
+[19:30:23]  AMP Process running
+[19:30:23]  TX : 436496516, RX : 436503483
+[19:30:23]  AMP Process running
+[19:30:23]  TX : 436496516, RX : 436503483
+[19:30:23]  AMP Process running
+[19:30:23]  TX : 436496516, RX : 436503483
+[19:30:23]  AMP Process running
+[19:30:24]  AMP Process running
+[19:30:24]  TX : 436496516, RX : 436503483
+[19:30:24]  AMP Process running
+[19:30:24]  TX : 436496516, RX : 436503483
+[19:30:24]  AMP Process running
+[19:30:24]  TX : 436496517, RX : 436503482
+[19:30:24]  AMP Process running
+[19:30:24]  AMP Process running
+[19:30:24]  TX : 436496517, RX : 436503482
+[19:30:24]  AMP Process running
+[19:30:24]  TX : 436496517, RX : 436503482
+[19:30:24]  AMP Process running
+[19:30:24]  TX : 436496517, RX : 436503482
+[19:30:24]  AMP Process running
+[19:30:24]  TX : 436496517, RX : 436503482
+[19:30:24]  AMP Process running
+[19:30:24]  AMP Process running
+[19:30:24]  TX : 436496517, RX : 436503482
+[19:30:24]  AMP Process running
+[19:30:24]  TX : 436496517, RX : 436503482
+[19:30:24]  AMP Process running
+[19:30:24]  TX : 436496517, RX : 436503482
+[19:30:24]  AMP Process running
+[19:30:24]  AMP Process running
+[19:30:24]  Azimuth : 237, Elevation : 12
+
+[19:30:24]  Tracking : Az 237, El 12.
+[19:30:24]  AMP Process running
+[19:30:24]  AMP Process running
+[19:30:24]  AMP Process running
+[19:30:24]  AMP Process running
+[19:30:24]  AMP Process running
+[19:30:24]  AMP Process running
+[19:30:25]  AMP Process running
+[19:30:25]  AMP Process running
+[19:30:25]  AMP Process running
+[19:30:25]  AMP Process running
+[19:30:25]  TX : 436496517, RX : 436503482
+[19:30:25]  AMP Process running
+[19:30:25]  TX : 436496517, RX : 436503482
+[19:30:25]  AMP Process running
+[19:30:25]  AMP Process running
+[19:30:25]  TX : 436496517, RX : 436503482
+[19:30:25]  AMP Process running
+[19:30:25]  TX : 436496517, RX : 436503482
+[19:30:25]  AMP Process running
+[19:30:25]  TX : 436496518, RX : 436503481
+[19:30:25]  AMP Process running
+[19:30:25]  TX : 436496518, RX : 436503481
+[19:30:25]  AMP Process running
+[19:30:25]  AMP Process running
+[19:30:25]  TX : 436496518, RX : 436503481
+[19:30:25]  AMP Process running
+[19:30:25]  TX : 436496518, RX : 436503481
+[19:30:25]  AMP Process running
+[19:30:25]  TX : 436496518, RX : 436503481
+[19:30:25]  AMP Process running
+[19:30:25]  AMP Process running
+[19:30:25]  TX : 436496518, RX : 436503481
+[19:30:25]  AMP Process running
+[19:30:25]  TX : 436496518, RX : 436503481
+[19:30:25]  AMP Process running
+[19:30:25]  TX : 436496518, RX : 436503481
+[19:30:25]  AMP Process running
+[19:30:25]  TX : 436496518, RX : 436503481
+[19:30:25]  AMP Process running
+[19:30:26]  AMP Process running
+[19:30:26]  TX : 436496518, RX : 436503481
+[19:30:26]  AMP Process running
+[19:30:26]  TX : 436496518, RX : 436503481
+[19:30:26]  AMP Process running
+[19:30:26]  TX : 436496518, RX : 436503481
+[19:30:26]  AMP Process running
+[19:30:26]  TX : 436496518, RX : 436503481
+[19:30:26]  AMP Process running
+[19:30:26]  AMP Process running
+[19:30:26]  TX : 436496518, RX : 436503481
+[19:30:26]  AMP Process running
+[19:30:26]  TX : 436496518, RX : 436503481
+[19:30:26]  AMP Process running
+[19:30:26]  TX : 436496518, RX : 436503481
+[19:30:26]  AMP Process running
+[19:30:26]  AMP Process running
+[19:30:26]  TX : 436496518, RX : 436503481
+[19:30:26]  AMP Process running
+[19:30:26]  TX : 436496518, RX : 436503481
+[19:30:26]  AMP Process running
+[19:30:26]  TX : 436496518, RX : 436503481
+[19:30:26]  AMP Process running
+[19:30:26]  TX : 436496518, RX : 436503481
+[19:30:26]  Azimuth : 237, Elevation : 12
+
+[19:30:26]  Tracking : Az 237, El 12.
+[19:30:26]  AMP Process running
+[19:30:26]  AMP Process running
+[19:30:26]  AMP Process running
+[19:30:26]  AMP Process running
+[19:30:26]  AMP Process running
+[19:30:26]  AMP Process running
+[19:30:26]  AMP Process running
+[19:30:27]  AMP Process running
+[19:30:27]  AMP Process running
+[19:30:27]  AMP Process running
+[19:30:27]  AMP Process running
+[19:30:27]  TX : 436496519, RX : 436503480
+[19:30:27]  AMP Process running
+[19:30:27]  TX : 436496519, RX : 436503480
+[19:30:27]  AMP Process running
+[19:30:27]  TX : 436496519, RX : 436503480
+[19:30:27]  AMP Process running
+[19:30:27]  AMP Process running
+[19:30:27]  TX : 436496519, RX : 436503480
+[19:30:27]  AMP Process running
+[19:30:27]  TX : 436496519, RX : 436503480
+[19:30:27]  AMP Process running
+[19:30:27]  TX : 436496519, RX : 436503480
+[19:30:27]  AMP Process running
+[19:30:27]  AMP Process running
+[19:30:27]  TX : 436496519, RX : 436503480
+[19:30:27]  AMP Process running
+[19:30:27]  TX : 436496519, RX : 436503480
+[19:30:27]  AMP Process running
+[19:30:27]  TX : 436496519, RX : 436503480
+[19:30:27]  AMP Process running
+[19:30:27]  TX : 436496519, RX : 436503480
+[19:30:27]  AMP Process running
+[19:30:27]  AMP Process running
+[19:30:27]  TX : 436496519, RX : 436503480
+[19:30:27]  AMP Process running
+[19:30:27]  TX : 436496519, RX : 436503480
+[19:30:27]  AMP Process running
+[19:30:27]  TX : 436496519, RX : 436503480
+[19:30:27]  AMP Process running
+[19:30:28]  AMP Process running
+[19:30:28]  TX : 436496520, RX : 436503479
+[19:30:28]  AMP Process running
+[19:30:28]  TX : 436496520, RX : 436503479
+[19:30:28]  AMP Process running
+[19:30:28]  TX : 436496520, RX : 436503479
+[19:30:28]  AMP Process running
+[19:30:28]  TX : 436496520, RX : 436503479
+[19:30:28]  AMP Process running
+[19:30:28]  AMP Process running
+[19:30:28]  TX : 436496520, RX : 436503479
+[19:30:28]  AMP Process running
+[19:30:28]  TX : 436496520, RX : 436503479
+[19:30:28]  AMP Process running
+[19:30:28]  TX : 436496520, RX : 436503479
+[19:30:28]  AMP Process running
+[19:30:28]  TX : 436496520, RX : 436503479
+[19:30:28]  AMP Process running
+[19:30:28]  AMP Process running
+[19:30:28]  TX : 436496520, RX : 436503479
+[19:30:28]  AMP Process running
+[19:30:28]  TX : 436496520, RX : 436503479
+[19:30:28]  AMP Process running
+[19:30:28]  TX : 436496520, RX : 436503479
+[19:30:28]  Azimuth : 237, Elevation : 12
+
+[19:30:28]  Tracking : Az 237, El 12.
+[19:30:28]  AMP Process running
+[19:30:28]  AMP Process running
+[19:30:28]  AMP Process running
+[19:30:28]  AMP Process running
+[19:30:28]  AMP Process running
+[19:30:28]  AMP Process running
+[19:30:29]  AMP Process running
+[19:30:29]  AMP Process running
+[19:30:29]  AMP Process running
+[19:30:29]  AMP Process running
+[19:30:29]  AMP Process running
+[19:30:29]  TX : 436496520, RX : 436503479
+[19:30:29]  AMP Process running
+[19:30:29]  TX : 436496520, RX : 436503479
+[19:30:29]  AMP Process running
+[19:30:29]  TX : 436496521, RX : 436503478
+[19:30:29]  AMP Process running
+[19:30:29]  AMP Process running
+[19:30:29]  TX : 436496521, RX : 436503478
+[19:30:29]  AMP Process running
+[19:30:29]  TX : 436496521, RX : 436503478
+[19:30:29]  AMP Process running
+[19:30:29]  TX : 436496521, RX : 436503478
+[19:30:29]  AMP Process running
+[19:30:29]  TX : 436496521, RX : 436503478
+[19:30:29]  AMP Process running
+[19:30:29]  AMP Process running
+[19:30:29]  TX : 436496521, RX : 436503478
+[19:30:29]  AMP Process running
+[19:30:29]  TX : 436496521, RX : 436503478
+[19:30:29]  AMP Process running
+[19:30:29]  TX : 436496521, RX : 436503478
+[19:30:29]  AMP Process running
+[19:30:29]  TX : 436496521, RX : 436503478
+[19:30:29]  AMP Process running
+[19:30:29]  AMP Process running
+[19:30:29]  TX : 436496521, RX : 436503478
+[19:30:29]  AMP Process running
+[19:30:29]  TX : 436496521, RX : 436503478
+[19:30:30]  AMP Process running
+[19:30:30]  TX : 436496521, RX : 436503478
+[19:30:30]  AMP Process running
+[19:30:30]  AMP Process running
+[19:30:30]  TX : 436496521, RX : 436503478
+[19:30:30]  AMP Process running
+[19:30:30]  TX : 436496521, RX : 436503478
+[19:30:30]  AMP Process running
+[19:30:30]  TX : 436496521, RX : 436503478
+[19:30:30]  AMP Process running
+[19:30:30]  TX : 436496521, RX : 436503478
+[19:30:30]  AMP Process running
+[19:30:30]  AMP Process running
+[19:30:30]  TX : 436496521, RX : 436503478
+[19:30:30]  AMP Process running
+[19:30:30]  TX : 436496521, RX : 436503478
+[19:30:30]  AMP Process running
+[19:30:30]  TX : 436496521, RX : 436503478
+[19:30:30]  AMP Process running
+[19:30:30]  AMP Process running
+[19:30:30]  TX : 436496521, RX : 436503478
+[19:30:30]  AMP Process running
+[19:30:30]  TX : 436496522, RX : 436503477
+[19:30:30]  AMP Process running
+[19:30:30]  TX : 436496522, RX : 436503477
+[19:30:30]  Azimuth : 237, Elevation : 12
+
+[19:30:30]  Tracking : Az 237, El 12.
+[19:30:30]  AMP Process running
+[19:30:30]  AMP Process running
+[19:30:30]  AMP Process running
+[19:30:30]  AMP Process running
+[19:30:30]  AMP Process running
+[19:30:30]  AMP Process running
+[19:30:31]  AMP Process running
+[19:30:31]  AMP Process running
+[19:30:31]  AMP Process running
+[19:30:31]  AMP Process running
+[19:30:31]  AMP Process running
+[19:30:31]  TX : 436496522, RX : 436503477
+[19:30:31]  AMP Process running
+[19:30:31]  TX : 436496522, RX : 436503477
+[19:30:31]  AMP Process running
+[19:30:31]  TX : 436496522, RX : 436503477
+[19:30:31]  AMP Process running
+[19:30:31]  TX : 436496522, RX : 436503477
+[19:30:31]  AMP Process running
+[19:30:31]  AMP Process running
+[19:30:31]  TX : 436496522, RX : 436503477
+[19:30:31]  AMP Process running
+[19:30:31]  TX : 436496522, RX : 436503477
+[19:30:31]  AMP Process running
+[19:30:31]  TX : 436496522, RX : 436503477
+[19:30:31]  AMP Process running
+[19:30:31]  AMP Process running
+[19:30:31]  TX : 436496522, RX : 436503477
+[19:30:31]  AMP Process running
+[19:30:31]  TX : 436496522, RX : 436503477
+[19:30:31]  AMP Process running
+[19:30:31]  TX : 436496522, RX : 436503477
+[19:30:31]  AMP Process running
+[19:30:31]  TX : 436496522, RX : 436503477
+[19:30:31]  AMP Process running
+[19:30:31]  AMP Process running
+[19:30:31]  TX : 436496523, RX : 436503476
+[19:30:31]  AMP Process running
+[19:30:31]  TX : 436496523, RX : 436503476
+[19:30:32]  AMP Process running
+[19:30:32]  TX : 436496523, RX : 436503476
+[19:30:32]  AMP Process running
+[19:30:32]  TX : 436496523, RX : 436503476
+[19:30:32]  AMP Process running
+[19:30:32]  AMP Process running
+[19:30:32]  TX : 436496523, RX : 436503476
+[19:30:32]  AMP Process running
+[19:30:32]  TX : 436496523, RX : 436503476
+[19:30:32]  AMP Process running
+[19:30:32]  TX : 436496523, RX : 436503476
+[19:30:32]  AMP Process running
+[19:30:32]  AMP Process running
+[19:30:32]  TX : 436496523, RX : 436503476
+[19:30:32]  AMP Process running
+[19:30:32]  TX : 436496523, RX : 436503476
+[19:30:32]  AMP Process running
+[19:30:32]  TX : 436496523, RX : 436503476
+[19:30:32]  AMP Process running
+[19:30:32]  TX : 436496523, RX : 436503476
+[19:30:32]  AMP Process running
+[19:30:32]  AMP Process running
+[19:30:32]  TX : 436496523, RX : 436503476
+[19:30:32]  AMP Process running
+[19:30:32]  TX : 436496523, RX : 436503476
+[19:30:32]  Azimuth : 237, Elevation : 12
+
+[19:30:32]  Tracking : Az 237, El 12.
+[19:30:32]  AMP Process running
+[19:30:32]  AMP Process running
+[19:30:32]  AMP Process running
+[19:30:32]  AMP Process running
+[19:30:32]  AMP Process running
+[19:30:32]  AMP Process running
+[19:30:33]  AMP Process running
+[19:30:33]  AMP Process running
+[19:30:33]  AMP Process running
+[19:30:33]  AMP Process running
+[19:30:33]  AMP Process running
+[19:30:33]  TX : 436496524, RX : 436503475
+[19:30:33]  AMP Process running
+[19:30:33]  TX : 436496524, RX : 436503475
+[19:30:33]  AMP Process running
+[19:30:33]  TX : 436496524, RX : 436503475
+[19:30:33]  AMP Process running
+[19:30:33]  TX : 436496524, RX : 436503475
+[19:30:33]  AMP Process running
+[19:30:33]  AMP Process running
+[19:30:33]  TX : 436496524, RX : 436503475
+[19:30:33]  AMP Process running
+[19:30:33]  TX : 436496524, RX : 436503475
+[19:30:33]  AMP Process running
+[19:30:33]  TX : 436496524, RX : 436503475
+[19:30:33]  AMP Process running
+[19:30:33]  TX : 436496524, RX : 436503475
+[19:30:33]  AMP Process running
+[19:30:33]  AMP Process running
+[19:30:33]  TX : 436496524, RX : 436503475
+[19:30:33]  AMP Process running
+[19:30:33]  TX : 436496524, RX : 436503475
+[19:30:33]  AMP Process running
+[19:30:33]  TX : 436496524, RX : 436503475
+[19:30:33]  AMP Process running
+[19:30:33]  TX : 436496524, RX : 436503475
+[19:30:33]  AMP Process running
+[19:30:33]  AMP Process running
+[19:30:33]  TX : 436496524, RX : 436503475
+[19:30:34]  AMP Process running
+[19:30:34]  TX : 436496524, RX : 436503475
+[19:30:34]  AMP Process running
+[19:30:34]  TX : 436496524, RX : 436503475
+[19:30:34]  AMP Process running
+[19:30:34]  AMP Process running
+[19:30:34]  TX : 436496524, RX : 436503475
+[19:30:34]  AMP Process running
+[19:30:34]  TX : 436496524, RX : 436503475
+[19:30:34]  AMP Process running
+[19:30:34]  TX : 436496524, RX : 436503475
+[19:30:34]  AMP Process running
+[19:30:34]  TX : 436496524, RX : 436503475
+[19:30:34]  AMP Process running
+[19:30:34]  AMP Process running
+[19:30:34]  TX : 436496524, RX : 436503475
+[19:30:34]  AMP Process running
+[19:30:34]  TX : 436496525, RX : 436503474
+[19:30:34]  AMP Process running
+[19:30:34]  TX : 436496525, RX : 436503474
+[19:30:34]  AMP Process running
+[19:30:34]  AMP Process running
+[19:30:34]  TX : 436496525, RX : 436503474
+[19:30:34]  AMP Process running
+[19:30:34]  TX : 436496525, RX : 436503474
+[19:30:34]  Azimuth : 237, Elevation : 12
+
+[19:30:34]  Tracking : Az 237, El 12.
+[19:30:34]  AMP Process running
+[19:30:34]  AMP Process running
+[19:30:34]  AMP Process running
+[19:30:34]  AMP Process running
+[19:30:34]  AMP Process running
+[19:30:34]  AMP Process running
+[19:30:35]  AMP Process running
+[19:30:35]  AMP Process running
+[19:30:35]  AMP Process running
+[19:30:35]  AMP Process running
+[19:30:35]  AMP Process running
+[19:30:35]  TX : 436496525, RX : 436503474
+[19:30:35]  AMP Process running
+[19:30:35]  TX : 436496525, RX : 436503474
+[19:30:35]  AMP Process running
+[19:30:35]  TX : 436496525, RX : 436503474
+[19:30:35]  AMP Process running
+[19:30:35]  TX : 436496525, RX : 436503474
+[19:30:35]  AMP Process running
+[19:30:35]  TX : 436496525, RX : 436503474
+[19:30:35]  AMP Process running
+[19:30:35]  AMP Process running
+[19:30:35]  TX : 436496525, RX : 436503474
+[19:30:35]  AMP Process running
+[19:30:35]  TX : 436496525, RX : 436503474
+[19:30:35]  AMP Process running
+[19:30:35]  TX : 436496525, RX : 436503474
+[19:30:35]  AMP Process running
+[19:30:35]  AMP Process running
+[19:30:35]  TX : 436496525, RX : 436503474
+[19:30:35]  AMP Process running
+[19:30:35]  TX : 436496526, RX : 436503473
+[19:30:35]  AMP Process running
+[19:30:35]  TX : 436496526, RX : 436503473
+[19:30:35]  AMP Process running
+[19:30:35]  TX : 436496526, RX : 436503473
+[19:30:35]  AMP Process running
+[19:30:35]  AMP Process running
+[19:30:35]  TX : 436496526, RX : 436503473
+[19:30:36]  AMP Process running
+[19:30:36]  TX : 436496526, RX : 436503473
+[19:30:36]  AMP Process running
+[19:30:36]  TX : 436496526, RX : 436503473
+[19:30:36]  AMP Process running
+[19:30:36]  TX : 436496526, RX : 436503473
+[19:30:36]  AMP Process running
+[19:30:36]  AMP Process running
+[19:30:36]  TX : 436496526, RX : 436503473
+[19:30:36]  AMP Process running
+[19:30:36]  TX : 436496526, RX : 436503473
+[19:30:36]  AMP Process running
+[19:30:36]  TX : 436496526, RX : 436503473
+[19:30:36]  AMP Process running
+[19:30:36]  AMP Process running
+[19:30:36]  TX : 436496526, RX : 436503473
+[19:30:36]  AMP Process running
+[19:30:36]  TX : 436496526, RX : 436503473
+[19:30:36]  AMP Process running
+[19:30:36]  TX : 436496526, RX : 436503473
+[19:30:36]  AMP Process running
+[19:30:36]  TX : 436496526, RX : 436503473
+[19:30:36]  AMP Process running
+[19:30:36]  AMP Process running
+[19:30:36]  TX : 436496526, RX : 436503473
+[19:30:36]  Azimuth : 237, Elevation : 12
+
+[19:30:36]  Tracking : Az 237, El 12.
+[19:30:36]  AMP Process running
+[19:30:36]  AMP Process running
+[19:30:36]  AMP Process running
+[19:30:36]  AMP Process running
+[19:30:36]  AMP Process running
+[19:30:36]  AMP Process running
+[19:30:37]  AMP Process running
+[19:30:37]  AMP Process running
+[19:30:37]  AMP Process running
+[19:30:37]  AMP Process running
+[19:30:37]  TX : 436496527, RX : 436503472
+[19:30:37]  AMP Process running
+[19:30:37]  AMP Process running
+[19:30:37]  TX : 436496527, RX : 436503472
+[19:30:37]  AMP Process running
+[19:30:37]  TX : 436496527, RX : 436503472
+[19:30:37]  AMP Process running
+[19:30:37]  TX : 436496527, RX : 436503472
+[19:30:37]  AMP Process running
+[19:30:37]  TX : 436496527, RX : 436503472
+[19:30:37]  AMP Process running
+[19:30:37]  AMP Process running
+[19:30:37]  TX : 436496527, RX : 436503472
+[19:30:37]  AMP Process running
+[19:30:37]  TX : 436496527, RX : 436503472
+[19:30:37]  AMP Process running
+[19:30:37]  TX : 436496527, RX : 436503472
+[19:30:37]  AMP Process running
+[19:30:37]  TX : 436496527, RX : 436503472
+[19:30:37]  AMP Process running
+[19:30:37]  AMP Process running
+[19:30:37]  TX : 436496527, RX : 436503472
+[19:30:37]  AMP Process running
+[19:30:37]  TX : 436496527, RX : 436503472
+[19:30:37]  AMP Process running
+[19:30:37]  TX : 436496527, RX : 436503472
+[19:30:37]  AMP Process running
+[19:30:37]  AMP Process running
+[19:30:37]  TX : 436496527, RX : 436503472
+[19:30:38]  AMP Process running
+[19:30:38]  TX : 436496527, RX : 436503472
+[19:30:38]  AMP Process running
+[19:30:38]  TX : 436496527, RX : 436503472
+[19:30:38]  AMP Process running
+[19:30:38]  TX : 436496527, RX : 436503472
+[19:30:38]  AMP Process running
+[19:30:38]  AMP Process running
+[19:30:38]  TX : 436496527, RX : 436503472
+[19:30:38]  AMP Process running
+[19:30:38]  TX : 436496528, RX : 436503471
+[19:30:38]  AMP Process running
+[19:30:38]  TX : 436496528, RX : 436503471
+[19:30:38]  AMP Process running
+[19:30:38]  TX : 436496528, RX : 436503471
+[19:30:38]  AMP Process running
+[19:30:38]  AMP Process running
+[19:30:38]  TX : 436496528, RX : 436503471
+[19:30:38]  AMP Process running
+[19:30:38]  TX : 436496528, RX : 436503471
+[19:30:38]  AMP Process running
+[19:30:38]  TX : 436496528, RX : 436503471
+[19:30:38]  AMP Process running
+[19:30:38]  AMP Process running
+[19:30:38]  TX : 436496528, RX : 436503471
+[19:30:38]  Azimuth : 237, Elevation : 12
+
+[19:30:38]  Tracking : Az 237, El 12.
+[19:30:38]  AMP Process running
+[19:30:38]  AMP Process running
+[19:30:38]  AMP Process running
+[19:30:38]  AMP Process running
+[19:30:38]  AMP Process running
+[19:30:38]  AMP Process running
+[19:30:39]  AMP Process running
+[19:30:39]  AMP Process running
+[19:30:39]  AMP Process running
+[19:30:39]  AMP Process running
+[19:30:39]  TX : 436496528, RX : 436503471
+[19:30:39]  AMP Process running
+[19:30:39]  TX : 436496528, RX : 436503471
+[19:30:39]  AMP Process running
+[19:30:39]  AMP Process running
+[19:30:39]  TX : 436496528, RX : 436503471
+[19:30:39]  AMP Process running
+[19:30:39]  TX : 436496528, RX : 436503471
+[19:30:39]  AMP Process running
+[19:30:39]  TX : 436496528, RX : 436503471
+[19:30:39]  AMP Process running
+[19:30:39]  AMP Process running
+[19:30:39]  TX : 436496528, RX : 436503471
+[19:30:39]  AMP Process running
+[19:30:39]  TX : 436496529, RX : 436503470
+[19:30:39]  AMP Process running
+[19:30:39]  TX : 436496529, RX : 436503470
+[19:30:39]  AMP Process running
+[19:30:39]  TX : 436496529, RX : 436503470
+[19:30:39]  AMP Process running
+[19:30:39]  AMP Process running
+[19:30:39]  TX : 436496529, RX : 436503470
+[19:30:39]  AMP Process running
+[19:30:39]  TX : 436496529, RX : 436503470
+[19:30:39]  AMP Process running
+[19:30:39]  TX : 436496529, RX : 436503470
+[19:30:39]  AMP Process running
+[19:30:39]  TX : 436496529, RX : 436503470
+[19:30:39]  AMP Process running
+[19:30:40]  AMP Process running
+[19:30:40]  TX : 436496529, RX : 436503470
+[19:30:40]  AMP Process running
+[19:30:40]  TX : 436496529, RX : 436503470
+[19:30:40]  AMP Process running
+[19:30:40]  TX : 436496529, RX : 436503470
+[19:30:40]  AMP Process running
+[19:30:40]  AMP Process running
+[19:30:40]  TX : 436496529, RX : 436503470
+[19:30:40]  AMP Process running
+[19:30:40]  TX : 436496529, RX : 436503470
+[19:30:40]  AMP Process running
+[19:30:40]  TX : 436496529, RX : 436503470
+[19:30:40]  AMP Process running
+[19:30:40]  TX : 436496529, RX : 436503470
+[19:30:40]  AMP Process running
+[19:30:40]  AMP Process running
+[19:30:40]  TX : 436496529, RX : 436503470
+[19:30:40]  AMP Process running
+[19:30:40]  TX : 436496529, RX : 436503470
+[19:30:40]  AMP Process running
+[19:30:40]  TX : 436496529, RX : 436503470
+[19:30:40]  AMP Process running
+[19:30:40]  TX : 436496529, RX : 436503470
+[19:30:40]  AMP Process running
+[19:30:40]  Azimuth : 237, Elevation : 12
+
+[19:30:40]  Tracking : Az 237, El 12.
+[19:30:40]  AMP Process running
+[19:30:40]  AMP Process running
+[19:30:40]  AMP Process running
+[19:30:40]  AMP Process running
+[19:30:40]  AMP Process running
+[19:30:40]  AMP Process running
+[19:30:41]  AMP Process running
+[19:30:41]  AMP Process running
+[19:30:41]  AMP Process running
+[19:30:41]  AMP Process running
+[19:30:41]  TX : 436496530, RX : 436503469
+[19:30:41]  AMP Process running
+[19:30:41]  TX : 436496530, RX : 436503469
+[19:30:41]  AMP Process running
+[19:30:41]  AMP Process running
+[19:30:41]  TX : 436496530, RX : 436503469
+[19:30:41]  AMP Process running
+[19:30:41]  TX : 436496530, RX : 436503469
+[19:30:41]  AMP Process running
+[19:30:41]  TX : 436496530, RX : 436503469
+[19:30:41]  AMP Process running
+[19:30:41]  TX : 436496530, RX : 436503469
+[19:30:41]  AMP Process running
+[19:30:41]  AMP Process running
+[19:30:41]  TX : 436496530, RX : 436503469
+[19:30:41]  AMP Process running
+[19:30:41]  TX : 436496530, RX : 436503469
+[19:30:41]  AMP Process running
+[19:30:41]  TX : 436496530, RX : 436503469
+[19:30:41]  AMP Process running
+[19:30:41]  AMP Process running
+[19:30:41]  TX : 436496530, RX : 436503469
+[19:30:41]  AMP Process running
+[19:30:41]  TX : 436496530, RX : 436503469
+[19:30:41]  AMP Process running
+[19:30:41]  TX : 436496530, RX : 436503469
+[19:30:41]  AMP Process running
+[19:30:41]  TX : 436496530, RX : 436503469
+[19:30:41]  AMP Process running
+[19:30:42]  AMP Process running
+[19:30:42]  TX : 436496530, RX : 436503469
+[19:30:42]  AMP Process running
+[19:30:42]  TX : 436496531, RX : 436503468
+[19:30:42]  AMP Process running
+[19:30:42]  TX : 436496531, RX : 436503468
+[19:30:42]  AMP Process running
+[19:30:42]  TX : 436496531, RX : 436503468
+[19:30:42]  AMP Process running
+[19:30:42]  AMP Process running
+[19:30:42]  TX : 436496531, RX : 436503468
+[19:30:42]  AMP Process running
+[19:30:42]  TX : 436496531, RX : 436503468
+[19:30:42]  AMP Process running
+[19:30:42]  TX : 436496531, RX : 436503468
+[19:30:42]  AMP Process running
+[19:30:42]  AMP Process running
+[19:30:42]  TX : 436496531, RX : 436503468
+[19:30:42]  AMP Process running
+[19:30:42]  TX : 436496531, RX : 436503468
+[19:30:42]  AMP Process running
+[19:30:42]  TX : 436496531, RX : 436503468
+[19:30:42]  AMP Process running
+[19:30:42]  TX : 436496531, RX : 436503468
+[19:30:42]  Azimuth : 237, Elevation : 13
+
+[19:30:42]  Tracking : Az 237, El 13.
+[19:30:42]  AMP Process running
+[19:30:42]  AMP Process running
+[19:30:42]  AMP Process running
+[19:30:42]  AMP Process running
+[19:30:42]  AMP Process running
+[19:30:42]  AMP Process running
+[19:30:42]  AMP Process running
+[19:30:43]  AMP Process running
+[19:30:43]  AMP Process running
+[19:30:43]  AMP Process running
+[19:30:43]  AMP Process running
+[19:30:43]  TX : 436496531, RX : 436503468
+[19:30:43]  AMP Process running
+[19:30:43]  TX : 436496531, RX : 436503468
+[19:30:43]  AMP Process running
+[19:30:43]  TX : 436496531, RX : 436503468
+[19:30:43]  AMP Process running
+[19:30:43]  AMP Process running
+[19:30:43]  TX : 436496532, RX : 436503467
+[19:30:43]  AMP Process running
+[19:30:43]  TX : 436496532, RX : 436503467
+[19:30:43]  AMP Process running
+[19:30:43]  TX : 436496532, RX : 436503467
+[19:30:43]  AMP Process running
+[19:30:43]  AMP Process running
+[19:30:43]  TX : 436496532, RX : 436503467
+[19:30:43]  AMP Process running
+[19:30:43]  TX : 436496532, RX : 436503467
+[19:30:43]  AMP Process running
+[19:30:43]  TX : 436496532, RX : 436503467
+[19:30:43]  AMP Process running
+[19:30:43]  TX : 436496532, RX : 436503467
+[19:30:43]  AMP Process running
+[19:30:43]  AMP Process running
+[19:30:43]  TX : 436496532, RX : 436503467
+[19:30:43]  AMP Process running
+[19:30:43]  TX : 436496532, RX : 436503467
+[19:30:43]  AMP Process running
+[19:30:43]  TX : 436496532, RX : 436503467
+[19:30:43]  AMP Process running
+[19:30:44]  AMP Process running
+[19:30:44]  TX : 436496532, RX : 436503467
+[19:30:44]  AMP Process running
+[19:30:44]  TX : 436496532, RX : 436503467
+[19:30:44]  AMP Process running
+[19:30:44]  TX : 436496532, RX : 436503467
+[19:30:44]  AMP Process running
+[19:30:44]  TX : 436496532, RX : 436503467
+[19:30:44]  AMP Process running
+[19:30:44]  AMP Process running
+[19:30:44]  TX : 436496532, RX : 436503467
+[19:30:44]  AMP Process running
+[19:30:44]  TX : 436496532, RX : 436503467
+[19:30:44]  AMP Process running
+[19:30:44]  TX : 436496532, RX : 436503467
+[19:30:44]  AMP Process running
+[19:30:44]  TX : 436496532, RX : 436503467
+[19:30:44]  AMP Process running
+[19:30:44]  AMP Process running
+[19:30:44]  TX : 436496532, RX : 436503467
+[19:30:44]  AMP Process running
+[19:30:44]  TX : 436496532, RX : 436503467
+[19:30:44]  AMP Process running
+[19:30:44]  TX : 436496533, RX : 436503466
+[19:30:44]  Azimuth : 237, Elevation : 13
+
+[19:30:44]  Tracking : Az 237, El 13.
+[19:30:44]  AMP Process running
+[19:30:44]  AMP Process running
+[19:30:44]  AMP Process running
+[19:30:44]  AMP Process running
+[19:30:44]  AMP Process running
+[19:30:44]  AMP Process running
+[19:30:44]  AMP Process running
+[19:30:45]  AMP Process running
+[19:30:45]  AMP Process running
+[19:30:45]  AMP Process running
+[19:30:45]  AMP Process running
+[19:30:45]  TX : 436496533, RX : 436503466
+[19:30:45]  AMP Process running
+[19:30:45]  TX : 436496533, RX : 436503466
+[19:30:45]  AMP Process running
+[19:30:45]  TX : 436496533, RX : 436503466
+[19:30:45]  AMP Process running
+[19:30:45]  AMP Process running
+[19:30:45]  TX : 436496533, RX : 436503466
+[19:30:45]  AMP Process running
+[19:30:45]  TX : 436496533, RX : 436503466
+[19:30:45]  AMP Process running
+[19:30:45]  TX : 436496533, RX : 436503466
+[19:30:45]  AMP Process running
+[19:30:45]  TX : 436496533, RX : 436503466
+[19:30:45]  AMP Process running
+[19:30:45]  AMP Process running
+[19:30:45]  TX : 436496533, RX : 436503466
+[19:30:45]  AMP Process running
+[19:30:45]  TX : 436496533, RX : 436503466
+[19:30:45]  AMP Process running
+[19:30:45]  TX : 436496533, RX : 436503466
+[19:30:45]  AMP Process running
+[19:30:45]  AMP Process running
+[19:30:45]  TX : 436496533, RX : 436503466
+[19:30:45]  AMP Process running
+[19:30:45]  TX : 436496534, RX : 436503465
+[19:30:45]  AMP Process running
+[19:30:45]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  Tolerance Filtering...
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:46]  TX : 436496534, RX : 436503465
+[19:30:46]  AMP Process running
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496534, RX : 436503465
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496534, RX : 436503465
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496535, RX : 436503464
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496535, RX : 436503464
+[19:30:47]  AMP Process running
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496535, RX : 436503464
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496535, RX : 436503464
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496535, RX : 436503464
+[19:30:47]  AMP Process running
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496535, RX : 436503464
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496535, RX : 436503464
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496535, RX : 436503464
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496535, RX : 436503464
+[19:30:47]  AMP Process running
+[19:30:47]  Tolerance Filtering...
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496535, RX : 436503464
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496535, RX : 436503464
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496535, RX : 436503464
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496535, RX : 436503464
+[19:30:47]  AMP Process running
+[19:30:47]  AMP Process running
+[19:30:47]  TX : 436496535, RX : 436503464
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496535, RX : 436503464
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496535, RX : 436503464
+[19:30:48]  AMP Process running
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496535, RX : 436503464
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496535, RX : 436503464
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496535, RX : 436503464
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496535, RX : 436503464
+[19:30:48]  AMP Process running
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496536, RX : 436503463
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496536, RX : 436503463
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496536, RX : 436503463
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496536, RX : 436503463
+[19:30:48]  AMP Process running
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496536, RX : 436503463
+[19:30:48]  Tolerance Filtering...
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496536, RX : 436503463
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496536, RX : 436503463
+[19:30:48]  AMP Process running
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496536, RX : 436503463
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496536, RX : 436503463
+[19:30:48]  AMP Process running
+[19:30:48]  TX : 436496536, RX : 436503463
+[19:30:49]  AMP Process running
+[19:30:49]  TX : 436496536, RX : 436503463
+[19:30:49]  AMP Process running
+[19:30:49]  AMP Process running
+[19:30:49]  TX : 436496536, RX : 436503463
+[19:30:49]  AMP Process running
+[19:30:49]  TX : 436496536, RX : 436503463
+[19:30:49]  AMP Process running
+[19:30:49]  TX : 436496536, RX : 436503463
+[19:30:49]  AMP Process running
+[19:30:49]  AMP Process running
+[19:30:49]  TX : 436496536, RX : 436503463
+[19:30:49]  AMP Process running
+[19:30:49]  TX : 436496536, RX : 436503463
+[19:30:49]  AMP Process running
+[19:30:49]  TX : 436496536, RX : 436503463
+[19:30:49]  AMP Process running
+[19:30:49]  TX : 436496536, RX : 436503463
+[19:30:49]  AMP Process running
+[19:30:49]  AMP Process running
+[19:30:49]  TX : 436496536, RX : 436503463
+[19:30:49]  AMP Process running
+[19:30:49]  TX : 436496536, RX : 436503463
+[19:30:49]  AMP Process running
+[19:30:49]  Tolerance Filtering...
+[19:30:49]  TX : 436496537, RX : 436503462
+[19:30:49]  AMP Process running
+[19:30:49]  TX : 436496537, RX : 436503462
+[19:30:49]  AMP Process running
+[19:30:49]  AMP Process running
+[19:30:49]  TX : 436496537, RX : 436503462
+[19:30:49]  AMP Process running
+[19:30:49]  TX : 436496537, RX : 436503462
+[19:30:49]  AMP Process running
+[19:30:49]  TX : 436496537, RX : 436503462
+[19:30:49]  AMP Process running
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496537, RX : 436503462
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496537, RX : 436503462
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496537, RX : 436503462
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496537, RX : 436503462
+[19:30:50]  AMP Process running
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496537, RX : 436503462
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496537, RX : 436503462
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496537, RX : 436503462
+[19:30:50]  AMP Process running
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496537, RX : 436503462
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496537, RX : 436503462
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496537, RX : 436503462
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496537, RX : 436503462
+[19:30:50]  AMP Process running
+[19:30:50]  Tolerance Filtering...
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496537, RX : 436503462
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496537, RX : 436503462
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496537, RX : 436503462
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496538, RX : 436503461
+[19:30:50]  AMP Process running
+[19:30:50]  AMP Process running
+[19:30:50]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  Tolerance Filtering...
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:51]  TX : 436496538, RX : 436503461
+[19:30:51]  AMP Process running
+[19:30:52]  TX : 436496538, RX : 436503461
+[19:30:52]  AMP Process running
+[19:30:52]  TX : 436496538, RX : 436503461
+[19:30:52]  AMP Process running
+[19:30:52]  AMP Process running
+[19:30:52]  TX : 436496538, RX : 436503461
+[19:30:52]  AMP Process running
+[19:30:52]  TX : 436496539, RX : 436503460
+[19:30:52]  AMP Process running
+[19:30:52]  TX : 436496539, RX : 436503460
+[19:30:52]  AMP Process running
+[19:30:52]  TX : 436496539, RX : 436503460
+[19:30:52]  AMP Process running
+[19:30:52]  AMP Process running
+[19:30:52]  TX : 436496539, RX : 436503460
+[19:30:52]  AMP Process running
+[19:30:52]  TX : 436496539, RX : 436503460
+[19:30:52]  AMP Process running
+[19:30:52]  TX : 436496539, RX : 436503460
+[19:30:52]  AMP Process running
+[19:30:52]  AMP Process running
+[19:30:52]  TX : 436496539, RX : 436503460
+[19:30:52]  AMP Process running
+[19:30:52]  TX : 436496539, RX : 436503460
+[19:30:52]  AMP Process running
+[19:30:52]  Tolerance Filtering...
+[19:30:52]  TX : 436496539, RX : 436503460
+[19:30:52]  AMP Process running
+[19:30:52]  TX : 436496539, RX : 436503460
+[19:30:52]  AMP Process running
+[19:30:52]  AMP Process running
+[19:30:52]  TX : 436496539, RX : 436503460
+[19:30:52]  AMP Process running
+[19:30:52]  TX : 436496539, RX : 436503460
+[19:30:52]  AMP Process running
+[19:30:52]  TX : 436496539, RX : 436503460
+[19:30:52]  AMP Process running
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496539, RX : 436503460
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496539, RX : 436503460
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496539, RX : 436503460
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496539, RX : 436503460
+[19:30:53]  AMP Process running
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496539, RX : 436503460
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496539, RX : 436503460
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496540, RX : 436503459
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496540, RX : 436503459
+[19:30:53]  AMP Process running
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496540, RX : 436503459
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496540, RX : 436503459
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496540, RX : 436503459
+[19:30:53]  AMP Process running
+[19:30:53]  Tolerance Filtering...
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496540, RX : 436503459
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496540, RX : 436503459
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496540, RX : 436503459
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496540, RX : 436503459
+[19:30:53]  AMP Process running
+[19:30:53]  AMP Process running
+[19:30:53]  TX : 436496540, RX : 436503459
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496540, RX : 436503459
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496540, RX : 436503459
+[19:30:54]  AMP Process running
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496540, RX : 436503459
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496540, RX : 436503459
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496540, RX : 436503459
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496540, RX : 436503459
+[19:30:54]  AMP Process running
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496540, RX : 436503459
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496540, RX : 436503459
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496540, RX : 436503459
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496540, RX : 436503459
+[19:30:54]  AMP Process running
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496541, RX : 436503458
+[19:30:54]  Tolerance Filtering...
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496541, RX : 436503458
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496541, RX : 436503458
+[19:30:54]  AMP Process running
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496541, RX : 436503458
+[19:30:54]  AMP Process running
+[19:30:54]  TX : 436496541, RX : 436503458
+[19:30:54]  AMP Process running
+[19:30:55]  TX : 436496541, RX : 436503458
+[19:30:55]  AMP Process running
+[19:30:55]  TX : 436496541, RX : 436503458
+[19:30:55]  AMP Process running
+[19:30:55]  AMP Process running
+[19:30:55]  TX : 436496541, RX : 436503458
+[19:30:55]  AMP Process running
+[19:30:55]  TX : 436496541, RX : 436503458
+[19:30:55]  AMP Process running
+[19:30:55]  TX : 436496541, RX : 436503458
+[19:30:55]  AMP Process running
+[19:30:55]  TX : 436496541, RX : 436503458
+[19:30:55]  AMP Process running
+[19:30:55]  AMP Process running
+[19:30:55]  TX : 436496541, RX : 436503458
+[19:30:55]  AMP Process running
+[19:30:55]  TX : 436496541, RX : 436503458
+[19:30:55]  AMP Process running
+[19:30:55]  TX : 436496541, RX : 436503458
+[19:30:55]  AMP Process running
+[19:30:55]  AMP Process running
+[19:30:55]  TX : 436496541, RX : 436503458
+[19:30:55]  AMP Process running
+[19:30:55]  TX : 436496541, RX : 436503458
+[19:30:55]  AMP Process running
+[19:30:55]  Tolerance Filtering...
+[19:30:55]  TX : 436496541, RX : 436503458
+[19:30:55]  AMP Process running
+[19:30:55]  TX : 436496541, RX : 436503458
+[19:30:55]  AMP Process running
+[19:30:55]  AMP Process running
+[19:30:55]  TX : 436496541, RX : 436503458
+[19:30:55]  AMP Process running
+[19:30:55]  TX : 436496542, RX : 436503457
+[19:30:55]  AMP Process running
+[19:30:55]  TX : 436496542, RX : 436503457
+[19:30:55]  AMP Process running
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  Tolerance Filtering...
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:56]  AMP Process running
+[19:30:56]  AMP Process running
+[19:30:56]  TX : 436496542, RX : 436503457
+[19:30:57]  AMP Process running
+[19:30:57]  TX : 436496542, RX : 436503457
+[19:30:57]  AMP Process running
+[19:30:57]  TX : 436496543, RX : 436503456
+[19:30:57]  AMP Process running
+[19:30:57]  AMP Process running
+[19:30:57]  TX : 436496543, RX : 436503456
+[19:30:57]  AMP Process running
+[19:30:57]  TX : 436496543, RX : 436503456
+[19:30:57]  AMP Process running
+[19:30:57]  TX : 436496543, RX : 436503456
+[19:30:57]  AMP Process running
+[19:30:57]  TX : 436496543, RX : 436503456
+[19:30:57]  AMP Process running
+[19:30:57]  AMP Process running
+[19:30:57]  TX : 436496543, RX : 436503456
+[19:30:57]  AMP Process running
+[19:30:57]  TX : 436496543, RX : 436503456
+[19:30:57]  AMP Process running
+[19:30:57]  TX : 436496543, RX : 436503456
+[19:30:57]  AMP Process running
+[19:30:57]  TX : 436496543, RX : 436503456
+[19:30:57]  AMP Process running
+[19:30:57]  AMP Process running
+[19:30:57]  Tolerance Filtering...
+[19:30:57]  TX : 436496543, RX : 436503456
+[19:30:57]  AMP Process running
+[19:30:57]  TX : 436496543, RX : 436503456
+[19:30:57]  AMP Process running
+[19:30:57]  TX : 436496543, RX : 436503456
+[19:30:57]  AMP Process running
+[19:30:57]  AMP Process running
+[19:30:57]  TX : 436496543, RX : 436503456
+[19:30:57]  AMP Process running
+[19:30:57]  TX : 436496543, RX : 436503456
+[19:30:57]  AMP Process running
+[19:30:58]  TX : 436496543, RX : 436503456
+[19:30:58]  AMP Process running
+[19:30:58]  TX : 436496543, RX : 436503456
+[19:30:58]  AMP Process running
+[19:30:58]  AMP Process running
+[19:30:58]  TX : 436496543, RX : 436503456
+[19:30:58]  AMP Process running
+[19:30:58]  TX : 436496543, RX : 436503456
+[19:30:58]  AMP Process running
+[19:30:58]  TX : 436496543, RX : 436503456
+[19:30:58]  AMP Process running
+[19:30:58]  TX : 436496544, RX : 436503455
+[19:30:58]  AMP Process running
+[19:30:58]  AMP Process running
+[19:30:58]  TX : 436496544, RX : 436503455
+[19:30:58]  AMP Process running
+[19:30:58]  TX : 436496544, RX : 436503455
+[19:30:58]  AMP Process running
+[19:30:58]  TX : 436496544, RX : 436503455
+[19:30:58]  AMP Process running
+[19:30:58]  AMP Process running
+[19:30:58]  TX : 436496544, RX : 436503455
+[19:30:58]  AMP Process running
+[19:30:58]  TX : 436496544, RX : 436503455
+[19:30:58]  AMP Process running
+[19:30:58]  Tolerance Filtering...
+[19:30:58]  TX : 436496544, RX : 436503455
+[19:30:58]  AMP Process running
+[19:30:58]  TX : 436496544, RX : 436503455
+[19:30:58]  AMP Process running
+[19:30:58]  AMP Process running
+[19:30:58]  TX : 436496544, RX : 436503455
+[19:30:58]  AMP Process running
+[19:30:58]  TX : 436496544, RX : 436503455
+[19:30:58]  AMP Process running
+[19:30:58]  TX : 436496544, RX : 436503455
+[19:30:58]  AMP Process running
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496544, RX : 436503455
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496544, RX : 436503455
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496544, RX : 436503455
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496544, RX : 436503455
+[19:30:59]  AMP Process running
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496544, RX : 436503455
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496544, RX : 436503455
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496544, RX : 436503455
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496544, RX : 436503455
+[19:30:59]  AMP Process running
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496544, RX : 436503455
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496545, RX : 436503454
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496545, RX : 436503454
+[19:30:59]  AMP Process running
+[19:30:59]  Tolerance Filtering...
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496545, RX : 436503454
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496545, RX : 436503454
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496545, RX : 436503454
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496545, RX : 436503454
+[19:30:59]  AMP Process running
+[19:30:59]  AMP Process running
+[19:30:59]  TX : 436496545, RX : 436503454
+[19:31:00]  AMP Process running
+[19:31:00]  TX : 436496545, RX : 436503454
+[19:31:00]  AMP Process running
+[19:31:00]  TX : 436496545, RX : 436503454
+[19:31:00]  AMP Process running
+[19:31:00]  AMP Process running
+[19:31:00]  TX : 436496545, RX : 436503454
+[19:31:00]  AMP Process running
+[19:31:00]  TX : 436496545, RX : 436503454
+[19:31:00]  AMP Process running
+[19:31:00]  TX : 436496545, RX : 436503454
+[19:31:00]  AMP Process running
+[19:31:00]  TX : 436496545, RX : 436503454
+[19:31:00]  AMP Process running
+[19:31:00]  AMP Process running
+[19:31:00]  TX : 436496545, RX : 436503454
+[19:31:00]  AMP Process running
+[19:31:00]  TX : 436496545, RX : 436503454
+[19:31:00]  AMP Process running
+[19:31:00]  TX : 436496545, RX : 436503454
+[19:31:00]  AMP Process running
+[19:31:00]  TX : 436496545, RX : 436503454
+[19:31:00]  AMP Process running
+[19:31:00]  AMP Process running
+[19:31:00]  Tolerance Filtering...
+[19:31:00]  TX : 436496545, RX : 436503454
+[19:31:00]  AMP Process running
+[19:31:00]  TX : 436496545, RX : 436503454
+[19:31:00]  AMP Process running
+[19:31:00]  TX : 436496546, RX : 436503453
+[19:31:00]  AMP Process running
+[19:31:00]  AMP Process running
+[19:31:00]  TX : 436496546, RX : 436503453
+[19:31:00]  AMP Process running
+[19:31:00]  TX : 436496546, RX : 436503453
+[19:31:00]  AMP Process running
+[19:31:01]  TX : 436496546, RX : 436503453
+[19:31:01]  AMP Process running
+[19:31:01]  TX : 436496546, RX : 436503453
+[19:31:01]  AMP Process running
+[19:31:01]  AMP Process running
+[19:31:01]  TX : 436496546, RX : 436503453
+[19:31:01]  AMP Process running
+[19:31:01]  TX : 436496546, RX : 436503453
+[19:31:01]  AMP Process running
+[19:31:01]  TX : 436496546, RX : 436503453
+[19:31:01]  AMP Process running
+[19:31:01]  TX : 436496546, RX : 436503453
+[19:31:01]  AMP Process running
+[19:31:01]  AMP Process running
+[19:31:01]  TX : 436496546, RX : 436503453
+[19:31:01]  AMP Process running
+[19:31:01]  TX : 436496546, RX : 436503453
+[19:31:01]  AMP Process running
+[19:31:01]  TX : 436496546, RX : 436503453
+[19:31:01]  AMP Process running
+[19:31:01]  AMP Process running
+[19:31:01]  TX : 436496546, RX : 436503453
+[19:31:01]  AMP Process running
+[19:31:01]  TX : 436496546, RX : 436503453
+[19:31:01]  AMP Process running
+[19:31:01]  Tolerance Filtering...
+[19:31:01]  TX : 436496546, RX : 436503453
+[19:31:01]  AMP Process running
+[19:31:01]  Forked Safe Amplifier Process.(ON, Timer)
+[19:31:01]  [Auto]Autopilot Stopped by User.
+[19:31:01]  [Auto]Stop Doppler Correction.
+[19:31:02]  [Auto]Finish Engaging.
+[19:31:02]  Tracking : Az 0, El 0.
+[19:31:03]  [Auto]Beacon Success : 0, Ping Success : 0 CMD Success : 0
+[19:31:09]  Forked Safe Amplifier Process. (OFF)

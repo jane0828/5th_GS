@@ -1,0 +1,78 @@
+================= BEACON SAVE =================
+
+[CCSDS HEADER]
+MID        : 08 1A
+SEQ        : F1 2F
+LEN        : 00 C4
+TimeCode   : 00 1E 5A 1F 16 E1
+
+[FSW - RPT]
+Cmd Counter   : 0
+Err Counter   : 0
+Report Q Cnt  : 5
+Critical Q Cnt: 0
+Boot Count    : 6
+SC Time Sec   : 1989145
+SC Time Sub   : 1146318611
+Sequence(LSB) : 253
+
+[COMS - STX]
+Symbol Rate        : 0
+Tx Power           : 0
+MODCOD             : 0
+Roll-off           : 0
+Pilot Signal       : 0
+FEC Frame Size     : 0
+Pre-Tx Delay       : 0
+Center Frequency   : 0.000000
+Mod Interface Type : 0
+LVDS IO Type       : 0
+System State       : 0
+Status Flag        : 0
+
+[COMS - UANT]
+UANT1 (0/1/BK) : 0 0 (BK:0)
+UANT2 (0/1/BK) : 0 0 (BK:0)
+
+[COMS - UTRX]
+UTRX ActiveConf : 1
+UTRX BootCount  : 184
+UTRX BootCause  : 256
+UTRX Temp       : 212
+
+[PCDU - P60 DOCK]
+Cout[0..8]    : 51 59 9 0 28 509 18 9 21 
+Vout[0..8]    : 0 0 16245 16245 16254 0 0 0 0 
+OutEn         : 0x1000
+BootCause     : 256
+BootCount     : 162
+BattMode      : 3
+HeaterOn      : 0
+VBAT          : 16256
+VCC Current   : 65428
+BattV         : 16254
+BattTemp      : 0 0
+WDT CAN Left  : 172704
+Batt Chg Curr : 228
+Batt Dis Curr : 195
+
+[PCDU - P60 PDU]
+Cout : 20 29 23 20 15 21 12 21 20 
+Vout : 0 0 0 0 1017 0 0 0 0 
+Vcc     : 3276
+ConvEn  : 0
+OutEn   : 0x0000
+
+[PCDU - P60 ACU]
+Cin : 0 122 129 271 15 5831 
+Vin : 5685 5884 5876 6104 6118 7198 
+
+[ADCS]
+PowerState       : 0x04
+ControlMode      : 0
+GYR0 Calib X     : -0.185000
+GYR0 Calib Y     : 0.187500
+GYR0 Calib Z     : 0.370000
+
+[BINARY DATA]
+08 1A F1 2F 00 C4 00 1E 5A 1F 16 E1 00 00 05 00 06 00 19 5A 1E 00 13 6F 53 44 FD 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 01 B8 00 00 01 00 00 D4 00 33 00 3B 00 09 00 00 00 1C 00 FD 01 12 00 09 00 15 00 00 00 00 00 75 3F 75 3F 7E 3F 00 00 00 00 00 00 00 00 00 10 00 01 00 00 A2 00 00 00 03 00 80 3F 94 FF 7E 3F 00 00 00 00 A0 A2 02 00 E4 00 C3 00 14 00 1D 00 17 00 14 00 0F 00 15 00 0C 00 15 00 14 00 00 00 00 00 00 00 00 00 F9 03 00 00 00 00 00 00 00 00 CC 0C 00 00 00 00 00 7A 00 81 00 0F 01 0F 00 C7 16 35 16 FC 16 F4 16 D8 17 E6 17 1E 1C 04 00 A4 70 3D BE 00 00 40 3E A4 70 BD 3E 

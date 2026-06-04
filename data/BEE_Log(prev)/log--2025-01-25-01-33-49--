@@ -1,0 +1,407 @@
+Uplink packet. Length: 25
+18	7b	c0	00	00	12	9b	0d	dc	05	
+00	00	00	00	00	00	00	00	00	00	
+01	00	00	00	00	
+
+Downlink.
+08	7d	c0	02	00	bd	28	47	0f	00	
+2d	9c	0b	02	00	00	c8	00	00	0d	
+00	00	00	00	
+Uplink packet. Length: 25
+18	7b	c0	00	00	12	00	0d	dc	05	
+00	00	00	00	00	00	00	00	00	00	
+01	00	00	00	00	
+
+Downlink.
+08	7d	c0	01	00	bd	2e	46	0f	00	
+31	36	0b	02	00	00	c8	00	00	0d	
+00	00	00	00	
+Uplink packet. Length: 25
+18	7b	c0	00	00	12	9b	0d	dc	05	
+00	00	00	00	00	00	00	00	00	00	
+01	00	00	00	00	
+
+Uplink packet. Length: 25
+18	7b	c0	00	00	12	00	0d	dc	05	
+00	00	00	00	00	00	00	00	00	00	
+01	00	00	00	00	
+
+Uplink packet. Length: 25
+18	7b	c0	00	00	12	9b	0d	dc	05	
+00	00	00	00	00	00	00	00	00	00	
+01	00	00	00	00	
+
+Downlink.
+08	7d	c0	01	00	bd	34	46	0f	00	
+21	e4	0b	02	00	00	c8	00	00	0d	
+00	00	00	00	
+Uplink packet. Length: 25
+18	7b	c0	00	00	12	02	0f	dc	05	
+00	00	00	00	00	00	00	00	00	00	
+01	00	00	00	00	
+
+Downlink.
+08	7d	c0	02	00	bd	bf	48	0f	00	
+38	26	0b	02	00	00	c8	00	00	0f	
+00	00	00	00	
+Uplink packet. Length: 14
+18	7b	c0	00	00	07	11	05	40	06	
+00	00	08	01	
+
+Downlink.
+08	7d	c0	03	00	bd	3d	4a	0f	00	
+e9	a3	09	00	00	00	00	00	00	05	
+00	00	00	00	
+Uplink packet. Length: 8
+18	a0	c0	00	00	01	86	00	
+
+Downlink.
+08	7d	c0	04	00	bd	90	4a	0f	00	
+2e	32	07	00	00	00	00	00	00	00	
+00	00	00	00	
+Uplink packet. Length: 8
+18	a8	c0	00	00	01	9e	10	
+
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	94	10	
+
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	94	10	
+
+Uplink packet. Length: 8
+18	a0	c0	00	00	01	89	0f	
+
+Uplink packet. Length: 8
+18	a0	c0	00	00	01	86	00	
+
+Uplink packet. Length: 8
+18	a0	c0	00	00	01	86	00	
+
+Downlink.
+08	7d	c0	01	00	bd	2e	46	0f	00	
+22	86	07	00	00	00	00	00	00	00	
+00	00	00	00	
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	94	10	
+
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	94	10	
+
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	94	10	
+
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	94	10	
+
+Uplink packet. Length: 8
+18	a0	c0	00	00	01	86	00	
+
+Downlink.
+08	7d	c0	01	00	bd	36	46	0f	00	
+2a	aa	07	00	00	00	00	00	00	00	
+00	00	00	00	
+Uplink packet. Length: 8
+18	a0	c0	00	00	01	86	00	
+
+Downlink.
+08	7d	c0	02	00	bd	3c	46	0f	00	
+2a	88	07	00	00	00	00	00	00	00	
+00	00	00	00	
+Uplink packet. Length: 14
+18	7b	c0	00	00	07	00	05	40	06	
+00	00	08	01	
+
+Downlink.
+08	7d	c0	01	00	bd	37	46	0f	00	
+f3	e7	09	00	00	00	00	00	00	05	
+00	00	00	00	
+Uplink packet. Length: 14
+18	7b	c0	00	00	07	11	05	40	06	
+00	00	08	01	
+
+Downlink.
+08	7d	c0	01	00	bd	35	46	0f	00	
+e8	ad	09	00	00	00	00	00	00	05	
+00	00	00	00	
+Uplink packet. Length: 14
+18	7b	c0	00	00	07	00	05	40	06	
+00	00	08	01	
+
+Downlink.
+08	7d	c0	01	00	bd	2d	46	0f	00	
+f1	43	09	00	00	00	00	00	00	05	
+00	00	00	00	
+Uplink packet. Length: 21
+18	7d	c0	00	00	0e	9d	10	dc	05	
+00	00	00	00	00	00	00	00	00	00	
+00	
+
+Uplink packet. Length: 8
+18	7d	c0	00	00	01	4b	10	
+
+Uplink packet. Length: 12
+18	7d	c0	00	00	05	96	10	dc	05	
+00	00	
+
+Uplink packet. Length: 12
+18	7d	c0	00	00	05	96	10	dc	05	
+00	00	
+
+Uplink packet. Length: 8
+18	9a	c0	00	00	01	bc	00	
+
+Downlink.
+08	7d	c0	01	00	bd	37	46	0f	00	
+2a	86	07	00	00	00	00	00	00	00	
+00	00	00	00	
+Uplink packet. Length: 8
+18	9a	c0	00	00	01	b9	05	
+
+Downlink.
+08	7d	c0	02	00	bd	5e	46	0f	00	
+06	aa	09	01	00	00	00	00	00	05	
+00	00	00	00	
+Uplink packet. Length: 8
+18	9a	c0	00	00	01	ba	06	
+
+Downlink.
+08	7d	c0	03	00	bd	a5	46	0f	00	
+ef	61	09	00	00	00	00	00	00	06	
+00	00	00	00	
+Uplink packet. Length: 9
+18	9a	c0	00	00	03	78	14	c0	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	b3	09	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	af	15	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	bd	07	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	b2	08	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	b2	08	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	b3	09	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	b0	0a	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	b1	0b	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	b6	0c	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	b7	0d	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	b4	0e	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	b5	0f	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	aa	10	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	ab	11	
+
+Uplink packet. Length: 8
+18	9c	c0	00	00	01	a8	12	
+
+Uplink packet. Length: 8
+18	9a	c0	00	00	01	a6	1a	
+
+Uplink packet. Length: 8
+18	9a	c0	00	00	01	a5	19	
+
+Uplink packet. Length: 8
+18	9a	c0	00	00	01	a4	18	
+
+Uplink packet. Length: 8
+18	9a	c0	00	00	01	ab	17	
+
+Uplink packet. Length: 8
+18	9a	c0	00	00	01	aa	16	
+
+Uplink packet. Length: 8
+18	9a	c0	00	00	01	aa	16	
+
+Uplink packet. Length: 8
+18	9a	c0	00	00	01	aa	16	
+
+Uplink packet. Length: 8
+18	9a	c0	00	00	01	aa	16	
+
+Uplink packet. Length: 12
+18	9a	c0	00	00	05	0e	13	80	25	
+00	00	
+
+Downlink.
+08	7d	c0	01	00	bd	4a	46	0f	00	
+ea	6b	09	00	00	00	00	00	00	13	
+00	00	00	00	
+Uplink packet. Length: 8
+18	9a	c0	00	00	01	aa	16	
+
+Downlink.
+08	7d	c0	01	00	bd	63	46	0f	00	
+e8	1b	09	00	00	00	00	00	00	16	
+00	00	00	00	
+Uplink packet. Length: 8
+18	9a	c0	00	00	01	ab	17	
+
+Downlink.
+08	7d	c0	01	00	bd	2c	46	0f	00	
+f2	9f	09	00	00	00	00	00	00	17	
+00	00	00	00	
+Uplink packet. Length: 8
+18	9a	c0	00	00	01	ab	17	
+
+Downlink.
+08	7d	c0	01	00	bd	39	46	0f	00	
+f2	6b	09	00	00	00	00	00	00	17	
+00	00	00	00	
+Uplink packet. Length: 8
+18	94	c0	00	00	01	b2	00	
+
+Downlink.
+08	7d	c0	01	00	bd	2c	46	0f	00	
+20	ca	07	00	00	00	00	00	00	00	
+00	00	00	00	
+Uplink packet. Length: 8
+18	94	c0	00	00	01	b7	05	
+
+Downlink.
+08	7d	c0	02	00	bd	4b	46	0f	00	
+0d	78	09	00	00	00	00	00	00	05	
+00	00	00	00	
+Uplink packet. Length: 8
+18	94	c0	00	00	01	b5	07	
+
+Downlink.
+08	7d	c0	03	00	bd	53	46	0f	00	
+17	fc	09	00	00	00	00	00	00	07	
+00	00	00	00	
+Uplink packet. Length: 8
+18	94	c0	00	00	01	ba	08	
+
+Downlink.
+08	7d	c0	04	00	bd	5d	46	0f	00	
+18	56	09	00	00	00	00	00	00	08	
+00	00	00	00	
+Uplink packet. Length: 8
+18	96	c0	00	00	01	b6	06	
+
+Uplink packet. Length: 8
+18	94	c0	00	00	01	b5	07	
+
+Downlink.
+08	7d	c0	05	00	bd	a3	46	0f	00	
+16	b0	09	00	00	00	00	00	00	07	
+00	00	00	00	
+Uplink packet. Length: 8
+18	96	c0	00	00	01	b6	06	
+
+Uplink packet. Length: 8
+18	96	c0	00	00	01	a3	13	
+
+Uplink packet. Length: 9
+18	96	c0	00	00	02	a1	13	01	
+
+Uplink packet. Length: 9
+18	96	c0	00	00	03	a7	14	01	
+
+Uplink packet. Length: 8
+18	96	c0	00	00	01	a5	15	
+
+Uplink packet. Length: 8
+18	8e	c0	00	00	01	a8	00	
+
+Downlink.
+08	7d	c0	01	00	bd	43	46	0f	00	
+30	8e	07	00	00	00	00	00	00	00	
+00	00	00	00	
+Uplink packet. Length: 8
+18	8e	c0	00	00	01	ae	06	
+
+Downlink.
+08	7d	c0	02	00	bd	71	46	0f	00	
+2d	28	09	fc	ff	ff	ff	00	00	06	
+00	00	00	00	
+Uplink packet. Length: 9
+18	8e	c0	00	00	02	ac	07	00	
+
+Downlink.
+08	7d	c0	03	00	bd	9d	46	0f	00	
+2d	fe	09	fd	ff	ff	ff	00	00	07	
+00	00	00	00	
+Uplink packet. Length: 8
+18	ac	c0	00	00	01	8a	00	
+
+Downlink.
+08	7d	c0	01	00	19	53	46	0f	00	
+2e	6a	07	00	00	00	00	00	00	00	
+00	00	00	00	
+Uplink packet. Length: 8
+18	a0	c0	00	00	01	86	00	
+
+Downlink.
+08	7d	c0	02	00	bd	ae	46	0f	00	
+2b	fe	07	00	00	00	00	00	00	00	
+00	00	00	00	
+Downlink.
+08	7d	c0	03	00	bd	af	46	0f	00	
+15	02	07	00	00	00	00	00	00	00	
+00	00	00	00	
+Uplink packet. Length: 8
+18	a0	c0	00	00	01	86	00	
+
+Downlink.
+08	7d	c0	04	00	bd	d5	46	0f	00	
+34	72	07	00	00	00	00	00	00	00	
+00	00	00	00	
+Uplink packet. Length: 9
+18	a0	c0	00	00	02	8a	0e	01	
+
+Downlink.
+08	7d	c0	05	00	bd	41	47	0f	00	
+f2	67	09	00	00	00	00	00	00	0e	
+00	00	00	00	
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	94	10	
+
+Uplink packet. Length: 8
+18	a8	c0	00	00	01	9f	11	
+
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	95	11	
+
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	96	12	
+
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	97	13	
+
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	90	14	
+
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	91	15	
+
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	92	16	
+
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	93	17	
+
+Uplink packet. Length: 8
+18	a2	c0	00	00	01	9c	18	
+

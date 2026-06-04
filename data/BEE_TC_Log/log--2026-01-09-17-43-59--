@@ -1,0 +1,23 @@
+[17:44:01]  Connect to Switch Box.............Success.
+[17:44:01]  Connect to Rotator................Success.
+[17:44:01]  Connect to GS100..................Success.
+[17:44:01]  TM Port 13 bind success.
+[17:44:01]  BCN Port 31 bind success.
+[17:44:01]  RPT Port 25 bind success.
+[17:44:01]  Event Port 27 bind success.
+[17:44:01]  COSMIC Beacon Port 23 bind success.
+[17:44:01]  COSMIC Report Port 24 bind success.
+[17:44:21]  TLE "active" Download Completed.
+[17:44:37]  Generate : 0, 0, 8
+
+[17:44:37]  Generated Command Message.
+[17:44:47]  Generate : 0, 3, 8
+
+[17:44:47]  Generated Command Message.
+[17:44:55]  Generate : 0, 3, 8
+
+[17:44:55]  Generated Command Message.
+[17:45:06]  [Auto]Start AutoPilot.
+[17:45:06]  [Auto]Start Autopilot. Next Valuable AOS : 1/9 17:50:26
+[17:45:06]  [Auto]Max Elevation : 79.49° Please Keep Devices On.
+[17:45:26]  This Path Requires manual control.

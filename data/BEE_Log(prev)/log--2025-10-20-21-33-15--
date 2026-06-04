@@ -1,0 +1,516 @@
+|| Downlink || Packet Length: 144
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: 978c
+Sequence: 83c0
+Length: 26a6
+Time Stamp: ca	7d	f0	ea	d8	7
+
+[ HYVRID Execution Report ]
+RetCodeType: 0
+RetCode: 59866a1f
+MsgId: b091	Unknown MsgID
+CC: 498a
+DataSize (Exclude header): e7c2
+Used State: 76
+
+Output Data.
+7b	d6	49	bb	96	c8	e5	42	c3	71	
+e3	9e	40	e3	14	31	f2	e2	c1	1b	
+81	1f	29	1d	cd	4f	8d	a1	77	0c	
+83	f3	60	8c	e5	7b	1c	55	4e	24	
+6c	67	01	39	19	e2	a9	6a	40	c9	
+66	95	9c	6d	f9	07	4c	35	48	77	
+08	db	70	04	0e	78	1d	69	1e	34	
+70	bf	36	57	a6	0f	6a	55	53	e4	
+05	19	c3	73	91	d4	d5	5d	08	6c	
+46	3d	
+[ Downlink Raw Data ]
+08	78	00	5b	00	89	00	0f	46	a1	
+71	e5	00	00	00	00	fc	b8	f7	6e	
+d8	cc	48	fa	d4	72	43	b1	97	8c	
+83	c0	26	a6	ca	7d	f0	ea	d8	07	
+00	1f	6a	86	59	91	b0	8a	49	c2	
+e7	76	7b	d6	49	bb	96	c8	e5	42	
+c3	71	e3	9e	40	e3	14	31	f2	e2	
+c1	1b	81	1f	29	1d	cd	4f	8d	a1	
+77	0c	83	f3	60	8c	e5	7b	1c	55	
+4e	24	6c	67	01	39	19	e2	a9	6a	
+40	c9	66	95	9c	6d	f9	07	4c	35	
+48	77	08	db	70	04	0e	78	1d	69	
+1e	34	70	bf	36	57	a6	0f	6a	55	
+53	e4	05	19	c3	73	91	d4	d5	5d	
+08	6c	46	3d	
+|| Downlink || Packet Length: 144
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: bfcc
+Sequence: d3b6
+Length: b2c6
+Time Stamp: 70	3b	72	3f	1a	45
+
+[ HYVRID Execution Report ]
+RetCodeType: 62
+RetCode: 18ce3ebf
+MsgId: 9ae7	Unknown MsgID
+CC: 8b60
+DataSize (Exclude header): c030
+Used State: 4c
+
+Output Data.
+78	de	c0	83	d8	d1	4e	7d	a4	2b	
+c7	c6	ee	aa	7f	87	e9	45	65	72	
+cc	f2	a3	79	ef	4e	00	6e	ea	05	
+21	72	f2	33	b6	48	26	91	71	f3	
+37	f0	f6	f7	af	4c	e0	1e	18	e5	
+88	c1	e3	a1	6a	63	31	27	1e	5f	
+7a	03	2e	d3	8e	1b	e9	4a	65	f9	
+76	b6	3e	5e	83	a7	34	d0	c6	c6	
+c4	e1	42	e3	3f	2f	d4	d4	a1	c8	
+38	e9	
+[ Downlink Raw Data ]
+08	78	00	5c	00	89	00	0f	46	a2	
+87	ed	00	00	00	00	92	0c	12	c5	
+46	3d	bd	e8	e7	6a	e0	8d	bf	cc	
+d3	b6	b2	c6	70	3b	72	3f	1a	45	
+62	bf	3e	ce	18	e7	9a	60	8b	30	
+c0	4c	78	de	c0	83	d8	d1	4e	7d	
+a4	2b	c7	c6	ee	aa	7f	87	e9	45	
+65	72	cc	f2	a3	79	ef	4e	00	6e	
+ea	05	21	72	f2	33	b6	48	26	91	
+71	f3	37	f0	f6	f7	af	4c	e0	1e	
+18	e5	88	c1	e3	a1	6a	63	31	27	
+1e	5f	7a	03	2e	d3	8e	1b	e9	4a	
+65	f9	76	b6	3e	5e	83	a7	34	d0	
+c6	c6	c4	e1	42	e3	3f	2f	d4	d4	
+a1	c8	38	e9	
+|| Downlink || Packet Length: 144
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: 1f4
+Sequence: e7ad
+Length: 3d04
+Time Stamp: c9	56	4c	b2	8e	30
+
+[ HYVRID Execution Report ]
+RetCodeType: 39
+RetCode: 3cefcc34
+MsgId: 1463	Unknown MsgID
+CC: 198a
+DataSize (Exclude header): 9171
+Used State: db
+
+Output Data.
+8f	a5	37	71	5e	8b	82	4d	02	1e	
+c7	71	f9	81	e3	b5	2e	57	cb	db	
+93	c9	ce	da	67	cc	cc	bc	ee	f6	
+14	8c	0a	af	4e	be	b4	14	39	ba	
+64	64	fa	54	78	dc	a3	19	24	77	
+a7	12	51	71	8c	67	b9	a6	03	8e	
+45	48	0a	dc	3e	3a	62	84	c8	62	
+01	fc	e9	c8	09	2c	4f	4f	4a	01	
+00	f0	08	f6	a2	e3	45	fb	2b	f9	
+6d	65	
+[ Downlink Raw Data ]
+08	78	00	5d	00	89	00	0f	46	a3	
+9d	df	00	00	00	00	fc	3c	8c	54	
+08	d9	f4	e0	fe	34	f6	c6	01	f4	
+e7	ad	3d	04	c9	56	4c	b2	8e	30	
+39	34	cc	ef	3c	63	14	8a	19	71	
+91	db	8f	a5	37	71	5e	8b	82	4d	
+02	1e	c7	71	f9	81	e3	b5	2e	57	
+cb	db	93	c9	ce	da	67	cc	cc	bc	
+ee	f6	14	8c	0a	af	4e	be	b4	14	
+39	ba	64	64	fa	54	78	dc	a3	19	
+24	77	a7	12	51	71	8c	67	b9	a6	
+03	8e	45	48	0a	dc	3e	3a	62	84	
+c8	62	01	fc	e9	c8	09	2c	4f	4f	
+4a	01	00	f0	08	f6	a2	e3	45	fb	
+2b	f9	6d	65	
+|| Downlink || Packet Length: 144
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: 5ab5
+Sequence: b25d
+Length: 795e
+Time Stamp: 4d	b6	7f	74	d3	cb
+
+[ HYVRID Execution Report ]
+RetCodeType: b7
+RetCode: f7f6f671
+MsgId: 5fae	Unknown MsgID
+CC: 9ac3
+DataSize (Exclude header): d60d
+Used State: b9
+
+Output Data.
+aa	24	0b	16	21	8f	99	5c	9c	0c	
+7a	67	d4	d7	bf	d9	69	7e	45	b5	
+ac	4a	eb	88	93	11	b3	2e	f3	f8	
+d7	8f	8b	e4	e6	b4	56	a7	a7	84	
+73	51	bb	7a	1e	6f	7b	e0	af	13	
+26	26	fb	1a	dc	65	77	7f	a3	cc	
+b2	71	d7	85	eb	58	42	da	48	a5	
+69	6e	ad	2e	17	9f	99	9e	26	5d	
+bf	5f	4a	f6	87	68	a2	84	dd	c4	
+c8	b7	
+[ Downlink Raw Data ]
+08	78	00	5e	00	89	00	0f	46	a4	
+b3	e6	00	00	00	00	cc	23	1f	de	
+07	bf	f8	57	65	a6	d9	6b	5a	b5	
+b2	5d	79	5e	4d	b6	7f	74	d3	cb	
+b7	71	f6	f6	f7	ae	5f	c3	9a	0d	
+d6	b9	aa	24	0b	16	21	8f	99	5c	
+9c	0c	7a	67	d4	d7	bf	d9	69	7e	
+45	b5	ac	4a	eb	88	93	11	b3	2e	
+f3	f8	d7	8f	8b	e4	e6	b4	56	a7	
+a7	84	73	51	bb	7a	1e	6f	7b	e0	
+af	13	26	26	fb	1a	dc	65	77	7f	
+a3	cc	b2	71	d7	85	eb	58	42	da	
+48	a5	69	6e	ad	2e	17	9f	99	9e	
+26	5d	bf	5f	4a	f6	87	68	a2	84	
+dd	c4	c8	b7	
+|| Downlink || Packet Length: 144
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: be7
+Sequence: 1906
+Length: 3f78
+Time Stamp: 64	0	e5	48	e8	cb
+
+[ HYVRID Execution Report ]
+RetCodeType: 58
+RetCode: 5ac7a627
+MsgId: ea72	Unknown MsgID
+CC: 1d79
+DataSize (Exclude header): 93a6
+Used State: a9
+
+Output Data.
+de	c2	65	b5	b1	92	58	b1	80	fc	
+01	f8	64	f3	51	de	69	17	36	8e	
+23	ba	31	c3	32	af	fa	b6	6f	9b	
+f4	af	50	8b	48	b5	b1	45	b3	b3	
+47	74	51	95	0d	26	e5	00	ff	00	
+21	5c	ef	8a	f4	8b	c9	7c	43	6b	
+1c	56	b1	44	92	62	29	6e	11	49	
+53	b4	6e	ce	de	c0	74	06	a5	37	
+d0	72	91	cb	5a	c1	67	03	a3	b8	
+62	ea	
+[ Downlink Raw Data ]
+08	78	00	5f	00	89	00	0f	46	a5	
+c9	d9	00	00	00	00	0c	31	98	48	
+0d	b7	e9	d2	9a	65	6b	e5	0b	e7	
+19	06	3f	78	64	00	e5	48	e8	cb	
+58	27	a6	c7	5a	72	ea	79	1d	a6	
+93	a9	de	c2	65	b5	b1	92	58	b1	
+80	fc	01	f8	64	f3	51	de	69	17	
+36	8e	23	ba	31	c3	32	af	fa	b6	
+6f	9b	f4	af	50	8b	48	b5	b1	45	
+b3	b3	47	74	51	95	0d	26	e5	00	
+ff	00	21	5c	ef	8a	f4	8b	c9	7c	
+43	6b	1c	56	b1	44	92	62	29	6e	
+11	49	53	b4	6e	ce	de	c0	74	06	
+a5	37	d0	72	91	cb	5a	c1	67	03	
+a3	b8	62	ea	
+|| Downlink || Packet Length: 144
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: 36cc
+Sequence: 6fce
+Length: d007
+Time Stamp: a6	7f	a5	59	d7	fc
+
+[ HYVRID Execution Report ]
+RetCodeType: 32
+RetCode: cd2d70f6
+MsgId: acab	Unknown MsgID
+CC: 178c
+DataSize (Exclude header): 2791
+Used State: 1b
+
+Output Data.
+be	9e	ff	00	5a	e0	2e	af	1a	e6	
+eb	99	09	55	e3	fb	a3	3f	4a	29	
+d2	f6	af	73	29	cf	97	73	5e	ff	
+00	c4	73	1c	c5	93	b9	1f	0a	eb	
+c0	0b	db	02	b9	99	2e	1e	56	79	
+1b	82	df	8e	4d	34	b9	7e	5c	be	
+7a	f3	44	70	49	22	92	83	8e	3e	
+6a	f4	21	4e	34	ce	49	ce	52	1c	
+11	e5	55	d8	87	62	9c	64	7f	53	
+53	a4	
+[ Downlink Raw Data ]
+08	78	00	60	00	89	00	0f	46	a6	
+df	eb	00	00	00	00	3a	39	e2	ae	
+ff	00	6a	46	91	31	85	37	36	cc	
+6f	ce	d0	07	a6	7f	a5	59	d7	fc	
+32	f6	70	2d	cd	ab	ac	8c	17	91	
+27	1b	be	9e	ff	00	5a	e0	2e	af	
+1a	e6	eb	99	09	55	e3	fb	a3	3f	
+4a	29	d2	f6	af	73	29	cf	97	73	
+5e	ff	00	c4	73	1c	c5	93	b9	1f	
+0a	eb	c0	0b	db	02	b9	99	2e	1e	
+56	79	1b	82	df	8e	4d	34	b9	7e	
+5c	be	7a	f3	44	70	49	22	92	83	
+8e	3e	6a	f4	21	4e	34	ce	49	ce	
+52	1c	11	e5	55	d8	87	62	9c	64	
+7f	53	53	a4	
+|| Downlink || Packet Length: 144
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: 8c26
+Sequence: c2b8
+Length: c0e8
+Time Stamp: 70	2a	9d	cb	bc	a2
+
+[ HYVRID Execution Report ]
+RetCodeType: 30
+RetCode: 6ccf7638
+MsgId: a762	Unknown MsgID
+CC: cb9d
+DataSize (Exclude header): 7241
+Used State: a4
+
+Output Data.
+4e	08	12	48	c0	90	36	6d	50	3b	
+54	13	05	4c	b3	6e	2a	cd	f7	f1	
+8f	c6	94	6d	f9	e2	31	fc	ed	c1	
+71	fc	34	e5	91	65	11	a1	91	c2	
+a6	46	40	e6	96	da	8f	70	11	c4	
+e5	23	5d	a8	7c	be	1b	38	c9	aa	
+cf	0e	19	51	31	c6	72	6a	d7	90	
+18	90	1d	88	18	23	3d	73	49	6d	
+0e	d8	f7	3b	e3	9f	94	7a	fa	d0	
+a5	61	
+[ Downlink Raw Data ]
+08	78	00	61	00	89	00	0f	46	a7	
+f5	ec	00	00	00	00	0f	2f	12	be	
+10	1f	b8	9d	4d	5f	2c	22	8c	26	
+c2	b8	c0	e8	70	2a	9d	cb	bc	a2	
+30	38	76	cf	6c	62	a7	9d	cb	41	
+72	a4	4e	08	12	48	c0	90	36	6d	
+50	3b	54	13	05	4c	b3	6e	2a	cd	
+f7	f1	8f	c6	94	6d	f9	e2	31	fc	
+ed	c1	71	fc	34	e5	91	65	11	a1	
+91	c2	a6	46	40	e6	96	da	8f	70	
+11	c4	e5	23	5d	a8	7c	be	1b	38	
+c9	aa	cf	0e	19	51	31	c6	72	6a	
+d7	90	18	90	1d	88	18	23	3d	73	
+49	6d	0e	d8	f7	3b	e3	9f	94	7a	
+fa	d0	a5	61	
+|| Downlink || Packet Length: 144
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: 7ba1
+Sequence: 2b
+Length: 279
+Time Stamp: c9	35	2c	ef	b6	46
+
+[ HYVRID Execution Report ]
+RetCodeType: ea
+RetCode: fe396617
+MsgId: 5a2f	Unknown MsgID
+CC: a963
+DataSize (Exclude header): 701
+Used State: 0
+
+Output Data.
+63	20	7d	7d	ea	d3	22	c4	6a	c4	
+64	b0	5d	b9	ea	57	a8	a7	37	cf	
+12	b7	08	3e	ef	de	fd	6a	68	b2	
+ce	ac	bb	76	8c	e7	fc	9a	58	48	
+58	86	f0	31	dd	31	c7	b6	28	6c	
+76	14	88	d6	16	31	fc	c1	9b	1b	
+8f	5a	83	63	33	1c	67	8e	8b	53	
+34	28	92	11	93	f3	76	23	81	4c	
+b7	58	d2	43	d0	c8	dc	06	cf	dd	
+15	29	
+[ Downlink Raw Data ]
+08	78	00	62	00	89	00	0f	46	a9	
+0b	e7	00	00	00	00	35	72	be	36	
+4b	84	50	42	a7	38	a6	ac	7b	a1	
+00	2b	02	79	c9	35	2c	ef	b6	46	
+ea	17	66	39	fe	2f	5a	63	a9	01	
+07	00	63	20	7d	7d	ea	d3	22	c4	
+6a	c4	64	b0	5d	b9	ea	57	a8	a7	
+37	cf	12	b7	08	3e	ef	de	fd	6a	
+68	b2	ce	ac	bb	76	8c	e7	fc	9a	
+58	48	58	86	f0	31	dd	31	c7	b6	
+28	6c	76	14	88	d6	16	31	fc	c1	
+9b	1b	8f	5a	83	63	33	1c	67	8e	
+8b	53	34	28	92	11	93	f3	76	23	
+81	4c	b7	58	d2	43	d0	c8	dc	06	
+cf	dd	15	29	
+|| Downlink || Packet Length: 144
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: aa77
+Sequence: 12cb
+Length: 6c1
+Time Stamp: 18	f	b8	65	b2	e
+
+[ HYVRID Execution Report ]
+RetCodeType: 41
+RetCode: b3b3a2f4
+MsgId: a228	Unknown MsgID
+CC: 55a1
+DataSize (Exclude header): 3277
+Used State: f4
+
+Output Data.
+f5	a4	27	83	fd	df	4c	d2	b0	66	
+7c	1c	9e	e7	d2	91	db	2a	00	af	
+5c	f3	81	06	13	18	e0	f4	a4	21	
+54	31	fe	2a	11	8a	03	91	91	9e	
+94	1c	96	23	60	cf	d6	98	c6	09	
+36	f0	87	1d	b9	14	e2	49	e3	86	
+fa	8a	69	1c	8c	75	ea	68	03	6f	
+f1	63	b5	08	05	1c	6f	25	7a	0a	
+7e	fc	83	b4	67	3e	b4	8a	01	de	
+03	30	
+[ Downlink Raw Data ]
+08	78	00	63	00	89	00	0f	46	aa	
+21	d9	00	00	00	00	f5	19	7d	06	
+c8	53	71	c9	23	a0	1d	28	aa	77	
+12	cb	06	c1	18	0f	b8	65	b2	0e	
+41	f4	a2	b3	b3	28	a2	a1	55	77	
+32	f4	f5	a4	27	83	fd	df	4c	d2	
+b0	66	7c	1c	9e	e7	d2	91	db	2a	
+00	af	5c	f3	81	06	13	18	e0	f4	
+a4	21	54	31	fe	2a	11	8a	03	91	
+91	9e	94	1c	96	23	60	cf	d6	98	
+c6	09	36	f0	87	1d	b9	14	e2	49	
+e3	86	fa	8a	69	1c	8c	75	ea	68	
+03	6f	f1	63	b5	08	05	1c	6f	25	
+7a	0a	7e	fc	83	b4	67	3e	b4	8a	
+01	de	03	30	
+|| Downlink || Packet Length: 144
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: 2b4b
+Sequence: ba4d
+Length: d809
+Time Stamp: ea	10	62	9a	cc	1b
+
+[ HYVRID Execution Report ]
+RetCodeType: ee
+RetCode: 73bec703
+MsgId: d94d	Unknown MsgID
+CC: 479e
+DataSize (Exclude header): 4a53
+Used State: 42
+
+Output Data.
+8c	28	ce	3d	c7	5a	00	69	ce	d5	
+07	38	1f	ad	48	c0	28	0a	3e	f7	
+14	cc	32	bf	4e	47	19	a5	2d	f3	
+8e	a3	f0	cd	48	0e	50	dc	e7	1d	
+7d	2b	47	43	d1	6e	f5	ab	e3	15	
+a4	5b	8a	8d	ce	73	80	07	b9	ac	
+bd	c7	71	0b	9c	57	a4	fc	35	d4	
+6c	62	6b	9b	09	59	21	bb	97	12	
+43	3b	8f	97	3f	dd	27	f9	56	15	
+e7	28	
+[ Downlink Raw Data ]
+08	78	00	64	00	89	00	0f	46	ab	
+37	f1	00	00	00	00	18	c9	e6	97	
+6e	d1	d4	63	dc	77	a2	e0	2b	4b	
+ba	4d	d8	09	ea	10	62	9a	cc	1b	
+ee	03	c7	be	73	4d	d9	9e	47	53	
+4a	42	8c	28	ce	3d	c7	5a	00	69	
+ce	d5	07	38	1f	ad	48	c0	28	0a	
+3e	f7	14	cc	32	bf	4e	47	19	a5	
+2d	f3	8e	a3	f0	cd	48	0e	50	dc	
+e7	1d	7d	2b	47	43	d1	6e	f5	ab	
+e3	15	a4	5b	8a	8d	ce	73	80	07	
+b9	ac	bd	c7	71	0b	9c	57	a4	fc	
+35	d4	6c	62	6b	9b	09	59	21	bb	
+97	12	43	3b	8f	97	3f	dd	27	f9	
+56	15	e7	28	
+|| Downlink || Packet Length: 144
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: fe8
+Sequence: 315a
+Length: 58e
+Time Stamp: 4b	85	94	ca	e9	1e
+
+[ HYVRID Execution Report ]
+RetCodeType: 32
+RetCode: 77978fcd
+MsgId: a9b0	Unknown MsgID
+CC: 352e
+DataSize (Exclude header): b14b
+Used State: fb
+
+Output Data.
+b3	72	13	3d	16	3f	e1	1e	84	55	
+6f	10	df	41	a4	2f	9c	5a	29	af	
+a4	6d	8b	18	c0	66	1e	ad	b7	a5	
+65	e9	5a	44	8a	ef	77	77	2b	fd	
+b0	e5	dd	41	18	e7	df	bd	78	72	
+4d	bb	9e	b4	5a	5a	1a	56	64	c9	
+71	22	cf	29	8a	28	97	74	ae	eb	
+b4	2a	fd	7b	d4	b6	f1	dd	6a	5a	
+84	9a	95	95	d4	f6	5b	d4	27	ca	
+3e	56	
+[ Downlink Raw Data ]
+08	78	00	65	00	89	00	0f	46	ac	
+4d	e0	00	00	00	00	41	b4	6d	46	
+2a	52	b3	3a	bd	0e	da	1f	0f	e8	
+31	5a	05	8e	4b	85	94	ca	e9	1e	
+32	cd	8f	97	77	b0	a9	2e	35	4b	
+b1	fb	b3	72	13	3d	16	3f	e1	1e	
+84	55	6f	10	df	41	a4	2f	9c	5a	
+29	af	a4	6d	8b	18	c0	66	1e	ad	
+b7	a5	65	e9	5a	44	8a	ef	77	77	
+2b	fd	b0	e5	dd	41	18	e7	df	bd	
+78	72	4d	bb	9e	b4	5a	5a	1a	56	
+64	c9	71	22	cf	29	8a	28	97	74	
+ae	eb	b4	2a	fd	7b	d4	b6	f1	dd	
+6a	5a	84	9a	95	95	d4	f6	5b	d4	
+27	ca	3e	56	
+|| Downlink || Packet Length: 144
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: 1a6d
+Sequence: b6e0
+Length: 8645
+Time Stamp: 59	5f	6e	77	b6	7e
+
+[ HYVRID Execution Report ]
+RetCodeType: ee
+RetCode: 11759d7f
+MsgId: 90c6	Unknown MsgID
+CC: 85a0
+DataSize (Exclude header): f80e
+Used State: 61
+
+Output Data.
+cf	9b	9e	b2	30	1c	55	27	64	36	
+ca	70	87	f2	21	10	bc	91	85	f9	
+7f	7a	41	00	8f	e6	3d	aa	c4	da	
+85	b4	93	14	9d	9d	80	21	15	d5	
+b6	a3	9f	4f	eb	4e	c3	ac	4b	9d	
+9b	76	96	7c	fc	bb	33	db	1d	cd	
+70	be	2d	d6	1a	df	65	9d	b3	11	
+3c	9b	89	03	fe	59	af	6f	c6	a1	
+36	dd	90	73	75	32	7c	63	ae	5e	
+5d	dc	
+[ Downlink Raw Data ]
+08	78	00	66	00	89	00	0f	46	ad	
+63	ed	00	00	00	00	88	74	0c	a7	
+be	3b	fb	d4	53	c0	fa	98	1a	6d	
+b6	e0	86	45	59	5f	6e	77	b6	7e	
+ee	7f	9d	75	11	c6	90	a0	85	0e	
+f8	61	cf	9b	9e	b2	30	1c	55	27	
+64	36	ca	70	87	f2	21	10	bc	91	
+85	f9	7f	7a	41	00	8f	e6	3d	aa	
+c4	da	85	b4	93	14	9d	9d	80	21	
+15	d5	b6	a3	9f	4f	eb	4e	c3	ac	
+4b	9d	9b	76	96	7c	fc	bb	33	db	
+1d	cd	70	be	2d	d6	1a	df	65	9d	
+b3	11	3c	9b	89	03	fe	59	af	6f	
+c6	a1	36	dd	90	73	75	32	7c	63	
+ae	5e	5d	dc	

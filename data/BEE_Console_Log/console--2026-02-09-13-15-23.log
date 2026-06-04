@@ -1,0 +1,33 @@
+2026-02-09 13:15
+[13:15:27]  Connect to Switch Box.............Success.
+[13:15:27]  Connect to Rotator................Success.
+[13:15:27]  Connect to GS100..................Success.
+[13:15:27]  TM Port 13 bind success.
+[13:15:27]  BCN Port 31 bind success.
+[13:15:27]  RPT Port 25 bind success.
+[13:15:27]  Event Port 27 bind success.
+[13:15:27]  COSMIC Beacon Port 23 bind success.
+[13:15:27]  COSMIC Report Port 24 bind success.
+[13:15:44]  TLE "active" Download Completed.
+[13:15:49]  Start Engaging.
+[13:15:49]  Tracking : Az 194, El 21.
+[13:15:50]  Start Doppler Correction.
+[13:15:51]  Tracking : Az 195, El 21.
+[13:15:51]  Forked Safe Amplifier Process.(ON, Timer)
+[13:16:07]  Tracking : Az 197, El 24.
+[13:16:09]  Tracking : Az 198, El 24.
+[13:16:23]  Tracking : Az 201, El 27.
+[13:16:25]  Tracking : Az 201, El 27.
+[13:16:26]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x45 0xa 0x28
+[13:16:27]  Received GETFILEINFO Response from port : 23.
+
+[13:16:33]  Tracking : Az 203, El 29.
+[13:16:35]  Tracking : Az 204, El 29.
+[13:16:36]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x45 0xa 0x28
+[13:16:41]  Ping Success at node 5, 458ms
+[13:16:44]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x45 0xa 0x28
+[13:16:45]  Received GETFILEINFO Response from port : 23.
+
+[13:16:46]  Tracking : Az 207, El 31.
+[13:16:48]  Tracking : Az 207, El 32.
+[13:16:52]  Tracking : Az 209, El 33.

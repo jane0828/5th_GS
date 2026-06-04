@@ -1,0 +1,20 @@
+2026-01-09 17:59
+[17:59:03]  Connect to Switch Box.............Success.
+[17:59:03]  Connect to Rotator................Success.
+[17:59:03]  Connect to GS100..................Success.
+[17:59:03]  TM Port 13 bind success.
+[17:59:03]  BCN Port 31 bind success.
+[17:59:03]  RPT Port 25 bind success.
+[17:59:03]  Event Port 27 bind success.
+[17:59:03]  COSMIC Beacon Port 23 bind success.
+[17:59:03]  COSMIC Report Port 24 bind success.
+[17:59:16]  TLE "active" Download Completed.
+[18:00:42]  TLE "active" Download Completed.
+[18:01:54]  Generated Command Message.
+[18:01:54]  Generated Command Message.
+[18:01:55]  Generated Command Message.
+[18:01:55]  Generated Command Message.
+[18:02:01]  [Auto]Start AutoPilot.
+[18:02:01]  [Auto]Start Autopilot. Next Valuable AOS : 1/9 18:10:16
+[18:02:01]  [Auto]Max Elevation : 61.00° Please Keep Devices On.
+[18:05:16]  Azimuth Crossing Path(Counterclockwise)

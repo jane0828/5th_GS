@@ -1,0 +1,487 @@
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c001
+Length: bd
+Time Stamp: 66	46	f	0	13	a
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 1
+MsgId: 187c	EPS (187c)
+CC: 8
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	01	00	bd	66	46	0f	00	
+13	0a	09	01	00	00	00	7c	18	08	
+00	00	00	00	
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c002
+Length: bd
+Time Stamp: 66	46	f	0	fc	95
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 1
+MsgId: 187c	EPS (187c)
+CC: 1b
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	02	00	bd	66	46	0f	00	
+fc	95	09	01	00	00	00	7c	18	1b	
+00	00	00	00	
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c001
+Length: bd
+Time Stamp: 63	46	f	0	f4	13
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 1
+MsgId: 187c	EPS (187c)
+CC: 8
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	01	00	bd	63	46	0f	00	
+f4	13	09	01	00	00	00	7c	18	08	
+00	00	00	00	
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c002
+Length: bd
+Time Stamp: 64	46	f	0	ef	9
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 1
+MsgId: 187c	EPS (187c)
+CC: 12
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	02	00	bd	64	46	0f	00	
+ef	09	09	01	00	00	00	7c	18	12	
+00	00	00	00	
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c003
+Length: bd
+Time Stamp: 65	46	f	0	f0	9
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 1
+MsgId: 187c	EPS (187c)
+CC: 1b
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	03	00	bd	65	46	0f	00	
+f0	09	09	01	00	00	00	7c	18	1b	
+00	00	00	00	
+IFC (1871)
+|| Uplink || Length: 9
+18	71	c0	00	00	02	5b	0e	01	
+
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c004
+Length: bd
+Time Stamp: 97	47	f	0	d2	9c
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 0
+MsgId: 1871	IFC (1871)
+CC: e
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	04	00	bd	97	47	0f	00	
+d2	9c	09	00	00	00	00	71	18	0e	
+00	00	00	00	
+IFC (1871)
+|| Uplink || Length: 9
+18	71	c0	00	00	02	5a	0f	01	
+
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c005
+Length: bd
+Time Stamp: a9	47	f	0	f5	4f
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 0
+MsgId: 1871	IFC (1871)
+CC: f
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	05	00	bd	a9	47	0f	00	
+f5	4f	09	00	00	00	00	71	18	0f	
+00	00	00	00	
+STX (188e)
+|| Uplink || Length: 8
+18	8e	c0	00	00	01	a6	0e	
+
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c006
+Length: bd
+Time Stamp: e6	47	f	0	24	2
+
+[ HYVRID Execution Report ]
+RetCodeType: b
+RetCode: c8000004
+MsgId: 188e	STX (188e)
+CC: e
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	06	00	bd	e6	47	0f	00	
+24	02	0b	04	00	00	c8	8e	18	0e	
+00	00	00	00	
+STX (1890)
+|| Uplink || Length: 8
+18	90	c0	00	00	01	b8	0e	
+
+|| Downlink || Packet Length: 57
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: 87b
+Sequence: c001
+Length: bd
+Time Stamp: 51	48	f	0	49	d0
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: fffffffb
+MsgId: 1890	STX (1890)
+CC: e
+DataSize (Exclude header): 1
+Used State: 0
+
+Output Data.
+00	00	00	00	00	
+[ Downlink Raw Data ]
+08	7a	c0	00	00	2e	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	08	7b	
+c0	01	00	bd	51	48	0f	00	49	d0	
+09	fb	ff	ff	ff	90	18	0e	00	01	
+00	00	00	00	00	00	00	
+STX (1890)
+|| Uplink || Length: 8
+18	90	c0	00	00	01	b8	0e	
+
+|| Downlink || Packet Length: 57
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: 87b
+Sequence: c001
+Length: bd
+Time Stamp: 2f	46	f	0	2b	50
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 1
+MsgId: 1890	STX (1890)
+CC: e
+DataSize (Exclude header): 1
+Used State: 0
+
+Output Data.
+00	00	00	00	00	
+[ Downlink Raw Data ]
+08	7a	c0	00	00	2e	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	08	7b	
+c0	01	00	bd	2f	46	0f	00	2b	50	
+09	01	00	00	00	90	18	0e	00	01	
+00	00	00	00	00	00	00	
+STX (1890)
+|| Uplink || Length: 8
+18	90	c0	00	00	01	b8	0e	
+
+|| Downlink || Packet Length: 57
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: 87b
+Sequence: c001
+Length: bd
+Time Stamp: 2e	46	f	0	2d	d8
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: fffffffe
+MsgId: 1890	STX (1890)
+CC: e
+DataSize (Exclude header): 1
+Used State: 0
+
+Output Data.
+00	00	00	00	00	
+[ Downlink Raw Data ]
+08	7a	c0	00	00	2e	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	08	7b	
+c0	01	00	bd	2e	46	0f	00	2d	d8	
+09	fe	ff	ff	ff	90	18	0e	00	01	
+00	00	00	00	00	00	00	
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c001
+Length: bd
+Time Stamp: 5e	46	f	0	fd	13
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 1
+MsgId: 187c	EPS (187c)
+CC: 12
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	01	00	bd	5e	46	0f	00	
+fd	13	09	01	00	00	00	7c	18	12	
+00	00	00	00	
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c002
+Length: bd
+Time Stamp: 5f	46	f	0	ef	9
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 1
+MsgId: 187c	EPS (187c)
+CC: 1b
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	02	00	bd	5f	46	0f	00	
+ef	09	09	01	00	00	00	7c	18	1b	
+00	00	00	00	
+STX (1890)
+|| Uplink || Length: 9
+18	90	c0	00	00	02	a0	15	00	
+
+|| Downlink || Packet Length: 57
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: 87b
+Sequence: c002
+Length: bd
+Time Stamp: b7	46	f	0	30	d0
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: fffffffe
+MsgId: 1890	STX (1890)
+CC: 15
+DataSize (Exclude header): 1
+Used State: 0
+
+Output Data.
+00	00	00	00	00	
+[ Downlink Raw Data ]
+08	7a	c0	00	00	2e	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	08	7b	
+c0	02	00	bd	b7	46	0f	00	30	d0	
+09	fe	ff	ff	ff	90	18	15	00	01	
+00	00	00	00	00	00	00	
+STX (1890)
+|| Uplink || Length: 9
+18	90	c0	00	00	02	a0	15	00	
+
+|| Downlink || Packet Length: 57
+Reply to OIF_MID.
+[ CCSDS Header ]
+Stream ID: 87b
+Sequence: c003
+Length: bd
+Time Stamp: cf	46	f	0	28	50
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: fffffffe
+MsgId: 1890	STX (1890)
+CC: 15
+DataSize (Exclude header): 1
+Used State: 0
+
+Output Data.
+00	00	00	00	00	
+[ Downlink Raw Data ]
+08	7a	c0	00	00	2e	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	08	7b	
+c0	03	00	bd	cf	46	0f	00	28	50	
+09	fe	ff	ff	ff	90	18	15	00	01	
+00	00	00	00	00	00	00	
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c001
+Length: bd
+Time Stamp: 5d	46	f	0	0	18
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 1
+MsgId: 187c	EPS (187c)
+CC: 8
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	01	00	bd	5d	46	0f	00	
+00	18	09	01	00	00	00	7c	18	08	
+00	00	00	00	
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c002
+Length: bd
+Time Stamp: 5e	46	f	0	3	14
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 1
+MsgId: 187c	EPS (187c)
+CC: 1b
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	02	00	bd	5e	46	0f	00	
+03	14	09	01	00	00	00	7c	18	1b	
+00	00	00	00	
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c001
+Length: bd
+Time Stamp: 66	46	f	0	12	a
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 1
+MsgId: 187c	EPS (187c)
+CC: 8
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	01	00	bd	66	46	0f	00	
+12	0a	09	01	00	00	00	7c	18	08	
+00	00	00	00	
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c002
+Length: bd
+Time Stamp: 67	46	f	0	11	a
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 1
+MsgId: 187c	EPS (187c)
+CC: 12
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	02	00	bd	67	46	0f	00	
+11	0a	09	01	00	00	00	7c	18	12	
+00	00	00	00	
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c003
+Length: bd
+Time Stamp: 68	46	f	0	12	a
+
+[ HYVRID Execution Report ]
+RetCodeType: 9
+RetCode: 1
+MsgId: 187c	EPS (187c)
+CC: 1b
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	03	00	bd	68	46	0f	00	
+12	0a	09	01	00	00	00	7c	18	1b	
+00	00	00	00	

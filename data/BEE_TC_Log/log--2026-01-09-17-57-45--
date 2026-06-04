@@ -1,0 +1,14 @@
+[17:57:47]  Connect to Switch Box.............Success.
+[17:57:47]  Connect to Rotator................Success.
+[17:57:47]  Connect to GS100..................Success.
+[17:57:47]  TM Port 13 bind success.
+[17:57:47]  BCN Port 31 bind success.
+[17:57:47]  RPT Port 25 bind success.
+[17:57:47]  Event Port 27 bind success.
+[17:57:47]  COSMIC Beacon Port 23 bind success.
+[17:57:47]  COSMIC Report Port 24 bind success.
+[17:57:57]  TLE "active" Download Completed.
+[17:58:04]  [Auto]Start AutoPilot.
+[17:58:04]  [Auto]Start Autopilot. Next Valuable AOS : 1/9 21:35:2
+[17:58:04]  [Auto]Max Elevation : 64.32° Please Keep Devices On.
+[17:58:32]  OPS 5712 (P/L 153)	Satellite decayed	

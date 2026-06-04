@@ -1,0 +1,7 @@
+Filesystem           1K-blocks      Used Available Use% Mounted on
+ubi0:rootfs             220312    185416     34896  84% /
+devtmpfs                126552         0    126552   0% /dev
+tmpfs                   126656         0    126656   0% /dev/shm
+tmpfs                   126656       344    126312   0% /tmp
+tmpfs                   126656        20    126636   0% /run
+/dev/mmcblk0p1         3558936   1894020   1464420  56% /mnttmp

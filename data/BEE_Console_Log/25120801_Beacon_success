@@ -1,0 +1,141 @@
+[00:26:28]  Connect to Switch Box.............Success.
+[00:26:28]  Connect to Rotator................Success.
+[00:26:28]  Connect to GS100..................Success.
+[00:26:28]  TM Port 13 bind success.
+[00:26:28]  BCN Port 31 bind success.
+[00:26:28]  RPT Port 25 bind success.
+[00:26:42]  TLE "cubesat" Download Completed.
+[00:54:57]  Start Engaging.
+[00:54:57]  Tracking : Az 18, El 0.
+[00:54:59]  Tracking : Az 18, El 0.
+[00:55:01]  Tracking : Az 18, El 0.
+[01:10:07]  Start Doppler Correction.
+[01:14:39]  Tracking : Az 20, El 1.
+[01:14:44]  Forked Safe Amplifier Process.(ON, Timer)
+[01:15:11]  Tracking : Az 21, El 4.
+[01:15:38]  Tracking : Az 22, El 6.
+[01:15:57]  Received Beacon from port : 13.
+[01:16:07]  Received Beacon from port : 13.
+[01:16:14]  Tracking : Az 24, El 9.
+[01:16:17]  AX100 Boot Count : 184
+[01:16:35]  Tracking : Az 26, El 11.
+[01:16:37]  Received Beacon from port : 13.
+[01:16:55]  Tracking : Az 28, El 13.
+[01:16:57]  Received Beacon from port : 13.
+[01:17:01]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[01:17:07]  Received Beacon from port : 13.
+[01:17:22]  Tracking : Az 30, El 16.
+[01:17:27]  Received Beacon from port : 13.
+[01:17:37]  Received Beacon from port : 13.
+[01:17:39]  Tracking : Az 33, El 18.
+[01:17:41]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x45 0xa 0x5e
+[01:17:42]  Received GETFILEINFO Response from port : 13.
+[01:17:57]  Received Beacon from port : 13.
+[01:17:59]  Tracking : Az 36, El 21.
+[01:18:01]  Tracking : Az 36, El 21.
+[01:18:05]  Tracking : Az 37, El 21.
+[01:18:17]  Received Beacon from port : 13.
+[01:18:19]  Tracking : Az 39, El 24.
+[01:18:26]  Tracking : Az 41, El 25.
+[01:18:27]  Received Beacon from port : 13.
+[01:18:37]  Received Beacon from port : 13.
+[01:18:39]  Tracking : Az 44, El 27.
+[01:18:40]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[01:18:47]  Received Beacon from port : 13.
+[01:18:50]  Tracking : Az 47, El 29.
+[01:18:54]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x45 0xa 0x5e
+[01:18:55]  Received GETFILEINFO Response from port : 13.
+[01:18:57]  Received Beacon from port : 13.
+[01:19:00]  Tracking : Az 50, El 31.
+[01:19:06]  Tracking : Az 52, El 32.
+[01:19:14]  Tracking : Az 55, El 34.
+[01:19:18]  Received Beacon from port : 13.
+[01:19:20]  Tracking : Az 57, El 35.
+[01:19:26]  Tracking : Az 60, El 36.
+[01:19:28]  Received Beacon from port : 13.
+[01:19:28]  Tracking : Az 61, El 37.
+[01:19:30]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x1 0x5 0x63
+[01:19:34]  Tracking : Az 64, El 38.
+[01:19:38]  Received Beacon from port : 13.
+[01:19:40]  Tracking : Az 67, El 39.
+[01:19:46]  Tracking : Az 70, El 40.
+[01:19:48]  Tracking : Az 71, El 40.
+[01:19:50]  Tracking : Az 72, El 41.
+[01:19:55]  Tracking : Az 76, El 41.
+[01:19:57]  Tracking : Az 77, El 42.
+[01:19:58]  Received Beacon from port : 13.
+[01:20:03]  Tracking : Az 81, El 42.
+[01:20:05]  Tracking : Az 82, El 43.
+[01:20:10]  Tracking : Az 86, El 43.
+[01:20:12]  Tracking : Az 87, El 43.
+[01:20:16]  Tracking : Az 90, El 43.
+[01:20:19]  Tracking : Az 92, El 44.
+[01:20:22]  Tracking : Az 94, El 44.
+[01:20:26]  Tracking : Az 97, El 44.
+[01:20:28]  Received Beacon from port : 13.
+[01:20:28]  Tracking : Az 99, El 44.
+[01:20:31]  Tracking : Az 101, El 44.
+[01:20:35]  Tracking : Az 104, El 44.
+[01:20:38]  Tracking : Az 106, El 44.
+[01:20:42]  Tracking : Az 109, El 43.
+[01:20:45]  Tracking : Az 111, El 43.
+[01:20:48]  Received Beacon from port : 13.
+[01:20:49]  Tracking : Az 114, El 43.
+[01:20:50]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0x0
+[01:20:52]  Tracking : Az 116, El 42.
+[01:20:56]  Tracking : Az 119, El 42.
+[01:20:58]  Received Beacon from port : 13.
+[01:20:58]  Tracking : Az 120, El 42.
+[01:21:03]  Tracking : Az 123, El 41.
+[01:21:06]  Tracking : Az 125, El 40.
+[01:21:08]  Received Beacon from port : 13.
+[01:21:11]  Tracking : Az 128, El 40.
+[01:21:13]  Tracking : Az 129, El 39.
+[01:21:19]  Tracking : Az 132, El 38.
+[01:21:21]  Tracking : Az 133, El 38.
+[01:21:24]  Tracking : Az 135, El 37.
+[01:21:31]  Tracking : Az 138, El 36.
+[01:21:33]  Tracking : Az 139, El 35.
+[01:21:38]  Received Beacon from port : 13.
+[01:21:40]  Tracking : Az 142, El 34.
+[01:21:43]  Tracking : Az 143, El 33.
+[01:21:48]  Received Beacon from port : 13.
+[01:21:49]  Tracking : Az 145, El 32.
+[01:21:55]  Tracking : Az 147, El 31.
+[01:22:03]  Tracking : Az 150, El 30.
+[01:22:06]  Tracking : Az 151, El 29.
+[01:22:08]  Received Beacon from port : 13.
+[01:22:13]  [OBC]Ping Failed.
+[01:22:17]  Tracking : Az 154, El 27.
+[01:22:18]  Received Beacon from port : 13.
+[01:22:19]  Ping Success at node 3, 459ms
+[01:22:30]  Tracking : Az 157, El 25.
+[01:22:45]  Tracking : Az 160, El 22.
+[01:23:03]  Tracking : Az 163, El 19.
+[01:23:03]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x45 0xa 0x5e
+[01:23:04]  Received GETFILEINFO Response from port : 13.
+[01:23:08]  Received Beacon from port : 13.
+[01:23:18]  Received Beacon from port : 13.
+[01:23:25]  Tracking : Az 166, El 16.
+[01:23:28]  Received Beacon from port : 13.
+[01:23:48]  Received Beacon from port : 13.
+[01:23:52]  Tracking : Az 169, El 13.
+[01:23:58]  Received Beacon from port : 13.
+[01:24:08]  Received Beacon from port : 13.
+[01:24:18]  Tracking : Az 171, El 10.
+[01:24:28]  Received Beacon from port : 13.
+[01:24:48]  Received Beacon from port : 13.
+[01:24:51]  Tracking : Az 173, El 7.
+[01:24:58]  Received Beacon from port : 13.
+[01:25:08]  Received Beacon from port : 13.
+[01:25:18]  Received Beacon from port : 13.
+[01:25:34]  Tracking : Az 176, El 4.
+[01:25:47]  Ping Success at node 5, 481ms
+[01:26:01]  Ping Failed.
+[01:26:06]  Ping Failed.
+[01:26:13]  Ping Failed.
+[01:26:16]  Finish Engaging.
+[01:26:16]  Beacon Success : 39, Ping Success : 2
+[01:26:17]  Forked Safe Amplifier Process. (OFF)
+[01:26:18]  Received Beacon from port : 13.
+

@@ -1,0 +1,13 @@
+[12:38:35]  Connect to Switch Box.............Success.
+[12:38:35]  Connect to Rotator................Success.
+[12:38:35]  Connect to GS100..................Success.
+[12:38:35]  TM Port 13 bind success.
+[12:38:35]  BCN Port 31 bind success.
+[12:38:35]  RPT Port 25 bind success.
+[12:38:35]  Event Port 27 bind success.
+[12:38:35]  COSMIC Beacon Port 23 bind success.
+[12:38:35]  COSMIC Report Port 24 bind success.
+[12:38:40]  TLE "cubesat" Download Completed.
+[12:38:41]  OBJECT-A	Error: (e <= -0.001)	
+[12:38:43]  OBJECT J	Error: (e <= -0.001)	
+[12:42:07]  Tracking : Az 0, El 0.

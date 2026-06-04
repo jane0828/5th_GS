@@ -1,0 +1,92 @@
+2026-01-26 12:54
+[12:54:54]  Connect to Switch Box.............Success.
+[12:54:54]  Connect to Rotator................Success.
+[12:54:54]  Connect to GS100..................Success.
+[12:54:54]  TM Port 13 bind success.
+[12:54:54]  BCN Port 31 bind success.
+[12:54:54]  RPT Port 25 bind success.
+[12:54:54]  Event Port 27 bind success.
+[12:54:54]  COSMIC Beacon Port 23 bind success.
+[12:54:54]  COSMIC Report Port 24 bind success.
+[12:55:13]  TLE "active" Download Completed.
+[12:55:18]  Start Engaging.
+[12:55:18]  Tracking : Az 7, El 79.
+[12:55:19]  Start Doppler Correction.
+[12:55:20]  Forked Safe Amplifier Process.(ON, Timer)
+[12:55:20]  Tracking : Az 5, El 78.
+[12:55:22]  Tracking : Az 3, El 77.
+[12:55:24]  Tracking : Az 1, El 75.
+[12:55:26]  Tracking : Az 0, El 74.
+[12:55:28]  Tracking : Az 359, El 73.
+[12:55:30]  Tracking : Az 358, El 71.
+[12:55:32]  Tracking : Az 357, El 70.
+[12:55:34]  Tracking : Az 356, El 69.
+[12:55:36]  Tracking : Az 356, El 67.
+[12:55:38]  Tracking : Az 355, El 66.
+[12:55:40]  Tracking : Az 355, El 65.
+[12:55:41]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x1 0x0 0x16
+[12:55:42]  Tracking : Az 354, El 64.
+[12:55:44]  Tracking : Az 354, El 62.
+[12:55:46]  Tracking : Az 354, El 61.
+[12:55:48]  Tracking : Az 353, El 60.
+[12:55:50]  Tracking : Az 353, El 59.
+[12:55:52]  Tracking : Az 353, El 58.
+[12:55:54]  Tracking : Az 352, El 57.
+[12:55:56]  Tracking : Az 352, El 56.
+[12:55:58]  Tracking : Az 352, El 55.
+[12:56:00]  Tracking : Az 352, El 53.
+[12:56:02]  Tracking : Az 352, El 52.
+[12:56:04]  Tracking : Az 351, El 51.
+[12:56:06]  Tracking : Az 351, El 50.
+[12:56:08]  Tracking : Az 351, El 50.
+[12:56:10]  Tracking : Az 351, El 49.
+[12:56:18]  Tracking : Az 351, El 45.
+[12:56:23]  Ping Success at node 5, 460ms
+[12:56:24]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x1 0x0 0x16
+[12:56:25]  Received Report from port : 25.
+[12:56:27]  Tracking : Az 350, El 41.
+[12:56:27]  Received Report from port : 25.
+[12:56:29]  Received Report from port : 25.
+[12:56:35]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x2 0x3 0x17
+[12:56:36]  Tracking : Az 350, El 38.
+[12:56:37]  Received Report from port : 25.
+[12:56:39]  Received Report from port : 25.
+[12:56:41]  Received Report from port : 25.
+[12:56:48]  Tracking : Az 350, El 34.
+[12:56:49]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x3 0x5 0x16
+[12:56:50]  Received Report from port : 25.
+[12:56:52]  Received Report from port : 25.
+[12:56:54]  Received Report from port : 25.
+[12:57:02]  Tracking : Az 349, El 30.
+[12:57:02]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x3 0x6 0x12
+[12:57:03]  Received Report from port : 25.
+[12:57:05]  Received Report from port : 25.
+[12:57:07]  Received Report from port : 25.
+[12:57:19]  Tracking : Az 349, El 26.
+[12:57:39]  Tracking : Az 349, El 22.
+[12:57:53]  Ping Success at node 5, 469ms
+[12:57:56]  Tracking : Az 349, El 19.
+[12:58:04]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x3 0x6 0x13
+[12:58:05]  Received Report from port : 25.
+[12:58:07]  Received Report from port : 25.
+[12:58:09]  Received Report from port : 25.
+[12:58:23]  Tracking : Az 348, El 15.
+[12:58:35]  Ping Success at node 5, 467ms
+[12:58:42]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x3 0x6 0x10
+[12:58:43]  Received Report from port : 25.
+[12:58:45]  Received Report from port : 25.
+[12:58:47]  Received Report from port : 25.
+[12:58:47]  Tracking : Az 348, El 12.
+[12:58:57]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[12:58:58]  Received Report from port : 25.
+[12:59:00]  Received Report from port : 25.
+[12:59:02]  Received Report from port : 25.
+[12:59:15]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x49
+[12:59:15]  Tracking : Az 348, El 9.
+[12:59:15]  Received Report from port : 25.
+[12:59:18]  Received Report from port : 25.
+[12:59:20]  Received Report from port : 25.
+[12:59:41]  Forked Safe Amplifier Process. (OFF)
+[12:59:44]  Finish Engaging.
+[12:59:44]  Beacon Success : 0, Ping Success : 3
+[12:59:46]  Tracking : Az 0, El 0.

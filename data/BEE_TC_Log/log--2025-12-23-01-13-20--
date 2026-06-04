@@ -1,0 +1,15 @@
+[01:13:22]  Connect to Switch Box.............Success.
+[01:13:22]  Connect to Rotator................Success.
+[01:13:22]  Connect to GS100..................Success.
+[01:13:22]  TM Port 13 bind success.
+[01:13:22]  BCN Port 31 bind success.
+[01:13:22]  RPT Port 25 bind success.
+[01:13:22]  Event Port 27 bind success.
+[01:13:23]  Rotator Read Failed.
+[01:13:25]  Rotator Read Failed.
+[01:13:26]  Cannot Read 20 parameters of Table 0.
+[01:13:27]  Rotator Read Failed.
+[01:13:29]  Cannot Read 13 parameters of Table 1.
+[01:13:29]  Rotator Read Failed.
+[01:13:31]  Rotator Read Failed.
+[01:13:32]  Cannot Read 18 parameters of Table 5.

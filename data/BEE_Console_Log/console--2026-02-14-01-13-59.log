@@ -1,0 +1,202 @@
+2026-02-14 01:13
+[01:14:04]  Connect to Switch Box.............Success.
+[01:14:04]  Connect to Rotator................Success.
+[01:14:04]  Connect to GS100..................Success.
+[01:14:04]  TM Port 13 bind success.
+[01:14:04]  BCN Port 31 bind success.
+[01:14:04]  RPT Port 25 bind success.
+[01:14:04]  Event Port 27 bind success.
+[01:14:04]  COSMIC Beacon Port 23 bind success.
+[01:14:04]  COSMIC Report Port 24 bind success.
+[01:14:11]  Tracking : Az 0, El 0.
+[01:14:33]  TLE "active" Download Completed.
+[01:28:57]  Start Engaging.
+[01:28:57]  Tracking : Az 13, El 0.
+[01:28:58]  Start Doppler Correction.
+[01:28:59]  Tracking : Az 13, El 0.
+[01:30:32]  Forked Safe Amplifier Process.(ON, Timer)
+[01:30:35]  Ping Failed.
+[01:30:44]  Ping Failed.
+[01:30:51]  Tracking : Az 14, El 3.
+[01:30:53]  Tracking : Az 14, El 3.
+[01:31:31]  Tracking : Az 15, El 6.
+[01:31:33]  Tracking : Az 15, El 6.
+[01:32:05]  Tracking : Az 16, El 9.
+[01:32:06]  Ping Success at node 5, 462ms
+[01:32:07]  Tracking : Az 16, El 9.
+[01:32:09]  Ping Success at node 5, 462ms
+[01:32:12]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x4 0x67 0x20
+[01:32:26]  Tracking : Az 16, El 11.
+[01:32:37]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[01:32:38]  Received Report from port : 25.
+[01:32:40]  Received Report from port : 25.
+[01:32:42]  Received Report from port : 25.
+[01:32:44]  Tracking : Az 17, El 13.
+[01:32:49]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[01:32:50]  Received Report from port : 25.
+[01:32:52]  Received Report from port : 25.
+[01:32:54]  Received Report from port : 25.
+[01:32:57]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x49
+[01:32:58]  Received Report from port : 25.
+[01:33:00]  Received Report from port : 25.
+[01:33:02]  Received Report from port : 25.
+[01:33:05]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[01:33:06]  Received Report from port : 25.
+[01:33:08]  Received Report from port : 25.
+[01:33:09]  Tracking : Az 17, El 16.
+[01:33:10]  Received Report from port : 25.
+[01:33:11]  Tracking : Az 18, El 16.
+[01:33:13]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[01:33:14]  Received Report from port : 25.
+[01:33:16]  Received Report from port : 25.
+[01:33:18]  Received Report from port : 25.
+[01:33:23]  Tracking : Az 18, El 18.
+[01:33:43]  Tracking : Az 19, El 21.
+[01:33:45]  Tracking : Az 19, El 21.
+[01:33:54]  Tracking : Az 20, El 23.
+[01:34:09]  Tracking : Az 21, El 26.
+[01:34:23]  Tracking : Az 22, El 29.
+[01:34:35]  Tracking : Az 23, El 32.
+[01:34:46]  Tracking : Az 24, El 35.
+[01:34:49]  Tracking : Az 25, El 36.
+[01:34:59]  Tracking : Az 26, El 39.
+[01:35:02]  Tracking : Az 27, El 40.
+[01:35:10]  Tracking : Az 29, El 43.
+[01:35:13]  Tracking : Az 29, El 44.
+[01:35:20]  Tracking : Az 31, El 47.
+[01:35:23]  Tracking : Az 32, El 48.
+[01:35:29]  Tracking : Az 34, El 50.
+[01:35:32]  Tracking : Az 35, El 52.
+[01:35:39]  Tracking : Az 38, El 55.
+[01:35:41]  Tracking : Az 39, El 56.
+[01:35:47]  Tracking : Az 43, El 59.
+[01:35:49]  Tracking : Az 44, El 60.
+[01:35:52]  Tracking : Az 47, El 61.
+[01:35:55]  Tracking : Az 49, El 63.
+[01:35:58]  Tracking : Az 52, El 64.
+[01:36:00]  Tracking : Az 54, El 65.
+[01:36:03]  Tracking : Az 58, El 66.
+[01:36:05]  Tracking : Az 60, El 67.
+[01:36:07]  Tracking : Az 63, El 68.
+[01:36:08]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[01:36:09]  Received Report from port : 25.
+[01:36:09]  Tracking : Az 66, El 69.
+[01:36:11]  Received Report from port : 25.
+[01:36:11]  Tracking : Az 69, El 69.
+[01:36:13]  Received Report from port : 25.
+[01:36:13]  Tracking : Az 73, El 70.
+[01:36:15]  Tracking : Az 77, El 71.
+[01:36:17]  Tracking : Az 81, El 71.
+[01:36:19]  Tracking : Az 85, El 72.
+[01:36:21]  Tracking : Az 90, El 72.
+[01:36:23]  Tracking : Az 94, El 72.
+[01:36:25]  Tracking : Az 99, El 72.
+[01:36:27]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x0
+[01:36:27]  Tracking : Az 104, El 72.
+[01:36:28]  Received Report from port : 25.
+[01:36:29]  Tracking : Az 108, El 72.
+[01:36:30]  Received Report from port : 25.
+[01:36:31]  Tracking : Az 113, El 72.
+[01:36:32]  Received Report from port : 25.
+[01:36:33]  Tracking : Az 117, El 72.
+[01:36:34]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[01:36:35]  Received Report from port : 25.
+[01:36:35]  Tracking : Az 122, El 71.
+[01:36:37]  Received Report from port : 25.
+[01:36:37]  Tracking : Az 126, El 71.
+[01:36:39]  Received Report from port : 25.
+[01:36:39]  Tracking : Az 129, El 70.
+[01:36:41]  Tracking : Az 133, El 69.
+[01:36:43]  Tracking : Az 136, El 69.
+[01:36:45]  Tracking : Az 139, El 68.
+[01:36:47]  Tracking : Az 142, El 67.
+[01:36:49]  Tracking : Az 145, El 66.
+[01:36:51]  Tracking : Az 147, El 65.
+[01:36:54]  Tracking : Az 150, El 64.
+[01:36:56]  Tracking : Az 152, El 63.
+[01:36:59]  Tracking : Az 155, El 62.
+[01:37:01]  Tracking : Az 156, El 61.
+[01:37:04]  Tracking : Az 159, El 59.
+[01:37:07]  Tracking : Az 161, El 58.
+[01:37:11]  Tracking : Az 163, El 56.
+[01:37:14]  Tracking : Az 164, El 54.
+[01:37:20]  Tracking : Az 167, El 52.
+[01:37:22]  Tracking : Az 168, El 51.
+[01:37:28]  Tracking : Az 170, El 48.
+[01:37:35]  Tracking : Az 172, El 45.
+[01:37:38]  Tracking : Az 173, El 44.
+[01:37:46]  Tracking : Az 174, El 41.
+[01:37:48]  Tracking : Az 175, El 40.
+[01:38:00]  Tracking : Az 177, El 36.
+[01:38:02]  Tracking : Az 177, El 36.
+[01:38:10]  Tracking : Az 178, El 33.
+[01:38:22]  Tracking : Az 180, El 30.
+[01:38:39]  Tracking : Az 181, El 26.
+[01:38:41]  Tracking : Az 181, El 26.
+[01:38:53]  Tracking : Az 182, El 23.
+[01:39:02]  AX100 Boot Count : 193
+[01:39:05]  Remote Param Control OK. rssi_busy : 0
+[01:39:06]  Total RX Bytes : 342000
+[01:39:07]  Remote Param Control OK. can_en : true
+[01:39:10]  Cannot Load Remote Parameter.
+[01:39:13]  Remote Param Control OK. tx_inhibit : 0
+[01:39:16]  Remote Param Control OK. tx_pwr : 3
+[01:39:16]  Tracking : Az 183, El 19.
+[01:39:18]  Remote Param Control OK. csp_rtable : 0/0 AX100, 3/5 CAN, 23/5 CAN
+[01:39:18]  Tracking : Az 184, El 19.
+[01:39:21]  Remote Param Control OK. Active Conf : 1
+[01:39:23]  Remote Param Control OK. Last RSSI : -87
+[01:39:25]  Remote Param Control OK. rx_guard : 0
+[01:39:26]  Remote Param Control OK. tx_guard : 50
+[01:39:28]  Remote Param Control OK. rx_baud : 4800
+[01:39:29]  Remote Param Control OK. tx_baud : 4800
+[01:39:39]  Forked Safe Amplifier Process. (OFF)
+[01:39:41]  Finish Engaging.
+[01:39:41]  Beacon Success : 0, Ping Success : 2
+[01:39:43]  Tracking : Az 0, El 0.
+[12:53:00]  Start Engaging.
+[12:53:00]  Tracking : Az 207, El 0.
+[12:53:01]  Start Doppler Correction.
+[12:53:02]  Tracking : Az 207, El 0.
+[12:53:04]  Tracking : Az 207, El 0.
+[12:53:06]  Tracking : Az 207, El 0.
+[12:53:08]  Tracking : Az 207, El 0.
+[12:53:10]  Tracking : Az 207, El 0.
+[12:53:12]  Tracking : Az 207, El 0.
+[12:53:14]  Tracking : Az 207, El 0.
+[12:53:16]  Tracking : Az 207, El 0.
+[12:53:18]  Tracking : Az 207, El 0.
+[12:53:20]  Tracking : Az 207, El 0.
+[12:53:22]  Tracking : Az 207, El 0.
+[12:53:24]  Tracking : Az 207, El 0.
+[12:53:26]  Tracking : Az 207, El 0.
+[12:53:28]  Tracking : Az 207, El 0.
+[12:53:30]  Tracking : Az 207, El 0.
+[12:53:32]  Tracking : Az 207, El 0.
+[12:53:34]  Tracking : Az 207, El 0.
+[12:53:36]  Tracking : Az 207, El 0.
+[13:54:49]  Forked Safe Amplifier Process.(ON, Timer)
+[13:55:30]  Tracking : Az 209, El 1.
+[13:56:00]  Tracking : Az 212, El 2.
+[13:56:09]  Ping Success at node 5, 475ms
+[13:56:11]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x45 0xa 0x29
+[13:56:21]  Tracking : Az 214, El 4.
+[13:56:22]  Ping Failed.
+[13:56:28]  Ping Failed.
+[13:56:35]  Ping Failed.
+[13:56:42]  Tracking : Az 217, El 5.
+[13:56:51]  Ping Failed.
+[13:57:03]  Tracking : Az 220, El 6.
+[13:57:08]  Ping Failed.
+[13:57:19]  Ping Failed.
+[13:57:23]  Tracking : Az 223, El 7.
+[13:57:28]  Ping Success at node 5, 472ms
+[13:57:30]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x45 0xa 0x29
+[13:57:41]  Tracking : Az 226, El 8.
+[13:57:44]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x45 0xa 0x29
+[13:57:45]  Received GETFILEINFO Response from port : 23.
+
+[13:57:58]  Tracking : Az 229, El 9.
+[13:58:09]  Finish Engaging.
+[13:58:09]  Beacon Success : 0, Ping Success : 2
+[13:58:09]  Forked Safe Amplifier Process. (OFF)

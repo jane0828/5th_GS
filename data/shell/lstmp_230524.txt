@@ -1,0 +1,4 @@
+total 12
+drwxr-xr-x    7 root     root          4096 Jan  1 23:02 ds
+drwx------    2 root     root          4096 Jan  1 23:04 fsw
+drwxr-xr-x    2 root     root          4096 Jan  1 23:04 imgs

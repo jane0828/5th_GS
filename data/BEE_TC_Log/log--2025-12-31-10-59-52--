@@ -1,0 +1,27 @@
+[10:59:59]  Connect to Switch Box.............Success.
+[10:59:59]  Connect to Rotator................Success.
+[10:59:59]  Connect to GS100..................Success.
+[10:59:59]  TM Port 13 bind success.
+[10:59:59]  BCN Port 31 bind success.
+[10:59:59]  RPT Port 25 bind success.
+[10:59:59]  Event Port 27 bind success.
+[10:59:59]  COSMIC Beacon Port 23 bind success.
+[10:59:59]  COSMIC Report Port 24 bind success.
+[11:01:09]  Ping Failed at node 6.
+[11:01:20]  Ping Failed at node 6.
+[11:01:45]  Ping Failed at node 6.
+[11:02:34]  Ping Failed at node 6.
+[11:02:48]  Ping Failed at node 6.
+[11:05:44]  Ping Failed at node 6.
+[11:05:58]  Ping Failed at node 6.
+[11:06:44]  Ping Success at node 5, 469ms
+[11:06:47]  Ping Success at node 5, 466ms
+[11:06:48]  Ping Success at node 5, 456ms
+[11:06:53]  Ping Failed at node 6.
+[11:07:01]  Ping Failed at node 6.
+[11:07:16]  Ping Failed at node 3.
+[11:07:29]  AX100 Boot Count : 1892
+[11:07:37]  Remote Param Control OK. csp_rtable : 3/5 CAN, 6/5 CAN, 0/0 AX100
+[11:07:52]  Remote Param Control OK. Last RSSI : -30
+[11:08:07]  Remote Param Control OK. Active Conf : 2
+[11:08:16]  Remote Param Control OK. tx_pwr : 3

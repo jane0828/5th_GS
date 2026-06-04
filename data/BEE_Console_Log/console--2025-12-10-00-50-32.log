@@ -1,0 +1,437 @@
+2025-12-10 00:50
+[01:02:33]  Connect to Switch Box.............Success.
+[01:02:33]  Connect to Rotator................Success.
+[01:02:33]  Connect to GS100..................Success.
+[01:02:33]  TM Port 13 bind success.
+[01:02:33]  BCN Port 31 bind success.
+[01:02:33]  RPT Port 25 bind success.
+[01:03:06]  TLE "cubesat" Download Completed.
+[01:04:49]  TLE "cubesat" Download Completed.
+[01:30:28]  Start Engaging.
+[01:30:30]  Start Doppler Correction.
+[01:30:30]  Please load TLE or FDS. Stop Doppler Correction.
+[01:30:32]  Tracking : Az 13, El 0.
+[01:30:34]  Tracking : Az 13, El 0.
+[01:30:36]  Finish Engaging.
+[01:30:36]  Beacon Success : 0, Ping Success : 0
+[01:30:37]  Start Engaging.
+[01:30:39]  Start Doppler Correction.
+[01:32:35]  Tracking : Az 14, El 3.
+[01:32:37]  Tracking : Az 14, El 3.
+[01:33:15]  Tracking : Az 14, El 6.
+[01:33:17]  Tracking : Az 14, El 6.
+[01:33:49]  Tracking : Az 15, El 9.
+[01:33:51]  Tracking : Az 15, El 9.
+[01:34:15]  Received Beacon from port : 13.
+[01:34:20]  Tracking : Az 16, El 12.
+[01:34:22]  Tracking : Az 16, El 12.
+[01:34:35]  Received Beacon from port : 13.
+[01:34:46]  Tracking : Az 16, El 15.
+[01:34:48]  Tracking : Az 17, El 15.
+[01:34:55]  Received Beacon from port : 13.
+[01:35:05]  Received Beacon from port : 13.
+[01:35:08]  Tracking : Az 17, El 18.
+[01:35:10]  Tracking : Az 17, El 18.
+[01:35:15]  Received Beacon from port : 13.
+[01:35:25]  Received Beacon from port : 13.
+[01:35:28]  Tracking : Az 18, El 21.
+[01:35:30]  Tracking : Az 18, El 21.
+[01:35:35]  Received Beacon from port : 13.
+[01:35:40]  Tracking : Az 19, El 23.
+[01:35:55]  Tracking : Az 20, El 26.
+[01:35:55]  Received Beacon from port : 13.
+[01:36:05]  Received Beacon from port : 13.
+[01:36:09]  Tracking : Az 21, El 29.
+[01:36:15]  Received Beacon from port : 13.
+[01:36:21]  Tracking : Az 22, El 32.
+[01:36:25]  Received Beacon from port : 13.
+[01:36:32]  Tracking : Az 23, El 35.
+[01:36:35]  Received Beacon from port : 13.
+[01:36:42]  Tracking : Az 24, El 38.
+[01:36:45]  Tracking : Az 25, El 39.
+[01:36:45]  Received Beacon from port : 13.
+[01:36:54]  Tracking : Az 26, El 42.
+[01:36:55]  Received Beacon from port : 13.
+[01:36:57]  Tracking : Az 27, El 43.
+[01:37:04]  Tracking : Az 28, El 46.
+[01:37:06]  Tracking : Az 29, El 46.
+[01:37:10]  Tracking : Az 30, El 48.
+[01:37:12]  Tracking : Az 30, El 49.
+[01:37:15]  Received Beacon from port : 13.
+[01:37:18]  Tracking : Az 32, El 52.
+[01:37:21]  Tracking : Az 33, El 53.
+[01:37:25]  Received Beacon from port : 13.
+[01:37:27]  Tracking : Az 36, El 56.
+[01:37:29]  Tracking : Az 37, El 57.
+[01:37:35]  Tracking : Az 40, El 60.
+[01:37:35]  Received Beacon from port : 13.
+[01:37:37]  Tracking : Az 41, El 61.
+[01:37:39]  Tracking : Az 43, El 62.
+[01:37:43]  Tracking : Az 46, El 64.
+[01:37:45]  Tracking : Az 48, El 65.
+[01:37:47]  Tracking : Az 50, El 66.
+[01:37:49]  Tracking : Az 52, El 67.
+[01:37:52]  Tracking : Az 55, El 68.
+[01:37:54]  Tracking : Az 58, El 69.
+[01:37:55]  Received Beacon from port : 13.
+[01:37:56]  Tracking : Az 61, El 70.
+[01:37:58]  Tracking : Az 64, El 71.
+[01:38:00]  Tracking : Az 68, El 71.
+[01:38:02]  Tracking : Az 72, El 72.
+[01:38:04]  Tracking : Az 76, El 73.
+[01:38:05]  Received Beacon from port : 13.
+[01:38:06]  Tracking : Az 81, El 73.
+[01:38:08]  Tracking : Az 85, El 74.
+[01:38:10]  Tracking : Az 90, El 74.
+[01:38:12]  Tracking : Az 96, El 74.
+[01:38:14]  Tracking : Az 101, El 74.
+[01:38:15]  Received Beacon from port : 13.
+[01:38:16]  Tracking : Az 106, El 74.
+[01:38:18]  Tracking : Az 111, El 74.
+[01:38:20]  Tracking : Az 117, El 74.
+[01:38:22]  Tracking : Az 121, El 73.
+[01:38:24]  Tracking : Az 126, El 73.
+[01:38:26]  Tracking : Az 130, El 72.
+[01:38:28]  Tracking : Az 134, El 71.
+[01:38:30]  Tracking : Az 138, El 71.
+[01:38:32]  Tracking : Az 141, El 70.
+[01:38:34]  Tracking : Az 144, El 69.
+[01:38:36]  Tracking : Az 147, El 68.
+[01:38:38]  Tracking : Az 149, El 67.
+[01:38:40]  Tracking : Az 152, El 66.
+[01:38:42]  Tracking : Az 154, El 65.
+[01:38:45]  Tracking : Az 156, El 64.
+[01:38:47]  Tracking : Az 158, El 63.
+[01:38:49]  Tracking : Az 160, El 62.
+[01:38:54]  Tracking : Az 163, El 59.
+[01:38:56]  Tracking : Az 164, El 58.
+[01:39:02]  Tracking : Az 167, El 55.
+[01:39:04]  Tracking : Az 168, El 54.
+[01:39:05]  Received Beacon from port : 13.
+[01:39:11]  Tracking : Az 171, El 51.
+[01:39:14]  Tracking : Az 172, El 50.
+[01:39:15]  Received Beacon from port : 13.
+[01:39:21]  Tracking : Az 174, El 47.
+[01:39:23]  Tracking : Az 174, El 46.
+[01:39:25]  Received Beacon from port : 13.
+[01:39:32]  Tracking : Az 176, El 42.
+[01:39:35]  Tracking : Az 177, El 41.
+[01:39:44]  Tracking : Az 178, El 38.
+[01:39:45]  Received Beacon from port : 13.
+[01:39:53]  Tracking : Az 179, El 35.
+[01:39:55]  Received Beacon from port : 13.
+[01:39:56]  Tracking : Az 180, El 34.
+[01:40:07]  Tracking : Az 181, El 31.
+[01:40:15]  Received Beacon from port : 13.
+[01:40:19]  Tracking : Az 182, El 28.
+[01:40:25]  Received Beacon from port : 13.
+[01:40:35]  Received Beacon from port : 13.
+[01:40:37]  Tracking : Az 183, El 24.
+[01:40:39]  Tracking : Az 183, El 24.
+[01:40:45]  Received Beacon from port : 13.
+[01:40:53]  Tracking : Az 184, El 21.
+[01:40:55]  Received Beacon from port : 13.
+[01:41:18]  Tracking : Az 185, El 17.
+[01:41:20]  Tracking : Az 185, El 17.
+[01:41:25]  Received Beacon from port : 13.
+[01:41:35]  Received Beacon from port : 13.
+[01:41:40]  Tracking : Az 186, El 14.
+[01:41:42]  Tracking : Az 186, El 14.
+[01:41:55]  Received Beacon from port : 13.
+[01:42:05]  Received Beacon from port : 13.
+[01:42:06]  Tracking : Az 187, El 11.
+[01:42:25]  Received Beacon from port : 13.
+[01:42:46]  Tracking : Az 187, El 7.
+[01:43:35]  Tracking : Az 188, El 3.
+[01:43:37]  Tracking : Az 188, El 3.
+[01:44:18]  Tracking : Az 189, El 0.
+[01:44:42]  Finish Engaging.
+[01:44:42]  Beacon Success : 35, Ping Success : 0
+[01:48:24]  Tracking : Az 0, El 0.
+[12:14:52]  Start Engaging.
+[12:14:52]  Tracking : Az 13, El 0.
+[12:14:53]  Start Doppler Correction.
+[12:14:54]  Tracking : Az 13, El 0.
+[12:20:23]  Tracking : Az 148, El 0.
+[12:20:25]  Tracking : Az 148, El 0.
+[12:20:27]  Tracking : Az 148, El 0.
+[12:20:29]  Tracking : Az 148, El 0.
+[12:20:31]  Tracking : Az 148, El 0.
+[12:20:33]  Tracking : Az 148, El 0.
+[12:20:35]  Tracking : Az 148, El 0.
+[12:20:37]  Tracking : Az 148, El 0.
+[12:20:39]  Tracking : Az 148, El 0.
+[12:20:41]  Tracking : Az 147, El 0.
+[12:20:43]  Tracking : Az 147, El 0.
+[12:20:45]  Tracking : Az 147, El 0.
+[12:21:22]  Received Beacon from port : 13.
+[12:21:23]  Tracking : Az 146, El 3.
+[12:21:25]  Tracking : Az 146, El 3.
+[12:21:32]  Received Beacon from port : 13.
+[12:21:42]  Received Beacon from port : 13.
+[12:22:02]  Tracking : Az 143, El 5.
+[12:22:04]  Tracking : Az 143, El 6.
+[12:22:32]  Received Beacon from port : 13.
+[12:22:40]  Tracking : Az 141, El 9.
+[12:22:42]  Tracking : Az 141, El 9.
+[12:23:02]  Tracking : Az 139, El 11.
+[12:23:04]  Tracking : Az 139, El 11.
+[12:23:12]  Received Beacon from port : 13.
+[12:23:22]  Received Beacon from port : 13.
+[12:23:22]  Tracking : Az 137, El 13.
+[12:23:24]  Tracking : Az 137, El 13.
+[12:23:30]  Forked Safe Amplifier Process.(ON, Timer)
+[12:23:32]  Received Beacon from port : 13.
+[12:23:40]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[12:23:42]  Received Beacon from port : 13.
+[12:23:43]  Tracking : Az 134, El 15.
+[12:23:45]  Tracking : Az 134, El 15.
+[12:24:04]  Tracking : Az 131, El 17.
+[12:24:06]  Tracking : Az 131, El 18.
+[12:24:22]  Received Beacon from port : 13.
+[12:24:22]  Tracking : Az 128, El 20.
+[12:24:24]  Tracking : Az 128, El 20.
+[12:24:30]  Tracking : Az 127, El 21.
+[12:24:32]  Tracking : Az 126, El 21.
+[12:24:32]  Received Beacon from port : 13.
+[12:24:42]  Tracking : Az 124, El 23.
+[12:24:42]  Received Beacon from port : 13.
+[12:24:44]  Tracking : Az 124, El 23.
+[12:24:52]  Received Beacon from port : 13.
+[12:24:54]  Tracking : Az 121, El 24.
+[12:24:56]  Tracking : Az 121, El 25.
+[12:25:02]  Received Beacon from port : 13.
+[12:25:05]  Tracking : Az 118, El 26.
+[12:25:08]  Tracking : Az 117, El 27.
+[12:25:12]  Received Beacon from port : 13.
+[12:25:18]  Tracking : Az 114, El 28.
+[12:25:20]  Tracking : Az 114, El 28.
+[12:25:22]  Received Beacon from port : 13.
+[12:25:27]  Tracking : Az 111, El 30.
+[12:25:29]  Ping Failed at node 21.
+[12:25:29]  Tracking : Az 110, El 30.
+[12:25:35]  Ping Failed at node 3.
+[12:25:37]  Ping Success at node 3, 468ms
+[12:25:37]  Tracking : Az 107, El 31.
+[12:25:40]  Tracking : Az 106, El 32.
+[12:25:41]  Ping Success at node 5, 460ms
+[12:25:47]  Ping Failed at node 21.
+[12:25:47]  Tracking : Az 103, El 33.
+[12:25:49]  Tracking : Az 102, El 33.
+[12:25:51]  Ping Success at node 3, 460ms
+[12:25:52]  Received Beacon from port : 13.
+[12:25:57]  Tracking : Az 98, El 34.
+[12:25:59]  Tracking : Az 97, El 34.
+[12:26:00]  Total RX Bytes : 32484
+[12:26:02]  Received Beacon from port : 13.
+[12:26:05]  Remote Param Control OK. Active Conf : 1
+[12:26:05]  Tracking : Az 94, El 35.
+[12:26:07]  Tracking : Az 93, El 35.
+[12:26:07]  Remote Param Control OK. csp_rtable : 0/0 AX100, 3/5 CAN, 23/5 CAN
+[12:26:15]  Tracking : Az 89, El 36.
+[12:26:17]  Tracking : Az 88, El 36.
+[12:26:22]  Received Beacon from port : 13.
+[12:26:24]  Tracking : Az 84, El 37.
+[12:26:26]  Tracking : Az 83, El 37.
+[12:26:28]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x45 0xa 0x5e
+[12:26:29]  Received GETFILEINFO Response from port : 13.
+[12:26:29]  Tracking : Az 81, El 37.
+[12:26:32]  Tracking : Az 79, El 37.
+[12:26:35]  Tracking : Az 77, El 37.
+[12:26:41]  Tracking : Az 74, El 38.
+[12:26:42]  Received Beacon from port : 13.
+[12:26:43]  Tracking : Az 73, El 38.
+[12:26:45]  Tracking : Az 71, El 38.
+[12:26:51]  Tracking : Az 68, El 37.
+[12:26:52]  Received Beacon from port : 13.
+[12:26:53]  Tracking : Az 67, El 37.
+[12:26:57]  Tracking : Az 64, El 37.
+[12:26:59]  Tracking : Az 63, El 37.
+[12:27:02]  Received Beacon from port : 13.
+[12:27:05]  Tracking : Az 60, El 37.
+[12:27:07]  Tracking : Az 58, El 37.
+[12:27:13]  Tracking : Az 55, El 36.
+[12:27:15]  Tracking : Az 54, El 36.
+[12:27:20]  Tracking : Az 51, El 35.
+[12:27:22]  Tracking : Az 50, El 35.
+[12:27:22]  Received Beacon from port : 13.
+[12:27:24]  Tracking : Az 49, El 35.
+[12:27:30]  Tracking : Az 46, El 34.
+[12:27:32]  Tracking : Az 45, El 34.
+[12:27:32]  Received Beacon from port : 13.
+[12:27:40]  Tracking : Az 41, El 33.
+[12:27:42]  Tracking : Az 41, El 33.
+[12:27:48]  Tracking : Az 38, El 32.
+[12:27:50]  Tracking : Az 37, El 31.
+[12:28:00]  Tracking : Az 33, El 30.
+[12:28:02]  Tracking : Az 33, El 30.
+[12:28:02]  Received Beacon from port : 13.
+[12:28:09]  Tracking : Az 30, El 28.
+[12:28:11]  Tracking : Az 30, El 28.
+[12:28:12]  Received Beacon from port : 13.
+[12:28:18]  Tracking : Az 27, El 27.
+[12:28:20]  Tracking : Az 27, El 27.
+[12:28:28]  Tracking : Az 24, El 25.
+[12:28:32]  Received Beacon from port : 13.
+[12:28:39]  Ping Success at node 3, 458ms
+[12:28:40]  Tracking : Az 21, El 24.
+[12:28:45]  Ping Failed at node 5.
+[12:28:47]  Ping Success at node 5, 468ms
+[12:28:48]  Tracking : Az 19, El 22.
+[12:28:50]  Tracking : Az 19, El 22.
+[12:28:55]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x45 0xa 0x5e
+[12:28:56]  Received GETFILEINFO Response from port : 13.
+[12:29:02]  Received Beacon from port : 13.
+[12:29:03]  Tracking : Az 16, El 20.
+[12:29:12]  Received Beacon from port : 13.
+[12:29:22]  Received Beacon from port : 13.
+[12:29:26]  Tracking : Az 12, El 17.
+[12:29:28]  Tracking : Az 12, El 17.
+[12:29:32]  Received Beacon from port : 13.
+[12:29:48]  Tracking : Az 9, El 15.
+[12:29:50]  Tracking : Az 9, El 14.
+[12:29:52]  Received Beacon from port : 13.
+[12:30:02]  Received Beacon from port : 13.
+[12:30:14]  Tracking : Az 6, El 12.
+[12:30:16]  Tracking : Az 6, El 12.
+[12:30:20]  Rparam Load Failed.
+[12:30:22]  Rparam Load OK. node=5 table=4 addr=0x0018 value=1
+[12:30:36]  Ping Success at node 5, 474ms
+[12:30:40]  Tracking : Az 4, El 9.
+[12:30:43]  Received Beacon from port : 13.
+[12:30:53]  Received Beacon from port : 13.
+[12:31:13]  Received Beacon from port : 13.
+[12:31:16]  Tracking : Az 1, El 6.
+[12:31:18]  Tracking : Az 1, El 6.
+[12:31:23]  Received Beacon from port : 13.
+[12:31:51]  Tracking : Az 359, El 4.
+[12:31:53]  Received Beacon from port : 13.
+[12:31:53]  Tracking : Az 359, El 4.
+[12:31:55]  Tracking : Az 359, El 3.
+[12:31:57]  Tracking : Az 359, El 3.
+[12:31:59]  Tracking : Az 359, El 3.
+[12:32:01]  Tracking : Az 359, El 3.
+[12:32:03]  Tracking : Az 359, El 3.
+[12:32:05]  Tracking : Az 359, El 3.
+[12:32:07]  Tracking : Az 359, El 3.
+[12:32:09]  Tracking : Az 359, El 3.
+[12:32:11]  Tracking : Az 358, El 2.
+[12:32:13]  Tracking : Az 358, El 2.
+[12:32:15]  Tracking : Az 358, El 2.
+[12:32:17]  Tracking : Az 358, El 2.
+[12:32:19]  Tracking : Az 358, El 2.
+[12:32:21]  Tracking : Az 358, El 2.
+[12:32:23]  Ping Failed.
+[12:32:23]  Tracking : Az 358, El 2.
+[12:32:25]  Tracking : Az 358, El 1.
+[12:32:26]  Ping Failed.
+[12:32:27]  Tracking : Az 358, El 1.
+[12:32:28]  Forked Safe Amplifier Process. (OFF)
+[12:32:29]  Tracking : Az 358, El 1.
+[12:32:31]  Finish Engaging.
+[12:32:31]  Beacon Success : 37, Ping Success : 6
+[12:32:32]  Tracking : Az 0, El 0.
+[13:37:19]  Start Engaging.
+[13:37:19]  Tracking : Az 13, El 0.
+[13:37:21]  Tracking : Az 13, El 0.
+[13:37:25]  Start Doppler Correction.
+[13:48:04]  Finish Engaging.
+[13:48:04]  Beacon Success : 0, Ping Success : 0
+[13:48:22]  Start Engaging.
+[13:48:22]  Tracking : Az 207, El 0.
+[13:48:24]  Start Doppler Correction.
+[13:48:24]  Tracking : Az 207, El 0.
+[13:48:26]  Tracking : Az 207, El 0.
+[13:48:28]  Tracking : Az 207, El 0.
+[13:48:30]  Tracking : Az 207, El 0.
+[13:48:32]  Tracking : Az 207, El 0.
+[13:48:34]  Tracking : Az 207, El 0.
+[13:48:36]  Tracking : Az 207, El 0.
+[13:48:38]  Tracking : Az 207, El 0.
+[13:48:40]  Tracking : Az 207, El 0.
+[13:48:42]  Tracking : Az 207, El 0.
+[13:48:44]  Tracking : Az 207, El 0.
+[13:48:46]  Tracking : Az 207, El 0.
+[13:48:48]  Tracking : Az 207, El 0.
+[13:48:50]  Tracking : Az 207, El 0.
+[13:48:52]  Tracking : Az 207, El 0.
+[13:48:54]  Tracking : Az 207, El 0.
+[13:57:30]  Tracking : Az 210, El 1.
+[13:57:58]  Tracking : Az 213, El 3.
+[13:58:24]  Tracking : Az 216, El 4.
+[13:58:47]  Tracking : Az 219, El 5.
+[13:59:07]  Tracking : Az 221, El 7.
+[13:59:15]  Received Beacon from port : 13.
+[13:59:21]  Tracking : Az 224, El 7.
+[13:59:25]  Received Beacon from port : 13.
+[13:59:35]  Received Beacon from port : 13.
+[13:59:39]  Tracking : Az 227, El 9.
+[13:59:55]  Tracking : Az 230, El 9.
+[14:00:11]  Tracking : Az 233, El 10.
+[14:00:25]  Tracking : Az 236, El 11.
+[14:00:35]  Received Beacon from port : 13.
+[14:00:35]  Tracking : Az 238, El 12.
+[14:00:45]  Received Beacon from port : 13.
+[14:00:48]  Tracking : Az 241, El 12.
+[14:00:55]  Received Beacon from port : 13.
+[14:01:00]  Tracking : Az 244, El 13.
+[14:01:05]  Received Beacon from port : 13.
+[14:01:13]  Tracking : Az 247, El 13.
+[14:01:15]  Received Beacon from port : 13.
+[14:01:24]  Tracking : Az 250, El 14.
+[14:01:36]  Tracking : Az 253, El 14.
+[14:01:47]  Tracking : Az 256, El 14.
+[14:01:55]  Received Beacon from port : 13.
+[14:01:58]  Tracking : Az 259, El 15.
+[14:02:09]  Tracking : Az 262, El 15.
+[14:02:11]  Tracking : Az 262, El 15.
+[14:02:15]  Received Beacon from port : 13.
+[14:02:19]  Tracking : Az 265, El 15.
+[14:02:30]  Tracking : Az 268, El 15.
+[14:02:35]  Received Beacon from port : 13.
+[14:02:41]  Tracking : Az 271, El 15.
+[14:02:45]  Received Beacon from port : 13.
+[14:02:51]  Tracking : Az 274, El 15.
+[14:02:55]  Received Beacon from port : 13.
+[14:03:06]  Tracking : Az 278, El 14.
+[14:03:17]  Tracking : Az 281, El 14.
+[14:03:28]  Tracking : Az 284, El 14.
+[14:03:35]  Received Beacon from port : 13.
+[14:03:40]  Tracking : Az 287, El 13.
+[14:03:52]  Tracking : Az 290, El 13.
+[14:04:05]  Tracking : Az 293, El 12.
+[14:04:18]  Tracking : Az 296, El 12.
+[14:04:32]  Tracking : Az 299, El 11.
+[14:04:47]  Tracking : Az 302, El 10.
+[14:04:55]  Received Beacon from port : 13.
+[14:05:03]  Tracking : Az 305, El 9.
+[14:05:15]  Received Beacon from port : 13.
+[14:05:20]  Tracking : Az 308, El 8.
+[14:05:25]  Received Beacon from port : 13.
+[14:05:39]  Tracking : Az 311, El 7.
+[14:05:45]  Received Beacon from port : 13.
+[14:05:59]  Tracking : Az 314, El 6.
+[14:06:05]  Received Beacon from port : 13.
+[14:06:21]  Tracking : Az 317, El 5.
+[14:06:25]  Received Beacon from port : 13.
+[14:06:45]  Received Beacon from port : 13.
+[14:06:45]  Tracking : Az 320, El 3.
+[14:06:55]  Received Beacon from port : 13.
+[14:07:05]  Received Beacon from port : 13.
+[14:07:13]  Tracking : Az 323, El 2.
+[14:07:44]  Tracking : Az 326, El 0.
+[14:08:19]  Tracking : Az 329, El -1.
+[14:08:21]  Tracking : Az 207, El 0.
+[14:08:23]  Tracking : Az 207, El 0.
+[14:08:25]  Tracking : Az 207, El 0.
+[14:08:27]  Tracking : Az 207, El 0.
+[14:08:29]  Tracking : Az 207, El 0.
+[14:08:31]  Tracking : Az 207, El 0.
+[14:08:33]  Tracking : Az 207, El 0.
+[14:08:35]  Tracking : Az 207, El 0.
+[14:08:37]  Tracking : Az 207, El 0.
+[14:08:39]  Tracking : Az 207, El 0.
+[14:08:41]  Tracking : Az 207, El 0.
+[14:09:06]  Finish Engaging.
+[14:09:06]  Beacon Success : 23, Ping Success : 0
+[14:09:10]  Tracking : Az 0, El 0.

@@ -1,0 +1,6 @@
+Disk /dev/mmcblk0: 7580 MB, 7948206080 bytes, 15523840 sectors
+1804 cylinders, 239 heads, 36 sectors/track
+Units: sectors of 1 * 512 = 512 bytes
+
+Device       Boot StartCHS    EndCHS        StartLBA     EndLBA    Sectors  Size Id Type
+/dev/mmcblk0p1 *  0,130,3     458,238,36        8192    7372799    7364608 3596M 83 Linux

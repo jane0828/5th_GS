@@ -1,0 +1,10 @@
+2026-02-03 15:53
+[15:53:50]  Connect to Switch Box.............Success.
+[15:53:50]  Connect to Rotator................Success.
+[15:53:50]  Connect to GS100..................Success.
+[15:53:50]  TM Port 13 bind success.
+[15:53:50]  BCN Port 31 bind success.
+[15:53:50]  RPT Port 25 bind success.
+[15:53:50]  Event Port 27 bind success.
+[15:53:50]  COSMIC Beacon Port 23 bind success.
+[15:53:50]  COSMIC Report Port 24 bind success.

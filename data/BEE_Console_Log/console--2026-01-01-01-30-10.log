@@ -1,0 +1,52 @@
+2026-01-01 01:30
+[01:30:14]  Connect to Switch Box.............Success.
+[01:30:14]  Connect to Rotator................Success.
+[01:30:14]  Connect to GS100..................Success.
+[01:30:14]  TM Port 13 bind success.
+[01:30:14]  BCN Port 31 bind success.
+[01:30:14]  RPT Port 25 bind success.
+[01:30:14]  Event Port 27 bind success.
+[01:30:14]  COSMIC Beacon Port 23 bind success.
+[01:30:14]  COSMIC Report Port 24 bind success.
+[01:30:23]  TLE "cubesat" Download Completed.
+[01:30:28]  Start Engaging.
+[01:30:30]  Start Doppler Correction.
+[01:30:30]  Please load TLE or FDS. Stop Doppler Correction.
+[01:30:33]  Tracking : Az 12, El 0.
+[01:30:35]  Tracking : Az 12, El 0.
+[01:30:49]  Start Doppler Correction.
+[01:35:37]  Tracking : Az 13, El 3.
+[01:35:52]  Received Beacon from port : 31.
+
+[01:36:00]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[01:36:02]  Received Beacon from port : 31.
+
+[01:36:02]  Forked Safe Amplifier Process.(ON, Timer)
+[01:36:04]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[01:36:05]  Received Report from port : 25.
+[01:36:07]  Received Report from port : 25.
+[01:36:09]  Received Report from port : 25.
+[01:36:17]  Tracking : Az 13, El 6.
+[01:36:20]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[01:36:21]  Received Report from port : 25.
+[01:36:23]  Received Report from port : 25.
+[01:36:25]  Received Report from port : 25.
+[01:36:27]  Received Beacon from port : 31.
+
+[01:36:30]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[01:36:31]  Received Report from port : 25.
+[01:36:33]  Received Report from port : 25.
+[01:36:35]  Received Report from port : 25.
+[01:36:42]  [OK]CMD Packet Header: 0x18 0x20 0xc0 0x0 0x0 0x5 0x6 0x7
+[01:36:51]  Tracking : Az 13, El 9.
+[01:36:52]  Received Beacon from port : 31.
+
+[01:37:02]  Received Beacon from port : 31.
+
+[01:37:05]  [OK]CMD Packet Header: 0x18 0x20 0xc0 0x0 0x0 0x5 0x6 0x7
+[01:37:11]  Tracking : Az 14, El 11.
+[01:37:18]  Ping Success at node 5, 461ms
+[01:37:22]  AX100 Boot Count : 188
+[01:37:30]  Tracking : Az 14, El 13.
+[01:37:31]  Received FTP Upload Spec.
+[01:37:31]  Received FTP Upload File Spec. Filesize : 13740, CRC : 1600079432.

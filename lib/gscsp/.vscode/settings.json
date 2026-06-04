@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "csp_system.h": "c",
+        "csp_semaphore.h": "c",
+        "csp_transport.h": "c"
+    }
+}

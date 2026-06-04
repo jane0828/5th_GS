@@ -1,0 +1,143 @@
+[00:37:19]  Connect to Switch Box.............Success.
+[00:37:19]  Connect to Rotator................Success.
+[00:37:19]  Connect to GS100..................Success.
+[00:37:19]  TM Port 13 bind success.
+[00:37:19]  BCN Port 31 bind success.
+[00:37:19]  RPT Port 25 bind success.
+[00:37:32]  TLE "cubesat" Download Completed.
+[00:42:10]  Start Engaging.
+[00:42:10]  Tracking : Az 27, El 0.
+[00:42:12]  Tracking : Az 27, El 0.
+[00:42:14]  Tracking : Az 27, El 0.
+[00:44:49]  Start Doppler Correction.
+[00:47:33]  Forked Safe Amplifier Process.(ON, Timer)
+[00:47:40]  Ping Failed.
+[00:47:50]  Tracking : Az 30, El 1.
+[00:47:56]  Ping Failed.
+[00:48:13]  Ping Failed.
+[00:48:25]  Tracking : Az 33, El 3.
+[00:48:33]  Ping Failed.
+[00:48:52]  Ping Failed.
+[00:48:55]  Tracking : Az 36, El 5.
+[00:49:07]  Ping Failed.
+[00:49:15]  Tracking : Az 38, El 7.
+[00:49:26]  Ping Failed.
+[00:49:37]  Tracking : Az 41, El 8.
+[00:49:40]  Ping Success at node 5, 473ms
+[00:49:46]  Remote Param Control OK. csp_rtable : 0/0 AX100, 3/5 CAN, 23/5 CAN
+[00:49:58]  Tracking : Az 44, El 10.
+[00:50:17]  Tracking : Az 47, El 11.
+[00:50:20]  Remote Param Control OK. rx_baud : 4800
+[00:50:25]  Remote Param Control OK. tx_baud : 4800
+[00:50:30]  Remote Param Control OK. tx_inhibit : 0
+[00:50:33]  Remote Param Control OK. tx_pwr : 3
+[00:50:34]  Tracking : Az 50, El 12.
+[00:50:38]  Remote Param Control OK. can_en : true
+[00:50:42]  Total RX Bytes : 2308
+[00:50:46]  Ping Success at node 5, 472ms
+[00:50:54]  Tracking : Az 54, El 14.
+[00:51:05]  Ping Success at node 5, 465ms
+[00:51:08]  Tracking : Az 57, El 15.
+[00:51:08]  Total RX Bytes : 2340
+[00:51:14]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:51:21]  Tracking : Az 60, El 16.
+[00:51:23]  Ping Success at node 5, 462ms
+[00:51:29]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:51:33]  Tracking : Az 63, El 17.
+[00:51:36]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:51:44]  Tracking : Az 66, El 18.
+[00:51:51]  Tracking : Az 68, El 18.
+[00:52:02]  Tracking : Az 71, El 19.
+[00:52:04]  Ping Success at node 5, 460ms
+[00:52:05]  Tracking : Az 72, El 19.
+[00:52:09]  Total RX Bytes : 2408
+[00:52:17]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:52:18]  Tracking : Az 76, El 20.
+[00:52:21]  Tracking : Az 77, El 20.
+[00:52:23]  Total RX Bytes : 2436
+[00:52:27]  Tracking : Az 79, El 20.
+[00:52:36]  Tracking : Az 82, El 20.
+[00:52:42]  Tracking : Az 84, El 21.
+[00:52:49]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:52:51]  Tracking : Az 87, El 21.
+[00:52:53]  Total RX Bytes : 2464
+[00:53:00]  Tracking : Az 90, El 21.
+[00:53:08]  Tracking : Az 93, El 21.
+[00:53:09]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:53:14]  Tracking : Az 95, El 21.
+[00:53:21]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:53:23]  Tracking : Az 98, El 21.
+[00:53:28]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:53:31]  Tracking : Az 101, El 21.
+[00:53:40]  Tracking : Az 104, El 21.
+[00:53:46]  Tracking : Az 106, El 21.
+[00:53:55]  Tracking : Az 109, El 20.
+[00:53:56]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:54:02]  Ping Success at node 5, 458ms
+[00:54:04]  Tracking : Az 112, El 20.
+[00:54:08]  Remote Param Control OK. Last RSSI : -97
+[00:54:12]  Remote Param Control OK. Active Conf : 1
+[00:54:12]  Tracking : Az 114, El 19.
+[00:54:16]  Total RX Bytes : 2568
+[00:54:20]  Remote Param Control OK. rssi_busy : 0
+[00:54:20]  Tracking : Az 117, El 19.
+[00:54:26]  Remote Param Control OK. csp_rtable : 0/0 AX100, 3/5 CAN, 23/5 CAN
+[00:54:30]  Tracking : Az 120, El 18.
+[00:54:31]  Remote Param Control OK. rx_guard : 0
+[00:54:33]  Remote Param Control OK. tx_guard : 50
+[00:54:37]  Tracking : Az 122, El 18.
+[00:54:39]  Ping Success at node 5, 461ms
+[00:54:48]  Tracking : Az 125, El 17.
+[00:54:59]  Tracking : Az 128, El 16.
+[00:55:11]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:55:11]  Tracking : Az 131, El 15.
+[00:55:22]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:55:24]  Tracking : Az 134, El 14.
+[00:55:37]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x1 0x5 0x63
+[00:55:39]  Tracking : Az 137, El 13.
+[00:55:44]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x1 0x5 0x63
+[00:55:53]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x1 0x5 0x63
+[00:55:54]  Tracking : Az 140, El 12.
+[00:55:58]  Ping Success at node 5, 465ms
+[00:56:11]  Tracking : Az 143, El 11.
+[00:56:12]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x1 0x5 0x63
+[00:56:30]  Tracking : Az 146, El 9.
+[00:56:40]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:56:46]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:56:51]  Tracking : Az 149, El 8.
+[00:56:58]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:57:11]  Ping Success at node 5, 469ms
+[00:57:15]  Tracking : Az 152, El 6.
+[00:57:18]  Ping Success at node 5, 474ms
+[00:57:39]  Ping Success at node 5, 463ms
+[00:57:42]  Total RX Bytes : 2796
+[00:57:43]  Tracking : Az 155, El 4.
+[00:57:47]  Remote Param Control OK. Last RSSI : -103
+[00:58:13]  Ping Success at node 5, 475ms
+[00:58:15]  Tracking : Az 158, El 2.
+[00:58:18]  Ping Success at node 5, 474ms
+[00:58:21]  Remote Param Control OK. csp_rtable : 0/0 AX100, 3/5 CAN, 23/5 CAN
+[00:58:29]  Remote Param Control OK. csp_rtable : 0/0 AX100, 3/5 CAN, 23/5 CAN
+[00:58:32]  Ping Success at node 5, 476ms
+[00:58:46]  Ping Success at node 5, 479ms
+[00:58:51]  Ping Success at node 5, 475ms
+[00:58:53]  Tracking : Az 161, El 0.
+[00:58:53]  Remote Param Control OK. Last RSSI : -98
+[00:58:59]  Ping Success at node 5, 473ms
+[00:59:04]  Ping Success at node 5, 465ms
+[00:59:09]  Ping Success at node 5, 474ms
+[00:59:12]  Ping Success at node 5, 466ms
+[00:59:16]  Ping Success at node 5, 476ms
+[00:59:22]  Cannot Load Remote Parameter.
+[00:59:22]  Tracking : Az 27, El 0.
+[00:59:24]  Tracking : Az 27, El 0.
+[00:59:25]  Ping Failed.
+[00:59:26]  Tracking : Az 27, El 0.
+[00:59:28]  Tracking : Az 27, El 0.
+[00:59:29]  Forked Safe Amplifier Process. (OFF)
+[00:59:30]  Tracking : Az 27, El 0.
+[00:59:32]  Tracking : Az 27, El 0.
+[00:59:34]  Finish Engaging.
+[00:59:34]  Beacon Success : 0, Ping Success : 21
+[01:17:29]  Tracking : Az 0, El 0.
+

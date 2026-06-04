@@ -1,0 +1,116 @@
+[18:31:04]  Connect to Switch Box.............Success.
+[18:31:04]  Connect to Rotator................Success.
+[18:31:04]  Connect to GS100..................Success.
+[18:31:04]  TM Port 13 bind success.
+[18:31:04]  BCN Port 31 bind success.
+[18:31:04]  RPT Port 25 bind success.
+[18:31:05]  Forked Safe Amplifier Process.(ON, Timer)
+FM (1875)
+[18:31:10]   Start Uplink Task.
+[18:31:10]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:31:10]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0x49
+|| Uplink || Length: 12
+18	75	c0	00	00	05	1e	49	00	00	
+00	00	
+
+[18:31:10]  Communication Time : 344
+FM (1875)
+[18:31:11]   Start Uplink Task.
+[18:31:11]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:31:11]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0x49
+|| Uplink || Length: 12
+18	75	c0	00	00	05	1e	49	00	00	
+00	00	
+
+[18:31:11]  Communication Time : 344
+FM (1875)
+[18:31:11]   Start Uplink Task.
+[18:31:11]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:31:11]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0x49
+|| Uplink || Length: 12
+18	75	c0	00	00	05	1e	49	00	00	
+00	00	
+
+[18:31:12]  Communication Time : 343
+FM (1875)
+[18:31:12]   Start Uplink Task.
+[18:31:12]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:31:12]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0x49
+|| Uplink || Length: 12
+18	75	c0	00	00	05	1e	49	00	00	
+00	00	
+
+[18:31:12]  Communication Time : 344
+FM (1875)
+[18:31:12]   Start Uplink Task.
+[18:31:12]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:31:12]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0x49
+|| Uplink || Length: 12
+18	75	c0	00	00	05	1e	49	00	00	
+00	00	
+
+FM (1875)
+[18:31:13]  Communication Time : 344
+[18:31:13]   Start Uplink Task.
+[18:31:13]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:31:13]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0x49
+|| Uplink || Length: 12
+18	75	c0	00	00	05	1e	49	00	00	
+00	00	
+
+[18:31:13]  Communication Time : 343
+FM (1875)
+[18:31:23]   Start Uplink Task.
+[18:31:23]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:31:23]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1f 0x48
+|| Uplink || Length: 12
+18	75	c0	00	00	05	1f	48	00	00	
+00	00	
+
+[18:31:23]  Communication Time : 344
+FM (1875)
+[18:31:24]   Start Uplink Task.
+[18:31:24]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:31:24]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1f 0x48
+|| Uplink || Length: 12
+18	75	c0	00	00	05	1f	48	00	00	
+00	00	
+
+[18:31:24]  Communication Time : 344
+FM (1875)
+[18:31:24]   Start Uplink Task.
+[18:31:24]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:31:24]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1f 0x48
+|| Uplink || Length: 12
+18	75	c0	00	00	05	1f	48	00	00	
+00	00	
+
+[18:31:24]  Communication Time : 344
+FM (1875)
+[18:31:24]   Start Uplink Task.
+[18:31:24]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:31:24]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1f 0x48
+|| Uplink || Length: 12
+18	75	c0	00	00	05	1f	48	00	00	
+00	00	
+
+[18:31:25]  Communication Time : 344
+FM (1875)
+[18:31:25]   Start Uplink Task.
+[18:31:25]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:31:25]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1f 0x48
+|| Uplink || Length: 12
+18	75	c0	00	00	05	1f	48	00	00	
+00	00	
+
+[18:31:25]  Communication Time : 344
+FM (1875)
+[18:31:25]   Start Uplink Task.
+[18:31:25]  Send Packet of Ptype : 10. Check Terminal Log.
+[18:31:25]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1f 0x48
+|| Uplink || Length: 12
+18	75	c0	00	00	05	1f	48	00	00	
+00	00	
+
+[18:31:26]  Communication Time : 344
+[18:31:28]  Forked Safe Amplifier Process. (OFF)

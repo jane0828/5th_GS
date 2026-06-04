@@ -1,0 +1,33 @@
+[13:22:07]  Connect to Switch Box.............Success.
+[13:22:07]  Connect to Rotator................Success.
+[13:22:07]  Connect to GS100..................Success.
+[13:22:07]  TM Port 13 bind success.
+[13:22:07]  BCN Port 31 bind success.
+[13:22:07]  RPT Port 25 bind success.
+[13:22:11]  TLE "cubesat" Download Completed.
+[13:22:15]  Start Engaging.
+[13:22:16]  Start Doppler Correction.
+[13:22:17]  Forked Safe Amplifier Process.(ON, Timer)
+[13:22:28]  Ping Failed.dfd
+[13:22:34]  Ping Failed.dfd
+[13:22:37]  Cannot Load Remote Parameter.
+[13:22:40]  Tracking : Az 340, El 3.
+[13:22:41]  Cannot Load Remote Parameter.
+[13:22:46]  Cannot Load Remote Parameter.
+[13:22:51]  Ping Failed.dfd
+[13:22:53]  Total RX Bytes : 15516
+[13:22:59]  Ping Failed.dfd
+[13:23:07]  Ping Failed.dfd
+[13:23:16]  Ping Failed.dfd
+[13:23:24]  Ping Failed.dfd
+[13:23:25]  Tracking : Az 342, El 0.
+[13:24:01]  Tracking : Az 339, El 6.
+[13:24:03]  Tracking : Az 339, El 6.
+[13:24:09]  Forked Safe Amplifier Process. (OFF)
+[13:24:14]  Tracking : Az 0, El 0.
+[13:24:18]  Tracking : Az 339, El 6.
+[13:24:20]  Tracking : Az 339, El 6.
+[13:24:22]  Tracking : Az 339, El 6.
+[13:24:27]  Finish Engaging.
+[13:24:27]  Beacon Success : 0, Ping Success : 0
+[13:24:28]  Tracking : Az 0, El 0.

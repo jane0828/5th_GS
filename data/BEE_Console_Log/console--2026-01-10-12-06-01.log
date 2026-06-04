@@ -1,0 +1,130 @@
+2026-01-10 12:06
+[12:06:04]  Connect to Switch Box.............Success.
+[12:06:04]  Connect to Rotator................Success.
+[12:06:04]  Connect to GS100..................Success.
+[12:06:04]  TM Port 13 bind success.
+[12:06:04]  BCN Port 31 bind success.
+[12:06:04]  RPT Port 25 bind success.
+[12:06:04]  Event Port 27 bind success.
+[12:06:04]  COSMIC Beacon Port 23 bind success.
+[12:06:04]  COSMIC Report Port 24 bind success.
+[12:06:12]  TLE "cubesat" Download Completed.
+[12:09:50]  Forked Safe Amplifier Process.(ON, Timer)
+[12:09:54]  Start Engaging.
+[12:09:54]  Tracking : Az 121, El 13.
+[12:09:55]  Start Doppler Correction.
+[12:09:56]  Tracking : Az 121, El 13.
+[12:09:58]  Tracking : Az 121, El 14.
+[12:10:00]  Tracking : Az 120, El 14.
+[12:10:02]  Tracking : Az 120, El 14.
+[12:10:04]  Tracking : Az 120, El 14.
+[12:10:06]  Tracking : Az 119, El 14.
+[12:10:08]  Ping Failed.
+[12:10:08]  Tracking : Az 119, El 15.
+[12:10:10]  Tracking : Az 118, El 15.
+[12:10:12]  Tracking : Az 118, El 15.
+[12:10:14]  Tracking : Az 118, El 15.
+[12:10:17]  Ping Success at node 5, 467ms
+[12:10:21]  Tracking : Az 116, El 16.
+[12:10:23]  Tracking : Az 116, El 16.
+[12:10:28]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[12:10:35]  Tracking : Az 113, El 17.
+[12:10:37]  Ping Success at node 5, 458ms
+[12:10:39]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x0
+[12:10:40]  Received Report from port : 25.
+[12:10:42]  Received Report from port : 25.
+[12:10:44]  Received Report from port : 25.
+[12:10:48]  Tracking : Az 110, El 19.
+[12:10:49]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[12:10:50]  Received Report from port : 25.
+[12:10:52]  Received Report from port : 25.
+[12:10:54]  Received Report from port : 25.
+[12:11:03]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x49
+[12:11:03]  Tracking : Az 106, El 20.
+[12:11:04]  Received Report from port : 25.
+[12:11:06]  Received Report from port : 25.
+[12:11:08]  Received Report from port : 25.
+[12:11:14]  Tracking : Az 103, El 21.
+[12:11:17]  Tracking : Az 102, El 21.
+[12:11:26]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[12:11:26]  Received Report from port : 25.
+[12:11:27]  Tracking : Az 99, El 22.
+[12:11:28]  Received Report from port : 25.
+[12:11:30]  Tracking : Az 98, El 23.
+[12:11:30]  Received Report from port : 25.
+[12:11:34]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[12:11:35]  Received Report from port : 25.
+[12:11:37]  Received Report from port : 25.
+[12:11:39]  Received Report from port : 25.
+[12:11:39]  Tracking : Az 95, El 23.
+[12:11:42]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[12:11:42]  Tracking : Az 94, El 24.
+[12:11:42]  Received Report from port : 25.
+[12:11:44]  Received Report from port : 25.
+[12:11:46]  Received Report from port : 25.
+[12:11:50]  Tracking : Az 91, El 24.
+[12:11:58]  Tracking : Az 88, El 25.
+[12:12:01]  Tracking : Az 87, El 25.
+[12:12:08]  Tracking : Az 84, El 25.
+[12:12:11]  Tracking : Az 83, El 26.
+[12:12:12]  Ping Success at node 5, 461ms
+[12:12:18]  Tracking : Az 80, El 26.
+[12:12:28]  Tracking : Az 76, El 26.
+[12:12:30]  Tracking : Az 75, El 26.
+[12:12:34]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x1 0x0 0x16
+[12:12:35]  Received Report from port : 25.
+[12:12:37]  Received Report from port : 25.
+[12:12:38]  Tracking : Az 72, El 26.
+[12:12:39]  Received Report from port : 25.
+[12:12:40]  Tracking : Az 71, El 26.
+[12:12:47]  Tracking : Az 68, El 26.
+[12:12:54]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x3 0x5 0x13
+[12:12:54]  Tracking : Az 65, El 26.
+[12:12:55]  Received Report from port : 25.
+[12:12:57]  Received Report from port : 25.
+[12:12:59]  Received Report from port : 25.
+[12:13:01]  Tracking : Az 62, El 26.
+[12:13:07]  Tracking : Az 60, El 26.
+[12:13:14]  Tracking : Az 57, El 26.
+[12:13:20]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x2 0x3 0x17
+[12:13:21]  Received Report from port : 25.
+[12:13:21]  Tracking : Az 54, El 25.
+[12:13:23]  Received Report from port : 25.
+[12:13:25]  Received Report from port : 25.
+[12:13:29]  Tracking : Az 51, El 25.
+[12:13:37]  Tracking : Az 48, El 24.
+[12:13:43]  Tracking : Az 46, El 24.
+[12:13:45]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x3 0x6 0x10
+[12:13:46]  Received Report from port : 25.
+[12:13:48]  Received Report from port : 25.
+[12:13:50]  Received Report from port : 25.
+[12:13:51]  Tracking : Az 43, El 23.
+[12:14:00]  Tracking : Az 40, El 22.
+[12:14:10]  Tracking : Az 37, El 21.
+[12:14:13]  Tracking : Az 36, El 21.
+[12:14:20]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x3 0x6 0x11
+[12:14:20]  Tracking : Az 34, El 20.
+[12:14:21]  Received Report from port : 25.
+[12:14:23]  Received Report from port : 25.
+[12:14:25]  Received Report from port : 25.
+[12:14:35]  Tracking : Az 30, El 19.
+[12:14:37]  Tracking : Az 30, El 19.
+[12:14:48]  Tracking : Az 27, El 18.
+[12:14:50]  Tracking : Az 27, El 17.
+[12:14:52]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x6
+[12:14:53]  Received Event from port : 27.
+
+[12:14:55]  Received Event from port : 27.
+
+[12:14:58]  Received Event from port : 27.
+
+[12:15:01]  Tracking : Az 24, El 16.
+[12:15:08]  Received Event from port : 27.
+
+[12:15:16]  Tracking : Az 21, El 15.
+[12:15:18]  Received Event from port : 27.
+
+[12:15:24]  [OK]CMD Packet Header: 0x18 0x30 0xc0 0x0 0x0 0x7 0xa 0x28
+[12:15:25]  Received Report from port : 25.
+[12:15:27]  Received Report from port : 25.
+[12:15:28]  Tracking : Az 19, El 14.

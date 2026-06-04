@@ -1,0 +1,33 @@
+2025-12-15 02:25
+[02:25:06]  Connect to Switch Box.............Success.
+[02:25:06]  Connect to Rotator................Success.
+[02:25:06]  Connect to GS100..................Success.
+[02:25:06]  TM Port 13 bind success.
+[02:25:06]  BCN Port 31 bind success.
+[02:25:06]  RPT Port 25 bind success.
+[02:25:11]  TLE "cubesat" Download Completed.
+[02:25:15]  Start Engaging.
+[02:25:15]  Start Engaging.
+[02:25:15]  Tracking : Az 231, El 14.
+[02:25:16]  Start Doppler Correction.
+[02:25:17]  Forked Safe Amplifier Process.(ON, Timer)
+[02:25:19]  Ping Success at node 5, 472ms
+[02:25:23]  AX100 Boot Count : 187
+[02:25:25]  Total RX Bytes : 120635
+[02:25:36]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[02:25:36]  Tracking : Az 228, El 12.
+[02:26:02]  Tracking : Az 225, El 10.
+[02:26:28]  Tracking : Az 223, El 7.
+[02:26:43]  Ping Success at node 5, 470ms
+[02:26:52]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[02:26:58]  Tracking : Az 220, El 5.
+[02:27:16]  Ping Success at node 5, 472ms
+[02:27:20]  Cannot Load Remote Parameter.
+[02:27:23]  AX100 Boot Count : 187
+[02:27:26]  Remote Param Control OK. Last RSSI : -102
+[02:27:31]  Ping Failed.
+[02:27:35]  Tracking : Az 218, El 2.
+[02:27:52]  Finish Engaging.
+[02:27:52]  Beacon Success : 0, Ping Success : 3
+[02:27:53]  Forked Safe Amplifier Process. (OFF)
+[02:27:59]  Tracking : Az 0, El 0.

@@ -1,0 +1,17 @@
+2025-12-20 12:14
+[12:14:41]  Connect to Switch Box.............Success.
+[12:14:41]  Connect to Rotator................Success.
+[12:14:41]  Connect to GS100..................Success.
+[12:14:41]  TM Port 13 bind success.
+[12:14:41]  BCN Port 31 bind success.
+[12:14:41]  RPT Port 25 bind success.
+[12:14:41]  Event Port 27 bind success.
+[12:15:02]  TLE "cubesat" Download Completed.
+[12:15:06]  Start Engaging.
+[12:15:06]  Tracking : Az 138, El 6.
+[12:15:06]  Start Doppler Correction.
+[12:15:07]  Forked Safe Amplifier Process.(ON, Timer)
+[12:15:13]  Ping Success at node 5, 474ms
+[12:15:17]  AX100 Boot Count : 187
+[12:15:31]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[12:15:32]  Received Report from port : 25.

@@ -1,0 +1,75 @@
+Uplink packet. Length: 8
+18	94	c0	00	00	01	b2	00	
+
+Downlink. Packet Length: 24
+Header Info.
+Stream ID: 7c08
+Sequence: 1c0
+Length: bd00
+Time Stamp: 9b	46	f	0	6e	4e
+
+HYVRID Header Info.
+RetCodeType: 7
+RetCode: 0
+MsgId: 0	IFC (0)
+CC: 0
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+08	7c	c0	01	00	bd	9b	46	0f	00	
+6e	4e	07	00	00	00	00	00	00	00	
+00	00	00	00	
+Uplink packet. Length: 8
+18	96	c0	00	00	01	b6	06	
+
+Downlink. Packet Length: 58
+Header Info.
+Stream ID: 7a08
+Sequence: c0
+Length: 2f00
+Time Stamp: 0	0	0	0	0	0
+
+HYVRID Header Info.
+RetCodeType: 0
+RetCode: 0
+MsgId: 0	IFC (0)
+CC: 0
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+08	7a	c0	00	00	2f	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	08	7b	
+c0	01	00	bd	d5	46	0f	00	27	90	
+09	fc	ff	ff	ff	00	00	06	00	02	
+00	00	00	00	00	00	00	00	
+Uplink packet. Length: 8
+18	96	c0	00	00	01	b6	06	
+
+Downlink. Packet Length: 58
+Header Info.
+Stream ID: 7a08
+Sequence: c0
+Length: 2f00
+Time Stamp: 0	0	0	0	0	0
+
+HYVRID Header Info.
+RetCodeType: 0
+RetCode: 0
+MsgId: 0	IFC (0)
+CC: 0
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+08	7a	c0	00	00	2f	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	08	7b	
+c0	02	00	bd	f2	46	0f	00	22	02	
+09	fc	ff	ff	ff	00	00	06	00	02	
+00	00	00	00	00	00	00	00	
+Uplink packet. Length: 8
+18	96	c0	00	00	01	a3	13	
+

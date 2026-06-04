@@ -1,0 +1,371 @@
+2025-12-23 13:45
+[13:45:40]  Connect to Switch Box.............Success.
+[13:45:40]  Connect to Rotator................Success.
+[13:45:40]  Connect to GS100..................Success.
+[13:45:40]  TM Port 13 bind success.
+[13:45:40]  BCN Port 31 bind success.
+[13:45:40]  RPT Port 25 bind success.
+[13:45:40]  Event Port 27 bind success.
+[13:45:40]  COSMIC Beacon Port 23 bind success.
+[13:45:40]  COSMIC Report Port 24 bind success.
+[13:46:05]  TLE "cubesat" Download Completed.
+[13:46:09]  Start Engaging.
+[13:46:09]  Tracking : Az 204, El 0.
+[13:46:11]  Tracking : Az 204, El 0.
+[13:46:12]  Start Doppler Correction.
+[13:46:13]  Tracking : Az 204, El 0.
+[13:46:15]  Tracking : Az 204, El 0.
+[13:46:17]  Tracking : Az 204, El 0.
+[13:46:19]  Tracking : Az 204, El 0.
+[13:46:21]  Tracking : Az 204, El 0.
+[13:46:23]  Tracking : Az 204, El 0.
+[13:46:25]  Tracking : Az 204, El 0.
+[13:46:27]  Tracking : Az 204, El 0.
+[13:46:29]  Tracking : Az 204, El 0.
+[13:46:31]  Tracking : Az 204, El 0.
+[13:46:33]  Tracking : Az 204, El 0.
+[13:46:35]  Tracking : Az 204, El 0.
+[13:46:37]  Tracking : Az 204, El 0.
+[13:46:39]  Tracking : Az 204, El 0.
+[13:46:41]  Tracking : Az 204, El 0.
+[13:46:43]  Tracking : Az 204, El 0.
+[13:52:15]  Forked Safe Amplifier Process.(ON, Timer)
+[13:52:20]  Ping Failed.
+[13:52:26]  Ping Failed.
+[13:52:32]  Tracking : Az 206, El 1.
+[13:52:38]  Ping Failed.
+[13:52:47]  Ping Success at node 5, 472ms
+[13:52:54]  Ping Failed.
+[13:53:04]  Tracking : Az 209, El 3.
+[13:53:09]  Ping Success at node 5, 466ms
+[13:53:31]  Tracking : Az 212, El 4.
+[13:53:33]  Tracking : Az 212, El 4.
+[13:53:53]  Tracking : Az 214, El 6.
+[13:53:58]  Ping Success at node 3, 477ms
+[13:54:10]  Tracking : Az 217, El 7.
+[13:54:21]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:54:22]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:54:22]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:54:30]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:54:31]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:54:31]  Tracking : Az 220, El 8.
+[13:54:31]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:54:37]  Ping Success at node 5, 463ms
+[13:54:38]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:54:38]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:54:38]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:54:48]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:54:49]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:54:49]  Tracking : Az 223, El 9.
+[13:54:49]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:54:50]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:54:50]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:54:50]  Received Report from port : 23.
+[13:54:51]  Tracking : Az 223, El 9.
+[13:54:58]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:54:58]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:54:58]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:55:01]  Tracking : Az 225, El 10.
+[13:55:06]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:55:06]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:55:07]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:55:08]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:55:08]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:55:08]  Received Report from port : 23.
+[13:55:14]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:55:14]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:55:14]  Received Report from port : 23.
+[13:55:17]  Tracking : Az 228, El 11.
+[13:55:19]  Tracking : Az 228, El 11.
+[13:55:20]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:55:20]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:55:20]  Received Report from port : 23.
+[13:55:24]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:55:24]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:55:24]  Received Report from port : 23.
+[13:55:31]  Tracking : Az 231, El 12.
+[13:55:33]  Tracking : Az 231, El 12.
+[13:55:40]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:55:41]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:55:41]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:55:45]  Tracking : Az 234, El 13.
+[13:55:55]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:55:55]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:55:55]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:55:56]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:55:56]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:55:56]  Received Report from port : 23.
+[13:55:58]  Tracking : Az 237, El 13.
+[13:56:03]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:56:03]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:56:03]  Received Report from port : 23.
+[13:56:05]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:56:05]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:56:05]  Received Report from port : 23.
+[13:56:11]  Tracking : Az 240, El 14.
+[13:56:23]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:56:23]  Tracking : Az 243, El 15.
+[13:56:23]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:56:23]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:56:24]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:56:24]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:56:24]  Received Report from port : 23.
+[13:56:25]  Tracking : Az 243, El 15.
+[13:56:30]  Tracking : Az 245, El 15.
+[13:56:33]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:56:33]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:56:34]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:56:34]  Tracking : Az 246, El 15.
+[13:56:35]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:56:35]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:56:35]  Received Report from port : 23.
+[13:56:41]  Tracking : Az 248, El 16.
+[13:56:52]  Tracking : Az 251, El 16.
+[13:56:56]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:56:56]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:56:57]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:56:58]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:56:58]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:56:58]  Received Report from port : 23.
+[13:57:03]  Tracking : Az 254, El 16.
+[13:57:05]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:57:05]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:57:06]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:57:06]  Tracking : Az 255, El 16.
+[13:57:07]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:57:07]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:57:07]  Received Report from port : 23.
+[13:57:12]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:57:12]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:57:13]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:57:14]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:57:14]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:57:14]  Received Report from port : 23.
+[13:57:16]  Tracking : Az 258, El 17.
+[13:57:18]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:57:18]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:57:19]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:57:20]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:57:20]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:57:20]  Received Report from port : 23.
+[13:57:24]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:57:25]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:57:25]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:57:26]  Tracking : Az 261, El 17.
+[13:57:26]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:57:26]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:57:26]  Received Report from port : 23.
+[13:57:29]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:57:29]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:57:29]  Received Report from port : 23.
+[13:57:36]  Tracking : Az 264, El 17.
+[13:57:39]  Tracking : Az 265, El 17.
+[13:57:49]  Tracking : Az 268, El 17.
+[13:57:55]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:57:55]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:57:56]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:57:56]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:57:56]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:57:56]  Received Report from port : 23.
+[13:57:59]  Tracking : Az 271, El 17.
+[13:57:59]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:58:00]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:58:00]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:58:01]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:58:01]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:58:01]  Received Report from port : 23.
+[13:58:06]  Tracking : Az 273, El 17.
+[13:58:09]  Tracking : Az 274, El 17.
+[13:58:13]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:58:13]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:58:13]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:58:18]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:58:18]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:58:18]  Received Report from port : 23.
+[13:58:19]  Tracking : Az 277, El 16.
+[13:58:20]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:58:20]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:58:20]  Received Report from port : 23.
+[13:58:21]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:58:21]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:58:22]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:58:22]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:58:22]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:58:22]  Received Report from port : 23.
+[13:58:24]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:58:24]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:58:24]  Received Report from port : 23.
+[13:58:26]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:58:26]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:58:26]  Received Report from port : 23.
+[13:58:30]  Tracking : Az 280, El 16.
+[13:58:33]  Tracking : Az 281, El 16.
+[13:58:42]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:58:42]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:58:43]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:58:44]  Tracking : Az 284, El 16.
+[13:58:46]  Tracking : Az 284, El 16.
+[13:58:50]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:58:50]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:58:50]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:58:55]  Tracking : Az 287, El 15.
+[13:58:57]  Tracking : Az 287, El 15.
+[13:58:59]  Ping Success at node 5, 467ms
+[13:58:59]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:58:59]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:58:59]  Received Report from port : 23.
+[13:59:03]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:59:03]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:59:03]  Received Report from port : 23.
+[13:59:05]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:59:05]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:59:05]  Received Report from port : 23.
+[13:59:05]  AX100 Boot Count : 22226
+[13:59:06]  Tracking : Az 290, El 15.
+[13:59:08]  Tracking : Az 290, El 15.
+[13:59:15]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:59:15]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:59:16]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:59:17]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:59:17]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:59:17]  Received Report from port : 23.
+[13:59:18]  Tracking : Az 293, El 14.
+[13:59:27]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:59:28]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:59:28]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:59:29]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:59:29]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:59:29]  Received Report from port : 23.
+[13:59:31]  Tracking : Az 296, El 13.
+[13:59:35]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:59:35]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:59:35]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:59:36]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:59:36]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:59:36]  Received Report from port : 23.
+[13:59:44]  Tracking : Az 299, El 13.
+[13:59:49]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:59:49]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:59:50]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:59:56]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:59:56]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:59:56]  Received Report from port : 23.
+[13:59:58]  Tracking : Az 302, El 12.
+[14:00:13]  Tracking : Az 305, El 11.
+[14:00:19]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[14:00:19]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[14:00:20]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[14:00:21]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[14:00:21]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[14:00:21]  Received Report from port : 23.
+[14:00:24]  Tracking : Az 307, El 10.
+[14:00:29]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[14:00:29]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[14:00:29]  Received Report from port : 23.
+[14:00:37]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[14:00:37]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[14:00:38]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[14:00:39]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[14:00:39]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[14:00:39]  Received Report from port : 23.
+[14:00:41]  Tracking : Az 310, El 9.
+[14:00:43]  Tracking : Az 310, El 9.
+[14:00:47]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[14:00:48]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[14:00:48]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[14:01:00]  Tracking : Az 313, El 8.
+[14:01:02]  Tracking : Az 313, El 8.
+[14:01:02]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[14:01:03]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[14:01:03]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[14:01:04]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[14:01:04]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[14:01:04]  Received Report from port : 23.
+[14:01:06]  Tracking : Az 314, El 7.
+[14:01:14]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[14:01:14]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[14:01:14]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[14:01:15]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[14:01:15]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[14:01:15]  Received Report from port : 23.
+[14:01:18]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[14:01:18]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[14:01:18]  Received Report from port : 23.
+[14:01:28]  Tracking : Az 317, El 6.
+[14:01:30]  Tracking : Az 317, El 6.
+[14:01:30]  Forked Safe Amplifier Process. (OFF)
+[14:01:33]  Finish Engaging.
+[14:01:33]  Beacon Success : 0, Ping Success : 5
+[14:01:39]  Tracking : Az 0, El 0.

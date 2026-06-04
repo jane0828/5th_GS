@@ -1,0 +1,73 @@
+================= MISSION BEACON SAVE =================
+
+[CCSDS HEADER]
+MID        : 08 1B
+SEQ        : C0 02
+LEN        : 00 66
+TimeCode   : 00 34 36 40 2F A4
+
+[SRL HOUSEKEEPING]
+SRL Command Counter        : 0
+SRL Command Error Counter  : 0
+IOHandleStatus[0]         : 0
+IOHandleTxCount[0]        : 0
+IOHandleStatus[1]         : 0
+IOHandleTxCount[1]        : 0
+IOHandleStatus[2]         : 0
+IOHandleTxCount[2]        : 0
+IOHandleStatus[3]         : 0
+IOHandleTxCount[3]        : 0
+
+[RPT PAYLOAD SUMMARY]
+CmdCounter                : 0
+CmdErrCounter             : 0
+
+[RPT QUEUE INFO]
+ReportQueueCnt            : 9
+CriticalQueueCnt          : 0
+
+[OPERATION DATA]
+BootCount                 : 7
+TimeSec                   : 3421752
+TimeSubsec                : 1490236400
+Sequence                  : 121034
+ResetCause                : 0x21
+
+[MISSION BEACON PAYLOAD]
+CommandCounter             : 0
+CommandErrorCounter        : 0
+System Status              : 0
+NTC Temp 0                 : 0
+NTC Temp 1                 : 0
+NTC Temp 2                 : 0
+NTC Temp 3                 : 0
+NTC Temp 4                 : 0
+NTC Temp 5                 : 0
+NTC Temp 6                 : 0
+NTC Temp 7                 : 0
+NTC Temp 8                 : 0
+NTC Temp 9                 : 0
+NTC Temp 10                : 0
+NTC Temp 11                : 0
+
+[MISSION HOUSEKEEPING]
+HK CommandCounter          : 0
+HK CommandErrorCounter     : 0
+HK System Status           : 0
+HK NTC Temp 0              : 0
+HK NTC Temp 1              : 0
+HK NTC Temp 2              : 0
+HK NTC Temp 3              : 0
+HK NTC Temp 4              : 0
+HK NTC Temp 5              : 0
+HK NTC Temp 6              : 0
+HK NTC Temp 7              : 0
+HK NTC Temp 8              : 0
+HK NTC Temp 9              : 0
+HK NTC Temp 10             : 0
+HK NTC Temp 11             : 0
+HK Sensor1 Data 0           : 0
+HK Sensor1 Data 1           : 0
+
+[BINARY DATA]
+08 1B C0 02 00 66 00 34 36 40 2F A4 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 09 00 07 00 38 36 34 00 F0 33 D3 58 CA D8 01 00 21 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 

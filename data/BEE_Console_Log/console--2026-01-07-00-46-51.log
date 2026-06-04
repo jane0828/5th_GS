@@ -1,0 +1,42 @@
+2026-01-07 00:46
+[00:47:37]  Connect to Switch Box.............Success.
+[00:47:37]  Connect to Rotator................Success.
+[00:47:37]  Connect to GS100..................Success.
+[00:47:37]  TM Port 13 bind success.
+[00:47:37]  BCN Port 31 bind success.
+[00:47:37]  RPT Port 25 bind success.
+[00:47:37]  Event Port 27 bind success.
+[00:47:37]  COSMIC Beacon Port 23 bind success.
+[00:47:37]  COSMIC Report Port 24 bind success.
+[00:48:02]  TLE "cubesat" Download Completed.
+[00:50:12]  Start Engaging.
+[00:50:12]  Tracking : Az 26, El 0.
+[00:50:13]  Start Doppler Correction.
+[00:50:14]  Tracking : Az 26, El 0.
+[00:50:16]  Tracking : Az 26, El 0.
+[00:52:11]  Forked Safe Amplifier Process.(ON, Timer)
+[00:52:48]  Ping Failed.
+[00:52:53]  Tracking : Az 30, El 3.
+[00:53:00]  Ping Failed.
+[00:53:27]  Tracking : Az 33, El 5.
+[00:53:33]  Ping Failed.
+[00:53:51]  Ping Failed.
+[00:53:55]  Tracking : Az 35, El 7.
+[00:54:05]  Ping Success at node 5, 475ms
+[00:54:07]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[00:54:07]  Received Report from port : 25.
+[00:54:09]  Received Report from port : 25.
+[00:54:11]  Received Report from port : 25.
+[00:54:13]  Tracking : Az 38, El 8.
+[00:54:24]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[00:54:25]  Received Report from port : 25.
+[00:54:27]  Received Report from port : 25.
+[00:54:29]  Received Report from port : 25.
+[00:54:34]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:54:35]  Received Report from port : 25.
+[00:54:35]  Tracking : Az 41, El 10.
+[00:54:37]  Received Report from port : 25.
+[00:54:39]  Received Report from port : 25.
+[00:54:45]  Forked Safe Amplifier Process. (OFF)
+[00:54:48]  Finish Engaging.
+[00:54:48]  Beacon Success : 0, Ping Success : 1

@@ -1,0 +1,2239 @@
+2026-03-04 01:06
+[01:06:30]  Connect to Switch Box.............Success.
+[01:06:30]  Connect to Rotator................Success.
+[01:06:30]  Connect to GS100..................Success.
+[01:06:30]  TM Port 13 bind success.
+[01:06:30]  BCN Port 31 bind success.
+[01:06:30]  RPT Port 25 bind success.
+[01:06:30]  Event Port 27 bind success.
+[01:06:30]  COSMIC Beacon Port 23 bind success.
+[01:06:30]  COSMIC Report Port 24 bind success.
+[01:06:42]  TLE "active" Download Completed.
+[01:06:49]  Start Engaging.
+[01:06:49]  Tracking : Az 358, El 0.
+[01:06:51]  Tracking : Az 358, El 0.
+[01:06:53]  Finish Engaging.
+[01:06:53]  Beacon Success : 0, Ping Success : 0
+[01:06:55]  [Auto]Start AutoPilot.
+[01:06:55]  [Auto]Start Autopilot. Next Valuable AOS : 3/4 2:24:44
+[01:06:55]  [Auto]Max Elevation : 25.37° Please Keep Devices On.
+[02:19:44]  [Auto]Start Engaging.
+[02:19:44]  [Auto]Start Doppler Correction.
+[02:21:33]  Forked Safe Amplifier Process.(ON, Timer)
+[02:21:40]  Ping Failed.
+[02:21:47]  Ping Failed.
+[02:21:55]  Ping Failed.
+[02:22:02]  Ping Failed.
+[02:22:09]  Ping Failed.
+[02:22:16]  Ping Failed.
+[02:22:24]  Ping Failed.
+[02:22:31]  Ping Failed.
+[02:22:38]  Ping Failed.
+[02:22:46]  Ping Failed.
+[02:22:53]  Ping Failed.
+[02:23:00]  Ping Failed.
+[02:23:08]  Ping Failed.
+[02:23:15]  Ping Failed.
+[02:23:22]  Ping Failed.
+[02:23:30]  Ping Failed.
+[02:23:37]  Ping Failed.
+[02:23:44]  Ping Failed.
+[02:23:52]  Ping Failed.
+[02:23:59]  Ping Failed.
+[02:24:06]  Ping Failed.
+[02:24:14]  Ping Failed.
+[02:24:21]  Ping Failed.
+[02:24:28]  Ping Failed.
+[02:24:36]  Ping Failed.
+[02:24:43]  Ping Failed.
+[02:24:50]  Ping Failed.
+[02:24:58]  Ping Failed.
+[02:25:03]  Ping Success at node 5, 468ms
+[02:25:09]  Ping Success at node 5, 471ms
+[02:25:14]  Ping Success at node 5, 471ms
+[02:25:20]  Ping Success at node 5, 471ms
+[02:25:25]  Ping Success at node 5, 471ms
+[02:25:30]  Tracking : Az 354, El 2.
+[02:25:30]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[02:25:30]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[02:25:31]  Received Report from port : 25.
+[02:25:32]  Ping Failed.
+[02:25:33]  Received Report from port : 25.
+[02:25:35]  Received Report from port : 25.
+[02:25:40]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[02:25:41]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[02:25:41]  Received Report from port : 25.
+[02:25:43]  Received Report from port : 25.
+[02:25:45]  Received Report from port : 25.
+[02:25:46]  Tracking : Az 353, El 4.
+[02:25:51]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[02:25:51]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[02:25:52]  Received Report from port : 25.
+[02:25:54]  Received Report from port : 25.
+[02:25:56]  Received Report from port : 25.
+[02:26:01]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[02:26:01]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[02:26:02]  Received Report from port : 25.
+[02:26:04]  Received Report from port : 25.
+[02:26:06]  Received Report from port : 25.
+[02:26:08]  Tracking : Az 351, El 5.
+[02:26:11]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[02:26:12]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[02:26:12]  Received Report from port : 25.
+[02:26:14]  Received Report from port : 25.
+[02:26:16]  Received Report from port : 25.
+[02:26:22]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[02:26:22]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[02:26:23]  Received Report from port : 25.
+[02:26:25]  Received Report from port : 25.
+[02:26:27]  Received Report from port : 25.
+[02:26:32]  Tracking : Az 349, El 7.
+[02:26:32]  [Auto]Start GND WDT reset sequence
+[02:26:32]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[02:26:32]  [Auto]AX100 GND WDT CMD sent (1/2)
+[02:26:33]  Received Report from port : 25.
+[02:26:35]  Received Report from port : 25.
+[02:26:37]  Received Report from port : 25.
+[02:26:42]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[02:26:43]  [Auto]AX100 GND WDT CMD sent (2/2)
+[02:26:43]  Received Report from port : 25.
+[02:26:45]  Received Report from port : 25.
+[02:26:47]  Received Report from port : 25.
+[02:26:53]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[02:26:53]  [Auto]EPS P60 DOCK GND WDT CMD sent (1/2)
+[02:26:54]  Received Report from port : 25.
+[02:26:55]  Tracking : Az 347, El 9.
+[02:26:56]  Received Report from port : 25.
+[02:26:58]  Received Report from port : 25.
+[02:27:03]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[02:27:04]  [Auto]EPS P60 DOCK GND WDT CMD sent (2/2)
+[02:27:04]  Received Report from port : 25.
+[02:27:06]  Received Report from port : 25.
+[02:27:08]  Received Report from port : 25.
+[02:27:12]  Tracking : Az 344, El 10.
+[02:27:14]  [Auto]GND WDT sequence completed
+[02:27:14]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[02:27:14]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[02:27:14]  Received Report from port : 25.
+[02:27:16]  Received Report from port : 25.
+[02:27:18]  Received Report from port : 25.
+[02:27:24]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[02:27:24]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[02:27:25]  Received Report from port : 25.
+[02:27:27]  Received Report from port : 25.
+[02:27:29]  Received Report from port : 25.
+[02:27:33]  Tracking : Az 341, El 12.
+[02:27:34]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[02:27:35]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[02:27:35]  Received Report from port : 25.
+[02:27:37]  Received Report from port : 25.
+[02:27:39]  Received Report from port : 25.
+[02:27:45]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[02:27:45]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[02:27:45]  Received Report from port : 25.
+[02:27:47]  Received Report from port : 25.
+[02:27:49]  Received Report from port : 25.
+[02:27:52]  Tracking : Az 338, El 13.
+[02:27:55]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[02:27:55]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[02:27:56]  Received Report from port : 25.
+[02:27:58]  Received Report from port : 25.
+[02:28:00]  Received Report from port : 25.
+[02:28:05]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[02:28:06]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[02:28:07]  Received Report from port : 25.
+[02:28:08]  Tracking : Az 335, El 15.
+[02:28:09]  Received Report from port : 25.
+[02:28:11]  Received Report from port : 25.
+[02:28:16]  [Auto]AutoPilot sequence Ended
+[02:28:28]  Tracking : Az 331, El 17.
+[02:28:40]  Tracking : Az 328, El 18.
+[02:28:52]  Tracking : Az 325, El 19.
+[02:29:03]  Tracking : Az 322, El 20.
+[02:29:14]  Tracking : Az 319, El 21.
+[02:29:23]  Tracking : Az 316, El 22.
+[02:29:33]  Tracking : Az 313, El 22.
+[02:29:41]  Tracking : Az 310, El 23.
+[02:29:47]  Tracking : Az 308, El 23.
+[02:29:55]  Tracking : Az 305, El 24.
+[02:30:01]  Tracking : Az 303, El 24.
+[02:30:08]  Tracking : Az 300, El 24.
+[02:30:16]  Tracking : Az 297, El 25.
+[02:30:24]  Tracking : Az 294, El 25.
+[02:30:31]  Tracking : Az 291, El 25.
+[02:30:39]  Tracking : Az 288, El 25.
+[02:30:44]  Tracking : Az 286, El 25.
+[02:30:51]  Tracking : Az 283, El 25.
+[02:30:59]  Tracking : Az 280, El 24.
+[02:31:07]  Tracking : Az 277, El 24.
+[02:31:14]  Tracking : Az 274, El 24.
+[02:31:23]  Tracking : Az 271, El 23.
+[02:31:31]  Tracking : Az 268, El 23.
+[02:31:40]  Tracking : Az 265, El 22.
+[02:31:49]  Tracking : Az 262, El 21.
+[02:31:59]  Tracking : Az 259, El 21.
+[02:32:05]  Tracking : Az 257, El 20.
+[02:32:16]  Tracking : Az 254, El 19.
+[02:32:28]  Tracking : Az 251, El 18.
+[02:32:36]  Tracking : Az 249, El 17.
+[02:32:49]  Tracking : Az 246, El 16.
+[02:33:04]  Tracking : Az 243, El 15.
+[02:33:20]  Tracking : Az 240, El 13.
+[02:33:45]  Tracking : Az 236, El 11.
+[02:33:59]  Tracking : Az 234, El 10.
+[02:34:23]  Tracking : Az 231, El 8.
+[02:34:52]  Tracking : Az 228, El 6.
+[02:35:25]  Tracking : Az 226, El 3.
+[02:35:53]  Tracking : Az 223, El 2.
+[02:36:33]  [Auto]Stop Doppler Correction.
+[02:36:33]  [Auto]Finish Engaging.
+[02:36:33]  Tracking : Az 0, El 0.
+[02:36:34]  [Auto]Beacon Success : 0, Ping Success : 5 CMD Success : 0
+[02:36:34]  [Auto]Update TLE...
+[02:36:38]  [Auto]TLE "active" Download Completed.
+[02:36:41]  Forked Safe Amplifier Process. (OFF)
+[02:36:41]  Reset GS100 watchdog.
+[02:36:53]  [Auto]Start Autopilot. Next Valuable AOS : 3/4 11:38:50
+[02:36:53]  [Auto]Max Elevation : 13.17° Please Keep Devices On.
+[11:33:50]  [Auto]Start Engaging.
+[11:33:50]  [Auto]Start Doppler Correction.
+[11:33:50]  Tracking : Az 120, El 0.
+[11:33:52]  Tracking : Az 120, El 0.
+[11:33:54]  Tracking : Az 120, El 0.
+[11:33:56]  Tracking : Az 120, El 0.
+[11:33:58]  Tracking : Az 120, El 0.
+[11:34:00]  Tracking : Az 120, El 0.
+[11:34:02]  Tracking : Az 120, El 0.
+[11:34:04]  Tracking : Az 120, El 0.
+[11:34:06]  Tracking : Az 120, El 0.
+[11:34:06]  Forked Safe Amplifier Process.(ON, Timer)
+[11:34:08]  Tracking : Az 120, El 0.
+[11:34:10]  Tracking : Az 120, El 0.
+[11:34:13]  Ping Failed.
+[11:34:20]  Ping Failed.
+[11:34:28]  Ping Failed.
+[11:34:35]  Ping Failed.
+[11:34:42]  Ping Failed.
+[11:34:50]  Ping Failed.
+[11:34:57]  Ping Failed.
+[11:35:04]  Ping Failed.
+[11:35:12]  Ping Failed.
+[11:35:19]  Ping Failed.
+[11:35:26]  Ping Failed.
+[11:35:34]  Ping Failed.
+[11:35:41]  Ping Failed.
+[11:35:48]  Ping Failed.
+[11:35:56]  Ping Failed.
+[11:36:03]  Ping Failed.
+[11:36:10]  Ping Failed.
+[11:36:18]  Ping Failed.
+[11:36:25]  Ping Failed.
+[11:36:32]  Ping Failed.
+[11:36:39]  Ping Failed.
+[11:36:47]  Ping Failed.
+[11:36:54]  Ping Failed.
+[11:37:01]  Ping Failed.
+[11:37:09]  Ping Failed.
+[11:37:16]  Ping Failed.
+[11:37:23]  Ping Failed.
+[11:37:31]  Ping Failed.
+[11:37:38]  Ping Failed.
+[11:37:45]  Ping Failed.
+[11:37:53]  Ping Failed.
+[11:38:00]  Ping Failed.
+[11:38:07]  Ping Failed.
+[11:38:15]  Ping Failed.
+[11:38:22]  Ping Failed.
+[11:38:29]  Ping Failed.
+[11:38:32]  Tracking : Az 122, El 0.
+[11:38:37]  Ping Failed.
+[11:38:44]  Ping Failed.
+[11:38:51]  Ping Failed.
+[11:38:58]  Tracking : Az 119, El 0.
+[11:38:59]  Ping Failed.
+[11:39:00]  Tracking : Az 119, El 0.
+[11:39:06]  Ping Failed.
+[11:39:13]  Ping Failed.
+[11:39:21]  Ping Failed.
+[11:39:24]  Tracking : Az 117, El 1.
+[11:39:28]  Ping Failed.
+[11:39:34]  Ping Success at node 5, 476ms
+[11:39:39]  Ping Success at node 5, 471ms
+[11:39:45]  Ping Success at node 5, 471ms
+[11:39:52]  Ping Failed.
+[11:39:53]  Tracking : Az 113, El 3.
+[11:39:55]  Tracking : Az 113, El 3.
+[11:39:59]  Ping Failed.
+[11:40:07]  Ping Failed.
+[11:40:14]  Ping Failed.
+[11:40:17]  Tracking : Az 110, El 4.
+[11:40:19]  Tracking : Az 110, El 4.
+[11:40:21]  Ping Failed.
+[11:40:29]  Ping Failed.
+[11:40:36]  Ping Failed.
+[11:40:38]  Tracking : Az 107, El 5.
+[11:40:40]  Tracking : Az 107, El 6.
+[11:40:43]  Ping Failed.
+[11:40:49]  Ping Success at node 5, 475ms
+[11:40:54]  Ping Success at node 5, 472ms
+[11:40:59]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[11:40:59]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[11:41:00]  Received Report from port : 25.
+[11:41:01]  Ping Failed.
+[11:41:02]  Received Report from port : 25.
+[11:41:04]  Tracking : Az 103, El 7.
+[11:41:04]  Received Report from port : 25.
+[11:41:06]  Tracking : Az 103, El 7.
+[11:41:09]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[11:41:10]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[11:41:10]  Received Report from port : 25.
+[11:41:12]  Received Report from port : 25.
+[11:41:14]  Received Report from port : 25.
+[11:41:20]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[11:41:20]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[11:41:21]  Tracking : Az 100, El 8.
+[11:41:21]  Received Report from port : 25.
+[11:41:23]  Tracking : Az 100, El 8.
+[11:41:23]  Received Report from port : 25.
+[11:41:25]  Received Report from port : 25.
+[11:41:30]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[11:41:30]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[11:41:32]  Received Report from port : 25.
+[11:41:37]  Tracking : Az 97, El 9.
+[11:41:39]  Tracking : Az 97, El 9.
+[11:41:40]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[11:41:41]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[11:41:51]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[11:41:51]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[11:41:52]  Tracking : Az 94, El 9.
+[11:41:54]  Tracking : Az 94, El 9.
+[11:42:01]  [Auto]Start GND WDT reset sequence
+[11:42:01]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[11:42:01]  [Auto]AX100 GND WDT CMD sent (1/2)
+[11:42:07]  Tracking : Az 91, El 10.
+[11:42:09]  Tracking : Az 91, El 10.
+[11:42:11]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[11:42:12]  [Auto]AX100 GND WDT CMD sent (2/2)
+[11:42:16]  Tracking : Az 89, El 10.
+[11:42:22]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[11:42:22]  [Auto]EPS P60 DOCK GND WDT CMD sent (1/2)
+[11:42:23]  Received Report from port : 25.
+[11:42:25]  Received Report from port : 25.
+[11:42:27]  Received Report from port : 25.
+[11:42:29]  Tracking : Az 86, El 11.
+[11:42:32]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[11:42:33]  [Auto]EPS P60 DOCK GND WDT CMD sent (2/2)
+[11:42:42]  Tracking : Az 83, El 11.
+[11:42:43]  [Auto]GND WDT sequence completed
+[11:42:43]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[11:42:43]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[11:42:43]  Received Report from port : 25.
+[11:42:45]  Received Report from port : 25.
+[11:42:47]  Received Report from port : 25.
+[11:42:53]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[11:42:53]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[11:42:54]  Received Report from port : 25.
+[11:42:55]  Tracking : Az 80, El 12.
+[11:42:56]  Received Report from port : 25.
+[11:42:58]  Received Report from port : 25.
+[11:43:03]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[11:43:04]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[11:43:04]  Received Report from port : 25.
+[11:43:06]  Received Report from port : 25.
+[11:43:08]  Received Report from port : 25.
+[11:43:11]  Tracking : Az 76, El 12.
+[11:43:13]  Tracking : Az 76, El 12.
+[11:43:14]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[11:43:14]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[11:43:22]  Tracking : Az 73, El 12.
+[11:43:24]  Tracking : Az 73, El 12.
+[11:43:24]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[11:43:24]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[11:43:34]  Tracking : Az 70, El 13.
+[11:43:34]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[11:43:35]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[11:43:35]  Received Report from port : 25.
+[11:43:37]  Received Report from port : 25.
+[11:43:39]  Received Report from port : 25.
+[11:43:45]  [Auto]AutoPilot sequence Ended
+[11:43:45]  Tracking : Az 67, El 13.
+[11:43:57]  Tracking : Az 64, El 13.
+[11:44:04]  Tracking : Az 62, El 13.
+[11:44:16]  Tracking : Az 59, El 13.
+[11:44:31]  Tracking : Az 55, El 12.
+[11:44:33]  Tracking : Az 55, El 12.
+[11:44:47]  Tracking : Az 51, El 12.
+[11:44:49]  Tracking : Az 51, El 12.
+[11:45:00]  Tracking : Az 48, El 12.
+[11:45:02]  Tracking : Az 48, El 12.
+[11:45:10]  Tracking : Az 46, El 11.
+[11:45:12]  Tracking : Az 45, El 11.
+[11:45:21]  Tracking : Az 43, El 11.
+[11:45:23]  Tracking : Az 43, El 11.
+[11:45:34]  Tracking : Az 40, El 10.
+[11:45:36]  Tracking : Az 40, El 10.
+[11:45:48]  Tracking : Az 37, El 10.
+[11:46:09]  Tracking : Az 33, El 9.
+[11:46:11]  Tracking : Az 33, El 9.
+[11:46:25]  Tracking : Az 30, El 8.
+[11:46:27]  Tracking : Az 30, El 8.
+[11:46:42]  Tracking : Az 27, El 7.
+[11:46:44]  Tracking : Az 27, El 7.
+[11:47:01]  Tracking : Az 24, El 6.
+[11:47:21]  Tracking : Az 21, El 5.
+[11:47:52]  Tracking : Az 17, El 3.
+[11:47:54]  Tracking : Az 17, El 3.
+[11:48:18]  Tracking : Az 14, El 2.
+[11:48:20]  Tracking : Az 14, El 2.
+[11:48:48]  Tracking : Az 11, El 0.
+[11:48:50]  Tracking : Az 11, El 0.
+[11:49:06]  [Auto]Stop Doppler Correction.
+[11:49:06]  [Auto]Finish Engaging.
+[11:49:06]  Tracking : Az 0, El 0.
+[11:49:07]  [Auto]Beacon Success : 0, Ping Success : 5 CMD Success : 0
+[11:49:07]  [Auto]Update TLE...
+[11:49:11]  [Auto]TLE "active" Download Completed.
+[11:49:14]  Forked Safe Amplifier Process. (OFF)
+[11:49:14]  Reset GS100 watchdog.
+[11:49:26]  [Auto]Start Autopilot. Next Valuable AOS : 3/4 13:12:53
+[11:49:26]  [Auto]Max Elevation : 46.29° Please Keep Devices On.
+[13:07:53]  [Auto]Start Engaging.
+[13:07:53]  [Auto]Start Doppler Correction.
+[13:07:53]  Tracking : Az 180, El 0.
+[13:07:55]  Tracking : Az 180, El 0.
+[13:07:57]  Tracking : Az 180, El 0.
+[13:07:59]  Tracking : Az 180, El 0.
+[13:08:01]  Tracking : Az 180, El 0.
+[13:08:03]  Tracking : Az 180, El 0.
+[13:08:05]  Tracking : Az 180, El 0.
+[13:08:07]  Tracking : Az 180, El 0.
+[13:08:09]  Tracking : Az 180, El 0.
+[13:08:11]  Tracking : Az 180, El 0.
+[13:08:13]  Tracking : Az 180, El 0.
+[13:08:15]  Tracking : Az 180, El 0.
+[13:08:17]  Tracking : Az 180, El 0.
+[13:08:19]  Tracking : Az 180, El 0.
+[13:08:21]  Tracking : Az 180, El 0.
+[13:08:23]  Tracking : Az 180, El 0.
+[13:10:18]  Forked Safe Amplifier Process.(ON, Timer)
+[13:10:25]  Ping Failed.
+[13:10:32]  Ping Failed.
+[13:10:40]  Ping Failed.
+[13:10:47]  Ping Failed.
+[13:10:54]  Ping Failed.
+[13:11:02]  Ping Failed.
+[13:11:09]  Ping Failed.
+[13:11:16]  Ping Failed.
+[13:11:24]  Ping Failed.
+[13:11:31]  Ping Failed.
+[13:11:38]  Ping Failed.
+[13:11:46]  Ping Failed.
+[13:11:53]  Ping Failed.
+[13:12:00]  Ping Failed.
+[13:12:08]  Ping Failed.
+[13:12:15]  Ping Failed.
+[13:12:22]  Ping Failed.
+[13:12:30]  Ping Failed.
+[13:12:37]  Ping Failed.
+[13:12:44]  Ping Failed.
+[13:12:51]  Ping Failed.
+[13:12:59]  Ping Failed.
+[13:13:06]  Ping Failed.
+[13:13:13]  Ping Failed.
+[13:13:19]  Ping Success at node 5, 469ms
+[13:13:24]  Ping Success at node 5, 471ms
+[13:13:30]  Ping Success at node 5, 472ms
+[13:13:36]  Tracking : Az 181, El 3.
+[13:13:37]  Ping Failed.
+[13:13:45]  Ping Failed.
+[13:13:52]  Ping Failed.
+[13:13:59]  Ping Failed.
+[13:14:07]  Ping Failed.
+[13:14:14]  Ping Failed.
+[13:14:16]  Tracking : Az 183, El 6.
+[13:14:21]  Ping Failed.
+[13:14:29]  Ping Failed.
+[13:14:36]  Ping Failed.
+[13:14:41]  Ping Success at node 5, 471ms
+[13:14:47]  Ping Success at node 5, 471ms
+[13:14:51]  Tracking : Az 185, El 9.
+[13:14:52]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:14:52]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[13:14:52]  Ping Success at node 5, 567ms
+[13:15:02]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:15:02]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[13:15:03]  Received Report from port : 25.
+[13:15:05]  Received Report from port : 25.
+[13:15:07]  Received Report from port : 25.
+[13:15:12]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[13:15:13]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[13:15:19]  Tracking : Az 187, El 11.
+[13:15:23]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[13:15:23]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[13:15:24]  Received Report from port : 25.
+[13:15:26]  Received Report from port : 25.
+[13:15:28]  Received Report from port : 25.
+[13:15:31]  Tracking : Az 188, El 13.
+[13:15:33]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[13:15:34]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[13:15:34]  Received Report from port : 25.
+[13:15:36]  Received Report from port : 25.
+[13:15:38]  Received Report from port : 25.
+[13:15:44]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[13:15:44]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[13:15:44]  Received Report from port : 25.
+[13:15:46]  Received Report from port : 25.
+[13:15:47]  Tracking : Az 190, El 14.
+[13:15:48]  Received Report from port : 25.
+[13:15:54]  [Auto]Start GND WDT reset sequence
+[13:15:54]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[13:15:54]  [Auto]AX100 GND WDT CMD sent (1/2)
+[13:15:55]  Received Report from port : 25.
+[13:15:57]  Received Report from port : 25.
+[13:15:59]  Received Report from port : 25.
+[13:16:04]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[13:16:05]  [Auto]AX100 GND WDT CMD sent (2/2)
+[13:16:05]  Tracking : Az 192, El 17.
+[13:16:05]  Received Report from port : 25.
+[13:16:08]  Received Report from port : 25.
+[13:16:15]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[13:16:15]  [Auto]EPS P60 DOCK GND WDT CMD sent (1/2)
+[13:16:25]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[13:16:25]  [Auto]EPS P60 DOCK GND WDT CMD sent (2/2)
+[13:16:26]  Tracking : Az 194, El 20.
+[13:16:35]  [Auto]GND WDT sequence completed
+[13:16:35]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:16:36]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[13:16:36]  Received Report from port : 25.
+[13:16:38]  Received Report from port : 25.
+[13:16:39]  Tracking : Az 197, El 22.
+[13:16:40]  Received Report from port : 25.
+[13:16:46]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:16:46]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[13:16:46]  Received Report from port : 25.
+[13:16:48]  Received Report from port : 25.
+[13:16:50]  Received Report from port : 25.
+[13:16:56]  Tracking : Az 200, El 24.
+[13:16:56]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[13:16:56]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[13:16:57]  Received Report from port : 25.
+[13:16:59]  Received Report from port : 25.
+[13:17:01]  Received Report from port : 25.
+[13:17:06]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[13:17:07]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[13:17:07]  Received Report from port : 25.
+[13:17:08]  Tracking : Az 202, El 27.
+[13:17:14]  Tracking : Az 204, El 28.
+[13:17:17]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[13:17:17]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[13:17:17]  Received Report from port : 25.
+[13:17:19]  Received Report from port : 25.
+[13:17:21]  Received Report from port : 25.
+[13:17:24]  Tracking : Az 207, El 30.
+[13:17:27]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[13:17:27]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[13:17:28]  Received Report from port : 25.
+[13:17:30]  Received Report from port : 25.
+[13:17:32]  Received Report from port : 25.
+[13:17:34]  Tracking : Az 210, El 32.
+[13:17:37]  [Auto]AutoPilot sequence Ended
+[13:17:43]  Tracking : Az 213, El 34.
+[13:17:50]  Tracking : Az 216, El 35.
+[13:17:57]  Tracking : Az 219, El 37.
+[13:18:03]  Tracking : Az 222, El 38.
+[13:18:09]  Tracking : Az 225, El 39.
+[13:18:15]  Tracking : Az 228, El 41.
+[13:18:20]  Tracking : Az 231, El 42.
+[13:18:26]  Tracking : Az 235, El 43.
+[13:18:30]  Tracking : Az 238, El 43.
+[13:18:35]  Tracking : Az 241, El 44.
+[13:18:40]  Tracking : Az 245, El 45.
+[13:18:44]  Tracking : Az 248, El 45.
+[13:18:48]  Tracking : Az 251, El 45.
+[13:18:52]  Tracking : Az 254, El 46.
+[13:18:56]  Tracking : Az 257, El 46.
+[13:19:00]  Tracking : Az 260, El 46.
+[13:19:04]  Tracking : Az 264, El 46.
+[13:19:09]  Tracking : Az 268, El 46.
+[13:19:13]  Tracking : Az 271, El 45.
+[13:19:17]  Tracking : Az 274, El 45.
+[13:19:22]  Tracking : Az 278, El 44.
+[13:19:26]  Tracking : Az 281, El 44.
+[13:19:31]  Tracking : Az 284, El 43.
+[13:19:35]  Tracking : Az 287, El 42.
+[13:19:40]  Tracking : Az 290, El 42.
+[13:19:46]  Tracking : Az 293, El 40.
+[13:19:52]  Tracking : Az 297, El 39.
+[13:19:58]  Tracking : Az 300, El 38.
+[13:20:05]  Tracking : Az 303, El 36.
+[13:20:11]  Tracking : Az 305, El 35.
+[13:20:17]  Tracking : Az 308, El 34.
+[13:20:25]  Tracking : Az 311, El 32.
+[13:20:35]  Tracking : Az 314, El 30.
+[13:20:46]  Tracking : Az 317, El 28.
+[13:20:58]  Tracking : Az 320, El 26.
+[13:21:13]  Tracking : Az 323, El 23.
+[13:21:19]  Tracking : Az 324, El 22.
+[13:21:38]  Tracking : Az 327, El 19.
+[13:21:57]  Tracking : Az 329, El 16.
+[13:22:21]  Tracking : Az 332, El 14.
+[13:22:41]  Tracking : Az 333, El 11.
+[13:23:13]  Tracking : Az 336, El 8.
+[13:23:48]  Tracking : Az 338, El 5.
+[13:24:29]  Tracking : Az 339, El 2.
+[13:25:18]  [Auto]Stop Doppler Correction.
+[13:25:18]  [Auto]Finish Engaging.
+[13:25:18]  Tracking : Az 0, El 0.
+[13:25:19]  [Auto]Beacon Success : 0, Ping Success : 6 CMD Success : 0
+[13:25:19]  [Auto]Update TLE...
+[13:25:22]  [Auto]TLE "active" Download Completed.
+[13:25:25]  Forked Safe Amplifier Process. (OFF)
+[13:25:25]  Reset GS100 watchdog.
+[13:25:37]  [Auto]Start Autopilot. Next Valuable AOS : 3/5 0:57:24
+[13:25:37]  [Auto]Max Elevation : 28.85° Please Keep Devices On.
+[00:52:24]  [Auto]Start Engaging.
+[00:52:24]  [Auto]Start Doppler Correction.
+[00:52:24]  Tracking : Az 267, El 0.
+[00:52:26]  Tracking : Az 267, El 0.
+[00:52:28]  Tracking : Az 267, El 0.
+[00:52:30]  Tracking : Az 267, El 0.
+[00:52:32]  Tracking : Az 267, El 0.
+[00:52:34]  Tracking : Az 267, El 0.
+[00:52:36]  Tracking : Az 267, El 0.
+[00:52:38]  Tracking : Az 267, El 0.
+[00:52:40]  Tracking : Az 267, El 0.
+[00:52:42]  Tracking : Az 267, El 0.
+[00:52:44]  Tracking : Az 267, El 0.
+[00:52:46]  Tracking : Az 267, El 0.
+[00:52:48]  Tracking : Az 267, El 0.
+[00:52:50]  Tracking : Az 267, El 0.
+[00:52:52]  Tracking : Az 267, El 0.
+[00:52:54]  Tracking : Az 267, El 0.
+[00:52:56]  Tracking : Az 267, El 0.
+[00:52:58]  Tracking : Az 267, El 0.
+[00:53:00]  Tracking : Az 267, El 0.
+[00:53:02]  Tracking : Az 267, El 0.
+[00:53:04]  Tracking : Az 267, El 0.
+[00:53:06]  Tracking : Az 267, El 0.
+[00:53:08]  Tracking : Az 267, El 0.
+[00:54:33]  Forked Safe Amplifier Process.(ON, Timer)
+[00:54:40]  Ping Failed.
+[00:54:47]  Ping Failed.
+[00:54:55]  Ping Failed.
+[00:55:02]  Ping Failed.
+[00:55:09]  Ping Failed.
+[00:55:17]  Ping Failed.
+[00:55:24]  Ping Failed.
+[00:55:31]  Ping Failed.
+[00:55:39]  Ping Failed.
+[00:55:46]  Ping Failed.
+[00:55:53]  Ping Failed.
+[00:56:01]  Ping Failed.
+[00:56:08]  Ping Failed.
+[00:56:15]  Ping Failed.
+[00:56:22]  Ping Failed.
+[00:56:30]  Ping Failed.
+[00:56:37]  Ping Failed.
+[00:56:44]  Ping Failed.
+[00:56:52]  Ping Failed.
+[00:56:59]  Ping Failed.
+[00:57:06]  Ping Failed.
+[00:57:07]  Tracking : Az 23, El 0.
+[00:57:09]  Tracking : Az 23, El 0.
+[00:57:11]  Tracking : Az 23, El 0.
+[00:57:13]  Tracking : Az 23, El 0.
+[00:57:14]  Ping Failed.
+[00:57:15]  Tracking : Az 23, El 0.
+[00:57:17]  Tracking : Az 23, El 0.
+[00:57:19]  Tracking : Az 23, El 0.
+[00:57:21]  Tracking : Az 23, El 0.
+[00:57:21]  Ping Failed.
+[00:57:23]  Tracking : Az 24, El 0.
+[00:57:25]  Tracking : Az 24, El 0.
+[00:57:27]  Tracking : Az 24, El 0.
+[00:57:28]  Ping Failed.
+[00:57:29]  Tracking : Az 24, El 0.
+[00:57:31]  Tracking : Az 24, El 0.
+[00:57:33]  Tracking : Az 24, El 0.
+[00:57:35]  Tracking : Az 24, El 0.
+[00:57:36]  Ping Failed.
+[00:57:37]  Tracking : Az 24, El 0.
+[00:57:39]  Tracking : Az 25, El 1.
+[00:57:41]  Tracking : Az 25, El 1.
+[00:57:43]  Tracking : Az 25, El 1.
+[00:57:43]  Ping Failed.
+[00:57:45]  Tracking : Az 25, El 1.
+[00:57:47]  Tracking : Az 25, El 1.
+[00:57:50]  Ping Failed.
+[00:57:58]  Ping Failed.
+[00:58:05]  Ping Failed.
+[00:58:12]  Ping Failed.
+[00:58:20]  Ping Failed.
+[00:58:24]  Tracking : Az 28, El 3.
+[00:58:27]  Ping Failed.
+[00:58:34]  Ping Failed.
+[00:58:42]  Ping Failed.
+[00:58:49]  Ping Failed.
+[00:58:54]  Tracking : Az 30, El 6.
+[00:58:56]  Ping Failed.
+[00:59:04]  Ping Failed.
+[00:59:09]  Ping Success at node 5, 476ms
+[00:59:15]  Ping Success at node 5, 471ms
+[00:59:20]  Ping Success at node 5, 471ms
+[00:59:22]  Tracking : Az 33, El 8.
+[00:59:26]  Ping Success at node 5, 471ms
+[00:59:31]  Ping Success at node 5, 472ms
+[00:59:36]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:59:36]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[00:59:37]  Received Report from port : 25.
+[00:59:38]  Ping Failed.
+[00:59:39]  Received Report from port : 25.
+[00:59:41]  Received Report from port : 25.
+[00:59:46]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:59:47]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[00:59:47]  Received Report from port : 25.
+[00:59:49]  Tracking : Az 36, El 10.
+[00:59:49]  Received Report from port : 25.
+[00:59:51]  Received Report from port : 25.
+[00:59:57]  Tracking : Az 37, El 11.
+[00:59:57]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[00:59:57]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[00:59:58]  Received Report from port : 25.
+[01:00:00]  Received Report from port : 25.
+[01:00:02]  Received Report from port : 25.
+[01:00:07]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[01:00:07]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[01:00:08]  Received Report from port : 25.
+[01:00:10]  Received Report from port : 25.
+[01:00:12]  Received Report from port : 25.
+[01:00:17]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[01:00:18]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[01:00:18]  Received Report from port : 25.
+[01:00:19]  Tracking : Az 40, El 12.
+[01:00:20]  Received Report from port : 25.
+[01:00:22]  Received Report from port : 25.
+[01:00:28]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[01:00:28]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[01:00:29]  Received Report from port : 25.
+[01:00:31]  Received Report from port : 25.
+[01:00:33]  Received Report from port : 25.
+[01:00:38]  Tracking : Az 43, El 14.
+[01:00:38]  [Auto]Start GND WDT reset sequence
+[01:00:38]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[01:00:38]  [Auto]AX100 GND WDT CMD sent (1/2)
+[01:00:39]  Received Report from port : 25.
+[01:00:41]  Tracking : Az 43, El 15.
+[01:00:41]  Received Report from port : 25.
+[01:00:43]  Received Report from port : 25.
+[01:00:48]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[01:00:49]  [Auto]AX100 GND WDT CMD sent (2/2)
+[01:00:49]  Received Report from port : 25.
+[01:00:51]  Received Report from port : 25.
+[01:00:53]  Received Report from port : 25.
+[01:00:54]  Tracking : Az 46, El 16.
+[01:00:59]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[01:00:59]  [Auto]EPS P60 DOCK GND WDT CMD sent (1/2)
+[01:01:00]  Received Report from port : 25.
+[01:01:02]  Received Report from port : 25.
+[01:01:04]  Received Report from port : 25.
+[01:01:09]  Tracking : Az 49, El 17.
+[01:01:09]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[01:01:10]  [Auto]EPS P60 DOCK GND WDT CMD sent (2/2)
+[01:01:10]  Received Report from port : 25.
+[01:01:12]  Received Report from port : 25.
+[01:01:14]  Received Report from port : 25.
+[01:01:20]  [Auto]GND WDT sequence completed
+[01:01:20]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[01:01:20]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[01:01:20]  Received Report from port : 25.
+[01:01:22]  Received Report from port : 25.
+[01:01:23]  Tracking : Az 52, El 19.
+[01:01:24]  Received Report from port : 25.
+[01:01:30]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[01:01:30]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[01:01:31]  Received Report from port : 25.
+[01:01:33]  Received Report from port : 25.
+[01:01:35]  Tracking : Az 55, El 20.
+[01:01:35]  Received Report from port : 25.
+[01:01:40]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[01:01:41]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[01:01:41]  Received Report from port : 25.
+[01:01:43]  Tracking : Az 57, El 21.
+[01:01:43]  Received Report from port : 25.
+[01:01:45]  Received Report from port : 25.
+[01:01:51]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[01:01:51]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[01:01:51]  Received Report from port : 25.
+[01:01:53]  Tracking : Az 60, El 22.
+[01:01:53]  Received Report from port : 25.
+[01:01:55]  Received Report from port : 25.
+[01:02:01]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[01:02:01]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[01:02:02]  Received Report from port : 25.
+[01:02:03]  Tracking : Az 63, El 23.
+[01:02:04]  Received Report from port : 25.
+[01:02:06]  Received Report from port : 25.
+[01:02:11]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[01:02:12]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[01:02:12]  Tracking : Az 66, El 24.
+[01:02:12]  Received Report from port : 25.
+[01:02:14]  Received Report from port : 25.
+[01:02:16]  Received Report from port : 25.
+[01:02:22]  [Auto]AutoPilot sequence Ended
+[01:02:23]  Tracking : Az 70, El 25.
+[01:02:26]  Tracking : Az 71, El 25.
+[01:02:29]  Tracking : Az 72, El 26.
+[01:02:35]  Tracking : Az 74, El 26.
+[01:02:42]  Tracking : Az 77, El 27.
+[01:02:48]  Tracking : Az 79, El 27.
+[01:02:54]  Tracking : Az 82, El 27.
+[01:03:00]  Tracking : Az 84, El 28.
+[01:03:05]  Tracking : Az 87, El 28.
+[01:03:12]  Tracking : Az 90, El 28.
+[01:03:19]  Tracking : Az 93, El 28.
+[01:03:27]  Tracking : Az 96, El 28.
+[01:03:30]  Tracking : Az 98, El 28.
+[01:03:37]  Tracking : Az 101, El 28.
+[01:03:43]  Tracking : Az 104, El 28.
+[01:03:48]  Tracking : Az 106, El 28.
+[01:03:55]  Tracking : Az 109, El 28.
+[01:04:02]  Tracking : Az 112, El 27.
+[01:04:07]  Tracking : Az 114, El 27.
+[01:04:14]  Tracking : Az 117, El 26.
+[01:04:22]  Tracking : Az 120, El 26.
+[01:04:30]  Tracking : Az 123, El 25.
+[01:04:38]  Tracking : Az 126, El 24.
+[01:04:47]  Tracking : Az 129, El 23.
+[01:04:57]  Tracking : Az 132, El 22.
+[01:05:03]  Tracking : Az 134, El 22.
+[01:05:14]  Tracking : Az 137, El 21.
+[01:05:26]  Tracking : Az 140, El 19.
+[01:05:39]  Tracking : Az 143, El 18.
+[01:05:53]  Tracking : Az 146, El 16.
+[01:06:09]  Tracking : Az 149, El 15.
+[01:06:27]  Tracking : Az 152, El 13.
+[01:06:47]  Tracking : Az 155, El 11.
+[01:07:11]  Tracking : Az 158, El 9.
+[01:07:40]  Tracking : Az 161, El 7.
+[01:08:02]  Tracking : Az 163, El 5.
+[01:08:41]  Tracking : Az 166, El 2.
+[01:09:12]  Tracking : Az 168, El 1.
+[01:09:33]  [Auto]Stop Doppler Correction.
+[01:09:33]  [Auto]Finish Engaging.
+[01:09:33]  Tracking : Az 0, El 0.
+[01:09:34]  [Auto]Beacon Success : 0, Ping Success : 5 CMD Success : 0
+[01:09:34]  [Auto]Update TLE...
+[01:09:37]  [Auto]TLE "active" Download Completed.
+[01:09:40]  Forked Safe Amplifier Process. (OFF)
+[01:09:40]  Reset GS100 watchdog.
+[01:09:52]  [Auto]Start Autopilot. Next Valuable AOS : 3/5 2:33:6
+[01:09:52]  [Auto]Max Elevation : 20.82° Please Keep Devices On.
+[02:28:06]  [Auto]Start Engaging.
+[02:28:06]  [Auto]Start Doppler Correction.
+[02:28:06]  Tracking : Az 355, El 0.
+[02:28:08]  Tracking : Az 355, El 0.
+[02:28:10]  Tracking : Az 355, El 0.
+[02:28:12]  Tracking : Az 355, El 0.
+[02:28:14]  Tracking : Az 355, El 0.
+[02:28:16]  Tracking : Az 355, El 0.
+[02:28:18]  Tracking : Az 355, El 0.
+[02:28:20]  Tracking : Az 355, El 0.
+[02:28:22]  Tracking : Az 355, El 0.
+[02:28:24]  Tracking : Az 355, El 0.
+[02:28:26]  Tracking : Az 355, El 0.
+[02:28:28]  Tracking : Az 355, El 0.
+[02:28:30]  Tracking : Az 355, El 0.
+[02:28:32]  Tracking : Az 355, El 0.
+[02:28:34]  Tracking : Az 355, El 0.
+[02:28:36]  Tracking : Az 355, El 0.
+[02:28:38]  Tracking : Az 355, El 0.
+[02:28:40]  Tracking : Az 355, El 0.
+[02:28:42]  Tracking : Az 355, El 0.
+[02:28:44]  Tracking : Az 355, El 0.
+[02:28:46]  Tracking : Az 355, El 0.
+[02:28:48]  Tracking : Az 355, El 0.
+[02:28:50]  Tracking : Az 355, El 0.
+[02:28:52]  Tracking : Az 355, El 0.
+[02:28:54]  Tracking : Az 355, El 0.
+[02:28:56]  Tracking : Az 355, El 0.
+[02:28:58]  Tracking : Az 355, El 0.
+[02:29:00]  Tracking : Az 355, El 0.
+[02:29:02]  Tracking : Az 355, El 0.
+[02:29:04]  Tracking : Az 355, El 0.
+[02:29:06]  Tracking : Az 355, El 0.
+[02:29:33]  Forked Safe Amplifier Process.(ON, Timer)
+[02:29:40]  Ping Failed.
+[02:29:47]  Ping Failed.
+[02:29:55]  Ping Failed.
+[02:30:02]  Ping Failed.
+[02:30:09]  Ping Failed.
+[02:30:16]  Ping Failed.
+[02:30:24]  Ping Failed.
+[02:30:31]  Ping Failed.
+[02:30:38]  Ping Failed.
+[02:30:46]  Ping Failed.
+[02:30:53]  Ping Failed.
+[02:31:00]  Ping Failed.
+[02:31:08]  Ping Failed.
+[02:31:15]  Ping Failed.
+[02:31:22]  Ping Failed.
+[02:31:30]  Ping Failed.
+[02:31:37]  Ping Failed.
+[02:31:44]  Ping Failed.
+[02:31:52]  Ping Failed.
+[02:31:59]  Ping Failed.
+[02:32:06]  Ping Failed.
+[02:32:14]  Ping Failed.
+[02:32:21]  Ping Failed.
+[02:32:28]  Ping Failed.
+[02:32:36]  Ping Failed.
+[02:32:43]  Ping Failed.
+[02:32:50]  Ping Failed.
+[02:32:58]  Ping Failed.
+[02:33:05]  Ping Failed.
+[02:33:12]  Ping Failed.
+[02:33:20]  Ping Failed.
+[02:33:27]  Ping Failed.
+[02:33:34]  Ping Failed.
+[02:33:42]  Ping Failed.
+[02:33:47]  Ping Success at node 5, 475ms
+[02:33:51]  Tracking : Az 351, El 2.
+[02:33:53]  Tracking : Az 351, El 2.
+[02:33:53]  Ping Success at node 5, 471ms
+[02:33:58]  Ping Success at node 5, 471ms
+[02:34:04]  Ping Success at node 5, 471ms
+[02:34:09]  Ping Success at node 5, 471ms
+[02:34:10]  Tracking : Az 350, El 4.
+[02:34:12]  Tracking : Az 350, El 4.
+[02:34:14]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[02:34:14]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[02:34:15]  Ping Success at node 5, 583ms
+[02:34:24]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[02:34:25]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[02:34:25]  Received Report from port : 25.
+[02:34:27]  Received Report from port : 25.
+[02:34:29]  Received Report from port : 25.
+[02:34:34]  Tracking : Az 347, El 5.
+[02:34:35]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[02:34:35]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[02:34:36]  Tracking : Az 347, El 5.
+[02:34:36]  Received Report from port : 25.
+[02:34:38]  Received Report from port : 25.
+[02:34:40]  Received Report from port : 25.
+[02:34:45]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[02:34:45]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[02:34:46]  Received Report from port : 25.
+[02:34:48]  Received Report from port : 25.
+[02:34:50]  Received Report from port : 25.
+[02:34:55]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[02:34:56]  Tracking : Az 345, El 7.
+[02:34:56]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[02:34:56]  Received Report from port : 25.
+[02:34:58]  Tracking : Az 345, El 7.
+[02:34:58]  Received Report from port : 25.
+[02:35:00]  Received Report from port : 25.
+[02:35:06]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[02:35:06]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[02:35:07]  Received Report from port : 25.
+[02:35:09]  Received Report from port : 25.
+[02:35:11]  Received Report from port : 25.
+[02:35:16]  Tracking : Az 342, El 8.
+[02:35:16]  [Auto]Start GND WDT reset sequence
+[02:35:16]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[02:35:16]  [Auto]AX100 GND WDT CMD sent (1/2)
+[02:35:17]  Received Report from port : 25.
+[02:35:18]  Tracking : Az 342, El 8.
+[02:35:19]  Received Report from port : 25.
+[02:35:21]  Received Report from port : 25.
+[02:35:26]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[02:35:27]  [Auto]AX100 GND WDT CMD sent (2/2)
+[02:35:27]  Received Report from port : 25.
+[02:35:29]  Received Report from port : 25.
+[02:35:31]  Received Report from port : 25.
+[02:35:37]  Tracking : Az 339, El 9.
+[02:35:37]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[02:35:37]  [Auto]EPS P60 DOCK GND WDT CMD sent (1/2)
+[02:35:38]  Received Report from port : 25.
+[02:35:39]  Tracking : Az 339, El 10.
+[02:35:40]  Received Report from port : 25.
+[02:35:42]  Received Report from port : 25.
+[02:35:47]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[02:35:47]  [Auto]EPS P60 DOCK GND WDT CMD sent (2/2)
+[02:35:48]  Received Report from port : 25.
+[02:35:50]  Received Report from port : 25.
+[02:35:52]  Received Report from port : 25.
+[02:35:56]  Tracking : Az 336, El 11.
+[02:35:57]  [Auto]GND WDT sequence completed
+[02:35:57]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[02:35:58]  Tracking : Az 336, El 11.
+[02:35:58]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[02:35:58]  Received Report from port : 25.
+[02:36:00]  Received Report from port : 25.
+[02:36:02]  Received Report from port : 25.
+[02:36:08]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[02:36:08]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[02:36:09]  Received Report from port : 25.
+[02:36:11]  Received Report from port : 25.
+[02:36:13]  Tracking : Az 333, El 12.
+[02:36:13]  Received Report from port : 25.
+[02:36:15]  Tracking : Az 333, El 12.
+[02:36:18]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[02:36:19]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[02:36:19]  Received Report from port : 25.
+[02:36:21]  Received Report from port : 25.
+[02:36:23]  Received Report from port : 25.
+[02:36:28]  Tracking : Az 330, El 13.
+[02:36:29]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[02:36:29]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[02:36:29]  Received Report from port : 25.
+[02:36:31]  Received Report from port : 25.
+[02:36:33]  Received Report from port : 25.
+[02:36:39]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[02:36:39]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[02:36:40]  Received Report from port : 25.
+[02:36:42]  Received Report from port : 25.
+[02:36:43]  Tracking : Az 327, El 14.
+[02:36:44]  Received Report from port : 25.
+[02:36:45]  Tracking : Az 327, El 15.
+[02:36:49]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[02:36:50]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[02:36:50]  Received Report from port : 25.
+[02:36:52]  Received Report from port : 25.
+[02:36:54]  Received Report from port : 25.
+[02:36:56]  Tracking : Az 324, El 15.
+[02:36:58]  Tracking : Az 324, El 16.
+[02:37:00]  [Auto]AutoPilot sequence Ended
+[02:37:08]  Tracking : Az 321, El 16.
+[02:37:10]  Tracking : Az 321, El 16.
+[02:37:23]  Tracking : Az 317, El 17.
+[02:37:25]  Tracking : Az 317, El 17.
+[02:37:34]  Tracking : Az 314, El 18.
+[02:37:36]  Tracking : Az 314, El 18.
+[02:37:44]  Tracking : Az 311, El 19.
+[02:37:46]  Tracking : Az 311, El 19.
+[02:37:54]  Tracking : Az 308, El 19.
+[02:37:56]  Tracking : Az 308, El 19.
+[02:38:00]  Tracking : Az 306, El 19.
+[02:38:09]  Tracking : Az 303, El 20.
+[02:38:11]  Tracking : Az 303, El 20.
+[02:38:19]  Tracking : Az 300, El 20.
+[02:38:21]  Tracking : Az 300, El 20.
+[02:38:25]  Tracking : Az 298, El 20.
+[02:38:27]  Tracking : Az 297, El 20.
+[02:38:36]  Tracking : Az 294, El 20.
+[02:38:38]  Tracking : Az 294, El 20.
+[02:38:42]  Tracking : Az 292, El 20.
+[02:38:51]  Tracking : Az 289, El 20.
+[02:38:53]  Tracking : Az 289, El 20.
+[02:38:57]  Tracking : Az 287, El 20.
+[02:39:00]  Tracking : Az 286, El 20.
+[02:39:09]  Tracking : Az 283, El 20.
+[02:39:12]  Tracking : Az 282, El 20.
+[02:39:21]  Tracking : Az 279, El 20.
+[02:39:24]  Tracking : Az 278, El 20.
+[02:39:27]  Tracking : Az 277, El 20.
+[02:39:36]  Tracking : Az 274, El 19.
+[02:39:46]  Tracking : Az 271, El 19.
+[02:39:49]  Tracking : Az 270, El 19.
+[02:39:59]  Tracking : Az 267, El 18.
+[02:40:06]  Tracking : Az 265, El 18.
+[02:40:17]  Tracking : Az 262, El 17.
+[02:40:19]  Tracking : Az 262, El 17.
+[02:40:29]  Tracking : Az 259, El 16.
+[02:40:41]  Tracking : Az 256, El 15.
+[02:40:54]  Tracking : Az 253, El 14.
+[02:40:56]  Tracking : Az 253, El 14.
+[02:41:09]  Tracking : Az 250, El 13.
+[02:41:11]  Tracking : Az 250, El 13.
+[02:41:24]  Tracking : Az 247, El 12.
+[02:41:26]  Tracking : Az 247, El 12.
+[02:41:41]  Tracking : Az 244, El 11.
+[02:41:43]  Tracking : Az 244, El 10.
+[02:42:01]  Tracking : Az 241, El 9.
+[02:42:22]  Tracking : Az 238, El 8.
+[02:42:47]  Tracking : Az 235, El 6.
+[02:42:49]  Tracking : Az 235, El 6.
+[02:43:15]  Tracking : Az 232, El 4.
+[02:43:17]  Tracking : Az 232, El 4.
+[02:43:48]  Tracking : Az 229, El 2.
+[02:43:50]  Tracking : Az 229, El 2.
+[02:44:28]  Tracking : Az 226, El 0.
+[02:44:33]  [Auto]Stop Doppler Correction.
+[02:44:33]  [Auto]Finish Engaging.
+[02:44:33]  Tracking : Az 0, El 0.
+[02:44:34]  [Auto]Beacon Success : 0, Ping Success : 6 CMD Success : 0
+[02:44:34]  [Auto]Update TLE...
+[02:44:38]  [Auto]TLE "active" Download Completed.
+[02:44:41]  Forked Safe Amplifier Process. (OFF)
+[02:44:41]  Reset GS100 watchdog.
+[02:44:53]  [Auto]Start Autopilot. Next Valuable AOS : 3/5 11:46:44
+[02:44:53]  [Auto]Max Elevation : 16.19° Please Keep Devices On.
+[11:41:44]  [Auto]Start Engaging.
+[11:41:44]  [Auto]Start Doppler Correction.
+[11:41:44]  Tracking : Az 126, El 0.
+[11:41:46]  Tracking : Az 126, El 0.
+[11:41:48]  Tracking : Az 126, El 0.
+[11:41:50]  Tracking : Az 126, El 0.
+[11:41:52]  Tracking : Az 126, El 0.
+[11:41:54]  Tracking : Az 126, El 0.
+[11:41:56]  Tracking : Az 126, El 0.
+[11:41:58]  Tracking : Az 126, El 0.
+[11:42:00]  Tracking : Az 126, El 0.
+[11:42:02]  Tracking : Az 126, El 0.
+[11:42:04]  Tracking : Az 126, El 0.
+[11:42:31]  Forked Safe Amplifier Process.(ON, Timer)
+[11:42:38]  Ping Failed.
+[11:42:45]  Ping Failed.
+[11:42:53]  Ping Failed.
+[11:43:00]  Ping Failed.
+[11:43:07]  Ping Failed.
+[11:43:15]  Ping Failed.
+[11:43:22]  Ping Failed.
+[11:43:29]  Ping Failed.
+[11:43:37]  Ping Failed.
+[11:43:44]  Ping Failed.
+[11:43:51]  Ping Failed.
+[11:43:58]  Ping Failed.
+[11:44:06]  Ping Failed.
+[11:44:13]  Ping Failed.
+[11:44:20]  Ping Failed.
+[11:44:28]  Ping Failed.
+[11:44:35]  Ping Failed.
+[11:44:42]  Ping Failed.
+[11:44:50]  Ping Failed.
+[11:44:57]  Ping Failed.
+[11:45:04]  Ping Failed.
+[11:45:12]  Ping Failed.
+[11:45:19]  Ping Failed.
+[11:45:26]  Ping Failed.
+[11:45:34]  Ping Failed.
+[11:45:41]  Ping Failed.
+[11:45:48]  Ping Failed.
+[11:45:56]  Ping Failed.
+[11:46:03]  Ping Failed.
+[11:46:10]  Ping Failed.
+[11:46:18]  Ping Failed.
+[11:46:25]  Ping Failed.
+[11:46:32]  Ping Failed.
+[11:46:40]  Ping Failed.
+[11:46:47]  Ping Failed.
+[11:46:54]  Ping Failed.
+[11:47:02]  Ping Failed.
+[11:47:09]  Ping Failed.
+[11:47:11]  Tracking : Az 123, El 1.
+[11:47:16]  Ping Failed.
+[11:47:24]  Ping Failed.
+[11:47:31]  Ping Failed.
+[11:47:38]  Ping Failed.
+[11:47:41]  Tracking : Az 120, El 3.
+[11:47:46]  Ping Failed.
+[11:47:53]  Ping Failed.
+[11:48:00]  Ping Failed.
+[11:48:06]  Ping Success at node 5, 468ms
+[11:48:07]  Tracking : Az 117, El 4.
+[11:48:11]  Ping Success at node 5, 471ms
+[11:48:17]  Ping Success at node 5, 471ms
+[11:48:22]  Ping Success at node 5, 471ms
+[11:48:28]  Ping Success at node 5, 471ms
+[11:48:30]  Tracking : Az 114, El 6.
+[11:48:33]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[11:48:33]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[11:48:35]  Ping Failed.
+[11:48:43]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[11:48:43]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[11:48:51]  Tracking : Az 111, El 7.
+[11:48:53]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[11:48:54]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[11:48:54]  Received Report from port : 25.
+[11:48:56]  Received Report from port : 25.
+[11:48:58]  Received Report from port : 25.
+[11:49:04]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[11:49:04]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[11:49:05]  Received Report from port : 25.
+[11:49:07]  Received Report from port : 25.
+[11:49:09]  Received Report from port : 25.
+[11:49:10]  Tracking : Az 108, El 8.
+[11:49:14]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[11:49:14]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[11:49:15]  Received Report from port : 25.
+[11:49:17]  Received Report from port : 25.
+[11:49:19]  Received Report from port : 25.
+[11:49:24]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[11:49:25]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[11:49:25]  Received Report from port : 25.
+[11:49:27]  Tracking : Az 105, El 9.
+[11:49:27]  Received Report from port : 25.
+[11:49:29]  Received Report from port : 25.
+[11:49:35]  [Auto]Start GND WDT reset sequence
+[11:49:35]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[11:49:35]  [Auto]AX100 GND WDT CMD sent (1/2)
+[11:49:36]  Received Report from port : 25.
+[11:49:38]  Received Report from port : 25.
+[11:49:40]  Received Report from port : 25.
+[11:49:43]  Tracking : Az 102, El 10.
+[11:49:45]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[11:49:45]  [Auto]AX100 GND WDT CMD sent (2/2)
+[11:49:46]  Received Report from port : 25.
+[11:49:48]  Received Report from port : 25.
+[11:49:50]  Received Report from port : 25.
+[11:49:55]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[11:49:56]  [Auto]EPS P60 DOCK GND WDT CMD sent (1/2)
+[11:49:56]  Received Report from port : 25.
+[11:49:58]  Tracking : Az 99, El 11.
+[11:49:58]  Received Report from port : 25.
+[11:50:00]  Received Report from port : 25.
+[11:50:06]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[11:50:06]  [Auto]EPS P60 DOCK GND WDT CMD sent (2/2)
+[11:50:07]  Received Report from port : 25.
+[11:50:09]  Received Report from port : 25.
+[11:50:11]  Received Report from port : 25.
+[11:50:12]  Tracking : Az 96, El 12.
+[11:50:16]  [Auto]GND WDT sequence completed
+[11:50:16]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[11:50:16]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[11:50:17]  Received Report from port : 25.
+[11:50:19]  Received Report from port : 25.
+[11:50:21]  Received Report from port : 25.
+[11:50:26]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[11:50:27]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[11:50:27]  Received Report from port : 25.
+[11:50:29]  Tracking : Az 92, El 13.
+[11:50:29]  Received Report from port : 25.
+[11:50:31]  Received Report from port : 25.
+[11:50:37]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[11:50:37]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[11:50:38]  Received Report from port : 25.
+[11:50:40]  Received Report from port : 25.
+[11:50:41]  Tracking : Az 89, El 14.
+[11:50:42]  Received Report from port : 25.
+[11:50:47]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[11:50:47]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[11:50:48]  Received Report from port : 25.
+[11:50:50]  Received Report from port : 25.
+[11:50:52]  Received Report from port : 25.
+[11:50:53]  Tracking : Az 86, El 14.
+[11:50:57]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[11:50:58]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[11:50:58]  Received Report from port : 25.
+[11:51:00]  Received Report from port : 25.
+[11:51:02]  Received Report from port : 25.
+[11:51:04]  Tracking : Az 83, El 15.
+[11:51:08]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[11:51:08]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[11:51:09]  Received Report from port : 25.
+[11:51:11]  Received Report from port : 25.
+[11:51:13]  Received Report from port : 25.
+[11:51:15]  Tracking : Az 80, El 15.
+[11:51:18]  [Auto]AutoPilot sequence Ended
+[11:51:22]  Tracking : Az 78, El 15.
+[11:51:33]  Tracking : Az 75, El 15.
+[11:51:40]  Tracking : Az 73, El 16.
+[11:51:50]  Tracking : Az 70, El 16.
+[11:52:02]  Tracking : Az 67, El 16.
+[11:52:10]  Tracking : Az 64, El 16.
+[11:52:17]  Tracking : Az 62, El 16.
+[11:52:24]  Tracking : Az 60, El 16.
+[11:52:34]  Tracking : Az 57, El 15.
+[11:52:45]  Tracking : Az 54, El 15.
+[11:52:56]  Tracking : Az 51, El 15.
+[11:53:07]  Tracking : Az 48, El 14.
+[11:53:22]  Tracking : Az 44, El 14.
+[11:53:34]  Tracking : Az 41, El 13.
+[11:53:47]  Tracking : Az 38, El 12.
+[11:54:00]  Tracking : Az 35, El 12.
+[11:54:20]  Tracking : Az 31, El 11.
+[11:54:35]  Tracking : Az 28, El 10.
+[11:54:46]  Tracking : Az 26, El 9.
+[11:55:05]  Tracking : Az 23, El 8.
+[11:55:24]  Tracking : Az 20, El 7.
+[11:55:47]  Tracking : Az 17, El 5.
+[11:56:11]  Tracking : Az 14, El 4.
+[11:56:40]  Tracking : Az 11, El 2.
+[11:57:13]  Tracking : Az 8, El 0.
+[11:57:31]  [Auto]Stop Doppler Correction.
+[11:57:31]  [Auto]Finish Engaging.
+[11:57:31]  Tracking : Az 0, El 0.
+[11:57:32]  [Auto]Beacon Success : 0, Ping Success : 5 CMD Success : 0
+[11:57:32]  [Auto]Update TLE...
+[11:57:35]  [Auto]TLE "active" Download Completed.
+[11:57:38]  Forked Safe Amplifier Process. (OFF)
+[11:57:38]  Reset GS100 watchdog.
+[11:57:50]  [Auto]Start Autopilot. Next Valuable AOS : 3/5 13:21:13
+[11:57:50]  [Auto]Max Elevation : 36.60° Please Keep Devices On.
+[13:16:13]  [Auto]Start Engaging.
+[13:16:13]  [Auto]Start Doppler Correction.
+[13:16:13]  Tracking : Az 185, El 0.
+[13:16:15]  Tracking : Az 185, El 0.
+[13:16:17]  Tracking : Az 185, El 0.
+[13:16:19]  Tracking : Az 185, El 0.
+[13:16:21]  Tracking : Az 185, El 0.
+[13:16:23]  Tracking : Az 185, El 0.
+[13:16:25]  Tracking : Az 185, El 0.
+[13:16:27]  Tracking : Az 185, El 0.
+[13:16:29]  Tracking : Az 185, El 0.
+[13:16:31]  Tracking : Az 185, El 0.
+[13:16:33]  Tracking : Az 185, El 0.
+[13:16:35]  Tracking : Az 185, El 0.
+[13:16:37]  Tracking : Az 185, El 0.
+[13:16:39]  Tracking : Az 185, El 0.
+[13:16:41]  Tracking : Az 185, El 0.
+[13:16:43]  Tracking : Az 185, El 0.
+[13:18:29]  Forked Safe Amplifier Process.(ON, Timer)
+[13:18:36]  Ping Failed.
+[13:18:43]  Ping Failed.
+[13:18:51]  Ping Failed.
+[13:18:58]  Ping Failed.
+[13:19:05]  Ping Failed.
+[13:19:13]  Ping Failed.
+[13:19:20]  Ping Failed.
+[13:19:27]  Ping Failed.
+[13:19:35]  Ping Failed.
+[13:19:42]  Ping Failed.
+[13:19:49]  Ping Failed.
+[13:19:57]  Ping Failed.
+[13:20:04]  Ping Failed.
+[13:20:11]  Ping Failed.
+[13:20:18]  Ping Failed.
+[13:20:26]  Ping Failed.
+[13:20:33]  Ping Failed.
+[13:20:40]  Ping Failed.
+[13:20:48]  Ping Failed.
+[13:20:55]  Ping Failed.
+[13:21:02]  Ping Failed.
+[13:21:10]  Ping Failed.
+[13:21:17]  Ping Failed.
+[13:21:24]  Ping Failed.
+[13:21:30]  Ping Success at node 5, 467ms
+[13:21:35]  Ping Success at node 5, 470ms
+[13:21:43]  Ping Failed.
+[13:21:47]  Tracking : Az 187, El 2.
+[13:21:50]  Ping Failed.
+[13:21:57]  Ping Failed.
+[13:22:03]  Ping Success at node 5, 478ms
+[13:22:08]  Ping Success at node 5, 471ms
+[13:22:12]  Tracking : Az 188, El 4.
+[13:22:14]  Ping Success at node 5, 471ms
+[13:22:19]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:22:19]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[13:22:19]  Ping Success at node 5, 583ms
+[13:22:29]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:22:29]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[13:22:39]  Tracking : Az 190, El 6.
+[13:22:39]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[13:22:40]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[13:22:41]  Received Report from port : 25.
+[13:22:50]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[13:22:50]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[13:22:51]  Received Report from port : 25.
+[13:22:53]  Received Report from port : 25.
+[13:22:55]  Received Report from port : 25.
+[13:23:00]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[13:23:01]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[13:23:01]  Received Report from port : 25.
+[13:23:03]  Received Report from port : 25.
+[13:23:04]  Tracking : Az 191, El 8.
+[13:23:05]  Received Report from port : 25.
+[13:23:11]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[13:23:11]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[13:23:11]  Received Report from port : 25.
+[13:23:13]  Received Report from port : 25.
+[13:23:15]  Received Report from port : 25.
+[13:23:21]  [Auto]Start GND WDT reset sequence
+[13:23:21]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[13:23:21]  [Auto]AX100 GND WDT CMD sent (1/2)
+[13:23:27]  Tracking : Az 194, El 10.
+[13:23:31]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[13:23:32]  [Auto]AX100 GND WDT CMD sent (2/2)
+[13:23:42]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[13:23:42]  [Auto]EPS P60 DOCK GND WDT CMD sent (1/2)
+[13:23:42]  Received Report from port : 25.
+[13:23:44]  Received Report from port : 25.
+[13:23:46]  Received Report from port : 25.
+[13:23:52]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[13:23:52]  [Auto]EPS P60 DOCK GND WDT CMD sent (2/2)
+[13:23:56]  Tracking : Az 197, El 12.
+[13:24:02]  [Auto]GND WDT sequence completed
+[13:24:02]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:24:03]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[13:24:03]  Received Report from port : 25.
+[13:24:05]  Received Report from port : 25.
+[13:24:07]  Received Report from port : 25.
+[13:24:13]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:24:13]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[13:24:13]  Received Report from port : 25.
+[13:24:15]  Received Report from port : 25.
+[13:24:16]  Tracking : Az 199, El 15.
+[13:24:17]  Received Report from port : 25.
+[13:24:23]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[13:24:23]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[13:24:24]  Received Report from port : 25.
+[13:24:26]  Received Report from port : 25.
+[13:24:28]  Received Report from port : 25.
+[13:24:32]  Tracking : Az 202, El 16.
+[13:24:33]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[13:24:34]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[13:24:34]  Received Report from port : 25.
+[13:24:36]  Received Report from port : 25.
+[13:24:38]  Received Report from port : 25.
+[13:24:44]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[13:24:44]  Tracking : Az 204, El 18.
+[13:24:44]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[13:24:44]  Received Report from port : 25.
+[13:24:46]  Received Report from port : 25.
+[13:24:48]  Received Report from port : 25.
+[13:24:54]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[13:24:54]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[13:25:00]  Tracking : Az 207, El 20.
+[13:25:04]  [Auto]AutoPilot sequence Ended
+[13:25:14]  Tracking : Az 210, El 22.
+[13:25:26]  Tracking : Az 213, El 24.
+[13:25:37]  Tracking : Az 216, El 25.
+[13:25:40]  Tracking : Az 217, El 26.
+[13:25:49]  Tracking : Az 220, El 27.
+[13:25:52]  Tracking : Az 221, El 28.
+[13:26:01]  Tracking : Az 224, El 29.
+[13:26:07]  Tracking : Az 226, El 30.
+[13:26:13]  Tracking : Az 229, El 31.
+[13:26:16]  Tracking : Az 230, El 31.
+[13:26:22]  Tracking : Az 233, El 32.
+[13:26:24]  Tracking : Az 233, El 32.
+[13:26:27]  Tracking : Az 235, El 33.
+[13:26:33]  Tracking : Az 238, El 33.
+[13:26:39]  Tracking : Az 241, El 34.
+[13:26:41]  Tracking : Az 242, El 34.
+[13:26:47]  Tracking : Az 245, El 35.
+[13:26:49]  Tracking : Az 246, El 35.
+[13:26:52]  Tracking : Az 248, El 35.
+[13:26:57]  Tracking : Az 251, El 36.
+[13:27:03]  Tracking : Az 254, El 36.
+[13:27:05]  Tracking : Az 255, El 36.
+[13:27:11]  Tracking : Az 259, El 36.
+[13:27:13]  Tracking : Az 260, El 36.
+[13:27:18]  Tracking : Az 263, El 36.
+[13:27:21]  Tracking : Az 265, El 36.
+[13:27:26]  Tracking : Az 268, El 36.
+[13:27:32]  Tracking : Az 271, El 36.
+[13:27:34]  Tracking : Az 272, El 36.
+[13:27:40]  Tracking : Az 276, El 35.
+[13:27:42]  Tracking : Az 277, El 35.
+[13:27:47]  Tracking : Az 280, El 35.
+[13:27:49]  Tracking : Az 281, El 34.
+[13:27:55]  Tracking : Az 284, El 34.
+[13:27:57]  Tracking : Az 285, El 34.
+[13:28:03]  Tracking : Az 288, El 33.
+[13:28:05]  Tracking : Az 289, El 33.
+[13:28:12]  Tracking : Az 292, El 32.
+[13:28:19]  Tracking : Az 295, El 31.
+[13:28:26]  Tracking : Az 298, El 30.
+[13:28:34]  Tracking : Az 301, El 28.
+[13:28:37]  Tracking : Az 302, El 28.
+[13:28:43]  Tracking : Az 304, El 27.
+[13:28:52]  Tracking : Az 307, El 26.
+[13:29:03]  Tracking : Az 310, El 24.
+[13:29:15]  Tracking : Az 313, El 22.
+[13:29:28]  Tracking : Az 316, El 21.
+[13:29:43]  Tracking : Az 319, El 19.
+[13:30:01]  Tracking : Az 322, El 16.
+[13:30:37]  Tracking : Az 327, El 12.
+[13:31:06]  Tracking : Az 330, El 10.
+[13:31:31]  Tracking : Az 332, El 7.
+[13:31:55]  Tracking : Az 334, El 6.
+[13:32:24]  Tracking : Az 335, El 3.
+[13:33:04]  Tracking : Az 338, El 1.
+[13:33:29]  [Auto]Stop Doppler Correction.
+[13:33:29]  [Auto]Finish Engaging.
+[13:33:29]  Tracking : Az 0, El 0.
+[13:33:30]  [Auto]Beacon Success : 0, Ping Success : 6 CMD Success : 0
+[13:33:30]  [Auto]Update TLE...
+[13:33:33]  [Auto]TLE "active" Download Completed.
+[13:33:36]  Forked Safe Amplifier Process. (OFF)
+[13:33:36]  Reset GS100 watchdog.
+[13:33:48]  [Auto]Start Autopilot. Next Valuable AOS : 3/6 1:5:33
+[13:33:48]  [Auto]Max Elevation : 35.93° Please Keep Devices On.
+[01:00:32]  [Auto]Start Engaging.
+[01:00:32]  [Auto]Start Doppler Correction.
+[01:00:32]  Tracking : Az 21, El 0.
+[01:00:34]  Tracking : Az 21, El 0.
+[01:00:37]  Tracking : Az 21, El 0.
+[01:02:56]  Forked Safe Amplifier Process.(ON, Timer)
+[01:03:03]  Ping Failed.
+[01:03:10]  Ping Failed.
+[01:03:18]  Ping Failed.
+[01:03:25]  Ping Failed.
+[01:03:32]  Ping Failed.
+[01:03:40]  Ping Failed.
+[01:03:47]  Ping Failed.
+[01:03:54]  Ping Failed.
+[01:04:02]  Ping Failed.
+[01:04:09]  Ping Failed.
+[01:04:16]  Ping Failed.
+[01:04:24]  Ping Failed.
+[01:04:31]  Ping Failed.
+[01:04:38]  Ping Failed.
+[01:04:46]  Ping Failed.
+[01:04:53]  Ping Failed.
+[01:05:00]  Ping Failed.
+[01:05:08]  Ping Failed.
+[01:05:15]  Ping Failed.
+[01:05:22]  Ping Failed.
+[01:05:29]  Ping Failed.
+[01:05:37]  Ping Failed.
+[01:05:44]  Ping Failed.
+[01:05:51]  Ping Failed.
+[01:05:59]  Ping Failed.
+[01:06:06]  Ping Failed.
+[01:06:13]  Ping Failed.
+[01:06:18]  Tracking : Az 23, El 3.
+[01:06:20]  Tracking : Az 23, El 3.
+[01:06:21]  Ping Failed.
+[01:06:28]  Ping Failed.
+[01:06:35]  Ping Failed.
+[01:06:43]  Ping Failed.
+[01:06:50]  Tracking : Az 25, El 5.
+[01:06:50]  Ping Failed.
+[01:06:57]  Ping Failed.
+[01:07:05]  Ping Failed.
+[01:07:12]  Ping Failed.
+[01:07:13]  Tracking : Az 27, El 7.
+[01:07:15]  Tracking : Az 27, El 7.
+[01:07:19]  Ping Failed.
+[01:07:27]  Ping Failed.
+[01:07:32]  Ping Success at node 5, 475ms
+[01:07:38]  Tracking : Az 29, El 9.
+[01:07:38]  Ping Success at node 5, 471ms
+[01:07:40]  Tracking : Az 29, El 9.
+[01:07:45]  Ping Failed.
+[01:07:52]  Ping Failed.
+[01:07:58]  Ping Success at node 5, 465ms
+[01:08:00]  Tracking : Az 31, El 11.
+[01:08:02]  Tracking : Az 31, El 11.
+[01:08:03]  Ping Success at node 5, 471ms
+[01:08:09]  Ping Success at node 5, 471ms
+[01:08:14]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[01:08:14]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[01:08:14]  Ping Success at node 5, 584ms
+[01:08:21]  Tracking : Az 33, El 13.
+[01:08:23]  Tracking : Az 34, El 13.
+[01:08:24]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[01:08:24]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[01:08:25]  Received Report from port : 25.
+[01:08:27]  Received Report from port : 25.
+[01:08:29]  Received Report from port : 25.
+[01:08:34]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[01:08:35]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[01:08:35]  Received Report from port : 25.
+[01:08:37]  Received Report from port : 25.
+[01:08:39]  Received Report from port : 25.
+[01:08:45]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[01:08:45]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[01:08:46]  Tracking : Az 37, El 15.
+[01:08:46]  Received Report from port : 25.
+[01:08:48]  Tracking : Az 37, El 15.
+[01:08:48]  Received Report from port : 25.
+[01:08:55]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[01:08:55]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[01:08:56]  Received Report from port : 25.
+[01:08:58]  Received Report from port : 25.
+[01:09:00]  Received Report from port : 25.
+[01:09:05]  Tracking : Az 40, El 17.
+[01:09:05]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[01:09:06]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[01:09:07]  Tracking : Az 40, El 18.
+[01:09:07]  Received Report from port : 25.
+[01:09:09]  Received Report from port : 25.
+[01:09:11]  Received Report from port : 25.
+[01:09:16]  [Auto]Start GND WDT reset sequence
+[01:09:16]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[01:09:16]  [Auto]AX100 GND WDT CMD sent (1/2)
+[01:09:17]  Received Report from port : 25.
+[01:09:19]  Received Report from port : 25.
+[01:09:21]  Received Report from port : 25.
+[01:09:22]  Tracking : Az 43, El 20.
+[01:09:24]  Tracking : Az 43, El 20.
+[01:09:26]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[01:09:27]  [Auto]AX100 GND WDT CMD sent (2/2)
+[01:09:27]  Received Report from port : 25.
+[01:09:29]  Received Report from port : 25.
+[01:09:30]  Tracking : Az 44, El 21.
+[01:09:31]  Received Report from port : 25.
+[01:09:32]  Tracking : Az 45, El 21.
+[01:09:37]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[01:09:37]  [Auto]EPS P60 DOCK GND WDT CMD sent (1/2)
+[01:09:37]  Received Report from port : 25.
+[01:09:39]  Received Report from port : 25.
+[01:09:40]  Tracking : Az 47, El 22.
+[01:09:41]  Received Report from port : 25.
+[01:09:47]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[01:09:47]  [Auto]EPS P60 DOCK GND WDT CMD sent (2/2)
+[01:09:48]  Received Report from port : 25.
+[01:09:50]  Received Report from port : 25.
+[01:09:52]  Tracking : Az 50, El 24.
+[01:09:52]  Received Report from port : 25.
+[01:09:54]  Tracking : Az 50, El 24.
+[01:09:57]  [Auto]GND WDT sequence completed
+[01:09:57]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[01:09:58]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[01:09:58]  Received Report from port : 25.
+[01:10:00]  Tracking : Az 52, El 25.
+[01:10:00]  Received Report from port : 25.
+[01:10:02]  Received Report from port : 25.
+[01:10:08]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[01:10:08]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[01:10:08]  Received Report from port : 25.
+[01:10:10]  Tracking : Az 55, El 26.
+[01:10:10]  Received Report from port : 25.
+[01:10:12]  Tracking : Az 55, El 27.
+[01:10:12]  Received Report from port : 25.
+[01:10:16]  Tracking : Az 57, El 27.
+[01:10:18]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[01:10:18]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[01:10:19]  Tracking : Az 58, El 28.
+[01:10:19]  Received Report from port : 25.
+[01:10:21]  Received Report from port : 25.
+[01:10:23]  Received Report from port : 25.
+[01:10:28]  Tracking : Az 61, El 29.
+[01:10:28]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[01:10:29]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[01:10:29]  Received Report from port : 25.
+[01:10:30]  Tracking : Az 62, El 29.
+[01:10:31]  Received Report from port : 25.
+[01:10:33]  Received Report from port : 25.
+[01:10:36]  Tracking : Az 64, El 30.
+[01:10:39]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[01:10:39]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[01:10:39]  Received Report from port : 25.
+[01:10:41]  Received Report from port : 25.
+[01:10:42]  Tracking : Az 66, El 31.
+[01:10:43]  Received Report from port : 25.
+[01:10:45]  Tracking : Az 68, El 31.
+[01:10:48]  Tracking : Az 69, El 32.
+[01:10:49]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[01:10:49]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[01:10:50]  Received Report from port : 25.
+[01:10:52]  Received Report from port : 25.
+[01:10:54]  Tracking : Az 72, El 32.
+[01:10:54]  Received Report from port : 25.
+[01:10:56]  Tracking : Az 73, El 32.
+[01:10:59]  [Auto]AutoPilot sequence Ended
+[01:11:03]  Tracking : Az 76, El 33.
+[01:11:05]  Tracking : Az 77, El 33.
+[01:11:11]  Tracking : Az 80, El 34.
+[01:11:13]  Tracking : Az 81, El 34.
+[01:11:18]  Tracking : Az 84, El 35.
+[01:11:20]  Tracking : Az 85, El 35.
+[01:11:24]  Tracking : Az 87, El 35.
+[01:11:26]  Tracking : Az 88, El 35.
+[01:11:29]  Tracking : Az 90, El 35.
+[01:11:35]  Tracking : Az 93, El 35.
+[01:11:37]  Tracking : Az 94, El 35.
+[01:11:42]  Tracking : Az 97, El 35.
+[01:11:44]  Tracking : Az 98, El 35.
+[01:11:47]  Tracking : Az 100, El 35.
+[01:11:49]  Tracking : Az 101, El 35.
+[01:11:53]  Tracking : Az 103, El 35.
+[01:11:55]  Tracking : Az 104, El 35.
+[01:11:58]  Tracking : Az 106, El 35.
+[01:12:01]  Tracking : Az 108, El 35.
+[01:12:03]  Tracking : Az 109, El 35.
+[01:12:09]  Tracking : Az 112, El 34.
+[01:12:11]  Tracking : Az 113, El 34.
+[01:12:16]  Tracking : Az 116, El 34.
+[01:12:18]  Tracking : Az 117, El 34.
+[01:12:22]  Tracking : Az 119, El 33.
+[01:12:24]  Tracking : Az 120, El 33.
+[01:12:31]  Tracking : Az 123, El 32.
+[01:12:33]  Tracking : Az 124, El 32.
+[01:12:40]  Tracking : Az 127, El 31.
+[01:12:42]  Tracking : Az 128, El 31.
+[01:12:46]  Tracking : Az 129, El 30.
+[01:12:49]  Tracking : Az 131, El 30.
+[01:12:51]  Tracking : Az 131, El 30.
+[01:12:55]  Tracking : Az 133, El 29.
+[01:12:57]  Tracking : Az 134, El 29.
+[01:13:02]  Tracking : Az 136, El 28.
+[01:13:04]  Tracking : Az 136, El 28.
+[01:13:08]  Tracking : Az 138, El 27.
+[01:13:11]  Tracking : Az 139, El 27.
+[01:13:21]  Tracking : Az 142, El 25.
+[01:13:23]  Tracking : Az 142, El 25.
+[01:13:28]  Tracking : Az 144, El 24.
+[01:13:31]  Tracking : Az 145, El 24.
+[01:13:47]  Tracking : Az 149, El 22.
+[01:13:49]  Tracking : Az 149, El 21.
+[01:14:01]  Tracking : Az 152, El 20.
+[01:14:03]  Tracking : Az 152, El 20.
+[01:14:17]  Tracking : Az 155, El 18.
+[01:14:19]  Tracking : Az 155, El 18.
+[01:14:23]  Tracking : Az 156, El 17.
+[01:14:42]  Tracking : Az 159, El 15.
+[01:14:44]  Tracking : Az 159, El 15.
+[01:15:05]  Tracking : Az 162, El 12.
+[01:15:07]  Tracking : Az 162, El 12.
+[01:15:23]  Tracking : Az 164, El 11.
+[01:15:25]  Tracking : Az 164, El 10.
+[01:15:55]  Tracking : Az 167, El 8.
+[01:15:57]  Tracking : Az 167, El 8.
+[01:16:24]  Tracking : Az 169, El 5.
+[01:16:26]  Tracking : Az 169, El 5.
+[01:17:09]  Tracking : Az 172, El 2.
+[01:17:11]  Tracking : Az 172, El 2.
+[01:17:50]  Tracking : Az 174, El 0.
+[01:17:56]  [Auto]Stop Doppler Correction.
+[01:17:56]  [Auto]Finish Engaging.
+[01:17:56]  Tracking : Az 0, El 0.
+[01:17:57]  [Auto]Beacon Success : 0, Ping Success : 6 CMD Success : 0
+[01:17:57]  [Auto]Update TLE...
+[01:18:03]  [Auto]TLE "active" Download Completed.
+[01:18:06]  Forked Safe Amplifier Process. (OFF)
+[01:18:06]  Reset GS100 watchdog.
+[01:18:18]  [Auto]Start Autopilot. Next Valuable AOS : 3/6 2:41:28
+[01:18:18]  [Auto]Max Elevation : 17.10° Please Keep Devices On.
+[02:36:28]  [Auto]Start Engaging.
+[02:36:28]  [Auto]Start Doppler Correction.
+[02:36:28]  Tracking : Az 352, El 0.
+[02:36:30]  Tracking : Az 352, El 0.
+[02:36:32]  Tracking : Az 352, El 0.
+[02:36:34]  Tracking : Az 352, El 0.
+[02:36:36]  Tracking : Az 352, El 0.
+[02:36:38]  Tracking : Az 352, El 0.
+[02:36:40]  Tracking : Az 352, El 0.
+[02:36:42]  Tracking : Az 352, El 0.
+[02:36:44]  Tracking : Az 352, El 0.
+[02:36:46]  Tracking : Az 352, El 0.
+[02:36:48]  Tracking : Az 352, El 0.
+[02:36:50]  Tracking : Az 352, El 0.
+[02:36:52]  Tracking : Az 352, El 0.
+[02:36:54]  Tracking : Az 352, El 0.
+[02:36:56]  Tracking : Az 352, El 0.
+[02:36:58]  Tracking : Az 352, El 0.
+[02:37:00]  Tracking : Az 352, El 0.
+[02:37:02]  Tracking : Az 352, El 0.
+[02:37:04]  Tracking : Az 352, El 0.
+[02:37:06]  Tracking : Az 352, El 0.
+[02:37:08]  Tracking : Az 352, El 0.
+[02:37:10]  Tracking : Az 352, El 0.
+[02:37:12]  Tracking : Az 352, El 0.
+[02:37:14]  Tracking : Az 352, El 0.
+[02:37:16]  Tracking : Az 352, El 0.
+[02:37:18]  Tracking : Az 352, El 0.
+[02:37:20]  Tracking : Az 352, El 0.
+[02:37:22]  Tracking : Az 352, El 0.
+[02:37:24]  Tracking : Az 352, El 0.
+[02:37:26]  Tracking : Az 352, El 0.
+[02:37:28]  Tracking : Az 352, El 0.
+[02:37:30]  Forked Safe Amplifier Process.(ON, Timer)
+[02:37:37]  Ping Failed.
+[02:37:44]  Ping Failed.
+[02:37:52]  Ping Failed.
+[02:37:59]  Ping Failed.
+[02:38:06]  Ping Failed.
+[02:38:14]  Ping Failed.
+[02:38:21]  Ping Failed.
+[02:38:28]  Ping Failed.
+[02:38:36]  Ping Failed.
+[02:38:43]  Ping Failed.
+[02:38:50]  Ping Failed.
+[02:38:58]  Ping Failed.
+[02:39:05]  Ping Failed.
+[02:39:12]  Ping Failed.
+[02:39:20]  Ping Failed.
+[02:39:27]  Ping Failed.
+[02:39:34]  Ping Failed.
+[02:39:41]  Ping Failed.
+[02:39:49]  Ping Failed.
+[02:39:56]  Ping Failed.
+[02:40:03]  Ping Failed.
+[02:40:11]  Ping Failed.
+[02:40:18]  Ping Failed.
+[02:40:25]  Ping Failed.
+[02:40:33]  Ping Failed.
+[02:40:40]  Ping Failed.
+[02:40:47]  Ping Failed.
+[02:40:55]  Ping Failed.
+[02:41:02]  Ping Failed.
+[02:41:09]  Ping Failed.
+[02:41:17]  Ping Failed.
+[02:41:24]  Ping Failed.
+[02:41:31]  Ping Failed.
+[02:41:39]  Ping Failed.
+[02:41:46]  Ping Failed.
+[02:41:53]  Ping Failed.
+[02:42:01]  Ping Failed.
+[02:42:08]  Ping Failed.
+[02:42:12]  Tracking : Az 348, El 2.
+[02:42:15]  Ping Failed.
+[02:42:21]  Ping Success at node 5, 465ms
+[02:42:26]  Ping Success at node 5, 471ms
+[02:42:32]  Ping Success at node 5, 471ms
+[02:42:37]  Tracking : Az 346, El 4.
+[02:42:37]  Ping Success at node 5, 471ms
+[02:42:43]  Ping Success at node 5, 471ms
+[02:42:48]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[02:42:48]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[02:42:48]  Ping Success at node 5, 583ms
+[02:42:58]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[02:42:58]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[02:42:59]  Tracking : Az 343, El 5.
+[02:42:59]  Received Report from port : 25.
+[02:43:01]  Received Report from port : 25.
+[02:43:03]  Received Report from port : 25.
+[02:43:08]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[02:43:09]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[02:43:09]  Received Report from port : 25.
+[02:43:11]  Received Report from port : 25.
+[02:43:13]  Received Report from port : 25.
+[02:43:19]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[02:43:19]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[02:43:23]  Tracking : Az 340, El 6.
+[02:43:29]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[02:43:29]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[02:43:39]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[02:43:40]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[02:43:45]  Tracking : Az 337, El 8.
+[02:43:50]  [Auto]Start GND WDT reset sequence
+[02:43:50]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[02:43:50]  [Auto]AX100 GND WDT CMD sent (1/2)
+[02:43:57]  Tracking : Az 335, El 9.
+[02:44:00]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[02:44:00]  [Auto]AX100 GND WDT CMD sent (2/2)
+[02:44:02]  Received Report from port : 25.
+[02:44:10]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[02:44:11]  [Auto]EPS P60 DOCK GND WDT CMD sent (1/2)
+[02:44:12]  Received Report from port : 25.
+[02:44:21]  Tracking : Az 331, El 10.
+[02:44:21]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[02:44:21]  [Auto]EPS P60 DOCK GND WDT CMD sent (2/2)
+[02:44:31]  [Auto]GND WDT sequence completed
+[02:44:31]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[02:44:32]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[02:44:37]  Tracking : Az 328, El 11.
+[02:44:42]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[02:44:42]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[02:44:51]  Tracking : Az 325, El 12.
+[02:44:52]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[02:44:52]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[02:45:02]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[02:45:03]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[02:45:03]  Received Report from port : 25.
+[02:45:05]  Tracking : Az 322, El 13.
+[02:45:05]  Received Report from port : 25.
+[02:45:07]  Received Report from port : 25.
+[02:45:13]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[02:45:13]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[02:45:14]  Tracking : Az 320, El 13.
+[02:45:14]  Received Report from port : 25.
+[02:45:23]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[02:45:23]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[02:45:26]  Tracking : Az 317, El 14.
+[02:45:33]  [Auto]AutoPilot sequence Ended
+[02:45:38]  Tracking : Az 314, El 15.
+[02:45:50]  Tracking : Az 311, El 15.
+[02:46:01]  Tracking : Az 308, El 16.
+[02:46:12]  Tracking : Az 305, El 16.
+[02:46:19]  Tracking : Az 303, El 16.
+[02:46:29]  Tracking : Az 300, El 16.
+[02:46:39]  Tracking : Az 297, El 16.
+[02:46:49]  Tracking : Az 294, El 17.
+[02:46:59]  Tracking : Az 291, El 17.
+[02:47:09]  Tracking : Az 288, El 17.
+[02:47:19]  Tracking : Az 285, El 16.
+[02:47:30]  Tracking : Az 282, El 16.
+[02:47:40]  Tracking : Az 279, El 16.
+[02:47:47]  Tracking : Az 277, El 16.
+[02:47:58]  Tracking : Az 274, El 15.
+[02:48:09]  Tracking : Az 271, El 15.
+[02:48:21]  Tracking : Az 268, El 14.
+[02:48:33]  Tracking : Az 265, El 14.
+[02:48:46]  Tracking : Az 262, El 13.
+[02:48:59]  Tracking : Az 259, El 12.
+[02:49:14]  Tracking : Az 256, El 11.
+[02:49:29]  Tracking : Az 253, El 10.
+[02:49:46]  Tracking : Az 250, El 9.
+[02:50:05]  Tracking : Az 247, El 8.
+[02:50:25]  Tracking : Az 244, El 7.
+[02:50:48]  Tracking : Az 241, El 5.
+[02:51:14]  Tracking : Az 238, El 4.
+[02:51:43]  Tracking : Az 235, El 2.
+[02:52:17]  Tracking : Az 232, El 0.
+[02:52:30]  [Auto]Stop Doppler Correction.
+[02:52:30]  [Auto]Finish Engaging.
+[02:52:30]  Tracking : Az 0, El 0.
+[02:52:31]  [Auto]Beacon Success : 0, Ping Success : 6 CMD Success : 0
+[02:52:31]  [Auto]Update TLE...
+[02:52:35]  [Auto]TLE "active" Download Completed.
+[02:52:38]  Forked Safe Amplifier Process. (OFF)
+[02:52:38]  Reset GS100 watchdog.
+[02:52:50]  [Auto]Start Autopilot. Next Valuable AOS : 3/6 11:54:40
+[02:52:50]  [Auto]Max Elevation : 19.79° Please Keep Devices On.
+[11:49:40]  [Auto]Start Engaging.
+[11:49:40]  [Auto]Start Doppler Correction.
+[11:49:40]  Tracking : Az 132, El 0.
+[11:49:42]  Tracking : Az 132, El 0.
+[11:49:44]  Tracking : Az 132, El 0.
+[11:49:46]  Tracking : Az 132, El 0.
+[11:49:48]  Tracking : Az 132, El 0.
+[11:49:50]  Tracking : Az 132, El 0.
+[11:49:52]  Tracking : Az 132, El 0.
+[11:49:54]  Tracking : Az 132, El 0.
+[11:49:56]  Tracking : Az 132, El 0.
+[11:49:58]  Tracking : Az 132, El 0.
+[11:50:00]  Tracking : Az 132, El 0.
+[11:50:02]  Tracking : Az 132, El 0.
+[11:50:54]  Forked Safe Amplifier Process.(ON, Timer)
+[11:51:01]  Ping Failed.
+[11:51:08]  Ping Failed.
+[11:51:16]  Ping Failed.
+[11:51:23]  Ping Failed.
+[11:51:30]  Ping Failed.
+[11:51:38]  Ping Failed.
+[11:51:45]  Ping Failed.
+[11:51:52]  Ping Failed.
+[11:51:59]  Ping Failed.
+[11:52:07]  Ping Failed.
+[11:52:14]  Ping Failed.
+[11:52:21]  Ping Failed.
+[11:52:29]  Ping Failed.
+[11:52:36]  Ping Failed.
+[11:52:43]  Ping Failed.
+[11:52:51]  Ping Failed.
+[11:52:58]  Ping Failed.
+[11:53:05]  Ping Failed.
+[11:53:13]  Ping Failed.
+[11:53:20]  Ping Failed.
+[11:53:27]  Ping Failed.
+[11:53:35]  Ping Failed.
+[11:53:42]  Ping Failed.
+[11:53:49]  Ping Failed.
+[11:53:57]  Ping Failed.
+[11:54:04]  Ping Failed.
+[11:54:11]  Ping Failed.
+[11:54:19]  Ping Failed.
+[11:54:26]  Ping Failed.
+[11:54:33]  Ping Failed.
+[11:54:41]  Ping Failed.
+[11:54:48]  Ping Failed.
+[11:54:55]  Ping Failed.
+[11:55:03]  Ping Failed.
+[11:55:04]  Tracking : Az 129, El 1.
+[11:55:10]  Ping Failed.
+[11:55:17]  Ping Failed.
+[11:55:25]  Ping Failed.
+[11:55:30]  Ping Success at node 5, 470ms
+[11:55:36]  Ping Success at node 5, 471ms
+[11:55:41]  Ping Success at node 5, 471ms
+[11:55:45]  Tracking : Az 126, El 4.
+[11:55:47]  Tracking : Az 126, El 4.
+[11:55:47]  Ping Success at node 5, 471ms
+[11:55:52]  Ping Success at node 5, 471ms
+[11:55:57]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[11:55:57]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[11:55:58]  Ping Success at node 5, 583ms
+[11:56:07]  Tracking : Az 123, El 5.
+[11:56:07]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[11:56:08]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[11:56:18]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[11:56:18]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[11:56:28]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[11:56:28]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[11:56:29]  Received Report from port : 25.
+[11:56:30]  Tracking : Az 121, El 7.
+[11:56:31]  Received Report from port : 25.
+[11:56:38]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[11:56:39]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[11:56:39]  Received Report from port : 25.
+[11:56:41]  Received Report from port : 25.
+[11:56:43]  Received Report from port : 25.
+[11:56:47]  Tracking : Az 118, El 8.
+[11:56:49]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[11:56:49]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[11:56:50]  Received Report from port : 25.
+[11:56:59]  [Auto]Start GND WDT reset sequence
+[11:56:59]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[11:56:59]  [Auto]AX100 GND WDT CMD sent (1/2)
+[11:57:00]  Received Report from port : 25.
+[11:57:02]  Received Report from port : 25.
+[11:57:04]  Received Report from port : 25.
+[11:57:09]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[11:57:10]  [Auto]AX100 GND WDT CMD sent (2/2)
+[11:57:11]  Received Report from port : 25.
+[11:57:14]  Tracking : Az 114, El 10.
+[11:57:20]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[11:57:20]  [Auto]EPS P60 DOCK GND WDT CMD sent (1/2)
+[11:57:30]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[11:57:30]  [Auto]EPS P60 DOCK GND WDT CMD sent (2/2)
+[11:57:32]  Tracking : Az 111, El 11.
+[11:57:40]  [Auto]GND WDT sequence completed
+[11:57:40]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[11:57:41]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[11:57:48]  Tracking : Az 108, El 12.
+[11:57:51]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[11:57:51]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[11:57:52]  Received Report from port : 25.
+[11:57:54]  Received Report from port : 25.
+[11:57:56]  Received Report from port : 25.
+[11:58:01]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[11:58:02]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[11:58:02]  Tracking : Az 105, El 13.
+[11:58:02]  Received Report from port : 25.
+[11:58:04]  Received Report from port : 25.
+[11:58:06]  Received Report from port : 25.
+[11:58:12]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[11:58:12]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[11:58:12]  Received Report from port : 25.
+[11:58:14]  Received Report from port : 25.
+[11:58:16]  Tracking : Az 102, El 14.
+[11:58:16]  Received Report from port : 25.
+[11:58:22]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[11:58:22]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[11:58:23]  Received Report from port : 25.
+[11:58:25]  Received Report from port : 25.
+[11:58:27]  Received Report from port : 25.
+[11:58:28]  Tracking : Az 99, El 15.
+[11:58:32]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[11:58:33]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[11:58:33]  Received Report from port : 25.
+[11:58:35]  Received Report from port : 25.
+[11:58:37]  Received Report from port : 25.
+[11:58:40]  Tracking : Az 96, El 16.
+[11:58:43]  [Auto]AutoPilot sequence Ended
+[11:58:48]  Tracking : Az 94, El 16.
+[11:58:59]  Tracking : Az 91, El 17.
+[11:59:09]  Tracking : Az 88, El 18.
+[11:59:12]  Tracking : Az 87, El 18.
+[11:59:22]  Tracking : Az 84, El 18.
+[11:59:25]  Tracking : Az 83, El 18.
+[11:59:35]  Tracking : Az 80, El 19.
+[11:59:41]  Tracking : Az 78, El 19.
+[11:59:50]  Tracking : Az 75, El 19.
+[11:59:56]  Tracking : Az 73, El 19.
+[12:00:05]  Tracking : Az 70, El 19.
+[12:00:14]  Tracking : Az 67, El 19.
+[12:00:23]  Tracking : Az 64, El 19.
+[12:00:29]  Tracking : Az 62, El 19.
+[12:00:35]  Tracking : Az 60, El 19.
+[12:00:44]  Tracking : Az 57, El 19.
+[12:00:54]  Tracking : Az 54, El 19.
+[12:01:03]  Tracking : Az 51, El 18.
+[12:01:13]  Tracking : Az 48, El 18.
+[12:01:20]  Tracking : Az 46, El 17.
+[12:01:30]  Tracking : Az 43, El 17.
+[12:01:41]  Tracking : Az 40, El 16.
+[12:01:53]  Tracking : Az 37, El 15.
+[12:02:10]  Tracking : Az 33, El 14.
+[12:02:23]  Tracking : Az 30, El 13.
+[12:02:38]  Tracking : Az 27, El 12.
+[12:02:54]  Tracking : Az 24, El 11.
+[12:03:12]  Tracking : Az 21, El 10.
+[12:03:25]  Tracking : Az 19, El 9.
+[12:03:46]  Tracking : Az 16, El 7.
+[12:04:11]  Tracking : Az 13, El 6.
+[12:04:43]  Tracking : Az 10, El 4.
+[12:05:00]  Tracking : Az 8, El 2.
+[12:05:37]  Tracking : Az 5, El 0.
+[12:05:54]  [Auto]Stop Doppler Correction.
+[12:05:54]  [Auto]Finish Engaging.
+[12:05:54]  Tracking : Az 0, El 0.
+[12:05:55]  [Auto]Beacon Success : 0, Ping Success : 6 CMD Success : 0
+[12:05:55]  [Auto]Update TLE...
+[12:05:59]  [Auto]TLE "active" Download Completed.
+[12:06:02]  Forked Safe Amplifier Process. (OFF)
+[12:06:02]  Reset GS100 watchdog.
+[12:06:14]  [Auto]Start Autopilot. Next Valuable AOS : 3/6 13:29:37
+[12:06:14]  [Auto]Max Elevation : 29.29° Please Keep Devices On.
+[13:24:37]  [Auto]Start Engaging.
+[13:24:37]  [Auto]Start Doppler Correction.
+[13:24:37]  Tracking : Az 190, El 0.
+[13:24:39]  Tracking : Az 190, El 0.
+[13:24:41]  Tracking : Az 190, El 0.
+[13:24:43]  Tracking : Az 190, El 0.
+[13:24:45]  Tracking : Az 190, El 0.
+[13:24:47]  Tracking : Az 190, El 0.
+[13:24:49]  Tracking : Az 190, El 0.
+[13:24:51]  Tracking : Az 190, El 0.
+[13:24:53]  Tracking : Az 190, El 0.
+[13:24:55]  Tracking : Az 190, El 0.
+[13:24:57]  Tracking : Az 190, El 0.
+[13:24:59]  Tracking : Az 190, El 0.
+[13:25:01]  Tracking : Az 190, El 0.
+[13:25:03]  Tracking : Az 190, El 0.
+[13:25:05]  Tracking : Az 190, El 0.
+[13:25:07]  Tracking : Az 190, El 0.
+[13:25:09]  Tracking : Az 190, El 0.
+[13:26:38]  Forked Safe Amplifier Process.(ON, Timer)
+[13:26:45]  Ping Failed.
+[13:26:52]  Ping Failed.
+[13:27:00]  Ping Failed.
+[13:27:07]  Ping Failed.
+[13:27:14]  Ping Failed.
+[13:27:22]  Ping Failed.
+[13:27:29]  Ping Failed.
+[13:27:36]  Ping Failed.
+[13:27:44]  Ping Failed.
+[13:27:51]  Ping Failed.
+[13:27:58]  Ping Failed.
+[13:28:06]  Ping Failed.
+[13:28:13]  Ping Failed.
+[13:28:20]  Ping Failed.
+[13:28:27]  Ping Failed.
+[13:28:35]  Ping Failed.
+[13:28:42]  Ping Failed.
+[13:28:49]  Ping Failed.
+[13:28:57]  Ping Failed.
+[13:29:04]  Ping Failed.
+[13:29:11]  Ping Failed.
+[13:29:19]  Ping Failed.
+[13:29:26]  Ping Failed.
+[13:29:33]  Ping Failed.
+[13:29:41]  Ping Failed.
+[13:29:48]  Ping Failed.
+[13:29:55]  Ping Failed.
+[13:30:01]  Tracking : Az 192, El 1.
+[13:30:01]  Ping Success at node 5, 470ms
+[13:30:06]  Ping Success at node 5, 472ms
+[13:30:12]  Ping Success at node 5, 471ms
+[13:30:17]  Ping Success at node 5, 472ms
+[13:30:23]  Ping Success at node 5, 471ms
+[13:30:28]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:30:28]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[13:30:28]  Ping Success at node 5, 583ms
+[13:30:37]  Tracking : Az 194, El 4.
+[13:30:38]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:30:38]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[13:30:48]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[13:30:49]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[13:30:49]  Received Report from port : 25.
+[13:30:51]  Received Report from port : 25.
+[13:30:53]  Received Report from port : 25.
+[13:30:59]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[13:30:59]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[13:31:00]  Received Report from port : 25.
+[13:31:02]  Received Report from port : 25.
+[13:31:04]  Received Report from port : 25.
+[13:31:05]  Tracking : Az 196, El 6.
+[13:31:09]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[13:31:10]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[13:31:10]  Received Report from port : 25.
+[13:31:12]  Received Report from port : 25.
+[13:31:20]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[13:31:20]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[13:31:29]  Tracking : Az 199, El 7.
+[13:31:30]  [Auto]Start GND WDT reset sequence
+[13:31:30]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[13:31:30]  [Auto]AX100 GND WDT CMD sent (1/2)
+[13:31:31]  Received Report from port : 25.
+[13:31:33]  Received Report from port : 25.
+[13:31:35]  Received Report from port : 25.
+[13:31:40]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[13:31:41]  [Auto]AX100 GND WDT CMD sent (2/2)
+[13:31:41]  Received Report from port : 25.
+[13:31:43]  Tracking : Az 200, El 9.
+[13:31:43]  Received Report from port : 25.
+[13:31:45]  Received Report from port : 25.
+[13:31:51]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[13:31:51]  [Auto]EPS P60 DOCK GND WDT CMD sent (1/2)
+[13:31:51]  Received Report from port : 25.
+[13:31:53]  Received Report from port : 25.
+[13:31:55]  Received Report from port : 25.
+[13:32:01]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[13:32:01]  [Auto]EPS P60 DOCK GND WDT CMD sent (2/2)
+[13:32:02]  Received Report from port : 25.
+[13:32:04]  Received Report from port : 25.
+[13:32:05]  Tracking : Az 203, El 10.
+[13:32:06]  Received Report from port : 25.
+[13:32:11]  [Auto]GND WDT sequence completed
+[13:32:11]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:32:12]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (1/2)
+[13:32:12]  Received Report from port : 25.
+[13:32:22]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:32:22]  [Auto]EPS P60 DOCK GET TABLE HK Command Sent (2/2)
+[13:32:27]  Tracking : Az 206, El 12.
+[13:32:32]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[13:32:32]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (1/2)
+[13:32:33]  Received Report from port : 25.
+[13:32:35]  Received Report from port : 25.
+[13:32:37]  Received Report from port : 25.
+[13:32:42]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[13:32:43]  [Auto]EPS P60 PDU GET TABLE HK Command Sent (2/2)
+[13:32:43]  Received Report from port : 25.
+[13:32:45]  Received Report from port : 25.
+[13:32:46]  Tracking : Az 209, El 14.
+[13:32:47]  Received Report from port : 25.
+[13:32:53]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[13:32:53]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (1/2)
+[13:32:54]  Received Report from port : 25.
+[13:33:02]  Tracking : Az 212, El 16.
+[13:33:03]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x0
+[13:33:03]  [Auto]EPS P60 ACU GET TABLE HK Command Sent (2/2)
+[13:33:04]  Tracking : Az 212, El 16.
+[13:33:04]  Received Report from port : 25.
+[13:33:06]  Received Report from port : 25.
+[13:33:08]  Received Report from port : 25.
+[13:33:13]  [Auto]AutoPilot sequence Ended
+[13:33:17]  Tracking : Az 215, El 18.
+[13:33:19]  Tracking : Az 215, El 18.
+[13:33:23]  Tracking : Az 216, El 18.
+[13:33:34]  Tracking : Az 219, El 19.
+[13:33:36]  Tracking : Az 219, El 20.
+[13:33:46]  Tracking : Az 222, El 21.
+[13:33:48]  Tracking : Az 222, El 21.
+[13:33:53]  Tracking : Az 224, El 22.
+[13:33:56]  Tracking : Az 225, El 22.
+[13:34:06]  Tracking : Az 228, El 23.
+[13:34:08]  Tracking : Az 228, El 23.
+[13:34:15]  Tracking : Az 231, El 24.
+[13:34:17]  Tracking : Az 231, El 24.
+[13:34:21]  Tracking : Az 233, El 25.
+[13:34:29]  Tracking : Az 236, El 25.
+[13:34:31]  Tracking : Az 236, El 26.
+[13:34:35]  Tracking : Az 238, El 26.
+[13:34:37]  Tracking : Az 239, El 26.
+[13:34:44]  Tracking : Az 242, El 27.
+[13:34:46]  Tracking : Az 242, El 27.
+[13:34:46]  Tracking : Az 242, El 27.
+[13:34:49]  Tracking : Az 244, El 27.
+[13:34:56]  Tracking : Az 247, El 28.
+[13:35:03]  Tracking : Az 250, El 28.
+[13:35:10]  Tracking : Az 253, El 28.
+[13:35:16]  Tracking : Az 256, El 29.
+[13:35:23]  Tracking : Az 259, El 29.
+[13:35:29]  Tracking : Az 262, El 29.
+[13:35:36]  Tracking : Az 265, El 29.
+[13:35:42]  Tracking : Az 268, El 29.
+[13:35:49]  Tracking : Az 271, El 29.
+[13:35:55]  Tracking : Az 274, El 28.
+[13:36:02]  Tracking : Az 277, El 28.
+[13:36:09]  Tracking : Az 280, El 28.
+[13:36:16]  Tracking : Az 283, El 27.
+[13:36:24]  Tracking : Az 286, El 26.
+[13:36:31]  Tracking : Az 289, El 26.
+[13:36:39]  Tracking : Az 292, El 25.
+[13:36:48]  Tracking : Az 295, El 24.
+[13:36:57]  Tracking : Az 298, El 23.
+[13:37:07]  Tracking : Az 301, El 22.
+[13:37:17]  Tracking : Az 304, El 21.
+[13:37:29]  Tracking : Az 307, El 20.
+[13:37:41]  Tracking : Az 310, El 18.
+[13:37:55]  Tracking : Az 313, El 17.
+[13:38:11]  Tracking : Az 316, El 15.
+[13:38:29]  Tracking : Az 319, El 13.
+[13:38:49]  Tracking : Az 322, El 11.
+[13:39:22]  Tracking : Az 326, El 9.
+[13:39:52]  Tracking : Az 329, El 6.
+[13:40:28]  Tracking : Az 332, El 4.
+[13:41:13]  Tracking : Az 335, El 1.
+[13:41:38]  [Auto]Stop Doppler Correction.
+[13:41:38]  [Auto]Finish Engaging.
+[13:41:38]  Tracking : Az 0, El 0.
+[13:41:39]  [Auto]Beacon Success : 0, Ping Success : 6 CMD Success : 0
+[13:41:39]  [Auto]Update TLE...
+[13:41:52]  [Auto]TLE "active" Download Completed.
+[13:41:55]  Forked Safe Amplifier Process. (OFF)
+[13:41:55]  Reset GS100 watchdog.
+[13:42:07]  [Auto]Start Autopilot. Next Valuable AOS : 3/7 1:13:43
+[13:42:07]  [Auto]Max Elevation : 45.23° Please Keep Devices On.
+[15:26:02]  [Auto]Autopilot Stopped by User.
+[15:26:02]  [Auto]Stop Doppler Correction.
+[15:26:02]  [Auto]Finish Engaging.
+[15:26:02]  Tracking : Az 0, El 0.
+[15:26:03]  [Auto]Beacon Success : 0, Ping Success : 0 CMD Success : 0
+[15:26:06]  Tracking : Az 0, El 0.

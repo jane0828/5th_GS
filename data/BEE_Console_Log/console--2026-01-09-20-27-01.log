@@ -1,0 +1,11 @@
+2026-01-09 20:27
+[20:27:04]  Connect to Switch Box.............Success.
+[20:27:04]  Connect to Rotator................Success.
+[20:27:04]  Connect to GS100..................Success.
+[20:27:04]  TM Port 13 bind success.
+[20:27:04]  BCN Port 31 bind success.
+[20:27:04]  RPT Port 25 bind success.
+[20:27:04]  Event Port 27 bind success.
+[20:27:04]  COSMIC Beacon Port 23 bind success.
+[20:27:04]  COSMIC Report Port 24 bind success.
+[20:27:18]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2

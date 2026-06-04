@@ -1,0 +1,154 @@
+2026-01-20 12:23
+[12:24:03]  Connect to Switch Box.............Success.
+[12:24:03]  Connect to Rotator................Success.
+[12:24:03]  Connect to GS100..................Success.
+[12:24:03]  TM Port 13 bind success.
+[12:24:03]  BCN Port 31 bind success.
+[12:24:03]  RPT Port 25 bind success.
+[12:24:03]  Event Port 27 bind success.
+[12:24:03]  COSMIC Beacon Port 23 bind success.
+[12:24:03]  COSMIC Report Port 24 bind success.
+[12:25:04]  TLE "cubesat" Download Completed.
+[12:25:34]  Start Engaging.
+[12:25:34]  Tracking : Az 160, El 0.
+[12:25:36]  Tracking : Az 160, El 0.
+[12:25:36]  Start Doppler Correction.
+[12:25:38]  Tracking : Az 160, El 0.
+[12:25:40]  Tracking : Az 160, El 0.
+[12:25:42]  Tracking : Az 160, El 0.
+[12:25:44]  Tracking : Az 160, El 0.
+[12:25:46]  Tracking : Az 160, El 0.
+[12:25:48]  Tracking : Az 160, El 0.
+[12:25:50]  Tracking : Az 160, El 0.
+[12:25:52]  Tracking : Az 160, El 0.
+[12:25:54]  Tracking : Az 160, El 0.
+[12:25:56]  Tracking : Az 160, El 0.
+[12:25:58]  Tracking : Az 160, El 0.
+[12:26:00]  Tracking : Az 160, El 0.
+[12:40:51]  Forked Safe Amplifier Process.(ON, Timer)
+[12:41:15]  Ping Failed.
+[12:41:27]  Tracking : Az 159, El 3.
+[12:41:32]  Ping Success at node 5, 481ms
+[12:41:39]  Cannot Load Remote Parameter.
+[12:41:42]  Ping Success at node 5, 475ms
+[12:41:45]  Ping Success at node 5, 470ms
+[12:41:47]  AX100 Boot Count : 22246
+[12:41:50]  Remote Param Control OK.(No Reply)
+[12:41:59]  Ping Success at node 5, 472ms
+[12:42:01]  Remote Param Control OK. rssi_busy : 0
+[12:42:04]  Total RX Bytes : 68675
+[12:42:07]  Tracking : Az 159, El 6.
+[12:42:09]  Cannot Load Remote Parameter.
+[12:42:11]  Ping Success at node 5, 476ms
+[12:42:14]  Remote Param Control OK. can_en : true
+[12:42:16]  Remote Param Control OK. tx_inhibit : 0
+[12:42:18]  Remote Param Control OK. tx_pwr : 3
+[12:42:19]  Tracking : Az 158, El 7.
+[12:42:22]  Cannot Load Remote Parameter.
+[12:42:24]  Ping Success at node 5, 464ms
+[12:42:26]  Remote Param Control OK. csp_rtable : 0/0 AX100, 3/5 CAN
+[12:42:28]  Remote Param Control OK. Active Conf : 1
+[12:42:32]  Cannot Load Remote Parameter.
+[12:42:37]  Ping Success at node 5, 472ms
+[12:42:40]  Remote Param Control OK. Last RSSI : -102
+[12:42:41]  Tracking : Az 158, El 9.
+[12:42:44]  Cannot Load Remote Parameter.
+[12:42:47]  Remote Param Control OK. rx_guard : 0
+[12:42:49]  Remote Param Control OK. tx_guard : 50
+[12:42:51]  Remote Param Control OK. rx_baud : 4800
+[12:42:54]  Remote Param Control OK. tx_baud : 4800
+[12:43:01]  Tracking : Az 157, El 11.
+[12:43:03]  Ping Failed at node 3.
+[12:43:05]  Ping Success at node 5, 466ms
+[12:43:10]  Ping Failed at node 3.
+[12:43:18]  Ping Success at node 5, 468ms
+[12:43:20]  Tracking : Az 157, El 13.
+[12:43:23]  Ping Failed at node 3.
+[12:43:31]  Ping Success at node 5, 464ms
+[12:43:36]  Ping Failed at node 3.
+[12:43:38]  Ping Success at node 5, 474ms
+[12:43:43]  Ping Failed at node 3.
+[12:43:44]  Ping Success at node 5, 468ms
+[12:43:44]  Tracking : Az 156, El 16.
+[12:43:49]  Ping Failed at node 3.
+[12:43:50]  Ping Success at node 5, 474ms
+[12:43:55]  Ping Failed at node 3.
+[12:43:56]  Ping Success at node 5, 472ms
+[12:43:59]  Tracking : Az 155, El 18.
+[12:44:01]  Ping Failed at node 3.
+[12:44:18]  Tracking : Az 154, El 21.
+[12:44:18]  Ping Success at node 5, 466ms
+[12:44:23]  Ping Failed at node 3.
+[12:44:28]  Ping Success at node 5, 473ms
+[12:44:33]  Ping Failed at node 3.
+[12:44:35]  Tracking : Az 153, El 24.
+[12:44:49]  Ping Success at node 5, 471ms
+[12:44:50]  Tracking : Az 151, El 27.
+[12:44:54]  Ping Failed at node 3.
+[12:44:58]  Ping Failed.
+[12:45:02]  Ping Failed.
+[12:45:03]  Tracking : Az 150, El 30.
+[12:45:07]  Ping Failed.
+[12:45:11]  Ping Failed.
+[12:45:15]  Tracking : Az 148, El 33.
+[12:45:19]  Ping Failed.
+[12:45:23]  Ping Failed.
+[12:45:25]  Tracking : Az 147, El 36.
+[12:45:26]  Ping Failed.
+[12:45:30]  Ping Failed.
+[12:45:35]  Tracking : Az 145, El 39.
+[12:45:37]  Ping Failed at node 3.
+[12:45:40]  Ping Failed.
+[12:45:43]  Ping Success at node 5, 455ms
+[12:45:43]  Tracking : Az 143, El 41.
+[12:45:46]  AX100 Boot Count : 22246
+[12:45:49]  Tracking : Az 141, El 44.
+[12:45:51]  Ping Failed at node 3.
+[12:45:56]  Ping Failed.
+[12:45:57]  Tracking : Az 138, El 47.
+[12:46:01]  Ping Failed at node 3.
+[12:46:03]  Ping Success at node 5, 461ms
+[12:46:05]  Tracking : Az 135, El 50.
+[12:46:08]  Ping Failed at node 3.
+[12:46:09]  Ping Success at node 5, 453ms
+[12:46:11]  Tracking : Az 132, El 52.
+[12:46:14]  Ping Failed at node 3.
+[12:46:15]  Ping Success at node 5, 461ms
+[12:46:16]  Tracking : Az 129, El 54.
+[12:46:20]  Ping Failed at node 3.
+[12:46:21]  Tracking : Az 126, El 57.
+[12:46:21]  Ping Success at node 5, 464ms
+[12:46:25]  Tracking : Az 123, El 58.
+[12:46:26]  Ping Failed at node 3.
+[12:46:27]  Ping Success at node 5, 459ms
+[12:46:28]  Tracking : Az 120, El 59.
+[12:46:32]  Ping Failed at node 3.
+[12:46:32]  Tracking : Az 116, El 61.
+[12:46:34]  Ping Success at node 5, 462ms
+[12:46:36]  Tracking : Az 112, El 63.
+[12:46:39]  Ping Failed at node 3.
+[12:46:39]  Tracking : Az 108, El 64.
+[12:46:40]  Ping Success at node 5, 454ms
+[12:46:43]  Tracking : Az 103, El 65.
+[12:46:45]  Ping Failed at node 3.
+[12:46:46]  Ping Success at node 5, 453ms
+[12:46:46]  Tracking : Az 98, El 66.
+[12:46:49]  Tracking : Az 94, El 66.
+[12:46:51]  Tracking : Az 90, El 67.
+[12:46:52]  Ping Success at node 5, 465ms
+[12:46:54]  Tracking : Az 85, El 67.
+[12:46:57]  Ping Failed at node 3.
+[12:46:57]  Tracking : Az 80, El 67.
+[12:46:59]  Ping Success at node 5, 453ms
+[12:46:59]  Tracking : Az 76, El 67.
+[12:47:02]  Tracking : Az 71, El 67.
+[12:47:04]  Ping Success at node 5, 467ms
+[12:47:05]  Tracking : Az 65, El 67.
+[12:47:08]  Tracking : Az 60, El 67.
+[12:47:09]  Ping Failed at node 3.
+[12:47:11]  Tracking : Az 55, El 66.
+[12:47:12]  Forked Safe Amplifier Process. (OFF)
+[12:47:14]  Tracking : Az 50, El 65.
+[12:47:16]  Finish Engaging.
+[12:47:16]  Beacon Success : 0, Ping Success : 29
+[12:47:21]  Tracking : Az 0, El 0.

@@ -1,0 +1,13 @@
+2025-12-07 14:36
+[14:36:26]  Connect to Switch Box.............Success.
+[14:36:26]  Connect to Rotator................Success.
+[14:36:26]  Connect to GS100..................Success.
+[14:36:26]  TM Port 13 bind success.
+[14:36:26]  BCN Port 31 bind success.
+[14:36:26]  RPT Port 25 bind success.
+[14:36:31]  Forked Safe Amplifier Process.(ON, Timer)
+[14:36:35]  Ping Failed.
+[14:36:39]  [OK]CMD Packet Header: 0x0 0x0 0xc0 0x0 0x0 0x1 0x0 0x3e
+[14:36:51]  [OK]CMD Packet Header: 0x18 0x15 0xc0 0x0 0x0 0x45 0xa 0x5f
+[14:36:56]  Forked Safe Amplifier Process. (OFF)
+[14:36:59]  Forked Safe Amplifier Process. (OFF)

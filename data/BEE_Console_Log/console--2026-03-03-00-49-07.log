@@ -1,0 +1,72 @@
+2026-03-03 00:49
+[00:49:11]  Connect to Switch Box.............Success.
+[00:49:11]  Connect to Rotator................Success.
+[00:49:11]  Connect to GS100..................Success.
+[00:49:11]  TM Port 13 bind success.
+[00:49:11]  BCN Port 31 bind success.
+[00:49:11]  RPT Port 25 bind success.
+[00:49:11]  Event Port 27 bind success.
+[00:49:11]  COSMIC Beacon Port 23 bind success.
+[00:49:11]  COSMIC Report Port 24 bind success.
+[00:49:24]  TLE "active" Download Completed.
+[00:49:29]  Start Engaging.
+[00:49:29]  Tracking : Az 136, El 11.
+[00:49:30]  Start Doppler Correction.
+[00:49:31]  Tracking : Az 136, El 11.
+[00:49:31]  Forked Safe Amplifier Process.(ON, Timer)
+[00:49:45]  Tracking : Az 139, El 10.
+[00:49:45]  Ping Success at node 5, 462ms
+[00:49:47]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[00:49:57]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:49:59]  Received Report from port : 25.
+[00:50:04]  Tracking : Az 142, El 9.
+[00:50:06]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:50:15]  Ping Failed.
+[00:50:17]  Tracking : Az 144, El 8.
+[00:50:22]  Ping Success at node 5, 473ms
+[00:50:24]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:50:25]  Received Report from port : 25.
+[00:50:27]  Received Report from port : 25.
+[00:50:34]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:50:38]  Ping Success at node 5, 472ms
+[00:50:39]  Tracking : Az 147, El 6.
+[00:50:43]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:50:51]  Ping Success at node 5, 475ms
+[00:50:53]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[00:50:59]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[00:51:00]  Received Report from port : 25.
+[00:51:02]  Received Report from port : 25.
+[00:51:04]  Tracking : Az 150, El 5.
+[00:51:04]  Received Report from port : 25.
+[00:51:14]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:51:22]  Tracking : Az 152, El 3.
+[00:51:28]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:51:29]  Received Report from port : 25.
+[00:51:31]  Received Report from port : 25.
+[00:51:40]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:51:46]  Ping Success at node 5, 469ms
+[00:51:50]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[00:51:53]  Tracking : Az 155, El 2.
+[00:52:03]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[00:52:12]  Ping Failed.
+[00:52:13]  Forked Safe Amplifier Process. (OFF)
+[00:52:16]  Finish Engaging.
+[00:52:16]  Beacon Success : 0, Ping Success : 5
+[00:52:26]  Tracking : Az 0, El 0.
+[00:52:27]  Tracking : Az 0, El 0.
+[02:10:51]  Start Engaging.
+[02:10:51]  Tracking : Az 134, El 11.
+[02:10:53]  Tracking : Az 134, El 11.
+[02:10:54]  Start Doppler Correction.
+[02:10:55]  Tracking : Az 134, El 11.
+[02:10:57]  Tracking : Az 134, El 11.
+[02:10:58]  You tried doppler correction with no engaging
+[02:10:59]  Finish Engaging.
+[02:10:59]  Beacon Success : 0, Ping Success : 0
+[02:10:59]  Start Doppler Correction.
+[02:10:59]  You tried doppler correction with no engaging
+[02:11:10]  Start Engaging.
+[02:11:10]  Tracking : Az 0, El 0.
+[02:11:12]  Tracking : Az 0, El 0.
+[02:11:14]  Finish Engaging.
+[02:11:14]  Beacon Success : 0, Ping Success : 0

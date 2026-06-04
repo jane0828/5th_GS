@@ -1,0 +1,266 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>3.2.3.5. How CSP uses memory &mdash; Product Interface Application 2.1.1 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="../../../../../genindex.html"/>
+        <link rel="search" title="Search" href="../../../../../search.html"/>
+    <link rel="top" title="Product Interface Application 2.1.1 documentation" href="../../../../../index.html"/>
+        <link rel="up" title="3.2.3. CubeSat Space Protocol" href="libcsp.html"/>
+        <link rel="next" title="3.2.3.6. The Protocol Stack" href="protocolstack.html"/>
+        <link rel="prev" title="3.2.3.4. CSP Interfaces" href="interfaces.html"/> 
+
+  
+  <script src="../../../../../_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="../../../../../doc/index.html" class="icon icon-home"> Product Interface Application
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                2.1.1
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../../doc/csp-client.html">1. Product Interface Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../doc/product_interfaces.html">2. Product Interfaces</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../../../doc/libraries.html">3. Libraries</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../../libaardvark/doc/libaardvark.html">3.1. Aardvark (libaardvark)</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../../../doc/libgscsp.html">3.2. GomSpace CSP (libgscsp)</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../../../doc/introduction.html">3.2.1. Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../../../doc/commands.html">3.2.2. Commands</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="libcsp.html">3.2.3. CubeSat Space Protocol</a><ul class="current">
+<li class="toctree-l4"><a class="reference internal" href="../README.html">3.2.3.1. The Cubesat Space Protocol</a></li>
+<li class="toctree-l4"><a class="reference internal" href="history.html">3.2.3.2. History</a></li>
+<li class="toctree-l4"><a class="reference internal" href="structure.html">3.2.3.3. Structure</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interfaces.html">3.2.3.4. CSP Interfaces</a></li>
+<li class="toctree-l4 current"><a class="current reference internal" href="#">3.2.3.5. How CSP uses memory</a></li>
+<li class="toctree-l4"><a class="reference internal" href="protocolstack.html">3.2.3.6. The Protocol Stack</a></li>
+<li class="toctree-l4"><a class="reference internal" href="topology.html">3.2.3.7. Network Topology</a></li>
+<li class="toctree-l4"><a class="reference internal" href="mtu.html">3.2.3.8. Maximum Transfer Unit</a></li>
+<li class="toctree-l4"><a class="reference internal" href="example.html">3.2.3.9. Client and server example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../libfp_client/doc/libfp_client.html">3.3. Flight Planner (libfp_client)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../libftp_client/doc/libftp_client.html">3.4. FTP (libftp_client)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../libgosh_client/doc/libgosh_client.html">3.5. GOSH (libgosh_client)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../libgssb_client/doc/libgssb_client.html">3.6. GomSpace Sensor Bus (libgssb_client)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../libhk_client/doc/libhk_client.html">3.7. Housekeeping (libhk_client)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../libnanopb/doc/libnanopb.html">3.8. Nano Protobuf (libnanopb)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../libparam_client/doc/libparam_client.html">3.9. Parameter System (libparam_client)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../librgosh_client/doc/librgosh_client.html">3.10. Remote GOSH (librgosh_client)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../libutil/doc/libutil.html">3.11. Utility (libutil)</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../doc/tools.html">4. Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../doc/appendix/appendix.html">5. Appendix</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="../../../../../doc/index.html">Product Interface Application</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="../../../../../doc/index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="../../../../../doc/libraries.html">3. Libraries</a> &raquo;</li>
+      
+          <li><a href="../../../doc/libgscsp.html">3.2. GomSpace CSP (libgscsp)</a> &raquo;</li>
+      
+          <li><a href="libcsp.html">3.2.3. CubeSat Space Protocol</a> &raquo;</li>
+      
+    <li>3.2.3.5. How CSP uses memory</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-csp-uses-memory">
+<h1>3.2.3.5. How CSP uses memory<a class="headerlink" href="#how-csp-uses-memory" title="Permalink to this headline">¶</a></h1>
+<p>CSP has been written for small microprocessor systems. The way memory is handled is therefore a tradeoff between the amount used and the code efficiency. This section tries to give some answers to what the memory is used for and how it it used. The primary memory blocks in use by CSP is:</p>
+<blockquote>
+<div><ul class="simple">
+<li>Routing table</li>
+<li>Ports table</li>
+<li>Connection table</li>
+<li>Buffer pool</li>
+<li>Interface list</li>
+</ul>
+</div></blockquote>
+<div class="section" id="tables">
+<h2>3.2.3.5.1. Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
+<p>The reason for using tables for the routes, ports and connections is speed. When a new packet arrives the core of CSP needs to do a quick lookup in the connection so see if it can find an existing connection to which the packet matches. If this is not found, it will take a lookup in the ports table to see if there are any applications listening on the incoming port number. Another argument of using tables are pre-allocation. The linker will reserve an area of the memory for which the routes and connections can be stored. This avoid an expensive <cite>malloc()</cite> call during initialization of CSP, and practically costs zero CPU instructions. The downside of using tables are the wasted memory used by unallocated ports and connections. For the routing table the argumentation is the same, pre-allocation is better than calling <cite>malloc()</cite>.</p>
+</div>
+<div class="section" id="buffer-pool">
+<h2>3.2.3.5.2. Buffer Pool<a class="headerlink" href="#buffer-pool" title="Permalink to this headline">¶</a></h2>
+<p>The buffer handling system can be compiled for either static allocation or a one-time dynamic allocation of the main memory block. After this, the buffer system is entirely self-contained. All allocated elements are of the same size, so the buffer size must be chosen to be able to handle the maximum possible packet length. The buffer pool uses a queue to store pointers to free buffer elements. First of all, this gives a very quick method to get the next free element since the dequeue is an O(1) operation. Furthermore, since the queue is a protected operating system primitive, it can be accessed from both task-context and interrupt-context. The <cite>csp_buffer_get</cite> version is for task-context and <cite>csp_buffer_get_isr</cite> is for interrupt-context. Using fixed size buffer elements that are preallocated is again a question of speed and safety.</p>
+<p>A basic concept of the buffer system is called Zero-Copy. This means that from userspace to the kernel-driver, the buffer is never copied from one buffer to another. This is a big deal for a small microprocessor, where a call to <cite>memcpy()</cite> can be very expensive. In practice when data is inserted into a packet, it is shifted a certain number of bytes in order to allow for a packet header to be prepended at the lower layers. This also means that there is a strict contract between the layers, which data can be modified and where. The buffer object is normally casted to a <cite>csp_packet_t</cite>, but when its given to an interface on the MAC layer it’s casted to a <cite>csp_i2c_frame_t</cite> for example.</p>
+</div>
+<div class="section" id="interface-list">
+<h2>3.2.3.5.3. Interface list<a class="headerlink" href="#interface-list" title="Permalink to this headline">¶</a></h2>
+<p>The interface list is a simple single-ended linked list of references to the interface specification structures. These structures are static const and allocated by the linker. The pointer to this data is inserted into the list one time during setup of the interface. Each entry in the routing table has a direct pointer to the interface element, thereby avoiding list lookup, but the list is needed in order for the dynamic route configuration to know which interfaces are available.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="protocolstack.html" class="btn btn-neutral float-right" title="3.2.3.6. The Protocol Stack" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="interfaces.html" class="btn btn-neutral" title="3.2.3.4. CSP Interfaces" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2013-2019 GomSpace A/S. All rights reserved. ..
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'../../../../../',
+            VERSION:'2.1.1',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  false
+        };
+    </script>
+      <script type="text/javascript" src="../../../../../_static/jquery.js"></script>
+      <script type="text/javascript" src="../../../../../_static/underscore.js"></script>
+      <script type="text/javascript" src="../../../../../_static/doctools.js"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="../../../../../_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

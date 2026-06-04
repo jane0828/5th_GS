@@ -1,0 +1,14 @@
+[15:53:16]  Connect to Switch Box.............Success.
+[15:53:16]  Connect to Rotator................Success.
+[15:53:16]  Connect to GS100..................Success.
+[15:53:16]  TM Port 13 bind success.
+[15:53:16]  BCN Port 31 bind success.
+[15:53:16]  RPT Port 25 bind success.
+[15:53:16]  Event Port 27 bind success.
+[15:53:16]  COSMIC Beacon Port 23 bind success.
+[15:53:16]  COSMIC Report Port 24 bind success.
+[15:53:42]  TLE "active" Download Completed.
+[12:19:38]  [Auto]Start AutoPilot.
+[12:19:38]  [Auto]Invalid tracking at start. trk=-2
+[12:19:38]  [Auto]AutoPilot Stopped with Error Code : -2
+[12:19:42]  [Track]SetNowTracking rejected. index=13455 ptr=(nil)

@@ -1,0 +1,340 @@
+2025-12-28 12:45
+[12:45:39]  Connect to Switch Box.............Success.
+[12:45:39]  Connect to Rotator................Success.
+[12:45:39]  Connect to GS100..................Success.
+[12:45:39]  TM Port 13 bind success.
+[12:45:39]  BCN Port 31 bind success.
+[12:45:39]  RPT Port 25 bind success.
+[12:45:39]  Event Port 27 bind success.
+[12:45:39]  COSMIC Beacon Port 23 bind success.
+[12:45:39]  COSMIC Report Port 24 bind success.
+[12:45:52]  TLE "cubesat" Download Completed.
+[12:45:59]  Start Engaging.
+[12:45:59]  Tracking : Az 168, El 0.
+[12:46:00]  Start Doppler Correction.
+[12:46:01]  Tracking : Az 168, El 0.
+[12:46:03]  Tracking : Az 168, El 0.
+[12:46:05]  Tracking : Az 168, El 0.
+[12:46:07]  Tracking : Az 168, El 0.
+[12:46:09]  Tracking : Az 168, El 0.
+[12:46:11]  Tracking : Az 168, El 0.
+[12:46:13]  Tracking : Az 168, El 0.
+[12:46:15]  Tracking : Az 168, El 0.
+[12:46:17]  Tracking : Az 168, El 0.
+[12:46:19]  Tracking : Az 168, El 0.
+[12:46:21]  Tracking : Az 168, El 0.
+[12:46:23]  Tracking : Az 168, El 0.
+[12:46:25]  Tracking : Az 168, El 0.
+[12:46:27]  Tracking : Az 168, El 0.
+[12:50:45]  TLE "cubesat" Download Completed.
+[12:54:45]  Forked Safe Amplifier Process.(ON, Timer)
+[12:55:41]  Tracking : Az 169, El 3.
+[12:55:43]  Finish Engaging.
+[12:55:43]  Beacon Success : 0, Ping Success : 0
+[12:55:43]  Start Engaging.
+[12:55:43]  Tracking : Az 169, El 3.
+[12:55:45]  Start Doppler Correction.
+[12:55:45]  Start Doppler Correction.
+[12:55:54]  Ping Failed.
+[12:56:01]  Ping Success at node 5, 476ms
+[12:56:03]  Ping Success at node 5, 470ms
+[12:56:05]  Ping Success at node 5, 473ms
+[12:56:09]  Ping Success at node 5, 476ms
+[12:56:11]  AX100 Boot Count : 22229
+[12:56:13]  AX100 Boot Count : 22229
+[12:56:15]  AX100 Boot Count : 22229
+[12:56:18]  [OBC]Ping Failed.
+[12:56:19]  Tracking : Az 169, El 6.
+[12:56:21]  Ping Success at node 3, 481ms
+[12:56:21]  Tracking : Az 169, El 6.
+[12:56:23]  Ping Success at node 3, 480ms
+[12:56:24]  Ping Success at node 3, 473ms
+[12:56:36]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x6 0x3
+[12:56:37]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x6 0x3
+[12:56:38]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x6 0x3
+[12:56:53]  [OK]CMD Packet Header: 0x18 0x20 0xc0 0x0 0x0 0x5 0x7 0xd
+[12:56:53]  Tracking : Az 169, El 9.
+[12:56:54]  [OK]CMD Packet Header: 0x18 0x20 0xc0 0x0 0x0 0x5 0x7 0xd
+[12:56:55]  Tracking : Az 169, El 9.
+[12:56:55]  [OK]CMD Packet Header: 0x18 0x20 0xc0 0x0 0x0 0x5 0x7 0xd
+[12:57:01]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[12:57:01]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[12:57:01]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[12:57:02]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[12:57:02]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[12:57:02]  Received Report from port : 23.
+[12:57:10]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[12:57:10]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[12:57:10]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[12:57:11]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[12:57:11]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[12:57:11]  Received Report from port : 23.
+[12:57:23]  Tracking : Az 170, El 12.
+[12:57:33]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[12:57:33]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[12:57:33]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[12:57:34]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[12:57:34]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[12:57:34]  Received Report from port : 23.
+[12:57:44]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[12:57:44]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[12:57:44]  Received Report from port : 23.
+[12:57:48]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[12:57:48]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[12:57:48]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[12:57:48]  Tracking : Az 170, El 15.
+[12:57:49]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[12:57:49]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[12:57:49]  Received Report from port : 23.
+[12:57:50]  Tracking : Az 170, El 15.
+[12:58:03]  Tracking : Az 171, El 17.
+[12:58:05]  Tracking : Az 171, El 17.
+[12:58:22]  Ping Success at node 3, 462ms
+[12:58:23]  Tracking : Az 171, El 20.
+[12:58:25]  Tracking : Az 171, El 20.
+[12:58:35]  Tracking : Az 171, El 22.
+[12:58:51]  Tracking : Az 172, El 25.
+[12:59:05]  Tracking : Az 172, El 28.
+[12:59:06]  [OK]CMD Packet Header: 0x18 0x71 0xc0 0x0 0x0 0x1 0x1e 0x49
+[12:59:18]  Tracking : Az 173, El 31.
+[12:59:20]  [OK]CMD Packet Header: 0x18 0x71 0xc0 0x0 0x0 0x1 0x1e 0x49
+[12:59:21]  Tracking : Az 173, El 32.
+[12:59:32]  Tracking : Az 174, El 35.
+[12:59:34]  [OK]CMD Packet Header: 0x18 0x71 0xc0 0x0 0x0 0x1 0x1e 0x49
+[12:59:35]  Tracking : Az 174, El 36.
+[12:59:42]  [OK]CMD Packet Header: 0x18 0x71 0xc0 0x0 0x0 0x1 0x1e 0x49
+[12:59:45]  Tracking : Az 175, El 39.
+[12:59:47]  Tracking : Az 175, El 40.
+[12:59:56]  Tracking : Az 176, El 43.
+[12:59:56]  [OK]CMD Packet Header: 0x18 0x71 0xc0 0x0 0x0 0x1 0x1e 0x49
+[12:59:58]  Tracking : Az 176, El 44.
+[13:00:06]  Tracking : Az 177, El 47.
+[13:00:08]  [OK]CMD Packet Header: 0x18 0x71 0xc0 0x0 0x0 0x1 0x1e 0x49
+[13:00:08]  Tracking : Az 178, El 48.
+[13:00:15]  Tracking : Az 179, El 51.
+[13:00:17]  Tracking : Az 179, El 52.
+[13:00:23]  Tracking : Az 181, El 55.
+[13:00:25]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:00:25]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:00:25]  Tracking : Az 181, El 56.
+[13:00:26]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:00:26]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:00:26]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:00:26]  Received Report from port : 23.
+[13:00:30]  Tracking : Az 183, El 59.
+[13:00:32]  Tracking : Az 183, El 60.
+[13:00:35]  Tracking : Az 185, El 61.
+[13:00:38]  Tracking : Az 186, El 63.
+[13:00:41]  Tracking : Az 187, El 65.
+[13:00:44]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:00:44]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:00:44]  Received Report from port : 23.
+[13:00:46]  [OK]CMD Packet Header: 0x18 0x71 0xc0 0x0 0x0 0x1 0x1e 0x49
+[13:00:46]  Tracking : Az 191, El 68.
+[13:00:47]  !!!!!!!!!Received COSMIC Report from port : 24.!!!!!!!!!
+
+[13:00:47]  Received Report from port : 24.
+[13:00:48]  !!!!!!!!!Received COSMIC Report from port : 24.!!!!!!!!!
+
+[13:00:48]  Received Report from port : 24.
+[13:00:48]  !!!!!!!!!Received COSMIC Report from port : 24.!!!!!!!!!
+
+[13:00:48]  Received Report from port : 24.
+[13:00:48]  Tracking : Az 192, El 69.
+[13:00:48]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:00:48]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:00:48]  Received Report from port : 23.
+[13:00:50]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:00:50]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:00:50]  Received Report from port : 23.
+[13:00:51]  Tracking : Az 195, El 70.
+[13:00:53]  Tracking : Az 197, El 72.
+[13:00:56]  Tracking : Az 201, El 73.
+[13:00:58]  Tracking : Az 204, El 75.
+[13:01:00]  Tracking : Az 207, El 76.
+[13:01:02]  Tracking : Az 211, El 77.
+[13:01:04]  Tracking : Az 216, El 78.
+[13:01:06]  Tracking : Az 221, El 78.
+[13:01:08]  Tracking : Az 228, El 79.
+[13:01:10]  Tracking : Az 235, El 80.
+[13:01:12]  Tracking : Az 244, El 80.
+[13:01:14]  Tracking : Az 253, El 80.
+[13:01:16]  Tracking : Az 262, El 80.
+[13:01:18]  Tracking : Az 271, El 80.
+[13:01:20]  Tracking : Az 279, El 80.
+[13:01:22]  Tracking : Az 287, El 79.
+[13:01:24]  Tracking : Az 293, El 78.
+[13:01:26]  Tracking : Az 299, El 78.
+[13:01:28]  Tracking : Az 304, El 77.
+[13:01:30]  Tracking : Az 308, El 76.
+[13:01:32]  Tracking : Az 311, El 75.
+[13:01:34]  Tracking : Az 314, El 73.
+[13:01:36]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:01:36]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:01:36]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:01:36]  Tracking : Az 317, El 72.
+[13:01:37]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:01:37]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:01:37]  Received Report from port : 23.
+[13:01:38]  Tracking : Az 319, El 71.
+[13:01:39]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:01:39]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:01:39]  Received Report from port : 23.
+[13:01:41]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:01:41]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:01:41]  Received Report from port : 23.
+[13:01:41]  Tracking : Az 322, El 69.
+[13:01:43]  Tracking : Az 323, El 68.
+[13:01:48]  Tracking : Az 327, El 65.
+[13:01:50]  Tracking : Az 328, El 64.
+[13:01:54]  Tracking : Az 330, El 62.
+[13:01:56]  Tracking : Az 331, El 61.
+[13:02:01]  Tracking : Az 332, El 58.
+[13:02:01]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:02:02]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:02:02]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:02:03]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:02:03]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:02:03]  Received Report from port : 23.
+[13:02:03]  Tracking : Az 333, El 57.
+[13:02:10]  Ping Success at node 3, 460ms
+[13:02:10]  Tracking : Az 335, El 53.
+[13:02:12]  Ping Success at node 5, 466ms
+[13:02:12]  Tracking : Az 335, El 52.
+[13:02:14]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:02:14]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:02:14]  Received Report from port : 23.
+[13:02:15]  Cannot Load Remote Parameter.
+[13:02:18]  AX100 Boot Count : 22229
+[13:02:18]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:02:18]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:02:18]  Received Report from port : 23.
+[13:02:20]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:02:20]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:02:20]  Received Report from port : 23.
+[13:02:21]  Tracking : Az 337, El 48.
+[13:02:23]  Tracking : Az 337, El 47.
+[13:02:33]  Tracking : Az 339, El 43.
+[13:02:35]  Tracking : Az 339, El 43.
+[13:02:41]  Tracking : Az 339, El 40.
+[13:02:46]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:02:46]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:02:47]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:02:47]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:02:47]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:02:47]  Received Report from port : 23.
+[13:02:50]  Tracking : Az 340, El 37.
+[13:02:53]  Tracking : Az 340, El 36.
+[13:02:57]  [OK]CMD Packet Header: 0x18 0x71 0xc0 0x0 0x0 0x1 0x1e 0x49
+[13:03:03]  [OK]CMD Packet Header: 0x18 0x71 0xc0 0x0 0x0 0x1 0x1e 0x49
+[13:03:03]  Tracking : Az 341, El 33.
+[13:03:06]  Tracking : Az 341, El 32.
+[13:03:11]  [OK]CMD Packet Header: 0x18 0x71 0xc0 0x0 0x0 0x1 0x1e 0x49
+[13:03:19]  [OK]CMD Packet Header: 0x18 0x71 0xc0 0x0 0x0 0x1 0x1e 0x49
+[13:03:22]  Tracking : Az 342, El 28.
+[13:03:29]  [OK]CMD Packet Header: 0x18 0x71 0xc0 0x0 0x0 0x1 0x1e 0x49
+[13:03:41]  Tracking : Az 343, El 24.
+[13:03:57]  Tracking : Az 343, El 21.
+[13:04:14]  Ping Success at node 3, 464ms
+[13:04:21]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:04:21]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:04:21]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:04:22]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:04:22]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:04:22]  Received Report from port : 23.
+[13:04:22]  Tracking : Az 344, El 17.
+[13:04:24]  Tracking : Az 344, El 17.
+[13:04:29]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:04:29]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:04:29]  Received Report from port : 23.
+[13:04:33]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:04:33]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:04:33]  Received Report from port : 23.
+[13:04:35]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:04:35]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:04:35]  Received Report from port : 23.
+[13:04:39]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:04:39]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:04:39]  Received Report from port : 23.
+[13:04:41]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:04:41]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:04:41]  Received Report from port : 23.
+[13:04:44]  Tracking : Az 345, El 14.
+[13:05:09]  Ping Success at node 5, 471ms
+[13:05:10]  Tracking : Az 345, El 11.
+[13:05:11]  AX100 Boot Count : 22229
+[13:05:13]  Ping Success at node 3, 480ms
+[13:05:19]  Ping Success at node 3, 473ms
+[13:05:21]  Ping Success at node 3, 484ms
+[13:05:23]  Ping Success at node 3, 475ms
+[13:05:29]  Ping Success at node 3, 467ms
+[13:05:36]  Ping Success at node 5, 475ms
+[13:05:38]  AX100 Boot Count : 22229
+[13:05:40]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x1 0x1b 0x1e
+[13:05:41]  [OK]CMD Packet Header: 0x18 0x23 0xc0 0x0 0x0 0x8 0x2 0x18
+[13:05:41]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:05:42]  !!!!!!!!!Received COSMIC Beacon from port : 23.!!!!!!!!!
+
+[13:05:42]  !!!!!!!!!Received COSMIC Report from port : 23.!!!!!!!!!
+
+[13:05:42]  Received Report from port : 23.
+[13:05:46]  Ping Success at node 5, 470ms
+[13:05:51]  AX100 Boot Count : 22229
+[13:05:51]  Tracking : Az 346, El 7.
+[13:05:56]  Ping Failed at node 3.
+[13:06:00]  Ping Failed.
+[13:06:05]  Cannot Load Remote Parameter.
+[13:06:08]  Ping Failed.
+[13:06:12]  Ping Failed at node 3.
+[13:06:19]  Ping Failed.
+[13:06:23]  Ping Failed at node 3.
+[13:06:29]  Forked Safe Amplifier Process. (OFF)
+[13:06:32]  Finish Engaging.
+[13:06:32]  Beacon Success : 0, Ping Success : 19
+[13:08:43]  Tracking : Az 0, El 0.

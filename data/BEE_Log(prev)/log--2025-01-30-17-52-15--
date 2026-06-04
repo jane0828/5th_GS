@@ -1,0 +1,26 @@
+FM (1875)
+|| Uplink || Length: 8
+18	75	c0	00	00	01	53	00	
+
+|| Downlink || Packet Length: 24
+Reply to CMD_MID.
+[ CCSDS Header ]
+Stream ID: 87c
+Sequence: c004
+Length: bd
+Time Stamp: 15	4b	f	0	3e	5a
+
+[ HYVRID Execution Report ]
+RetCodeType: 7
+RetCode: 0
+MsgId: 1875	FM (1875)
+CC: 0
+DataSize (Exclude header): 0
+Used State: 0
+
+Output Data.
+
+[ Downlink Raw Data ]
+08	7c	c0	04	00	bd	15	4b	0f	00	
+3e	5a	07	00	00	00	00	75	18	00	
+00	00	00	00	

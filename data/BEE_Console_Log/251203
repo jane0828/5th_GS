@@ -1,0 +1,174 @@
+251203
+
+[02:20:46]  Connect to Switch Box.............Success.
+[02:20:46]  Connect to Rotator................Success.
+[02:20:46]  Connect to GS100..................Success.
+[02:20:46]  TM Port 13 bind success.
+[02:20:46]  BCN Port 31 bind success.
+[02:20:46]  RPT Port 25 bind success.
+[02:21:02]  TLE "cubesat" Download Completed.
+[02:23:56]  Tracking : Az 100, El 10.
+[02:25:00]  Forked Safe Amplifier Process.(ON, Timer)
+[02:25:05]  Ping Failed.
+[02:25:13]  Ping Failed.
+[02:25:31]  Forked Safe Amplifier Process. (OFF)
+[02:25:33]  Tracking : Az 0, El 0.
+[02:27:35]  Tracking : Az 0, El 0.
+[12:40:29]  TLE "cubesat" Download Completed.
+[12:50:13]  Start Engaging.
+[12:50:13]  Tracking : Az 167, El 0.
+[12:50:15]  Tracking : Az 167, El 0.
+[12:50:17]  Tracking : Az 167, El 0.
+[12:50:18]  Start Doppler Correction.
+[12:50:19]  Tracking : Az 167, El 0.
+[12:50:21]  Tracking : Az 167, El 0.
+[12:50:23]  Tracking : Az 167, El 0.
+[12:50:25]  Tracking : Az 167, El 0.
+[12:50:27]  Tracking : Az 167, El 0.
+[12:50:29]  Tracking : Az 167, El 0.
+[12:50:31]  Tracking : Az 167, El 0.
+[12:50:33]  Tracking : Az 167, El 0.
+[12:50:35]  Tracking : Az 167, El 0.
+[12:50:37]  Tracking : Az 167, El 0.
+[12:50:39]  Tracking : Az 167, El 0.
+[12:50:41]  Tracking : Az 167, El 0.
+[12:50:49]  Finish Engaging.
+[12:50:49]  Beacon Success : 0, Ping Success : 0
+[12:50:57]  Tracking : Az 0, El 0.
+[12:51:05]  Start Engaging.
+[12:51:05]  Tracking : Az 167, El 0.
+[12:51:07]  Finish Engaging.
+[12:51:07]  Beacon Success : 0, Ping Success : 0
+[12:51:09]  Tracking : Az 0, El 0.
+[12:51:37]  Start Engaging.
+[12:51:37]  Tracking : Az 167, El 0.
+[12:51:39]  Tracking : Az 167, El 0.
+[12:51:41]  Tracking : Az 167, El 0.
+[12:51:43]  Tracking : Az 167, El 0.
+[12:51:44]  Start Doppler Correction.
+[12:51:45]  Tracking : Az 167, El 0.
+[12:51:47]  Tracking : Az 167, El 0.
+[12:51:49]  Tracking : Az 167, El 0.
+[12:51:51]  Tracking : Az 167, El 0.
+[12:51:53]  Tracking : Az 167, El 0.
+[12:51:55]  Tracking : Az 167, El 0.
+[12:51:57]  Tracking : Az 167, El 0.
+[12:51:59]  Tracking : Az 167, El 0.
+[12:52:01]  Tracking : Az 167, El 0.
+[12:52:03]  Tracking : Az 167, El 0.
+[12:52:05]  Tracking : Az 167, El 0.
+[12:54:07]  Tracking : Az 167, El 3.
+[12:54:46]  Tracking : Az 168, El 6.
+[12:55:20]  Tracking : Az 168, El 9.
+[12:55:40]  Tracking : Az 168, El 11.
+[12:55:59]  Tracking : Az 168, El 13.
+[12:56:01]  Tracking : Az 168, El 13.
+[12:56:17]  Tracking : Az 169, El 15.
+[12:56:37]  Tracking : Az 169, El 18.
+[12:56:56]  Tracking : Az 169, El 21.
+[12:57:13]  Tracking : Az 169, El 24.
+[12:57:24]  Forked Safe Amplifier Process.(ON, Timer)
+[12:57:27]  Tracking : Az 170, El 27.
+[12:57:31]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x4 0x3 0x6a
+[12:57:40]  Tracking : Az 170, El 30.
+[12:57:51]  Tracking : Az 170, El 33.
+[12:57:57]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x4 0x3 0x68
+[12:58:01]  Tracking : Az 171, El 36.
+[12:58:04]  Tracking : Az 171, El 37.
+[12:58:13]  Tracking : Az 171, El 40.
+[12:58:16]  Tracking : Az 171, El 41.
+[12:58:24]  Tracking : Az 172, El 44.
+[12:58:26]  Tracking : Az 172, El 45.
+[12:58:33]  Tracking : Az 173, El 48.
+[12:58:36]  Tracking : Az 173, El 49.
+[12:58:42]  Tracking : Az 174, El 52.
+[12:58:44]  Tracking : Az 174, El 53.
+[12:58:45]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x4 0x3 0x6b
+[12:58:50]  Tracking : Az 175, El 56.
+[12:58:52]  Tracking : Az 175, El 57.
+[12:58:57]  Tracking : Az 176, El 60.
+[12:58:59]  Tracking : Az 176, El 61.
+[12:59:04]  Tracking : Az 177, El 64.
+[12:59:07]  Tracking : Az 178, El 66.
+[12:59:12]  Tracking : Az 180, El 69.
+[12:59:15]  Tracking : Az 182, El 71.
+[12:59:18]  Tracking : Az 184, El 73.
+[12:59:19]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x4 0x3 0x69
+[12:59:22]  Tracking : Az 187, El 75.
+[12:59:24]  Tracking : Az 189, El 76.
+[12:59:27]  Tracking : Az 193, El 78.
+[12:59:29]  Tracking : Az 197, El 80.
+[12:59:31]  Tracking : Az 202, El 81.
+[12:59:33]  Tracking : Az 208, El 80.
+[12:59:35]  Tracking : Az 234, El 84.
+[12:59:37]  Tracking : Az 227, El 80.
+[12:59:39]  Tracking : Az 267, El 80.
+[12:59:41]  Tracking : Az 282, El 84.
+[12:59:43]  Tracking : Az 274, El 80.
+[12:59:45]  Tracking : Az 303, El 80.
+[12:59:47]  Tracking : Az 310, El 81.
+[12:59:49]  Tracking : Az 307, El 80.
+[12:59:51]  Tracking : Az 320, El 79.
+[12:59:53]  Tracking : Az 318, El 79.
+[12:59:54]  Ping Failed.
+[12:59:55]  Tracking : Az 321, El 78.
+[12:59:57]  Tracking : Az 324, El 77.
+[12:59:59]  Tracking : Az 327, El 76.
+[13:00:02]  Tracking : Az 329, El 74.
+[13:00:03]  Ping Failed.
+[13:00:04]  Tracking : Az 331, El 72.
+[13:00:09]  Tracking : Az 334, El 69.
+[13:00:12]  Tracking : Az 335, El 67.
+[13:00:18]  Tracking : Az 337, El 64.
+[13:00:20]  Tracking : Az 337, El 62.
+[13:00:26]  Tracking : Az 339, El 59.
+[13:00:29]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:00:29]  Tracking : Az 339, El 57.
+[13:00:37]  Tracking : Az 340, El 53.
+[13:00:39]  Tracking : Az 341, El 52.
+[13:00:45]  Tracking : Az 341, El 49.
+[13:00:46]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:00:47]  Tracking : Az 341, El 48.
+[13:00:54]  Tracking : Az 342, El 45.
+[13:01:05]  Ping Success at node 5, 465ms
+[13:01:05]  Tracking : Az 343, El 41.
+[13:01:07]  Tracking : Az 343, El 40.
+[13:01:14]  Ping Success at node 5, 453ms
+[13:01:19]  Tracking : Az 343, El 36.
+[13:01:22]  Ping Success at node 5, 463ms
+[13:01:22]  Tracking : Az 344, El 35.
+[13:01:36]  Tracking : Az 344, El 31.
+[13:01:45]  Ping Success at node 5, 466ms
+[13:01:48]  Tracking : Az 344, El 28.
+[13:01:53]  [OK]CMD Packet Header: 0x18 0x19 0xc0 0x0 0x0 0x5 0x0 0x29
+[13:02:06]  Tracking : Az 345, El 24.
+[13:02:08]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x4 0x3 0x6a
+[13:02:20]  Ping Success at node 5, 455ms
+[13:02:23]  Tracking : Az 345, El 21.
+[13:02:48]  Tracking : Az 346, El 17.
+[13:02:48]  Ping Success at node 5, 464ms
+[13:02:50]  Tracking : Az 346, El 17.
+[13:03:09]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x4 0x3 0x68
+[13:03:10]  Tracking : Az 346, El 14.
+[13:03:22]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x4 0x3 0x6b
+[13:03:26]  Ping Success at node 5, 461ms
+[13:03:36]  Tracking : Az 346, El 11.
+[13:03:51]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x4 0x3 0x69
+[13:04:02]  Ping Failed.
+[13:04:17]  Tracking : Az 347, El 7.
+[13:04:45]  Forked Safe Amplifier Process. (OFF)
+[13:04:47]  Finish Engaging.
+[13:04:47]  Beacon Success : 0, Ping Success : 7
+[13:04:52]  Tracking : Az 0, El 0.
+[13:05:47]  TLE "cubesat" Download Completed.
+[13:05:53]  TLE "active" Download Completed.
+[13:11:33]  TLE "active" Download Completed.
+[13:11:34]  TLE "active" Download Completed.
+[13:11:41]  TLE "cubesat" Download Completed.
+[13:12:26]  TLE "cubesat" Download Completed.
+[13:12:27]  TLE "cubesat" Download Completed.
+[13:12:27]  TLE "cubesat" Download Completed.
+[13:12:27]  TLE "cubesat" Download Completed.
+[13:12:27]  TLE "cubesat" Download Completed.
+[13:12:28]  TLE "cubesat" Download Completed.
+

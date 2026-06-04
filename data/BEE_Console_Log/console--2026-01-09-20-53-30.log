@@ -1,0 +1,153 @@
+2026-01-09 20:53
+[20:53:33]  Connect to Switch Box.............Success.
+[20:53:33]  Connect to Rotator................Success.
+[20:53:33]  Connect to GS100..................Success.
+[20:53:33]  TM Port 13 bind success.
+[20:53:33]  BCN Port 31 bind success.
+[20:53:33]  RPT Port 25 bind success.
+[20:53:33]  Event Port 27 bind success.
+[20:53:33]  COSMIC Beacon Port 23 bind success.
+[20:53:33]  COSMIC Report Port 24 bind success.
+[20:53:37]  TLE "cubesat" Download Completed.
+[20:53:50]  [Auto]Start AutoPilot.
+[20:53:50]  [Auto]You Tried Autopilot without Tracking. Please Check Again.
+[20:53:50]  [Auto]AutoPilot Stopped with Error Code : -2
+[20:53:53]  [Auto]Start AutoPilot.
+[20:53:53]  [Auto]Start Autopilot. Next Valuable AOS : 1/9 20:55:39
+[20:53:53]  [Auto]Max Elevation : 88.55° Please Keep Devices On.
+[20:53:53]  [Auto]Start Engaging.
+[20:53:53]  [Auto]Start Doppler Correction.
+[20:53:53]  [DBG][AMP] exit-wait: min_to_los=14.533 Autopilot=1
+[20:53:53]  Tracking : Az 209, El 0.
+[20:53:53]  Tracking : Az 209, El 0.
+[20:53:53]  Forked Safe Amplifier Process.(ON, Timer)
+[20:53:53]  [Auto]Start GND WDT reset sequence
+[20:53:53]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[20:53:53]  [Auto]AX100 GND WDT CMD sent (1/3)
+[20:53:55]  Tracking : Az 209, El 0.
+[20:53:56]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[20:53:57]  [Auto]AX100 GND WDT CMD sent (2/3)
+[20:53:57]  Tracking : Az 209, El 0.
+[20:53:59]  Tracking : Az 209, El 0.
+[20:54:00]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[20:54:00]  [Auto]AX100 GND WDT CMD sent (3/3)
+[20:54:01]  Tracking : Az 209, El 0.
+[20:54:03]  Tracking : Az 209, El 0.
+[20:54:03]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[20:54:03]  [Auto]EPS P60 DOCK GND WDT CMD sent (1/3)
+[20:54:05]  Tracking : Az 209, El 0.
+[20:54:06]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[20:54:07]  [Auto]EPS P60 DOCK GND WDT CMD sent (2/3)
+[20:54:07]  Tracking : Az 209, El 0.
+[20:54:09]  Tracking : Az 209, El 0.
+[20:54:10]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[20:54:10]  [Auto]EPS P60 DOCK GND WDT CMD sent (3/3)
+[20:54:11]  Tracking : Az 209, El 0.
+[20:54:13]  Tracking : Az 209, El 0.
+[20:54:13]  [Auto]GND WDT sequence completed
+[20:54:15]  Tracking : Az 209, El 0.
+[20:54:17]  Tracking : Az 209, El 0.
+[20:54:19]  Tracking : Az 209, El 0.
+[20:54:21]  Tracking : Az 209, El 0.
+[20:54:23]  Tracking : Az 209, El 0.
+[20:54:25]  Tracking : Az 209, El 0.
+[20:54:27]  Tracking : Az 209, El 0.
+[20:54:29]  Tracking : Az 209, El 0.
+[20:54:31]  Tracking : Az 209, El 0.
+[20:56:24]  Tracking : Az 209, El 3.
+[20:56:26]  Tracking : Az 209, El 3.
+[20:57:06]  Tracking : Az 209, El 6.
+[20:57:20]  Tracking : Az 209, El 7.
+[20:57:42]  Tracking : Az 209, El 9.
+[20:57:53]  Tracking : Az 209, El 10.
+[20:58:03]  Tracking : Az 209, El 11.
+[20:58:23]  Tracking : Az 209, El 13.
+[20:58:40]  Tracking : Az 209, El 15.
+[20:58:56]  Tracking : Az 209, El 17.
+[20:59:17]  Tracking : Az 209, El 20.
+[20:59:35]  Tracking : Az 209, El 23.
+[20:59:50]  Tracking : Az 210, El 26.
+[21:00:04]  Tracking : Az 210, El 29.
+[21:00:16]  Tracking : Az 210, El 32.
+[21:00:26]  Tracking : Az 210, El 35.
+[21:00:36]  Tracking : Az 210, El 38.
+[21:00:39]  Tracking : Az 210, El 39.
+[21:00:47]  Tracking : Az 210, El 42.
+[21:00:55]  Tracking : Az 210, El 45.
+[21:01:02]  Tracking : Az 210, El 48.
+[21:01:04]  Tracking : Az 210, El 49.
+[21:01:11]  Tracking : Az 210, El 52.
+[21:01:16]  Tracking : Az 211, El 55.
+[21:01:18]  Tracking : Az 211, El 56.
+[21:01:24]  Tracking : Az 211, El 59.
+[21:01:26]  Tracking : Az 211, El 60.
+[21:01:31]  Tracking : Az 211, El 63.
+[21:01:33]  Tracking : Az 211, El 64.
+[21:01:37]  Tracking : Az 211, El 67.
+[21:01:40]  Tracking : Az 212, El 69.
+[21:01:43]  Tracking : Az 212, El 71.
+[21:01:46]  Tracking : Az 212, El 73.
+[21:01:50]  Tracking : Az 213, El 76.
+[21:01:52]  Tracking : Az 213, El 77.
+[21:01:56]  Tracking : Az 215, El 80.
+[21:01:58]  Tracking : Az 216, El 81.
+[21:02:01]  Tracking : Az 223, El 80.
+[21:02:03]  Tracking : Az 232, El 87.
+[21:02:06]  Tracking : Az 303, El 80.
+[21:02:08]  Tracking : Az 359, El 80.
+[21:02:10]  Tracking : Az 13, El 86.
+[21:02:12]  Tracking : Az 8, El 80.
+[21:02:14]  Tracking : Az 21, El 80.
+[21:02:16]  Tracking : Az 23, El 82.
+[21:02:18]  Tracking : Az 22, El 80.
+[21:02:20]  Tracking : Az 25, El 80.
+[21:02:22]  Tracking : Az 25, El 78.
+[21:02:24]  Tracking : Az 25, El 78.
+[21:02:26]  Tracking : Az 25, El 77.
+[21:02:28]  Tracking : Az 26, El 75.
+[21:02:30]  Tracking : Az 26, El 74.
+[21:02:32]  Tracking : Az 26, El 73.
+[21:02:34]  Tracking : Az 27, El 71.
+[21:02:36]  Tracking : Az 27, El 70.
+[21:02:38]  Tracking : Az 27, El 68.
+[21:02:40]  Tracking : Az 27, El 67.
+[21:02:42]  Tracking : Az 27, El 66.
+[21:02:44]  Tracking : Az 28, El 65.
+[21:02:46]  Tracking : Az 28, El 63.
+[21:02:48]  Tracking : Az 28, El 62.
+[21:02:54]  Tracking : Az 28, El 58.
+[21:02:56]  Tracking : Az 28, El 57.
+[21:03:04]  Tracking : Az 28, El 53.
+[21:03:06]  Tracking : Az 28, El 52.
+[21:03:11]  Tracking : Az 28, El 49.
+[21:03:14]  Tracking : Az 28, El 48.
+[21:03:20]  Tracking : Az 29, El 45.
+[21:03:30]  Tracking : Az 29, El 41.
+[21:03:32]  Tracking : Az 29, El 40.
+[21:03:44]  Tracking : Az 29, El 36.
+[21:03:47]  Tracking : Az 29, El 35.
+[21:04:00]  Tracking : Az 29, El 31.
+[21:04:20]  Tracking : Az 29, El 26.
+[21:04:39]  Tracking : Az 29, El 22.
+[21:05:02]  Tracking : Az 29, El 18.
+[21:05:30]  Tracking : Az 30, El 14.
+[21:05:55]  Tracking : Az 30, El 11.
+[21:06:34]  Tracking : Az 30, El 7.
+[21:06:40]  Tracking : Az 30, El 7.
+[21:07:23]  Tracking : Az 30, El 3.
+[21:08:06]  Tracking : Az 30, El 0.
+[21:08:25]  [Auto]Stop Doppler Correction.
+[21:08:25]  [Auto]Finish Engaging.
+[21:08:25]  Tracking : Az 0, El 0.
+[21:08:26]  [Auto]Beacon Success : 0, Ping Success : 0 CMD Success : 0
+[21:08:26]  [Auto]Update TLE...
+[21:08:27]  [Auto]TLE "cubesat" Download Completed.
+[21:08:30]  Forked Safe Amplifier Process. (OFF)
+[21:08:30]  Reset GS100 watchdog.
+[21:08:42]  [Auto]Start Autopilot. Next Valuable AOS : 1/10 5:22:14
+[21:08:42]  [Auto]Max Elevation : 31.68° Please Keep Devices On.
+[21:09:18]  [Auto]Autopilot Stopped by User.
+[21:09:18]  [Auto]Stop Doppler Correction.
+[21:09:18]  [Auto]Finish Engaging.
+[21:09:18]  Tracking : Az 0, El 0.
+[21:09:19]  [Auto]Beacon Success : 0, Ping Success : 0 CMD Success : 0

@@ -1,0 +1,264 @@
+2025-12-31 01:04
+[01:04:59]  Connect to Switch Box.............Success.
+[01:04:59]  Connect to Rotator................Success.
+[01:04:59]  Connect to GS100..................Success.
+[01:04:59]  TM Port 13 bind success.
+[01:04:59]  BCN Port 31 bind success.
+[01:04:59]  RPT Port 25 bind success.
+[01:04:59]  Event Port 27 bind success.
+[01:04:59]  COSMIC Beacon Port 23 bind success.
+[01:04:59]  COSMIC Report Port 24 bind success.
+[01:05:07]  TLE "cubesat" Download Completed.
+[01:22:58]  Start Engaging.
+[01:22:58]  Tracking : Az 15, El 0.
+[01:22:59]  Start Doppler Correction.
+[01:23:00]  Tracking : Az 15, El 0.
+[01:25:58]  Forked Safe Amplifier Process.(ON, Timer)
+[01:26:51]  Tracking : Az 16, El 3.
+[01:26:53]  Tracking : Az 16, El 3.
+[01:26:56]  Ping Failed.
+[01:27:03]  Received Beacon from port : 31.
+
+[01:27:12]  Ping Success at node 5, 475ms
+[01:27:13]  Received Beacon from port : 31.
+
+[01:27:16]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x5 0x1e 0xa2
+[01:27:17]  Received Report from port : 25.
+[01:27:19]  Received Report from port : 25.
+[01:27:21]  Received Report from port : 25.
+[01:27:23]  Received Beacon from port : 31.
+
+[01:27:31]  Tracking : Az 17, El 6.
+[01:27:32]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x6 0x70
+[01:27:33]  Tracking : Az 17, El 6.
+[01:27:33]  Received Beacon from port : 31.
+
+[01:27:35]  Received Report from port : 25.
+[01:27:37]  Received Report from port : 25.
+[01:27:39]  Received Report from port : 25.
+[01:27:53]  Received Beacon from port : 31.
+
+[01:28:03]  Received Beacon from port : 31.
+
+[01:28:06]  Tracking : Az 18, El 9.
+[01:28:08]  Tracking : Az 18, El 9.
+[01:28:13]  Received Beacon from port : 31.
+
+[01:28:27]  Tracking : Az 19, El 11.
+[01:28:43]  Received Beacon from port : 31.
+
+[01:28:46]  Tracking : Az 20, El 13.
+[01:28:53]  Received Beacon from port : 31.
+
+[01:29:11]  Tracking : Az 21, El 16.
+[01:29:13]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x1 0x34 0x77
+[01:29:14]  Received Report from port : 25.
+[01:29:16]  Received Report from port : 25.
+[01:29:18]  Received Report from port : 25.
+[01:29:32]  Tracking : Az 22, El 19.
+[01:29:33]  Received Beacon from port : 31.
+
+[01:29:43]  Received Beacon from port : 31.
+
+[01:29:51]  Tracking : Az 24, El 22.
+[01:29:53]  Received Beacon from port : 31.
+
+[01:30:03]  Received Beacon from port : 31.
+
+[01:30:07]  Tracking : Az 26, El 25.
+[01:30:22]  Tracking : Az 27, El 28.
+[01:30:24]  Tracking : Az 28, El 28.
+[00:09:32]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x1 0x3f 0xb
+[01:30:27]  Received Report from port : 25.
+[01:30:29]  Received Report from port : 25.
+[01:30:31]  Received Report from port : 25.
+[01:30:33]  Received Beacon from port : 31.
+
+[01:30:35]  Tracking : Az 29, El 31.
+[01:30:37]  Tracking : Az 30, El 31.
+[01:30:43]  Received Beacon from port : 31.
+
+[01:30:46]  Tracking : Az 31, El 34.
+[01:30:56]  Tracking : Az 34, El 36.
+[01:31:03]  Tracking : Az 35, El 39.
+[01:31:03]  Received Beacon from port : 31.
+
+[01:31:09]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x1 0x3f 0x77
+[01:31:10]  Received Report from port : 25.
+[01:31:11]  Tracking : Az 38, El 41.
+[01:31:12]  Received Report from port : 25.
+[01:31:14]  Received Report from port : 25.
+[01:31:14]  Tracking : Az 39, El 42.
+[01:31:16]  Received Beacon from port : 31.
+
+[01:31:20]  Tracking : Az 41, El 44.
+[01:31:26]  Tracking : Az 44, El 46.
+[01:31:33]  Tracking : Az 47, El 49.
+[01:31:33]  Received Beacon from port : 31.
+
+[01:31:35]  Tracking : Az 48, El 50.
+[01:31:41]  Tracking : Az 52, El 52.
+[01:31:43]  Tracking : Az 53, El 53.
+[01:31:46]  [OK]CMD Packet Header: 0x65 0x18 0xc0 0x0 0x0 0x1 0x3f 0x7c
+[01:31:48]  Tracking : Az 57, El 54.
+[01:31:50]  Tracking : Az 58, El 55.
+[01:31:53]  Tracking : Az 61, El 56.
+[01:31:53]  Received Beacon from port : 31.
+
+[01:31:55]  Tracking : Az 63, El 57.
+[01:31:57]  [OK]CMD Packet Header: 0x65 0x18 0xc0 0x0 0x0 0x1 0x3f 0x7c
+[01:31:58]  Tracking : Az 66, El 58.
+[01:32:00]  Tracking : Az 68, El 58.
+[01:32:03]  Tracking : Az 71, El 59.
+[01:32:03]  Received Beacon from port : 31.
+
+[01:32:05]  Tracking : Az 73, El 60.
+[01:32:07]  Tracking : Az 76, El 60.
+[01:32:09]  Tracking : Az 78, El 61.
+[01:32:11]  Tracking : Az 81, El 61.
+[01:32:13]  Tracking : Az 83, El 62.
+[01:32:15]  Tracking : Az 86, El 62.
+[01:32:16]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x1 0x3f 0xb
+[01:32:17]  Received Report from port : 25.
+[01:32:17]  Tracking : Az 89, El 62.
+[01:32:19]  Received Report from port : 25.
+[01:32:19]  Tracking : Az 92, El 62.
+[01:32:21]  Received Report from port : 25.
+[01:32:21]  Tracking : Az 95, El 63.
+[01:32:23]  Tracking : Az 98, El 63.
+[01:32:25]  Tracking : Az 101, El 63.
+[01:32:27]  Tracking : Az 104, El 63.
+[01:32:29]  Tracking : Az 106, El 63.
+[01:32:31]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x1 0x37 0x7f
+[01:32:31]  Tracking : Az 109, El 62.
+[01:32:32]  Received Report from port : 25.
+[01:32:33]  Tracking : Az 112, El 62.
+[01:32:34]  Received Report from port : 25.
+[01:32:35]  Tracking : Az 115, El 62.
+[01:32:36]  Received Report from port : 25.
+[01:32:37]  Tracking : Az 118, El 62.
+[01:32:39]  Tracking : Az 120, El 61.
+[01:32:41]  Tracking : Az 123, El 61.
+[01:32:43]  Tracking : Az 126, El 60.
+[01:32:43]  Received Beacon from port : 31.
+
+[01:32:45]  Tracking : Az 128, El 60.
+[01:32:48]  Tracking : Az 131, El 59.
+[01:32:50]  Tracking : Az 133, El 58.
+[01:32:53]  Tracking : Az 136, El 57.
+[01:32:53]  Received Beacon from port : 31.
+
+[01:32:55]  Tracking : Az 138, El 57.
+[01:32:58]  Tracking : Az 141, El 56.
+[01:33:00]  Tracking : Az 143, El 55.
+[01:33:03]  Tracking : Az 145, El 54.
+[01:33:03]  Received Beacon from port : 31.
+
+[01:33:05]  Tracking : Az 147, El 53.
+[01:33:08]  Tracking : Az 149, El 52.
+[01:33:13]  Tracking : Az 152, El 50.
+[01:33:13]  Received Beacon from port : 31.
+
+[01:33:15]  Tracking : Az 153, El 49.
+[01:33:18]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x1 0x3b 0x7
+[01:33:19]  Received Report from port : 25.
+[01:33:19]  Tracking : Az 155, El 48.
+[01:33:21]  Received Report from port : 25.
+[01:33:23]  Received Report from port : 25.
+[01:33:25]  Tracking : Az 158, El 46.
+[01:33:27]  Tracking : Az 159, El 45.
+[01:33:32]  Tracking : Az 161, El 43.
+[01:33:38]  Tracking : Az 163, El 41.
+[01:33:47]  Tracking : Az 165, El 38.
+[01:33:49]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x44
+[01:33:50]  Received Report from port : 25.
+[01:33:52]  Received Report from port : 25.
+[01:33:54]  Received Report from port : 25.
+[01:33:56]  Tracking : Az 168, El 36.
+[01:33:58]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[01:34:00]  Received Report from port : 25.
+[01:34:02]  Received Report from port : 25.
+[01:34:04]  Received Report from port : 25.
+[01:34:04]  Tracking : Az 169, El 33.
+[01:34:07]  Tracking : Az 170, El 32.
+[01:34:13]  Received Beacon from port : 31.
+
+[01:34:15]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x1a 0x49
+[01:34:16]  Received Report from port : 25.
+[01:34:18]  Received Report from port : 25.
+[01:34:20]  Received Report from port : 25.
+[01:34:23]  Tracking : Az 173, El 29.
+[01:34:23]  Received Beacon from port : 31.
+
+[01:34:33]  Tracking : Az 174, El 26.
+[01:34:33]  Received Beacon from port : 31.
+
+[01:34:43]  Received Beacon from port : 31.
+
+[01:34:50]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x17 0x0
+[01:34:51]  Received Report from port : 25.
+[01:34:53]  Received Report from port : 25.
+[01:34:53]  Tracking : Az 176, El 22.
+[01:34:55]  Received Report from port : 25.
+[01:34:55]  Tracking : Az 176, El 22.
+[01:34:57]  Received Beacon from port : 31.
+
+[01:35:01]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[01:35:01]  Received Report from port : 25.
+[01:35:03]  Received Report from port : 25.
+[01:35:05]  Received Report from port : 25.
+[01:35:07]  Received Beacon from port : 31.
+
+[01:35:09]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x1 0x4d 0x9
+[01:35:11]  Tracking : Az 178, El 19.
+[01:35:27]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x1 0x50 0x1a
+[01:35:31]  Tracking : Az 179, El 16.
+[01:35:34]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x1 0x50 0x9
+[01:35:35]  Received Report from port : 25.
+[01:35:37]  Received Report from port : 25.
+[01:35:39]  Received Report from port : 25.
+[01:35:44]  Received Beacon from port : 31.
+
+[01:35:45]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x1 0x51 0x1b
+[01:35:51]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x1 0x51 0x9
+[01:36:03]  Tracking : Az 181, El 12.
+[01:36:05]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x1 0x51 0x1b
+[01:36:06]  Received Report from port : 25.
+[01:36:08]  Received Report from port : 25.
+[01:36:10]  Received Report from port : 25.
+[01:36:21]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x1 0x52 0xa
+[01:36:22]  Received Report from port : 25.
+[01:36:24]  Received Report from port : 25.
+[01:36:26]  Received Report from port : 25.
+[01:36:28]  Received Beacon from port : 31.
+
+[01:36:31]  Tracking : Az 182, El 9.
+[01:36:34]  Received Beacon from port : 31.
+
+[01:36:48]  [OK]CMD Packet Header: 0x18 0x65 0xc0 0x0 0x0 0x1 0x4a 0x3
+[01:36:49]  Received Report from port : 25.
+[01:36:51]  Received Report from port : 25.
+[01:36:53]  Received Report from port : 25.
+[01:36:55]  Received Beacon from port : 31.
+
+[01:37:04]  Received Beacon from port : 31.
+
+[01:37:14]  Received Beacon from port : 31.
+
+[01:37:16]  Tracking : Az 184, El 5.
+[01:37:18]  Tracking : Az 184, El 5.
+[01:37:24]  Received Beacon from port : 31.
+
+[01:37:34]  Received Beacon from port : 31.
+
+[01:37:44]  Received Beacon from port : 31.
+
+[01:38:00]  Tracking : Az 185, El 2.
+[01:38:14]  Received Beacon from port : 31.
+
+[01:38:24]  Received Beacon from port : 31.
+
+[01:38:47]  Forked Safe Amplifier Process. (OFF)
+[01:38:49]  Finish Engaging.
+[01:38:49]  Beacon Success : 41, Ping Success : 1
+[01:38:50]  Tracking : Az 0, El 0.

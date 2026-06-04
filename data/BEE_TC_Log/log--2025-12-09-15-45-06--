@@ -1,0 +1,39 @@
+[15:45:09]  Connect to Switch Box.............Success.
+[15:45:09]  Connect to Rotator................Success.
+[15:45:09]  Connect to GS100..................Success.
+[15:45:09]  TM Port 13 bind success.
+[15:45:09]  BCN Port 31 bind success.
+[15:45:09]  RPT Port 25 bind success.
+[15:48:21]  Start FTP Downlink.
+[15:48:25]  Received FTP Download Spec.
+[15:48:25]  Received FTP Download Spec. Filesize : 45704, CRC : 3446119361.
+[15:48:34]  Fail to complete ftp_download. Retcode : -2005
+[15:49:43]  Start FTP Downlink.
+[15:50:14]  Fail to complete ftp_download. Retcode : -5
+[15:50:26]  Start FTP Downlink.
+[15:50:31]  Received FTP Download Spec.
+[15:50:31]  Received FTP Download Spec. Filesize : 45704, CRC : 3446119361.
+[15:50:40]  Fail to complete ftp_download. Retcode : -2005
+[15:54:18]  Forked Safe Amplifier Process.(ON, Timer)
+[15:54:21]  Forked Safe Amplifier Process. (OFF)
+[15:54:23]  Start FTP Downlink.
+[15:54:28]  Received FTP Download Spec.
+[15:54:28]  Received FTP Download Spec. Filesize : 45704, CRC : 3446119361.
+[15:54:37]  Fail to complete ftp_download. Retcode : -2005
+[16:16:54]  Start FTP Downlink.
+[16:16:58]  Received FTP Download Spec.
+[16:16:58]  Received FTP Download Spec. Filesize : 45704, CRC : 3446119361.
+[16:17:05]  Fail to complete ftp_download. Retcode : -5
+[16:39:44]  Start FTP Downlink.
+[16:39:49]  Received FTP Download Spec.
+[16:39:49]  Received FTP Download Spec. Filesize : 45704, CRC : 3446119361.
+[16:39:50]  Received FTP Status Request.
+[16:39:50]  Start FTP Downlink. Total Chunk Size : 358
+[16:39:51]  Download : 0/358
+[16:39:51]  Download : 1/358
+[16:39:51]  Download : 2/358
+[16:39:52]  Download : 3/358
+[16:39:52]  Download : 4/358
+[16:39:52]  Download : 5/358
+[16:39:53]  Download : 6/358
+[16:39:53]  Download : 7/358

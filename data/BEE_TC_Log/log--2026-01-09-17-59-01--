@@ -1,0 +1,41 @@
+[17:59:03]  Connect to Switch Box.............Success.
+[17:59:03]  Connect to Rotator................Success.
+[17:59:03]  Connect to GS100..................Success.
+[17:59:03]  TM Port 13 bind success.
+[17:59:03]  BCN Port 31 bind success.
+[17:59:03]  RPT Port 25 bind success.
+[17:59:03]  Event Port 27 bind success.
+[17:59:03]  COSMIC Beacon Port 23 bind success.
+[17:59:03]  COSMIC Report Port 24 bind success.
+[17:59:16]  TLE "active" Download Completed.
+[17:59:27]  OPS 5712 (P/L 153)	Satellite decayed	
+[17:59:31]  PHASE 3B (AO-10)	Error: (elsq >= 1.0)	
+[17:59:33]  UOSAT 2 (UO-11)	Error: (e <= -0.001)	
+[17:59:56]  USA 65 (DSP 15)	Error: (e <= -0.001)	
+[17:59:57]  TDRS 5	Error: (e <= -0.001)	
+[17:59:58]  USA 75 (DSP 16)	Error: (e <= -0.001)	
+[18:00:03]  TDRS 6	Error: (e <= -0.001)	
+[18:00:42]  TLE "active" Download Completed.
+[18:00:51]  USA 164 (MILSTAR-2 3)	Error: (e <= -0.001)	
+[18:01:00]  NAVSTAR 51 (USA 166)	Error: (e <= -0.001)	
+[18:01:04]  USA 169 (MILSTAR-2 4)	Error: (e <= -0.001)	
+[18:01:34]  IRS-P6 (RESOURCESAT-1)	Error: (e <= -0.001)	
+[18:01:39]  SHIYAN-1 (SY-1)	Error: (e <= -0.001)	
+[18:01:41]  NAVSTAR 54 (USA 177)	Error: (e <= -0.001)	
+[18:01:43]  NAVSTAR 55 (USA 178)	Error: (e <= -0.001)	
+[18:01:54]  Generate : 0, 0, 8
+
+[18:01:54]  Generated Command Message.
+[18:01:54]  Generate : 0, 0, 8
+
+[18:01:54]  Generated Command Message.
+[18:01:55]  Generate : 0, 0, 8
+
+[18:01:55]  Generated Command Message.
+[18:01:55]  Generate : 0, 0, 8
+
+[18:01:55]  Generated Command Message.
+[18:02:01]  [Auto]Start AutoPilot.
+[18:02:01]  [Auto]Start Autopilot. Next Valuable AOS : 1/9 18:10:16
+[18:02:01]  [Auto]Max Elevation : 61.00° Please Keep Devices On.
+[18:05:16]  Azimuth Crossing Path(Counterclockwise)

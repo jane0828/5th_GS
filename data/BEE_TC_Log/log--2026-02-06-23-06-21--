@@ -1,0 +1,10 @@
+[23:06:37]  Connect to Switch Box.............Success.
+[23:06:37]  Connect to Rotator................Success.
+[23:06:37]  Connect to GS100..................Success.
+[23:06:37]  TM Port 13 bind success.
+[23:06:37]  BCN Port 31 bind success.
+[23:06:37]  RPT Port 25 bind success.
+[23:06:37]  Event Port 27 bind success.
+[23:06:37]  COSMIC Beacon Port 23 bind success.
+[23:06:37]  COSMIC Report Port 24 bind success.
+[23:06:54]  TLE "cubesat" Download Completed.

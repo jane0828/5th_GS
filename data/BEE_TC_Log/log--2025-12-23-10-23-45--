@@ -1,0 +1,10 @@
+[10:23:58]  Connect to Switch Box.............Success.
+[10:23:58]  Connect to Rotator................Success.
+[10:23:58]  Connect to GS100..................Success.
+[10:23:58]  TM Port 13 bind success.
+[10:23:58]  BCN Port 31 bind success.
+[10:23:58]  RPT Port 25 bind success.
+[10:23:58]  Event Port 27 bind success.
+[10:24:18]  TLE "cubesat" Download Completed.
+[10:24:19]  OBJECT-A	Error: (e <= -0.001)	
+[10:24:21]  OBJECT J	Error: (e <= -0.001)	

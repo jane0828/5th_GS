@@ -1,0 +1,183 @@
+[12:34:23]  Connect to Switch Box.............Success.
+[12:34:23]  Connect to Rotator................Success.
+[12:34:23]  Connect to GS100..................Success.
+[12:34:23]  TM Port 13 bind success.
+[12:34:23]  BCN Port 31 bind success.
+[12:34:23]  RPT Port 25 bind success.
+[12:34:38]  TLE "cubesat" Download Completed.
+[12:58:45]  Start Engaging.
+[12:58:45]  Tracking : Az 173, El 0.
+[12:58:47]  Tracking : Az 173, El 0.
+[12:58:48]  Start Doppler Correction.
+[12:58:49]  Tracking : Az 173, El 0.
+[12:58:51]  Tracking : Az 173, El 0.
+[12:58:53]  Tracking : Az 173, El 0.
+[12:58:55]  Tracking : Az 173, El 0.
+[12:58:57]  Tracking : Az 173, El 0.
+[12:58:59]  Tracking : Az 173, El 0.
+[12:59:01]  Tracking : Az 173, El 0.
+[12:59:03]  Tracking : Az 173, El 0.
+[12:59:05]  Tracking : Az 173, El 0.
+[12:59:07]  Tracking : Az 173, El 0.
+[12:59:09]  Tracking : Az 173, El 0.
+[12:59:11]  Tracking : Az 173, El 0.
+[12:59:13]  Tracking : Az 173, El 0.
+[12:59:15]  Tracking : Az 173, El 0.
+[13:03:00]  Tracking : Az 173, El 3.
+[13:03:14]  Tracking : Az 174, El 4.
+[13:03:40]  Tracking : Az 174, El 6.
+[13:03:53]  Forked Safe Amplifier Process.(ON, Timer)
+[13:04:03]  Tracking : Az 175, El 8.
+[13:04:07]  Ping Success at node 5, 471ms
+[13:04:17]  Ping Success at node 5, 469ms
+[13:04:25]  Tracking : Az 176, El 10.
+[13:04:26]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:04:48]  Ping Success at node 5, 465ms
+[13:04:53]  Tracking : Az 177, El 13.
+[13:05:16]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x0
+[13:05:17]  Tracking : Az 178, El 16.
+[13:05:35]  Ping Success at node 5, 471ms
+[13:05:39]  Tracking : Az 179, El 19.
+[13:05:41]  Tracking : Az 179, El 19.
+[13:05:51]  Tracking : Az 180, El 21.
+[13:05:53]  Tracking : Az 180, El 21.
+[13:06:03]  Tracking : Az 181, El 23.
+[13:06:05]  Tracking : Az 181, El 23.
+[13:06:13]  Tracking : Az 182, El 25.
+[13:06:28]  Tracking : Az 184, El 28.
+[13:06:40]  Tracking : Az 185, El 31.
+[13:06:45]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x14 0x62
+[13:06:52]  Tracking : Az 187, El 34.
+[13:06:55]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x14 0x62
+[13:06:55]  Tracking : Az 188, El 35.
+[13:07:02]  Ping Success at node 5, 468ms
+[13:07:06]  Tracking : Az 190, El 38.
+[13:07:09]  Tracking : Az 191, El 39.
+[13:07:11]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x14 0x62
+[13:07:18]  Tracking : Az 193, El 42.
+[13:07:21]  Tracking : Az 194, El 43.
+[13:07:26]  Tracking : Az 196, El 45.
+[13:07:33]  Ping Success at node 5, 462ms
+[13:07:34]  Tracking : Az 199, El 48.
+[13:07:37]  Tracking : Az 200, El 49.
+[13:07:38]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x14 0x62
+[13:07:42]  Tracking : Az 203, El 51.
+[13:07:44]  Tracking : Az 204, El 52.
+[13:07:48]  Ping Success at node 5, 457ms
+[13:07:49]  Tracking : Az 207, El 54.
+[13:07:51]  Tracking : Az 208, El 54.
+[13:07:56]  Tracking : Az 212, El 56.
+[13:07:58]  Tracking : Az 213, El 57.
+[13:08:01]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x14 0x62
+[13:08:01]  Tracking : Az 216, El 58.
+[13:08:03]  Tracking : Az 218, El 59.
+[13:08:06]  Tracking : Az 221, El 60.
+[13:08:08]  Tracking : Az 223, El 61.
+[13:08:09]  Ping Success at node 5, 467ms
+[13:08:11]  Tracking : Az 226, El 62.
+[13:08:13]  Tracking : Az 229, El 62.
+[13:08:15]  Tracking : Az 231, El 63.
+[13:08:17]  Tracking : Az 234, El 63.
+[13:08:19]  Tracking : Az 237, El 64.
+[13:08:21]  Tracking : Az 240, El 64.
+[13:08:23]  Tracking : Az 243, El 65.
+[13:08:25]  Tracking : Az 246, El 65.
+[13:08:27]  Tracking : Az 249, El 65.
+[13:08:28]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x14 0x62
+[13:08:29]  Tracking : Az 252, El 65.
+[13:08:31]  Tracking : Az 255, El 66.
+[13:08:33]  Tracking : Az 259, El 66.
+[13:08:35]  Tracking : Az 262, El 66.
+[13:08:36]  Ping Failed.
+[13:08:37]  Tracking : Az 265, El 65.
+[13:08:39]  Tracking : Az 269, El 65.
+[13:08:41]  Tracking : Az 272, El 65.
+[13:08:43]  Ping Failed.
+[13:08:43]  Tracking : Az 275, El 65.
+[13:08:45]  Tracking : Az 278, El 64.
+[13:08:47]  Tracking : Az 281, El 64.
+[13:08:48]  Ping Failed.
+[13:08:49]  Tracking : Az 283, El 63.
+[13:08:51]  Tracking : Az 286, El 63.
+[13:08:53]  Tracking : Az 289, El 62.
+[13:08:55]  Tracking : Az 291, El 62.
+[13:08:56]  Ping Failed.
+[13:08:58]  Tracking : Az 294, El 61.
+[13:09:00]  Tracking : Az 297, El 60.
+[13:09:02]  Tracking : Az 299, El 59.
+[13:09:06]  Tracking : Az 302, El 58.
+[13:09:08]  Ping Failed.
+[13:09:08]  Tracking : Az 304, El 57.
+[13:09:10]  Tracking : Az 306, El 56.
+[13:09:15]  Tracking : Az 309, El 54.
+[13:09:17]  Tracking : Az 310, El 53.
+[13:09:18]  Ping Success at node 5, 465ms
+[13:09:21]  Tracking : Az 313, El 52.
+[13:09:25]  [OBC]Ping Failed.
+[13:09:27]  Tracking : Az 316, El 50.
+[13:09:29]  Tracking : Az 317, El 49.
+[13:09:34]  Ping Success at node 5, 463ms
+[13:09:36]  Tracking : Az 320, El 46.
+[13:09:37]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x14 0x62
+[13:09:38]  Tracking : Az 321, El 45.
+[13:09:46]  [OK]CMD Packet Header: 0x18 0x50 0xc0 0x0 0x0 0x1 0x14 0x62
+[13:09:47]  Tracking : Az 324, El 42.
+[13:09:49]  Tracking : Az 324, El 41.
+[13:09:50]  Ping Success at node 5, 457ms
+[13:09:58]  Tracking : Az 327, El 39.
+[13:10:03]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:10:08]  Tracking : Az 329, El 35.
+[13:10:14]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x0
+[13:10:23]  Tracking : Az 331, El 31.
+[13:10:25]  Tracking : Az 332, El 31.
+[13:10:36]  Tracking : Az 333, El 28.
+[13:10:49]  Tracking : Az 335, El 26.
+[13:11:00]  Tracking : Az 336, El 23.
+[13:11:16]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x1 0x5 0x63
+[13:11:19]  Ping Success at node 5, 458ms
+[13:11:23]  Tracking : Az 337, El 19.
+[13:11:23]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x1 0x5 0x63
+[13:11:25]  Tracking : Az 338, El 19.
+[13:11:33]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x1 0x5 0x63
+[13:11:44]  Tracking : Az 339, El 16.
+[13:11:46]  Ping Failed.
+[13:11:50]  Ping Success at node 5, 459ms
+[13:12:17]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x1 0x5 0x63
+[13:12:17]  Tracking : Az 340, El 12.
+[13:12:19]  Tracking : Az 340, El 12.
+[13:12:24]  Ping Success at node 5, 469ms
+[13:12:30]  [OK]CMD Packet Header: 0x18 0x40 0xc0 0x0 0x0 0x1 0x5 0x63
+[13:12:45]  Tracking : Az 341, El 9.
+[13:12:47]  Ping Success at node 5, 468ms
+[13:12:51]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:13:00]  Ping Success at node 5, 462ms
+[13:13:06]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x0
+[13:13:13]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x1 0x14 0x47
+[13:13:18]  Tracking : Az 343, El 7.
+[13:13:20]  Ping Success at node 5, 466ms
+[13:13:31]  Ping Success at node 5, 464ms
+[13:13:42]  Ping Success at node 5, 474ms
+[13:13:52]  Ping Success at node 5, 464ms
+[13:13:57]  Tracking : Az 344, El 3.
+[13:13:57]  Ping Success at node 5, 474ms
+[13:13:59]  Tracking : Az 344, El 3.
+[13:14:03]  Ping Success at node 5, 474ms
+[13:14:16]  Ping Success at node 5, 470ms
+[13:14:24]  Ping Success at node 5, 465ms
+[13:14:35]  Ping Success at node 5, 464ms
+[13:14:44]  Ping Success at node 5, 466ms
+[13:14:52]  Ping Success at node 5, 471ms
+[13:15:03]  Ping Failed.
+[13:15:09]  Ping Failed.
+[13:15:16]  Ping Failed.
+[13:15:16]  Tracking : Az 173, El 0.
+[13:15:18]  Tracking : Az 173, El 0.
+[13:15:20]  Tracking : Az 173, El 0.
+[13:15:22]  Ping Failed.
+[13:15:22]  Tracking : Az 173, El 0.
+[13:15:24]  Tracking : Az 173, El 0.
+[13:15:24]  Forked Safe Amplifier Process. (OFF)
+[13:15:26]  Tracking : Az 173, El 0.
+[13:15:27]  You tried doppler correction with no engaging
+[13:15:28]  Finish Engaging.
+[13:15:28]  Beacon Success : 0, Ping Success : 27

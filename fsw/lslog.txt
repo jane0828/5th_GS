@@ -1,0 +1,25 @@
+total 20388
+-rw-------    1 root     root      18354816 Jan  1 00:01 00004231.bin
+-rw-r--r--    1 root     root        256000 Jan  1 00:04 ADCSOutputs
+-rwx------    1 root     root        524288 Jan  1 00:03 EEPROM.DAT
+drwx------    4 root     root           576 Jan  1 00:12 PerfTests
+-rwx------    1 root     root         37252 Jan  1 00:05 ax100_test
+drwx------    3 root     root           576 Jan  1 00:01 bin
+drwx------    4 root     root          4088 Jan  1 00:03 cf
+-rwx------    1 root     root       1337576 Jan  1 00:03 core-cpu1
+drwx------    3 root     root           592 Jan  1 00:06 cpu1
+-rw-r--r--    1 root     root           373 Jan  1 01:34 dflog.txt
+drwx------    4 root     root           288 Jan  1 00:07 exe
+drwxr-xr-x    2 root     root           232 Jan  1  2007 fill_obc
+drwxr-xr-x    2 root     root           960 Jan  1 00:03 hk
+-rwx------    1 root     root        284160 Jan  1 00:15 libcsp.so
+-rw-r--r--    1 root     root             0 Jan  1 01:55 lslog.txt
+-rw-------    1 root     root         19736 Jan  1 00:03 meow_lib.so
+drwxr-xr-x    5 root     root           944 Jan  1 00:03 misc
+drwxr-xr-x    2 root     root          1560 Jan  1 00:07 part_tests
+drwxr-xr-x    2 root     root           368 Jan  1 00:04 payload_client
+drwx------    4 root     root           568 Jan  1 00:24 perftests
+-rwx------    1 root     root          8544 Jan  1 00:18 setbaudto9600
+-rwx------    1 root     root         31348 Jan  1 00:10 stx_test
+drwxr-xr-x    2 root     root          1344 Jan  1 00:23 testcode_cleaning_2023-01-31
+drwx------    2 root     root          1736 Jan  1 00:05 tests
