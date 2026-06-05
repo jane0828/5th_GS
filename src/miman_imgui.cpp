@@ -156,33 +156,85 @@ char repeated_label[64];
 
 /********************************************5차 추가***************************************************/
 
-static int current_sat_mode = 0; // 0: BEE1000, 1: BEE1012, 2: Uelysys
-static int chosen_sat_mode = 0;
-static const char* sat_names[3] = { "BEE1000", "BEE1012", "Uelysys" };
-static const char* hmac_keys[3] = { "BEE1000", "BEE1012", "UELYSYS" };
+enum SatelliteGuiMode {
+    SAT_BEE1000 = 0,
+    SAT_BEE1012 = 1,
+    SAT_UELYSYS = 2,
+    SAT_GUI_MODE_COUNT
+};
+
+struct SatelliteGuiProfile {
+    const char* name;
+    const char* hmac_key;
+};
+
+static const SatelliteGuiProfile satellite_gui_profiles[SAT_GUI_MODE_COUNT] = {
+    { "BEE1000", "BEE1000" },
+    { "BEE1012", "BEE1012" },
+    { "Uelysys", "UELYSYS" },
+};
+
+static int current_sat_mode = SAT_BEE1000;
 static bool is_switching = false; // 상태 체크를 위함
 
 static bool show_satellite_select = false;
+
+static int GetCurrentSatelliteMode()
+{
+    if (current_sat_mode < 0 || current_sat_mode >= SAT_GUI_MODE_COUNT)
+        return SAT_BEE1000;
+    return current_sat_mode;
+}
+
+static const SatelliteGuiProfile& GetCurrentSatelliteProfile()
+{
+    return satellite_gui_profiles[GetCurrentSatelliteMode()];
+}
+
+static const SatelliteGuiProfile& GetSatelliteProfile(int mode)
+{
+    if (mode < 0 || mode >= SAT_GUI_MODE_COUNT)
+        return satellite_gui_profiles[SAT_BEE1000];
+    return satellite_gui_profiles[mode];
+}
 
 static void* SwitchSatelliteTask(void* arg)
 {
     extern Setup* setup;
     int mode = *(int*)arg;
+
+    if (mode < 0 || mode >= SAT_GUI_MODE_COUNT)
+    {
+        console.AddLog("[ERROR]##Invalid satellite mode for HMAC switch: %d", mode);
+        is_switching = false;
+        return NULL;
+    }
+
+    const SatelliteGuiProfile& profile = GetSatelliteProfile(mode);
     uint8_t target_node = setup->gs100_node; // 지상국의 gs100 노드
 
-    char target_key[32] = { 0 };
+    console.AddLog("Changing GS HMAC Key for %s...", profile.name); // 테스트 텍스트, 후에 수정가능
 
-    console.AddLog("Changing GS HMAC Key for %s...", sat_names[mode]); // 테스트 텍스트, 후에 수정가능
+    if (mode == SAT_BEE1000)
+    {
+        gs_rparam_set_int8(target_node, 5, 0x0010, 0xB00B, 100, 0);
+        console.AddLog("[OK]## Satellite Switched to: %s (TX HMAC disabled)", profile.name);
 
-    // RX 업데이트
-    gs_rparam_set_int8(target_node, 1, 0x0010, 0xB00B, 100, 1); //100은 수정 가능, 1은 테이블 번호 (rx table)
-    gs_rparam_set_string(target_node, 1, 0x0020, 0xB00B, 100, target_key, strlen(target_key) + 1);
+        is_switching = false; // 통신이 끝나면 플래그 해제 (다시 버튼 클릭 가능)
+        return NULL;
+    }
 
-    // TX 업데이트
+    uint8_t target_key[0x10] = { 0 };
+    size_t key_len = strlen(profile.hmac_key);
+    if (key_len > 0x10)
+        key_len = 0x10;
+
+    memcpy(target_key, profile.hmac_key, key_len);
+
     gs_rparam_set_int8(target_node, 5, 0x0010, 0xB00B, 100, 1);
-    gs_rparam_set_string(target_node, 5, 0x0020, 0xB00B, 100, target_key, strlen(target_key) + 1);
+    gs_rparam_set(target_node, 5, 0x0020, GS_PARAM_DATA, 0xB00B, 100, target_key, 0x10);
 
-    console.AddLog("[OK]## Satellite Switched to: %s", sat_names[mode]);
+    console.AddLog("[OK]## Satellite Switched to: %s (TX HMAC enabled)", profile.name);
 
     is_switching = false; // 통신이 끝나면 플래그 해제 (다시 버튼 클릭 가능)
     return NULL;
@@ -4771,9 +4823,9 @@ static void HMACWindow()
 
     ImGui::Text("Select Satellite");
 
-    for (int i = 0; i < 3; i++)
+    for (int i = 0; i < SAT_GUI_MODE_COUNT; i++)
     {
-        if (ImGui::RadioButton(sat_names[i], &current_sat_mode, i))
+        if (ImGui::RadioButton(satellite_gui_profiles[i].name, &current_sat_mode, i))
         {
             mode_arg = current_sat_mode;
             pthread_join(p_thread[14], NULL);
@@ -5017,9 +5069,7 @@ struct SubsystemRange {
 
 static const SubsystemRange FilterRules[] = {
     { 1, 0, 9 },      // Test & Debug
-    { 2, 10, 46 },    // EPS range 1
-    { 2, 209, 211 },  // EPS range 2
-    { 2, 216, 216 },  // EPS single
+    { 2, 10, 46 },    // EPS 
     { 3, 47, 88 },    // ADCS
     { 4, 160, 163 },  // UANT
     { 5, 164, 167 },  // SP range 1
@@ -5757,34 +5807,37 @@ static void DrawCmdGeneratorBody(bool initial_mode)
 
     case 12: {
         static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_GET_COUNTERS_CC;
+        static uint8_t fnccode = EPS_P80_POWER_IF_GET_CC;
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epsp80powerifgetcmd.Payload.csp_node);
+        ImGui::InputText("name", command->epsp80powerifgetcmd.Payload.name, EPS_P80_POWER_IF_NAME_LEN);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_GetCountersCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_P80_Power_If_Get_Cmd_t) - 7};
 
-            memcpy(command->epsgetcounterscmd.CmdHeader, &mid, 2);
-            memcpy(command->epsgetcounterscmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsgetcounterscmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsgetcounterscmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsp80powerifgetcmd.CmdHeader, &mid, 2);
+            memcpy(command->epsp80powerifgetcmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsp80powerifgetcmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsp80powerifgetcmd.CmdHeader + 6, &fnccode, 1);
 
-            command->epsgetcounterscmd.CmdHeader[7] = 0;
-            uint16_t total = sizeof(EPS_GetCountersCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsgetcounterscmd;
+            command->epsp80powerifgetcmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_P80_Power_If_Get_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsp80powerifgetcmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsgetcounterscmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsp80powerifgetcmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_GetCountersCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P80_Power_If_Get_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_GetCountersCmd_t);
-            memcpy(pkt->Data, &command->epsgetcounterscmd, sizeof(EPS_GetCountersCmd_t));
+            pkt->Length = sizeof(EPS_P80_Power_If_Get_Cmd_t);
+            memcpy(pkt->Data, &command->epsp80powerifgetcmd, sizeof(EPS_P80_Power_If_Get_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
@@ -5794,34 +5847,40 @@ static void DrawCmdGeneratorBody(bool initial_mode)
 
     case 13: {
         static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_GET_APPDATA_CC;
+        static uint8_t fnccode = EPS_P80_POWER_IF_SET_CC;
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+        
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epsp80powerifsetcmd.Payload.csp_node);
+        ImGui::InputScalar("mode", ImGuiDataType_U8, &command->epsp80powerifsetcmd.Payload.mode);
+        ImGui::InputScalar("on count", ImGuiDataType_U16, &command->epsp80powerifsetcmd.Payload.on_cnt);
+        ImGui::InputScalar("off count", ImGuiDataType_U16, &command->epsp80powerifsetcmd.Payload.off_cnt);
+        ImGui::InputText("name", command->epsp80powerifsetcmd.Payload.name, EPS_P80_POWER_IF_NAME_LEN);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_GetAppDataCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_P80_Power_If_Set_Cmd_t) - 7};
 
-            memcpy(command->epsgetappdatacmd.CmdHeader, &mid, 2);
-            memcpy(command->epsgetappdatacmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsgetappdatacmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsgetappdatacmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsp80powerifsetcmd.CmdHeader, &mid, 2);
+            memcpy(command->epsp80powerifsetcmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsp80powerifsetcmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsp80powerifsetcmd.CmdHeader + 6, &fnccode, 1);
 
-            command->epsgetappdatacmd.CmdHeader[7] = 0;
-            uint16_t total = sizeof(EPS_GetAppDataCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsgetappdatacmd;
+            command->epsp80powerifsetcmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_P80_Power_If_Set_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsp80powerifsetcmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsgetappdatacmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsp80powerifsetcmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_GetAppDataCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P80_Power_If_Set_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_GetAppDataCmd_t);
-            memcpy(pkt->Data, &command->epsgetappdatacmd, sizeof(EPS_GetAppDataCmd_t));
+            pkt->Length = sizeof(EPS_P80_Power_If_Set_Cmd_t);
+            memcpy(pkt->Data, &command->epsp80powerifsetcmd, sizeof(EPS_P80_Power_If_Set_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
@@ -5831,122 +5890,112 @@ static void DrawCmdGeneratorBody(bool initial_mode)
 
     case 14: {
         static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_REPORT_APPDATA_CC;
+        static uint8_t fnccode = EPS_P80_POWER_IF_LIST_CC; 
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epsp80poweriflistcmd.Payload.csp_node);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_ReportAppDataCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_P80_Power_If_List_Cmd_t) - 7};
 
-            memcpy(command->epsreportappdatacmd.CmdHeader, &mid, 2);
-            memcpy(command->epsreportappdatacmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsreportappdatacmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsreportappdatacmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsp80poweriflistcmd.CmdHeader, &mid, 2);
+            memcpy(command->epsp80poweriflistcmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsp80poweriflistcmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsp80poweriflistcmd.CmdHeader + 6, &fnccode, 1);
 
-            command->epsreportappdatacmd.CmdHeader[7] = 0;
-            uint16_t total = sizeof(EPS_ReportAppDataCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsreportappdatacmd;
+            command->epsp80poweriflistcmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_P80_Power_If_List_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsp80poweriflistcmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsreportappdatacmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsp80poweriflistcmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_ReportAppDataCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P80_Power_If_List_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_ReportAppDataCmd_t);
-            memcpy(pkt->Data, &command->epsreportappdatacmd, sizeof(EPS_ReportAppDataCmd_t));
+            pkt->Length = sizeof(EPS_P80_Power_If_List_Cmd_t);
+            memcpy(pkt->Data, &command->epsp80poweriflistcmd, sizeof(EPS_P80_Power_If_List_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
     case 15: {
-        static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_DOCK_SET_CHANNEL_SINGLE_CC;
+        static uint16_t msgid = 0x1875; 
+        static uint8_t fnccode = EPS_GET_HK_CC;
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
 
-        ImGui::InputScalar("channel", ImGuiDataType_U8,
-                           &command->epsp60docksetchannelsinglecmd.Payload.channel);
-        ImGui::InputScalar("value", ImGuiDataType_U8,
-                           &command->epsp60docksetchannelsinglecmd.Payload.value);
-        ImGui::InputScalar("timeout", ImGuiDataType_U16,
-                           &command->epsp60docksetchannelsinglecmd.Payload.timeout);
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epsgethkcmd.Payload.csp_node);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_Dock_SetChannelSingleCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_Get_HK_Cmd_t) - 7};
 
-            memcpy(command->epsp60docksetchannelsinglecmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60docksetchannelsinglecmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60docksetchannelsinglecmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60docksetchannelsinglecmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsgethkcmd.CmdHeader, &mid, 2);
+            memcpy(command->epsgethkcmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsgethkcmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsgethkcmd.CmdHeader + 6, &fnccode, 1);
 
-            command->epsp60docksetchannelsinglecmd.CmdHeader[7] = 0;
-            uint16_t total = sizeof(EPS_P60_Dock_SetChannelSingleCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60docksetchannelsinglecmd;
+            command->epsgethkcmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_Get_HK_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsgethkcmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60docksetchannelsinglecmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsgethkcmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_Dock_SetChannelSingleCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_Get_HK_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_Dock_SetChannelSingleCmd_t);
-            memcpy(pkt->Data, &command->epsp60docksetchannelsinglecmd,
-                   sizeof(EPS_P60_Dock_SetChannelSingleCmd_t));
+            pkt->Length = sizeof(EPS_Get_HK_Cmd_t);
+            memcpy(pkt->Data, &command->epsgethkcmd, sizeof(EPS_Get_HK_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
     case 16: {
         static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_DOCK_GET_CHANNEL_SINGLE_CC;
+        static uint8_t fnccode = EPS_GET_HK_ALL_CC;
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
-
-        ImGui::InputScalar("channel", ImGuiDataType_U8,
-                           &command->epsp60dockgetchannelsinglecmd.Payload.channel);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_Dock_GetChannelSingleCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_Get_HK_All_Cmd_t) - 7};
 
-            memcpy(command->epsp60dockgetchannelsinglecmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60dockgetchannelsinglecmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60dockgetchannelsinglecmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60dockgetchannelsinglecmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsgethkallcmd.CmdHeader, &mid, 2);
+            memcpy(command->epsgethkallcmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsgethkallcmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsgethkallcmd.CmdHeader + 6, &fnccode, 1);
 
-            command->epsp60dockgetchannelsinglecmd.CmdHeader[7] = 0;
-            uint16_t total = sizeof(EPS_P60_Dock_GetChannelSingleCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60dockgetchannelsinglecmd;
+            command->epsgethkallcmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_Get_HK_All_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsgethkallcmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60dockgetchannelsinglecmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsgethkallcmd.CmdHeader + 7, &crc, 1);
 
             packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_Dock_GetChannelSingleCmd_t));
+                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_Get_HK_All_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_Dock_GetChannelSingleCmd_t);
-            memcpy(pkt->Data, &command->epsp60dockgetchannelsinglecmd,
-                   sizeof(EPS_P60_Dock_GetChannelSingleCmd_t));
+            pkt->Length = sizeof(EPS_Get_HK_All_Cmd_t);
+            memcpy(pkt->Data, &command->epsgethkallcmd,
+                   sizeof(EPS_Get_HK_All_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
@@ -5955,56 +6004,46 @@ static void DrawCmdGeneratorBody(bool initial_mode)
     }
 
     case 17: {
-        static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_DOCK_SET_CHANNELS_CC;
+        static uint16_t msgid = 0x1875;  // 실제 msgid로 변경 필요
+        static uint8_t fnccode = EPS_P80_GND_WDT_CLEAR_CC;  // 실제 function code로 변경 필요
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
 
-        for (uint8_t i = 0; i < 13; i++) {
-            char label[16];
-            snprintf(label, sizeof(label), "ch[%u]", i);
-            ImGui::InputScalar(label, ImGuiDataType_U8,
-                               &command->epsp60docksetchannelscmd.Payload.channels[i]);
-        }
-        ImGui::InputScalar("timeout", ImGuiDataType_U16,
-                           &command->epsp60docksetchannelscmd.Payload.timeout);
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epsp80gndwatchdogclearcmd.Payload.csp_node);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_Dock_SetChannelsCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_P80_Gnd_Watchdog_Clear_Cmd_t) - 7};
 
-            memcpy(command->epsp60docksetchannelscmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60docksetchannelscmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60docksetchannelscmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60docksetchannelscmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsp80gndwatchdogclearcmd.CmdHeader, &mid, 2);
+            memcpy(command->epsp80gndwatchdogclearcmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsp80gndwatchdogclearcmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsp80gndwatchdogclearcmd.CmdHeader + 6, &fnccode, 1);
 
-            command->epsp60docksetchannelscmd.CmdHeader[7] = 0;
-            uint16_t total = sizeof(EPS_P60_Dock_SetChannelsCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60docksetchannelscmd;
+            command->epsp80gndwatchdogclearcmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_P80_Gnd_Watchdog_Clear_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsp80gndwatchdogclearcmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60docksetchannelscmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsp80gndwatchdogclearcmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_Dock_SetChannelsCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P80_Gnd_Watchdog_Clear_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_Dock_SetChannelsCmd_t);
-            memcpy(pkt->Data, &command->epsp60docksetchannelscmd,
-                   sizeof(EPS_P60_Dock_SetChannelsCmd_t));
+            pkt->Length = sizeof(EPS_P80_Gnd_Watchdog_Clear_Cmd_t);
+            memcpy(pkt->Data, &command->epsp80gndwatchdogclearcmd, sizeof(EPS_P80_Gnd_Watchdog_Clear_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
     case 18: {
         static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_DOCK_GET_CHANNELS_CC;
+        static uint8_t fnccode = EPS_P80_GND_WDT_CLEAR_ALL_CC;
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
@@ -6013,27 +6052,27 @@ static void DrawCmdGeneratorBody(bool initial_mode)
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_Dock_GetChannelsCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_P80_Gnd_Watchdog_Clear_All_Cmd_t) - 7};
 
-            memcpy(command->epsp60dockgetchannelscmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60dockgetchannelscmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60dockgetchannelscmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60dockgetchannelscmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsp80gndwatchdogclearallcmd.CmdHeader, &mid, 2);
+            memcpy(command->epsp80gndwatchdogclearallcmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsp80gndwatchdogclearallcmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsp80gndwatchdogclearallcmd.CmdHeader + 6, &fnccode, 1);
 
-            command->epsp60dockgetchannelscmd.CmdHeader[7] = 0;
-            uint16_t total = sizeof(EPS_P60_Dock_GetChannelsCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60dockgetchannelscmd;
+            command->epsp80gndwatchdogclearallcmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_P80_Gnd_Watchdog_Clear_All_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsp80gndwatchdogclearallcmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60dockgetchannelscmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsp80gndwatchdogclearallcmd.CmdHeader + 7, &crc, 1);
 
             packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_Dock_GetChannelsCmd_t));
+            (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_Get_HK_All_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_Dock_GetChannelsCmd_t);
-            memcpy(pkt->Data, &command->epsp60dockgetchannelscmd,
-                   sizeof(EPS_P60_Dock_GetChannelsCmd_t));
+            pkt->Length = sizeof(EPS_Get_HK_All_Cmd_t);
+            memcpy(pkt->Data, &command->epsp80gndwatchdogclearallcmd,
+                   sizeof(EPS_Get_HK_All_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
@@ -6042,1354 +6081,608 @@ static void DrawCmdGeneratorBody(bool initial_mode)
     }
 
     case 19: {
-        static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_PDU_SET_CHANNEL_SINGLE_CC;
+        static uint16_t msgid = 0x1875;  
+        static uint8_t fnccode = EPS_RPARAM_GET_CC;  
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
 
-        ImGui::InputScalar("channel", ImGuiDataType_U8,
-                           &command->epsp60pdusetchannelsinglecmd.Payload.channel);
-        ImGui::InputScalar("value", ImGuiDataType_U8,
-                           &command->epsp60pdusetchannelsinglecmd.Payload.value);
-        ImGui::InputScalar("timeout", ImGuiDataType_U32,
-                           &command->epsp60pdusetchannelsinglecmd.Payload.timeout);
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epsrparamgetcmd.Payload.csp_node);
+        ImGui::InputScalar("table id", ImGuiDataType_U8, &command->epsrparamgetcmd.Payload.table_id);
+        ImGui::InputScalar("addr", ImGuiDataType_U16, &command->epsrparamgetcmd.Payload.addr);
+        ImGui::InputScalar("type", ImGuiDataType_U8, &command->epsrparamgetcmd.Payload.type);
+        ImGui::InputScalar("size", ImGuiDataType_U16, &command->epsrparamgetcmd.Payload.size);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_PDU_SetChannelSingleCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_RParam_Get_Cmd_t) - 7};
 
-            memcpy(command->epsp60pdusetchannelsinglecmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60pdusetchannelsinglecmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60pdusetchannelsinglecmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60pdusetchannelsinglecmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsrparamgetcmd.CmdHeader, &mid, 2);
+            memcpy(command->epsrparamgetcmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsrparamgetcmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsrparamgetcmd.CmdHeader + 6, &fnccode, 1);
 
-            command->epsp60pdusetchannelsinglecmd.CmdHeader[7] = 0;
-            uint16_t total = sizeof(EPS_P60_PDU_SetChannelSingleCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60pdusetchannelsinglecmd;
+            command->epsrparamgetcmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_RParam_Get_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsrparamgetcmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60pdusetchannelsinglecmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsrparamgetcmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_PDU_SetChannelSingleCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_RParam_Get_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_PDU_SetChannelSingleCmd_t);
-            memcpy(pkt->Data, &command->epsp60pdusetchannelsinglecmd,
-                   sizeof(EPS_P60_PDU_SetChannelSingleCmd_t));
+            pkt->Length = sizeof(EPS_RParam_Get_Cmd_t);
+            memcpy(pkt->Data, &command->epsrparamgetcmd, sizeof(EPS_RParam_Get_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
     case 20: {
-        static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_PDU_GET_CHANNEL_SINGLE_CC;
+        static uint16_t msgid = 0x1875;  
+        static uint8_t fnccode = EPS_RPARAM_SET_CC;  
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
 
-        ImGui::InputScalar("channel", ImGuiDataType_U8,
-                           &command->epsp60pdugetchannelsinglecmd.Payload.channel);
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epsrparamsetcmd.Payload.csp_node);
+        ImGui::InputScalar("table id", ImGuiDataType_U8, &command->epsrparamsetcmd.Payload.table_id);
+        ImGui::InputScalar("addr", ImGuiDataType_U16, &command->epsrparamsetcmd.Payload.addr);
+        ImGui::InputScalar("type", ImGuiDataType_U8, &command->epsrparamsetcmd.Payload.type);
+        ImGui::InputText("data", (char *)command->epsrparamsetcmd.Payload.data, EPS_RPARAM_DATA_MAX_LEN);
+        ImGui::InputScalar("size", ImGuiDataType_U16, &command->epsrparamsetcmd.Payload.size);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_PDU_GetChannelSingleCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_RParam_Set_Cmd_t) - 7};
 
-            memcpy(command->epsp60pdugetchannelsinglecmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60pdugetchannelsinglecmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60pdugetchannelsinglecmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60pdugetchannelsinglecmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsrparamsetcmd.CmdHeader, &mid, 2);
+            memcpy(command->epsrparamsetcmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsrparamsetcmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsrparamsetcmd.CmdHeader + 6, &fnccode, 1);
 
-
-            command->epsp60pdugetchannelsinglecmd.CmdHeader[7] = 0;
-            uint16_t total = sizeof(EPS_P60_PDU_GetChannelSingleCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60pdugetchannelsinglecmd;
+            command->epsrparamsetcmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_RParam_Set_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsrparamsetcmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60pdugetchannelsinglecmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsrparamsetcmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_PDU_GetChannelSingleCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_RParam_Set_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_PDU_GetChannelSingleCmd_t);
-            memcpy(pkt->Data, &command->epsp60pdugetchannelsinglecmd,
-                   sizeof(EPS_P60_PDU_GetChannelSingleCmd_t));
+            pkt->Length = sizeof(EPS_RParam_Set_Cmd_t);
+            memcpy(pkt->Data, &command->epsrparamsetcmd, sizeof(EPS_RParam_Set_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
     case 21: {
-        static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_PDU_SET_CHANNELS_CC;
+        static uint16_t msgid = 0x1875;  
+        static uint8_t fnccode = EPS_RPARAM_GET_FULL_TABLE_CC; 
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
 
-        for (uint8_t i = 0; i < 9; i++) {
-            char label[16];
-            snprintf(label, sizeof(label), "ch[%u]", i);
-            ImGui::InputScalar(label, ImGuiDataType_U8,
-                               &command->epsp60pdusetchannelscmd.Payload.channels[i]);
-        }
-        ImGui::InputScalar("timeout", ImGuiDataType_U32,
-                           &command->epsp60pdusetchannelscmd.Payload.timeout);
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epsrparamgetfulltablecmd.Payload.csp_node);
+        ImGui::InputScalar("table id", ImGuiDataType_U8, &command->epsrparamgetfulltablecmd.Payload.table_id);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_PDU_SetChannelsCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_RParam_Get_Full_Table_Cmd_t) - 7};
 
-            memcpy(command->epsp60pdusetchannelscmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60pdusetchannelscmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60pdusetchannelscmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60pdusetchannelscmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsrparamgetfulltablecmd.CmdHeader, &mid, 2);
+            memcpy(command->epsrparamgetfulltablecmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsrparamgetfulltablecmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsrparamgetfulltablecmd.CmdHeader + 6, &fnccode, 1);
 
-            command->epsp60pdusetchannelscmd.CmdHeader[7] = 0;
-
-            uint16_t total = sizeof(EPS_P60_PDU_SetChannelsCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60pdusetchannelscmd;
+            command->epsrparamgetfulltablecmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_RParam_Get_Full_Table_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsrparamgetfulltablecmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60pdusetchannelscmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsrparamgetfulltablecmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_PDU_SetChannelsCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_RParam_Get_Full_Table_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_PDU_SetChannelsCmd_t);
-            memcpy(pkt->Data, &command->epsp60pdusetchannelscmd,
-                   sizeof(EPS_P60_PDU_SetChannelsCmd_t));
+            pkt->Length = sizeof(EPS_RParam_Get_Full_Table_Cmd_t);
+            memcpy(pkt->Data, &command->epsrparamgetfulltablecmd, sizeof(EPS_RParam_Get_Full_Table_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
+
     }
 
     case 22: {
-        static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_PDU_GET_CHANNELS_CC;
+        static uint16_t msgid = 0x1875;  
+        static uint8_t fnccode = EPS_RPARAM_SAVE_ALL_CC; 
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epsrparamsaveallcmd.Payload.csp_node);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_PDU_GetChannelsCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_RParam_Save_All_Cmd_t) - 7};
 
-            memcpy(command->epsp60pdugetchannelscmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60pdugetchannelscmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60pdugetchannelscmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60pdugetchannelscmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsrparamsaveallcmd.CmdHeader, &mid, 2);
+            memcpy(command->epsrparamsaveallcmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsrparamsaveallcmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsrparamsaveallcmd.CmdHeader + 6, &fnccode, 1);
 
-            uint16_t total = sizeof(EPS_P60_PDU_GetChannelsCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60pdugetchannelscmd;
+            command->epsrparamsaveallcmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_RParam_Save_All_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsrparamsaveallcmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60pdugetchannelscmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsrparamsaveallcmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_PDU_GetChannelsCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_RParam_Save_All_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_PDU_GetChannelsCmd_t);
-            memcpy(pkt->Data, &command->epsp60pdugetchannelscmd,
-                   sizeof(EPS_P60_PDU_GetChannelsCmd_t));
+            pkt->Length = sizeof(EPS_RParam_Save_All_Cmd_t);
+            memcpy(pkt->Data, &command->epsrparamsaveallcmd, sizeof(EPS_RParam_Save_All_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
     case 23: {
         static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_ACU_SET_MPPT_MODE_CC;
+        static uint8_t fnccode = EPS_RPARAM_TABLE_SAVE_CC;
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
 
-        ImGui::InputScalar("mode", ImGuiDataType_U8,
-                           &command->epsp60acusetmpptmodecmd.Payload.mode);
-        ImGui::InputScalar("timeout", ImGuiDataType_U32,
-                           &command->epsp60acusetmpptmodecmd.Payload.timeout);
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epsrparamtablesavecmd.Payload.csp_node);
+        ImGui::InputScalar("table id", ImGuiDataType_U8, &command->epsrparamtablesavecmd.Payload.table_id);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_ACU_SetMpptModeCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_RParam_Table_Save_Cmd_t) - 7};
 
-            memcpy(command->epsp60acusetmpptmodecmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60acusetmpptmodecmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60acusetmpptmodecmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60acusetmpptmodecmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsrparamtablesavecmd.CmdHeader, &mid, 2);
+            memcpy(command->epsrparamtablesavecmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsrparamtablesavecmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsrparamtablesavecmd.CmdHeader + 6, &fnccode, 1);
 
-            uint16_t total = sizeof(EPS_P60_ACU_SetMpptModeCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60acusetmpptmodecmd;
+            command->epsrparamtablesavecmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_RParam_Table_Save_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsrparamtablesavecmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60acusetmpptmodecmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsrparamtablesavecmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_ACU_SetMpptModeCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_RParam_Table_Save_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_ACU_SetMpptModeCmd_t);
-            memcpy(pkt->Data, &command->epsp60acusetmpptmodecmd,
-                   sizeof(EPS_P60_ACU_SetMpptModeCmd_t));
+            pkt->Length = sizeof(EPS_RParam_Table_Save_Cmd_t);
+            memcpy(pkt->Data, &command->epsrparamtablesavecmd, sizeof(EPS_RParam_Table_Save_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
     case 24: {
         static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_ACU_GET_MPPT_MODE_CC;
+        static uint8_t fnccode = EPS_RPARAM_TABLE_LOAD_CC;
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epsrparamtableloadcmd.Payload.csp_node);
+        ImGui::InputScalar("table id", ImGuiDataType_U8, &command->epsrparamtableloadcmd.Payload.table_id);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_ACU_GetMpptModeCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_RParam_Table_Load_Cmd_t) - 7};
 
-            memcpy(command->epsp60acugetmpptmodecmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60acugetmpptmodecmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60acugetmpptmodecmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60acugetmpptmodecmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsrparamtableloadcmd.CmdHeader, &mid, 2);
+            memcpy(command->epsrparamtableloadcmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsrparamtableloadcmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsrparamtableloadcmd.CmdHeader + 6, &fnccode, 1);
 
-            uint16_t total = sizeof(EPS_P60_ACU_GetMpptModeCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60acugetmpptmodecmd;
+            command->epsrparamtableloadcmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_RParam_Table_Load_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsrparamtableloadcmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60acugetmpptmodecmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsrparamtableloadcmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_ACU_GetMpptModeCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_RParam_Table_Load_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_ACU_GetMpptModeCmd_t);
-            memcpy(pkt->Data, &command->epsp60acugetmpptmodecmd,
-                   sizeof(EPS_P60_ACU_GetMpptModeCmd_t));
+            pkt->Length = sizeof(EPS_RParam_Table_Load_Cmd_t);
+            memcpy(pkt->Data, &command->epsrparamtableloadcmd, sizeof(EPS_RParam_Table_Load_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
     case 25: {
         static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_DOCK_GET_TABLE_HK_CC;
+        static uint8_t fnccode = EPS_RPARAM_SAVE_TO_STORE_CC;
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epsrparamsavetostorecmd.Payload.csp_node);
+        ImGui::InputScalar("table id", ImGuiDataType_U8, &command->epsrparamsavetostorecmd.Payload.table_id);
+        ImGui::InputText("store", command->epsrparamsavetostorecmd.Payload.store, EPS_RPARAM_STORE_NAME_LEN);
+        ImGui::InputText("slot", command->epsrparamsavetostorecmd.Payload.slot, EPS_RPARAM_STORE_SLOT_LEN);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_Dock_GetTableHkCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_RParam_Save_To_Store_Cmd_t) - 7};
 
-            memcpy(command->epsp60dockgettablehkcmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60dockgettablehkcmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60dockgettablehkcmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60dockgettablehkcmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsrparamsavetostorecmd.CmdHeader, &mid, 2);
+            memcpy(command->epsrparamsavetostorecmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsrparamsavetostorecmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsrparamsavetostorecmd.CmdHeader + 6, &fnccode, 1);
 
-
-            command->epsp60dockgettablehkcmd.CmdHeader[7] = 0;
-            uint16_t total = sizeof(EPS_P60_Dock_GetTableHkCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60dockgettablehkcmd;
+            command->epsrparamsavetostorecmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_RParam_Save_To_Store_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsrparamsavetostorecmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60dockgettablehkcmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsrparamsavetostorecmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_Dock_GetTableHkCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_RParam_Save_To_Store_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_Dock_GetTableHkCmd_t);
-            memcpy(pkt->Data, &command->epsp60dockgettablehkcmd,
-                   sizeof(EPS_P60_Dock_GetTableHkCmd_t));
+            pkt->Length = sizeof(EPS_RParam_Save_To_Store_Cmd_t);
+            memcpy(pkt->Data, &command->epsrparamsavetostorecmd, sizeof(EPS_RParam_Save_To_Store_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
     case 26: {
         static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_DOCK_GET_TABLE_CONF_CC;
+        static uint8_t fnccode = EPS_RPARAM_LOAD_FROM_STORE_CC;
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epsrparamloadfromstorecmd.Payload.csp_node);
+        ImGui::InputScalar("table id", ImGuiDataType_U8, &command->epsrparamloadfromstorecmd.Payload.table_id);
+        ImGui::InputText("store", command->epsrparamloadfromstorecmd.Payload.store, EPS_RPARAM_STORE_NAME_LEN);
+        ImGui::InputText("slot", command->epsrparamloadfromstorecmd.Payload.slot, EPS_RPARAM_STORE_SLOT_LEN);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_Dock_GetTableConfCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_RParam_Load_From_Store_Cmd_t) - 7};
 
-            memcpy(command->epsp60dockgettableconfcmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60dockgettableconfcmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60dockgettableconfcmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60dockgettableconfcmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epsrparamloadfromstorecmd.CmdHeader, &mid, 2);
+            memcpy(command->epsrparamloadfromstorecmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epsrparamloadfromstorecmd.CmdHeader + 4, len, 2);
+            memcpy(command->epsrparamloadfromstorecmd.CmdHeader + 6, &fnccode, 1);
 
-            uint16_t total = sizeof(EPS_P60_Dock_GetTableConfCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60dockgettableconfcmd;
+            command->epsrparamloadfromstorecmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_RParam_Load_From_Store_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epsrparamloadfromstorecmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60dockgettableconfcmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epsrparamloadfromstorecmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_Dock_GetTableConfCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_RParam_Load_From_Store_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_Dock_GetTableConfCmd_t);
-            memcpy(pkt->Data, &command->epsp60dockgettableconfcmd,
-                   sizeof(EPS_P60_Dock_GetTableConfCmd_t));
+            pkt->Length = sizeof(EPS_RParam_Load_From_Store_Cmd_t);
+            memcpy(pkt->Data, &command->epsrparamloadfromstorecmd, sizeof(EPS_RParam_Load_From_Store_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
     case 27: {
         static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_DOCK_GET_TABLE_CAL_CC;
+        static uint8_t fnccode = EPS_CSP_PING_CC;
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epscsppingcmd.Payload.csp_node);
+        ImGui::InputScalar("size", ImGuiDataType_U16, &command->epscsppingcmd.Payload.size);
+        ImGui::InputScalar("opts", ImGuiDataType_U8, &command->epscsppingcmd.Payload.opts);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_Dock_GetTableCalCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_CSP_Ping_Cmd_t) - 7};
 
-            memcpy(command->epsp60dockgettablecalcmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60dockgettablecalcmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60dockgettablecalcmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60dockgettablecalcmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epscsppingcmd.CmdHeader, &mid, 2);
+            memcpy(command->epscsppingcmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epscsppingcmd.CmdHeader + 4, len, 2);
+            memcpy(command->epscsppingcmd.CmdHeader + 6, &fnccode, 1);
 
-            uint16_t total = sizeof(EPS_P60_Dock_GetTableCalCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60dockgettablecalcmd;
+            command->epscsppingcmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_CSP_Ping_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epscsppingcmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60dockgettablecalcmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epscsppingcmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_Dock_GetTableCalCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_CSP_Ping_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_Dock_GetTableCalCmd_t);
-            memcpy(pkt->Data, &command->epsp60dockgettablecalcmd,
-                   sizeof(EPS_P60_Dock_GetTableCalCmd_t));
+            pkt->Length = sizeof(EPS_CSP_Ping_Cmd_t);
+            memcpy(pkt->Data, &command->epscsppingcmd, sizeof(EPS_CSP_Ping_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
     case 28: {
         static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_PDU_GET_TABLE_HK_CC;
+        static uint8_t fnccode = EPS_CSP_REBOOT_CC;
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epscsprebootcmd.Payload.csp_node);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_PDU_GetTableHkCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_CSP_Reboot_Cmd_t) - 7};
 
-            memcpy(command->epsp60pdugettablehkcmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60pdugettablehkcmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60pdugettablehkcmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60pdugettablehkcmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epscsprebootcmd.CmdHeader, &mid, 2);
+            memcpy(command->epscsprebootcmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epscsprebootcmd.CmdHeader + 4, len, 2);
+            memcpy(command->epscsprebootcmd.CmdHeader + 6, &fnccode, 1);
 
-            uint16_t total = sizeof(EPS_P60_PDU_GetTableHkCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60pdugettablehkcmd;
+            command->epscsprebootcmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_CSP_Reboot_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epscsprebootcmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60pdugettablehkcmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epscsprebootcmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_PDU_GetTableHkCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_CSP_Reboot_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_PDU_GetTableHkCmd_t);
-            memcpy(pkt->Data, &command->epsp60pdugettablehkcmd,
-                   sizeof(EPS_P60_PDU_GetTableHkCmd_t));
+            pkt->Length = sizeof(EPS_CSP_Reboot_Cmd_t);
+            memcpy(pkt->Data, &command->epscsprebootcmd, sizeof(EPS_CSP_Reboot_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
-    case 29: {
+    case 29:{
         static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_PDU_GET_TABLE_CONF_CC;
+        static uint8_t fnccode = EPS_CSP_PS_CC;
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epscsppscmd.Payload.csp_node);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_PDU_GetTableConfCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_CSP_PS_Cmd_t) - 7};
 
-            memcpy(command->epsp60pdugettableconfcmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60pdugettableconfcmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60pdugettableconfcmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60pdugettableconfcmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epscsppscmd.CmdHeader, &mid, 2);
+            memcpy(command->epscsppscmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epscsppscmd.CmdHeader + 4, len, 2);
+            memcpy(command->epscsppscmd.CmdHeader + 6, &fnccode, 1);
 
-            uint16_t total = sizeof(EPS_P60_PDU_GetTableConfCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60pdugettableconfcmd;
+            command->epscsppscmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_CSP_PS_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epscsppscmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60pdugettableconfcmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epscsppscmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_PDU_GetTableConfCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_CSP_PS_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_PDU_GetTableConfCmd_t);
-            memcpy(pkt->Data, &command->epsp60pdugettableconfcmd,
-                   sizeof(EPS_P60_PDU_GetTableConfCmd_t));
+            pkt->Length = sizeof(EPS_CSP_PS_Cmd_t);
+            memcpy(pkt->Data, &command->epscsppscmd, sizeof(EPS_CSP_PS_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
-    case 30: {
+    case 30:{
         static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_PDU_GET_TABLE_CAL_CC;
+        static uint8_t fnccode = EPS_CSP_MEMFREE_CC;
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epscspmemfreecmd.Payload.csp_node);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_PDU_GetTableCalCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_CSP_MemFree_Cmd_t) - 7};
 
-            memcpy(command->epsp60pdugettablecalcmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60pdugettablecalcmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60pdugettablecalcmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60pdugettablecalcmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epscspmemfreecmd.CmdHeader, &mid, 2);
+            memcpy(command->epscspmemfreecmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epscspmemfreecmd.CmdHeader + 4, len, 2);
+            memcpy(command->epscspmemfreecmd.CmdHeader + 6, &fnccode, 1);
 
-            uint16_t total = sizeof(EPS_P60_PDU_GetTableCalCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60pdugettablecalcmd;
+            command->epscspmemfreecmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_CSP_MemFree_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epscspmemfreecmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60pdugettablecalcmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epscspmemfreecmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_PDU_GetTableCalCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_CSP_MemFree_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_PDU_GetTableCalCmd_t);
-            memcpy(pkt->Data, &command->epsp60pdugettablecalcmd,
-                   sizeof(EPS_P60_PDU_GetTableCalCmd_t));
+            pkt->Length = sizeof(EPS_CSP_MemFree_Cmd_t);
+            memcpy(pkt->Data, &command->epscspmemfreecmd, sizeof(EPS_CSP_MemFree_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
-    case 31: {
+    case 31:{
         static uint16_t msgid = 0x1875;
-        static uint8_t fnccode = EPS_P60_ACU_GET_TABLE_HK_CC;
+        static uint8_t fnccode = EPS_CSP_BUF_FREE_CC;
 
         ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
         ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epscspbuffreecmd.Payload.csp_node);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
             uint8_t seq[2] = {0xC0, 0x00};
-            uint8_t len[2] = {0x00, sizeof(EPS_P60_ACU_GetTableHkCmd_t) - 7};
+            uint8_t len[2] = {0x00, sizeof(EPS_CSP_BufFree_Cmd_t) - 7};
 
-            memcpy(command->epsp60acugettablehkcmd.CmdHeader, &mid, 2);
-            memcpy(command->epsp60acugettablehkcmd.CmdHeader + 2, seq, 2);
-            memcpy(command->epsp60acugettablehkcmd.CmdHeader + 4, len, 2);
-            memcpy(command->epsp60acugettablehkcmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epscspbuffreecmd.CmdHeader, &mid, 2);
+            memcpy(command->epscspbuffreecmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epscspbuffreecmd.CmdHeader + 4, len, 2);
+            memcpy(command->epscspbuffreecmd.CmdHeader + 6, &fnccode, 1);
 
-            uint16_t total = sizeof(EPS_P60_ACU_GetTableHkCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60acugettablehkcmd;
+            command->epscspbuffreecmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_CSP_BufFree_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epscspbuffreecmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
-            memcpy(command->epsp60acugettablehkcmd.CmdHeader + 7, &crc, 1);
+            memcpy(command->epscspbuffreecmd.CmdHeader + 7, &crc, 1);
 
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_P60_ACU_GetTableHkCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_CSP_Reboot_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length = sizeof(EPS_P60_ACU_GetTableHkCmd_t);
-            memcpy(pkt->Data, &command->epsp60acugettablehkcmd,
-                   sizeof(EPS_P60_ACU_GetTableHkCmd_t));
+            pkt->Length = sizeof(EPS_CSP_Reboot_Cmd_t);
+            memcpy(pkt->Data, &command->epscspbuffreecmd, sizeof(EPS_CSP_Reboot_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
-    // 32 : EPS_P60_ACU_GET_TABLE_CONF_CC  (No-Arg)
-    case 32: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_ACU_GET_TABLE_CONF_CC;
+    case 32:{
+        static uint16_t msgid = 0x1875;
+        static uint8_t fnccode = EPS_CSP_UPTIME_CC;
 
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
+        ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
+        ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+        ImGui::InputScalar("csp node", ImGuiDataType_U8, &command->epscspuptimecmd.Payload.csp_node);
 
         if (ImGui::Button("Generate CMD")) {
             WriteSystemName(msgid);
             uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {0x00,
-                               (uint8_t)(sizeof(EPS_P60_ACU_GetTableConfCmd_t) - 7)};
+            uint8_t seq[2] = {0xC0, 0x00};
+            uint8_t len[2] = {0x00, sizeof(EPS_CSP_Uptime_Cmd_t) - 7};
 
-            memcpy(command->epsp60acugettableconfcmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60acugettableconfcmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60acugettableconfcmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60acugettableconfcmd.CmdHeader + 6, &fnccode, 1);
+            memcpy(command->epscspuptimecmd.CmdHeader, &mid, 2);
+            memcpy(command->epscspuptimecmd.CmdHeader + 2, seq, 2);
+            memcpy(command->epscspuptimecmd.CmdHeader + 4, len, 2);
+            memcpy(command->epscspuptimecmd.CmdHeader + 6, &fnccode, 1);
 
-            uint16_t total = sizeof(EPS_P60_ACU_GetTableConfCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60acugettableconfcmd;
+            command->epscspuptimecmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(EPS_CSP_Uptime_Cmd_t);
+            const uint8_t *p = (const uint8_t *)&command->epscspuptimecmd;
             uint8_t crc = 0xFF;
             while (total--) crc ^= *(p++);
+            memcpy(command->epscspuptimecmd.CmdHeader + 7, &crc, 1);
 
-            memcpy(command->epsp60acugettableconfcmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 +
-                                 sizeof(EPS_P60_ACU_GetTableConfCmd_t));
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(EPS_CSP_Uptime_Cmd_t));
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_ACU_GetTableConfCmd_t);
-            memcpy(pkt->Data, &command->epsp60acugettableconfcmd,
-                   sizeof(EPS_P60_ACU_GetTableConfCmd_t));
+            pkt->Length = sizeof(EPS_CSP_Uptime_Cmd_t);
+            memcpy(pkt->Data, &command->epscspuptimecmd, sizeof(EPS_CSP_Uptime_Cmd_t));
 
             pthread_join(p_thread[4], NULL);
             pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
         }
-        break;
     }
 
-    // 33 : EPS_P60_ACU_GET_TABLE_CAL_CC  (No-Arg)
-    case 33: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_ACU_GET_TABLE_CAL_CC;
+    
 
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
 
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {0x00,
-                               (uint8_t)(sizeof(EPS_P60_ACU_GetTableCalCmd_t) - 7)};
 
-            memcpy(command->epsp60acugettablecalcmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60acugettablecalcmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60acugettablecalcmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60acugettablecalcmd.CmdHeader + 6, &fnccode, 1);
 
-            uint16_t total = sizeof(EPS_P60_ACU_GetTableCalCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->epsp60acugettablecalcmd;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
+    //     /********************************************************************/
+    // /*                       ADCS Commands (47~)                        */
+    // /********************************************************************/
 
-            memcpy(command->epsp60acugettablecalcmd.CmdHeader + 7, &crc, 1);
+    // /* 47 : ADCS NoOp (CC 0) */
+    // case 47: {
+    //     static uint16_t msgid   = ADCS_CMD_ID;      // 0x1865
+    //     static uint8_t  fnccode = ADCS_NOOP_CC;     // 0
 
-            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 +
-                                 sizeof(EPS_P60_ACU_GetTableCalCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_ACU_GetTableCalCmd_t);
-            memcpy(pkt->Data, &command->epsp60acugettablecalcmd,
-                   sizeof(EPS_P60_ACU_GetTableCalCmd_t));
+    //     ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
+    //     ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
 
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
+    //     if (ImGui::Button("Generate CMD")) {
 
-    // 34 : EPS_P60_DOCK_RESET_GND_WDT_CC
-    case 34: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_DOCK_RESET_GND_WDT_CC;
+    //         WriteSystemName(msgid);
+    //         uint16_t mid  = htons(msgid);
+    //         uint8_t  seq[2] = {0xC0, 0x00};
+    //         uint8_t  len[2] = {0x00, sizeof(ADCS_NoopCmd_t) - 7};
 
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
+    //         memcpy(command->adcsnoopcmd.CmdHeader,     &mid, 2);
+    //         memcpy(command->adcsnoopcmd.CmdHeader + 2, seq,  2);
+    //         memcpy(command->adcsnoopcmd.CmdHeader + 4, len,  2);
+    //         memcpy(command->adcsnoopcmd.CmdHeader + 6, &fnccode, 1);
 
-        ImGui::InputScalar("timeout (Dock)", ImGuiDataType_U32,
-                           &command->epsp60dockresetgndwdtcmd.Payload.timeout);
+    //         uint16_t total = sizeof(ADCS_NoopCmd_t);
+    //         const uint8_t *p = (const uint8_t *)&command->adcsnoopcmd;
+    //         uint8_t crc = 0xFF;
+    //         while (total--) crc ^= *(p++);
 
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {
-                0x00,
-                (uint8_t)(sizeof(EPS_P60_Dock_ResetGndWdtCmd_t) - 7)
-            };
+    //         memcpy(command->adcsnoopcmd.CmdHeader + 7, &crc, 1);
 
-            memcpy(command->epsp60dockresetgndwdtcmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60dockresetgndwdtcmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60dockresetgndwdtcmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60dockresetgndwdtcmd.CmdHeader + 6, &fnccode, 1);
+    //         packetsign *pkt =
+    //             (packetsign *)malloc(2 + 2 + 4 + sizeof(ADCS_NoopCmd_t));
+    //         pkt->Identifier = HVD_TEST;
+    //         pkt->PacketType = MIM_PT_TMTC_TEST;
+    //         pkt->Length     = sizeof(ADCS_NoopCmd_t);
+    //         memcpy(pkt->Data, &command->adcsnoopcmd,
+    //                sizeof(ADCS_NoopCmd_t));
 
-            uint16_t total = sizeof(EPS_P60_Dock_ResetGndWdtCmd_t);
-            const uint8_t *p =
-                (const uint8_t *)&command->epsp60dockresetgndwdtcmd;
-
-            command->epsp60dockresetgndwdtcmd.CmdHeader[7] = 0;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->epsp60dockresetgndwdtcmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 +
-                                     sizeof(EPS_P60_Dock_ResetGndWdtCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_Dock_ResetGndWdtCmd_t);
-            memcpy(pkt->Data, &command->epsp60dockresetgndwdtcmd,
-                   sizeof(EPS_P60_Dock_ResetGndWdtCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
-
-    // 35 : EPS_P60_PDU_RESET_GND_WDT_CC
-    case 35: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_PDU_RESET_GND_WDT_CC;
-
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
-
-        ImGui::InputScalar("timeout (PDU)", ImGuiDataType_U32,
-                           &command->epsp60pduresetgndwdtcmd.Payload.timeout);
-
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {
-                0x00,
-                (uint8_t)(sizeof(EPS_P60_PDU_ResetGndWdtCmd_t) - 7)
-            };
-
-            memcpy(command->epsp60pduresetgndwdtcmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60pduresetgndwdtcmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60pduresetgndwdtcmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60pduresetgndwdtcmd.CmdHeader + 6, &fnccode, 1);
-
-            uint16_t total = sizeof(EPS_P60_PDU_ResetGndWdtCmd_t);
-            const uint8_t *p =
-                (const uint8_t *)&command->epsp60pduresetgndwdtcmd;
-
-            command->epsp60pduresetgndwdtcmd.CmdHeader[7] = 0;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->epsp60pduresetgndwdtcmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 +
-                                     sizeof(EPS_P60_PDU_ResetGndWdtCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_PDU_ResetGndWdtCmd_t);
-            memcpy(pkt->Data, &command->epsp60pduresetgndwdtcmd,
-                   sizeof(EPS_P60_PDU_ResetGndWdtCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
-
-    // 36 : EPS_P60_ACU_RESET_GND_WDT_CC
-    case 36: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_ACU_RESET_GND_WDT_CC;
-
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
-
-        ImGui::InputScalar("timeout (ACU)", ImGuiDataType_U32,
-                           &command->epsp60acuresetgndwdtcmd.Payload.timeout);
-
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {
-                0x00,
-                (uint8_t)(sizeof(EPS_P60_ACU_ResetGndWdtCmd_t) - 7)
-            };
-
-            memcpy(command->epsp60acuresetgndwdtcmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60acuresetgndwdtcmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60acuresetgndwdtcmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60acuresetgndwdtcmd.CmdHeader + 6, &fnccode, 1);
-
-            uint16_t total = sizeof(EPS_P60_ACU_ResetGndWdtCmd_t);
-            const uint8_t *p =
-                (const uint8_t *)&command->epsp60acuresetgndwdtcmd;
-
-            command->epsp60acuresetgndwdtcmd.CmdHeader[7] = 0;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->epsp60acuresetgndwdtcmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 +
-                                     sizeof(EPS_P60_ACU_ResetGndWdtCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_ACU_ResetGndWdtCmd_t);
-            memcpy(pkt->Data, &command->epsp60acuresetgndwdtcmd,
-                   sizeof(EPS_P60_ACU_ResetGndWdtCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
-
-    // 37 : EPS_P60_GET_PARAM_CC
-    case 37: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_GET_PARAM_CC;
-
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
-
-        ImGui::InputScalar("node",     ImGuiDataType_U8,
-                           &command->epsp60getparamcmd.Payload.node);
-        ImGui::InputScalar("tableId",  ImGuiDataType_U8,
-                           &command->epsp60getparamcmd.Payload.tableId);
-        ImGui::InputScalar("addr",     ImGuiDataType_U16,
-                           &command->epsp60getparamcmd.Payload.addr);
-        ImGui::InputScalar("type",     ImGuiDataType_U8,
-                           &command->epsp60getparamcmd.Payload.type);
-        ImGui::InputScalar("size",     ImGuiDataType_U16,
-                           &command->epsp60getparamcmd.Payload.size);
-
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {
-                0x00,
-                (uint8_t)(sizeof(EPS_P60_GetParamCmd_t) - 7)
-            };
-
-            memcpy(command->epsp60getparamcmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60getparamcmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60getparamcmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60getparamcmd.CmdHeader + 6, &fnccode, 1);
-
-            uint16_t total = sizeof(EPS_P60_GetParamCmd_t);
-            const uint8_t *p =
-                (const uint8_t *)&command->epsp60getparamcmd;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->epsp60getparamcmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 +
-                                     sizeof(EPS_P60_GetParamCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_GetParamCmd_t);
-            memcpy(pkt->Data, &command->epsp60getparamcmd,
-                   sizeof(EPS_P60_GetParamCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
-
-    // 38 : EPS_P60_GET_PARAM_ARRAY_CC
-    case 38: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_GET_PARAM_ARRAY_CC;
-
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
-
-        ImGui::InputScalar("node",     ImGuiDataType_U8,
-                           &command->epsp60getparamarraycmd.Payload.node);
-        ImGui::InputScalar("tableId",  ImGuiDataType_U8,
-                           &command->epsp60getparamarraycmd.Payload.tableId);
-        ImGui::InputScalar("addr",     ImGuiDataType_U16,
-                           &command->epsp60getparamarraycmd.Payload.addr);
-        ImGui::InputScalar("type",     ImGuiDataType_U8,
-                           &command->epsp60getparamarraycmd.Payload.type);
-        ImGui::InputScalar("size",     ImGuiDataType_U16,
-                           &command->epsp60getparamarraycmd.Payload.size);
-        ImGui::InputScalar("count",    ImGuiDataType_U16,
-                           &command->epsp60getparamarraycmd.Payload.count);
-
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {
-                0x00,
-                (uint8_t)(sizeof(EPS_P60_GetParamArrayCmd_t) - 7)
-            };
-
-            memcpy(command->epsp60getparamarraycmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60getparamarraycmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60getparamarraycmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60getparamarraycmd.CmdHeader + 6, &fnccode, 1);
-
-            uint16_t total = sizeof(EPS_P60_GetParamArrayCmd_t);
-            const uint8_t *p =
-                (const uint8_t *)&command->epsp60getparamarraycmd;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->epsp60getparamarraycmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 +
-                                     sizeof(EPS_P60_GetParamArrayCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_GetParamArrayCmd_t);
-            memcpy(pkt->Data, &command->epsp60getparamarraycmd,
-                   sizeof(EPS_P60_GetParamArrayCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
-
-    // 39 : EPS_P60_SET_PARAM_CC
-    case 39: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_SET_PARAM_CC;
-
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
-
-        ImGui::InputScalar("node",     ImGuiDataType_U8,
-                           &command->epsp60setparamcmd.Payload.node);
-        ImGui::InputScalar("tableId",  ImGuiDataType_U8,
-                           &command->epsp60setparamcmd.Payload.tableId);
-        ImGui::InputScalar("addr",     ImGuiDataType_U16,
-                           &command->epsp60setparamcmd.Payload.addr);
-        ImGui::InputScalar("type",     ImGuiDataType_U8,
-                           &command->epsp60setparamcmd.Payload.type);
-        ImGui::InputScalar("size",     ImGuiDataType_U16,
-                           &command->epsp60setparamcmd.Payload.size);
-        ImGui::InputScalar("timeout",  ImGuiDataType_U16,
-                           &command->epsp60setparamcmd.Payload.timeout);
-
-        for (uint8_t i = 0; i < sizeof(command->epsp60setparamcmd.Payload.data); ++i) {
-            char label[32];
-            snprintf(label, sizeof(label), "data[%u]", i);
-            ImGui::InputScalar(label, ImGuiDataType_U8,
-                               &command->epsp60setparamcmd.Payload.data[i]);
-        }
-
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {
-                0x00,
-                (uint8_t)(sizeof(EPS_P60_SetParamCmd_t) - 7)
-            };
-
-            memcpy(command->epsp60setparamcmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60setparamcmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60setparamcmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60setparamcmd.CmdHeader + 6, &fnccode, 1);
-
-            uint16_t total = sizeof(EPS_P60_SetParamCmd_t);
-            const uint8_t *p =
-                (const uint8_t *)&command->epsp60setparamcmd;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->epsp60setparamcmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 +
-                                     sizeof(EPS_P60_SetParamCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_SetParamCmd_t);
-            memcpy(pkt->Data, &command->epsp60setparamcmd,
-                   sizeof(EPS_P60_SetParamCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
-
-    // 40 : EPS_P60_GET_TABLE_CC
-    case 40: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_GET_TABLE_CC;
-
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
-
-        ImGui::InputScalar("node",     ImGuiDataType_U8,
-                           &command->epsp60tablegetcmd.Payload.node);
-        ImGui::InputScalar("tableId",  ImGuiDataType_U8,
-                           &command->epsp60tablegetcmd.Payload.tableId);
-        ImGui::InputScalar("rowCount", ImGuiDataType_U8,
-                           &command->epsp60tablegetcmd.Payload.rowCount);
-        ImGui::InputScalar("size",     ImGuiDataType_U16,
-                           &command->epsp60tablegetcmd.Payload.size);
-
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {
-                0x00,
-                (uint8_t)(sizeof(EPS_P60_TableGetCmd_t) - 7)
-            };
-
-            memcpy(command->epsp60tablegetcmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60tablegetcmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60tablegetcmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60tablegetcmd.CmdHeader + 6, &fnccode, 1);
-
-            uint16_t total = sizeof(EPS_P60_TableGetCmd_t);
-            const uint8_t *p =
-                (const uint8_t *)&command->epsp60tablegetcmd;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->epsp60tablegetcmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 +
-                                     sizeof(EPS_P60_TableGetCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_TableGetCmd_t);
-            memcpy(pkt->Data, &command->epsp60tablegetcmd,
-                   sizeof(EPS_P60_TableGetCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
-
-    // 41 : EPS_P60_LOAD_TABLE_CC
-    case 41: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_LOAD_TABLE_CC;
-
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
-
-        ImGui::InputScalar("node",     ImGuiDataType_U8,
-                           &command->epsp60tableloadcmd.Payload.node);
-        ImGui::InputScalar("tableId",  ImGuiDataType_U8,
-                           &command->epsp60tableloadcmd.Payload.tableId);
-        ImGui::InputScalar("from",     ImGuiDataType_U8,
-                           &command->epsp60tableloadcmd.Payload.from);
-        ImGui::InputScalar("timeout",  ImGuiDataType_U16,
-                           &command->epsp60tableloadcmd.Payload.timeout);
-
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {
-                0x00,
-                (uint8_t)(sizeof(EPS_P60_TableLoadCmd_t) - 7)
-            };
-
-            memcpy(command->epsp60tableloadcmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60tableloadcmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60tableloadcmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60tableloadcmd.CmdHeader + 6, &fnccode, 1);
-
-            uint16_t total = sizeof(EPS_P60_TableLoadCmd_t);
-            const uint8_t *p =
-                (const uint8_t *)&command->epsp60tableloadcmd;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->epsp60tableloadcmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 +
-                                     sizeof(EPS_P60_TableLoadCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_TableLoadCmd_t);
-            memcpy(pkt->Data, &command->epsp60tableloadcmd,
-                   sizeof(EPS_P60_TableLoadCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
-
-    // 42 : EPS_P60_SAVE_TABLE_CC
-    case 42: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_SAVE_TABLE_CC;
-
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
-
-        ImGui::InputScalar("node",     ImGuiDataType_U8,
-                           &command->epsp60tablesavecmd.Payload.node);
-        ImGui::InputScalar("tableId",  ImGuiDataType_U8,
-                           &command->epsp60tablesavecmd.Payload.tableId);
-        ImGui::InputScalar("to",       ImGuiDataType_U8,
-                           &command->epsp60tablesavecmd.Payload.to);
-        ImGui::InputScalar("timeout",  ImGuiDataType_U16,
-                           &command->epsp60tablesavecmd.Payload.timeout);
-
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {
-                0x00,
-                (uint8_t)(sizeof(EPS_P60_TableSaveCmd_t) - 7)
-            };
-
-            memcpy(command->epsp60tablesavecmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60tablesavecmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60tablesavecmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60tablesavecmd.CmdHeader + 6, &fnccode, 1);
-
-            uint16_t total = sizeof(EPS_P60_TableSaveCmd_t);
-            const uint8_t *p =
-                (const uint8_t *)&command->epsp60tablesavecmd;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->epsp60tablesavecmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 +
-                                     sizeof(EPS_P60_TableSaveCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_TableSaveCmd_t);
-            memcpy(pkt->Data, &command->epsp60tablesavecmd,
-                   sizeof(EPS_P60_TableSaveCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
-
-    // 43 : EPS_P60_TABLE_GET_STATIC_CC
-    case 43: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_TABLE_GET_STATIC_CC;
-
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
-
-        ImGui::InputScalar("node",     ImGuiDataType_U8,
-                           &command->epsp60tablegetstaticcmd.Payload.node);
-        ImGui::InputScalar("tableId",  ImGuiDataType_U8,
-                           &command->epsp60tablegetstaticcmd.Payload.tableId);
-        ImGui::InputScalar("rowCount", ImGuiDataType_U8,
-                           &command->epsp60tablegetstaticcmd.Payload.rowCount);
-        ImGui::InputScalar("size",     ImGuiDataType_U16,
-                           &command->epsp60tablegetstaticcmd.Payload.size);
-
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {
-                0x00,
-                (uint8_t)(sizeof(EPS_P60_TableGetStaticCmd_t) - 7)
-            };
-
-            memcpy(command->epsp60tablegetstaticcmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60tablegetstaticcmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60tablegetstaticcmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60tablegetstaticcmd.CmdHeader + 6, &fnccode, 1);
-
-            uint16_t total = sizeof(EPS_P60_TableGetStaticCmd_t);
-            const uint8_t *p =
-                (const uint8_t *)&command->epsp60tablegetstaticcmd;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->epsp60tablegetstaticcmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 +
-                                     sizeof(EPS_P60_TableGetStaticCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_TableGetStaticCmd_t);
-            memcpy(pkt->Data, &command->epsp60tablegetstaticcmd,
-                   sizeof(EPS_P60_TableGetStaticCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
-
-    // 44 : EPS_P60_TABLE_DUMP_STATIC_CC
-    case 44: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_TABLE_DUMP_STATIC_CC;
-
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
-
-        ImGui::InputScalar("size",    ImGuiDataType_U16,
-                           &command->epsp60tabledumpstaticcmd.Payload.size);
-
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {
-                0x00,
-                (uint8_t)(sizeof(EPS_P60_TableDumpStaticCmd_t) - 7)
-            };
-
-            memcpy(command->epsp60tabledumpstaticcmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60tabledumpstaticcmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60tabledumpstaticcmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60tabledumpstaticcmd.CmdHeader + 6, &fnccode, 1);
-
-            uint16_t total = sizeof(EPS_P60_TableDumpStaticCmd_t);
-            const uint8_t *p =
-                (const uint8_t *)&command->epsp60tabledumpstaticcmd;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->epsp60tabledumpstaticcmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 +
-                                     sizeof(EPS_P60_TableDumpStaticCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_TableDumpStaticCmd_t);
-            memcpy(pkt->Data, &command->epsp60tabledumpstaticcmd,
-                   sizeof(EPS_P60_TableDumpStaticCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
-
-    // 45 : EPS_P60_GET_DOCK_INFO_CC (No-Arg)
-    case 45: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_GET_DOCK_INFO_CC;
-
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
-
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {
-                0x00,
-                (uint8_t)(sizeof(EPS_P60_GetDockInfoCmd_t) - 7)
-            };
-
-            memcpy(command->epsp60getdockinfocmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60getdockinfocmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60getdockinfocmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60getdockinfocmd.CmdHeader + 6, &fnccode, 1);
-
-            uint16_t total = sizeof(EPS_P60_GetDockInfoCmd_t);
-            const uint8_t *p =
-                (const uint8_t *)&command->epsp60getdockinfocmd;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->epsp60getdockinfocmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 +
-                                     sizeof(EPS_P60_GetDockInfoCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_GetDockInfoCmd_t);
-            memcpy(pkt->Data, &command->epsp60getdockinfocmd,
-                   sizeof(EPS_P60_GetDockInfoCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
-
-    // 46 : EPS_P60_RESET_CC (No-Arg)
-    case 46: {
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_RESET_CC;
-
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
-
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {
-                0x00,
-                (uint8_t)(sizeof(EPS_P60_ResetCmd_t) - 7)
-            };
-
-            memcpy(command->epsp60resetcmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60resetcmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60resetcmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60resetcmd.CmdHeader + 6, &fnccode, 1);
-
-            uint16_t total = sizeof(EPS_P60_ResetCmd_t);
-            const uint8_t *p =
-                (const uint8_t *)&command->epsp60resetcmd;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->epsp60resetcmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 +
-                                     sizeof(EPS_P60_ResetCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_ResetCmd_t);
-            memcpy(pkt->Data, &command->epsp60resetcmd,
-                   sizeof(EPS_P60_ResetCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
-
-
-        /********************************************************************/
-    /*                       ADCS Commands (47~)                        */
-    /********************************************************************/
-
-    /* 47 : ADCS NoOp (CC 0) */
-    case 47: {
-        static uint16_t msgid   = ADCS_CMD_ID;      // 0x1865
-        static uint8_t  fnccode = ADCS_NOOP_CC;     // 0
-
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
-
-        if (ImGui::Button("Generate CMD")) {
-
-            WriteSystemName(msgid);
-            uint16_t mid  = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {0x00, sizeof(ADCS_NoopCmd_t) - 7};
-
-            memcpy(command->adcsnoopcmd.CmdHeader,     &mid, 2);
-            memcpy(command->adcsnoopcmd.CmdHeader + 2, seq,  2);
-            memcpy(command->adcsnoopcmd.CmdHeader + 4, len,  2);
-            memcpy(command->adcsnoopcmd.CmdHeader + 6, &fnccode, 1);
-
-            uint16_t total = sizeof(ADCS_NoopCmd_t);
-            const uint8_t *p = (const uint8_t *)&command->adcsnoopcmd;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->adcsnoopcmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 + sizeof(ADCS_NoopCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(ADCS_NoopCmd_t);
-            memcpy(pkt->Data, &command->adcsnoopcmd,
-                   sizeof(ADCS_NoopCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
+    //         pthread_join(p_thread[4], NULL);
+    //         pthread_create(&p_thread[4], NULL,
+    //                        task_uplink_onorbit, (void *)pkt);
+    //     }
+    //     break;
+    // }
 
     /* 48 : ADCS Reset Counters (CC 1) */
     case 48: {
@@ -13586,52 +12879,6 @@ case 213: { // FTP_filenameCmd
             break;
         }
 
-    case 216: { // es noop
-
-        static uint16_t msgid   = 0x1875;
-        static uint8_t  fnccode = EPS_P60_GET_DOCK_INFO_CC;
-
-        ImGui::InputScalar("msgid",   ImGuiDataType_U16, &msgid);
-        ImGui::InputScalar("fnccode", ImGuiDataType_U8,  &fnccode);
-
-        if (ImGui::Button("Generate CMD")) {
-            WriteSystemName(msgid);
-            uint16_t mid = htons(msgid);
-            uint8_t  seq[2] = {0xC0, 0x00};
-            uint8_t  len[2] = {
-                0x00,
-                (uint8_t)(sizeof(EPS_P60_GetDockInfoCmd_t) - 7)
-            };
-
-            memcpy(command->epsp60getdockinfocmd.CmdHeader,     &mid, 2);
-            memcpy(command->epsp60getdockinfocmd.CmdHeader + 2, seq,  2);
-            memcpy(command->epsp60getdockinfocmd.CmdHeader + 4, len,  2);
-            memcpy(command->epsp60getdockinfocmd.CmdHeader + 6, &fnccode, 1);
-
-            uint16_t total = sizeof(EPS_P60_GetDockInfoCmd_t);
-            const uint8_t *p =
-                (const uint8_t *)&command->epsp60getdockinfocmd;
-            uint8_t crc = 0xFF;
-            while (total--) crc ^= *(p++);
-
-            memcpy(command->epsp60getdockinfocmd.CmdHeader + 7, &crc, 1);
-
-            packetsign *pkt =
-                (packetsign *)malloc(2 + 2 + 4 +
-                                     sizeof(EPS_P60_GetDockInfoCmd_t));
-            pkt->Identifier = HVD_TEST;
-            pkt->PacketType = MIM_PT_TMTC_TEST;
-            pkt->Length     = sizeof(EPS_P60_GetDockInfoCmd_t);
-            memcpy(pkt->Data, &command->epsp60getdockinfocmd,
-                   sizeof(EPS_P60_GetDockInfoCmd_t));
-
-            pthread_join(p_thread[4], NULL);
-            pthread_create(&p_thread[4], NULL,
-                           task_uplink_onorbit, (void *)pkt);
-        }
-        break;
-    }
-
 
  //8192, 0, 15
 
@@ -17608,52 +16855,31 @@ void Initialize_CMDLabels()
     snprintf(Templabels[8], 64, "s64");
     snprintf(Templabels[9], 64, "float");
 
+    //5th EPS
     snprintf(Templabels[10], 64, "EPS NoOp");
     snprintf(Templabels[11], 64, "EPS Reset Counters");
-    snprintf(Templabels[12], 64, "EPS Get Counters");
-    snprintf(Templabels[13], 64, "EPS Get App Data");
-    snprintf(Templabels[14], 64, "EPS Report App Data");
-    snprintf(Templabels[15], 64, "EPS_P60_Dock Set Channel Single");
-    snprintf(Templabels[16], 64, "EPS_P60_Dock Get Channel Single");
-    snprintf(Templabels[17], 64, "EPS_P60_Dock Set Channels");
-    snprintf(Templabels[18], 64, "EPS_P60_Dock Get Channels");
-
-    snprintf(Templabels[19], 64, "EPS_P60_PDU Set Channel Single");
-    snprintf(Templabels[20], 64, "EPS_P60_PDU Get Channel Single");
-    snprintf(Templabels[21], 64, "EPS_P60_PDU Set Channels");
-    snprintf(Templabels[22], 64, "EPS_P60_PDU Get Channels");
-
-    snprintf(Templabels[23], 64, "EPS_P60_ACU Set MPPT Mode");
-    snprintf(Templabels[24], 64, "EPS_P60_ACU Get MPPT Mode");
-
-    snprintf(Templabels[25], 64, "EPS_P60_Dock Get Table HK");
-    snprintf(Templabels[26], 64, "EPS_P60_Dock Get Table Conf");
-    snprintf(Templabels[27], 64, "EPS_P60_Dock Get Table Cal");
-
-    snprintf(Templabels[28], 64, "EPS_P60_PDU Get Table HK");
-    snprintf(Templabels[29], 64, "EPS_P60_PDU Get Table Conf");
-    snprintf(Templabels[30], 64, "EPS_P60_PDU Get Table Cal");
-
-    snprintf(Templabels[31], 64, "EPS_P60_ACU Get Table HK");
-    snprintf(Templabels[32], 64, "EPS_P60_ACU Get Table Conf");
-    snprintf(Templabels[33], 64, "EPS_P60_ACU Get Table Cal");
-
-    snprintf(Templabels[34], 64, "EPS_P60_Dock Reset GND WDT");
-    snprintf(Templabels[35], 64, "EPS_P60_PDU Reset GND WDT");
-    snprintf(Templabels[36], 64, "EPS_P60_ACU Reset GND WDT");
-
-    snprintf(Templabels[37], 64, "EPS_P60 Get Param");
-    snprintf(Templabels[38], 64, "EPS_P60 Get Param Array");
-    snprintf(Templabels[39], 64, "EPS_P60 Set Param");
-
-    snprintf(Templabels[40], 64, "EPS_P60 Get Table");
-    snprintf(Templabels[41], 64, "EPS_P60 Load Table");
-    snprintf(Templabels[42], 64, "EPS_P60 Save Table");
-    snprintf(Templabels[43], 64, "EPS_P60 Table Get Static");
-    snprintf(Templabels[44], 64, "EPS_P60 Table Dump Static");
-
-    snprintf(Templabels[45], 64, "EPS_P60 Get Dock Info");
-    snprintf(Templabels[46], 64, "EPS_P60 Reset");
+    snprintf(Templabels[12], 64, "EPS P80 Power IF Get");
+    snprintf(Templabels[13], 64, "EPS P80 Power IF Set");
+    snprintf(Templabels[14], 64, "EPS P80 Power IF List");
+    snprintf(Templabels[15], 64, "EPS Get HK");
+    snprintf(Templabels[16], 64, "EPS Get HK All");
+    snprintf(Templabels[17], 64, "EPS P80 GND WDT Clear");
+    snprintf(Templabels[18], 64, "EPS P80 GND WDT Clear All");
+    snprintf(Templabels[19], 64, "EPS RParam Get");
+    snprintf(Templabels[20], 64, "EPS RParam Set");
+    snprintf(Templabels[21], 64, "EPS RParam Get Full Table");
+    snprintf(Templabels[22], 64, "EPS RParam Save all");
+    snprintf(Templabels[23], 64, "EPS RParam Table Save");
+    snprintf(Templabels[24], 64, "EPS RParam Table Load");
+    snprintf(Templabels[25], 64, "EPS RParam Save to Store");
+    snprintf(Templabels[26], 64, "EPS RParam Load From Store");
+    snprintf(Templabels[27], 64, "EPS CSP Ping");
+    snprintf(Templabels[28], 64, "EPS CSP Reboot");
+    snprintf(Templabels[29], 64, "EPS CSP PS");
+    snprintf(Templabels[30], 64, "EPS CSP Mem Free");
+    snprintf(Templabels[31], 64, "EPS CSP Buf Free");
+    snprintf(Templabels[32], 64, "EPS CSP Uptime");
+    
 
 
     // ADCS 

@@ -3023,325 +3023,311 @@ typedef struct {
 
 /*******************************************/
 /*                                         */
-/*            EPS  (BEE-1000)              */
+/*                 EPS  (5th)              */
 /*                                         */
 /*******************************************/
 // msg id
-#define EPS_CMD_ID                          0x1875   //6261
-#define EPS_SEND_HK_ID     0x1876
-#define EPS_SEND_BCN_ID    0x1877
+#define EPS_CMD_ID            0x1875
+#define EPS_SEND_HK_ID        0x1876
+#define EPS_SEND_BCN_ID       0x1877
 
-#define EPS_HK_TLM_ID      0x0875
-#define EPS_BCN_TLM_ID     0x0876
-#define EPS_REPORT_TLM_ID  0x0877
+#define EPS_BCN_TLM_ID        0x0875
+#define EPS_HK_TLM_ID         0x0876
+#define EPS_RPT_TLM_ID        0x0877
 
-#define EPS_DOCK_TLM_TOPICID    0x0878    /* <\brief For internal Vbatt inspection */
+#define EPS_NOOP_CC                   0
+#define EPS_RESET_COUNTERS_CC         1
 
-// function codes
-#define EPS_NOOP_CC                 0
-#define EPS_RESET_COUNTERS_CC       1
-#define EPS_GET_COUNTERS_CC         2
-#define EPS_GET_APPDATA_CC          3
-#define EPS_REPORT_APPDATA_CC       4
+#define EPS_P80_POWER_IF_GET_CC       10
+#define EPS_P80_POWER_IF_SET_CC       11
+#define EPS_P80_POWER_IF_LIST_CC      12
 
-#define EPS_DEVICE_P60_CC_BASE      10
+#define EPS_GET_HK_CC                 20
+#define EPS_GET_HK_ALL_CC             21
 
+#define EPS_P80_GND_WDT_CLEAR_CC      30
+#define EPS_P80_GND_WDT_CLEAR_ALL_CC  31
 
-#define EPS_P60_DOCK_SET_CHANNEL_SINGLE_CC (EPS_DEVICE_P60_CC_BASE + 0)
-#define EPS_P60_DOCK_GET_CHANNEL_SINGLE_CC (EPS_DEVICE_P60_CC_BASE + 1)
-#define EPS_P60_DOCK_SET_CHANNELS_CC       (EPS_DEVICE_P60_CC_BASE + 2)
-#define EPS_P60_DOCK_GET_CHANNELS_CC       (EPS_DEVICE_P60_CC_BASE + 3)
-#define EPS_P60_PDU_SET_CHANNEL_SINGLE_CC  (EPS_DEVICE_P60_CC_BASE + 4)
-#define EPS_P60_PDU_GET_CHANNEL_SINGLE_CC  (EPS_DEVICE_P60_CC_BASE + 5)
-#define EPS_P60_PDU_SET_CHANNELS_CC        (EPS_DEVICE_P60_CC_BASE + 6)
-#define EPS_P60_PDU_GET_CHANNELS_CC        (EPS_DEVICE_P60_CC_BASE + 7)
-#define EPS_P60_ACU_SET_MPPT_MODE_CC       (EPS_DEVICE_P60_CC_BASE + 8)
-#define EPS_P60_ACU_GET_MPPT_MODE_CC       (EPS_DEVICE_P60_CC_BASE + 9)
+#define EPS_RPARAM_GET_CC             40
+#define EPS_RPARAM_SET_CC             41
+#define EPS_RPARAM_GET_FULL_TABLE_CC  42
 
-#define EPS_P60_DOCK_GET_TABLE_HK_CC       (EPS_DEVICE_P60_CC_BASE + 10)
-#define EPS_P60_DOCK_GET_TABLE_CONF_CC     (EPS_DEVICE_P60_CC_BASE + 11)
-#define EPS_P60_DOCK_GET_TABLE_CAL_CC      (EPS_DEVICE_P60_CC_BASE + 12)
-#define EPS_P60_PDU_GET_TABLE_HK_CC        (EPS_DEVICE_P60_CC_BASE + 13)
-#define EPS_P60_PDU_GET_TABLE_CONF_CC      (EPS_DEVICE_P60_CC_BASE + 14)
-#define EPS_P60_PDU_GET_TABLE_CAL_CC       (EPS_DEVICE_P60_CC_BASE + 15)
-#define EPS_P60_ACU_GET_TABLE_HK_CC        (EPS_DEVICE_P60_CC_BASE + 16)
-#define EPS_P60_ACU_GET_TABLE_CONF_CC      (EPS_DEVICE_P60_CC_BASE + 17)
-#define EPS_P60_ACU_GET_TABLE_CAL_CC       (EPS_DEVICE_P60_CC_BASE + 18)
+#define EPS_RPARAM_SAVE_ALL_CC        50
+#define EPS_RPARAM_TABLE_SAVE_CC      51
+#define EPS_RPARAM_TABLE_LOAD_CC      52
+#define EPS_RPARAM_SAVE_TO_STORE_CC   53
+#define EPS_RPARAM_LOAD_FROM_STORE_CC 54
 
-#define EPS_P60_DOCK_RESET_GND_WDT_CC      (EPS_DEVICE_P60_CC_BASE + 20)
-#define EPS_P60_PDU_RESET_GND_WDT_CC       (EPS_DEVICE_P60_CC_BASE + 21)
-#define EPS_P60_ACU_RESET_GND_WDT_CC       (EPS_DEVICE_P60_CC_BASE + 22)
+#define EPS_REPORT_BCN_CC             70
 
-#define EPS_P60_GET_PARAM_CC               (EPS_DEVICE_P60_CC_BASE + 30)
-#define EPS_P60_GET_PARAM_ARRAY_CC         (EPS_DEVICE_P60_CC_BASE + 31)
-#define EPS_P60_SET_PARAM_CC               (EPS_DEVICE_P60_CC_BASE + 32)
-#define EPS_P60_GET_TABLE_CC               (EPS_DEVICE_P60_CC_BASE + 33)
-#define EPS_P60_LOAD_TABLE_CC              (EPS_DEVICE_P60_CC_BASE + 34)
-#define EPS_P60_SAVE_TABLE_CC              (EPS_DEVICE_P60_CC_BASE + 35)
-#define EPS_P60_TABLE_GET_STATIC_CC        (EPS_DEVICE_P60_CC_BASE + 36)
-#define EPS_P60_TABLE_DUMP_STATIC_CC       (EPS_DEVICE_P60_CC_BASE + 37)
+#define EPS_CSP_PING_CC               80
+#define EPS_CSP_REBOOT_CC             81
+#define EPS_CSP_PS_CC                 82
+#define EPS_CSP_MEMFREE_CC            83
+#define EPS_CSP_BUF_FREE_CC           84
+#define EPS_CSP_UPTIME_CC             85
 
-/* Used for EO */
-#define EPS_P60_GET_DOCK_INFO_CC           (EPS_DEVICE_P60_CC_BASE + 40)
-#define EPS_P60_RESET_CC                   (EPS_DEVICE_P60_CC_BASE + 41)
-
-
+#define EPS_P80_POWER_IF_NAME_LEN 8
 
 #define EPS_PACK    __attribute__((packed))
+#define EPS_BCN_ACU_COUNT 2
+#define EPS_BCN_NODE_COUNT 5
+#define EPS_BCN_NODE_PMU_INDEX 0u
+#define EPS_BCN_NODE_PDU_INDEX 1u
+#define EPS_BCN_NODE_ACU1_INDEX 2u
+#define EPS_BCN_NODE_ACU2_INDEX 3u
+#define EPS_BCN_NODE_BP8_INDEX 4u
+#define EPS_BCN_NODE_MASK(index) ((uint8)(1u << (index)))
+#define EPS_BCN_INVALID_FILL 0x00u
+#define EPS_RPARAM_DATA_MAX_LEN 128
+/* Matches libgscsp RPARAM store/slot fields: 25 chars plus NUL. */
+#define EPS_RPARAM_STORE_NAME_LEN 26
+#define EPS_RPARAM_STORE_SLOT_LEN 26
 
-/**
- * P60 Command and Telemetry Message Definitions
-*/
+#define RPT_RET_VALUE_BUF_SIZE  512
+#define EPS_QUERY_REPORT_HEADER_SIZE   12
+#define EPS_QUERY_REPORT_DATA_MAX_LEN  (RPT_RET_VALUE_BUF_SIZE - EPS_QUERY_REPORT_HEADER_SIZE)
+
+typedef enum
+{
+    EPS_QUERY_REPORT_P80_POWER_IF_STATUS = 1,
+    EPS_QUERY_REPORT_P80_POWER_IF_LIST   = 2,
+    EPS_QUERY_REPORT_P80_PMU_HK          = 3,
+    EPS_QUERY_REPORT_P80_PDU_HK          = 4,
+    EPS_QUERY_REPORT_P80_ACU_HK          = 5,
+    EPS_QUERY_REPORT_BP8_HK              = 6,
+    EPS_QUERY_REPORT_RPARAM_VALUE        = 7,
+    EPS_QUERY_REPORT_RPARAM_TABLE_ROWS   = 8,
+    EPS_QUERY_REPORT_RPARAM_TABLE_MEMORY = 9,
+    EPS_QUERY_REPORT_CSP_PING_MS         = 10,
+    EPS_QUERY_REPORT_CSP_PS_TEXT         = 11,
+    EPS_QUERY_REPORT_CSP_MEMFREE         = 12,
+    EPS_QUERY_REPORT_CSP_BUF_FREE        = 13,
+    EPS_QUERY_REPORT_CSP_UPTIME          = 14
+} EPS_Query_Report_DataId_t;
+
+/**********************************************************TC************************************************************/
+
+typedef struct EPS_PACK
+{
+    uint8  source;      /* CSP node for hardware query reports. */
+    uint8  data_id;     /* EPS_Query_Report_DataId_t */
+    uint8  arg0;        /* Command-specific: RPARAM table id when applicable. */
+    uint8  arg1;        /* Command-specific: RPARAM type when applicable. */
+    uint16 sequence;    /* Chunk sequence, starting at 0. */
+    uint16 offset;      /* Byte offset into the full command result. */
+    uint16 total_size;  /* Full result size in bytes. */
+    uint16 chunk_size;  /* Valid bytes in data[]. */
+    uint8  data[EPS_QUERY_REPORT_DATA_MAX_LEN];
+} EPS_Query_Report_Payload_t;
 
 typedef struct EPS_PACK {
-    uint8_t  channel;
-    uint8_t  value;
-    uint16_t timeout;
-} EPS_P60_Dock_SetChannelSingle_Payload_t;
+    uint8_t csp_node; //PMU or PDU
+    uint8_t mode;
+    uint16_t on_cnt;
+    uint16_t off_cnt;
+    char    name[EPS_P80_POWER_IF_NAME_LEN];
+}EPS_P80_Power_If_Set_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint8_t  channel;
-} EPS_P60_Dock_GetChannelSingle_Payload_t;
+    uint8_t csp_node; //PMU or PDU
+    char    name[EPS_P80_POWER_IF_NAME_LEN];
+}EPS_P80_Power_If_Get_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint8_t  channels[13];
-    uint16_t timeout;
-} EPS_P60_Dock_SetChannels_Payload_t;
+    uint8_t csp_node; //PMU or PDU
+}EPS_P80_Power_If_List_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint32_t timeout;
-} EPS_P60_Dock_ResetGndWdt_Payload_t;
+    uint8_t csp_node; //PMU or PDU or ACU1 or ACU2
+}EPS_P80_Gnd_Watchdog_Clear_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint8_t  channel;
-    uint8_t  value;
-    uint32_t timeout;
-} EPS_P60_PDU_SetChannelSingle_Payload_t;
+    uint8_t csp_node; //PMU or PDU or ACU1 or ACU2 or BP8
+}EPS_Get_HK_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint8_t  channel;
-} EPS_P60_PDU_GetChannelSingle_Payload_t;
+    uint8_t csp_node;
+    uint8_t table_id;
+    uint16_t    addr;
+    uint8_t     type; 
+    uint8_t     data[EPS_RPARAM_DATA_MAX_LEN];
+    uint16_t    size;
+}EPS_RParam_Set_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint8_t  channels[9];
-    uint32_t timeout;
-} EPS_P60_PDU_SetChannels_Payload_t;
+    uint8_t csp_node;
+    uint8_t table_id;
+    uint16_t    addr;
+    uint8_t     type;
+    uint16_t    size;
+}EPS_RParam_Get_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint32_t timeout;
-} EPS_P60_PDU_ResetGndWdt_Payload_t;
+    uint8_t csp_node;
+    uint8_t table_id;
+}EPS_RParam_Get_Full_Table_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint8_t  mode;
-    uint32_t timeout;
-} EPS_P60_ACU_SetMpptMode_Payload_t;
+    uint8_t csp_node;
+}EPS_RParam_Save_All_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint32_t timeout;
-} EPS_P60_ACU_ResetGndWdt_Payload_t;
+    uint8_t csp_node;
+    uint8_t table_id;
+}EPS_RParam_Table_Save_Cmd_Payload_t;
+
+typedef EPS_RParam_Table_Save_Cmd_Payload_t EPS_RParam_Table_Load_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint8_t node;
-    uint8_t tableId;
-    uint8_t rowCount;
+    uint8_t csp_node;
+    uint8_t table_id;
+    char    store[EPS_RPARAM_STORE_NAME_LEN];
+    char    slot[EPS_RPARAM_STORE_SLOT_LEN];
+}EPS_RParam_Store_Cmd_Payload_t;
+
+typedef EPS_RParam_Store_Cmd_Payload_t EPS_RParam_Save_To_Store_Cmd_Payload_t;
+typedef EPS_RParam_Store_Cmd_Payload_t EPS_RParam_Load_From_Store_Cmd_Payload_t;
+
+typedef struct EPS_PACK {
+    uint8_t  csp_node;
     uint16_t size;
-} EPS_P60_TableGet_Payload_t;
+    uint8_t  opts;
+}EPS_CSP_Ping_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint8_t node;
-    uint8_t tableId;
-    uint8_t rowCount;
-    uint16_t size;
-} EPS_P60_TableGetStatic_Payload_t;
+    uint8_t csp_node;
+}EPS_CSP_Reboot_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint16_t size;
-} EPS_P60_TableDumpStatic_Payload_t;
+    uint8_t csp_node;
+}EPS_CSP_PS_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint8_t node;
-    uint8_t tableId;
-    uint8_t to;
-    uint16_t timeout;
-} EPS_P60_TableSave_Payload_t;
+    uint8_t csp_node;
+}EPS_CSP_MemFree_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint8_t node;
-    uint8_t tableId;
-    uint8_t from;
-    uint16_t timeout;
-} EPS_P60_TableLoad_Payload_t;
+    uint8_t csp_node;
+}EPS_CSP_BufFree_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint8_t node;
-    uint8_t tableId;
-    uint16_t addr;
-    uint8_t type;
-    uint16_t size;
-    uint16_t timeout;
-    uint8_t  data[32];
-} EPS_P60_SetParam_Payload_t;
+    uint8_t csp_node;
+}EPS_CSP_Uptime_Cmd_Payload_t;
 
 typedef struct EPS_PACK {
-    uint8_t node;
-    uint8_t tableId;
-    uint16_t addr;
-    uint8_t type;
-    uint16_t size;
-} EPS_P60_GetParam_Payload_t;
-
-typedef struct EPS_PACK {
-    uint8_t node;
-    uint8_t tableId;
-    uint16_t addr;
-    uint8_t type;
-    uint16_t size;
-    uint16_t count;
-} EPS_P60_GetParamArray_Payload_t;
-
-// 본격 command 시작
-typedef struct {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
 } EPS_NoArgCmd_t;
 
-/* Shortcuts */
-typedef EPS_NoArgCmd_t EPS_NoopCmd_t;
-typedef EPS_NoArgCmd_t EPS_GetCountersCmd_t;
-typedef EPS_NoArgCmd_t EPS_GetAppDataCmd_t;
-typedef EPS_NoArgCmd_t EPS_ResetCountersCmd_t;
-typedef EPS_NoArgCmd_t EPS_ReportAppDataCmd_t;
+typedef EPS_NoArgCmd_t  EPS_NoopCmd_t;
+typedef EPS_NoArgCmd_t  EPS_ResetCountersCmd_t;
+typedef EPS_NoArgCmd_t  EPS_ReportAppDataCmd_t;
 
-/* EPS P60 Dock / PDU / ACU No-Arg */
-typedef EPS_NoArgCmd_t EPS_P60_Dock_GetChannelsCmd_t;
-typedef EPS_NoArgCmd_t EPS_P60_Dock_GetTableHkCmd_t;
-typedef EPS_NoArgCmd_t EPS_P60_Dock_GetTableConfCmd_t;
-typedef EPS_NoArgCmd_t EPS_P60_Dock_GetTableCalCmd_t;
-
-typedef EPS_NoArgCmd_t EPS_P60_PDU_GetChannelsCmd_t;
-typedef EPS_NoArgCmd_t EPS_P60_PDU_GetTableHkCmd_t;
-typedef EPS_NoArgCmd_t EPS_P60_PDU_GetTableConfCmd_t;
-typedef EPS_NoArgCmd_t EPS_P60_PDU_GetTableCalCmd_t;
-
-typedef EPS_NoArgCmd_t EPS_P60_ACU_GetMpptModeCmd_t;
-typedef EPS_NoArgCmd_t EPS_P60_ACU_GetTableHkCmd_t;
-typedef EPS_NoArgCmd_t EPS_P60_ACU_GetTableConfCmd_t;
-typedef EPS_NoArgCmd_t EPS_P60_ACU_GetTableCalCmd_t;
-
-typedef EPS_NoArgCmd_t EPS_P60_GetDockInfoCmd_t;
-typedef EPS_NoArgCmd_t EPS_P60_ResetCmd_t;
-typedef EPS_NoArgCmd_t EPS_SendHkCmd_t;
-typedef EPS_NoArgCmd_t EPS_SendBcnCmd_t;
-
-
-/*
- * ========================================================================
- *  EPS P60 Dock Commands
- * ========================================================================
- */
-typedef struct {
+typedef struct EPS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_Dock_SetChannelSingle_Payload_t Payload;
-} EPS_P60_Dock_SetChannelSingleCmd_t;
+    EPS_P80_Power_If_Get_Cmd_Payload_t Payload;
+}EPS_P80_Power_If_Get_Cmd_t;
 
-typedef struct {
+typedef struct EPS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_Dock_SetChannels_Payload_t Payload;
-} EPS_P60_Dock_SetChannelsCmd_t;
+    EPS_P80_Power_If_Set_Cmd_Payload_t Payload;
+}EPS_P80_Power_If_Set_Cmd_t;
 
-typedef struct {
+typedef struct EPS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_Dock_GetChannelSingle_Payload_t Payload;
-} EPS_P60_Dock_GetChannelSingleCmd_t;
+    EPS_P80_Power_If_List_Cmd_Payload_t Payload;
+}EPS_P80_Power_If_List_Cmd_t;
 
-typedef struct {
+typedef struct EPS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_Dock_ResetGndWdt_Payload_t Payload;
-} EPS_P60_Dock_ResetGndWdtCmd_t;
+    EPS_Get_HK_Cmd_Payload_t Payload;
+}EPS_Get_HK_Cmd_t;
 
-/*
- * ========================================================================
- *  EPS P60 PDU Commands
- * ========================================================================
- */
-typedef struct {
-    uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_PDU_SetChannelSingle_Payload_t Payload;
-} EPS_P60_PDU_SetChannelSingleCmd_t;
+typedef EPS_NoArgCmd_t EPS_Get_HK_All_Cmd_t;
 
-typedef struct {
+typedef struct EPS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_PDU_SetChannels_Payload_t Payload;
-} EPS_P60_PDU_SetChannelsCmd_t;
+    EPS_P80_Gnd_Watchdog_Clear_Cmd_Payload_t Payload;
+}EPS_P80_Gnd_Watchdog_Clear_Cmd_t;
 
-typedef struct {
-    uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_PDU_GetChannelSingle_Payload_t Payload;
-} EPS_P60_PDU_GetChannelSingleCmd_t;
+typedef EPS_NoArgCmd_t EPS_P80_Gnd_Watchdog_Clear_All_Cmd_t;
 
-typedef struct {
+typedef struct EPS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_PDU_ResetGndWdt_Payload_t Payload;
-} EPS_P60_PDU_ResetGndWdtCmd_t;
+    EPS_RParam_Set_Cmd_Payload_t Payload;
+}EPS_RParam_Set_Cmd_t;
 
-/*
- * ========================================================================
- *  EPS P60 ACU Commands
- * ========================================================================
- */
-typedef struct {
+typedef struct EPS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_ACU_SetMpptMode_Payload_t Payload;
-} EPS_P60_ACU_SetMpptModeCmd_t;
+    EPS_RParam_Get_Cmd_Payload_t Payload;
+}EPS_RParam_Get_Cmd_t;
 
-typedef struct {
+typedef struct EPS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_ACU_ResetGndWdt_Payload_t Payload;
-} EPS_P60_ACU_ResetGndWdtCmd_t;
+    EPS_RParam_Get_Full_Table_Cmd_Payload_t Payload;
+}EPS_RParam_Get_Full_Table_Cmd_t;
 
-/*
- * ========================================================================
- *  EPS Parameter / Table Commands
- * ========================================================================
- */
-typedef struct {
-    uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_GetParam_Payload_t Payload;
-} EPS_P60_GetParamCmd_t;
 
-typedef struct {
+typedef struct EPS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_GetParamArray_Payload_t Payload;
-} EPS_P60_GetParamArrayCmd_t;
+    EPS_RParam_Table_Save_Cmd_Payload_t Payload;
+}EPS_RParam_Table_Save_Cmd_t;
 
-typedef struct {
+typedef struct EPS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_SetParam_Payload_t Payload;
-} EPS_P60_SetParamCmd_t;
+    EPS_RParam_Table_Load_Cmd_Payload_t Payload;
+}EPS_RParam_Table_Load_Cmd_t;
 
-typedef struct {
+typedef struct EPS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_TableGet_Payload_t Payload;
-} EPS_P60_TableGetCmd_t;
+    EPS_RParam_Save_To_Store_Cmd_Payload_t Payload;
+}EPS_RParam_Save_To_Store_Cmd_t;
 
-typedef struct {
+typedef struct EPS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_TableGetStatic_Payload_t Payload;
-} EPS_P60_TableGetStaticCmd_t;
+    EPS_RParam_Load_From_Store_Cmd_Payload_t Payload;
+}EPS_RParam_Load_From_Store_Cmd_t;
 
-typedef struct {
+typedef struct EPS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_TableDumpStatic_Payload_t Payload;
-} EPS_P60_TableDumpStaticCmd_t;
+    EPS_RParam_Save_All_Cmd_Payload_t Payload;
+}EPS_RParam_Save_All_Cmd_t;
 
-typedef struct {
-    uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_TableSave_Payload_t Payload;
-} EPS_P60_TableSaveCmd_t;
+typedef EPS_NoArgCmd_t  EPS_ReportBcnCmd_t;
 
-typedef struct {
+typedef struct EPS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
-    EPS_P60_TableLoad_Payload_t Payload;
-} EPS_P60_TableLoadCmd_t;
+    EPS_CSP_PS_Cmd_Payload_t Payload;
+}EPS_CSP_PS_Cmd_t;
+
+typedef struct EPS_PACK {
+    uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
+    EPS_CSP_MemFree_Cmd_Payload_t Payload;
+}EPS_CSP_MemFree_Cmd_t;
+
+typedef struct EPS_PACK {
+    uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
+    EPS_CSP_BufFree_Cmd_Payload_t Payload;
+}EPS_CSP_BufFree_Cmd_t;
+
+typedef struct EPS_PACK {
+    uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
+    EPS_CSP_Uptime_Cmd_Payload_t Payload;
+}EPS_CSP_Uptime_Cmd_t;
+
+typedef struct EPS_PACK {
+    uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
+    EPS_CSP_Ping_Cmd_Payload_t Payload;
+}EPS_CSP_Ping_Cmd_t;
+
+typedef struct EPS_PACK {
+    uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
+    EPS_CSP_Reboot_Cmd_Payload_t Payload;
+}EPS_CSP_Reboot_Cmd_t;
+
+
+
+/*******************************************************************************************************************/
 
 
 /*******************************************/
@@ -6169,49 +6155,43 @@ typedef struct {
 
 
     /* No-arg commands */
-    EPS_NoopCmd_t                 epsnoopcmd;
-    EPS_ResetCountersCmd_t        epsresetcounterscmd;
-    EPS_GetCountersCmd_t          epsgetcounterscmd; 
-    EPS_GetAppDataCmd_t           epsgetappdatacmd;
-    EPS_ReportAppDataCmd_t        epsreportappdatacmd;
+    /***********************************************/
+    /*                 EPS(5th)                    */
+    /***********************************************/
 
-    EPS_P60_Dock_SetChannelSingleCmd_t    epsp60docksetchannelsinglecmd;
-    EPS_P60_Dock_SetChannelsCmd_t         epsp60docksetchannelscmd;
-    EPS_P60_Dock_GetChannelSingleCmd_t    epsp60dockgetchannelsinglecmd;
-    EPS_P60_Dock_GetChannelsCmd_t     epsp60dockgetchannelscmd;
-    EPS_P60_PDU_SetChannelSingleCmd_t     epsp60pdusetchannelsinglecmd;
-    EPS_P60_PDU_SetChannelsCmd_t          epsp60pdusetchannelscmd;
-    EPS_P60_PDU_GetChannelSingleCmd_t     epsp60pdugetchannelsinglecmd;
-    EPS_P60_PDU_GetChannelsCmd_t      epsp60pdugetchannelscmd;
-    EPS_P60_ACU_SetMpptModeCmd_t          epsp60acusetmpptmodecmd;
-    EPS_P60_ACU_GetMpptModeCmd_t      epsp60acugetmpptmodecmd;
+    EPS_NoopCmd_t                        epsnoopcmd;
+    EPS_ResetCountersCmd_t               epsresetcounterscmd;
+    
+    EPS_P80_Power_If_Get_Cmd_t           epsp80powerifgetcmd;
+    EPS_P80_Power_If_Set_Cmd_t           epsp80powerifsetcmd;
+    EPS_P80_Power_If_List_Cmd_t          epsp80poweriflistcmd;
 
-    EPS_P60_Dock_GetTableHkCmd_t      epsp60dockgettablehkcmd;
-    EPS_P60_Dock_GetTableConfCmd_t    epsp60dockgettableconfcmd;
-    EPS_P60_Dock_GetTableCalCmd_t     epsp60dockgettablecalcmd;
-    EPS_P60_PDU_GetTableHkCmd_t       epsp60pdugettablehkcmd;
-    EPS_P60_PDU_GetTableConfCmd_t     epsp60pdugettableconfcmd;
-    EPS_P60_PDU_GetTableCalCmd_t      epsp60pdugettablecalcmd;
-    EPS_P60_ACU_GetTableHkCmd_t       epsp60acugettablehkcmd;
-    EPS_P60_ACU_GetTableConfCmd_t     epsp60acugettableconfcmd;
-    EPS_P60_ACU_GetTableCalCmd_t      epsp60acugettablecalcmd;
+    EPS_Get_HK_Cmd_t                     epsgethkcmd;
+    EPS_Get_HK_All_Cmd_t                 epsgethkallcmd;
 
-    EPS_P60_Dock_ResetGndWdtCmd_t         epsp60dockresetgndwdtcmd;
-    EPS_P60_PDU_ResetGndWdtCmd_t          epsp60pduresetgndwdtcmd;
-    EPS_P60_ACU_ResetGndWdtCmd_t          epsp60acuresetgndwdtcmd;
+    EPS_P80_Gnd_Watchdog_Clear_Cmd_t     epsp80gndwatchdogclearcmd;
+    EPS_P80_Gnd_Watchdog_Clear_All_Cmd_t epsp80gndwatchdogclearallcmd;
 
-    /* Param / Table commands */
-    EPS_P60_GetParamCmd_t                 epsp60getparamcmd;
-    EPS_P60_GetParamArrayCmd_t            epsp60getparamarraycmd;
-    EPS_P60_SetParamCmd_t                 epsp60setparamcmd;
-    EPS_P60_TableGetCmd_t                 epsp60tablegetcmd;
-    EPS_P60_TableLoadCmd_t                epsp60tableloadcmd;
-    EPS_P60_TableSaveCmd_t                epsp60tablesavecmd;
-    EPS_P60_TableGetStaticCmd_t           epsp60tablegetstaticcmd;
-    EPS_P60_TableDumpStaticCmd_t          epsp60tabledumpstaticcmd;
+    EPS_RParam_Get_Cmd_t                 epsrparamgetcmd;
+    EPS_RParam_Set_Cmd_t                 epsrparamsetcmd;
+    EPS_RParam_Get_Full_Table_Cmd_t      epsrparamgetfulltablecmd;
 
-    EPS_P60_GetDockInfoCmd_t          epsp60getdockinfocmd;
-    EPS_P60_ResetCmd_t                epsp60resetcmd;
+    EPS_RParam_Save_All_Cmd_t            epsrparamsaveallcmd;
+    EPS_RParam_Table_Save_Cmd_t          epsrparamtablesavecmd;
+    EPS_RParam_Table_Load_Cmd_t          epsrparamtableloadcmd;
+    EPS_RParam_Save_To_Store_Cmd_t       epsrparamsavetostorecmd;
+    EPS_RParam_Load_From_Store_Cmd_t     epsrparamloadfromstorecmd;
+
+    EPS_ReportBcnCmd_t                   epsreportbcncmd;
+
+    EPS_CSP_Ping_Cmd_t                   epscsppingcmd;
+    EPS_CSP_Reboot_Cmd_t                 epscsprebootcmd;
+    EPS_CSP_PS_Cmd_t                     epscsppscmd;
+    EPS_CSP_MemFree_Cmd_t                epscspmemfreecmd;
+    EPS_CSP_BufFree_Cmd_t                epscspbuffreecmd;
+    EPS_CSP_Uptime_Cmd_t                 epscspuptimecmd;
+
+
 
     // ADCS
 

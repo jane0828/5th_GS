@@ -512,10 +512,6 @@ static ReportKind_t DetermineReportKind(uint16_t reflected_mid, uint8_t reflecte
     if ((reflected_mid == ADCS_CMD_ID || reflected_mid == 0x6518) && reflected_cc == ADCS_GET_EVENT_LOG_STATUS_RESPONSE_CC) return REPORT_KIND_ADCS_GET_EVENT_LOG_STATUS_RESPONSE;
     if ((reflected_mid == ADCS_CMD_ID || reflected_mid == 0x6518) && reflected_cc == ADCS_GET_PORTMAP_CC) return REPORT_KIND_ADCS_GET_PORTMAP;
 /****************************************************************************************************************************************************************************************** */
-    
-    if ((reflected_mid == EPS_CMD_ID || reflected_mid == 0x7518) && reflected_cc == EPS_P60_DOCK_GET_TABLE_HK_CC) return REPORT_KIND_EPS_P60_DOCK_GET_TABLE_HK;
-    if ((reflected_mid == EPS_CMD_ID || reflected_mid == 0x7518) && reflected_cc == EPS_P60_PDU_GET_TABLE_HK_CC) return REPORT_KIND_EPS_P60_PDU_GET_TABLE_HK;
-    if ((reflected_mid == EPS_CMD_ID || reflected_mid == 0x7518) && reflected_cc == EPS_P60_ACU_GET_TABLE_HK_CC) return REPORT_KIND_EPS_P60_ACU_GET_TABLE_HK;
 
     /*********************************************5차 추가****************************************************** */
     // CC 0, 1
