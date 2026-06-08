@@ -6386,7 +6386,8 @@ typedef enum
 
 static ReportKind_t DetermineReportKind(uint16_t reflected_mid, uint8_t reflected_cc) {
     if (reflected_mid == UELYSYS_TTC_CMD_ID || reflected_mid == 0x8018) return REPORT_KIND_UELYSYS_TTC;
-    if (reflected_mid == UELYSYS_MEOW_CMD_ID || reflected_mid == 0x8618) return REPORT_KIND_UELYSYS_MEOW;
+    if (reflected_mid == BEE1012_MEOW_CMD_ID || reflected_mid == 0x8218 ||
+        reflected_mid == UELYSYS_MEOW_CMD_ID || reflected_mid == 0x8618) return REPORT_KIND_UELYSYS_MEOW;
     if (reflected_mid == UELYSYS_STX_CMD_ID || reflected_mid == 0x5418) return REPORT_KIND_UELYSYS_STX;
     if (reflected_mid == UELYSYS_UTRX_CMD_ID || reflected_mid == 0x5018) return REPORT_KIND_UELYSYS_UTRX;
     if (reflected_mid == UELYSYS_UANT_CMD_ID || reflected_mid == 0x4018) return REPORT_KIND_UELYSYS_UANT;
@@ -6608,6 +6609,7 @@ typedef struct { uint8_t command_status; uint8_t flag_more; uint16_t file_count;
 typedef struct { uint32_t seconds_since_boot; uint8_t reboot_count; } UELYSYS_UANT_BoardStatus_Report_t;
 typedef struct { int8_t result; } UELYSYS_UANT_Autodeploy_Report_t;
 
+typedef struct { uint8_t cmd_counter; uint8_t app_err_counter; uint8_t device_err_counter; } UELYSYS_UTRX_Noop_Report_t;
 typedef struct { uint32_t baud; } UELYSYS_UTRX_RxBaud_Report_t;
 typedef struct { uint8_t status; } UELYSYS_PayloadStatus_Report_t;
 typedef struct {
@@ -6657,6 +6659,7 @@ typedef union {
     uint8_t raw[10];
 } UELYSYS_LGBAT_Block_Report_t;
 
+typedef struct { uint8_t cmd_counter; uint8_t err_counter; } UELYSYS_AOS_Noop_Report_t;
 typedef struct { uint8_t msb; uint8_t lsb; } UELYSYS_AOS_ReadRegister_Report_t;
 typedef struct { float resistance[4]; } UELYSYS_AOS_ReadAll_Report_t;
 #pragma pack(pop)
@@ -6679,6 +6682,7 @@ static_assert(sizeof(UELYSYS_STX_CreateFile_Report_t) == 5, "STX create file rep
 static_assert(sizeof(UELYSYS_STX_WriteFile_Report_t) == 9, "STX write file report size mismatch");
 static_assert(sizeof(UELYSYS_STX_DirHeader_Report_t) == 4, "STX DIR header size mismatch");
 static_assert(sizeof(UELYSYS_UANT_BoardStatus_Report_t) == 5, "UANT board status report size mismatch");
+static_assert(sizeof(UELYSYS_UTRX_Noop_Report_t) == 3, "UTRX NOOP report size mismatch");
 static_assert(sizeof(UELYSYS_UTRX_RxBaud_Report_t) == 4, "UTRX RX baud report size mismatch");
 static_assert(sizeof(UELYSYS_PayloadStatus_Report_t) == 1, "payload status report size mismatch");
 static_assert(sizeof(UELYSYS_ImageMeta_Report_t) == 9, "image metadata report size mismatch");
@@ -6698,6 +6702,7 @@ static_assert(sizeof(UELYSYS_LGBAT_Data0B_t) == 10, "LGBAT Data0B size mismatch"
 static_assert(sizeof(UELYSYS_LGBAT_Data0C_t) == 10, "LGBAT Data0C size mismatch");
 static_assert(sizeof(UELYSYS_LGBAT_AllData_Report_t) == 120, "LGBAT all data report size mismatch");
 static_assert(sizeof(UELYSYS_LGBAT_Block_Report_t) == 10, "LGBAT block report size mismatch");
+static_assert(sizeof(UELYSYS_AOS_Noop_Report_t) == 2, "AOS NOOP report size mismatch");
 static_assert(sizeof(UELYSYS_AOS_ReadRegister_Report_t) == 2, "AOS read register report size mismatch");
 static_assert(sizeof(UELYSYS_AOS_ReadAll_Report_t) == 16, "AOS read all report size mismatch");
 
@@ -7071,6 +7076,7 @@ typedef struct
         UELYSYS_ReportPayloadView_t uelysys;
         EPS_Bcn_Report_t eps_bcn;
         UELYSYS_STX_DirHeader_Report_t stx_dir;
+        UELYSYS_UTRX_Noop_Report_t utrx_noop;
         UELYSYS_UTRX_RxBaud_Report_t utrx_rx_baud;
         UELYSYS_PayloadStatus_Report_t payload_status;
         UELYSYS_ImageMeta_Report_t image_meta;
@@ -7078,6 +7084,7 @@ typedef struct
         UELYSYS_PayloadError_Report_t payload_error;
         UELYSYS_LGBAT_Block_Report_t lgbat_block;
         UELYSYS_LGBAT_AllData_Report_t lgbat_all;
+        UELYSYS_AOS_Noop_Report_t aos_noop;
         UELYSYS_AOS_ReadRegister_Report_t aos_read_register;
         UELYSYS_AOS_ReadAll_Report_t aos_read_all;
 
@@ -7345,7 +7352,6 @@ private:
 
 public:
 	CFE_MSG_CommandHeader* CmdHeader;
-	bool Scheduled = false;
 	bool Checksum = true;
 
     CmdGenerator_GS(void);
@@ -7369,7 +7375,6 @@ public:
     uint16_t GetFncCode(void) const;
 
     int GenerateChecksum(void);
-	int Scheduling(uint32_t ExecutionTime, uint32_t ExecutionWindow, uint32_t EntryID, uint16_t GroupID);
 	packetsign * GenerateCMDPacket(void);
 };
 
