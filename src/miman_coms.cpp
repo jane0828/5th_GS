@@ -13592,6 +13592,7 @@ int UELYSYSBeaconSaver(UELYSYS_Beacon_t* bec)
     fprintf(fp, "dsp_i2c1_0x08_status    : %" PRIu8 "\n", bec->eps.dsp.dsp_i2c1_0x08_status);
     fprintf(fp, "dsp_i2c1_0x09_status    : %" PRIu8 "\n", bec->eps.dsp.dsp_i2c1_0x09_status);
     fprintf(fp, "dsp_i2c1_0x10_status    : %" PRIu8 "\n", bec->eps.dsp.dsp_i2c1_0x10_status);
+    fprintf(fp, "dsp_GPIO_status    : %" PRIu8 "\n", bec->eps.dsp.dsp_GPIO_status);
 
     fprintf(fp, "\n[ADCS]\n");
     fprintf(fp, "power_state             : %" PRIu8 "\n", bec->adcs.power_state);

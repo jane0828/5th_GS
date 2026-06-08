@@ -6026,6 +6026,7 @@ typedef struct {
     uint8_t dsp_i2c1_0x08_status;
     uint8_t dsp_i2c1_0x09_status;
     uint8_t dsp_i2c1_0x10_status;
+    uint8_t dsp_GPIO_status;
 }__attribute__((packed)) UELYSYS_EPS_DSP_t;
 
 typedef struct {
@@ -6061,10 +6062,10 @@ static_assert(sizeof(UELYSYS_EPS_PDU_t) == 36, "UELYSYS_EPS_PDU_t size mismatch"
 static_assert(sizeof(UELYSYS_EPS_ACU_Unit_t) == 25, "UELYSYS_EPS_ACU_Unit_t size mismatch");
 static_assert(sizeof(UELYSYS_EPS_ACU_t) == 50, "UELYSYS_EPS_ACU_t size mismatch");
 static_assert(sizeof(UELYSYS_EPS_BP8_t) == 22, "UELYSYS_EPS_BP8_t size mismatch");
-static_assert(sizeof(UELYSYS_EPS_DSP_t) == 4, "UELYSYS_EPS_DSP_t size mismatch");
-static_assert(sizeof(UELYSYS_EPS_t) == 148, "UELYSYS_EPS_t size mismatch");
+static_assert(sizeof(UELYSYS_EPS_DSP_t) == 5, "UELYSYS_EPS_DSP_t size mismatch");
+static_assert(sizeof(UELYSYS_EPS_t) == 149, "UELYSYS_EPS_t size mismatch");
 static_assert(sizeof(UELYSYS_ADCS_t) == 20, "UELYSYS_ADCS_t size mismatch");
-static_assert(sizeof(UELYSYS_Beacon_t) == 207, "UELYSYS_Beacon_t size mismatch");
+static_assert(sizeof(UELYSYS_Beacon_t) == 208, "UELYSYS_Beacon_t size mismatch");
 
 
 
