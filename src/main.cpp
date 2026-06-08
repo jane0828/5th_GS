@@ -91,7 +91,7 @@ void Initialize_ConfigSettings()
     setup->Switch_baud = 115200; 
     setup->gs100_node = 20;
     setup->kiss_node = 8;
-    setup->obc_node = 3;
+    setup->obc_node = 10;
     setup->ax100_node = 5;
     setup->default_freq = 436500000; // UHF freq?
     setup->default_timeout = 1000;

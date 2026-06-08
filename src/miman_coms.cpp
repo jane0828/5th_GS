@@ -11579,7 +11579,7 @@ int PingCounter;
 uint32_t remote_total_rx_bytes = 0;
 uint16_t remote_boot_count = 0;
 
-
+static const unsigned int REPORT_CONN_DRAIN_TIMEOUT_MS = 100;
 static constexpr size_t REPORT_WIRE_SIZE = 540;
 
 static uint8_t g_report_wire[REPORT_WIRE_SIZE];
@@ -13115,24 +13115,43 @@ uint32_t CmdGenerator_GS::ComputeCheckSum(void) {
 csp_socket_t * DL_sock_initialize()
 {
 	csp_socket_t * sock = csp_socket(0);
-	if(!csp_bind(sock, 13)) {
-        console.AddLog("[OK]##TM Port 13 bind success.");
-    }
     if(!csp_bind(sock, 31)) {
-        console.AddLog("[OK]##BCN Port 31 bind success.");
+        console.AddLog("[OK]##BEE-1000 BCN Port 31 bind success.");
     }
     if(!csp_bind(sock, 25)) {
-        console.AddLog("[OK]##RPT Port 25 bind success.");
+        console.AddLog("[OK]##BEE-1000 RPT Port 25 bind success.");
     }
     if(!csp_bind(sock, 27)) {
-        console.AddLog("[OK]##Event Port 27 bind success.");
+        console.AddLog("[OK]##BEE-1000 Event Port 27 bind success.");
     }
-        if(!csp_bind(sock, 23)) {
-        console.AddLog("[OK]##COSMIC Beacon Port 23 bind success.");
+    if(!csp_bind(sock, 23)) {
+        console.AddLog("[OK]##BEE-100 FM Port 23 bind success.");
     }
         
-        if(!csp_bind(sock, 24)) {
-        console.AddLog("[OK]##COSMIC Report Port 24 bind success.");
+    if(!csp_bind(sock, 12)) {
+        console.AddLog("[OK]##UEL-Y-Sys. BCN Port 12 bind success.");
+    }
+    if(!csp_bind(sock, 10)) {
+        console.AddLog("[OK]##UEL-Y-Sys. RPT Port 10 bind success.");
+    }
+    if(!csp_bind(sock, 11)) {
+        console.AddLog("[OK]##UEL-Y-Sys. Event Port 11 bind success.");
+    }
+    if(!csp_bind(sock, 14)) {
+        console.AddLog("[OK]##UEL-Y-Sys. FM Port 14 bind success.");
+    }
+
+    if(!csp_bind(sock, 17)) {
+        console.AddLog("[OK]##BEE-1012 BCN Port 17 bind success.");
+    }
+    if(!csp_bind(sock, 15)) {
+        console.AddLog("[OK]##BEE-1012 RPT Port 15 bind success.");
+    }
+    if(!csp_bind(sock, 16)) {
+        console.AddLog("[OK]##BEE-1012 Event Port 16 bind success.");
+    }
+    if(!csp_bind(sock, 18)) {
+        console.AddLog("[OK]##BEE-1012 FM Port 18 bind success.");
     }
         
         
@@ -13400,7 +13419,7 @@ int BEE1012BeaconSaver(BEE1012_Beacon_t* bec)
     struct tm* local = localtime(&tmtime);
 
     sprintf(filename,
-            "../data/beacon/BEE1012Beacon--%04d-%02d-%02d-%02d-%02d-%02d--.txt",
+            "../data/BEE1000/beacon/beacon_parsed/BEE1012Beacon--%04d-%02d-%02d-%02d-%02d-%02d--.txt",
             local->tm_year + 1900, local->tm_mon + 1, local->tm_mday,
             local->tm_hour, local->tm_min, local->tm_sec);
 
@@ -13498,7 +13517,7 @@ int UELYSYSBeaconSaver(UELYSYS_Beacon_t* bec)
     struct tm* local = localtime(&tmtime);
 
     sprintf(filename,
-            "../data/beacon/UELYSYSBeacon--%04d-%02d-%02d-%02d-%02d-%02d--.txt",
+            "../data/UELYSYS/beacon/beacon_parsed/UELYSYSBeacon--%04d-%02d-%02d-%02d-%02d-%02d--.txt",
             local->tm_year + 1900, local->tm_mon + 1, local->tm_mday,
             local->tm_hour, local->tm_min, local->tm_sec);
 
@@ -13610,7 +13629,7 @@ static void HandleBEE1012BeaconPacket(const csp_packet_t* packet, int dport)
     struct tm *local = localtime(&tmtime);
 
     sprintf(bcnpktfilename,
-            "../data/bcnpkt/BEE1012BeaconPkt--%04d-%02d-%02d-%02d-%02d-%02d--",
+            "../data/BEE1012/beacon/beacon_raw/BEE1012BeaconPkt--%04d-%02d-%02d-%02d-%02d-%02d--",
             local->tm_year + 1900, local->tm_mon + 1, local->tm_mday,
             local->tm_hour, local->tm_min, local->tm_sec);
 
@@ -13639,7 +13658,7 @@ static void HandleUELYSYSBeaconPacket(const csp_packet_t* packet, int dport)
     struct tm *local = localtime(&tmtime);
 
     sprintf(bcnpktfilename,
-            "../data/bcnpkt/UELYSYSBeaconPkt--%04d-%02d-%02d-%02d-%02d-%02d--",
+            "../data/UELYSYS/beacon/beacon_raw/UELYSYSBeaconPkt--%04d-%02d-%02d-%02d-%02d-%02d--",
             local->tm_year + 1900, local->tm_mon + 1, local->tm_mday,
             local->tm_hour, local->tm_min, local->tm_sec);
 
@@ -13672,7 +13691,7 @@ int MissionBeaconSaver(MissionBeacon* misnbec)
     struct tm* local = localtime(&tmtime);
 
     sprintf(filename,
-            "../data/missionbeacon/MissionBeacon--%04d-%02d-%02d-%02d-%02d-%02d--.txt",
+            "../data/BEE1000/missionbeacon/missionbeacon_parsed/MissionBeacon--%04d-%02d-%02d-%02d-%02d-%02d--.txt",
             local->tm_year + 1900, local->tm_mon + 1, local->tm_mday,
             local->tm_hour, local->tm_min, local->tm_sec);
 
@@ -14685,7 +14704,7 @@ static void DumpReportPayloadParsed_ByMidCc(FILE *fp, const Report *rpt)
 
 
 
-int ReportSaver(Report* rpt)
+int BEE1000ReportSaver(Report* rpt)
 {
     if (!rpt) return -1;
 
@@ -14696,7 +14715,125 @@ int ReportSaver(Report* rpt)
     struct tm* local = localtime(&tmtime);
 
     sprintf(filename,
-            "../data/report_parsed/Report--%04d-%02d-%02d-%02d-%02d-%02d--.txt",
+            "../data/BEE1000/report/report_parsed/Report--%04d-%02d-%02d-%02d-%02d-%02d--.txt",
+            local->tm_year + 1900, local->tm_mon + 1, local->tm_mday,
+            local->tm_hour, local->tm_min, local->tm_sec);
+
+    FILE* fp = fopen(filename, "w");
+    if (!fp) return -2;
+
+    fprintf(fp, "================= REPORT SAVE =================\n");
+
+    fprintf(fp, "\n[CCSDS HEADER]\n");
+    fprintf(fp, "MsgId      : 0x%04X\n", (unsigned int)rpt->CCSDS_MsgId);
+    fprintf(fp, "Seq        : 0x%04X\n", (unsigned int)rpt->CCSDS_Seq);
+    fprintf(fp, "Len        : 0x%04X\n", (unsigned int)rpt->CCSDS_Len);
+    fprintf(fp, "TimeCode   : %02X %02X %02X %02X %02X %02X\n",
+            rpt->CCSDS_TimeCode[0], rpt->CCSDS_TimeCode[1],
+            rpt->CCSDS_TimeCode[2], rpt->CCSDS_TimeCode[3],
+            rpt->CCSDS_TimeCode[4], rpt->CCSDS_TimeCode[5]);
+    fprintf(fp, "Padding    : 0x%08X\n", (unsigned int)rpt->CCSDS_Padding);
+
+    fprintf(fp, "\n[REPORT BODY]\n");
+    fprintf(fp, "Reflected MID  : 0x%04X\n", (unsigned int)rpt->ReflectedMID);
+    fprintf(fp, "Reflected CC   : 0x%02X\n", (unsigned int)rpt->ReflectedCC);
+    fprintf(fp, "RetType        : 0x%02X\n", (unsigned int)rpt->RetType);
+    fprintf(fp, "RetCode        : %" PRId32 "\n", (int32_t)rpt->RetCode);
+    fprintf(fp, "RetValSize     : %" PRIu16 "\n", (uint16_t)rpt->RetValSize);
+    DumpReportPayloadParsed_ByMidCc(fp, rpt);
+    fprintf(fp, "\n[RETURN VALUE]\n");
+    uint16_t dump_size = rpt->RetValSize;
+    if (dump_size > sizeof(rpt->RetVal))
+        dump_size = sizeof(rpt->RetVal);
+
+    for (uint16_t i = 0; i < dump_size; i++) {
+        fprintf(fp, "%02X ", rpt->RetVal[i]);
+        if ((i + 1) % 16 == 0)
+            fprintf(fp, "\n");
+    }
+    if (dump_size % 16 != 0)
+        fprintf(fp, "\n");
+
+    fprintf(fp, "\n[BINARY DATA]\n");
+    for (size_t i = 0; i < sizeof(*rpt); i++)
+        fprintf(fp, "%02X ", ((unsigned char*)rpt)[i]);
+    fprintf(fp, "\n");
+
+    fclose(fp);
+    return 0;
+}
+
+int BEE1012ReportSaver(Report* rpt)
+{
+    if (!rpt) return -1;
+
+    ReportCounter++;
+
+    char filename[128];
+    time_t tmtime = time(0);
+    struct tm* local = localtime(&tmtime);
+
+    sprintf(filename,
+            "../data/BEE1012/report/report_parsed/Report--%04d-%02d-%02d-%02d-%02d-%02d--.txt",
+            local->tm_year + 1900, local->tm_mon + 1, local->tm_mday,
+            local->tm_hour, local->tm_min, local->tm_sec);
+
+    FILE* fp = fopen(filename, "w");
+    if (!fp) return -2;
+
+    fprintf(fp, "================= REPORT SAVE =================\n");
+
+    fprintf(fp, "\n[CCSDS HEADER]\n");
+    fprintf(fp, "MsgId      : 0x%04X\n", (unsigned int)rpt->CCSDS_MsgId);
+    fprintf(fp, "Seq        : 0x%04X\n", (unsigned int)rpt->CCSDS_Seq);
+    fprintf(fp, "Len        : 0x%04X\n", (unsigned int)rpt->CCSDS_Len);
+    fprintf(fp, "TimeCode   : %02X %02X %02X %02X %02X %02X\n",
+            rpt->CCSDS_TimeCode[0], rpt->CCSDS_TimeCode[1],
+            rpt->CCSDS_TimeCode[2], rpt->CCSDS_TimeCode[3],
+            rpt->CCSDS_TimeCode[4], rpt->CCSDS_TimeCode[5]);
+    fprintf(fp, "Padding    : 0x%08X\n", (unsigned int)rpt->CCSDS_Padding);
+
+    fprintf(fp, "\n[REPORT BODY]\n");
+    fprintf(fp, "Reflected MID  : 0x%04X\n", (unsigned int)rpt->ReflectedMID);
+    fprintf(fp, "Reflected CC   : 0x%02X\n", (unsigned int)rpt->ReflectedCC);
+    fprintf(fp, "RetType        : 0x%02X\n", (unsigned int)rpt->RetType);
+    fprintf(fp, "RetCode        : %" PRId32 "\n", (int32_t)rpt->RetCode);
+    fprintf(fp, "RetValSize     : %" PRIu16 "\n", (uint16_t)rpt->RetValSize);
+    DumpReportPayloadParsed_ByMidCc(fp, rpt);
+    fprintf(fp, "\n[RETURN VALUE]\n");
+    uint16_t dump_size = rpt->RetValSize;
+    if (dump_size > sizeof(rpt->RetVal))
+        dump_size = sizeof(rpt->RetVal);
+
+    for (uint16_t i = 0; i < dump_size; i++) {
+        fprintf(fp, "%02X ", rpt->RetVal[i]);
+        if ((i + 1) % 16 == 0)
+            fprintf(fp, "\n");
+    }
+    if (dump_size % 16 != 0)
+        fprintf(fp, "\n");
+
+    fprintf(fp, "\n[BINARY DATA]\n");
+    for (size_t i = 0; i < sizeof(*rpt); i++)
+        fprintf(fp, "%02X ", ((unsigned char*)rpt)[i]);
+    fprintf(fp, "\n");
+
+    fclose(fp);
+    return 0;
+}
+
+int UELYSYSReportSaver(Report* rpt)
+{
+    if (!rpt) return -1;
+
+    ReportCounter++;
+
+    char filename[128];
+    time_t tmtime = time(0);
+    struct tm* local = localtime(&tmtime);
+
+    sprintf(filename,
+            "../data/UELYSYS/report/report_parsed/Report--%04d-%02d-%02d-%02d-%02d-%02d--.txt",
             local->tm_year + 1900, local->tm_mon + 1, local->tm_mday,
             local->tm_hour, local->tm_min, local->tm_sec);
 
@@ -14821,6 +14958,12 @@ void * task_downlink_onorbit(void * socketinfo)
             seconds += 0.5f;
             continue;
         }
+        const int dport = csp_conn_dport(conn);
+        unsigned int read_timeout = setup->default_timeout;
+
+        if (dport == 25 || dport == 15 || dport == 10) {
+            read_timeout = REPORT_CONN_DRAIN_TIMEOUT_MS;
+        }
 
         while ((packet = csp_read(conn, setup->default_timeout)) != NULL) {
 
@@ -14902,46 +15045,6 @@ void * task_downlink_onorbit(void * socketinfo)
                     }
                     printf("\n===============================\n");
                 }
-                    break;
-                }
-
-                case 24: {
-                    char cosrptfilename[128];
-                    time_t tmtime = time(0);
-                    struct tm *local = localtime(&tmtime);
-
-                    sprintf(cosrptfilename,
-                            "../data/cosmic/report--%04d-%02d-%02d-%02d-%02d-%02d--",
-                            local->tm_year + 1900,
-                            local->tm_mon + 1,
-                            local->tm_mday,
-                            local->tm_hour,
-                            local->tm_min,
-                            local->tm_sec);
-
-                    console.AddLog("!!!!!!!!!Received COSMIC Report from port : %d.!!!!!!!!!\n", dport);
-
-                    FILE *cosrpt_fp = fopen(cosrptfilename, "wb");
-                    printf("\nCOSMIC Report Length: %u", packet->length);
-
-                    for (int i = 0; i < packet->length; i++) {
-                        if (!(i % 10) && i != 0) {
-                            printf("\n");
-                            if (cosrpt_fp) fprintf(cosrpt_fp, "\n");
-                        }
-                        printf("0x%x ", packet->data[i]);
-                        if (cosrpt_fp) fprintf(cosrpt_fp, "%02hhx\t", packet->data[i]);
-                    }
-
-                    if (cosrpt_fp) fclose(cosrpt_fp);
-
-                    printf("Report Packet Length: %u\n", packet->length);
-                    printf("===== Report PACKET DUMP =====\n");
-                    for (int i = 0; i < packet->length; i++) {
-                        if (!(i % 10) && i != 0) printf("\n");
-                        printf("0x%02X ", packet->data[i]);
-                    }
-                    printf("\n===============================\n");
                     break;
                 }
 
@@ -15095,7 +15198,7 @@ void * task_downlink_onorbit(void * socketinfo)
                                 printf("\ncase25: REPORT COMPLETE \nMsgId=0x%04x \nRefMID=0x%04x \nCC=0x%02x \nRetSize=%u\n",
                                     rpt.CCSDS_MsgId, rpt.ReflectedMID, rpt.ReflectedCC, (unsigned)rpt.RetValSize);
                                 UpdateReportViewFromReport(rpt);
-                                ReportSaver(&rpt);
+                                BEE1000ReportSaver(&rpt);
                             } else {
                                 printf("case25: ParseReportWire540 failed\n");
                             }
@@ -15114,145 +15217,251 @@ void * task_downlink_onorbit(void * socketinfo)
                     break;
                 }
 
+                case 15: {
+                    FILE *rpt_fp = NULL;
 
-                case 13: {
-                    if (packet->length == BEE1000_LEN_BEACON) {
-                        char bcnpktfilename[128];
-                        time_t tmtime = time(0);
-                        struct tm *local = localtime(&tmtime);
+                    char rptpktfilename[128];
+                    time_t tmtime = time(0);
+                    struct tm *local = localtime(&tmtime);
 
-                        sprintf(bcnpktfilename,
-                                "../data/bcnpkt/bcnpktp13--%04d-%02d-%02d-%02d-%02d-%02d--",
-                                local->tm_year + 1900,
-                                local->tm_mon + 1,
-                                local->tm_mday,
-                                local->tm_hour,
-                                local->tm_min,
-                                local->tm_sec);
+                    sprintf(rptpktfilename,
+                            "../data/BEE1012/report/report_raw/rpt_raw--%04d-%02d-%02d-%02d-%02d-%02d--",
+                            local->tm_year + 1900,
+                            local->tm_mon + 1,
+                            local->tm_mday,
+                            local->tm_hour,
+                            local->tm_min,
+                            local->tm_sec);
 
-                        console.AddLog("Received Beacon from port : %d.", dport);
+                    console.AddLog("Received Report from port : %d.", dport);
+                    rpt_fp = fopen(rptpktfilename, "wb");
 
-                        FILE *bcn_fp = fopen(bcnpktfilename, "wb");
-                        printf("\nBeacon Length: %u", packet->length);
+                    const time_t now = time(NULL);
+                    const size_t chunk_len = packet->length;
 
-                        for (int i = 0; i < packet->length; i++) {
-                            if (!(i % 10) && i != 0) {
-                                printf("\n");
-                                if (bcn_fp) fprintf(bcn_fp, "\n");
-                            }
-                            printf("0x%x ", packet->data[i]);
-                            if (bcn_fp) fprintf(bcn_fp, "%02hhx\t", packet->data[i]);
+                    printf("case15: chunk_len=%zu\n", chunk_len);
+
+                    // ===== RAW DUMP (terminal + file) =====
+                    printf("===== REPORT RAW CHUNK DUMP (%zu bytes) =====\n", chunk_len);
+                    if (rpt_fp) fprintf(rpt_fp, "===== REPORT RAW CHUNK DUMP (%zu bytes) =====\n", chunk_len);
+
+                    for (size_t i = 0; i < chunk_len; i++) {
+                        printf("%02X ", packet->data[i]);
+                        if (rpt_fp) fprintf(rpt_fp, "%02hhx ", packet->data[i]);
+
+                        if ((i + 1) % 16 == 0) {
+                            printf("\n");
+                            if (rpt_fp) fprintf(rpt_fp, "\n");
                         }
-
-                        memset(bee1000_beacon, 0, sizeof(*bee1000_beacon));
-                        memcpy(bee1000_beacon, packet->data, BEE1000_LEN_BEACON);
-                        BEE1000BeaconSaver(bee1000_beacon);
-
-                        if (bcn_fp) fclose(bcn_fp);
-                    }
-                    else if (packet->length == BEE_LEN_MISSIONBEACON) {
-                        char misnbcnpktfilename[128];
-                        time_t tmtime = time(0);
-                        struct tm *local = localtime(&tmtime);
-
-                        sprintf(misnbcnpktfilename,
-                                "../data/bcnpkt/misnbcnpkt--%04d-%02d-%02d-%02d-%02d-%02d--",
-                                local->tm_year + 1900,
-                                local->tm_mon + 1,
-                                local->tm_mday,
-                                local->tm_hour,
-                                local->tm_min,
-                                local->tm_sec);
-
-                        console.AddLog("!!!!!!!!!Received Mission Beacon from port : %d.!!!!!!!!!", dport);
-
-                        FILE *misnbcn_fp = fopen(misnbcnpktfilename, "wb");
-                        printf("\nMission Beacon Length: %u", packet->length);
-
-                        for (int i = 0; i < packet->length; i++) {
-                            if (!(i % 10) && i != 0) {
-                                printf("\n");
-                                if (misnbcn_fp) fprintf(misnbcn_fp, "\n");
-                            }
-                            printf("0x%x ", packet->data[i]);
-                            if (misnbcn_fp) fprintf(misnbcn_fp, "%02hhx\t", packet->data[i]);
-                        }
-
-                        memset(missionbeacon, 0, sizeof(*missionbeacon));
-                        memcpy(missionbeacon, packet->data, BEE_LEN_MISSIONBEACON);
-                        MissionBeaconSaver(missionbeacon);
-
-                        if (misnbcn_fp) fclose(misnbcn_fp);
-                    }
-                    else if (packet->length == BEE_LEN_GETFILEINFO) {
-                        char getfileinfofilename[128];
-                        time_t tmtime = time(0);
-                        struct tm *local = localtime(&tmtime);
-
-                        sprintf(getfileinfofilename,
-                                "../data/response/GETFILEINFO--%04d-%02d-%02d-%02d-%02d-%02d--",
-                                local->tm_year + 1900,
-                                local->tm_mon + 1,
-                                local->tm_mday,
-                                local->tm_hour,
-                                local->tm_min,
-                                local->tm_sec);
-
-                        console.AddLog("Received GETFILEINFO Response from port : %d.", dport);
-
-                        FILE *GETFILEINFO_fp = fopen(getfileinfofilename, "wb");
-                        printf("Received GETFILEINFO response Length: %u", packet->length);
-
-                        for (int i = 0; i < packet->length; i++) {
-                            if (!(i % 10) && i != 0) {
-                                printf("\n");
-                                if (GETFILEINFO_fp) fprintf(GETFILEINFO_fp, "\n");
-                            }
-                            printf("0x%x ", packet->data[i]);
-                            if (GETFILEINFO_fp) fprintf(GETFILEINFO_fp, "%02hhx\t", packet->data[i]);
-                        }
-
-                        memset(getfileinfo, 0, sizeof(*getfileinfo));
-                        memcpy(getfileinfo, packet->data, BEE_LEN_GETFILEINFO);
-
-                        if (GETFILEINFO_fp) fclose(GETFILEINFO_fp);
-                    }
-                    else {
-                        console.AddLog("Received Something but brocken.");
-
-                        char unknownfilename[128];
-                        time_t tmtime = time(0);
-                        struct tm *local = localtime(&tmtime);
-
-                        sprintf(unknownfilename,
-                                "../data/unknown/port13/unknown_--%04d-%02d-%02d-%02d-%02d-%02d--",
-                                local->tm_year + 1900,
-                                local->tm_mon + 1,
-                                local->tm_mday,
-                                local->tm_hour,
-                                local->tm_min,
-                                local->tm_sec);
-
-                        FILE *unk_fp = fopen(unknownfilename, "wb");
-
-                        printf("Unknown Packet Length: %u\n", packet->length);
-                        printf("===== UNKNOWN PACKET DUMP =====\n");
-                        for (int i = 0; i < packet->length; i++) {
-                            if (!(i % 10) && i != 0) printf("\n");
-                            printf("0x%02X ", packet->data[i]);
-
-                            if (unk_fp) {
-                                if (!(i % 10) && i != 0) fprintf(unk_fp, "\n");
-                                fprintf(unk_fp, "%02hhx\t", packet->data[i]);
-                            }
-                        }
-                        printf("\n===============================\n");
-
-                        if (unk_fp) fclose(unk_fp);
                     }
 
+                    if (chunk_len % 16 != 0) {
+                        printf("\n");
+                        if (rpt_fp) fprintf(rpt_fp, "\n");
+                    }
+
+                    printf("===========================================\n");
+                    if (rpt_fp) fprintf(rpt_fp, "===========================================\n");
+                    // ===== END RAW DUMP =====
+
+                    if (g_report_collecting && g_report_have_last_time) {
+                        double dt = difftime(now, g_report_last_chunk_time);
+                        if (dt > 5.0) {
+                            printf("case15: timeout dt=%.1f sec (>5). drop current report assembler.\n", dt);
+
+                            g_report_collecting = false;
+                            g_report_off = 0;
+                            memset(g_report_wire, 0, sizeof(g_report_wire));
+
+                            g_report_have_last_time = false;
+                            g_report_last_chunk_time = 0;
+                        }
+                    }
+
+                    if (!g_report_collecting) {
+                        g_report_collecting = true;
+                        g_report_off = 0;
+                        memset(g_report_wire, 0, sizeof(g_report_wire));
+                    }
+
+                    g_report_last_chunk_time = now;
+                    g_report_have_last_time = true;
+
+                    if (g_report_off > REPORT_WIRE_SIZE) {
+                        g_report_collecting = false;
+                        g_report_off = 0;
+                        memset(g_report_wire, 0, sizeof(g_report_wire));
+                        g_report_have_last_time = false;
+                        g_report_last_chunk_time = 0;
+                    }
+
+                    size_t remain = REPORT_WIRE_SIZE - g_report_off;
+
+                    if (chunk_len > remain) {
+                        printf("case15: overflow (off=%zu, chunk=%zu). drop current and restart with this chunk.\n",
+                            g_report_off, chunk_len);
+
+                        g_report_collecting = true;
+                        g_report_off = 0;
+                        memset(g_report_wire, 0, sizeof(g_report_wire));
+                        remain = REPORT_WIRE_SIZE;
+                    }
+
+                    if (chunk_len <= remain) {
+                        memcpy(g_report_wire + g_report_off, packet->data, chunk_len);
+                        g_report_off += chunk_len;
+
+                        printf("case15: assembled %zu/%zu\n", g_report_off, (size_t)REPORT_WIRE_SIZE);
+
+                        if (g_report_off == REPORT_WIRE_SIZE) {
+                            Report rpt;
+                            bool ok = ParseReportWire540(g_report_wire, REPORT_WIRE_SIZE, rpt);
+
+                            if (ok) {
+                                printf("\ncase15: REPORT COMPLETE \nMsgId=0x%04x \nRefMID=0x%04x \nCC=0x%02x \nRetSize=%u\n",
+                                    rpt.CCSDS_MsgId, rpt.ReflectedMID, rpt.ReflectedCC, (unsigned)rpt.RetValSize);
+                                UpdateReportViewFromReport(rpt);
+                                BEE1012ReportSaver(&rpt);
+                            } else {
+                                printf("case15: ParseReportWire540 failed\n");
+                            }
+
+                            g_report_collecting = false;
+                            g_report_off = 0;
+                            memset(g_report_wire, 0, sizeof(g_report_wire));
+                            g_report_have_last_time = false;
+                            g_report_last_chunk_time = 0;
+                        }
+                    } else {
+                        printf("case15: chunk too big to fit even after restart (%zu)\n", chunk_len);
+                    }
+
+                    if (rpt_fp) fclose(rpt_fp);
                     break;
                 }
+
+                case 10: {
+                    FILE *rpt_fp = NULL;
+
+                    char rptpktfilename[128];
+                    time_t tmtime = time(0);
+                    struct tm *local = localtime(&tmtime);
+
+                    sprintf(rptpktfilename,
+                            "../data/UELYSYS/report/report_raw/report_raw_%04d-%02d-%02d-%02d-%02d-%02d--",
+                            local->tm_year + 1900,
+                            local->tm_mon + 1,
+                            local->tm_mday,
+                            local->tm_hour,
+                            local->tm_min,
+                            local->tm_sec);
+
+                    console.AddLog("Received Report from port : %d.", dport);
+                    rpt_fp = fopen(rptpktfilename, "wb");
+
+                    const time_t now = time(NULL);
+                    const size_t chunk_len = packet->length;
+
+                    printf("case10: chunk_len=%zu\n", chunk_len);
+
+                    // ===== RAW DUMP (terminal + file) =====
+                    printf("===== REPORT RAW CHUNK DUMP (%zu bytes) =====\n", chunk_len);
+                    if (rpt_fp) fprintf(rpt_fp, "===== REPORT RAW CHUNK DUMP (%zu bytes) =====\n", chunk_len);
+
+                    for (size_t i = 0; i < chunk_len; i++) {
+                        printf("%02X ", packet->data[i]);
+                        if (rpt_fp) fprintf(rpt_fp, "%02hhx ", packet->data[i]);
+
+                        if ((i + 1) % 16 == 0) {
+                            printf("\n");
+                            if (rpt_fp) fprintf(rpt_fp, "\n");
+                        }
+                    }
+
+                    if (chunk_len % 16 != 0) {
+                        printf("\n");
+                        if (rpt_fp) fprintf(rpt_fp, "\n");
+                    }
+
+                    printf("===========================================\n");
+                    if (rpt_fp) fprintf(rpt_fp, "===========================================\n");
+                    // ===== END RAW DUMP =====
+
+                    if (g_report_collecting && g_report_have_last_time) {
+                        double dt = difftime(now, g_report_last_chunk_time);
+                        if (dt > 5.0) {
+                            printf("case10: timeout dt=%.1f sec (>5). drop current report assembler.\n", dt);
+
+                            g_report_collecting = false;
+                            g_report_off = 0;
+                            memset(g_report_wire, 0, sizeof(g_report_wire));
+
+                            g_report_have_last_time = false;
+                            g_report_last_chunk_time = 0;
+                        }
+                    }
+
+                    if (!g_report_collecting) {
+                        g_report_collecting = true;
+                        g_report_off = 0;
+                        memset(g_report_wire, 0, sizeof(g_report_wire));
+                    }
+
+                    g_report_last_chunk_time = now;
+                    g_report_have_last_time = true;
+
+                    if (g_report_off > REPORT_WIRE_SIZE) {
+                        g_report_collecting = false;
+                        g_report_off = 0;
+                        memset(g_report_wire, 0, sizeof(g_report_wire));
+                        g_report_have_last_time = false;
+                        g_report_last_chunk_time = 0;
+                    }
+
+                    size_t remain = REPORT_WIRE_SIZE - g_report_off;
+
+                    if (chunk_len > remain) {
+                        printf("case10: overflow (off=%zu, chunk=%zu). drop current and restart with this chunk.\n",
+                            g_report_off, chunk_len);
+
+                        g_report_collecting = true;
+                        g_report_off = 0;
+                        memset(g_report_wire, 0, sizeof(g_report_wire));
+                        remain = REPORT_WIRE_SIZE;
+                    }
+
+                    if (chunk_len <= remain) {
+                        memcpy(g_report_wire + g_report_off, packet->data, chunk_len);
+                        g_report_off += chunk_len;
+
+                        printf("case10: assembled %zu/%zu\n", g_report_off, (size_t)REPORT_WIRE_SIZE);
+
+                        if (g_report_off == REPORT_WIRE_SIZE) {
+                            Report rpt;
+                            bool ok = ParseReportWire540(g_report_wire, REPORT_WIRE_SIZE, rpt);
+
+                            if (ok) {
+                                printf("\ncase10: REPORT COMPLETE \nMsgId=0x%04x \nRefMID=0x%04x \nCC=0x%02x \nRetSize=%u\n",
+                                    rpt.CCSDS_MsgId, rpt.ReflectedMID, rpt.ReflectedCC, (unsigned)rpt.RetValSize);
+                                UpdateReportViewFromReport(rpt);
+                                UELYSYSReportSaver(&rpt);
+                            } else {
+                                printf("case10: ParseReportWire540 failed\n");
+                            }
+
+                            g_report_collecting = false;
+                            g_report_off = 0;
+                            memset(g_report_wire, 0, sizeof(g_report_wire));
+                            g_report_have_last_time = false;
+                            g_report_last_chunk_time = 0;
+                        }
+                    } else {
+                        printf("case10: chunk too big to fit even after restart (%zu)\n", chunk_len);
+                    }
+
+                    if (rpt_fp) fclose(rpt_fp);
+                    break;
+                }                
 
                 case 47: {
                     HandleBEE1012BeaconPacket(packet, dport);
@@ -15271,7 +15480,7 @@ void * task_downlink_onorbit(void * socketinfo)
                         struct tm *local = localtime(&tmtime);
 
                         sprintf(bcnpktfilename,
-                                "../data/bcnpkt/bcnpktp13--%04d-%02d-%02d-%02d-%02d-%02d--",
+                                "../data/BEE1000/beacon/beacon_raw/bcnpkt--%04d-%02d-%02d-%02d-%02d-%02d--",
                                 local->tm_year + 1900,
                                 local->tm_mon + 1,
                                 local->tm_mday,
@@ -15305,7 +15514,7 @@ void * task_downlink_onorbit(void * socketinfo)
                         struct tm *local = localtime(&tmtime);
 
                         sprintf(misnbcnpktfilename,
-                                "../data/bcnpkt/misnbcnpkt--%04d-%02d-%02d-%02d-%02d-%02d--",
+                                "../data/BEE1000/missionbeacon/missionbeacon_raw/misnbcnpkt--%04d-%02d-%02d-%02d-%02d-%02d--",
                                 local->tm_year + 1900,
                                 local->tm_mon + 1,
                                 local->tm_mday,
@@ -15341,7 +15550,7 @@ void * task_downlink_onorbit(void * socketinfo)
                         struct tm *local = localtime(&tmtime);
 
                         sprintf(unknownfilename,
-                                "../data/unknown/port31/unknown--%04d-%02d-%02d-%02d-%02d-%02d--",
+                                "../data/unknown/unknown--%04d-%02d-%02d-%02d-%02d-%02d--",
                                 local->tm_year + 1900,
                                 local->tm_mon + 1,
                                 local->tm_mday,
@@ -15368,45 +15577,15 @@ void * task_downlink_onorbit(void * socketinfo)
                     }
                     break;
                 }
-
-                case 12: {
-                    char bcnpktfilename[128];
-                    time_t tmtime = time(0);
-                    struct tm *local = localtime(&tmtime);
-
-                    sprintf(bcnpktfilename,
-                            "../data/bcnpkt/bcnpktp13--%04d-%02d-%02d-%02d-%02d-%02d--",
-                            local->tm_year + 1900,
-                            local->tm_mon + 1,
-                            local->tm_mday,
-                            local->tm_hour,
-                            local->tm_min,
-                            local->tm_sec);
-
-                    console.AddLog("Received Beacon from port : %d.", dport);
-
-                    FILE *bcn_fp = fopen(bcnpktfilename, "wb");
-                    printf("Beacon Length: %u", packet->length);
-
-                    for (int i = 0; i < packet->length; i++) {
-                        if (!(i % 10) && i != 0) {
-                            printf("\n");
-                            if (bcn_fp) fprintf(bcn_fp, "\n");
-                        }
-                        printf("0x%x ", packet->data[i]);
-                        if (bcn_fp) fprintf(bcn_fp, "%02hhx\t", packet->data[i]);
-                    }
-
-                    if (packet->length == BEE1000_LEN_BEACON) {
-                        memcpy(bee1000_beacon, packet->data, BEE1000_LEN_BEACON);
-                    } else {
-                        console.AddLog("Received Beacon but brocken.");
-                    }
-
-                    if (bcn_fp) fclose(bcn_fp);
+                case 17: {
+                    HandleBEE1012BeaconPacket(packet, dport);
                     break;
                 }
 
+                case 12: {
+                    HandleUELYSYSBeaconPacket(packet, dport);
+                    break;
+                }
                 default: {
                     if (dport == 1) {
                         csp_service_handler(conn, packet);
@@ -15763,7 +15942,7 @@ void * task_uplink_onorbit(void * sign_)
             {
                 if(State.Scheduled)
                 {
-                    if ((txconn = csp_connect(CSP_PRIO_HIGH, 3, 13, MIM_DEFAULT_TIMEOUT, 0)) == NULL) {
+                    if ((txconn = csp_connect(CSP_PRIO_HIGH, setup->obc_node, 13, MIM_DEFAULT_TIMEOUT, 0)) == NULL) {
                     /*!!!!!!!!!!!Revise setup->obc_node!!!!!!!!!!*/ //-> Change to 28.
                     /*!!!!!!!!!!!!Need to revise Port!!!!!!!!!!!*/
                         continue;
@@ -15773,7 +15952,7 @@ void * task_uplink_onorbit(void * sign_)
                 }
                 else
                 {
-                    if ((txconn = csp_connect(CSP_PRIO_HIGH, 3, 13, MIM_DEFAULT_TIMEOUT, 0)) == NULL) {
+                    if ((txconn = csp_connect(CSP_PRIO_HIGH, setup->obc_node, 13, MIM_DEFAULT_TIMEOUT, 0)) == NULL) {
                     /*!!!!!!!!!!!Revise setup->obc_node!!!!!!!!!!*/ //-> Change to 28.
                     /*!!!!!!!!!!!!Need to revise Port!!!!!!!!!!!*/
                         continue;
