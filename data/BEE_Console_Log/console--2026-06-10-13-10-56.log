@@ -1,0 +1,79 @@
+2026-06-10 13:10
+[13:11:40]  Connect to Switch Box..............Failed.
+[13:11:40]  Connect to Rotator.................Failed.
+[13:11:40]  Connect to GS100..................Success.
+[13:11:40]  BEE-1000 BCN Port 31 bind success.
+[13:11:40]  BEE-1000 RPT Port 25 bind success.
+[13:11:40]  BEE-1000 Event Port 27 bind success.
+[13:11:40]  Rotator Read Failed. Please Check Again.
+[13:11:40]  BEE-100 FM Port 23 bind success.
+[13:11:40]  UEL-Y-Sys. BCN Port 12 bind success.
+[13:11:40]  UEL-Y-Sys. RPT Port 10 bind success.
+[13:11:40]  UEL-Y-Sys. Event Port 11 bind success.
+[13:11:40]  UEL-Y-Sys. FM Port 14 bind success.
+[13:11:40]  BEE-1012 BCN Port 17 bind success.
+[13:11:40]  BEE-1012 RPT Port 15 bind success.
+[13:11:40]  BEE-1012 Event Port 16 bind success.
+[13:11:40]  BEE-1012 FM Port 18 bind success.
+[13:11:42]  Packet Received on unknown port 11
+[13:11:42]  Packet length is 172
+[13:11:44]  Received Report from port : 15.
+[13:11:44]  Received Report from port : 15.
+[13:11:45]  Received Report from port : 15.
+[13:11:53]  Received Report from port : 15.
+[13:11:54]  Received Report from port : 15.
+[13:11:54]  Received Report from port : 15.
+[13:11:55]  Packet Received on unknown port 11
+[13:11:55]  Packet length is 172
+[13:12:00]  Received UELYSYS Beacon from port : 12.
+[13:12:02]  Packet Received on unknown port 11
+[13:12:02]  Packet length is 172
+[13:12:04]  Received BEE1012 Beacon from port : 17.
+[13:12:06]  Received Report from port : 15.
+[13:12:06]  Received Report from port : 15.
+[13:12:07]  Received Report from port : 15.
+[13:12:08]  Changing GS HMAC Key for BEE1012...
+[13:12:08]   Satellite Switched to: BEE1012 (TX HMAC enabled)
+[13:12:08]  Received BEE1012 Beacon from port : 17.
+[13:12:11]  Changing GS HMAC Key for UELYSYS...
+[13:12:11]   Satellite Switched to: UELYSYS (TX HMAC enabled)
+[13:12:13]  Received Report from port : 15.
+[13:12:13]  Received Report from port : 15.
+[13:12:13]  Received Report from port : 15.
+[13:12:18]  Received BEE1012 Beacon from port : 17.
+[13:12:22]  Packet Received on unknown port 11
+[13:12:22]  Packet length is 172
+[13:12:24]  Received Report from port : 15.
+[13:12:24]  Received Report from port : 15.
+[13:12:25]  Received Report from port : 15.
+[13:12:25]  Packet Received on unknown port 11
+[13:12:25]  Packet length is 172
+[13:12:30]  Received UELYSYS Beacon from port : 12.
+[13:12:42]  Packet Received on unknown port 11
+[13:12:42]  Packet length is 172
+[13:12:55]  Packet Received on unknown port 11
+[13:12:55]  Packet length is 172
+[13:13:00]  Received UELYSYS Beacon from port : 12.
+[13:13:02]  Packet Received on unknown port 11
+[13:13:02]  Packet length is 172
+[13:13:22]  Packet Received on unknown port 11
+[13:13:22]  Packet length is 172
+[13:13:25]  Packet Received on unknown port 11
+[13:13:25]  Packet length is 172
+[13:13:30]  Received UELYSYS Beacon from port : 12.
+[13:13:41]  Changing GS HMAC Key for BEE1012...
+[13:13:41]   Satellite Switched to: BEE1012 (TX HMAC enabled)
+[13:13:42]  Packet Received on unknown port 11
+[13:13:42]  Packet length is 172
+[13:13:46]  Changing GS HMAC Key for UELYSYS...
+[13:13:46]   Satellite Switched to: UELYSYS (TX HMAC enabled)
+[13:13:50]  Changing GS HMAC Key for BEE1012...
+[13:13:50]   Satellite Switched to: BEE1012 (TX HMAC enabled)
+[13:13:55]  Packet Received on unknown port 11
+[13:13:55]  Packet length is 172
+[13:14:02]  Packet Received on unknown port 11
+[13:14:02]  Packet length is 172
+[13:14:04]  Packet Received on unknown port 11
+[13:14:04]  Packet length is 172
+[13:14:06]  Packet Received on unknown port 11
+[13:14:06]  Packet length is 172

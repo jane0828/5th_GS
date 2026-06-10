@@ -6181,7 +6181,7 @@ static const SubsystemRange FilterRules[] = {
     { 7, 214, 215 },  // Cosmic
     { 8, 153, 159 },  // cFE range 1
     { 8, 207, 208 },  // cFE range 2
-    { 8, 217, 221 },  // cFE range 3
+    { 8, 217, 223 },  // cFE range 3
     { 9, 136, 152 },  // SC APP
     { 10, 201, 204 }, // FTP range 1
     { 10, 213, 213 }, // FTP range 2
@@ -6206,6 +6206,7 @@ static const SubsystemRange FilterRules[] = {
     { 19, 550, 589 }, // MEOW extended
     { 15, 590, 591 }, // PAYUEL_ROMA PAR_GET operation presets
     { 28, 592, 596 }, // adcs (UELYSYS requested operations)
+    { 32, 630, 630 }, // AIOBC
 };
 
 static bool IsUelysysPayCommandIndex(int cmd_i)
@@ -6239,7 +6240,7 @@ static bool IsBusCommandIndex(int cmd_i)
                       (cmd_i >= 430 && cmd_i <= 436);
     const bool cfe = (cmd_i >= 153 && cmd_i <= 159) ||
                      (cmd_i >= 207 && cmd_i <= 208) ||
-                     (cmd_i >= 217 && cmd_i <= 221);
+                     (cmd_i >= 217 && cmd_i <= 223);
     const bool sc = cmd_i >= 136 && cmd_i <= 152;
     const bool ftp = (cmd_i >= 201 && cmd_i <= 204) || cmd_i == 213;
     const bool utrx = cmd_i == 206 || (cmd_i >= 420 && cmd_i <= 425);
@@ -6266,7 +6267,7 @@ static void DrawCmdGeneratorBody(bool initial_mode)
         "LGPM", "LTRX", "STX", "PAYUEL_ROMA", "PAYUEL_LGBAT", "BEE1012 GPIO",
         "ttc", "MEOW", "utrx", "uant", "stx", "UELYSYS GPIO", "payuel_obc",
         "payuel_cam", "payuel_lgbat", "payuel_aos", "adcs",
-        "BUS APP", "UELYSYS PAY APP", "BEE1012 PAY APP"
+        "BUS APP", "UELYSYS PAY APP", "BEE1012 PAY APP", "AIOBC"
     };
 
     ImGui::SetNextItemWidth(100.0f);
@@ -6358,6 +6359,79 @@ static void DrawCmdGeneratorBody(bool initial_mode)
 
     switch (gen_fnccode)
     {
+
+
+case 630: { // AIOBC
+    static uint16_t msgid = 0x18F0;
+    static uint8_t fnccode = 0;
+
+    ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
+    ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+    if (ImGui::Button("Generate CMD")) {
+        WriteSystemName(msgid);
+
+        AIOBC_HealthChckCmd_t &cmd = command->aiobchealthchckcmd;
+
+        uint16_t msgid_be = htons(msgid);
+        uint8_t sequence[2] = {0xC0, 0x00};
+
+        uint16_t packet_length =
+            (uint16_t)(sizeof(AIOBC_HealthChckCmd_t) - 7);
+
+        uint8_t length[2] = {
+            (uint8_t)(packet_length >> 8),
+            (uint8_t)(packet_length & 0xFF)
+        };
+
+        memcpy(cmd.CmdHeader + 0, &msgid_be, sizeof(msgid_be));
+        memcpy(cmd.CmdHeader + 2, sequence, sizeof(sequence));
+        memcpy(cmd.CmdHeader + 4, length, sizeof(length));
+        memcpy(cmd.CmdHeader + 6, &fnccode, sizeof(fnccode));
+
+        /* Fill the entire payload with zeros */
+        memset(cmd.padding, 0, sizeof(cmd.padding));
+
+        /* Calculate checksum with checksum field cleared */
+        cmd.CmdHeader[7] = 0;
+
+        uint8_t crc = 0xFF;
+        const uint8_t *p =
+            reinterpret_cast<const uint8_t *>(&cmd);
+
+        for (size_t i = 0; i < sizeof(cmd); ++i)
+            crc ^= p[i];
+
+        cmd.CmdHeader[7] = crc;
+
+        packetsign *pkt = static_cast<packetsign *>(
+            malloc(2 + 2 + 4 + sizeof(cmd))
+        );
+
+        if (pkt == NULL) {
+            console.AddLog("[ERROR]##Failed to allocate AIOBC command packet.");
+            break;
+        }
+
+        pkt->Identifier = HVD_TEST;
+        pkt->PacketType = B12_UL_AIOBC;
+        pkt->Length = (uint16_t)sizeof(cmd);
+
+        memcpy(pkt->Data, &cmd, sizeof(cmd));
+
+        pthread_join(p_thread[4], NULL);
+        pthread_create(
+            &p_thread[4],
+            NULL,
+            task_uplink_onorbit,
+            static_cast<void *>(pkt)
+        );
+    }
+
+    break;
+}
+
+
         case 400: {
             UELYSYS_NoArgCmd_t &cmd = command->uelysys_noargcmd;
             static uint16_t msgid = (uint16_t)(UELYSYS_TTC_CMD_ID);
@@ -19116,6 +19190,99 @@ case 213: { // FTP_filenameCmd
         break;
     }
 
+
+    case 222: { // CFE time
+        static uint16_t msgid;
+        static uint8_t fnccode;
+        static uint32_t second;
+        static uint32_t subsecond;
+
+        ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
+        ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+        ImGui::InputScalar("Second", ImGuiDataType_U32, &command->cfetimecmd.second);
+        ImGui::InputScalar("SubSecond", ImGuiDataType_U32, &command->cfetimecmd.subsecond);
+
+        if (ImGui::Button("Generate CMD")) {
+            WriteSystemName(msgid);
+            uint16_t msgid_be = htons(msgid);
+            uint8_t sequence[2] = {0xC0, 0x00};
+            uint8_t  length[2]   = {0x00, (uint8_t)(sizeof(CFE_TIMECmd_t) - 7)};
+            memcpy(command->cfetimecmd.CmdHeader + 0, &msgid_be, sizeof(uint16_t));
+            memcpy(command->cfetimecmd.CmdHeader + 2, sequence, sizeof(uint16_t));
+            memcpy(command->cfetimecmd.CmdHeader + 4, length, sizeof(uint16_t));
+            memcpy(command->cfetimecmd.CmdHeader + 6, &fnccode, sizeof(uint8_t));
+
+
+            command->cfetimecmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(CFE_TIMECmd_t);
+            const uint8_t *p = (const uint8_t *)&command->cfetimecmd;
+            uint8_t crc = 0xFF;
+
+            while (total--) crc ^= *(p++);
+            command->cfetimecmd.CmdHeader[7] = crc;
+
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(CFE_TIMECmd_t));
+            pkt->Identifier = HVD_TEST;
+            pkt->PacketType = MIM_PT_TMTC_TEST;
+            pkt->Length     = sizeof(CFE_TIMECmd_t);
+
+            memcpy(pkt->Data, &command->cfetimecmd, sizeof(CFE_TIMECmd_t));
+
+            pthread_join(p_thread[4], NULL);
+            pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
+        
+        }
+
+
+        break;
+    }
+
+    case 223: { // SCH AOS
+        static uint16_t msgid;
+        static uint8_t fnccode;
+        static uint16_t EntryIndex;
+        static uint16_t Enable;
+
+        ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
+        ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+        ImGui::InputScalar("Entry Index (u16)", ImGuiDataType_U16, &command->schaoscmd.EntryIndex);
+        ImGui::InputScalar("Enable (u16)", ImGuiDataType_U16, &command->schaoscmd.Enable);
+
+        if (ImGui::Button("Generate CMD")) {
+            WriteSystemName(msgid);
+            uint16_t msgid_be = htons(msgid);
+            uint8_t sequence[2] = {0xC0, 0x00};
+            uint8_t  length[2]   = {0x00, (uint8_t)(sizeof(SCH_AOSCmd_t) - 7)};
+            memcpy(command->schaoscmd.CmdHeader + 0, &msgid_be, sizeof(uint16_t));
+            memcpy(command->schaoscmd.CmdHeader + 2, sequence, sizeof(uint16_t));
+            memcpy(command->schaoscmd.CmdHeader + 4, length, sizeof(uint16_t));
+            memcpy(command->schaoscmd.CmdHeader + 6, &fnccode, sizeof(uint8_t));
+
+
+            command->schaoscmd.CmdHeader[7] = 0;
+            uint16_t total = sizeof(SCH_AOSCmd_t);
+            const uint8_t *p = (const uint8_t *)&command->schaoscmd;
+            uint8_t crc = 0xFF;
+
+            while (total--) crc ^= *(p++);
+            command->schaoscmd.CmdHeader[7] = crc;
+
+            packetsign *pkt = (packetsign *)malloc(2 + 2 + 4 + sizeof(SCH_AOSCmd_t));
+            pkt->Identifier = HVD_TEST;
+            pkt->PacketType = MIM_PT_TMTC_TEST;
+            pkt->Length     = sizeof(SCH_AOSCmd_t);
+
+            memcpy(pkt->Data, &command->schaoscmd, sizeof(SCH_AOSCmd_t));
+
+            pthread_join(p_thread[4], NULL);
+            pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void *)pkt);
+        
+        }
+
+
+        break;
+    }
+
     /********************************************5차 추가******************************************************/
     case 230: { /* 230 : LGPM NOOP (CC 0, No-Arg) */
         static uint16_t msgid = PAYUEL_LGPM_CMD_ID;
@@ -23113,6 +23280,8 @@ void Initialize_CMDLabels()
     snprintf(Templabels[219], 64, "ES Reload App");
     snprintf(Templabels[220], 64, "ES Query One");
     snprintf(Templabels[221], 64, "ES Query All");
+    snprintf(Templabels[222], 64, "CFE Time");
+    snprintf(Templabels[223], 64, "SCH AOS");
 
     /******************************5차 추가*************************************************/
     snprintf(Templabels[230], 64, "PAYUEL_LGPM NOOP");
@@ -23167,6 +23336,8 @@ void Initialize_CMDLabels()
     snprintf(Templabels[309], 64, "PAYUEL_ROMA SYNC_TX");
     snprintf(Templabels[310], 64, "PAYUEL_ROMA PAY_INIT");
 
+
+    snprintf(Templabels[630], 64, "AIOBC HEALTH CHECK");
     /*****************************************************************************************/
 }
 

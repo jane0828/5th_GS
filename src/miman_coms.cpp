@@ -3987,16 +3987,6 @@ void * task_downlink_onorbit(void * socketinfo)
                     break;
                 }                
 
-                case 47: {
-                    HandleBEE1012BeaconPacket(packet, dport);
-                    break;
-                }
-
-                case 42: {
-                    HandleUELYSYSBeaconPacket(packet, dport);
-                    break;
-                }
-
                 case 31: {
                     if (packet->length == BEE1000_LEN_BEACON) {
                         char bcnpktfilename[128];
@@ -4562,6 +4552,50 @@ void * task_uplink_onorbit(void * sign_)
             // }
             // else
             //     console.AddLog("[ERROR]##No Command Reply.");
+            break;
+        }
+        // Added for AIOBC
+        case B12_UL_AIOBC : { // == 10. Add for TMTC Test
+            csp_packet_t * confirm_ = (csp_packet_t *)csp_buffer_get(MIM_LEN_PACKET);
+            while(State.uplink_mode)
+            {
+                if ((txconn = csp_connect(CSP_PRIO_HIGH, setup->obc_node, 13, MIM_DEFAULT_TIMEOUT, 0)) == NULL) {
+                /*!!!!!!!!!!!Revise setup->obc_node!!!!!!!!!!*/ //-> Change to 28.
+                /*!!!!!!!!!!!!Need to revise Port!!!!!!!!!!!*/
+                    continue;
+                }
+                else
+                    break;
+            }
+            while (State.uplink_mode && txconn != NULL)
+            {
+                console.AddLog("[OK]CMD Packet Header: 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x 0x%x",
+                    packet->data[0],packet->data[1],packet->data[2],packet->data[3],packet->data[4],packet->data[5],packet->data[6],packet->data[7]);
+                fprintf(log_ptr, "|| Uplink || Length: %d\n",packet->length);
+                    for(int i=0; i<packet->length; i++) {
+                        if(!(i%10) && i !=0) {
+                            fprintf(log_ptr, "\n");
+                        }
+                        fprintf(log_ptr, "%02hhx\t",packet->data[i]);
+                    } fprintf(log_ptr,"\n\n");
+                if(csp_send(txconn, packet, setup->default_timeout)) // Success. then,
+                {   
+                    packet = NULL; // discard packet and,
+                    break; // End process.
+                }
+                else // Fail. then,
+                    continue; //Go to loof, and try again.
+            }
+            if(txconn == NULL)
+            {
+                console.AddLog("[ERROR]##Connection Buffer Busy. Skip this command.");
+                if(confirm_!=NULL)
+                {
+                    csp_buffer_free(confirm_);
+                    confirm_ = NULL;
+                }
+                break;
+            }
             break;
         }
     }

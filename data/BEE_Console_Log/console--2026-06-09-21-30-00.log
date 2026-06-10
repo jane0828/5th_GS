@@ -1,0 +1,120 @@
+2026-06-09 21:30
+[21:30:14]  Connect to Switch Box..............Failed.
+[21:30:14]  Connect to Rotator.................Failed.
+[21:30:14]  Connect to GS100..................Success.
+[21:30:14]  BEE-1000 BCN Port 31 bind success.
+[21:30:14]  BEE-1000 RPT Port 25 bind success.
+[21:30:14]  BEE-1000 Event Port 27 bind success.
+[21:30:14]  BEE-100 FM Port 23 bind success.
+[21:30:14]  UEL-Y-Sys. BCN Port 12 bind success.
+[21:30:14]  Rotator Read Failed. Please Check Again.
+[21:30:14]  UEL-Y-Sys. RPT Port 10 bind success.
+[21:30:14]  UEL-Y-Sys. Event Port 11 bind success.
+[21:30:14]  UEL-Y-Sys. FM Port 14 bind success.
+[21:30:14]  BEE-1012 BCN Port 17 bind success.
+[21:30:14]  BEE-1012 RPT Port 15 bind success.
+[21:30:14]  BEE-1012 Event Port 16 bind success.
+[21:30:14]  BEE-1012 FM Port 18 bind success.
+[21:30:16]  Received BEE1012 Beacon from port : 17.
+[21:30:22]  Changing GS HMAC Key for BEE1012...
+[21:30:22]   Satellite Switched to: BEE1012 (TX HMAC enabled)
+[21:30:22]  Packet Received on unknown port 11
+[21:30:22]  Packet length is 172
+[21:30:27]  Received UELYSYS Beacon from port : 12.
+[21:30:29]  Packet Received on unknown port 11
+[21:30:29]  Packet length is 172
+[21:30:40]  Received BEE1012 Beacon from port : 17.
+[21:30:46]  Received BEE1012 Beacon from port : 17.
+[21:30:49]  Packet Received on unknown port 11
+[21:30:49]  Packet length is 172
+[21:30:52]  Packet Received on unknown port 11
+[21:30:52]  Packet length is 172
+[21:30:56]  Received BEE1012 Beacon from port : 17.
+[21:30:58]  Received UELYSYS Beacon from port : 12.
+[21:31:09]  Packet Received on unknown port 11
+[21:31:09]  Packet length is 172
+[21:31:20]  Received BEE1012 Beacon from port : 17.
+[21:31:22]  Start FTP Downlink.
+[21:31:27]  Received FTP Download Spec.
+[21:31:27]  Received FTP Download Spec. Filesize : 150888, CRC : 3700173035.
+[21:31:28]  Received FTP Status Request.
+[21:31:28]  Restart FTP Downlink from chunk : 1, to total : 839
+[21:31:29]  Download : 1/839
+[21:31:30]  Download : 2/839
+[21:31:30]  Download : 3/839
+[21:31:30]  Download : 4/839
+[21:31:31]  Download : 5/839
+[21:31:31]  Download : 6/839
+[21:31:32]  Download : 7/839
+[21:31:33]  Download : 8/839
+[21:31:33]  Download : 9/839
+[21:31:34]  Download : 10/839
+[21:31:34]  Download : 11/839
+[21:31:35]  Download : 12/839
+[21:31:35]  Download : 13/839
+[21:31:36]  Download : 14/839
+[21:31:36]  Download : 15/839
+[21:31:37]  Download : 16/839
+[21:31:37]  Download : 17/839
+[21:31:38]  Download : 18/839
+[21:31:39]  Download : 19/839
+[21:31:39]  Download : 20/839
+[21:31:40]  Download : 21/839
+[21:31:40]  Download : 22/839
+[21:31:41]  Download : 23/839
+[21:31:41]  Download : 24/839
+[21:31:42]  Download : 25/839
+[21:31:42]  Download : 26/839
+[21:31:43]  Download : 27/839
+[21:31:43]  Download : 28/839
+[21:31:44]  Download : 29/839
+[21:31:44]  Download : 30/839
+[21:31:45]  Download : 31/839
+[21:31:45]  Download : 32/839
+[21:31:45]  Download : 33/839
+[21:31:46]  Download : 34/839
+[21:31:47]  Download : 35/839
+[21:31:47]  Download : 36/839
+[21:31:47]  Download : 37/839
+[21:31:48]  Download : 38/839
+[21:31:49]  Download : 39/839
+[21:31:49]  Download : 40/839
+[21:31:49]  Download : 41/839
+[21:31:51]  Download : 42/839
+[21:31:51]  Download : 43/839
+[21:31:51]  Download : 44/839
+[21:31:52]  Download : 45/839
+[21:32:01]  Download : 46/839
+[21:32:01]  Download : 47/839
+[21:32:01]  Download : 48/839
+[21:32:02]  Download : 49/839
+[21:32:02]  Download : 50/839
+[21:32:03]  Download : 51/839
+[21:32:03]  Download : 52/839
+[21:32:04]  Download : 53/839
+[21:32:04]  Download : 54/839
+[21:32:05]  Download : 55/839
+[21:32:05]  Download : 56/839
+[21:32:06]  Download : 57/839
+[21:32:06]  Download : 58/839
+[21:32:07]  Download : 59/839
+[21:32:08]  Download : 60/839
+[21:32:08]  Download : 61/839
+[21:32:09]  Download : 62/839
+[21:32:09]  Download : 63/839
+[21:32:10]  Download : 64/839
+[21:32:11]  Download : 65/839
+[21:32:11]  Download : 66/839
+[21:32:11]  Download : 67/839
+[21:32:12]  Download : 68/839
+[21:32:13]  Download : 69/839
+[21:32:13]  Download : 70/839
+[21:32:13]  Download : 71/839
+[21:32:14]  Download : 72/839
+[21:32:15]  Download : 73/839
+[21:32:15]  Download : 74/839
+[21:32:15]  Download : 75/839
+[21:32:16]  Download : 76/839
+[21:32:16]  Download : 77/839
+[21:32:17]  Download : 78/839
+[21:32:17]  Download : 79/839

@@ -360,6 +360,7 @@ gs_error_t gs_ftp_download(const gs_ftp_settings_t * settings, const char * loca
 
     csp_log_protocol("FTP: Create Connection.");
     state.conn = csp_connect(CSP_PRIO_NORM, settings->host, gs_ftp_get_csp_port(settings), gs_ftp_get_timeout(settings), CSP_O_RDP | CSP_O_CRC32);
+    // state.conn = csp_connect(CSP_PRIO_NORM, settings->host, gs_ftp_get_csp_port(settings), gs_ftp_get_timeout(settings), CSP_O_CRC32);
     if (state.conn == NULL) {
         return GS_ERROR_IO;
     }
@@ -584,27 +585,209 @@ static gs_error_t ftp_status_request()
 }
 
 
+// static gs_error_t ftp_status_reply()
+// {
+//     ftp_packet_t ftp_packet_req = { .type = FTP_STATUS_REPLY};
+//     ftp_status_reply_t * status = (ftp_status_reply_t *) &ftp_packet_req.statusrep;
+
+//     /* Build status reply */
+//     unsigned int i = 0, next = 0, count = 0;
+
+//     status->entries = 0;
+//     status->complete = 0;
+//     for (i = 0; i < state.chunks; i++) {
+//         int s;
+//         char cstat;
+
+//         /* Read chunk status */
+//         if ((unsigned int) ftell(state.fp_map) != i) {
+//             if (fseek(state.fp_map, i, SEEK_SET) != 0) {
+//                 log_error("fseek failed");
+//                 return GS_ERROR_IO;
+//             }
+//         }
+//         if (fread(&cstat, 1, 1, state.fp_map) != 1) {
+//             log_error("fread byte %u failed", i);
+//             return GS_ERROR_IO;
+//         }
+
+//         s = (cstat == *packet_ok);
+
+//         /* Increase complete counter if chunk was received */
+//         if (s) status->complete++;
+
+//         /* Add chunk status to packet */
+//         if (status->entries < GS_FTP_STATUS_CHUNKS) {
+//             if (!s) {
+//                 if (!count)
+//                     next = i;
+//                 count++;
+//             }
+
+//             if (count > 0 && (s || i == state.chunks - 1)) {
+//                 status->entry[status->entries].next = csp_hton32(next);
+//                 status->entry[status->entries].count = csp_hton32(count);
+//                 status->entries++;
+//             }
+//         }
+//     }
+
+//     if (state.info_callback) {
+//         gs_ftp_info_t info = {
+//             .user_data = state.info_data,
+//             .type      = GS_FTP_INFO_DL_COMPLETED,
+//             .u.completed = {
+//                 .completed_chunks = status->complete,
+//                 .total_chunks     = state.chunks,
+//             },
+//         };
+//         state.info_callback(&info);
+//     }
+
+//     status->entries = csp_hton16(status->entries);
+//     // status->entries = csp_hton16(0xFFFF);
+//     status->complete = csp_hton32(status->complete);
+//     status->total = csp_hton32(state.chunks);
+//     status->ret = GS_FTP_RET_OK;
+
+//     /* Send reply */
+//     if (csp_transaction_persistent(state.conn, state.timeout,
+//                                    &ftp_packet_req, sizeof(ftp_packet_req.type) + sizeof(ftp_packet_req.statusrep), NULL, 0) != 1) {
+//         log_error("Failed to send status reply");
+//         return GS_ERROR_IO;
+//     }
+
+//     /* File size is 0 */
+//     if (state.chunks == 0) {
+//         return GS_OK;
+//     }
+
+//     /* Read data */
+//     csp_packet_t * packet;
+//     while (1) {
+//         if (!ftpavailable)
+//             return GS_ERROR_BREAK;
+//         packet = csp_read(state.conn, state.timeout);
+
+//         if (!packet) {
+//             log_error("Timeout while waiting for data");
+//             return GS_ERROR_TIMEOUT;
+//         }
+
+//         ftp_packet_t * ftp_packet = (ftp_packet_t *) &packet->data;
+
+//         ftp_packet->data.chunk = csp_ntoh32(ftp_packet->data.chunk);
+//         // ftp_packet->data.chunk = ftp_packet->data.chunk;
+//         unsigned int size;
+
+//         if (ftp_packet->type == GS_FTP_RET_IO) {
+//             log_error("Server failed to read chunk");
+//             csp_buffer_free(packet);
+//             return GS_ERROR_DATA;
+//         }
+
+//         if (ftp_packet->data.chunk >= state.chunks) {
+//             log_error("Bad chunk number %" PRIu32 " > %" PRIu32, ftp_packet->data.chunk, state.chunks);
+//             csp_buffer_free(packet);
+//             continue;
+//         }
+
+//         if (ftp_packet->data.chunk == state.chunks - 1) {
+//             size = state.file_size % state.chunk_size;
+//             if (size == 0)
+//                 size = state.chunk_size;
+//         } else {
+//             size = state.chunk_size;
+//         }
+
+//         if ((unsigned int) ftell(state.fp) != ftp_packet->data.chunk * state.chunk_size) {
+//             if (fseek(state.fp, ftp_packet->data.chunk * state.chunk_size, SEEK_SET) != 0) {
+//                 log_error("Seek error");
+//                 csp_buffer_free(packet);
+//                 return GS_ERROR_ACCESS;
+//             }
+//         }
+
+//         if (fwrite(ftp_packet->data.bytes, 1, size, state.fp) != size) {
+//             log_error("Write error");
+//             csp_buffer_free(packet);
+//             return GS_ERROR_IO;
+//         }
+//         fflush(state.fp);
+
+//         if ((unsigned int) ftell(state.fp_map) != ftp_packet->data.chunk) {
+//             if (fseek(state.fp_map, ftp_packet->data.chunk, SEEK_SET) != 0) {
+//                 log_error("Map Seek error");
+//                 csp_buffer_free(packet);
+//                 return GS_ERROR_IO;
+//             }
+//         }
+
+//         if (fwrite(packet_ok, 1, 1, state.fp_map) != 1) {
+//             log_error("Map write error");
+//             csp_buffer_free(packet);
+//             return GS_ERROR_IO;
+//         }
+//         fflush(state.fp_map);
+
+//         /* Show progress bar */
+//         if (state.info_callback) {
+//             gs_ftp_info_t info = {
+//                 .user_data = state.info_data,
+//                 .type      = GS_FTP_INFO_DL_PROGRESS,
+//                 .u.progress = {
+//                     .current_chunk = ftp_packet->data.chunk,
+//                     .total_chunks  = state.chunks,
+//                     .chunk_size    = state.chunk_size,
+//                 },
+//             };
+//             state.info_callback(&info);
+//         }
+
+//         /* Free buffer element */
+//         csp_buffer_free(packet);
+
+//         /* Break if all packets were received */
+//         if (ftp_packet->data.chunk == state.chunks - 1)
+//             break;
+//     }
+
+//     /* Sync file to disk */
+//     fflush(state.fp);
+//     fsync(fileno(state.fp));
+
+//     fflush(state.fp_map);
+//     fsync(fileno(state.fp_map));
+
+//     return 0;
+// }
+
 static gs_error_t ftp_status_reply()
 {
-    ftp_packet_t ftp_packet_req = { .type = FTP_STATUS_REPLY};
-    ftp_status_reply_t * status = (ftp_status_reply_t *) &ftp_packet_req.statusrep;
+    ftp_packet_t ftp_packet_req = { .type = FTP_STATUS_REPLY };
+    ftp_status_reply_t *status =
+        (ftp_status_reply_t *)&ftp_packet_req.statusrep;
 
     /* Build status reply */
-    unsigned int i = 0, next = 0, count = 0;
+    unsigned int i = 0;
+    unsigned int next = 0;
+    unsigned int count = 0;
 
     status->entries = 0;
     status->complete = 0;
+
     for (i = 0; i < state.chunks; i++) {
         int s;
         char cstat;
 
         /* Read chunk status */
-        if ((unsigned int) ftell(state.fp_map) != i) {
+        if ((unsigned int)ftell(state.fp_map) != i) {
             if (fseek(state.fp_map, i, SEEK_SET) != 0) {
                 log_error("fseek failed");
                 return GS_ERROR_IO;
             }
         }
+
         if (fread(&cstat, 1, 1, state.fp_map) != 1) {
             log_error("fread byte %u failed", i);
             return GS_ERROR_IO;
@@ -613,19 +796,25 @@ static gs_error_t ftp_status_reply()
         s = (cstat == *packet_ok);
 
         /* Increase complete counter if chunk was received */
-        if (s) status->complete++;
+        if (s)
+            status->complete++;
 
         /* Add chunk status to packet */
         if (status->entries < GS_FTP_STATUS_CHUNKS) {
             if (!s) {
                 if (!count)
                     next = i;
+
                 count++;
             }
 
             if (count > 0 && (s || i == state.chunks - 1)) {
-                status->entry[status->entries].next = csp_hton32(next);
-                status->entry[status->entries].count = csp_hton32(count);
+                status->entry[status->entries].next =
+                    csp_hton32(next);
+
+                status->entry[status->entries].count =
+                    csp_hton32(count);
+
                 status->entries++;
             }
         }
@@ -634,89 +823,124 @@ static gs_error_t ftp_status_reply()
     if (state.info_callback) {
         gs_ftp_info_t info = {
             .user_data = state.info_data,
-            .type      = GS_FTP_INFO_DL_COMPLETED,
+            .type = GS_FTP_INFO_DL_COMPLETED,
             .u.completed = {
                 .completed_chunks = status->complete,
-                .total_chunks     = state.chunks,
+                .total_chunks = state.chunks,
             },
         };
+
         state.info_callback(&info);
     }
 
     status->entries = csp_hton16(status->entries);
-    // status->entries = csp_hton16(0xFFFF);
     status->complete = csp_hton32(status->complete);
     status->total = csp_hton32(state.chunks);
     status->ret = GS_FTP_RET_OK;
 
     /* Send reply */
-    if (csp_transaction_persistent(state.conn, state.timeout,
-                                   &ftp_packet_req, sizeof(ftp_packet_req.type) + sizeof(ftp_packet_req.statusrep), NULL, 0) != 1) {
+    if (csp_transaction_persistent(
+            state.conn,
+            state.timeout,
+            &ftp_packet_req,
+            sizeof(ftp_packet_req.type) +
+                sizeof(ftp_packet_req.statusrep),
+            NULL,
+            0) != 1) {
+
         log_error("Failed to send status reply");
         return GS_ERROR_IO;
     }
 
     /* File size is 0 */
-    if (state.chunks == 0) {
+    if (state.chunks == 0)
         return GS_OK;
-    }
 
     /* Read data */
-    csp_packet_t * packet;
+    csp_packet_t *packet = NULL;
+
     while (1) {
         if (!ftpavailable)
             return GS_ERROR_BREAK;
+
         packet = csp_read(state.conn, state.timeout);
 
-        if (!packet) {
+        if (packet == NULL) {
             log_error("Timeout while waiting for data");
             return GS_ERROR_TIMEOUT;
         }
 
-        ftp_packet_t * ftp_packet = (ftp_packet_t *) &packet->data;
+        ftp_packet_t *ftp_packet =
+            (ftp_packet_t *)&packet->data;
 
-        ftp_packet->data.chunk = csp_ntoh32(ftp_packet->data.chunk);
+        /*
+         * Copy the chunk number into an independent local variable.
+         * After csp_buffer_free(packet), ftp_packet is no longer valid.
+         */
+        const uint32_t chunk =
+            csp_ntoh32(ftp_packet->data.chunk);
+
         unsigned int size;
 
         if (ftp_packet->type == GS_FTP_RET_IO) {
             log_error("Server failed to read chunk");
             csp_buffer_free(packet);
+            packet = NULL;
             return GS_ERROR_DATA;
         }
 
-        if (ftp_packet->data.chunk >= state.chunks) {
-            log_error("Bad chunk number %" PRIu32 " > %" PRIu32, ftp_packet->data.chunk, state.chunks);
+        if (chunk >= state.chunks) {
+            log_error(
+                "Bad chunk number %" PRIu32 " >= %" PRIu32,
+                chunk,
+                state.chunks
+            );
+
             csp_buffer_free(packet);
+            packet = NULL;
             continue;
         }
 
-        if (ftp_packet->data.chunk == state.chunks - 1) {
+        if (chunk == state.chunks - 1) {
             size = state.file_size % state.chunk_size;
+
             if (size == 0)
                 size = state.chunk_size;
         } else {
             size = state.chunk_size;
         }
 
-        if ((unsigned int) ftell(state.fp) != ftp_packet->data.chunk * state.chunk_size) {
-            if (fseek(state.fp, ftp_packet->data.chunk * state.chunk_size, SEEK_SET) != 0) {
+        const uint64_t file_offset =
+            (uint64_t)chunk * (uint64_t)state.chunk_size;
+
+        if ((uint64_t)ftell(state.fp) != file_offset) {
+            if (fseek(state.fp, (long)file_offset, SEEK_SET) != 0) {
                 log_error("Seek error");
                 csp_buffer_free(packet);
+                packet = NULL;
                 return GS_ERROR_ACCESS;
             }
         }
 
-        if (fwrite(ftp_packet->data.bytes, 1, size, state.fp) != size) {
+        if (fwrite(
+                ftp_packet->data.bytes,
+                1,
+                size,
+                state.fp) != size) {
+
             log_error("Write error");
             csp_buffer_free(packet);
+            packet = NULL;
             return GS_ERROR_IO;
         }
+
         fflush(state.fp);
 
-        if ((unsigned int) ftell(state.fp_map) != ftp_packet->data.chunk) {
-            if (fseek(state.fp_map, ftp_packet->data.chunk, SEEK_SET) != 0) {
+        if ((uint32_t)ftell(state.fp_map) != chunk) {
+            if (fseek(state.fp_map, (long)chunk, SEEK_SET) != 0) {
                 log_error("Map Seek error");
                 csp_buffer_free(packet);
+                packet = NULL;
                 return GS_ERROR_IO;
             }
         }
@@ -724,29 +948,44 @@ static gs_error_t ftp_status_reply()
         if (fwrite(packet_ok, 1, 1, state.fp_map) != 1) {
             log_error("Map write error");
             csp_buffer_free(packet);
+            packet = NULL;
             return GS_ERROR_IO;
         }
+
         fflush(state.fp_map);
 
         /* Show progress bar */
         if (state.info_callback) {
             gs_ftp_info_t info = {
                 .user_data = state.info_data,
-                .type      = GS_FTP_INFO_DL_PROGRESS,
+                .type = GS_FTP_INFO_DL_PROGRESS,
                 .u.progress = {
-                    .current_chunk = ftp_packet->data.chunk,
-                    .total_chunks  = state.chunks,
-                    .chunk_size    = state.chunk_size,
+                    .current_chunk = chunk,
+                    .total_chunks = state.chunks,
+                    .chunk_size = state.chunk_size,
                 },
             };
+
             state.info_callback(&info);
         }
 
-        /* Free buffer element */
-        csp_buffer_free(packet);
+        /*
+         * Save the last-chunk condition before freeing packet.
+         */
+        const bool is_last_chunk =
+            (chunk == state.chunks - 1);
 
-        /* Break if all packets were received */
-        if (ftp_packet->data.chunk == state.chunks - 1)
+        /*
+         * This invalidates both packet and ftp_packet.
+         */
+        csp_buffer_free(packet);
+        packet = NULL;
+        ftp_packet = NULL;
+
+        /*
+         * Do not access ftp_packet after csp_buffer_free().
+         */
+        if (is_last_chunk)
             break;
     }
 
@@ -757,8 +996,9 @@ static gs_error_t ftp_status_reply()
     fflush(state.fp_map);
     fsync(fileno(state.fp_map));
 
-    return 0;
+    return GS_OK;
 }
+
 
 static gs_error_t ftp_data(int count)
 {
@@ -1229,3 +1469,1542 @@ float gs_ftp_percent_completed(uint32_t completed, uint32_t total)
     }
     return (float) (completed * 100) / (float) total;
 }
+
+
+
+
+
+// // codex feedback 반영해서 수정, 0610 by jane
+// /* Copyright (c) 2013-2018 GomSpace A/S. All rights reserved. */
+// // 
+// #define GS_FTP_INTERNAL_USE 1
+
+// #include <gs/ftp/client.h>
+// #include <gs/ftp/internal/types.h>
+// #include <gs/ftp/types.h>
+// #include <gs/ftp/client.h>
+
+// #include <unistd.h>
+// #include <sys/stat.h>
+
+// #include <gs/csp/csp.h>
+// #include <csp/csp_endian.h>
+// #include <csp/switch.h>
+// #include <csp/delay.h>
+
+// #include <gs/util/crc32.h>
+// #include <gs/util/log.h>
+// #include <gs/util/string.h>
+// #include <gs/util/check.h>
+
+// #define DEFAULT_TIMEOUT     30000
+// #define DEFAULT_CHUNK_SIZE  185
+
+// static uint8_t destination;
+
+// typedef struct {
+//     FILE       * fp;
+//     FILE       * fp_map;
+//     csp_conn_t * conn;
+//     uint32_t   timeout;
+//     char       file_name[GS_FTP_PATH_LENGTH];
+//     uint32_t   file_size;
+//     uint32_t   chunks;
+//     int        chunk_size;
+//     uint32_t   checksum;
+//     ftp_status_element_t last_status[GS_FTP_STATUS_CHUNKS];
+//     uint32_t   last_entries;
+//     gs_ftp_info_callback_t info_callback;
+//     void       * info_data;
+// } gs_ftp_state_t;
+
+// typedef struct {
+//     gs_ftp_backend_type_t backend;
+//     const char * path;
+//     uint32_t addr;
+//     uint32_t size;
+// } gs_ftp_url_t;
+
+// /* Chunk status markers */
+// static const char * const packet_missing = "-";
+// static const char * const packet_ok = "+";
+
+// extern bool ftpavailable;
+// gs_ftp_state_t state = {.fp = NULL,};
+
+// csp_conn_t * gs_ftp_now_conn()
+// {
+//     return state.conn;
+// }
+
+// static gs_error_t ftp_error_to_gs_error(gs_ftp_return_t ret)
+// {
+//     switch (ret) {
+//         case GS_FTP_RET_OK:
+//             return GS_OK;
+//         case GS_FTP_RET_NOENT:
+//             return GS_ERROR_NOT_FOUND;
+//         case GS_FTP_RET_INVAL:
+//             return GS_ERROR_ARG;
+//         case GS_FTP_RET_NOSPC:
+//             return GS_ERROR_FULL;
+//         case GS_FTP_RET_IO:
+//             return GS_ERROR_IO;
+//         case GS_FTP_RET_FBIG:
+//             return GS_ERROR_OVERFLOW;
+//         case GS_FTP_RET_EXISTS:
+//             return GS_ERROR_EXIST;
+//         case GS_FTP_RET_NOTSUP:
+//             return GS_ERROR_NOT_SUPPORTED;
+//         case GS_FTP_RET_BUSY:
+//             return GS_ERROR_BUSY;
+//         case GS_FTP_RET_NOMEM:
+//             return GS_ERROR_ALLOC;
+//     }
+//     return GS_ERROR_UNKNOWN;
+// }
+
+
+// static int ftp_file_crc32()
+// {
+//     size_t bytes;
+//     char buf[128];
+//     uint32_t crc = gs_crc32_init();
+
+//     fseek(state.fp, 0, SEEK_SET);
+//     do {
+//         bytes = fread(buf, 1, sizeof(buf), state.fp);
+//         crc = gs_crc32_update(crc, buf, bytes);
+//     } while (bytes > 0);
+
+//     state.checksum = crc = gs_crc32_finalize(crc);
+
+//     return 0;
+// }
+
+// /* parse URL's of the form:
+//    -file://<path_to_file>
+//    -mem://<addr>[++<length>]
+//    -<path_to_file>
+// */
+// static gs_error_t ftp_parse_url(const char * url, gs_ftp_url_t * parsed_url)
+// {
+//     memset(parsed_url, 0, sizeof(*parsed_url));
+
+//     if (strstr(url, "mem://")) {
+//         char temp_url[strlen(url)+1];
+//         strcpy(temp_url, url);
+//         char * saveptr;
+//         char * token = strtok_r(temp_url + strlen("mem://"), "++", &saveptr);
+//         if (gs_string_empty(token) || gs_string_to_uint32(token, &parsed_url->addr)) {
+//             return GS_ERROR_ARG;
+//         }
+//         token = strtok_r(NULL, "++\r\n", &saveptr);
+//         if (token) {
+//             if (gs_string_to_uint32(token, &parsed_url->size)) {
+//                 return GS_ERROR_ARG;
+//             }
+//         }
+//         parsed_url->backend = GS_FTP_BACKEND_RAM;
+//         parsed_url->path = "";
+//         return GS_OK;
+//     }
+//     parsed_url->backend = GS_FTP_BACKEND_FILE;
+//     if (strstr(url, "file://")) {
+//         parsed_url->path = url + strlen("file://");
+//     } else {
+//         parsed_url->path = url;
+//     }
+//     return GS_OK;
+// }
+
+// static gs_ftp_backend_type_t gs_ftp_get_backend(const gs_ftp_url_t * url, const gs_ftp_settings_t * settings)
+// {
+//     if (url) {
+//         switch (url->backend) {
+//             case GS_FTP_BACKEND_RAM:
+//             case GS_FTP_BACKEND_FAT:
+//             case GS_FTP_BACKEND_UFFS:
+//                 return url->backend;
+//             case GS_FTP_BACKEND_FILE:
+//                 break;
+//         }
+//     }
+//     if (settings) {
+//         switch (settings->mode) {
+//             case GS_FTP_MODE_GATOSS:
+//                 return GS_FTP_BACKEND_UFFS;
+//             case GS_FTP_MODE_STANDARD:
+//                 break;
+//         }
+//     }
+//     return GS_FTP_BACKEND_FILE;
+// }
+
+// uint32_t gs_ftp_get_timeout(const gs_ftp_settings_t * settings)
+// {
+//     return (settings && settings->timeout) ? settings->timeout : DEFAULT_TIMEOUT;
+// }
+    
+// uint32_t gs_ftp_get_chunk_size(const gs_ftp_settings_t * settings)
+// {
+//     return (settings && settings->chunk_size) ? settings->chunk_size : DEFAULT_CHUNK_SIZE;
+// }
+
+// uint8_t gs_ftp_get_csp_port(const gs_ftp_settings_t * settings)
+// {
+//     if (settings) {
+//         if (settings->port) {
+//             return settings->port;
+//         }
+//         switch (settings->mode) {
+//             case GS_FTP_MODE_GATOSS:
+//                 return GS_FTP_CSP_PORT_GATOSS;
+//             case GS_FTP_MODE_STANDARD:
+//                 break;
+//         }
+//     }
+
+//     return GS_CSP_PORT_FTP;
+// }
+
+// gs_error_t gs_ftp_upload(const gs_ftp_settings_t * settings, const char * local_url, const char * remote_url,
+//                          gs_ftp_info_callback_t info_callback, void * info_data)
+// {
+//     csp_log_protocol("FTP: Start FTP Uplink");
+//     gs_ftp_url_t local_url_info;
+//     if (ftp_parse_url(local_url, &local_url_info)) {
+//         log_error("%s: Invalid local URL: [%s]", __FUNCTION__, local_url);
+//         return GS_ERROR_ARG;
+//     }
+//     if (local_url_info.backend != GS_FTP_BACKEND_FILE) {
+//         log_error("%s: Not supported local URL: [%s]", __FUNCTION__, local_url);
+//         return GS_ERROR_NOT_SUPPORTED;
+//     }
+
+//     gs_ftp_url_t remote_url_info;
+//     if (ftp_parse_url(remote_url, &remote_url_info)) {
+//         log_error("%s: Invalid remote URL: [%s]", __FUNCTION__, remote_url);
+//         return GS_ERROR_ARG;
+//     }
+
+//     /* Open file and read size */
+    
+//     state.fp = fopen(local_url_info.path, "rb");
+//     if (state.fp == NULL) {
+//         return GS_ERROR_NOT_FOUND;
+//     }
+//     struct stat statbuf;
+//     stat(local_url_info.path, &statbuf);
+//     /* Calculate CRC32 */
+//     ftp_file_crc32(&state);
+
+//     state.timeout    = gs_ftp_get_timeout(settings);
+//     state.chunk_size = gs_ftp_get_chunk_size(settings);
+//     state.file_size = (uint32_t) statbuf.st_size;
+//     state.chunks = (state.file_size + state.chunk_size - 1) / state.chunk_size;
+//     GS_STRNCPY(state.file_name, local_url_info.path);
+//     state.info_callback = info_callback;
+//     state.info_data     = info_data;
+
+//     if (info_callback) {
+//         gs_ftp_info_t info = {
+//             .user_data = info_data,
+//             .type      = GS_FTP_INFO_UL_FILE,
+//             .u.file = {
+//                 .size = state.file_size,
+//                 .crc  = state.checksum,
+//             },
+//         };
+//         info_callback(&info);
+//     }
+    
+//     csp_log_protocol("FTP: Confirmed File URLs.");
+
+//     /* Assemble upload request */
+//     ftp_packet_t req;
+//     req.type = FTP_UPLOAD_REQUEST;
+//     req.up.chunk_size = csp_hton16(state.chunk_size);
+//     req.up.size = csp_hton32(state.file_size);
+//     req.up.crc32 = csp_hton32(state.checksum);
+//     req.up.mem_addr = csp_hton32(remote_url_info.addr);
+//     req.up.backend = gs_ftp_get_backend(&remote_url_info, settings);
+//     GS_STRNCPY(req.up.path, remote_url_info.path);
+//     int req_length = sizeof(req.type) + sizeof(req.up);
+
+//     csp_log_protocol("FTP: Create Connection.");
+//     state.conn = csp_connect(CSP_PRIO_NORM, settings->host, gs_ftp_get_csp_port(settings), gs_ftp_get_timeout(settings),
+//                              CSP_O_RDP | CSP_O_CRC32);
+//     if (state.conn == NULL) {
+//         log_error("Failed to create FTP upload connection");
+//         ftp_done(0);
+//         return GS_ERROR_IO;
+//     } else {
+//         destination = settings->host;
+//     }
+//     csp_log_protocol("FTP: Connection Created. Send File Request");
+//     ftp_packet_t rep;
+//     int rep_length = sizeof(rep.type) + sizeof(rep.uprep);
+//     int res_length = csp_transaction_persistent(state.conn,
+//                                                 gs_ftp_get_timeout(settings) + rx_delay_ms(rep_length, 3),
+//                                                 &req, req_length, &rep, rep_length);
+//     if (res_length != rep_length) {
+//         log_error("Length mismatch. Expected %d, got %d", rep_length, res_length);
+//         sleep(gs_ftp_get_timeout(settings) / 1000);
+//         ftp_done(0);
+//         return GS_ERROR_TIMEOUT;
+//     }
+//     sleep(1);
+
+//     if (rep.type != FTP_UPLOAD_REPLY || rep.uprep.ret != GS_FTP_RET_OK) {
+//         sleep(gs_ftp_get_timeout(settings) / 1000);
+//         ftp_done(0);
+//         sleep(1);
+//         return ftp_error_to_gs_error(rep.uprep.ret);
+//     }
+
+//     /* Handle data stage */
+//     gs_error_t status = ftp_status_request(&state);
+//     csp_log_protocol("FTP: Start FTP Upload.");
+//     if (status) {
+//         sleep(gs_ftp_get_timeout(settings) / 1000);
+//         ftp_done(0);
+//         sleep(1);
+//         return status;
+//     }
+//     printf("Go to ftp_data. status : %d\n", status);
+//     set_now_streaming(1);
+//     status = ftp_data(0);
+//     set_now_streaming(0);
+
+//     csp_log_protocol("FTP: Finish FTP Upload. FTP Status : %d", status);
+    
+//     if (status) {
+//         ftp_done(0);
+//         sleep(1);
+//         return GS_ERROR_DATA;
+//     }
+//     status = ftp_crc();
+//     sleep(1);
+
+//     csp_log_protocol("FTP: CRC Checking : %d", status);
+//     if (status) {
+//         ftp_done(0);
+//         sleep(1);
+//         return GS_ERROR_STATE;
+//     }
+//     ftp_done(0);
+//     sleep(1);
+//     return GS_OK;
+// }
+
+
+// gs_error_t gs_ftp_download(const gs_ftp_settings_t * settings, const char * local_url,  const char * remote_url,
+//                            gs_ftp_info_callback_t info_callback, void * info_data)
+// {
+//     csp_log_protocol("FTP: Start FTP Downlink");
+//     gs_ftp_url_t local_url_info;
+//     if (ftp_parse_url(local_url, &local_url_info)) {
+//         log_error("%s: Invalid local URL: [%s]", __FUNCTION__, local_url);
+//         return GS_ERROR_ARG;
+//     }
+//     if (local_url_info.backend != GS_FTP_BACKEND_FILE) {
+//         log_error("%s: Not supported local URL: [%s]", __FUNCTION__, local_url);
+//         return GS_ERROR_NOT_SUPPORTED;
+//     }
+
+//     gs_ftp_url_t remote_url_info;
+//     if (ftp_parse_url(remote_url, &remote_url_info) ||
+//         ((remote_url_info.backend == GS_FTP_BACKEND_RAM) && (remote_url_info.size == 0))) {
+//         log_error("%s: Invalid remote URL: [%s]", __FUNCTION__, remote_url);
+//         return GS_ERROR_ARG;
+//     }
+
+//     state.fp = NULL;
+//     state.chunk_size = gs_ftp_get_chunk_size(settings);
+//     state.timeout = gs_ftp_get_timeout(settings);
+//     state.info_callback = info_callback;
+//     state.info_data = info_data;
+//     GS_STRNCPY(state.file_name, local_url_info.path);
+//     csp_log_protocol("FTP: Confirmed File URLs.");
+
+//     ftp_packet_t req;
+//     req.type = FTP_DOWNLOAD_REQUEST;
+//     req.down.chunk_size = csp_hton16(state.chunk_size);
+//     req.down.mem_addr = csp_hton32(remote_url_info.addr);
+//     req.down.mem_size = csp_hton32(remote_url_info.size);
+//     req.down.backend = gs_ftp_get_backend(&remote_url_info, settings);
+//     GS_STRNCPY(req.down.path, remote_url_info.path);
+//     int req_length = sizeof(req.type) + sizeof(req.down);
+
+//     csp_log_protocol("FTP: Create Connection.");
+//     state.conn = csp_connect(CSP_PRIO_NORM, settings->host, gs_ftp_get_csp_port(settings), gs_ftp_get_timeout(settings), CSP_O_RDP | CSP_O_CRC32);
+//     // state.conn = csp_connect(CSP_PRIO_NORM, settings->host, gs_ftp_get_csp_port(settings), gs_ftp_get_timeout(settings), CSP_O_CRC32);
+//     if (state.conn == NULL) {
+//         log_error("Failed to create FTP download connection");
+//         ftp_done(0);
+//         return GS_ERROR_IO;
+//     } else {
+//         destination = settings->host;
+//         sleep(2);
+//     }
+//     csp_log_protocol("FTP: Connection Created. Send File Request");
+
+//     ftp_packet_t rep;
+//     int rep_length = sizeof(req.type) + sizeof(req.downrep);
+//     int res_length = csp_transaction_persistent(state.conn, gs_ftp_get_timeout(settings) + rx_delay_ms(rep_length, 3), &req, req_length, &rep, rep_length);
+//     if (res_length != rep_length) {
+//         log_error("Length mismatch. Expected %d, got %d", rep_length, res_length);
+//         sleep(gs_ftp_get_timeout(settings) / 1000);
+//         ftp_done(0);
+//         return GS_ERROR_TIMEOUT;
+//     }
+
+//     if (rep.type != FTP_DOWNLOAD_REPLY || rep.downrep.ret != GS_FTP_RET_OK) {
+//         sleep(gs_ftp_get_timeout(settings) / 1000);
+//         ftp_done(0);
+//         return ftp_error_to_gs_error(rep.downrep.ret);
+//     }
+//     state.file_size = csp_ntoh32(rep.downrep.size);
+//     state.checksum = csp_ntoh32(rep.downrep.crc32);
+//     state.chunks = (state.file_size + state.chunk_size - 1) / state.chunk_size;
+//     if (info_callback) {
+//         gs_ftp_info_t info = {
+//             .user_data = info_data,
+//             .type      = GS_FTP_INFO_DL_FILE,
+//             .u.file = {
+//                 .size = state.file_size,
+//                 .crc  = state.checksum,
+//             },
+//         };
+//         info_callback(&info);
+//     }
+
+//     /* Map file name */
+//     char map[100];
+
+//     /* Try to open file */
+//     bool new_file = false;
+//     state.fp = fopen(local_url_info.path, "r+");
+//     if (state.fp == NULL) {
+//         /* Create new file */
+//         new_file = true;
+//         state.fp = fopen(local_url_info.path, "w+");
+//         if (state.fp == NULL) {
+//             log_error("Client: Failed to create data file");
+//             sleep(gs_ftp_get_timeout(settings) / 1000);
+//             ftp_done(0);
+//             return GS_ERROR_IO;
+//         }
+//     }
+
+//     /* Try to create a new bitmap */
+//     sprintf(map, "%s.map", local_url_info.path);
+
+//     /* Check if file already exists */
+//     state.fp_map = fopen(map, "r+");
+//     if (state.fp_map == NULL) {
+//         unsigned int i;
+
+//         /* Abort if data file exists but map doesn't */
+//         if (!new_file) {
+//             sleep(gs_ftp_get_timeout(settings) / 1000);
+//             ftp_done(0);
+//             return GS_ERROR_EXIST;
+//         }
+
+//         /* Create new file */
+//         state.fp_map = fopen(map, "w+");
+//         if (state.fp_map == NULL) {
+//             log_error("Failed to create bitmap");
+//             sleep(gs_ftp_get_timeout(settings) / 1000);
+//             ftp_done(0);
+//             return GS_ERROR_IO;
+//         }
+
+//         /* Clear contents */
+//         for (i = 0; i < state.chunks; i++) {
+//             if (fwrite(packet_missing, 1, 1, state.fp_map) < 1) {
+//                 log_error("Failed to clear bitmap");
+//                 sleep(gs_ftp_get_timeout(settings) / 1000);
+//                 ftp_done(0);
+//                 return GS_ERROR_IO;
+//             }
+//         }
+
+//         fflush(state.fp_map);
+//         fsync(fileno(state.fp_map));
+//     }
+
+//     /* Handle data stage */
+//     sleep(1);
+//     csp_log_protocol("FTP: Start FTP Download.");
+//     gs_error_t status = ftp_status_reply();
+//     csp_log_protocol("FTP: Finish FTP Download. FTP Status : %d", status);
+//     sleep(1);
+//     if (status) {
+//         sleep(gs_ftp_get_timeout(settings) / 1000);
+//         ftp_done(0);
+//         sleep(1);
+//         return GS_ERROR_UNKNOWN;
+//     }
+    
+
+//     status = ftp_crc();
+//     sleep(1);
+//     if (status) {
+//         sleep(gs_ftp_get_timeout(settings) / 1000);
+//         ftp_done(0);
+//         sleep(1);
+//         return status;
+//     }
+//     csp_log_protocol("FTP: CRC Checking : %d", status);
+//     sleep(gs_ftp_get_timeout(settings) / 1000);
+//     ftp_done(1);
+//     sleep(1);
+//     return GS_OK;
+// }
+
+// static gs_error_t ftp_status_request()
+// {
+//     /* Request */
+//     ftp_packet_t req;
+//     req.type = FTP_STATUS_REQUEST;
+//     int req_length = sizeof(req.type);
+
+//     /* Transaction */
+//     ftp_packet_t rep;
+//     csp_log_protocol("FTP: Request Status Reply.");
+//     if (csp_transaction_persistent(state.conn, state.timeout, &req, req_length, &rep, -1) == 0) {
+//         log_error("Failed to receive status reply");
+//         return GS_ERROR_IO;
+//     }
+//     if (rep.type != FTP_STATUS_REPLY || rep.statusrep.ret != GS_FTP_RET_OK) {
+//         log_error("Reply was not STATUS_REPLY. rep.type : %d, rep.statusrep.ret : %d", rep.type, rep.statusrep.ret);
+//         return GS_ERROR_DATA;
+//     }
+//     csp_log_protocol("FTP: Received Status Reply.");
+
+//     rep.statusrep.complete = csp_ntoh32(rep.statusrep.complete);
+//     rep.statusrep.total = csp_ntoh32(rep.statusrep.total);
+//     rep.statusrep.entries = csp_ntoh16(rep.statusrep.entries);
+
+//     // printf("Start info_callback.\n");
+
+//     if(rep.statusrep.complete == 0)
+//     {
+//         csp_log_protocol("FTP: csp_hton error in FSW. Now Filtering...");
+//         // rep.statusrep.entries = csp_ntoh16(rep.statusrep.entries);
+//         // state.last_status[0].count = csp_ntoh32(rep.statusrep.entry[0].count);
+//         /*Modified Version*/
+//         state.last_entries = rep.statusrep.entries;
+//         state.last_status[0].count = rep.statusrep.entry[0].count;
+//         csp_log_warn("Received statusrep : entries %u count %u", rep.statusrep.entries, rep.statusrep.entry[0].count);
+//         csp_log_warn("Now statusrep      : entries %u count %u", state.last_entries, state.last_status[0].count);
+//     }
+//     else
+//     {
+//         state.last_entries = rep.statusrep.entries;
+//         csp_log_info("Now statusrep      : entries %u count %u", state.last_entries, state.last_status[0].count);
+        
+//     }
+
+    
+//     if (rep.statusrep.complete != rep.statusrep.total) {
+//         int i;
+//         for (i = 0; i < rep.statusrep.entries; i++) {
+//             printf("Input method %d\n", i);
+//             rep.statusrep.entry[i].next = csp_ntoh32(rep.statusrep.entry[i].next);
+//             rep.statusrep.entry[i].count = csp_ntoh32(rep.statusrep.entry[i].count);
+//             state.last_status[i].next = rep.statusrep.entry[i].next;
+//             state.last_status[i].count = rep.statusrep.entry[i].count;
+//         }
+//         csp_log_warn("Now statusrep      : entries %u count %u", state.last_entries, state.last_status[0].count);
+
+//         // state.last_entries = csp_ntoh32(rep.statusrep.entries);
+//     } else {
+//         state.last_entries = 0;
+//         // if (state.info_callback) {
+//         //     gs_ftp_info_t info = {
+//         //         .user_data = state.info_data,
+//         //         .type      = GS_FTP_INFO_COMPLETED,
+//         //         .u.completed = {
+//         //             .completed_chunks = rep.statusrep.complete,
+//         //             .total_chunks     = rep.statusrep.total,
+//         //         },
+//         //     };
+//         //     state.info_callback(&info);
+//         // }
+//         // return GS_OK;
+//     }
+
+//     if (state.info_callback) {
+//         gs_ftp_info_t info = {
+//             .user_data = state.info_data,
+//             .type      = GS_FTP_INFO_UL_COMPLETED,
+//             .u.completed = {
+//                 .completed_chunks = rep.statusrep.complete,
+//                 .total_chunks     = rep.statusrep.total,
+//             },
+//         };
+//         state.info_callback(&info);
+//     }
+
+
+//     // printf("Now Filtering...\n");
+ 
+
+//     if(state.last_entries == 0)
+//     {
+//         csp_log_protocol("FTP: BitMap File Error. Retry FTP UL.");
+//         return GS_ERROR_NOT_FOUND;
+//     }
+
+//     printf("Status Request Done.\n");
+//     return GS_OK;
+// }
+
+
+// // static gs_error_t ftp_status_reply()
+// // {
+// //     ftp_packet_t ftp_packet_req = { .type = FTP_STATUS_REPLY};
+// //     ftp_status_reply_t * status = (ftp_status_reply_t *) &ftp_packet_req.statusrep;
+
+// //     /* Build status reply */
+// //     unsigned int i = 0, next = 0, count = 0;
+
+// //     status->entries = 0;
+// //     status->complete = 0;
+// //     for (i = 0; i < state.chunks; i++) {
+// //         int s;
+// //         char cstat;
+
+// //         /* Read chunk status */
+// //         if ((unsigned int) ftell(state.fp_map) != i) {
+// //             if (fseek(state.fp_map, i, SEEK_SET) != 0) {
+// //                 log_error("fseek failed");
+// //                 return GS_ERROR_IO;
+// //             }
+// //         }
+// //         if (fread(&cstat, 1, 1, state.fp_map) != 1) {
+// //             log_error("fread byte %u failed", i);
+// //             return GS_ERROR_IO;
+// //         }
+
+// //         s = (cstat == *packet_ok);
+
+// //         /* Increase complete counter if chunk was received */
+// //         if (s) status->complete++;
+
+// //         /* Add chunk status to packet */
+// //         if (status->entries < GS_FTP_STATUS_CHUNKS) {
+// //             if (!s) {
+// //                 if (!count)
+// //                     next = i;
+// //                 count++;
+// //             }
+
+// //             if (count > 0 && (s || i == state.chunks - 1)) {
+// //                 status->entry[status->entries].next = csp_hton32(next);
+// //                 status->entry[status->entries].count = csp_hton32(count);
+// //                 status->entries++;
+// //             }
+// //         }
+// //     }
+
+// //     if (state.info_callback) {
+// //         gs_ftp_info_t info = {
+// //             .user_data = state.info_data,
+// //             .type      = GS_FTP_INFO_DL_COMPLETED,
+// //             .u.completed = {
+// //                 .completed_chunks = status->complete,
+// //                 .total_chunks     = state.chunks,
+// //             },
+// //         };
+// //         state.info_callback(&info);
+// //     }
+
+// //     status->entries = csp_hton16(status->entries);
+// //     // status->entries = csp_hton16(0xFFFF);
+// //     status->complete = csp_hton32(status->complete);
+// //     status->total = csp_hton32(state.chunks);
+// //     status->ret = GS_FTP_RET_OK;
+
+// //     /* Send reply */
+// //     if (csp_transaction_persistent(state.conn, state.timeout,
+// //                                    &ftp_packet_req, sizeof(ftp_packet_req.type) + sizeof(ftp_packet_req.statusrep), NULL, 0) != 1) {
+// //         log_error("Failed to send status reply");
+// //         return GS_ERROR_IO;
+// //     }
+
+// //     /* File size is 0 */
+// //     if (state.chunks == 0) {
+// //         return GS_OK;
+// //     }
+
+// //     /* Read data */
+// //     csp_packet_t * packet;
+// //     while (1) {
+// //         if (!ftpavailable)
+// //             return GS_ERROR_BREAK;
+// //         packet = csp_read(state.conn, state.timeout);
+
+// //         if (!packet) {
+// //             log_error("Timeout while waiting for data");
+// //             return GS_ERROR_TIMEOUT;
+// //         }
+
+// //         ftp_packet_t * ftp_packet = (ftp_packet_t *) &packet->data;
+
+// //         ftp_packet->data.chunk = csp_ntoh32(ftp_packet->data.chunk);
+// //         // ftp_packet->data.chunk = ftp_packet->data.chunk;
+// //         unsigned int size;
+
+// //         if (ftp_packet->type == GS_FTP_RET_IO) {
+// //             log_error("Server failed to read chunk");
+// //             csp_buffer_free(packet);
+// //             return GS_ERROR_DATA;
+// //         }
+
+// //         if (ftp_packet->data.chunk >= state.chunks) {
+// //             log_error("Bad chunk number %" PRIu32 " > %" PRIu32, ftp_packet->data.chunk, state.chunks);
+// //             csp_buffer_free(packet);
+// //             continue;
+// //         }
+
+// //         if (ftp_packet->data.chunk == state.chunks - 1) {
+// //             size = state.file_size % state.chunk_size;
+// //             if (size == 0)
+// //                 size = state.chunk_size;
+// //         } else {
+// //             size = state.chunk_size;
+// //         }
+
+// //         if ((unsigned int) ftell(state.fp) != ftp_packet->data.chunk * state.chunk_size) {
+// //             if (fseek(state.fp, ftp_packet->data.chunk * state.chunk_size, SEEK_SET) != 0) {
+// //                 log_error("Seek error");
+// //                 csp_buffer_free(packet);
+// //                 return GS_ERROR_ACCESS;
+// //             }
+// //         }
+
+// //         if (fwrite(ftp_packet->data.bytes, 1, size, state.fp) != size) {
+// //             log_error("Write error");
+// //             csp_buffer_free(packet);
+// //             return GS_ERROR_IO;
+// //         }
+// //         fflush(state.fp);
+
+// //         if ((unsigned int) ftell(state.fp_map) != ftp_packet->data.chunk) {
+// //             if (fseek(state.fp_map, ftp_packet->data.chunk, SEEK_SET) != 0) {
+// //                 log_error("Map Seek error");
+// //                 csp_buffer_free(packet);
+// //                 return GS_ERROR_IO;
+// //             }
+// //         }
+
+// //         if (fwrite(packet_ok, 1, 1, state.fp_map) != 1) {
+// //             log_error("Map write error");
+// //             csp_buffer_free(packet);
+// //             return GS_ERROR_IO;
+// //         }
+// //         fflush(state.fp_map);
+
+// //         /* Show progress bar */
+// //         if (state.info_callback) {
+// //             gs_ftp_info_t info = {
+// //                 .user_data = state.info_data,
+// //                 .type      = GS_FTP_INFO_DL_PROGRESS,
+// //                 .u.progress = {
+// //                     .current_chunk = ftp_packet->data.chunk,
+// //                     .total_chunks  = state.chunks,
+// //                     .chunk_size    = state.chunk_size,
+// //                 },
+// //             };
+// //             state.info_callback(&info);
+// //         }
+
+// //         /* Free buffer element */
+// //         csp_buffer_free(packet);
+
+// //         /* Break if all packets were received */
+// //         if (ftp_packet->data.chunk == state.chunks - 1)
+// //             break;
+// //     }
+
+// //     /* Sync file to disk */
+// //     fflush(state.fp);
+// //     fsync(fileno(state.fp));
+
+// //     fflush(state.fp_map);
+// //     fsync(fileno(state.fp_map));
+
+// //     return 0;
+// // }
+
+// static gs_error_t ftp_status_reply()
+// {
+//     ftp_packet_t ftp_packet_req = { .type = FTP_STATUS_REPLY };
+//     ftp_status_reply_t *status =
+//         (ftp_status_reply_t *)&ftp_packet_req.statusrep;
+
+//     /* Build status reply */
+//     unsigned int i = 0;
+//     unsigned int next = 0;
+//     unsigned int count = 0;
+
+//     status->entries = 0;
+//     status->complete = 0;
+
+//     for (i = 0; i < state.chunks; i++) {
+//         int s;
+//         char cstat;
+
+//         /* Read chunk status */
+//         if ((unsigned int)ftell(state.fp_map) != i) {
+//             if (fseek(state.fp_map, i, SEEK_SET) != 0) {
+//                 log_error("fseek failed");
+//                 return GS_ERROR_IO;
+//             }
+//         }
+
+//         if (fread(&cstat, 1, 1, state.fp_map) != 1) {
+//             log_error("fread byte %u failed", i);
+//             return GS_ERROR_IO;
+//         }
+
+//         s = (cstat == *packet_ok);
+
+//         /* Increase complete counter if chunk was received */
+//         if (s)
+//             status->complete++;
+
+//         /* Add chunk status to packet */
+//         if (status->entries < GS_FTP_STATUS_CHUNKS) {
+//             if (!s) {
+//                 if (!count)
+//                     next = i;
+
+//                 count++;
+//             }
+
+//             if (count > 0 && (s || i == state.chunks - 1)) {
+//                 status->entry[status->entries].next =
+//                     csp_hton32(next);
+
+//                 status->entry[status->entries].count =
+//                     csp_hton32(count);
+
+//                 status->entries++;
+//             }
+//         }
+//     }
+
+//     if (state.info_callback) {
+//         gs_ftp_info_t info = {
+//             .user_data = state.info_data,
+//             .type = GS_FTP_INFO_DL_COMPLETED,
+//             .u.completed = {
+//                 .completed_chunks = status->complete,
+//                 .total_chunks = state.chunks,
+//             },
+//         };
+
+//         state.info_callback(&info);
+//     }
+
+//     status->entries = csp_hton16(status->entries);
+//     status->complete = csp_hton32(status->complete);
+//     status->total = csp_hton32(state.chunks);
+//     status->ret = GS_FTP_RET_OK;
+
+//     /* Send reply */
+//     if (csp_transaction_persistent(
+//             state.conn,
+//             state.timeout,
+//             &ftp_packet_req,
+//             sizeof(ftp_packet_req.type) +
+//                 sizeof(ftp_packet_req.statusrep),
+//             NULL,
+//             0) != 1) {
+
+//         log_error("Failed to send status reply");
+//         return GS_ERROR_IO;
+//     }
+
+//     /* File size is 0 */
+//     if (state.chunks == 0)
+//         return GS_OK;
+
+//     /* Read data */
+//     csp_packet_t *packet = NULL;
+
+//     while (1) {
+//         if (!ftpavailable)
+//             return GS_ERROR_BREAK;
+
+//         packet = csp_read(state.conn, state.timeout);
+
+//         if (packet == NULL) {
+//             log_error("Timeout while waiting for data");
+//             return GS_ERROR_TIMEOUT;
+//         }
+
+//         ftp_packet_t *ftp_packet =
+//             (ftp_packet_t *)&packet->data;
+
+//         /*
+//          * Copy the chunk number into an independent local variable.
+//          * After csp_buffer_free(packet), ftp_packet is no longer valid.
+//          */
+//         const uint32_t chunk =
+//             csp_ntoh32(ftp_packet->data.chunk);
+
+//         unsigned int size;
+
+//         if (ftp_packet->type == GS_FTP_RET_IO) {
+//             log_error("Server failed to read chunk");
+//             csp_buffer_free(packet);
+//             packet = NULL;
+//             return GS_ERROR_DATA;
+//         }
+
+//         if (chunk >= state.chunks) {
+//             log_error(
+//                 "Bad chunk number %" PRIu32 " >= %" PRIu32,
+//                 chunk,
+//                 state.chunks
+//             );
+
+//             csp_buffer_free(packet);
+//             packet = NULL;
+//             continue;
+//         }
+
+//         if (chunk == state.chunks - 1) {
+//             size = state.file_size % state.chunk_size;
+
+//             if (size == 0)
+//                 size = state.chunk_size;
+//         } else {
+//             size = state.chunk_size;
+//         }
+
+//         const uint64_t file_offset =
+//             (uint64_t)chunk * (uint64_t)state.chunk_size;
+
+//         if ((uint64_t)ftell(state.fp) != file_offset) {
+//             if (fseek(state.fp, (long)file_offset, SEEK_SET) != 0) {
+//                 log_error("Seek error");
+//                 csp_buffer_free(packet);
+//                 packet = NULL;
+//                 return GS_ERROR_ACCESS;
+//             }
+//         }
+
+//         if (fwrite(
+//                 ftp_packet->data.bytes,
+//                 1,
+//                 size,
+//                 state.fp) != size) {
+
+//             log_error("Write error");
+//             csp_buffer_free(packet);
+//             packet = NULL;
+//             return GS_ERROR_IO;
+//         }
+
+//         fflush(state.fp);
+
+//         if ((uint32_t)ftell(state.fp_map) != chunk) {
+//             if (fseek(state.fp_map, (long)chunk, SEEK_SET) != 0) {
+//                 log_error("Map Seek error");
+//                 csp_buffer_free(packet);
+//                 packet = NULL;
+//                 return GS_ERROR_IO;
+//             }
+//         }
+
+//         if (fwrite(packet_ok, 1, 1, state.fp_map) != 1) {
+//             log_error("Map write error");
+//             csp_buffer_free(packet);
+//             packet = NULL;
+//             return GS_ERROR_IO;
+//         }
+
+//         fflush(state.fp_map);
+
+//         /* Show progress bar */
+//         if (state.info_callback) {
+//             gs_ftp_info_t info = {
+//                 .user_data = state.info_data,
+//                 .type = GS_FTP_INFO_DL_PROGRESS,
+//                 .u.progress = {
+//                     .current_chunk = chunk,
+//                     .total_chunks = state.chunks,
+//                     .chunk_size = state.chunk_size,
+//                 },
+//             };
+
+//             state.info_callback(&info);
+//         }
+
+//         /*
+//          * Save the last-chunk condition before freeing packet.
+//          */
+//         const bool is_last_chunk =
+//             (chunk == state.chunks - 1);
+
+//         /*
+//          * This invalidates both packet and ftp_packet.
+//          */
+//         csp_buffer_free(packet);
+//         packet = NULL;
+//         ftp_packet = NULL;
+
+//         /*
+//          * Do not access ftp_packet after csp_buffer_free().
+//          */
+//         if (is_last_chunk)
+//             break;
+//     }
+
+//     /* Sync file to disk */
+//     fflush(state.fp);
+//     fsync(fileno(state.fp));
+
+//     fflush(state.fp_map);
+//     fsync(fileno(state.fp_map));
+
+//     return GS_OK;
+// }
+
+
+// static gs_error_t ftp_data(int count)
+// {
+//     (void) count;
+
+//     gs_error_t result = GS_OK;
+//     bool tx_mode_selected = false;
+
+//     csp_log_protocol("FTP: Start Data Uplink. last_entries : %u", state.last_entries);
+
+//     if (state.conn == NULL) {
+//         log_error("FTP connection is NULL before data upload");
+//         return GS_ERROR_CONNECTION_RESET;
+//     }
+
+//     if (state.fp == NULL) {
+//         log_error("FTP source file is not open");
+//         return GS_ERROR_STATE;
+//     }
+
+//     if (state.chunk_size <= 0 ||
+//         state.chunk_size > (int) sizeof(((ftp_packet_t *) 0)->data.bytes)) {
+//         log_error("Invalid FTP chunk size: %d", state.chunk_size);
+//         return GS_ERROR_ARG;
+//     }
+
+//     ftpavailable = true;
+//     switch_to_tx(destination);
+//     tx_mode_selected = true;
+//     usleep(switch_delay(destination));
+
+//     printf("chunk size : %d\n", state.chunk_size);
+
+//     for (uint32_t i = 0; i < state.last_entries; ++i) {
+//         const ftp_status_element_t * range = &state.last_status[i];
+
+//         for (uint32_t j = 0; j < range->count; ++j) {
+//             if (state.conn == NULL) {
+//                 result = GS_ERROR_CONNECTION_RESET;
+//                 goto cleanup;
+//             }
+
+//             if (!get_now_streaming())
+//                 set_now_streaming(1);
+
+//             if (!ftpavailable) {
+//                 result = GS_ERROR_BREAK;
+//                 goto cleanup;
+//             }
+
+//             const uint32_t chunk = range->next + j;
+//             csp_log_protocol("FTP: Iteration : %u %u", i, j);
+
+//             if (chunk >= state.chunks) {
+//                 log_error("Invalid upload chunk %" PRIu32 " >= %" PRIu32,
+//                           chunk, state.chunks);
+//                 result = GS_ERROR_DATA;
+//                 goto cleanup;
+//             }
+
+//             if (state.info_callback) {
+//                 gs_ftp_info_t info = {
+//                     .user_data = state.info_data,
+//                     .type = GS_FTP_INFO_UL_PROGRESS,
+//                     .u.progress = {
+//                         .current_chunk = chunk,
+//                         .total_chunks = state.chunks,
+//                         .chunk_size = state.chunk_size,
+//                     },
+//                 };
+//                 state.info_callback(&info);
+//             }
+
+//             const uint64_t offset =
+//                 (uint64_t) chunk * (uint64_t) state.chunk_size;
+
+//             long current_offset = ftell(state.fp);
+//             if (current_offset < 0 || (uint64_t) current_offset != offset) {
+//                 if (fseek(state.fp, (long) offset, SEEK_SET) != 0) {
+//                     log_error("Failed to seek upload file to chunk %" PRIu32, chunk);
+//                     result = GS_ERROR_IO;
+//                     goto cleanup;
+//                 }
+//             }
+
+//             ftp_packet_t streamdata = {0};
+//             streamdata.type = FTP_DATA;
+//             streamdata.data.chunk = csp_htole32(chunk);
+
+//             const size_t bytes_read = fread(streamdata.data.bytes,
+//                                             1,
+//                                             (size_t) state.chunk_size,
+//                                             state.fp);
+
+//             if (bytes_read < (size_t) state.chunk_size) {
+//                 if (ferror(state.fp)) {
+//                     log_error("Failed to read upload chunk %" PRIu32, chunk);
+//                     clearerr(state.fp);
+//                     result = GS_ERROR_IO;
+//                     goto cleanup;
+//                 }
+
+//                 memset(streamdata.data.bytes + bytes_read,
+//                        0,
+//                        (size_t) state.chunk_size - bytes_read);
+//             }
+
+//             const size_t length =
+//                 sizeof(streamdata.type) +
+//                 sizeof(streamdata.data.chunk) +
+//                 (size_t) state.chunk_size;
+
+//             csp_packet_t * packet = csp_buffer_get(length);
+//             if (packet == NULL) {
+//                 log_error("No free CSP packet buffer for upload chunk %" PRIu32,
+//                           chunk);
+//                 result = GS_ERROR_ALLOC;
+//                 goto cleanup;
+//             }
+
+//             memcpy(packet->data, &streamdata, length);
+//             packet->length = (uint16_t) length;
+
+//             printf("packet length : %u\n", packet->length);
+
+//             /*
+//              * Ownership rule:
+//              * - success: csp_send_streaming() consumes the packet;
+//              * - failure: ownership remains with this function, so it must be
+//              *   returned to the CSP buffer pool explicitly.
+//              */
+//             if (!csp_send_streaming(state.conn, packet, state.timeout)) {
+//                 log_error("Data transaction failed for upload chunk %" PRIu32,
+//                           chunk);
+//                 csp_buffer_free(packet);
+//                 packet = NULL;
+//                 result = GS_ERROR_BUSY;
+//                 goto cleanup;
+//             }
+
+//             /* Do not free packet here after a successful send. */
+//             packet = NULL;
+//             usleep(1000000);
+//         }
+//     }
+
+// cleanup:
+//     if (tx_mode_selected) {
+//         switch_to_rx(destination);
+//         usleep(switch_delay(destination));
+//     }
+
+//     return result;
+// }
+
+// void ftp_done(unsigned int remove_map)
+// {
+//     /* Close file and map. Clear pointers immediately to make repeated cleanup safe. */
+//     if (state.fp_map != NULL) {
+//         fclose(state.fp_map);
+//         state.fp_map = NULL;
+//     }
+
+//     if (state.fp != NULL) {
+//         fclose(state.fp);
+//         state.fp = NULL;
+//     }
+
+//     /* Delete map file if requested. */
+//     if (remove_map && state.file_name[0] != '\0') {
+//         char map[GS_FTP_PATH_LENGTH + 4];
+//         snprintf(map, sizeof(map), "%s.map", state.file_name);
+
+//         if (remove(map) != 0) {
+//             log_error("Failed to remove %s", map);
+//         }
+//     }
+
+//     /* Never call a persistent transaction through a NULL/stale connection. */
+//     if (state.conn != NULL) {
+//         ftp_packet_t packet = {0};
+//         packet.type = FTP_DONE;
+
+//         if (csp_transaction_persistent(state.conn,
+//                                        state.timeout,
+//                                        &packet,
+//                                        sizeof(packet.type),
+//                                        NULL,
+//                                        0) != 1) {
+//             csp_log_warn("FTP: Failed to send FTP_DONE; closing connection anyway.");
+//         }
+
+//         sleep(1);
+//         csp_close(state.conn);
+//         state.conn = NULL;
+//     } else {
+//         csp_log_protocol("FTP: Connection is already free.");
+//     }
+
+//     memset(&state, 0, sizeof(state));
+//     csp_log_protocol("FTP: FTP Done Completed.");
+// }
+
+// static gs_error_t ftp_crc()
+// {
+//     /* Request */
+//     ftp_packet_t packet;
+//     packet.type = FTP_CRC_REQUEST;
+
+//     /* Reply */
+//     int repsiz = sizeof(packet.type) + sizeof(packet.crcrep);
+//     if (csp_transaction_persistent(state.conn, state.timeout, &packet, sizeof(packet.type), &packet, repsiz) != repsiz) {
+//         return GS_ERROR_IO;
+//     }
+//     if (packet.type != FTP_CRC_REPLY) {
+//         return GS_ERROR_DATA;
+//     }
+//     if (packet.crcrep.ret != GS_FTP_RET_OK) {
+//         return ftp_error_to_gs_error(packet.crcrep.ret);
+//     }
+
+//     /* Calculate CRC32 */
+//     ftp_file_crc32(&state);
+
+//     /* Validate checksum */
+//     packet.crcrep.crc = csp_ntoh32(packet.crcrep.crc);
+//     if (state.info_callback) {
+//         gs_ftp_info_t info = {
+//             .user_data = state.info_data,
+//             .type      = GS_FTP_INFO_CRC,
+//             .u.crc = {
+//                 .remote = packet.crcrep.crc,
+//                 .local  = state.checksum,
+//             },
+//         };
+//         state.info_callback(&info);
+//     }
+//     if (packet.crcrep.crc != state.checksum) {
+//         return GS_ERROR_DATA;
+//     }
+
+//     return GS_OK;
+
+// }
+
+// gs_error_t gs_ftp_move(const gs_ftp_settings_t * settings, const char * from, const char * to)
+// {
+//     ftp_packet_t packet;
+
+//     GS_CHECK_ARG(from && from[0] && (strnlen(from, sizeof(packet.move.from)) < sizeof(packet.move.from)));
+//     GS_CHECK_ARG(to && to[0] && (strnlen(to, sizeof(packet.move.to)) < sizeof(packet.move.to)));
+
+//     packet.type = FTP_MOVE_REQUEST;
+//     GS_STRNCPY(packet.move.from, from);
+//     GS_STRNCPY(packet.move.to, to);
+//     packet.move.backend = gs_ftp_get_backend(NULL, settings);
+
+//     const int reqsiz = sizeof(packet.type) + sizeof(packet.move);
+//     const int repsiz = sizeof(packet.type) + sizeof(packet.moverep);
+
+//     if (csp_transaction(CSP_PRIO_NORM, settings->host, gs_ftp_get_csp_port(settings),
+//                         gs_ftp_get_timeout(settings), &packet, reqsiz, &packet, repsiz) != repsiz) {
+//         return GS_ERROR_IO;
+//     }
+//     if (packet.type != FTP_MOVE_REPLY) {
+//         return GS_ERROR_DATA;
+//     }
+//     return ftp_error_to_gs_error(packet.moverep.ret);
+// }
+
+// gs_error_t gs_ftp_copy(const gs_ftp_settings_t * settings, const char * from, const char * to)
+// {
+//     ftp_packet_t packet;
+
+//     GS_CHECK_ARG(from && from[0] && (strnlen(from, sizeof(packet.copy.from)) < sizeof(packet.copy.from)));
+//     GS_CHECK_ARG(to && to[0] && (strnlen(to, sizeof(packet.copy.to)) < sizeof(packet.copy.to)));
+
+//     packet.type = FTP_COPY_REQUEST;
+//     GS_STRNCPY(packet.copy.from, from);
+//     GS_STRNCPY(packet.copy.to, to);
+//     packet.copy.backend = gs_ftp_get_backend(NULL, settings);
+
+//     int reqsiz = sizeof(packet.type) + sizeof(packet.copy);
+//     int repsiz = sizeof(packet.type) + sizeof(packet.copyrep);
+
+//     if (csp_transaction(CSP_PRIO_NORM, settings->host, gs_ftp_get_csp_port(settings),
+//                         gs_ftp_get_timeout(settings), &packet, reqsiz, &packet, repsiz) != repsiz) {
+//         return GS_ERROR_IO;
+//     }
+//     if (packet.type != FTP_COPY_REPLY) {
+//         return GS_ERROR_DATA;
+//     }
+//     return ftp_error_to_gs_error(packet.copyrep.ret);
+// }
+
+// gs_error_t gs_ftp_remove(const gs_ftp_settings_t * settings, const char * path)
+// {
+//     ftp_packet_t packet;
+
+//     GS_CHECK_ARG(path && path[0] && (strnlen(path, sizeof(packet.remove.path)) < sizeof(packet.remove.path)));
+
+//     packet.type = FTP_REMOVE_REQUEST;
+//     GS_STRNCPY(packet.remove.path, path);
+//     packet.remove.backend = gs_ftp_get_backend(NULL, settings);
+
+//     int reqsiz = sizeof(packet.type) + sizeof(packet.remove);
+//     int repsiz = sizeof(packet.type) + sizeof(packet.removerep);
+
+//     if (csp_transaction(CSP_PRIO_NORM, settings->host, gs_ftp_get_csp_port(settings),
+//                         gs_ftp_get_timeout(settings), &packet, reqsiz, &packet, repsiz) != repsiz) {
+//         return GS_ERROR_IO;
+//     }
+//     if (packet.type != FTP_REMOVE_REPLY) {
+//         return GS_ERROR_DATA;
+//     }
+//     return ftp_error_to_gs_error(packet.removerep.ret);
+// }
+
+// gs_error_t gs_ftp_mkfs(const gs_ftp_settings_t * settings, const char *path, bool force)
+// {
+//     /* Request */
+//     ftp_packet_t packet;
+//     packet.type = FTP_MKFS_REQUEST;
+//     GS_STRNCPY(packet.mkfs.path, path);
+//     packet.mkfs.backend = gs_ftp_get_backend(NULL, settings);
+//     packet.mkfs.force = force ? 1 : 0;
+
+//     const int reqsiz = sizeof(packet.type) + sizeof(packet.mkfs);
+//     const int repsiz = sizeof(packet.type) + sizeof(packet.mkfsrep);
+
+//     /* The default FTP timeout is not long enough for a full UFFS format.
+//      * Bump to 120 seconds for this command */
+//     if (csp_transaction(CSP_PRIO_NORM, settings->host, gs_ftp_get_csp_port(settings),
+//                         120000, &packet, reqsiz, &packet, repsiz) != repsiz) {
+//         return GS_ERROR_IO;
+//     }
+//     if (packet.type != FTP_MKFS_REPLY) {
+//         return GS_ERROR_DATA;
+//     }
+//     return ftp_error_to_gs_error(packet.mkfsrep.ret);
+// }
+
+// gs_error_t gs_ftp_mkdir(const gs_ftp_settings_t * settings, const char *path, uint32_t mode)
+// {
+//     /* Request */
+//     ftp_packet_t packet;
+//     packet.type = FTP_MKDIR_REQUEST;
+//     GS_STRNCPY(packet.mkdir.path, path);
+//     packet.mkdir.backend = gs_ftp_get_backend(NULL, settings);
+//     packet.mkdir.mode = mode;
+
+//     const int reqsiz = sizeof(packet.type) + sizeof(packet.mkdir);
+//     const int repsiz = sizeof(packet.type) + sizeof(packet.mkdirrep);
+
+//     if (csp_transaction(CSP_PRIO_NORM, settings->host, gs_ftp_get_csp_port(settings),
+//                         gs_ftp_get_timeout(settings), &packet, reqsiz, &packet, repsiz) != repsiz) {
+//         return GS_ERROR_IO;
+//     }
+//     if (packet.type != FTP_MKDIR_REPLY) {
+//         return GS_ERROR_DATA;
+//     }
+//     return ftp_error_to_gs_error(packet.mkdirrep.ret);
+// }
+
+// gs_error_t gs_ftp_rmdir(const gs_ftp_settings_t * settings, const char *path)
+// {
+//     /* Request */
+//     ftp_packet_t packet;
+//     packet.type = FTP_RMDIR_REQUEST;
+//     GS_STRNCPY(packet.rmdir.path, path);
+//     packet.rmdir.backend = gs_ftp_get_backend(NULL, settings);
+
+//     const int reqsiz = sizeof(packet.type) + sizeof(packet.rmdir);
+//     const int repsiz = sizeof(packet.type) + sizeof(packet.rmdirrep);
+
+//     if (csp_transaction(CSP_PRIO_NORM, settings->host, gs_ftp_get_csp_port(settings),
+//                         gs_ftp_get_timeout(settings), &packet, reqsiz, &packet, repsiz) != repsiz) {
+//         return GS_ERROR_IO;
+//     }
+//     if (packet.type != FTP_RMDIR_REPLY) {
+//         return GS_ERROR_DATA;
+//     }
+//     return ftp_error_to_gs_error(packet.rmdirrep.ret);
+// }
+
+// gs_error_t gs_ftp_list(const gs_ftp_settings_t * settings, const char * path, gs_ftp_list_callback_t callback, void *data)
+// {
+//     /* Request */
+//     int entries;
+//     csp_conn_t * c;
+//     csp_packet_t * p;
+//     ftp_packet_t packet;
+//     packet.type = FTP_LIST_REQUEST;
+//     packet.list.backend = gs_ftp_get_backend(NULL, settings);
+//     GS_STRNCPY(packet.list.path, path);
+
+//     const int reqsiz = sizeof(packet.type) + sizeof(packet.list);
+//     const int repsiz = sizeof(packet.type) + sizeof(packet.listrep);
+
+//     // c = csp_connect(CSP_PRIO_NORM, settings->host, gs_ftp_get_csp_port(settings), gs_ftp_get_timeout(settings), CSP_O_RDP);
+//     c = csp_connect(CSP_PRIO_NORM, settings->host, gs_ftp_get_csp_port(settings), gs_ftp_get_timeout(settings), CSP_O_CRC32);
+
+//     if (c == NULL) {
+//         return GS_ERROR_IO;
+//     }
+//     if (csp_transaction_persistent(c, gs_ftp_get_timeout(settings), &packet, reqsiz, &packet, repsiz) != repsiz) {
+//         csp_close(c);
+//         return GS_ERROR_IO;
+//     }
+//     if (packet.type != FTP_LIST_REPLY) {
+//         csp_close(c);
+//         return GS_ERROR_DATA;
+//     }
+//     if (packet.listrep.ret != GS_FTP_RET_OK) {
+//         csp_close(c);
+//         return ftp_error_to_gs_error(packet.listrep.ret);
+//     }
+
+//     entries = csp_ntoh16(packet.listrep.entries);
+
+//     /* Read entries */
+//     ftp_packet_t * f;
+//     while (entries && ((p = csp_read(c, gs_ftp_get_timeout(settings))) != NULL)) {
+//         f = (ftp_packet_t *) &(p->data);
+//         f->listent.entry = csp_ntoh16(f->listent.entry);
+//         f->listent.size = csp_ntoh32(f->listent.size);
+
+//         callback(entries, &f->listent, data);
+
+//         uint16_t ent = f->listent.entry;
+//         csp_buffer_free(p);
+//         if (ent == entries - 1)
+//             break;
+//     }
+
+//     csp_close(c);
+
+//     return GS_OK;
+// }
+
+// gs_error_t gs_ftp_zip(const gs_ftp_settings_t * settings, const char * src, const char * dest, uint8_t action,
+//                       uint32_t *comp_sz, uint32_t *decomp_sz)
+// {
+//     /* Request */
+//     ftp_packet_t packet;
+//     packet.type = FTP_ZIP_REQUEST;
+//     GS_STRNCPY(packet.zip.src, src);
+//     GS_STRNCPY(packet.zip.dest, dest);
+//     packet.zip.action = action;
+//     packet.zip.backend = gs_ftp_get_backend(NULL, settings);
+
+//     const int reqsiz = sizeof(packet.type) + sizeof(packet.zip);
+//     const int repsiz = sizeof(packet.type) + sizeof(packet.ziprep);
+
+//     if (csp_transaction(CSP_PRIO_NORM, settings->host, gs_ftp_get_csp_port(settings),
+//                         gs_ftp_get_timeout(settings), &packet, reqsiz, &packet, repsiz) != repsiz) {
+//         return GS_ERROR_IO;
+//     }
+//     if (packet.type != FTP_ZIP_REPLY) {
+//         return GS_ERROR_DATA;
+//     }
+//     if (packet.ziprep.ret != GS_FTP_RET_OK) {
+//         return ftp_error_to_gs_error(packet.ziprep.ret);
+//     }
+
+//     if(comp_sz) {
+//         *comp_sz = csp_ntoh32(packet.ziprep.comp_sz);
+//     }
+//     if (decomp_sz) {
+//         *decomp_sz = csp_ntoh32(packet.ziprep.decomp_sz);
+//     }
+
+//     return GS_OK;
+// }
+
+// gs_error_t gs_ftp_default_settings(gs_ftp_settings_t *settings)
+// {
+//     if (settings) {
+//         memset(settings, 0, sizeof(*settings));
+
+//         settings->timeout = DEFAULT_TIMEOUT;
+//         settings->chunk_size = DEFAULT_CHUNK_SIZE;
+//         return GS_OK;
+//     }
+//     return GS_ERROR_ARG;
+// }
+
+// #define FTP_MODE_STANDARD "standard"
+// #define FTP_MODE_GATOSS   "gatoss"
+
+// gs_error_t gs_ftp_string_to_mode(const char * str, gs_ftp_mode_t * return_mode)
+// {
+//     gs_error_t error = GS_ERROR_ARG;
+//     gs_ftp_mode_t mode = GS_FTP_MODE_STANDARD;
+//     if (gs_string_empty(str) == false) {
+//         if (strcasecmp(str, FTP_MODE_STANDARD) == 0) {
+//             mode = GS_FTP_MODE_STANDARD;
+//             error = GS_OK;
+//         } else if (strcasecmp(str, FTP_MODE_GATOSS) == 0) {
+//             mode = GS_FTP_MODE_GATOSS;
+//             error = GS_OK;
+//         }
+//     }
+//     if (return_mode) {
+//         *return_mode = mode;
+//     }
+//     return error;
+// }
+
+// const char * gs_ftp_mode_to_string(gs_ftp_mode_t mode)
+// {
+//     switch (mode) {
+//         case GS_FTP_MODE_STANDARD: return FTP_MODE_STANDARD;
+//         case GS_FTP_MODE_GATOSS:   return FTP_MODE_GATOSS;
+//     }
+//     return "unknown";
+// }
+
+
+// float gs_ftp_percent_completed(uint32_t completed, uint32_t total)
+// {
+//     if (completed >= total) {
+//         return 100.0f;
+//     }
+//     if (completed == 0) {
+//         return 0.0f;
+//     }
+//     return (float) (completed * 100) / (float) total;
+// }

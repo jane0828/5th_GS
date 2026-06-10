@@ -56,10 +56,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/miman/Desktop/5th_GS
+CMAKE_SOURCE_DIR = /home/hyvrid/Desktop/0609/BEE_GS
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/miman/Desktop/5th_GS/build
+CMAKE_BINARY_DIR = /home/hyvrid/Desktop/0609/BEE_GS/build
 
 # Include any dependencies generated for this target.
 include CMakeFiles/BEE-1000.dir/depend.make
@@ -75,170 +75,170 @@ include CMakeFiles/BEE-1000.dir/flags.make
 CMakeFiles/BEE-1000.dir/src/miman_config.cpp.o: CMakeFiles/BEE-1000.dir/flags.make
 CMakeFiles/BEE-1000.dir/src/miman_config.cpp.o: ../src/miman_config.cpp
 CMakeFiles/BEE-1000.dir/src/miman_config.cpp.o: CMakeFiles/BEE-1000.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miman/Desktop/5th_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_config.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_config.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_config.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_config.cpp.o -c /home/miman/Desktop/5th_GS/src/miman_config.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hyvrid/Desktop/0609/BEE_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_config.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_config.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_config.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_config.cpp.o -c /home/hyvrid/Desktop/0609/BEE_GS/src/miman_config.cpp
 
 CMakeFiles/BEE-1000.dir/src/miman_config.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEE-1000.dir/src/miman_config.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miman/Desktop/5th_GS/src/miman_config.cpp > CMakeFiles/BEE-1000.dir/src/miman_config.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hyvrid/Desktop/0609/BEE_GS/src/miman_config.cpp > CMakeFiles/BEE-1000.dir/src/miman_config.cpp.i
 
 CMakeFiles/BEE-1000.dir/src/miman_config.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEE-1000.dir/src/miman_config.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miman/Desktop/5th_GS/src/miman_config.cpp -o CMakeFiles/BEE-1000.dir/src/miman_config.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hyvrid/Desktop/0609/BEE_GS/src/miman_config.cpp -o CMakeFiles/BEE-1000.dir/src/miman_config.cpp.s
 
 CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.o: CMakeFiles/BEE-1000.dir/flags.make
 CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.o: ../src/miman_coms.cpp
 CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.o: CMakeFiles/BEE-1000.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miman/Desktop/5th_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.o -c /home/miman/Desktop/5th_GS/src/miman_coms.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hyvrid/Desktop/0609/BEE_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.o -c /home/hyvrid/Desktop/0609/BEE_GS/src/miman_coms.cpp
 
 CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miman/Desktop/5th_GS/src/miman_coms.cpp > CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hyvrid/Desktop/0609/BEE_GS/src/miman_coms.cpp > CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.i
 
 CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miman/Desktop/5th_GS/src/miman_coms.cpp -o CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hyvrid/Desktop/0609/BEE_GS/src/miman_coms.cpp -o CMakeFiles/BEE-1000.dir/src/miman_coms.cpp.s
 
 CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.o: CMakeFiles/BEE-1000.dir/flags.make
 CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.o: ../src/miman_csp.cpp
 CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.o: CMakeFiles/BEE-1000.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miman/Desktop/5th_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.o -c /home/miman/Desktop/5th_GS/src/miman_csp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hyvrid/Desktop/0609/BEE_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.o -c /home/hyvrid/Desktop/0609/BEE_GS/src/miman_csp.cpp
 
 CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miman/Desktop/5th_GS/src/miman_csp.cpp > CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hyvrid/Desktop/0609/BEE_GS/src/miman_csp.cpp > CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.i
 
 CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miman/Desktop/5th_GS/src/miman_csp.cpp -o CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hyvrid/Desktop/0609/BEE_GS/src/miman_csp.cpp -o CMakeFiles/BEE-1000.dir/src/miman_csp.cpp.s
 
 CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.o: CMakeFiles/BEE-1000.dir/flags.make
 CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.o: ../src/miman_ftpfcd.cpp
 CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.o: CMakeFiles/BEE-1000.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miman/Desktop/5th_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.o -c /home/miman/Desktop/5th_GS/src/miman_ftpfcd.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hyvrid/Desktop/0609/BEE_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.o -c /home/hyvrid/Desktop/0609/BEE_GS/src/miman_ftpfcd.cpp
 
 CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miman/Desktop/5th_GS/src/miman_ftpfcd.cpp > CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hyvrid/Desktop/0609/BEE_GS/src/miman_ftpfcd.cpp > CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.i
 
 CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miman/Desktop/5th_GS/src/miman_ftpfcd.cpp -o CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hyvrid/Desktop/0609/BEE_GS/src/miman_ftpfcd.cpp -o CMakeFiles/BEE-1000.dir/src/miman_ftpfcd.cpp.s
 
 CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.o: CMakeFiles/BEE-1000.dir/flags.make
 CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.o: ../src/miman_ftprdp.cpp
 CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.o: CMakeFiles/BEE-1000.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miman/Desktop/5th_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.o -c /home/miman/Desktop/5th_GS/src/miman_ftprdp.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hyvrid/Desktop/0609/BEE_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.o -c /home/hyvrid/Desktop/0609/BEE_GS/src/miman_ftprdp.cpp
 
 CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miman/Desktop/5th_GS/src/miman_ftprdp.cpp > CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hyvrid/Desktop/0609/BEE_GS/src/miman_ftprdp.cpp > CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.i
 
 CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miman/Desktop/5th_GS/src/miman_ftprdp.cpp -o CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hyvrid/Desktop/0609/BEE_GS/src/miman_ftprdp.cpp -o CMakeFiles/BEE-1000.dir/src/miman_ftprdp.cpp.s
 
 CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.o: CMakeFiles/BEE-1000.dir/flags.make
 CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.o: ../src/miman_imgui.cpp
 CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.o: CMakeFiles/BEE-1000.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miman/Desktop/5th_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.o -c /home/miman/Desktop/5th_GS/src/miman_imgui.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hyvrid/Desktop/0609/BEE_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.o -c /home/hyvrid/Desktop/0609/BEE_GS/src/miman_imgui.cpp
 
 CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miman/Desktop/5th_GS/src/miman_imgui.cpp > CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hyvrid/Desktop/0609/BEE_GS/src/miman_imgui.cpp > CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.i
 
 CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miman/Desktop/5th_GS/src/miman_imgui.cpp -o CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hyvrid/Desktop/0609/BEE_GS/src/miman_imgui.cpp -o CMakeFiles/BEE-1000.dir/src/miman_imgui.cpp.s
 
 CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.o: CMakeFiles/BEE-1000.dir/flags.make
 CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.o: ../src/miman_orbital.cpp
 CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.o: CMakeFiles/BEE-1000.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miman/Desktop/5th_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.o -c /home/miman/Desktop/5th_GS/src/miman_orbital.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hyvrid/Desktop/0609/BEE_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.o -c /home/hyvrid/Desktop/0609/BEE_GS/src/miman_orbital.cpp
 
 CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miman/Desktop/5th_GS/src/miman_orbital.cpp > CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hyvrid/Desktop/0609/BEE_GS/src/miman_orbital.cpp > CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.i
 
 CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miman/Desktop/5th_GS/src/miman_orbital.cpp -o CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hyvrid/Desktop/0609/BEE_GS/src/miman_orbital.cpp -o CMakeFiles/BEE-1000.dir/src/miman_orbital.cpp.s
 
 CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.o: CMakeFiles/BEE-1000.dir/flags.make
 CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.o: ../src/miman_radial.cpp
 CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.o: CMakeFiles/BEE-1000.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miman/Desktop/5th_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.o -c /home/miman/Desktop/5th_GS/src/miman_radial.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hyvrid/Desktop/0609/BEE_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.o -c /home/hyvrid/Desktop/0609/BEE_GS/src/miman_radial.cpp
 
 CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miman/Desktop/5th_GS/src/miman_radial.cpp > CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hyvrid/Desktop/0609/BEE_GS/src/miman_radial.cpp > CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.i
 
 CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miman/Desktop/5th_GS/src/miman_radial.cpp -o CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hyvrid/Desktop/0609/BEE_GS/src/miman_radial.cpp -o CMakeFiles/BEE-1000.dir/src/miman_radial.cpp.s
 
 CMakeFiles/BEE-1000.dir/src/miman_model.cpp.o: CMakeFiles/BEE-1000.dir/flags.make
 CMakeFiles/BEE-1000.dir/src/miman_model.cpp.o: ../src/miman_model.cpp
 CMakeFiles/BEE-1000.dir/src/miman_model.cpp.o: CMakeFiles/BEE-1000.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miman/Desktop/5th_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_model.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_model.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_model.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_model.cpp.o -c /home/miman/Desktop/5th_GS/src/miman_model.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hyvrid/Desktop/0609/BEE_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_model.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_model.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_model.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_model.cpp.o -c /home/hyvrid/Desktop/0609/BEE_GS/src/miman_model.cpp
 
 CMakeFiles/BEE-1000.dir/src/miman_model.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEE-1000.dir/src/miman_model.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miman/Desktop/5th_GS/src/miman_model.cpp > CMakeFiles/BEE-1000.dir/src/miman_model.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hyvrid/Desktop/0609/BEE_GS/src/miman_model.cpp > CMakeFiles/BEE-1000.dir/src/miman_model.cpp.i
 
 CMakeFiles/BEE-1000.dir/src/miman_model.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEE-1000.dir/src/miman_model.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miman/Desktop/5th_GS/src/miman_model.cpp -o CMakeFiles/BEE-1000.dir/src/miman_model.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hyvrid/Desktop/0609/BEE_GS/src/miman_model.cpp -o CMakeFiles/BEE-1000.dir/src/miman_model.cpp.s
 
 CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.o: CMakeFiles/BEE-1000.dir/flags.make
 CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.o: ../src/miman_s_control.cpp
 CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.o: CMakeFiles/BEE-1000.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miman/Desktop/5th_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.o -c /home/miman/Desktop/5th_GS/src/miman_s_control.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hyvrid/Desktop/0609/BEE_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.o -c /home/hyvrid/Desktop/0609/BEE_GS/src/miman_s_control.cpp
 
 CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miman/Desktop/5th_GS/src/miman_s_control.cpp > CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hyvrid/Desktop/0609/BEE_GS/src/miman_s_control.cpp > CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.i
 
 CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miman/Desktop/5th_GS/src/miman_s_control.cpp -o CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hyvrid/Desktop/0609/BEE_GS/src/miman_s_control.cpp -o CMakeFiles/BEE-1000.dir/src/miman_s_control.cpp.s
 
 CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.o: CMakeFiles/BEE-1000.dir/flags.make
 CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.o: ../src/miman_autopilot.cpp
 CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.o: CMakeFiles/BEE-1000.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miman/Desktop/5th_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.o -c /home/miman/Desktop/5th_GS/src/miman_autopilot.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hyvrid/Desktop/0609/BEE_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.o -MF CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.o -c /home/hyvrid/Desktop/0609/BEE_GS/src/miman_autopilot.cpp
 
 CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miman/Desktop/5th_GS/src/miman_autopilot.cpp > CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hyvrid/Desktop/0609/BEE_GS/src/miman_autopilot.cpp > CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.i
 
 CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miman/Desktop/5th_GS/src/miman_autopilot.cpp -o CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hyvrid/Desktop/0609/BEE_GS/src/miman_autopilot.cpp -o CMakeFiles/BEE-1000.dir/src/miman_autopilot.cpp.s
 
 CMakeFiles/BEE-1000.dir/src/main.cpp.o: CMakeFiles/BEE-1000.dir/flags.make
 CMakeFiles/BEE-1000.dir/src/main.cpp.o: ../src/main.cpp
 CMakeFiles/BEE-1000.dir/src/main.cpp.o: CMakeFiles/BEE-1000.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/miman/Desktop/5th_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/BEE-1000.dir/src/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/main.cpp.o -MF CMakeFiles/BEE-1000.dir/src/main.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/main.cpp.o -c /home/miman/Desktop/5th_GS/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hyvrid/Desktop/0609/BEE_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/BEE-1000.dir/src/main.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/BEE-1000.dir/src/main.cpp.o -MF CMakeFiles/BEE-1000.dir/src/main.cpp.o.d -o CMakeFiles/BEE-1000.dir/src/main.cpp.o -c /home/hyvrid/Desktop/0609/BEE_GS/src/main.cpp
 
 CMakeFiles/BEE-1000.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/BEE-1000.dir/src/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/miman/Desktop/5th_GS/src/main.cpp > CMakeFiles/BEE-1000.dir/src/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hyvrid/Desktop/0609/BEE_GS/src/main.cpp > CMakeFiles/BEE-1000.dir/src/main.cpp.i
 
 CMakeFiles/BEE-1000.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/BEE-1000.dir/src/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/miman/Desktop/5th_GS/src/main.cpp -o CMakeFiles/BEE-1000.dir/src/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hyvrid/Desktop/0609/BEE_GS/src/main.cpp -o CMakeFiles/BEE-1000.dir/src/main.cpp.s
 
 # Object files for target BEE-1000
 BEE__1000_OBJECTS = \
@@ -275,13 +275,11 @@ BEE-1000: /usr/lib/x86_64-linux-gnu/libcurl.so
 BEE-1000: /usr/lib/x86_64-linux-gnu/libglfw.so.3.3
 BEE-1000: /usr/lib/x86_64-linux-gnu/libGLEW.so
 BEE-1000: /usr/lib/x86_64-linux-gnu/libglut.so
-BEE-1000: /usr/lib/x86_64-linux-gnu/libXmu.so
-BEE-1000: /usr/lib/x86_64-linux-gnu/libXi.so
 BEE-1000: ../lib/libsgp4/libsgp4.a
 BEE-1000: ../lib/imgui/libimgui.a
 BEE-1000: ../lib/gscsp/build/libmimancsp.a
 BEE-1000: CMakeFiles/BEE-1000.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/miman/Desktop/5th_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable BEE-1000"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hyvrid/Desktop/0609/BEE_GS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX executable BEE-1000"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/BEE-1000.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -293,6 +291,6 @@ CMakeFiles/BEE-1000.dir/clean:
 .PHONY : CMakeFiles/BEE-1000.dir/clean
 
 CMakeFiles/BEE-1000.dir/depend:
-	cd /home/miman/Desktop/5th_GS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/miman/Desktop/5th_GS /home/miman/Desktop/5th_GS /home/miman/Desktop/5th_GS/build /home/miman/Desktop/5th_GS/build /home/miman/Desktop/5th_GS/build/CMakeFiles/BEE-1000.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hyvrid/Desktop/0609/BEE_GS/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hyvrid/Desktop/0609/BEE_GS /home/hyvrid/Desktop/0609/BEE_GS /home/hyvrid/Desktop/0609/BEE_GS/build /home/hyvrid/Desktop/0609/BEE_GS/build /home/hyvrid/Desktop/0609/BEE_GS/build/CMakeFiles/BEE-1000.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/BEE-1000.dir/depend
 

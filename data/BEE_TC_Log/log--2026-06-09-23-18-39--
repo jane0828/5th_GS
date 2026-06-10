@@ -1,0 +1,339 @@
+[23:18:57]  Connect to Switch Box..............Failed.
+[23:18:57]  Connect to Rotator.................Failed.
+[23:18:57]  Connect to GS100..................Success.
+[23:18:57]  BEE-1000 BCN Port 31 bind success.
+[23:18:57]  BEE-1000 RPT Port 25 bind success.
+[23:18:57]  BEE-1000 Event Port 27 bind success.
+[23:18:57]  BEE-100 FM Port 23 bind success.
+[23:18:57]  UEL-Y-Sys. BCN Port 12 bind success.
+[23:18:57]  UEL-Y-Sys. RPT Port 10 bind success.
+[23:18:57]  UEL-Y-Sys. Event Port 11 bind success.
+[23:18:57]  UEL-Y-Sys. FM Port 14 bind success.
+[23:18:57]  BEE-1012 BCN Port 17 bind success.
+[23:18:57]  BEE-1012 RPT Port 15 bind success.
+[23:18:57]  BEE-1012 Event Port 16 bind success.
+[23:18:57]  BEE-1012 FM Port 18 bind success.
+[23:18:57]  Rotator Read Failed. Please Check Again.
+[23:18:58]  Packet Received on unknown port 11
+[23:18:58]  Packet length is 172
+[23:19:00]  Received BEE1012 Beacon from port : 17.
+[23:19:02]  Packet Received on unknown port 11
+[23:19:02]  Packet length is 172
+[23:19:04]  Packet Received on unknown port 11
+[23:19:04]  Packet length is 172
+[23:19:07]  Changing GS HMAC Key for UELYSYS...
+[23:19:07]   Satellite Switched to: UELYSYS (TX HMAC enabled)
+[23:19:12]  Packet Received on unknown port 11
+[23:19:12]  Packet length is 172
+[23:19:14]  Packet Received on unknown port 11
+[23:19:14]  Packet length is 172
+[23:19:16]  Received Report from port : 10.
+[23:19:16]  Received Report from port : 10.
+[23:19:16]  Received Report from port : 10.
+[23:19:16]  Packet Received on unknown port 11
+[23:19:16]  Packet length is 172
+[23:19:20]  Received UELYSYS Beacon from port : 12.
+[23:19:22]  Packet Received on unknown port 11
+[23:19:22]  Packet length is 172
+[23:19:24]  Received BEE1012 Beacon from port : 17.
+[23:19:29]  Received BEE1012 Beacon from port : 17.
+[23:19:39]  Received BEE1012 Beacon from port : 17.
+[23:19:42]  Packet Received on unknown port 11
+[23:19:42]  Packet length is 172
+[23:19:45]  Packet Received on unknown port 11
+[23:19:45]  Packet length is 172
+[23:19:50]  Received UELYSYS Beacon from port : 12.
+[23:19:58]  Received Report from port : 10.
+[23:19:59]  Received Report from port : 10.
+[23:19:59]  Received Report from port : 10.
+[23:20:02]  Packet Received on unknown port 11
+[23:20:02]  Packet length is 172
+[23:20:04]  Received BEE1012 Beacon from port : 17.
+[23:20:09]  Received BEE1012 Beacon from port : 17.
+[23:20:15]  Packet Received on unknown port 11
+[23:20:15]  Packet length is 172
+[23:20:19]  Received BEE1012 Beacon from port : 17.
+[23:20:21]  Received Report from port : 10.
+[23:20:21]  Received Report from port : 10.
+[23:20:22]  Received Report from port : 10.
+[23:20:22]  Received UELYSYS Beacon from port : 12.
+[23:20:24]  Packet Received on unknown port 11
+[23:20:24]  Packet length is 172
+[23:20:26]  Received Report from port : 10.
+[23:20:26]  Received Report from port : 10.
+[23:20:26]  Received Report from port : 10.
+[23:20:28]  Received Report from port : 10.
+[23:20:28]  Received Report from port : 10.
+[23:20:29]  Received Report from port : 10.
+[23:20:42]  Packet Received on unknown port 11
+[23:20:42]  Packet length is 172
+[23:20:44]  Received BEE1012 Beacon from port : 17.
+[23:20:46]  Packet Received on unknown port 11
+[23:20:46]  Packet length is 172
+[23:20:49]  Received BEE1012 Beacon from port : 17.
+[23:20:51]  Received UELYSYS Beacon from port : 12.
+[23:20:59]  Received BEE1012 Beacon from port : 17.
+[23:21:02]  Packet Received on unknown port 11
+[23:21:02]  Packet length is 172
+[23:21:13]  Received Report from port : 10.
+[23:21:13]  Received Report from port : 10.
+[23:21:14]  Received Report from port : 10.
+[23:21:15]  Packet Received on unknown port 11
+[23:21:15]  Packet length is 172
+[23:21:20]  Received UELYSYS Beacon from port : 12.
+[23:21:22]  Packet Received on unknown port 11
+[23:21:22]  Packet length is 172
+[23:21:24]  Received BEE1012 Beacon from port : 17.
+[23:21:29]  Received BEE1012 Beacon from port : 17.
+Unknown MsgID
+[23:21:36]   Start Uplink Task.
+[23:21:36]  Send Packet of Ptype : 10. Check Terminal Log.
+[23:21:36]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x24 0x36 0x5f
+|| Uplink || Length: 43
+18	54	c0	00	00	24	36	5f	63	68	
+69	63	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	04	80	
+bb	00	00	
+
+[23:21:39]  Received BEE1012 Beacon from port : 17.
+[23:21:42]  Packet Received on unknown port 11
+[23:21:42]  Packet length is 172
+[23:21:45]  Packet Received on unknown port 11
+[23:21:45]  Packet length is 172
+[23:21:50]  Received UELYSYS Beacon from port : 12.
+[23:22:02]  Packet Received on unknown port 11
+[23:22:02]  Packet length is 172
+[23:22:04]  Received BEE1012 Beacon from port : 17.
+[23:22:09]  Received BEE1012 Beacon from port : 17.
+[23:22:15]  Packet Received on unknown port 11
+[23:22:15]  Packet length is 172
+[23:22:19]  Received BEE1012 Beacon from port : 17.
+[23:22:21]  Received UELYSYS Beacon from port : 12.
+[23:22:23]  Packet Received on unknown port 11
+[23:22:23]  Packet length is 172
+Unknown MsgID
+[23:22:25]   Start Uplink Task.
+[23:22:25]  Send Packet of Ptype : 10. Check Terminal Log.
+[23:22:25]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x1 0x0 0x72
+|| Uplink || Length: 8
+18	54	c0	00	00	01	00	72	
+
+[23:22:25]  Packet Received on unknown port 11
+[23:22:25]  Packet length is 172
+[23:22:28]  Packet Received on unknown port 11
+[23:22:28]  Packet length is 172
+[23:22:30]  Received Report from port : 10.
+[23:22:30]  Received Report from port : 10.
+[23:22:30]  Received Report from port : 10.
+[23:22:42]  Packet Received on unknown port 11
+[23:22:42]  Packet length is 172
+[23:22:44]  Received BEE1012 Beacon from port : 17.
+[23:22:46]  Packet Received on unknown port 11
+[23:22:46]  Packet length is 172
+[23:22:49]  Received BEE1012 Beacon from port : 17.
+[23:22:51]  Received UELYSYS Beacon from port : 12.
+[23:22:59]  Received BEE1012 Beacon from port : 17.
+[23:23:02]  Packet Received on unknown port 11
+[23:23:02]  Packet length is 172
+[23:23:15]  Packet Received on unknown port 11
+[23:23:15]  Packet length is 172
+Unknown MsgID
+[23:23:18]   Start Uplink Task.
+[23:23:18]  Send Packet of Ptype : 10. Check Terminal Log.
+[23:23:18]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x3 0x3 0x72
+|| Uplink || Length: 10
+18	54	c0	00	00	03	03	72	13	12	
+
+[23:23:19]  Packet Received on unknown port 11
+[23:23:19]  Packet length is 172
+[23:23:21]  Packet Received on unknown port 11
+[23:23:21]  Packet length is 172
+[23:23:23]  Received Report from port : 10.
+[23:23:23]  Received Report from port : 10.
+[23:23:23]  Received Report from port : 10.
+[23:23:24]  Received UELYSYS Beacon from port : 12.
+[23:23:26]  Packet Received on unknown port 11
+[23:23:26]  Packet length is 172
+[23:23:28]  Received BEE1012 Beacon from port : 17.
+[23:23:30]  Received BEE1012 Beacon from port : 17.
+Unknown MsgID
+[23:23:33]   Start Uplink Task.
+[23:23:33]  Send Packet of Ptype : 10. Check Terminal Log.
+[23:23:33]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x1 0x2 0x70
+|| Uplink || Length: 8
+18	54	c0	00	00	01	02	70	
+
+[23:23:34]  Packet Received on unknown port 11
+[23:23:34]  Packet length is 172
+[23:23:36]  Received Report from port : 10.
+[23:23:36]  Received Report from port : 10.
+[23:23:36]  Received Report from port : 10.
+[23:23:37]  Received Report from port : 10.
+[23:23:37]  Received Report from port : 10.
+[23:23:37]  Received Report from port : 10.
+[23:23:37]  Received Report from port : 10.
+[23:23:37]  Received Report from port : 10.
+[23:23:38]  Received Report from port : 10.
+[23:23:38]  Received Report from port : 10.
+[23:23:38]  Received Report from port : 10.
+[23:23:39]  Received Report from port : 10.
+[23:23:39]  Received BEE1012 Beacon from port : 17.
+[23:23:42]  Packet Received on unknown port 11
+[23:23:42]  Packet length is 172
+[23:23:45]  Packet Received on unknown port 11
+[23:23:45]  Packet length is 172
+[23:23:50]  Received UELYSYS Beacon from port : 12.
+Unknown MsgID
+[23:23:59]   Start Uplink Task.
+[23:23:59]  Send Packet of Ptype : 10. Check Terminal Log.
+[23:23:59]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x24 0x36 0x5f
+|| Uplink || Length: 43
+18	54	c0	00	00	24	36	5f	63	68	
+69	63	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	04	80	
+bb	00	00	
+
+[23:24:00]  Packet Received on unknown port 11
+[23:24:00]  Packet length is 172
+[23:24:02]  Received Report from port : 10.
+[23:24:02]  Received Report from port : 10.
+[23:24:02]  Received Report from port : 10.
+[23:24:02]  Packet Received on unknown port 11
+[23:24:02]  Packet length is 172
+[23:24:04]  Received BEE1012 Beacon from port : 17.
+[23:24:09]  Received BEE1012 Beacon from port : 17.
+[23:24:15]  Packet Received on unknown port 11
+[23:24:15]  Packet length is 172
+[23:24:19]  Received BEE1012 Beacon from port : 17.
+[23:24:21]  Received UELYSYS Beacon from port : 12.
+[23:24:23]  Packet Received on unknown port 11
+[23:24:23]  Packet length is 172
+[23:24:42]  Packet Received on unknown port 11
+[23:24:42]  Packet length is 172
+Unknown MsgID
+[23:24:43]   Start Uplink Task.
+[23:24:43]  Send Packet of Ptype : 10. Check Terminal Log.
+[23:24:43]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x4a 0x37 0x76
+|| Uplink || Length: 81
+18	54	c0	00	00	4a	37	76	2e	2f	
+63	66	2f	73	64	63	61	72	64	2f	
+63	61	6d	5f	69	6d	67	5f	30	5f	
+33	2e	62	69	6e	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+64	
+
+[23:24:44]  Received BEE1012 Beacon from port : 17.
+[23:24:46]  Packet Received on unknown port 11
+[23:24:46]  Packet length is 172
+[23:24:49]  Received BEE1012 Beacon from port : 17.
+[23:24:51]  Received UELYSYS Beacon from port : 12.
+[23:24:59]  Received BEE1012 Beacon from port : 17.
+[23:25:02]  Packet Received on unknown port 11
+[23:25:02]  Packet length is 172
+[23:25:15]  Packet Received on unknown port 11
+[23:25:15]  Packet length is 172
+[23:25:20]  Received UELYSYS Beacon from port : 12.
+Unknown MsgID
+[23:25:22]   Start Uplink Task.
+[23:25:22]  Send Packet of Ptype : 10. Check Terminal Log.
+[23:25:22]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x4a 0x37 0x76
+|| Uplink || Length: 81
+18	54	c0	00	00	4a	37	76	2e	2f	
+63	66	2f	73	64	63	61	72	64	2f	
+63	61	6d	5f	69	6d	67	5f	30	5f	
+33	2e	62	69	6e	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+64	
+
+[23:25:22]  Packet Received on unknown port 11
+[23:25:22]  Packet length is 172
+[23:25:24]  Received BEE1012 Beacon from port : 17.
+[23:25:29]  Received BEE1012 Beacon from port : 17.
+[23:25:39]  Received BEE1012 Beacon from port : 17.
+[23:25:42]  Packet Received on unknown port 11
+[23:25:42]  Packet length is 172
+[23:25:45]  Packet Received on unknown port 11
+[23:25:45]  Packet length is 172
+[23:25:50]  Received UELYSYS Beacon from port : 12.
+[23:26:02]  Packet Received on unknown port 11
+[23:26:02]  Packet length is 172
+[23:26:04]  Received BEE1012 Beacon from port : 17.
+[23:26:09]  Received BEE1012 Beacon from port : 17.
+[23:26:15]  Packet Received on unknown port 11
+[23:26:15]  Packet length is 172
+[23:26:19]  Received BEE1012 Beacon from port : 17.
+[23:26:21]  Received UELYSYS Beacon from port : 12.
+[23:26:23]  Packet Received on unknown port 11
+[23:26:23]  Packet length is 172
+Unknown MsgID
+[23:26:31]   Start Uplink Task.
+[23:26:31]  Send Packet of Ptype : 10. Check Terminal Log.
+[23:26:31]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x4a 0x37 0x5e
+|| Uplink || Length: 81
+18	54	c0	00	00	4a	37	5e	2f	72	
+6f	6f	74	2f	44	49	4c	2f	6f	62	
+63	2f	63	66	2f	73	64	63	61	72	
+64	2f	63	61	6d	5f	69	6d	67	5f	
+30	5f	33	2e	62	69	6e	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+64	
+
+[23:26:42]  Packet Received on unknown port 11
+[23:26:42]  Packet length is 172
+[23:26:44]  Received BEE1012 Beacon from port : 17.
+[23:26:46]  Packet Received on unknown port 11
+[23:26:46]  Packet length is 172
+[23:26:49]  Received BEE1012 Beacon from port : 17.
+[23:26:51]  Received UELYSYS Beacon from port : 12.
+[23:26:59]  Received BEE1012 Beacon from port : 17.
+[23:27:02]  Packet Received on unknown port 11
+[23:27:02]  Packet length is 172
+[23:27:15]  Packet Received on unknown port 11
+[23:27:15]  Packet length is 172
+[23:27:20]  Received UELYSYS Beacon from port : 12.
+[23:27:22]  Packet Received on unknown port 11
+[23:27:22]  Packet length is 172
+[23:27:24]  Received BEE1012 Beacon from port : 17.
+[23:27:29]  Received BEE1012 Beacon from port : 17.
+[23:27:39]  Received BEE1012 Beacon from port : 17.
+[23:27:42]  Packet Received on unknown port 11
+[23:27:42]  Packet length is 172
+[23:27:45]  Packet Received on unknown port 11
+[23:27:45]  Packet length is 172
+[23:27:50]  Received UELYSYS Beacon from port : 12.
+[23:28:02]  Packet Received on unknown port 11
+[23:28:02]  Packet length is 172
+[23:28:04]  Received BEE1012 Beacon from port : 17.
+[23:28:09]  Received BEE1012 Beacon from port : 17.
+[23:28:11]  Received Report from port : 10.
+[23:28:12]  Received Report from port : 10.
+[23:28:12]  Received Report from port : 10.
+[23:28:15]  Packet Received on unknown port 11
+[23:28:15]  Packet length is 172
+[23:28:19]  Received BEE1012 Beacon from port : 17.
+[23:28:21]  Received UELYSYS Beacon from port : 12.
+[23:28:23]  Packet Received on unknown port 11
+[23:28:23]  Packet length is 172
+[23:28:25]  Packet Received on unknown port 11
+[23:28:25]  Packet length is 172
+[23:28:27]  Received Report from port : 10.
+[23:28:28]  Received Report from port : 10.
+[23:28:28]  Received Report from port : 10.
+[23:28:33]  Received Report from port : 10.
+[23:28:33]  Received Report from port : 10.
+[23:28:33]  Received Report from port : 10.
+[23:28:43]  Received BEE1012 Beacon from port : 17.
+[23:28:45]  Packet Received on unknown port 11
+[23:28:45]  Packet length is 172
+[23:28:47]  Packet Received on unknown port 11
+[23:28:47]  Packet length is 172

@@ -552,6 +552,7 @@ uint32_t chksum_crc32(uint8_t *block, unsigned int length);
 #define MIM_PT_NCCMD				8
 #define MIM_PT_TEST					0xF0
 #define MIM_PT_TMTC_TEST            10
+#define B12_UL_AIOBC                11
 
 // Packet Parser
 #define MIM_HAND_HEADERFIELD		4
@@ -3506,12 +3507,12 @@ typedef GPIO_NoArgCmd_t GPIO_SpInRead5sCmd_t;
 
 #define UELYSYS_PACK __attribute__((packed))
 
-#define UELYSYS_TTC_PLATFORM_MAX_COMMAND_SIZE 512
-#define UELYSYS_TTC_PLATFORM_MAX_CHUNK_SIZE   220
-#define UELYSYS_MEOW_MISSION_MAX_CMD_LEN      256
-#define UELYSYS_MEOW_MISSION_MAX_PATH_LEN     128
-#define UELYSYS_MEOW_MISSION_MAX_WRITE_LEN    256
-#define UELYSYS_MEOW_MISSION_MAX_READ_LEN     256
+#define UELYSYS_TTC_PLATFORM_MAX_COMMAND_SIZE 128
+#define UELYSYS_TTC_PLATFORM_MAX_CHUNK_SIZE   128
+#define UELYSYS_MEOW_MISSION_MAX_CMD_LEN      80
+#define UELYSYS_MEOW_MISSION_MAX_PATH_LEN     80
+#define UELYSYS_MEOW_MISSION_MAX_WRITE_LEN    80
+#define UELYSYS_MEOW_MISSION_MAX_READ_LEN     80
 #define UELYSYS_MEOW_MISSION_MAX_IFACE_NAME_LEN 16
 #define UELYSYS_MEOW_MISSION_MAX_SYMBOL_LEN   64
 
@@ -5574,7 +5575,19 @@ typedef struct CFE_ES_StopAppCmd
     char Application[CFE_MISSION_MAX_API_LEN];        /**< \brief Command payload */
 } CFE_ES_StopAppCmd_t;
 
+typedef struct CFE_TIMECmd
+{
+    uint8_t                  CmdHeader[CFE_SB_CMD_HDR_SIZE]; /**< \brief Command header */
+    uint32_t                 second;        /**< \brief Command payload */
+    uint32_t                 subsecond;
+} CFE_TIMECmd_t;
 
+typedef struct SCH_AOSCmd
+{
+    uint8_t                  CmdHeader[CFE_SB_CMD_HDR_SIZE]; /**< \brief Command header */
+    uint16_t                 EntryIndex;        /**< \brief Command payload */
+    uint16_t                 Enable;
+} SCH_AOSCmd_t;
 
 typedef struct CFE_ES_AppReloadCmd_Payload
 {
@@ -5625,7 +5638,15 @@ typedef struct CFE_ES_NoopCmd
     uint8_t                  CmdHeader[CFE_SB_CMD_HDR_SIZE]; /**< \brief Command header */
 } CFE_ES_NoopCmd_t;
 
+// AIOBC
 
+#define paddingLength 180
+
+typedef struct AIOBC_HealthChckCmd
+{
+    uint8_t                  CmdHeader[CFE_SB_CMD_HDR_SIZE]; /**< \brief Command header */
+    uint8_t                  padding[paddingLength];        /**< \brief Command payload */
+} __attribute__((packed)) AIOBC_HealthChckCmd_t;
 
 // COSMIC HELP
 //EPS P31U SET CONFIG2
@@ -6727,6 +6748,10 @@ typedef struct {
     // EPS
 
 
+    // cFE time command
+    CFE_TIMECmd_t                 cfetimecmd;
+    SCH_AOSCmd_t                  schaoscmd;
+
     /* No-arg commands */
     /***********************************************/
     /*                 EPS(5th)                    */
@@ -6968,6 +6993,11 @@ typedef struct {
      SP_DEPLOY               spdeploy;
 
 /***********************************************************5차 추가*************************************************/
+
+    AIOBC_HealthChckCmd_t                   aiobchealthchckcmd;
+
+
+
     PAYUEL_ROMA_NoopCmd_t                   romanoopcmd;
     PAYUEL_ROMA_ResetCountersCmd_t          romaresetcountercmd;
     PAYUEL_ROMA_CommTestCmd_t               romacommtestcmd;

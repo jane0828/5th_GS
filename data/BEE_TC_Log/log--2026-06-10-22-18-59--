@@ -1,0 +1,109 @@
+[22:19:10]  Connect to Switch Box..............Failed.
+[22:19:10]  Connect to Rotator.................Failed.
+[22:19:10]  Connect to GS100..................Success.
+[22:19:10]  BEE-1000 BCN Port 31 bind success.
+[22:19:10]  BEE-1000 RPT Port 25 bind success.
+[22:19:10]  BEE-1000 Event Port 27 bind success.
+[22:19:10]  BEE-100 FM Port 23 bind success.
+[22:19:10]  Rotator Read Failed. Please Check Again.
+[22:19:10]  UEL-Y-Sys. BCN Port 12 bind success.
+[22:19:10]  UEL-Y-Sys. RPT Port 10 bind success.
+[22:19:10]  UEL-Y-Sys. Event Port 11 bind success.
+[22:19:10]  UEL-Y-Sys. FM Port 14 bind success.
+[22:19:10]  BEE-1012 BCN Port 17 bind success.
+[22:19:10]  BEE-1012 RPT Port 15 bind success.
+[22:19:10]  BEE-1012 Event Port 16 bind success.
+[22:19:10]  BEE-1012 FM Port 18 bind success.
+[22:19:16]  Received Report from port : 15.
+[22:19:16]  Received Report from port : 15.
+[22:19:16]  Received Report from port : 15.
+[22:19:20]  Received BEE1012 Beacon from port : 17.
+[22:19:22]  Received UELYSYS Beacon from port : 12.
+[22:19:26]  Received BEE1012 Beacon from port : 17.
+[22:19:36]  Received BEE1012 Beacon from port : 17.
+[22:19:44]  Changing GS HMAC Key for BEE1012...
+[22:19:44]   Satellite Switched to: BEE1012 (TX HMAC enabled)
+[22:19:46]  Received Report from port : 15.
+[22:19:46]  Received Report from port : 15.
+[22:19:46]  Received Report from port : 15.
+[22:19:51]  Received UELYSYS Beacon from port : 12.
+[22:19:53]  Start FTP Downlink.
+[22:19:58]  Received FTP Download Spec.
+[22:19:58]  Received FTP Download Spec. Filesize : 150888, CRC : 3503586147.
+[22:19:59]  Received FTP Status Request.
+[22:19:59]  Restart FTP Downlink from chunk : 73, to total : 839
+[22:20:00]  Download : 73/839
+[22:20:01]  Download : 74/839
+[22:20:01]  Download : 75/839
+[22:20:01]  Download : 76/839
+[22:20:02]  Download : 77/839
+[22:20:02]  Download : 78/839
+[22:20:03]  Download : 79/839
+[22:20:03]  Download : 80/839
+[22:20:04]  Download : 81/839
+[22:20:05]  Download : 82/839
+[22:20:05]  Download : 83/839
+[22:20:05]  Download : 84/839
+[22:20:06]  Download : 85/839
+[22:20:07]  Download : 86/839
+[22:20:07]  Download : 87/839
+[22:20:08]  Download : 88/839
+[22:20:08]  Download : 89/839
+[22:20:09]  Download : 90/839
+[22:20:09]  Download : 91/839
+[22:20:10]  Download : 92/839
+[22:20:10]  Download : 93/839
+[22:20:11]  Download : 94/839
+[22:20:11]  Download : 95/839
+[22:20:12]  Download : 96/839
+[22:20:12]  Download : 97/839
+[22:20:13]  Download : 98/839
+[22:20:13]  Download : 99/839
+[22:20:14]  Download : 100/839
+[22:20:14]  Download : 101/839
+[22:20:15]  Download : 102/839
+[22:20:15]  Download : 103/839
+[22:20:16]  Download : 104/839
+[22:20:16]  Download : 105/839
+[22:20:18]  Download : 106/839
+[22:20:19]  Download : 107/839
+[22:20:19]  Download : 108/839
+[22:20:19]  Download : 109/839
+[22:20:20]  Download : 110/839
+[22:20:21]  Download : 111/839
+[22:20:21]  Download : 112/839
+[22:20:21]  Download : 113/839
+[22:20:30]  Download : 114/839
+[22:20:30]  Download : 115/839
+[22:20:31]  Download : 116/839
+[22:20:31]  Download : 117/839
+[22:20:31]  Download : 118/839
+[22:20:32]  Download : 119/839
+[22:20:33]  Download : 120/839
+[22:20:33]  Download : 121/839
+[22:20:33]  Download : 122/839
+[22:20:34]  Download : 123/839
+[22:20:34]  Download : 124/839
+[22:20:35]  Download : 125/839
+[22:20:35]  Download : 126/839
+[22:20:36]  Download : 127/839
+[22:20:36]  Download : 128/839
+[22:20:37]  Download : 129/839
+[22:20:37]  Download : 130/839
+[22:20:38]  Download : 131/839
+[22:20:38]  Download : 132/839
+[22:20:39]  Download : 133/839
+[22:20:39]  Download : 134/839
+[22:20:40]  Download : 135/839
+[22:20:41]  Download : 136/839
+[22:20:41]  Download : 137/839
+[22:20:42]  Download : 138/839
+[22:20:42]  Download : 139/839
+[22:20:43]  Download : 140/839
+[22:20:43]  Download : 141/839
+[22:20:44]  Download : 142/839
+[22:20:44]  Download : 143/839
+[22:20:45]  Download : 144/839
+[22:20:45]  Download : 145/839
+[22:20:45]  Download : 146/839
+[22:20:46]  Download : 147/839

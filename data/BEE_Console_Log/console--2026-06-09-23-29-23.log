@@ -1,0 +1,78 @@
+2026-06-09 23:29
+[23:29:41]  Connect to Switch Box..............Failed.
+[23:29:41]  Connect to Rotator.................Failed.
+[23:29:41]  Connect to GS100..................Success.
+[23:29:41]  BEE-1000 BCN Port 31 bind success.
+[23:29:41]  BEE-1000 RPT Port 25 bind success.
+[23:29:41]  BEE-1000 Event Port 27 bind success.
+[23:29:41]  BEE-100 FM Port 23 bind success.
+[23:29:41]  UEL-Y-Sys. BCN Port 12 bind success.
+[23:29:41]  UEL-Y-Sys. RPT Port 10 bind success.
+[23:29:41]  UEL-Y-Sys. Event Port 11 bind success.
+[23:29:41]  UEL-Y-Sys. FM Port 14 bind success.
+[23:29:41]  BEE-1012 BCN Port 17 bind success.
+[23:29:41]  BEE-1012 RPT Port 15 bind success.
+[23:29:41]  BEE-1012 Event Port 16 bind success.
+[23:29:41]  BEE-1012 FM Port 18 bind success.
+[23:29:41]  Rotator Read Failed. Please Check Again.
+[23:29:43]  Packet Received on unknown port 11
+[23:29:43]  Packet length is 172
+[23:29:46]  Packet Received on unknown port 11
+[23:29:46]  Packet length is 172
+[23:29:46]  Changing GS HMAC Key for UELYSYS...
+[23:29:46]   Satellite Switched to: UELYSYS (TX HMAC enabled)
+[23:29:47]  Changing GS HMAC Key for BEE1012...
+[23:29:47]   Satellite Switched to: BEE1012 (TX HMAC enabled)
+[23:29:50]  Received UELYSYS Beacon from port : 12.
+[23:30:01]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x2 0xc 0x58
+[23:30:02]  Packet Received on unknown port 11
+[23:30:02]  Packet length is 172
+[23:30:04]  Received Report from port : 10.
+[23:30:05]  Received Report from port : 10.
+[23:30:05]  Received Report from port : 10.
+[23:30:05]  Packet Received on unknown port 11
+[23:30:05]  Packet length is 172
+[23:30:07]  Received BEE1012 Beacon from port : 17.
+[23:30:07]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x2 0xc 0x58
+[23:30:09]  Received BEE1012 Beacon from port : 17.
+[23:30:16]  Packet Received on unknown port 11
+[23:30:16]  Packet length is 172
+[23:30:19]  Received BEE1012 Beacon from port : 17.
+[23:30:20]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x2 0xc 0x58
+[23:30:21]  Received UELYSYS Beacon from port : 12.
+[23:30:23]  Packet Received on unknown port 11
+[23:30:23]  Packet length is 172
+[23:30:24]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x2 0xc 0x58
+[23:30:29]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0x2 0xc 0x58
+[23:30:43]  Packet Received on unknown port 11
+[23:30:43]  Packet length is 172
+[23:30:45]  Received BEE1012 Beacon from port : 17.
+[23:30:47]  Packet Received on unknown port 11
+[23:30:47]  Packet length is 172
+[23:30:49]  Received BEE1012 Beacon from port : 17.
+[23:30:51]  Received UELYSYS Beacon from port : 12.
+[23:30:59]  Received BEE1012 Beacon from port : 17.
+[23:31:03]  Packet Received on unknown port 11
+[23:31:03]  Packet length is 172
+[23:31:16]  Packet Received on unknown port 11
+[23:31:16]  Packet length is 172
+[23:31:20]  Received UELYSYS Beacon from port : 12.
+[23:31:23]  Packet Received on unknown port 11
+[23:31:23]  Packet length is 172
+[23:31:25]  Received BEE1012 Beacon from port : 17.
+[23:31:29]  Received BEE1012 Beacon from port : 17.
+[23:31:39]  Received BEE1012 Beacon from port : 17.
+[23:31:43]  Packet Received on unknown port 11
+[23:31:43]  Packet length is 172
+[23:31:46]  Packet Received on unknown port 11
+[23:31:46]  Packet length is 172
+[23:32:03]  Received BEE1012 Beacon from port : 17.
+[23:32:09]  Received BEE1012 Beacon from port : 17.
+[23:32:19]  Received BEE1012 Beacon from port : 17.
+[23:32:43]  Received BEE1012 Beacon from port : 17.
+[23:32:49]  Received BEE1012 Beacon from port : 17.
+[23:32:59]  Received BEE1012 Beacon from port : 17.
+[23:33:21]  Packet Received on unknown port 11
+[23:33:21]  Packet length is 172
+[23:33:23]  Packet Received on unknown port 11
+[23:33:23]  Packet length is 172

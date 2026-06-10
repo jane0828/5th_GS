@@ -1,0 +1,42 @@
+2026-06-10 22:44
+[22:44:19]  Connect to Switch Box..............Failed.
+[22:44:19]  Connect to Rotator.................Failed.
+[22:44:19]  Connect to GS100..................Success.
+[22:44:19]  BEE-1000 BCN Port 31 bind success.
+[22:44:19]  Rotator Read Failed. Please Check Again.
+[22:44:19]  BEE-1000 RPT Port 25 bind success.
+[22:44:19]  BEE-1000 Event Port 27 bind success.
+[22:44:19]  BEE-100 FM Port 23 bind success.
+[22:44:19]  UEL-Y-Sys. BCN Port 12 bind success.
+[22:44:19]  UEL-Y-Sys. RPT Port 10 bind success.
+[22:44:19]  UEL-Y-Sys. Event Port 11 bind success.
+[22:44:19]  UEL-Y-Sys. FM Port 14 bind success.
+[22:44:19]  BEE-1012 BCN Port 17 bind success.
+[22:44:19]  BEE-1012 RPT Port 15 bind success.
+[22:44:19]  BEE-1012 Event Port 16 bind success.
+[22:44:19]  BEE-1012 FM Port 18 bind success.
+[22:44:22]  Changing GS HMAC Key for BEE1012...
+[22:44:22]   Satellite Switched to: BEE1012 (TX HMAC enabled)
+[22:44:22]  Received UELYSYS Beacon from port : 12.
+[22:44:40]  Received BEE1012 Beacon from port : 17.
+[22:44:45]  Received Report from port : 15.
+[22:44:45]  Received Report from port : 15.
+[22:44:45]  Received Report from port : 15.
+[22:44:46]  Received BEE1012 Beacon from port : 17.
+[22:44:48]  Received Report from port : 15.
+[22:44:49]  Received Report from port : 15.
+[22:44:49]  Received Report from port : 15.
+[22:44:52]  Received UELYSYS Beacon from port : 12.
+[22:44:56]  Received BEE1012 Beacon from port : 17.
+[22:44:59]  Ping Success at node 5, 456ms
+[22:45:02]  Start FTP Downlink.
+[22:45:07]  Received FTP Download Spec.
+[22:45:07]  Received FTP Download Spec. Filesize : 150888, CRC : 3503586147.
+[22:45:08]  Received FTP Status Request.
+[22:45:08]  Restart FTP Downlink from chunk : 148, to total : 839
+[22:45:25]  Download : 148/839
+[22:45:25]  Download : 149/839
+[22:45:26]  Download : 150/839
+[22:45:26]  Download : 151/839
+[22:45:26]  Download : 152/839
+[22:45:27]  Download : 153/839

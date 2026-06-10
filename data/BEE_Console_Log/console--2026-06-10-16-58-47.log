@@ -1,0 +1,131 @@
+2026-06-10 16:58
+[16:59:05]  Connect to Switch Box..............Failed.
+[16:59:05]  Connect to Rotator.................Failed.
+[16:59:05]  Connect to GS100..................Success.
+[16:59:05]  BEE-1000 BCN Port 31 bind success.
+[16:59:05]  BEE-1000 RPT Port 25 bind success.
+[16:59:05]  BEE-1000 Event Port 27 bind success.
+[16:59:05]  BEE-100 FM Port 23 bind success.
+[16:59:05]  UEL-Y-Sys. BCN Port 12 bind success.
+[16:59:05]  UEL-Y-Sys. RPT Port 10 bind success.
+[16:59:05]  UEL-Y-Sys. Event Port 11 bind success.
+[16:59:05]  UEL-Y-Sys. FM Port 14 bind success.
+[16:59:05]  BEE-1012 BCN Port 17 bind success.
+[16:59:05]  BEE-1012 RPT Port 15 bind success.
+[16:59:05]  BEE-1012 Event Port 16 bind success.
+[16:59:05]  BEE-1012 FM Port 18 bind success.
+[16:59:05]  Rotator Read Failed. Please Check Again.
+[16:59:09]  Changing GS HMAC Key for UELYSYS...
+[16:59:09]   Satellite Switched to: UELYSYS (TX HMAC enabled)
+[16:59:16]  Received UELYSYS Beacon from port : 12.
+[16:59:21]  [OK]CMD Packet Header: 0x18 0x80 0xc0 0x0 0x0 0x1 0x0 0xa6
+[16:59:22]  Received Report from port : 10.
+[16:59:23]  Received Report from port : 10.
+[16:59:23]  Received Report from port : 10.
+[16:59:46]  Received UELYSYS Beacon from port : 12.
+[17:00:16]  Received UELYSYS Beacon from port : 12.
+[17:00:40]  [OK]CMD Packet Header: 0x18 0x80 0xc0 0x0 0x0 0x8c 0x10 0xee
+[17:00:46]  Received UELYSYS Beacon from port : 12.
+[17:01:16]  Received UELYSYS Beacon from port : 12.
+[17:01:46]  Received UELYSYS Beacon from port : 12.
+[17:02:16]  Received UELYSYS Beacon from port : 12.
+[17:02:46]  Received UELYSYS Beacon from port : 12.
+[17:03:16]  Received UELYSYS Beacon from port : 12.
+[17:03:46]  Received UELYSYS Beacon from port : 12.
+[17:04:16]  Received UELYSYS Beacon from port : 12.
+[17:04:46]  Received UELYSYS Beacon from port : 12.
+[17:05:16]  Received UELYSYS Beacon from port : 12.
+[17:05:46]  Received UELYSYS Beacon from port : 12.
+[17:06:16]  Received UELYSYS Beacon from port : 12.
+[17:06:46]  Received UELYSYS Beacon from port : 12.
+[17:07:16]  Received UELYSYS Beacon from port : 12.
+[17:07:46]  Received UELYSYS Beacon from port : 12.
+[17:08:16]  Received UELYSYS Beacon from port : 12.
+[17:08:46]  Received UELYSYS Beacon from port : 12.
+[17:09:16]  Received UELYSYS Beacon from port : 12.
+[17:09:46]  Received UELYSYS Beacon from port : 12.
+[17:10:16]  Received UELYSYS Beacon from port : 12.
+[17:10:46]  Received UELYSYS Beacon from port : 12.
+[17:11:16]  Received UELYSYS Beacon from port : 12.
+[17:11:46]  Received UELYSYS Beacon from port : 12.
+[17:12:16]  Received UELYSYS Beacon from port : 12.
+[17:12:46]  Received UELYSYS Beacon from port : 12.
+[17:13:16]  Received UELYSYS Beacon from port : 12.
+[17:13:46]  Received UELYSYS Beacon from port : 12.
+[17:14:16]  Received UELYSYS Beacon from port : 12.
+[17:14:27]  [OK]CMD Packet Header: 0x18 0x80 0xc0 0x0 0x0 0x8c 0x10 0xcc
+[17:14:29]  [OK]CMD Packet Header: 0x18 0x80 0xc0 0x0 0x0 0x8c 0x10 0xcc
+[17:14:46]  Received UELYSYS Beacon from port : 12.
+[17:14:48]  Received Report from port : 10.
+[17:14:49]  Received Report from port : 10.
+[17:14:49]  Received Report from port : 10.
+[17:15:16]  Received UELYSYS Beacon from port : 12.
+[17:15:46]  Received UELYSYS Beacon from port : 12.
+[17:16:16]  Received UELYSYS Beacon from port : 12.
+[17:16:46]  Received UELYSYS Beacon from port : 12.
+[17:17:16]  Received UELYSYS Beacon from port : 12.
+[17:17:28]  [OK]CMD Packet Header: 0x18 0x80 0xc0 0x0 0x0 0x8c 0x10 0xcc
+[17:17:47]  Received UELYSYS Beacon from port : 12.
+[17:18:14]  [OK]CMD Packet Header: 0x18 0x80 0xc0 0x0 0x0 0x8c 0x10 0xcc
+[17:18:17]  Received UELYSYS Beacon from port : 12.
+[17:18:47]  Received UELYSYS Beacon from port : 12.
+[17:19:17]  Received UELYSYS Beacon from port : 12.
+[17:19:47]  Received UELYSYS Beacon from port : 12.
+[17:20:17]  Received UELYSYS Beacon from port : 12.
+[17:20:47]  Received UELYSYS Beacon from port : 12.
+[17:21:17]  Received UELYSYS Beacon from port : 12.
+[17:21:47]  Received UELYSYS Beacon from port : 12.
+[17:22:17]  Received UELYSYS Beacon from port : 12.
+[17:22:43]  [OK]CMD Packet Header: 0x18 0x86 0xc0 0x0 0x0 0xa9 0xa 0xbf
+[17:22:47]  Received UELYSYS Beacon from port : 12.
+[17:22:55]  [OK]CMD Packet Header: 0x18 0x86 0xc0 0x0 0x0 0x1 0x0 0xa0
+[17:22:56]  Received Report from port : 10.
+[17:22:56]  Received Report from port : 10.
+[17:22:56]  Received Report from port : 10.
+[17:23:17]  Received UELYSYS Beacon from port : 12.
+[17:23:47]  Received UELYSYS Beacon from port : 12.
+[17:24:17]  Received UELYSYS Beacon from port : 12.
+[17:24:47]  Received UELYSYS Beacon from port : 12.
+[17:24:53]  Received Report from port : 10.
+[17:24:54]  Received Report from port : 10.
+[17:24:54]  Received Report from port : 10.
+[17:25:17]  Received UELYSYS Beacon from port : 12.
+[17:25:18]  [OK]CMD Packet Header: 0x18 0x86 0xc0 0x0 0x0 0x1 0x0 0xa0
+[17:25:19]  Received Report from port : 10.
+[17:25:20]  Received Report from port : 10.
+[17:25:20]  Received Report from port : 10.
+[17:25:29]  Received Report from port : 10.
+[17:25:29]  Received Report from port : 10.
+[17:25:30]  Received Report from port : 10.
+[17:25:47]  Received UELYSYS Beacon from port : 12.
+[17:26:17]  Received UELYSYS Beacon from port : 12.
+[17:26:47]  Received UELYSYS Beacon from port : 12.
+[17:27:17]  Received UELYSYS Beacon from port : 12.
+[17:27:26]  [OK]CMD Packet Header: 0x18 0x86 0xc0 0x0 0x0 0x1 0x0 0xa0
+[17:27:26]  Received Report from port : 10.
+[17:27:27]  Received Report from port : 10.
+[17:27:27]  Received Report from port : 10.
+[17:27:47]  Received UELYSYS Beacon from port : 12.
+[17:28:17]  Received UELYSYS Beacon from port : 12.
+[17:28:35]  [OK]CMD Packet Header: 0x18 0x86 0xc0 0x0 0x0 0x1 0x0 0xa0
+[17:28:36]  Received Report from port : 10.
+[17:28:36]  Received Report from port : 10.
+[17:28:36]  Received Report from port : 10.
+[17:28:47]  Received UELYSYS Beacon from port : 12.
+[17:28:51]  [OK]CMD Packet Header: 0x18 0x86 0xc0 0x0 0x0 0x1 0x0 0xa0
+[17:28:51]  Received Report from port : 10.
+[17:28:52]  Received Report from port : 10.
+[17:28:52]  Received Report from port : 10.
+[17:29:06]  [OK]CMD Packet Header: 0x18 0x80 0xc0 0x0 0x0 0x1 0x0 0xa6
+[17:29:07]  Received Report from port : 10.
+[17:29:08]  Received Report from port : 10.
+[17:29:08]  Received Report from port : 10.
+[17:29:17]  Received UELYSYS Beacon from port : 12.
+[17:29:22]  Received Report from port : 10.
+[17:29:23]  Received Report from port : 10.
+[17:29:23]  Received Report from port : 10.
+[17:29:47]  Received UELYSYS Beacon from port : 12.
+[17:29:54]  Cannot Read 1 parameters of Table 0.
+[17:30:17]  Received UELYSYS Beacon from port : 12.
+[17:30:47]  Received UELYSYS Beacon from port : 12.
+[17:31:17]  Received UELYSYS Beacon from port : 12.

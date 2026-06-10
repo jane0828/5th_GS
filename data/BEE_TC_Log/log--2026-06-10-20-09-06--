@@ -1,0 +1,1623 @@
+[20:09:18]  Connect to Switch Box..............Failed.
+[20:09:18]  Connect to Rotator.................Failed.
+[20:09:18]  Connect to GS100..................Success.
+[20:09:18]  BEE-1000 BCN Port 31 bind success.
+[20:09:18]  BEE-1000 RPT Port 25 bind success.
+[20:09:18]  BEE-1000 Event Port 27 bind success.
+[20:09:18]  BEE-100 FM Port 23 bind success.
+[20:09:18]  Rotator Read Failed. Please Check Again.
+[20:09:18]  UEL-Y-Sys. BCN Port 12 bind success.
+[20:09:18]  UEL-Y-Sys. RPT Port 10 bind success.
+[20:09:18]  UEL-Y-Sys. Event Port 11 bind success.
+[20:09:18]  UEL-Y-Sys. FM Port 14 bind success.
+[20:09:18]  BEE-1012 BCN Port 17 bind success.
+[20:09:18]  BEE-1012 RPT Port 15 bind success.
+[20:09:18]  BEE-1012 Event Port 16 bind success.
+[20:09:18]  BEE-1012 FM Port 18 bind success.
+[20:09:21]  Received UELYSYS Beacon from port : 12.
+[20:09:51]  Received UELYSYS Beacon from port : 12.
+[20:10:21]  Received UELYSYS Beacon from port : 12.
+PAYC (18a3)
+[20:10:28]   Start Uplink Task.
+[20:10:28]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:10:28]  [OK]CMD Packet Header: 0x18 0xa3 0xc0 0x0 0x0 0x5 0x2 0x90
+|| Uplink || Length: 12
+18	a3	c0	00	00	05	02	90	12	00	
+01	00	
+
+[20:10:29]  Received Report from port : 10.
+[20:10:30]  Received Report from port : 10.
+[20:10:30]  Received Report from port : 10.
+[20:10:51]  Received UELYSYS Beacon from port : 12.
+[20:11:14]  Changing GS HMAC Key for UELYSYS...
+[20:11:14]   Satellite Switched to: UELYSYS (TX HMAC enabled)
+[20:11:21]  Received UELYSYS Beacon from port : 12.
+[20:11:51]  Received UELYSYS Beacon from port : 12.
+FM (1875)
+[20:12:00]   Start Uplink Task.
+[20:12:00]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:12:00]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0xf 0xb 0x5c
+|| Uplink || Length: 22
+18	75	c0	00	00	0f	0b	5c	04	01	
+00	00	00	00	63	68	31	35	00	00	
+00	00	
+
+[20:12:01]  Received Report from port : 10.
+[20:12:02]  Received Report from port : 10.
+[20:12:02]  Received Report from port : 10.
+[20:12:21]  Received UELYSYS Beacon from port : 12.
+[20:12:51]  Received UELYSYS Beacon from port : 12.
+Unknown MsgID
+[20:13:10]   Start Uplink Task.
+[20:13:10]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:13:10]  [OK]CMD Packet Header: 0x18 0x47 0xc0 0x0 0x0 0x1 0x0 0x61
+|| Uplink || Length: 8
+18	47	c0	00	00	01	00	61	
+
+[20:13:10]  Received Report from port : 10.
+[20:13:11]  Received Report from port : 10.
+[20:13:11]  Received Report from port : 10.
+Unknown MsgID
+[20:13:19]   Start Uplink Task.
+[20:13:19]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:13:19]  [OK]CMD Packet Header: 0x18 0x47 0xc0 0x0 0x0 0x1 0x5 0x64
+|| Uplink || Length: 8
+18	47	c0	00	00	01	05	64	
+
+[20:13:21]  Received UELYSYS Beacon from port : 12.
+Unknown MsgID
+[20:13:43]   Start Uplink Task.
+[20:13:43]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:13:43]  [OK]CMD Packet Header: 0x18 0x47 0xc0 0x0 0x0 0x4 0x3 0x67
+|| Uplink || Length: 11
+18	47	c0	00	00	04	03	67	00	00	
+00	
+
+[20:13:45]  Received Report from port : 10.
+[20:13:45]  Received Report from port : 10.
+[20:13:45]  Received Report from port : 10.
+[20:13:51]  Received UELYSYS Beacon from port : 12.
+[20:14:21]  Received UELYSYS Beacon from port : 12.
+[20:14:51]  Received UELYSYS Beacon from port : 12.
+[20:15:21]  Received UELYSYS Beacon from port : 12.
+[20:15:51]  Received UELYSYS Beacon from port : 12.
+[20:16:21]  Received UELYSYS Beacon from port : 12.
+[20:16:51]  Received UELYSYS Beacon from port : 12.
+FM (1875)
+[20:17:14]   Start Uplink Task.
+[20:17:14]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:17:14]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0xf 0xb 0x5d
+|| Uplink || Length: 22
+18	75	c0	00	00	0f	0b	5d	04	00	
+00	00	00	00	63	68	31	35	00	00	
+00	00	
+
+[20:17:15]  Received Report from port : 10.
+[20:17:16]  Received Report from port : 10.
+[20:17:16]  Received Report from port : 10.
+[20:17:21]  Received UELYSYS Beacon from port : 12.
+[20:17:51]  Received UELYSYS Beacon from port : 12.
+FM (1875)
+[20:18:05]   Start Uplink Task.
+[20:18:05]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:18:05]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0xf 0xb 0x58
+|| Uplink || Length: 22
+18	75	c0	00	00	0f	0b	58	04	01	
+00	00	00	00	63	68	32	32	00	00	
+00	00	
+
+[20:18:06]  Received Report from port : 10.
+[20:18:07]  Received Report from port : 10.
+[20:18:07]  Received Report from port : 10.
+[20:18:21]  Received UELYSYS Beacon from port : 12.
+[20:18:51]  Received UELYSYS Beacon from port : 12.
+[20:19:21]  Received UELYSYS Beacon from port : 12.
+[20:19:51]  Received UELYSYS Beacon from port : 12.
+[20:20:21]  Received UELYSYS Beacon from port : 12.
+[20:20:51]  Received UELYSYS Beacon from port : 12.
+LOG (18c3)
+[20:20:55]   Start Uplink Task.
+[20:20:55]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:20:55]  [OK]CMD Packet Header: 0x18 0xc3 0xc0 0x0 0x0 0x3 0x2 0xe4
+|| Uplink || Length: 10
+18	c3	c0	00	00	03	02	e4	00	01	
+
+[20:20:56]  Received Report from port : 10.
+[20:20:57]  Received Report from port : 10.
+[20:20:57]  Received Report from port : 10.
+[20:21:21]  Received UELYSYS Beacon from port : 12.
+LOG (18c3)
+[20:21:27]   Start Uplink Task.
+[20:21:27]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:21:27]  [OK]CMD Packet Header: 0x18 0xc3 0xc0 0x0 0x0 0x3 0x4 0xe2
+|| Uplink || Length: 10
+18	c3	c0	00	00	03	04	e2	00	01	
+
+[20:21:33]  Received Report from port : 10.
+[20:21:33]  Received Report from port : 10.
+[20:21:34]  Received Report from port : 10.
+LOG (18c3)
+[20:21:40]   Start Uplink Task.
+[20:21:40]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:21:40]  [OK]CMD Packet Header: 0x18 0xc3 0xc0 0x0 0x0 0x3 0x5 0xe3
+|| Uplink || Length: 10
+18	c3	c0	00	00	03	05	e3	00	01	
+
+[20:21:40]  Received Report from port : 10.
+[20:21:41]  Received Report from port : 10.
+[20:21:41]  Received Report from port : 10.
+[20:21:51]  Received UELYSYS Beacon from port : 12.
+LOG (18c3)
+[20:22:02]   Start Uplink Task.
+[20:22:02]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:22:02]  [OK]CMD Packet Header: 0x18 0xc3 0xc0 0x0 0x0 0x3 0x8 0xee
+|| Uplink || Length: 10
+18	c3	c0	00	00	03	08	ee	00	01	
+
+[20:22:21]  Received UELYSYS Beacon from port : 12.
+[20:22:51]  Received UELYSYS Beacon from port : 12.
+LOG (18c3)
+[20:23:13]   Start Uplink Task.
+[20:23:13]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:23:13]  [OK]CMD Packet Header: 0x18 0xc3 0xc0 0x0 0x0 0x1 0x7 0xe2
+|| Uplink || Length: 8
+18	c3	c0	00	00	01	07	e2	
+
+[20:23:21]  Received UELYSYS Beacon from port : 12.
+[20:23:46]  Received Report from port : 10.
+[20:23:47]  Received Report from port : 10.
+[20:23:47]  Received Report from port : 10.
+[20:23:51]  Received UELYSYS Beacon from port : 12.
+LOG (18c3)
+[20:24:04]   Start Uplink Task.
+[20:24:04]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:24:04]  [OK]CMD Packet Header: 0x18 0xc3 0xc0 0x0 0x0 0x1 0x7 0xe2
+|| Uplink || Length: 8
+18	c3	c0	00	00	01	07	e2	
+
+[20:24:21]  Received UELYSYS Beacon from port : 12.
+[20:24:51]  Received Report from port : 10.
+[20:24:51]  Received Report from port : 10.
+[20:24:51]  Received Report from port : 10.
+[20:24:52]  Received UELYSYS Beacon from port : 12.
+LOG (18c3)
+[20:24:55]   Start Uplink Task.
+[20:24:55]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:24:55]  [OK]CMD Packet Header: 0x18 0xc3 0xc0 0x0 0x0 0x1 0x7 0xe2
+|| Uplink || Length: 8
+18	c3	c0	00	00	01	07	e2	
+
+[20:25:21]  Received UELYSYS Beacon from port : 12.
+FM (1875)
+[20:25:49]   Start Uplink Task.
+[20:25:49]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:25:49]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0xf 0xb 0x59
+|| Uplink || Length: 22
+18	75	c0	00	00	0f	0b	59	04	00	
+00	00	00	00	63	68	32	32	00	00	
+00	00	
+
+[20:25:50]  Received Report from port : 10.
+[20:25:51]  Received Report from port : 10.
+[20:25:51]  Received Report from port : 10.
+[20:25:51]  Received UELYSYS Beacon from port : 12.
+FM (1875)
+[20:25:59]   Start Uplink Task.
+[20:25:59]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:25:59]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0xf 0xb 0x5c
+|| Uplink || Length: 22
+18	75	c0	00	00	0f	0b	5c	04	01	
+00	00	00	00	63	68	31	35	00	00	
+00	00	
+
+[20:26:00]  Received Report from port : 10.
+[20:26:01]  Received Report from port : 10.
+[20:26:01]  Received Report from port : 10.
+[20:26:21]  Received UELYSYS Beacon from port : 12.
+[20:26:51]  Received UELYSYS Beacon from port : 12.
+[20:27:21]  Received UELYSYS Beacon from port : 12.
+[20:27:51]  Received UELYSYS Beacon from port : 12.
+Unknown MsgID
+[20:27:55]   Start Uplink Task.
+[20:27:55]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:27:55]  [OK]CMD Packet Header: 0x18 0x47 0xc0 0x0 0x0 0x4 0x3 0x34
+|| Uplink || Length: 11
+18	47	c0	00	00	04	03	34	01	83	
+d1	
+
+[20:27:56]  Received Report from port : 10.
+[20:27:57]  Received Report from port : 10.
+[20:27:57]  Received Report from port : 10.
+[20:28:21]  Received UELYSYS Beacon from port : 12.
+FM (1875)
+[20:28:48]   Start Uplink Task.
+[20:28:48]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:28:48]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0xf 0xb 0x5d
+|| Uplink || Length: 22
+18	75	c0	00	00	0f	0b	5d	04	00	
+00	00	00	00	63	68	31	35	00	00	
+00	00	
+
+[20:28:49]  Received Report from port : 10.
+[20:28:49]  Received Report from port : 10.
+[20:28:50]  Received Report from port : 10.
+[20:28:51]  Received UELYSYS Beacon from port : 12.
+FM (1875)
+[20:29:01]   Start Uplink Task.
+[20:29:01]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:29:01]  [OK]CMD Packet Header: 0x18 0x75 0xc0 0x0 0x0 0xf 0xb 0x59
+|| Uplink || Length: 22
+18	75	c0	00	00	0f	0b	59	04	01	
+00	00	00	00	63	68	31	30	00	00	
+00	00	
+
+[20:29:02]  Received Report from port : 10.
+[20:29:02]  Received Report from port : 10.
+[20:29:03]  Received Report from port : 10.
+[20:29:21]  Received UELYSYS Beacon from port : 12.
+[20:29:51]  Received UELYSYS Beacon from port : 12.
+GRX (188a)
+[20:30:11]   Start Uplink Task.
+[20:30:11]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:30:11]  [OK]CMD Packet Header: 0x18 0x8a 0xc0 0x0 0x0 0x1 0x9 0xa5
+|| Uplink || Length: 8
+18	8a	c0	00	00	01	09	a5	
+
+[20:30:12]  Received Report from port : 10.
+[20:30:12]  Received Report from port : 10.
+[20:30:13]  Received Report from port : 10.
+[20:30:21]  Received UELYSYS Beacon from port : 12.
+[20:30:51]  Received UELYSYS Beacon from port : 12.
+Unknown MsgID
+[20:30:54]   Start Uplink Task.
+[20:30:54]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:30:54]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x3 0x3 0x72
+|| Uplink || Length: 10
+18	54	c0	00	00	03	03	72	13	12	
+
+[20:30:54]  Received Report from port : 10.
+[20:30:55]  Received Report from port : 10.
+[20:30:55]  Received Report from port : 10.
+Unknown MsgID
+[20:31:02]   Start Uplink Task.
+[20:31:02]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:31:02]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x1 0x2 0x70
+|| Uplink || Length: 8
+18	54	c0	00	00	01	02	70	
+
+[20:31:03]  Received Report from port : 10.
+[20:31:03]  Received Report from port : 10.
+[20:31:04]  Received Report from port : 10.
+[20:31:04]  Received Report from port : 10.
+[20:31:05]  Received Report from port : 10.
+[20:31:05]  Received Report from port : 10.
+[20:31:05]  Received Report from port : 10.
+[20:31:06]  Received Report from port : 10.
+[20:31:06]  Received Report from port : 10.
+[20:31:06]  Received Report from port : 10.
+[20:31:07]  Received Report from port : 10.
+[20:31:07]  Received Report from port : 10.
+[20:31:21]  Received UELYSYS Beacon from port : 12.
+[20:31:51]  Received UELYSYS Beacon from port : 12.
+Unknown MsgID
+[20:31:55]   Start Uplink Task.
+[20:31:55]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:31:55]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x24 0x36 0x98
+|| Uplink || Length: 43
+18	54	c0	00	00	24	36	98	73	69	
+63	6b	2e	62	69	6e	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	08	40	
+ef	07	00	
+
+[20:31:56]  Received Report from port : 10.
+[20:31:57]  Received Report from port : 10.
+[20:31:57]  Received Report from port : 10.
+[20:32:21]  Received UELYSYS Beacon from port : 12.
+[20:32:52]  Received UELYSYS Beacon from port : 12.
+Unknown MsgID
+[20:33:16]   Start Uplink Task.
+[20:33:16]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:33:16]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x4a 0x37 0x3a
+|| Uplink || Length: 81
+18	54	c0	00	00	4a	37	3a	2f	72	
+6f	6f	74	2f	44	49	4c	2f	6f	62	
+63	2f	63	66	2f	73	64	63	61	72	
+64	2f	63	61	6d	5f	69	6d	67	5f	
+30	5f	31	2e	62	69	6e	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+02	
+
+[20:33:19]  Received Report from port : 10.
+[20:33:19]  Received Report from port : 10.
+[20:33:19]  Received Report from port : 10.
+[20:33:22]  Received UELYSYS Beacon from port : 12.
+[20:33:52]  Received UELYSYS Beacon from port : 12.
+[20:34:22]  Received UELYSYS Beacon from port : 12.
+[20:34:52]  Received UELYSYS Beacon from port : 12.
+[20:35:22]  Received UELYSYS Beacon from port : 12.
+[20:35:29]  Received Report from port : 10.
+[20:35:30]  Received Report from port : 10.
+[20:35:30]  Received Report from port : 10.
+[20:35:31]  Received Report from port : 10.
+[20:35:31]  Received Report from port : 10.
+[20:35:31]  Received Report from port : 10.
+[20:35:32]  Received Report from port : 10.
+[20:35:32]  Received Report from port : 10.
+[20:35:32]  Received Report from port : 10.
+[20:35:33]  Received Report from port : 10.
+[20:35:33]  Received Report from port : 10.
+[20:35:34]  Received Report from port : 10.
+Unknown MsgID
+[20:35:35]   Start Uplink Task.
+[20:35:35]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:35:35]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x3 0x3 0x72
+|| Uplink || Length: 10
+18	54	c0	00	00	03	03	72	13	12	
+
+[20:35:36]  Received Report from port : 10.
+[20:35:36]  Received Report from port : 10.
+[20:35:36]  Received Report from port : 10.
+Unknown MsgID
+[20:35:43]   Start Uplink Task.
+[20:35:43]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:35:43]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x1 0x2 0x70
+|| Uplink || Length: 8
+18	54	c0	00	00	01	02	70	
+
+[20:35:43]  Received Report from port : 10.
+[20:35:44]  Received Report from port : 10.
+[20:35:44]  Received Report from port : 10.
+[20:35:45]  Received Report from port : 10.
+[20:35:45]  Received Report from port : 10.
+[20:35:45]  Received Report from port : 10.
+[20:35:46]  Received Report from port : 10.
+[20:35:46]  Received Report from port : 10.
+[20:35:47]  Received Report from port : 10.
+[20:35:47]  Received Report from port : 10.
+[20:35:47]  Received Report from port : 10.
+[20:35:48]  Received Report from port : 10.
+[20:35:52]  Received UELYSYS Beacon from port : 12.
+Unknown MsgID
+[20:36:07]   Start Uplink Task.
+[20:36:07]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:36:07]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x24 0x36 0xb8
+|| Uplink || Length: 43
+18	54	c0	00	00	24	36	b8	63	68	
+69	63	32	2e	62	69	6e	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	09	40	
+ef	07	00	
+
+[20:36:08]  Received Report from port : 10.
+[20:36:09]  Received Report from port : 10.
+[20:36:09]  Received Report from port : 10.
+Unknown MsgID
+[20:36:17]   Start Uplink Task.
+[20:36:17]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:36:17]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x1 0x32 0x40
+|| Uplink || Length: 8
+18	54	c0	00	00	01	32	40	
+
+[20:36:18]  Received Report from port : 10.
+[20:36:18]  Received Report from port : 10.
+[20:36:18]  Received Report from port : 10.
+[20:36:22]  Received UELYSYS Beacon from port : 12.
+Unknown MsgID
+[20:36:41]   Start Uplink Task.
+[20:36:41]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:36:41]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x4a 0x37 0x3a
+|| Uplink || Length: 81
+18	54	c0	00	00	4a	37	3a	2f	72	
+6f	6f	74	2f	44	49	4c	2f	6f	62	
+63	2f	63	66	2f	73	64	63	61	72	
+64	2f	63	61	6d	5f	69	6d	67	5f	
+30	5f	31	2e	62	69	6e	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+02	
+
+[20:36:45]  Received Report from port : 10.
+[20:36:45]  Received Report from port : 10.
+[20:36:46]  Received Report from port : 10.
+[20:36:52]  Received UELYSYS Beacon from port : 12.
+[20:37:22]  Received UELYSYS Beacon from port : 12.
+[20:37:33]  Received Report from port : 10.
+[20:37:33]  Received Report from port : 10.
+[20:37:33]  Received Report from port : 10.
+Unknown MsgID
+[20:37:41]   Start Uplink Task.
+[20:37:41]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:37:41]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x24 0x36 0xb8
+|| Uplink || Length: 43
+18	54	c0	00	00	24	36	b8	63	68	
+69	63	32	2e	62	69	6e	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	09	40	
+ef	07	00	
+
+[20:37:43]  Received Report from port : 10.
+[20:37:43]  Received Report from port : 10.
+[20:37:44]  Received Report from port : 10.
+[20:37:52]  Received UELYSYS Beacon from port : 12.
+Unknown MsgID
+[20:38:04]   Start Uplink Task.
+[20:38:04]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:38:04]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x24 0x36 0xb8
+|| Uplink || Length: 43
+18	54	c0	00	00	24	36	b8	63	68	
+69	63	32	2e	62	69	6e	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	09	40	
+ef	07	00	
+
+[20:38:05]  Received Report from port : 10.
+[20:38:06]  Received Report from port : 10.
+[20:38:06]  Received Report from port : 10.
+Unknown MsgID
+[20:38:12]   Start Uplink Task.
+[20:38:12]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:38:12]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x1 0x32 0x40
+|| Uplink || Length: 8
+18	54	c0	00	00	01	32	40	
+
+[20:38:13]  Received Report from port : 10.
+[20:38:13]  Received Report from port : 10.
+[20:38:14]  Received Report from port : 10.
+[20:38:21]  Received Report from port : 10.
+[20:38:21]  Received Report from port : 10.
+[20:38:21]  Received Report from port : 10.
+[20:38:22]  Received UELYSYS Beacon from port : 12.
+Unknown MsgID
+[20:38:38]   Start Uplink Task.
+[20:38:38]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:38:38]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x24 0x36 0x96
+|| Uplink || Length: 43
+18	54	c0	00	00	24	36	96	63	68	
+69	63	2e	70	6e	67	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	09	40	
+ef	07	00	
+
+[20:38:39]  Received Report from port : 10.
+[20:38:40]  Received Report from port : 10.
+[20:38:40]  Received Report from port : 10.
+[20:38:52]  Received UELYSYS Beacon from port : 12.
+Unknown MsgID
+[20:39:00]   Start Uplink Task.
+[20:39:00]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:39:00]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x1 0x32 0x40
+|| Uplink || Length: 8
+18	54	c0	00	00	01	32	40	
+
+[20:39:01]  Received Report from port : 10.
+[20:39:01]  Received Report from port : 10.
+[20:39:01]  Received Report from port : 10.
+[20:39:02]  Received Report from port : 10.
+[20:39:03]  Received Report from port : 10.
+[20:39:03]  Received Report from port : 10.
+[20:39:22]  Received UELYSYS Beacon from port : 12.
+[20:39:52]  Received UELYSYS Beacon from port : 12.
+[20:39:58]  Received Report from port : 10.
+[20:39:58]  Received Report from port : 10.
+[20:39:59]  Received Report from port : 10.
+[20:40:18]  Received Report from port : 10.
+[20:40:18]  Received Report from port : 10.
+[20:40:19]  Received Report from port : 10.
+[20:40:22]  Received Report from port : 10.
+[20:40:22]  Received Report from port : 10.
+[20:40:22]  Received Report from port : 10.
+[20:40:23]  Received UELYSYS Beacon from port : 12.
+[20:40:32]  Received Report from port : 10.
+[20:40:33]  Received Report from port : 10.
+[20:40:33]  Received Report from port : 10.
+[20:40:36]  Received Report from port : 10.
+[20:40:36]  Received Report from port : 10.
+[20:40:36]  Received Report from port : 10.
+[20:40:37]  Received Report from port : 10.
+[20:40:37]  Received Report from port : 10.
+[20:40:38]  Received Report from port : 10.
+[20:40:38]  Received Report from port : 10.
+[20:40:38]  Received Report from port : 10.
+[20:40:39]  Received Report from port : 10.
+[20:40:39]  Received Report from port : 10.
+[20:40:40]  Received Report from port : 10.
+[20:40:40]  Received Report from port : 10.
+[20:40:52]  Received UELYSYS Beacon from port : 12.
+[20:40:57]  Received Report from port : 10.
+[20:40:57]  Received Report from port : 10.
+[20:40:58]  Received Report from port : 10.
+[20:41:22]  Received UELYSYS Beacon from port : 12.
+[20:41:52]  Received UELYSYS Beacon from port : 12.
+[20:41:57]  Received Report from port : 10.
+[20:41:57]  Received Report from port : 10.
+[20:41:58]  Received Report from port : 10.
+[20:42:22]  Received UELYSYS Beacon from port : 12.
+[20:42:37]  Received Report from port : 10.
+[20:42:37]  Received Report from port : 10.
+[20:42:37]  Received Report from port : 10.
+[20:42:52]  Received UELYSYS Beacon from port : 12.
+[20:43:04]  Received Report from port : 10.
+[20:43:04]  Received Report from port : 10.
+[20:43:04]  Received Report from port : 10.
+[20:43:15]  Received Report from port : 10.
+[20:43:16]  Received Report from port : 10.
+[20:43:16]  Received Report from port : 10.
+[20:43:22]  Received UELYSYS Beacon from port : 12.
+[20:43:24]  Received Report from port : 10.
+[20:43:24]  Received Report from port : 10.
+[20:43:24]  Received Report from port : 10.
+[20:43:29]  Received Report from port : 10.
+[20:43:30]  Received Report from port : 10.
+[20:43:30]  Received Report from port : 10.
+[20:43:37]  Received Report from port : 10.
+[20:43:38]  Received Report from port : 10.
+[20:43:38]  Received Report from port : 10.
+[20:43:40]  Received Report from port : 10.
+[20:43:41]  Received Report from port : 10.
+[20:43:41]  Received Report from port : 10.
+[20:43:41]  Received Report from port : 10.
+[20:43:42]  Received Report from port : 10.
+[20:43:42]  Received Report from port : 10.
+[20:43:43]  Received Report from port : 10.
+[20:43:43]  Received Report from port : 10.
+[20:43:43]  Received Report from port : 10.
+[20:43:44]  Received Report from port : 10.
+[20:43:44]  Received Report from port : 10.
+[20:43:44]  Received Report from port : 10.
+[20:43:49]  Received Report from port : 10.
+[20:43:49]  Received Report from port : 10.
+[20:43:49]  Received Report from port : 10.
+[20:43:52]  Received UELYSYS Beacon from port : 12.
+[20:44:22]  Received UELYSYS Beacon from port : 12.
+[20:44:52]  Received UELYSYS Beacon from port : 12.
+[20:44:57]  Received Report from port : 10.
+[20:44:57]  Received Report from port : 10.
+[20:44:57]  Received Report from port : 10.
+[20:45:11]  Received Report from port : 10.
+[20:45:12]  Received Report from port : 10.
+[20:45:12]  Received Report from port : 10.
+[20:45:22]  Received UELYSYS Beacon from port : 12.
+[20:45:24]  Received Report from port : 10.
+[20:45:25]  Received Report from port : 10.
+[20:45:25]  Received Report from port : 10.
+[20:45:26]  Received Report from port : 10.
+[20:45:27]  Received Report from port : 10.
+[20:45:27]  Received Report from port : 10.
+[20:45:35]  Received Report from port : 10.
+[20:45:35]  Received Report from port : 10.
+[20:45:35]  Received Report from port : 10.
+[20:45:40]  Received Report from port : 10.
+[20:45:40]  Received Report from port : 10.
+[20:45:40]  Received Report from port : 10.
+[20:45:43]  Received Report from port : 10.
+[20:45:43]  Received Report from port : 10.
+[20:45:44]  Received Report from port : 10.
+[20:45:44]  Received Report from port : 10.
+[20:45:44]  Received Report from port : 10.
+[20:45:45]  Received Report from port : 10.
+[20:45:45]  Received Report from port : 10.
+[20:45:46]  Received Report from port : 10.
+[20:45:46]  Received Report from port : 10.
+[20:45:46]  Received Report from port : 10.
+[20:45:47]  Received Report from port : 10.
+[20:45:47]  Received Report from port : 10.
+[20:45:48]  Received Report from port : 10.
+[20:45:48]  Received Report from port : 10.
+[20:45:48]  Received Report from port : 10.
+[20:45:52]  Received UELYSYS Beacon from port : 12.
+[20:46:22]  Received UELYSYS Beacon from port : 12.
+[20:46:26]  Received Report from port : 10.
+[20:46:27]  Received Report from port : 10.
+[20:46:27]  Received Report from port : 10.
+[20:46:52]  Received UELYSYS Beacon from port : 12.
+[20:47:22]  Received UELYSYS Beacon from port : 12.
+[20:47:52]  Received UELYSYS Beacon from port : 12.
+[20:48:02]  Received Report from port : 10.
+[20:48:03]  Received Report from port : 10.
+[20:48:03]  Received Report from port : 10.
+[20:48:12]  Received Report from port : 10.
+[20:48:13]  Received Report from port : 10.
+[20:48:13]  Received Report from port : 10.
+[20:48:19]  Received Report from port : 10.
+[20:48:20]  Received Report from port : 10.
+[20:48:20]  Received Report from port : 10.
+[20:48:22]  Received UELYSYS Beacon from port : 12.
+[20:48:24]  Received Report from port : 10.
+[20:48:25]  Received Report from port : 10.
+[20:48:25]  Received Report from port : 10.
+[20:48:27]  Received Report from port : 10.
+[20:48:28]  Received Report from port : 10.
+[20:48:28]  Received Report from port : 10.
+[20:48:32]  Received Report from port : 10.
+[20:48:33]  Received Report from port : 10.
+[20:48:33]  Received Report from port : 10.
+[20:48:42]  Received Report from port : 10.
+[20:48:42]  Received Report from port : 10.
+[20:48:43]  Received Report from port : 10.
+[20:48:52]  Received UELYSYS Beacon from port : 12.
+[20:49:02]  Received Report from port : 10.
+[20:49:03]  Received Report from port : 10.
+[20:49:03]  Received Report from port : 10.
+[20:49:22]  Received UELYSYS Beacon from port : 12.
+[20:49:52]  Received UELYSYS Beacon from port : 12.
+[20:50:22]  Received UELYSYS Beacon from port : 12.
+[20:50:24]  Received Report from port : 10.
+[20:50:25]  Received Report from port : 10.
+[20:50:25]  Received Report from port : 10.
+[20:50:52]  Received UELYSYS Beacon from port : 12.
+[20:51:22]  Received UELYSYS Beacon from port : 12.
+[20:51:52]  Received UELYSYS Beacon from port : 12.
+[20:52:22]  Received UELYSYS Beacon from port : 12.
+[20:52:52]  Received UELYSYS Beacon from port : 12.
+Unknown MsgID
+[20:53:08]   Start Uplink Task.
+[20:53:08]  Send Packet of Ptype : 10. Check Terminal Log.
+[20:53:08]  [OK]CMD Packet Header: 0x18 0x54 0xc0 0x0 0x0 0x1 0x32 0x40
+|| Uplink || Length: 8
+18	54	c0	00	00	01	32	40	
+
+[20:53:10]  Received Report from port : 10.
+[20:53:10]  Received Report from port : 10.
+[20:53:10]  Received Report from port : 10.
+[20:53:22]  Received UELYSYS Beacon from port : 12.
+[20:53:52]  Received UELYSYS Beacon from port : 12.
+[20:54:22]  Received UELYSYS Beacon from port : 12.
+[20:54:52]  Received UELYSYS Beacon from port : 12.
+[20:55:25]  Received Report from port : 10.
+[20:55:25]  Received Report from port : 10.
+[20:55:26]  Received Report from port : 10.
+[20:55:26]  Received Report from port : 10.
+[20:55:27]  Received Report from port : 10.
+[20:55:27]  Received Report from port : 10.
+[20:55:27]  Received Report from port : 10.
+[20:55:28]  Received Report from port : 10.
+[20:55:28]  Received Report from port : 10.
+[20:55:29]  Received Report from port : 10.
+[20:55:29]  Received Report from port : 10.
+[20:55:29]  Received Report from port : 10.
+[20:55:30]  Received Report from port : 10.
+[20:55:30]  Received Report from port : 10.
+[20:55:30]  Received Report from port : 10.
+[20:55:32]  Received UELYSYS Beacon from port : 12.
+[20:56:02]  Received UELYSYS Beacon from port : 12.
+[20:56:21]  Received Report from port : 10.
+[20:56:22]  Received Report from port : 10.
+[20:56:22]  Received Report from port : 10.
+[20:56:29]  Received Report from port : 10.
+[20:56:29]  Received Report from port : 10.
+[20:56:29]  Received Report from port : 10.
+[20:56:32]  Received UELYSYS Beacon from port : 12.
+[20:56:37]  Received Report from port : 10.
+[20:56:38]  Received Report from port : 10.
+[20:56:38]  Received Report from port : 10.
+[20:56:40]  Received Report from port : 10.
+[20:56:40]  Received Report from port : 10.
+[20:56:40]  Received Report from port : 10.
+[20:56:50]  Received Report from port : 10.
+[20:56:50]  Received Report from port : 10.
+[20:56:50]  Received Report from port : 10.
+[20:56:52]  Received Report from port : 10.
+[20:56:52]  Received Report from port : 10.
+[20:56:52]  Received Report from port : 10.
+[20:56:53]  Received Report from port : 10.
+[20:56:53]  Received Report from port : 10.
+[20:56:54]  Received Report from port : 10.
+[20:56:54]  Received Report from port : 10.
+[20:56:55]  Received Report from port : 10.
+[20:56:55]  Received Report from port : 10.
+[20:56:55]  Received Report from port : 10.
+[20:56:56]  Received Report from port : 10.
+[20:56:56]  Received Report from port : 10.
+[20:57:01]  Received Report from port : 10.
+[20:57:01]  Received Report from port : 10.
+[20:57:01]  Received Report from port : 10.
+[20:57:02]  Received UELYSYS Beacon from port : 12.
+[20:57:31]  Received Report from port : 10.
+[20:57:32]  Received Report from port : 10.
+[20:57:32]  Received Report from port : 10.
+[20:57:32]  Received UELYSYS Beacon from port : 12.
+[20:57:42]  Received Report from port : 10.
+[20:57:43]  Received Report from port : 10.
+[20:57:43]  Received Report from port : 10.
+[20:57:48]  Received Report from port : 10.
+[20:57:48]  Received Report from port : 10.
+[20:57:49]  Received Report from port : 10.
+[20:58:02]  Received UELYSYS Beacon from port : 12.
+[20:58:22]  Received Report from port : 10.
+[20:58:23]  Received Report from port : 10.
+[20:58:23]  Received Report from port : 10.
+[20:58:32]  Received UELYSYS Beacon from port : 12.
+[20:58:37]  Received Report from port : 10.
+[20:58:37]  Received Report from port : 10.
+[20:58:38]  Received Report from port : 10.
+[20:59:02]  Received UELYSYS Beacon from port : 12.
+[20:59:32]  Received UELYSYS Beacon from port : 12.
+[21:00:02]  Received UELYSYS Beacon from port : 12.
+[21:00:17]  Received Report from port : 10.
+[21:00:17]  Received Report from port : 10.
+[21:00:17]  Received Report from port : 10.
+[21:00:19]  Received Report from port : 10.
+[21:00:19]  Received Report from port : 10.
+[21:00:20]  Received Report from port : 10.
+[21:00:20]  Received Report from port : 10.
+[21:00:20]  Received Report from port : 10.
+[21:00:21]  Received Report from port : 10.
+[21:00:21]  Received Report from port : 10.
+[21:00:22]  Received Report from port : 10.
+[21:00:22]  Received Report from port : 10.
+[21:00:22]  Received Report from port : 10.
+[21:00:23]  Received Report from port : 10.
+[21:00:23]  Received Report from port : 10.
+[21:00:26]  Received Report from port : 10.
+[21:00:26]  Received Report from port : 10.
+[21:00:27]  Received Report from port : 10.
+[21:00:32]  Received UELYSYS Beacon from port : 12.
+[21:01:02]  Received UELYSYS Beacon from port : 12.
+[21:01:32]  Received UELYSYS Beacon from port : 12.
+[21:01:44]  Received Report from port : 10.
+[21:01:45]  Received Report from port : 10.
+[21:01:45]  Received Report from port : 10.
+[21:02:02]  Received UELYSYS Beacon from port : 12.
+[21:02:04]  Received Report from port : 10.
+[21:02:04]  Received Report from port : 10.
+[21:02:04]  Received Report from port : 10.
+[21:02:21]  Received Report from port : 10.
+[21:02:22]  Received Report from port : 10.
+[21:02:22]  Received Report from port : 10.
+[21:02:30]  Received Report from port : 10.
+[21:02:30]  Received Report from port : 10.
+[21:02:31]  Received Report from port : 10.
+[21:02:32]  Received UELYSYS Beacon from port : 12.
+[21:02:39]  Received Report from port : 10.
+[21:02:40]  Received Report from port : 10.
+[21:02:40]  Received Report from port : 10.
+[21:02:46]  Received Report from port : 10.
+[21:02:47]  Received Report from port : 10.
+[21:02:47]  Received Report from port : 10.
+[21:02:55]  Received Report from port : 10.
+[21:02:55]  Received Report from port : 10.
+[21:02:56]  Received Report from port : 10.
+[21:03:02]  Received UELYSYS Beacon from port : 12.
+[21:03:32]  Received UELYSYS Beacon from port : 12.
+[21:03:56]  Received Report from port : 10.
+[21:03:56]  Received Report from port : 10.
+[21:03:57]  Received Report from port : 10.
+[21:04:02]  Received UELYSYS Beacon from port : 12.
+[21:04:30]  Received Report from port : 10.
+[21:04:30]  Received Report from port : 10.
+[21:04:30]  Received Report from port : 10.
+[21:04:32]  Received UELYSYS Beacon from port : 12.
+[21:05:02]  Received UELYSYS Beacon from port : 12.
+[21:05:32]  Received UELYSYS Beacon from port : 12.
+[21:06:02]  Received UELYSYS Beacon from port : 12.
+[21:06:32]  Received UELYSYS Beacon from port : 12.
+[21:07:02]  Received UELYSYS Beacon from port : 12.
+[21:07:32]  Received UELYSYS Beacon from port : 12.
+[21:08:02]  Received UELYSYS Beacon from port : 12.
+[21:08:32]  Received UELYSYS Beacon from port : 12.
+[21:09:02]  Received UELYSYS Beacon from port : 12.
+[21:09:32]  Received UELYSYS Beacon from port : 12.
+[21:10:02]  Received UELYSYS Beacon from port : 12.
+[21:10:32]  Received UELYSYS Beacon from port : 12.
+[21:11:02]  Received UELYSYS Beacon from port : 12.
+[21:11:32]  Received UELYSYS Beacon from port : 12.
+[21:12:02]  Received UELYSYS Beacon from port : 12.
+[21:12:32]  Received UELYSYS Beacon from port : 12.
+[21:13:02]  Received UELYSYS Beacon from port : 12.
+[21:13:32]  Received UELYSYS Beacon from port : 12.
+[21:14:02]  Received UELYSYS Beacon from port : 12.
+[21:14:32]  Received UELYSYS Beacon from port : 12.
+[21:15:02]  Received UELYSYS Beacon from port : 12.
+[21:15:32]  Received UELYSYS Beacon from port : 12.
+[21:16:02]  Received UELYSYS Beacon from port : 12.
+[21:16:32]  Received UELYSYS Beacon from port : 12.
+[21:17:02]  Received UELYSYS Beacon from port : 12.
+[21:17:32]  Received UELYSYS Beacon from port : 12.
+[21:18:02]  Received UELYSYS Beacon from port : 12.
+[21:18:32]  Received UELYSYS Beacon from port : 12.
+[21:18:49]  Received Report from port : 10.
+[21:18:49]  Received Report from port : 10.
+[21:18:49]  Received Report from port : 10.
+[21:19:02]  Received UELYSYS Beacon from port : 12.
+[21:19:32]  Received UELYSYS Beacon from port : 12.
+[21:20:02]  Received UELYSYS Beacon from port : 12.
+[21:20:32]  Received UELYSYS Beacon from port : 12.
+[21:20:53]  Received Report from port : 10.
+[21:20:53]  Received Report from port : 10.
+[21:20:54]  Received Report from port : 10.
+[21:21:02]  Received UELYSYS Beacon from port : 12.
+[21:21:25]  Received Report from port : 10.
+[21:21:25]  Received Report from port : 10.
+[21:21:25]  Received Report from port : 10.
+[21:21:30]  Received Report from port : 10.
+[21:21:30]  Received Report from port : 10.
+[21:21:31]  Received Report from port : 10.
+[21:21:32]  Received UELYSYS Beacon from port : 12.
+[21:21:45]  Received Report from port : 10.
+[21:21:46]  Received Report from port : 10.
+[21:21:46]  Received Report from port : 10.
+[21:21:47]  Received Report from port : 10.
+[21:21:47]  Received Report from port : 10.
+[21:21:47]  Received Report from port : 10.
+[21:22:02]  Received UELYSYS Beacon from port : 12.
+[21:22:32]  Received UELYSYS Beacon from port : 12.
+[21:22:46]  Received Report from port : 10.
+[21:22:46]  Received Report from port : 10.
+[21:22:46]  Received Report from port : 10.
+[21:22:52]  Received Report from port : 10.
+[21:22:53]  Received Report from port : 10.
+[21:22:53]  Received Report from port : 10.
+[21:22:54]  Received Report from port : 10.
+[21:22:55]  Received Report from port : 10.
+[21:22:55]  Received Report from port : 10.
+[21:22:57]  Received Report from port : 10.
+[21:22:57]  Received Report from port : 10.
+[21:22:57]  Received Report from port : 10.
+[21:23:00]  Received Report from port : 10.
+[21:23:01]  Received Report from port : 10.
+[21:23:01]  Received Report from port : 10.
+[21:23:02]  Received UELYSYS Beacon from port : 12.
+[21:23:32]  Received UELYSYS Beacon from port : 12.
+[21:24:02]  Received UELYSYS Beacon from port : 12.
+[21:24:32]  Received UELYSYS Beacon from port : 12.
+[21:25:02]  Received UELYSYS Beacon from port : 12.
+[21:25:32]  Received UELYSYS Beacon from port : 12.
+[21:25:48]  Received Report from port : 15.
+[21:25:48]  Received Report from port : 15.
+[21:25:48]  Received Report from port : 15.
+[21:25:49]  Received Report from port : 15.
+[21:25:49]  Received Report from port : 15.
+[21:25:50]  Received Report from port : 15.
+[21:25:52]  Received BEE1012 Beacon from port : 17.
+[21:25:58]  Received BEE1012 Beacon from port : 17.
+[21:26:00]  Received Report from port : 15.
+[21:26:00]  Received Report from port : 15.
+[21:26:00]  Received Report from port : 15.
+[21:26:02]  Received UELYSYS Beacon from port : 12.
+[21:26:08]  Received BEE1012 Beacon from port : 17.
+[21:26:28]  Received Report from port : 15.
+[21:26:28]  Received Report from port : 15.
+[21:26:29]  Received Report from port : 15.
+[21:26:32]  Received BEE1012 Beacon from port : 17.
+[21:26:34]  Received UELYSYS Beacon from port : 12.
+[21:26:38]  Received BEE1012 Beacon from port : 17.
+[21:26:48]  Received BEE1012 Beacon from port : 17.
+[21:26:58]  Received Report from port : 15.
+[21:26:59]  Received Report from port : 15.
+[21:26:59]  Received Report from port : 15.
+[21:27:03]  Received UELYSYS Beacon from port : 12.
+[21:27:12]  Received BEE1012 Beacon from port : 17.
+[21:27:18]  Received BEE1012 Beacon from port : 17.
+[21:27:28]  Received BEE1012 Beacon from port : 17.
+[21:27:30]  Received Report from port : 15.
+[21:27:30]  Received Report from port : 15.
+[21:27:30]  Received Report from port : 15.
+[21:27:32]  Received UELYSYS Beacon from port : 12.
+[21:27:52]  Received BEE1012 Beacon from port : 17.
+[21:27:58]  Received BEE1012 Beacon from port : 17.
+[21:28:00]  Received Report from port : 15.
+[21:28:00]  Received Report from port : 15.
+[21:28:00]  Received Report from port : 15.
+[21:28:02]  Received UELYSYS Beacon from port : 12.
+[21:28:08]  Received BEE1012 Beacon from port : 17.
+[21:28:28]  Received Report from port : 15.
+[21:28:29]  Received Report from port : 15.
+[21:28:29]  Received Report from port : 15.
+[21:28:32]  Received BEE1012 Beacon from port : 17.
+[21:28:34]  Received UELYSYS Beacon from port : 12.
+[21:28:38]  Received BEE1012 Beacon from port : 17.
+[21:28:48]  Received BEE1012 Beacon from port : 17.
+[21:28:58]  Received Report from port : 15.
+[21:28:59]  Received Report from port : 15.
+[21:28:59]  Received Report from port : 15.
+[21:29:03]  Received UELYSYS Beacon from port : 12.
+[21:29:12]  Received BEE1012 Beacon from port : 17.
+[21:29:18]  Received BEE1012 Beacon from port : 17.
+[21:29:28]  Received BEE1012 Beacon from port : 17.
+[21:29:30]  Received Report from port : 15.
+[21:29:30]  Received Report from port : 15.
+[21:29:31]  Received Report from port : 15.
+[21:29:33]  Received UELYSYS Beacon from port : 12.
+[21:29:52]  Received BEE1012 Beacon from port : 17.
+[21:29:58]  Received BEE1012 Beacon from port : 17.
+[21:30:00]  Received Report from port : 15.
+[21:30:00]  Received Report from port : 15.
+[21:30:01]  Received Report from port : 15.
+[21:30:03]  Received UELYSYS Beacon from port : 12.
+[21:30:08]  Received BEE1012 Beacon from port : 17.
+[21:30:28]  Received Report from port : 15.
+[21:30:29]  Received Report from port : 15.
+[21:30:29]  Received Report from port : 15.
+[21:30:32]  Received BEE1012 Beacon from port : 17.
+[21:30:34]  Received UELYSYS Beacon from port : 12.
+[21:30:38]  Received BEE1012 Beacon from port : 17.
+[21:30:48]  Received BEE1012 Beacon from port : 17.
+[21:30:58]  Received Report from port : 15.
+[21:30:59]  Received Report from port : 15.
+[21:30:59]  Received Report from port : 15.
+[21:31:03]  Received UELYSYS Beacon from port : 12.
+[21:31:12]  Received BEE1012 Beacon from port : 17.
+[21:31:18]  Received BEE1012 Beacon from port : 17.
+[21:31:28]  Received BEE1012 Beacon from port : 17.
+[21:31:30]  Received Report from port : 15.
+[21:31:30]  Received Report from port : 15.
+[21:31:31]  Received Report from port : 15.
+[21:31:33]  Received UELYSYS Beacon from port : 12.
+[21:31:52]  Received BEE1012 Beacon from port : 17.
+[21:31:58]  Received BEE1012 Beacon from port : 17.
+[21:32:00]  Received Report from port : 15.
+[21:32:00]  Received Report from port : 15.
+[21:32:01]  Received Report from port : 15.
+[21:32:03]  Received UELYSYS Beacon from port : 12.
+[21:32:08]  Received BEE1012 Beacon from port : 17.
+[21:32:28]  Received Report from port : 15.
+[21:32:29]  Received Report from port : 15.
+[21:32:29]  Received Report from port : 15.
+[21:32:32]  Received BEE1012 Beacon from port : 17.
+[21:32:34]  Received UELYSYS Beacon from port : 12.
+[21:32:38]  Received BEE1012 Beacon from port : 17.
+[21:32:48]  Received BEE1012 Beacon from port : 17.
+[21:32:58]  Received Report from port : 15.
+[21:32:59]  Received Report from port : 15.
+[21:32:59]  Received Report from port : 15.
+[21:33:03]  Received UELYSYS Beacon from port : 12.
+[21:33:12]  Received BEE1012 Beacon from port : 17.
+[21:33:18]  Received BEE1012 Beacon from port : 17.
+[21:33:28]  Received BEE1012 Beacon from port : 17.
+[21:33:30]  Received Report from port : 15.
+[21:33:30]  Received Report from port : 15.
+[21:33:31]  Received Report from port : 15.
+[21:33:33]  Received UELYSYS Beacon from port : 12.
+[21:33:52]  Received BEE1012 Beacon from port : 17.
+[21:33:58]  Received BEE1012 Beacon from port : 17.
+[21:34:00]  Received Report from port : 15.
+[21:34:00]  Received Report from port : 15.
+[21:34:01]  Received Report from port : 15.
+[21:34:03]  Received UELYSYS Beacon from port : 12.
+[21:34:08]  Received BEE1012 Beacon from port : 17.
+[21:34:28]  Received Report from port : 15.
+[21:34:29]  Received Report from port : 15.
+[21:34:29]  Received Report from port : 15.
+[21:34:32]  Received BEE1012 Beacon from port : 17.
+[21:34:34]  Received UELYSYS Beacon from port : 12.
+[21:34:38]  Received BEE1012 Beacon from port : 17.
+[21:34:48]  Received BEE1012 Beacon from port : 17.
+[21:34:58]  Received Report from port : 15.
+[21:34:59]  Received Report from port : 15.
+[21:34:59]  Received Report from port : 15.
+[21:35:03]  Received UELYSYS Beacon from port : 12.
+[21:35:12]  Received BEE1012 Beacon from port : 17.
+[21:35:18]  Received BEE1012 Beacon from port : 17.
+[21:35:28]  Received BEE1012 Beacon from port : 17.
+[21:35:30]  Received Report from port : 15.
+[21:35:30]  Received Report from port : 15.
+[21:35:31]  Received Report from port : 15.
+[21:35:33]  Received UELYSYS Beacon from port : 12.
+[21:35:52]  Received BEE1012 Beacon from port : 17.
+[21:35:58]  Received BEE1012 Beacon from port : 17.
+[21:36:00]  Received Report from port : 15.
+[21:36:00]  Received Report from port : 15.
+[21:36:01]  Received Report from port : 15.
+[21:36:03]  Received UELYSYS Beacon from port : 12.
+[21:36:08]  Received BEE1012 Beacon from port : 17.
+[21:36:28]  Received Report from port : 15.
+[21:36:29]  Received Report from port : 15.
+[21:36:29]  Received Report from port : 15.
+[21:36:32]  Received BEE1012 Beacon from port : 17.
+[21:36:34]  Received UELYSYS Beacon from port : 12.
+[21:36:38]  Received BEE1012 Beacon from port : 17.
+[21:36:48]  Received BEE1012 Beacon from port : 17.
+[21:36:58]  Received Report from port : 15.
+[21:36:59]  Received Report from port : 15.
+[21:36:59]  Received Report from port : 15.
+[21:37:03]  Received UELYSYS Beacon from port : 12.
+[21:37:12]  Received BEE1012 Beacon from port : 17.
+[21:37:16]  Received Report from port : 10.
+[21:37:17]  Received Report from port : 10.
+[21:37:17]  Received Report from port : 10.
+[21:37:18]  Received BEE1012 Beacon from port : 17.
+[21:37:28]  Received BEE1012 Beacon from port : 17.
+[21:37:30]  Received Report from port : 15.
+[21:37:31]  Received Report from port : 15.
+[21:37:31]  Received Report from port : 15.
+[21:37:52]  Received BEE1012 Beacon from port : 17.
+[21:37:58]  Received BEE1012 Beacon from port : 17.
+[21:38:00]  Received Report from port : 15.
+[21:38:01]  Received Report from port : 15.
+[21:38:01]  Received Report from port : 15.
+[21:38:08]  Received BEE1012 Beacon from port : 17.
+[21:38:18]  Received Report from port : 10.
+[21:38:18]  Received Report from port : 10.
+[21:38:18]  Received Report from port : 10.
+[21:38:28]  Received Report from port : 15.
+[21:38:29]  Received Report from port : 15.
+[21:38:29]  Received Report from port : 15.
+[21:38:32]  Received BEE1012 Beacon from port : 17.
+[21:38:38]  Received BEE1012 Beacon from port : 17.
+[21:38:40]  Received Report from port : 10.
+[21:38:41]  Received Report from port : 10.
+[21:38:41]  Received Report from port : 10.
+[21:38:48]  Received BEE1012 Beacon from port : 17.
+[21:38:58]  Received Report from port : 15.
+[21:38:59]  Received Report from port : 15.
+[21:38:59]  Received Report from port : 15.
+[21:39:12]  Received BEE1012 Beacon from port : 17.
+[21:39:18]  Received BEE1012 Beacon from port : 17.
+[21:39:28]  Received BEE1012 Beacon from port : 17.
+[21:39:30]  Received Report from port : 15.
+[21:39:31]  Received Report from port : 15.
+[21:39:31]  Received Report from port : 15.
+[21:39:52]  Received BEE1012 Beacon from port : 17.
+[21:39:58]  Received BEE1012 Beacon from port : 17.
+[21:40:00]  Received Report from port : 15.
+[21:40:01]  Received Report from port : 15.
+[21:40:01]  Received Report from port : 15.
+[21:40:08]  Received BEE1012 Beacon from port : 17.
+[21:40:28]  Received Report from port : 15.
+[21:40:29]  Received Report from port : 15.
+[21:40:29]  Received Report from port : 15.
+[21:40:32]  Received BEE1012 Beacon from port : 17.
+[21:40:38]  Received BEE1012 Beacon from port : 17.
+[21:40:48]  Received Report from port : 15.
+[21:40:48]  Received Report from port : 15.
+[21:40:48]  Received Report from port : 15.
+[21:40:49]  Received BEE1012 Beacon from port : 17.
+[21:40:58]  Received Report from port : 15.
+[21:40:59]  Received Report from port : 15.
+[21:40:59]  Received Report from port : 15.
+[21:41:11]  Received Report from port : 10.
+[21:41:12]  Received Report from port : 10.
+[21:41:12]  Received Report from port : 10.
+[21:41:12]  Received Report from port : 10.
+[21:41:13]  Received Report from port : 10.
+[21:41:13]  Received Report from port : 10.
+[21:41:14]  Received Report from port : 10.
+[21:41:14]  Received Report from port : 10.
+[21:41:14]  Received Report from port : 10.
+[21:41:15]  Received Report from port : 10.
+[21:41:15]  Received Report from port : 10.
+[21:41:15]  Received Report from port : 10.
+[21:41:16]  Received Report from port : 10.
+[21:41:16]  Received Report from port : 10.
+[21:41:17]  Received Report from port : 10.
+[21:41:17]  Received BEE1012 Beacon from port : 17.
+[21:41:19]  Received UELYSYS Beacon from port : 12.
+[21:41:21]  Received BEE1012 Beacon from port : 17.
+[21:41:28]  Received BEE1012 Beacon from port : 17.
+[21:41:30]  Received Report from port : 15.
+[21:41:31]  Received Report from port : 15.
+[21:41:31]  Received Report from port : 15.
+[21:41:48]  Received UELYSYS Beacon from port : 12.
+[21:41:52]  Received BEE1012 Beacon from port : 17.
+[21:41:58]  Received BEE1012 Beacon from port : 17.
+[21:42:00]  Received Report from port : 15.
+[21:42:01]  Received Report from port : 15.
+[21:42:01]  Received Report from port : 15.
+[21:42:08]  Received BEE1012 Beacon from port : 17.
+[21:42:18]  Received Report from port : 15.
+[21:42:18]  Received Report from port : 15.
+[21:42:18]  Received Report from port : 15.
+[21:42:19]  Received Report from port : 15.
+[21:42:19]  Received Report from port : 15.
+[21:42:20]  Received Report from port : 15.
+[21:42:20]  Received UELYSYS Beacon from port : 12.
+[21:42:29]  Received Report from port : 15.
+[21:42:29]  Received Report from port : 15.
+[21:42:29]  Received Report from port : 15.
+[21:42:32]  Received BEE1012 Beacon from port : 17.
+[21:42:38]  Received BEE1012 Beacon from port : 17.
+[21:42:40]  Changing GS HMAC Key for BEE1012...
+[21:42:40]   Satellite Switched to: BEE1012 (TX HMAC enabled)
+[21:42:42]  Ping Success at node 5, 464ms
+[21:42:46]  Ping Success at node 5, 458ms
+[21:42:48]  Received UELYSYS Beacon from port : 12.
+[21:42:50]  Received BEE1012 Beacon from port : 17.
+[21:42:59]  Received Report from port : 15.
+[21:42:59]  Received Report from port : 15.
+[21:42:59]  Received Report from port : 15.
+[21:43:12]  Received BEE1012 Beacon from port : 17.
+[21:43:18]  Received UELYSYS Beacon from port : 12.
+[21:43:20]  Received BEE1012 Beacon from port : 17.
+[21:43:28]  Received BEE1012 Beacon from port : 17.
+[21:43:30]  Received Report from port : 15.
+[21:43:31]  Received Report from port : 15.
+[21:43:31]  Received Report from port : 15.
+[21:43:48]  Received UELYSYS Beacon from port : 12.
+[21:43:52]  Received BEE1012 Beacon from port : 17.
+[21:43:58]  Received BEE1012 Beacon from port : 17.
+[21:44:00]  Received Report from port : 15.
+[21:44:01]  Received Report from port : 15.
+[21:44:01]  Received Report from port : 15.
+[21:44:08]  Received BEE1012 Beacon from port : 17.
+[21:44:18]  Received UELYSYS Beacon from port : 12.
+[21:44:29]  Received Report from port : 15.
+[21:44:29]  Received Report from port : 15.
+[21:44:29]  Received Report from port : 15.
+[21:44:32]  Received BEE1012 Beacon from port : 17.
+[21:44:38]  Received BEE1012 Beacon from port : 17.
+[21:44:48]  Received UELYSYS Beacon from port : 12.
+[21:44:50]  Received BEE1012 Beacon from port : 17.
+[21:44:59]  Received Report from port : 15.
+[21:44:59]  Received Report from port : 15.
+[21:44:59]  Received Report from port : 15.
+[21:45:13]  Received BEE1012 Beacon from port : 17.
+[21:45:18]  Received UELYSYS Beacon from port : 12.
+[21:45:20]  Received BEE1012 Beacon from port : 17.
+[21:45:29]  Received BEE1012 Beacon from port : 17.
+[21:45:31]  Received Report from port : 15.
+[21:45:31]  Received Report from port : 15.
+[21:45:31]  Received Report from port : 15.
+[21:45:44]  Received Report from port : 10.
+[21:45:44]  Received Report from port : 10.
+[21:45:45]  Received Report from port : 10.
+[21:45:45]  Received Report from port : 10.
+[21:45:46]  Received Report from port : 10.
+[21:45:46]  Received Report from port : 10.
+[21:45:46]  Received Report from port : 10.
+[21:45:47]  Received Report from port : 10.
+[21:45:47]  Received Report from port : 10.
+[21:45:47]  Received Report from port : 10.
+[21:45:48]  Received Report from port : 10.
+[21:45:48]  Received Report from port : 10.
+[21:45:49]  Received Report from port : 10.
+[21:45:49]  Received Report from port : 10.
+[21:45:49]  Received Report from port : 10.
+[21:45:51]  Received UELYSYS Beacon from port : 12.
+[21:45:53]  Received BEE1012 Beacon from port : 17.
+[21:45:59]  Received BEE1012 Beacon from port : 17.
+[21:46:01]  Received Report from port : 15.
+[21:46:01]  Received Report from port : 15.
+[21:46:01]  Received Report from port : 15.
+[21:46:05]  Received Report from port : 10.
+[21:46:06]  Received Report from port : 10.
+[21:46:06]  Received Report from port : 10.
+[21:46:09]  Received BEE1012 Beacon from port : 17.
+[21:46:18]  Received Report from port : 10.
+[21:46:19]  Received Report from port : 10.
+[21:46:19]  Received Report from port : 10.
+[21:46:21]  Received UELYSYS Beacon from port : 12.
+[21:46:29]  Received Report from port : 10.
+[21:46:29]  Received Report from port : 10.
+[21:46:29]  Received Report from port : 10.
+[21:46:30]  Received Report from port : 15.
+[21:46:30]  Received Report from port : 15.
+[21:46:31]  Received Report from port : 15.
+[21:46:33]  Received BEE1012 Beacon from port : 17.
+[21:46:39]  Received BEE1012 Beacon from port : 17.
+[21:46:41]  Received Report from port : 10.
+[21:46:42]  Received Report from port : 10.
+[21:46:42]  Received Report from port : 10.
+[21:46:49]  Received BEE1012 Beacon from port : 17.
+[21:46:51]  Received UELYSYS Beacon from port : 12.
+[21:46:59]  Received Report from port : 15.
+[21:46:59]  Received Report from port : 15.
+[21:46:59]  Received Report from port : 15.
+[21:47:13]  Received BEE1012 Beacon from port : 17.
+[21:47:19]  Received BEE1012 Beacon from port : 17.
+[21:47:21]  Received UELYSYS Beacon from port : 12.
+[21:47:29]  Received BEE1012 Beacon from port : 17.
+[21:47:31]  Received Report from port : 15.
+[21:47:31]  Received Report from port : 15.
+[21:47:31]  Received Report from port : 15.
+[21:47:36]  Received Report from port : 10.
+[21:47:37]  Received Report from port : 10.
+[21:47:37]  Received Report from port : 10.
+[21:47:41]  Received Report from port : 10.
+[21:47:41]  Received Report from port : 10.
+[21:47:41]  Received Report from port : 10.
+[21:47:43]  Received Report from port : 10.
+[21:47:43]  Received Report from port : 10.
+[21:47:43]  Received Report from port : 10.
+[21:47:44]  Received Report from port : 10.
+[21:47:44]  Received Report from port : 10.
+[21:47:45]  Received Report from port : 10.
+[21:47:45]  Received Report from port : 10.
+[21:47:45]  Received Report from port : 10.
+[21:47:46]  Received Report from port : 10.
+[21:47:46]  Received Report from port : 10.
+[21:47:47]  Received Report from port : 10.
+[21:47:47]  Received Report from port : 10.
+[21:47:49]  Received Report from port : 10.
+[21:47:50]  Received Report from port : 10.
+[21:47:50]  Received Report from port : 10.
+[21:47:51]  Received UELYSYS Beacon from port : 12.
+[21:47:53]  Received BEE1012 Beacon from port : 17.
+[21:47:59]  Received BEE1012 Beacon from port : 17.
+[21:48:01]  Received Report from port : 15.
+[21:48:01]  Received Report from port : 15.
+[21:48:01]  Received Report from port : 15.
+[21:48:09]  Received BEE1012 Beacon from port : 17.
+[21:48:16]  Received Report from port : 10.
+[21:48:17]  Received Report from port : 10.
+[21:48:17]  Received Report from port : 10.
+[21:48:21]  Received UELYSYS Beacon from port : 12.
+[21:48:29]  Received Report from port : 15.
+[21:48:29]  Received Report from port : 15.
+[21:48:29]  Received Report from port : 15.
+[21:48:33]  Received BEE1012 Beacon from port : 17.
+[21:48:35]  Received Report from port : 10.
+[21:48:35]  Received Report from port : 10.
+[21:48:35]  Received Report from port : 10.
+[21:48:39]  Received BEE1012 Beacon from port : 17.
+[21:48:49]  Received BEE1012 Beacon from port : 17.
+[21:48:51]  Received UELYSYS Beacon from port : 12.
+[21:48:59]  Received Report from port : 15.
+[21:48:59]  Received Report from port : 15.
+[21:48:59]  Received Report from port : 15.
+[21:49:13]  Received BEE1012 Beacon from port : 17.
+[21:49:19]  Received BEE1012 Beacon from port : 17.
+[21:49:21]  Received UELYSYS Beacon from port : 12.
+[21:49:29]  Received BEE1012 Beacon from port : 17.
+[21:49:31]  Received Report from port : 15.
+[21:49:31]  Received Report from port : 15.
+[21:49:31]  Received Report from port : 15.
+[21:49:51]  Received UELYSYS Beacon from port : 12.
+[21:49:53]  Received BEE1012 Beacon from port : 17.
+[21:49:59]  Received BEE1012 Beacon from port : 17.
+[21:50:01]  Received Report from port : 15.
+[21:50:01]  Received Report from port : 15.
+[21:50:01]  Received Report from port : 15.
+[21:50:09]  Received BEE1012 Beacon from port : 17.
+[21:50:21]  Received UELYSYS Beacon from port : 12.
+[21:50:29]  Received Report from port : 15.
+[21:50:29]  Received Report from port : 15.
+[21:50:29]  Received Report from port : 15.
+[21:50:33]  Received BEE1012 Beacon from port : 17.
+[21:50:39]  Received BEE1012 Beacon from port : 17.
+[21:50:41]  Received Report from port : 10.
+[21:50:41]  Received Report from port : 10.
+[21:50:41]  Received Report from port : 10.
+[21:50:49]  Received BEE1012 Beacon from port : 17.
+[21:50:51]  Received UELYSYS Beacon from port : 12.
+[21:50:59]  Received Report from port : 15.
+[21:50:59]  Received Report from port : 15.
+[21:50:59]  Received Report from port : 15.
+[21:51:13]  Received BEE1012 Beacon from port : 17.
+[21:51:19]  Received BEE1012 Beacon from port : 17.
+[21:51:21]  Received UELYSYS Beacon from port : 12.
+[21:51:23]  Received Report from port : 10.
+[21:51:23]  Received Report from port : 10.
+[21:51:23]  Received Report from port : 10.
+[21:51:29]  Received BEE1012 Beacon from port : 17.
+[21:51:31]  Received Report from port : 15.
+[21:51:31]  Received Report from port : 15.
+[21:51:31]  Received Report from port : 15.
+[21:51:51]  Received UELYSYS Beacon from port : 12.
+[21:51:53]  Received BEE1012 Beacon from port : 17.
+[21:51:59]  Received BEE1012 Beacon from port : 17.
+[21:52:01]  Received Report from port : 15.
+[21:52:01]  Received Report from port : 15.
+[21:52:01]  Received Report from port : 15.
+[21:52:09]  Received BEE1012 Beacon from port : 17.
+[21:52:21]  Received UELYSYS Beacon from port : 12.
+[21:52:29]  Received Report from port : 15.
+[21:52:29]  Received Report from port : 15.
+[21:52:29]  Received Report from port : 15.
+[21:52:33]  Received BEE1012 Beacon from port : 17.
+[21:52:39]  Received BEE1012 Beacon from port : 17.
+[21:52:49]  Received BEE1012 Beacon from port : 17.
+[21:52:51]  Received UELYSYS Beacon from port : 12.
+[21:52:53]  Received Report from port : 10.
+[21:52:54]  Received Report from port : 10.
+[21:52:54]  Received Report from port : 10.
+[21:52:59]  Received Report from port : 15.
+[21:52:59]  Received Report from port : 15.
+[21:53:00]  Received Report from port : 15.
+[21:53:13]  Received BEE1012 Beacon from port : 17.
+[21:53:19]  Received BEE1012 Beacon from port : 17.
+[21:53:21]  Received UELYSYS Beacon from port : 12.
+[21:53:24]  Received Report from port : 10.
+[21:53:24]  Received Report from port : 10.
+[21:53:25]  Received Report from port : 10.
+[21:53:29]  Received BEE1012 Beacon from port : 17.
+[21:53:31]  Received Report from port : 15.
+[21:53:31]  Received Report from port : 15.
+[21:53:31]  Received Report from port : 15.
+[21:53:51]  Received UELYSYS Beacon from port : 12.
+[21:53:53]  Received BEE1012 Beacon from port : 17.
+[21:53:55]  Received Report from port : 10.
+[21:53:55]  Received Report from port : 10.
+[21:53:55]  Received Report from port : 10.
+[21:53:59]  Received BEE1012 Beacon from port : 17.
+[21:54:01]  Received Report from port : 15.
+[21:54:01]  Received Report from port : 15.
+[21:54:01]  Received Report from port : 15.
+[21:54:09]  Received BEE1012 Beacon from port : 17.
+[21:54:21]  Received UELYSYS Beacon from port : 12.
+[21:54:29]  Received Report from port : 15.
+[21:54:29]  Received Report from port : 15.
+[21:54:29]  Received Report from port : 15.
+[21:54:33]  Received BEE1012 Beacon from port : 17.
+[21:54:39]  Received BEE1012 Beacon from port : 17.
+[21:54:49]  Received BEE1012 Beacon from port : 17.
+[21:54:51]  Received UELYSYS Beacon from port : 12.
+[21:54:59]  Received Report from port : 15.
+[21:54:59]  Received Report from port : 15.
+[21:54:59]  Received Report from port : 15.
+[21:55:02]  Received Report from port : 10.
+[21:55:02]  Received Report from port : 10.
+[21:55:02]  Received Report from port : 10.
+[21:55:05]  Received Report from port : 10.
+[21:55:05]  Received Report from port : 10.
+[21:55:05]  Received Report from port : 10.
+[21:55:13]  Received BEE1012 Beacon from port : 17.
+[21:55:19]  Received BEE1012 Beacon from port : 17.
+[21:55:21]  Received Report from port : 10.
+[21:55:21]  Received Report from port : 10.
+[21:55:21]  Received Report from port : 10.
+[21:55:21]  Received UELYSYS Beacon from port : 12.
+[21:55:29]  Received BEE1012 Beacon from port : 17.
+[21:55:31]  Received Report from port : 15.
+[21:55:31]  Received Report from port : 15.
+[21:55:31]  Received Report from port : 15.
+[21:55:51]  Received UELYSYS Beacon from port : 12.
+[21:55:53]  Received Report from port : 10.
+[21:55:53]  Received Report from port : 10.
+[21:55:53]  Received Report from port : 10.
+[21:55:53]  Received BEE1012 Beacon from port : 17.
+[21:55:59]  Received BEE1012 Beacon from port : 17.
+[21:56:01]  Received Report from port : 15.
+[21:56:01]  Received Report from port : 15.
+[21:56:01]  Received Report from port : 15.
+[21:56:09]  Received BEE1012 Beacon from port : 17.
+[21:56:21]  Received UELYSYS Beacon from port : 12.
+[21:56:29]  Received Report from port : 15.
+[21:56:29]  Received Report from port : 15.
+[21:56:30]  Received Report from port : 15.
+[21:56:33]  Received BEE1012 Beacon from port : 17.
+[21:56:39]  Received BEE1012 Beacon from port : 17.
+[21:56:49]  Received BEE1012 Beacon from port : 17.
+[21:56:51]  Received Report from port : 10.
+[21:56:51]  Received Report from port : 10.
+[21:56:51]  Received Report from port : 10.
+[21:56:51]  Received UELYSYS Beacon from port : 12.
+[21:56:59]  Received Report from port : 15.
+[21:56:59]  Received Report from port : 15.
+[21:56:59]  Received Report from port : 15.
+[21:57:13]  Received BEE1012 Beacon from port : 17.
+[21:57:18]  Received Report from port : 15.
+[21:57:18]  Received Report from port : 15.
+[21:57:18]  Received Report from port : 15.
+[21:57:19]  Received BEE1012 Beacon from port : 17.
+[21:57:21]  Received UELYSYS Beacon from port : 12.
+[21:57:23]  Received Report from port : 10.
+[21:57:23]  Received Report from port : 10.
+[21:57:23]  Received Report from port : 10.
+[21:57:29]  Received BEE1012 Beacon from port : 17.
+[21:57:31]  Received Report from port : 15.
+[21:57:31]  Received Report from port : 15.
+[21:57:31]  Received Report from port : 15.
+[21:57:51]  Received UELYSYS Beacon from port : 12.
+[21:57:53]  Received BEE1012 Beacon from port : 17.
+[21:57:59]  Received BEE1012 Beacon from port : 17.
+[21:58:01]  Received Report from port : 15.
+[21:58:01]  Received Report from port : 15.
+[21:58:01]  Received Report from port : 15.
+[21:58:09]  Received BEE1012 Beacon from port : 17.
+[21:58:21]  Received UELYSYS Beacon from port : 12.
+[21:58:29]  Received Report from port : 15.
+[21:58:29]  Received Report from port : 15.
+[21:58:30]  Received Report from port : 15.
+[21:58:33]  Received BEE1012 Beacon from port : 17.
+[21:58:39]  Received BEE1012 Beacon from port : 17.
+[21:58:48]  Received Report from port : 15.
+[21:58:48]  Received Report from port : 15.
+[21:58:48]  Received Report from port : 15.
+[21:58:49]  Received Report from port : 15.
+[21:58:49]  Received Report from port : 15.
+[21:58:50]  Received Report from port : 15.
+[21:58:50]  Received BEE1012 Beacon from port : 17.
+[21:58:52]  Received UELYSYS Beacon from port : 12.
+[21:58:59]  Received Report from port : 15.
+[21:58:59]  Received Report from port : 15.
+[21:59:00]  Received Report from port : 15.
+[21:59:13]  Received BEE1012 Beacon from port : 17.
+[21:59:19]  Received BEE1012 Beacon from port : 17.
+[21:59:21]  Received UELYSYS Beacon from port : 12.
+[21:59:29]  Received BEE1012 Beacon from port : 17.
+[21:59:31]  Received Report from port : 15.
+[21:59:31]  Received Report from port : 15.
+[21:59:31]  Received Report from port : 15.
+[21:59:51]  Received UELYSYS Beacon from port : 12.
+[21:59:53]  Received BEE1012 Beacon from port : 17.
+[21:59:58]  Received Report from port : 10.
+[21:59:58]  Received Report from port : 10.
+[21:59:59]  Received Report from port : 10.
+[21:59:59]  Received BEE1012 Beacon from port : 17.
+[22:00:01]  Received Report from port : 15.
+[22:00:01]  Received Report from port : 15.
+[22:00:02]  Received Report from port : 15.
+[22:00:05]  Received Report from port : 10.
+[22:00:06]  Received Report from port : 10.
+[22:00:06]  Received Report from port : 10.
+[22:00:09]  Received BEE1012 Beacon from port : 17.
+[22:00:21]  Received UELYSYS Beacon from port : 12.
+[22:00:29]  Received Report from port : 15.
+[22:00:29]  Received Report from port : 15.
+[22:00:30]  Received Report from port : 15.
+[22:00:33]  Received BEE1012 Beacon from port : 17.
+[22:00:39]  Received BEE1012 Beacon from port : 17.
+[22:00:49]  Received BEE1012 Beacon from port : 17.
+[22:00:51]  Received UELYSYS Beacon from port : 12.
+[22:00:59]  Received Report from port : 15.
+[22:01:00]  Received Report from port : 15.
+[22:01:00]  Received Report from port : 15.
+[22:01:21]  Received UELYSYS Beacon from port : 12.
+[22:01:51]  Received UELYSYS Beacon from port : 12.
+[22:02:21]  Received UELYSYS Beacon from port : 12.
+[22:02:51]  Received UELYSYS Beacon from port : 12.
+[22:02:53]  Received Report from port : 15.
+[22:02:54]  Received Report from port : 15.
+[22:02:54]  Received Report from port : 15.
+[22:02:54]  Received Report from port : 15.
+[22:02:55]  Received Report from port : 15.
+[22:02:55]  Received Report from port : 15.
+[22:02:55]  Received Report from port : 15.
+[22:02:56]  Received Report from port : 15.
+[22:02:56]  Received Report from port : 15.
+[22:02:58]  Received BEE1012 Beacon from port : 17.
+[22:03:04]  Received BEE1012 Beacon from port : 17.
+[22:03:14]  Received BEE1012 Beacon from port : 17.
+[22:03:21]  Received UELYSYS Beacon from port : 12.
+[22:03:24]  Received Report from port : 15.
+[22:03:25]  Received Report from port : 15.
+[22:03:25]  Received Report from port : 15.
+[22:03:38]  Received BEE1012 Beacon from port : 17.
+[22:03:44]  Received BEE1012 Beacon from port : 17.
+[22:03:51]  Received UELYSYS Beacon from port : 12.
+[22:03:54]  Received BEE1012 Beacon from port : 17.
+[22:03:56]  Received Report from port : 15.
+[22:03:57]  Received Report from port : 15.
+[22:03:57]  Received Report from port : 15.
+[22:04:18]  Received BEE1012 Beacon from port : 17.
+[22:04:21]  Received UELYSYS Beacon from port : 12.
+[22:04:24]  Received BEE1012 Beacon from port : 17.
+[22:04:26]  Received Report from port : 15.
+[22:04:27]  Received Report from port : 15.
+[22:04:27]  Received Report from port : 15.
+[22:04:34]  Received BEE1012 Beacon from port : 17.
+[22:04:51]  Received UELYSYS Beacon from port : 12.
+[22:04:54]  Received Report from port : 15.
+[22:04:55]  Received Report from port : 15.
+[22:04:55]  Received Report from port : 15.
+[22:04:58]  Received BEE1012 Beacon from port : 17.
+[22:05:04]  Received BEE1012 Beacon from port : 17.
+[22:05:14]  Received BEE1012 Beacon from port : 17.
+[22:05:21]  Received UELYSYS Beacon from port : 12.
+[22:05:24]  Received Report from port : 15.
+[22:05:25]  Received Report from port : 15.
+[22:05:25]  Received Report from port : 15.
+[22:05:38]  Received BEE1012 Beacon from port : 17.
+[22:05:44]  Received BEE1012 Beacon from port : 17.
+[22:05:51]  Received UELYSYS Beacon from port : 12.
+[22:05:54]  Received BEE1012 Beacon from port : 17.
+[22:05:56]  Received Report from port : 15.
+[22:05:57]  Received Report from port : 15.
+[22:05:57]  Received Report from port : 15.
+[22:06:18]  Received BEE1012 Beacon from port : 17.
+[22:06:21]  Received UELYSYS Beacon from port : 12.
+[22:06:24]  Received BEE1012 Beacon from port : 17.
+[22:06:26]  Received Report from port : 15.
+[22:06:27]  Received Report from port : 15.
+[22:06:27]  Received Report from port : 15.
+[22:06:34]  Received BEE1012 Beacon from port : 17.
+[22:06:51]  Received UELYSYS Beacon from port : 12.
+[22:06:54]  Received Report from port : 15.
+[22:06:55]  Received Report from port : 15.
+[22:06:55]  Received Report from port : 15.
+[22:06:58]  Received BEE1012 Beacon from port : 17.
+[22:07:04]  Received BEE1012 Beacon from port : 17.
+[22:07:14]  Received BEE1012 Beacon from port : 17.
+[22:07:21]  Received UELYSYS Beacon from port : 12.
+[22:07:24]  Received Report from port : 15.
+[22:07:25]  Received Report from port : 15.
+[22:07:25]  Received Report from port : 15.
+[22:07:38]  Received BEE1012 Beacon from port : 17.
+[22:07:44]  Received BEE1012 Beacon from port : 17.
+[22:07:51]  Received UELYSYS Beacon from port : 12.
+[22:07:54]  Received BEE1012 Beacon from port : 17.
+[22:07:56]  Received Report from port : 15.
+[22:07:57]  Received Report from port : 15.
+[22:07:57]  Received Report from port : 15.
+[22:08:18]  Received BEE1012 Beacon from port : 17.
+[22:08:21]  Received UELYSYS Beacon from port : 12.
+[22:08:24]  Received BEE1012 Beacon from port : 17.
+[22:08:26]  Received Report from port : 15.
+[22:08:27]  Received Report from port : 15.
+[22:08:27]  Received Report from port : 15.
+[22:08:34]  Received BEE1012 Beacon from port : 17.
+[22:08:51]  Received UELYSYS Beacon from port : 12.
+[22:08:54]  Received Report from port : 15.
+[22:08:55]  Received Report from port : 15.
+[22:08:55]  Received Report from port : 15.
+[22:08:58]  Received BEE1012 Beacon from port : 17.
+[22:09:04]  Received BEE1012 Beacon from port : 17.
+[22:09:14]  Received BEE1012 Beacon from port : 17.
+[22:09:21]  Received UELYSYS Beacon from port : 12.
+[22:09:24]  Received Report from port : 15.
+[22:09:25]  Received Report from port : 15.
+[22:09:25]  Received Report from port : 15.
+[22:09:38]  Received BEE1012 Beacon from port : 17.
+[22:09:44]  Received BEE1012 Beacon from port : 17.
+[22:09:51]  Received UELYSYS Beacon from port : 12.
+[22:09:54]  Received BEE1012 Beacon from port : 17.
+[22:09:56]  Received Report from port : 15.
+[22:09:57]  Received Report from port : 15.
+[22:09:57]  Received Report from port : 15.
+[22:10:18]  Received BEE1012 Beacon from port : 17.
+[22:10:21]  Received UELYSYS Beacon from port : 12.
+[22:10:24]  Received BEE1012 Beacon from port : 17.
+[22:10:26]  Received Report from port : 15.
+[22:10:27]  Received Report from port : 15.
+[22:10:27]  Received Report from port : 15.
+[22:10:34]  Received BEE1012 Beacon from port : 17.
+[22:10:51]  Received UELYSYS Beacon from port : 12.
+[22:10:54]  Received Report from port : 15.
+[22:10:55]  Received Report from port : 15.
+[22:10:55]  Received Report from port : 15.
+[22:10:58]  Received BEE1012 Beacon from port : 17.
+[22:11:04]  Received BEE1012 Beacon from port : 17.
+[22:11:14]  Received BEE1012 Beacon from port : 17.
+[22:11:21]  Received UELYSYS Beacon from port : 12.
+[22:11:51]  Received UELYSYS Beacon from port : 12.
+[22:12:21]  Received UELYSYS Beacon from port : 12.
+[22:12:51]  Received UELYSYS Beacon from port : 12.
+[22:13:01]  Received Report from port : 10.
+[22:13:01]  Received Report from port : 10.
+[22:13:01]  Received Report from port : 10.
+[22:13:02]  Received Report from port : 10.
+[22:13:02]  Received Report from port : 10.
+[22:13:02]  Received Report from port : 10.
+[22:13:03]  Received Report from port : 10.
+[22:13:03]  Received Report from port : 10.
+[22:13:04]  Received Report from port : 10.
+[22:13:04]  Received Report from port : 10.
+[22:13:04]  Received Report from port : 10.
+[22:13:05]  Received Report from port : 10.
+[22:13:15]  Received Report from port : 15.
+[22:13:15]  Received Report from port : 15.
+[22:13:15]  Received Report from port : 15.
+[22:13:16]  Received Report from port : 15.
+[22:13:16]  Received Report from port : 15.
+[22:13:16]  Received Report from port : 15.
+[22:13:17]  Received Report from port : 15.
+[22:13:17]  Received Report from port : 15.
+[22:13:18]  Received Report from port : 15.
+[22:13:19]  Received BEE1012 Beacon from port : 17.
+[22:13:22]  Received UELYSYS Beacon from port : 12.
+[22:13:26]  Received BEE1012 Beacon from port : 17.
+[22:13:35]  Received Report from port : 10.
+[22:13:36]  Received Report from port : 10.
+[22:13:36]  Received Report from port : 10.
+[22:13:37]  Received BEE1012 Beacon from port : 17.
+[22:13:41]  Received Report from port : 10.
+[22:13:41]  Received Report from port : 10.
+[22:13:41]  Received Report from port : 10.
+[22:13:46]  Received Report from port : 15.
+[22:13:46]  Received Report from port : 15.
+[22:13:46]  Received Report from port : 15.
+[22:13:49]  Received Report from port : 10.
+[22:13:50]  Received Report from port : 10.
+[22:13:50]  Received Report from port : 10.
+[22:13:51]  Received UELYSYS Beacon from port : 12.
+[22:13:58]  Received Report from port : 10.
+[22:13:58]  Received Report from port : 10.
+[22:13:59]  Received Report from port : 10.
+[22:14:00]  Received BEE1012 Beacon from port : 17.
+[22:14:06]  Received BEE1012 Beacon from port : 17.
+[22:14:10]  Changing GS HMAC Key for BEE1012...
+[22:14:10]   Satellite Switched to: BEE1012 (TX HMAC enabled)
+[22:14:13]  Received Report from port : 10.
+[22:14:13]  Received Report from port : 10.
+[22:14:14]  Received Report from port : 10.
+[22:14:16]  Received BEE1012 Beacon from port : 17.
+[22:14:18]  Received Report from port : 15.
+[22:14:18]  Received Report from port : 15.
+[22:14:18]  Received Report from port : 15.
+[22:14:21]  Received UELYSYS Beacon from port : 12.
+[22:14:40]  Received BEE1012 Beacon from port : 17.
+[22:14:46]  Received BEE1012 Beacon from port : 17.

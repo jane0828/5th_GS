@@ -1,0 +1,24 @@
+2026-06-09 22:32
+[22:32:57]  Connect to Switch Box..............Failed.
+[22:32:57]  Connect to Rotator.................Failed.
+[22:32:57]  Connect to GS100..................Success.
+[22:32:57]  BEE-1000 BCN Port 31 bind success.
+[22:32:57]  Rotator Read Failed. Please Check Again.
+[22:32:57]  BEE-1000 RPT Port 25 bind success.
+[22:32:57]  BEE-1000 Event Port 27 bind success.
+[22:32:57]  BEE-100 FM Port 23 bind success.
+[22:32:57]  UEL-Y-Sys. BCN Port 12 bind success.
+[22:32:57]  UEL-Y-Sys. RPT Port 10 bind success.
+[22:32:57]  UEL-Y-Sys. Event Port 11 bind success.
+[22:32:57]  UEL-Y-Sys. FM Port 14 bind success.
+[22:32:57]  BEE-1012 BCN Port 17 bind success.
+[22:32:57]  BEE-1012 RPT Port 15 bind success.
+[22:32:57]  BEE-1012 Event Port 16 bind success.
+[22:32:57]  BEE-1012 FM Port 18 bind success.
+[22:32:58]  Received BEE1012 Beacon from port : 17.
+[22:33:00]  Received UELYSYS Beacon from port : 12.
+[22:33:17]  Ping Failed.
+[22:33:21]  Ping Failed.
+[22:33:22]  Received BEE1012 Beacon from port : 17.
+[22:33:28]  Received BEE1012 Beacon from port : 17.
+[22:33:30]  Received UELYSYS Beacon from port : 12.

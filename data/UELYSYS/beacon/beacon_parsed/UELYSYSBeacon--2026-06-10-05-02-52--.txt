@@ -1,0 +1,90 @@
+================= UELYSYS BEACON SAVE =================
+
+[HEADER]
+Call Sign               : UELYSYS
+Message ID              : 08 1A 
+Sequence                : C2 96 
+Length                  : 00 C9 
+Time Code               : 00 0F 93 A6 18 9A 
+
+[FSW]
+boot_count              : 1
+sequence                : 991
+reset_cause             : 33
+
+[COMS]
+i2c1 0x05 ch0 status    : 1
+i2c1 0x05 ch1 status    : 1
+i2c1 0x06 ch0 status    : 1
+i2c1 0x06 ch1 status    : 1
+AX100 active_conf       : 1
+AX100 boot_count        : 226
+AX100 boot_cause        : 1
+AX100 temp_board        : 317
+
+[EPS - PMU]
+bootcause               : 2
+resetcause              : 100
+bootcount               : 79
+out_en                  : 1 1 0 0 0 0 
+temp                    : 272 275
+batt_mode               : 3
+batt_i                  : -104
+batt_v                  : 30031
+sm_en                   : 7
+gnd_wdt_cnt             : 0
+bus_wdt_cnt             : 4
+gnd_wdt_left            : 113456
+bus_wdt_left            : 271
+
+[EPS - PDU]
+out_i                   : 32 -370 345 1 0 1 3 4 2 5 2 2 
+out_en                  : 1 0 1 0 0 0 0 0 0 0 0 0 
+
+[EPS - ACU]
+ACU 0 input_i           : 3 2 -1 6 8 3 
+ACU 0 input_v           : 245 67 67 53 40 67 
+ACU 0 mppt_mode         : 2
+ACU 1 input_i           : -2 6 -3 -1 0 1 
+ACU 1 input_v           : 232 81 54 81 54 54 
+ACU 1 mppt_mode         : 2
+
+[EPS - BP8]
+bootcount               : 84
+bootcause               : 1
+resetcause              : 0
+soc                     : 0.505044
+bat_avr_temp            : 25.750000
+vbat                    : 30040
+i                       : 0.111000
+heater_i                : 1
+
+[EPS - DSP]
+dsp_i2c1_0x07_status    : 0
+dsp_i2c1_0x08_status    : 0
+dsp_i2c1_0x09_status    : 0
+dsp_i2c1_0x10_status    : 0
+dsp_GPIO_status    : 15
+
+[ADCS]
+power_state             : 4
+control_mode            : 0
+gyro0_rate_x            : 0.015000
+gyro0_rate_y            : -0.040000
+gyro0_rate_z            : 0.032500
+css                     : 3 3 3 3 3 3 
+
+[BINARY DATA]
+55 45 4C 59 53 59 53 08 1A C2 96 00 C9 00 0F 93 
+A6 18 9A 01 00 DF 03 00 00 21 01 01 01 01 01 E2 
+00 01 00 00 00 3D 01 02 00 00 00 64 00 4F 00 01 
+01 00 00 00 00 10 01 13 01 03 98 FF 4F 75 07 00 
+00 04 00 30 BB 01 00 0F 01 00 00 20 00 8E FE 59 
+01 01 00 00 00 01 00 03 00 04 00 02 00 05 00 02 
+00 02 00 01 00 01 00 00 00 00 00 00 00 00 00 03 
+00 02 00 FF FF 06 00 08 00 03 00 F5 00 43 00 43 
+00 35 00 28 00 43 00 02 FE FF 06 00 FD FF FF FF 
+00 00 01 00 E8 00 51 00 36 00 51 00 36 00 36 00 
+02 54 00 01 00 00 00 8C 4A 01 3F 00 00 CE 41 58 
+75 F8 53 E3 3D 01 00 00 00 00 00 0F 04 00 8F C2 
+75 3C 0A D7 23 BD B8 1E 05 3D 03 03 03 03 03 03 
