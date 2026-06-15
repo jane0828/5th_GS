@@ -5648,6 +5648,37 @@ typedef struct AIOBC_HealthChckCmd
     uint8_t                  padding[paddingLength];        /**< \brief Command payload */
 } __attribute__((packed)) AIOBC_HealthChckCmd_t;
 
+
+
+typedef struct AIOBC_DataChunkCmd
+{
+    uint8_t                  CmdHeader[CFE_SB_CMD_HDR_SIZE]; /**< \brief Command header */
+    uint16_t                  EnvelopeMagic;        /**< \brief Command payload */
+    uint16_t                   flags;
+    uint16_t                 RawDataLength;
+    uint32_t                 ChunkCRC32;
+    float                  Data[34];
+} __attribute__((packed)) AIOBC_DataChunkCmd_t;
+
+typedef struct AIOBC_DataEndCmd
+{
+    uint8_t                  CmdHeader[CFE_SB_CMD_HDR_SIZE]; /**< \brief Command header */
+    uint16_t                 Argument;
+    uint8_t                  reserved[178];        /**< \brief Command payload */
+} __attribute__((packed)) AIOBC_DataEndCmd_t;
+
+
+typedef struct AIOBC_FDIRCmd
+{
+    uint8_t                  CmdHeader[CFE_SB_CMD_HDR_SIZE]; /**< \brief Command header */
+    uint32_t                 scenarioid;
+    uint8_t                  commandid;        /**< \brief Command payload */
+    uint32_t                 flags;
+    float                    conf_scale;
+    float                    thre_scale;
+} __attribute__((packed)) AIOBC_FDIRCmd_t;
+
+
 // COSMIC HELP
 //EPS P31U SET CONFIG2
 
@@ -6995,8 +7026,9 @@ typedef struct {
 /***********************************************************5차 추가*************************************************/
 
     AIOBC_HealthChckCmd_t                   aiobchealthchckcmd;
-
-
+    AIOBC_DataChunkCmd_t                    aiobcdatachunkcmd;
+    AIOBC_DataEndCmd_t                      aiobcdataend;
+    AIOBC_FDIRCmd_t                         aiobcfdircmd;
 
     PAYUEL_ROMA_NoopCmd_t                   romanoopcmd;
     PAYUEL_ROMA_ResetCountersCmd_t          romaresetcountercmd;

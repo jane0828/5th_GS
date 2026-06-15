@@ -1,0 +1,20 @@
+2026-06-11 14:53
+[14:53:45]  Connect to Switch Box..............Failed.
+[14:53:45]  Connect to Rotator.................Failed.
+[14:53:45]  Connect to GS100..................Success.
+[14:53:45]  BEE-1000 BCN Port 31 bind success.
+[14:53:45]  Rotator Read Failed. Please Check Again.
+[14:53:45]  BEE-1000 RPT Port 25 bind success.
+[14:53:45]  BEE-1000 Event Port 27 bind success.
+[14:53:45]  BEE-100 FM Port 23 bind success.
+[14:53:45]  UEL-Y-Sys. BCN Port 12 bind success.
+[14:53:45]  UEL-Y-Sys. RPT Port 10 bind success.
+[14:53:45]  UEL-Y-Sys. Event Port 11 bind success.
+[14:53:45]  UEL-Y-Sys. FM Port 14 bind success.
+[14:53:45]  BEE-1012 BCN Port 17 bind success.
+[14:53:45]  BEE-1012 RPT Port 15 bind success.
+[14:53:45]  BEE-1012 Event Port 16 bind success.
+[14:53:45]  BEE-1012 FM Port 18 bind success.
+[14:53:53]  Ping Failed.
+[14:54:15]  Ping Failed.
+[14:55:00]  Cannot Set 1 parameters of Table 0.

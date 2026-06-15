@@ -877,8 +877,10 @@ static gs_error_t ftp_status_reply()
          * Copy the chunk number into an independent local variable.
          * After csp_buffer_free(packet), ftp_packet is no longer valid.
          */
-        const uint32_t chunk =
-            csp_ntoh32(ftp_packet->data.chunk);
+        // const uint32_t chunk =
+        //     csp_ntoh32(ftp_packet->data.chunk);
+       const uint32_t chunk =
+            ftp_packet->data.chunk;
 
         unsigned int size;
 

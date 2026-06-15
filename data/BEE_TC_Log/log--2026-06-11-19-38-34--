@@ -1,0 +1,648 @@
+[19:38:43]  Connect to Switch Box..............Failed.
+[19:38:43]  Connect to Rotator.................Failed.
+[19:38:43]  Connect to GS100..................Success.
+[19:38:43]  BEE-1000 BCN Port 31 bind success.
+[19:38:43]  BEE-1000 RPT Port 25 bind success.
+[19:38:43]  BEE-1000 Event Port 27 bind success.
+[19:38:43]  BEE-100 FM Port 23 bind success.
+[19:38:43]  UEL-Y-Sys. BCN Port 12 bind success.
+[19:38:43]  UEL-Y-Sys. RPT Port 10 bind success.
+[19:38:43]  Rotator Read Failed. Please Check Again.
+[19:38:43]  UEL-Y-Sys. Event Port 11 bind success.
+[19:38:43]  UEL-Y-Sys. FM Port 14 bind success.
+[19:38:43]  BEE-1012 BCN Port 17 bind success.
+[19:38:43]  BEE-1012 RPT Port 15 bind success.
+[19:38:43]  BEE-1012 Event Port 16 bind success.
+[19:38:43]  BEE-1012 FM Port 18 bind success.
+[19:38:43]  BEE-1012 AIOBC Port 29 bind success.
+Unknown MsgID
+[19:39:08]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x773333E6, PacketCRC=0x45, PacketLength=154
+[19:39:08]   Start Uplink Task.
+[19:39:08]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:39:08]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0x45
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	45	46	5a	
+00	01	00	88	77	33	33	e6	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+[19:39:08]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:39:34]  DataChunk generated. Magic=0x465A, RawDataLength=4, ChunkCRC32=0x2144DF1C, PacketCRC=0xFE, PacketLength=154
+[19:39:34]   Start Uplink Task.
+[19:39:34]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:39:34]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0xfe
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	fe	46	5a	
+00	01	00	04	21	44	df	1c	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+Unknown MsgID
+[19:39:41]  DataChunk generated. Magic=0x465A, RawDataLength=4, ChunkCRC32=0x2144DF1C, PacketCRC=0xFE, PacketLength=154
+[19:39:41]   Start Uplink Task.
+[19:39:41]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:39:41]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0xfe
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	fe	46	5a	
+00	01	00	04	21	44	df	1c	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+[19:39:42]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:39:57]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x773333E6, PacketCRC=0x45, PacketLength=154
+[19:39:57]   Start Uplink Task.
+[19:39:57]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:39:57]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0x45
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	45	46	5a	
+00	01	00	88	77	33	33	e6	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+[19:39:58]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:40:05]   Start Uplink Task.
+[19:40:05]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:40:05]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x7 0xd1
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	07	d1	
+
+[19:40:06]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:40:28]  FDIR generated. scenarioid=0, commandid=0, flags=0, conf_scale=0.000000, thre_scale=0.000000, PacketLength=25
+[19:40:28]   Start Uplink Task.
+[19:40:28]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:40:28]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x12 0xe 0xcb
+|| Uplink || Length: 25
+18	f0	c0	00	00	12	0e	cb	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	
+
+[19:40:29]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:42:50]   Start Uplink Task.
+[19:42:50]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:42:50]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	01	d7	
+
+[19:42:51]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:43:05]  DataChunk generated. Magic=0x465A, RawDataLength=4, ChunkCRC32=0x2144DF1C, PacketCRC=0xFE, PacketLength=154
+[19:43:05]   Start Uplink Task.
+[19:43:05]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:43:05]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0xfe
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	fe	46	5a	
+00	01	00	04	21	44	df	1c	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+[19:43:06]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:43:33]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x773333E6, PacketCRC=0x45, PacketLength=154
+[19:43:33]   Start Uplink Task.
+[19:43:33]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:43:33]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0x45
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	45	46	5a	
+00	01	00	88	77	33	33	e6	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+Unknown MsgID
+[19:43:43]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x773333E6, PacketCRC=0x45, PacketLength=154
+[19:43:43]   Start Uplink Task.
+[19:43:43]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:43:43]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0x45
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	45	46	5a	
+00	01	00	88	77	33	33	e6	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+[19:43:43]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:47:58]   Start Uplink Task.
+[19:47:58]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:47:58]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	01	d7	
+
+[19:47:59]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:48:07]  DataChunk generated. Magic=0x465A, RawDataLength=4, ChunkCRC32=0x2144DF1C, PacketCRC=0xFE, PacketLength=154
+[19:48:07]   Start Uplink Task.
+[19:48:07]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:48:07]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0xfe
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	fe	46	5a	
+00	01	00	04	21	44	df	1c	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+Unknown MsgID
+[19:48:12]  DataChunk generated. Magic=0x465A, RawDataLength=4, ChunkCRC32=0x2144DF1C, PacketCRC=0xFE, PacketLength=154
+[19:48:12]   Start Uplink Task.
+[19:48:12]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:48:12]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0xfe
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	fe	46	5a	
+00	01	00	04	21	44	df	1c	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+[19:48:13]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:48:38]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x773333E6, PacketCRC=0x45, PacketLength=154
+[19:48:38]   Start Uplink Task.
+[19:48:38]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:48:38]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0x45
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	45	46	5a	
+00	01	00	88	77	33	33	e6	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+Unknown MsgID
+[19:48:40]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x773333E6, PacketCRC=0x45, PacketLength=154
+[19:48:40]   Start Uplink Task.
+[19:48:40]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:48:40]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0x45
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	45	46	5a	
+00	01	00	88	77	33	33	e6	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+Unknown MsgID
+[19:48:43]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x773333E6, PacketCRC=0x45, PacketLength=154
+[19:48:43]   Start Uplink Task.
+[19:48:43]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:48:43]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0x45
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	45	46	5a	
+00	01	00	88	77	33	33	e6	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+[19:48:44]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:48:51]   Start Uplink Task.
+[19:48:51]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:48:51]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x7 0xd1
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	07	d1	
+
+[19:48:52]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:48:56]  FDIR generated. scenarioid=0, commandid=0, flags=0, conf_scale=0.000000, thre_scale=0.000000, PacketLength=25
+[19:48:56]   Start Uplink Task.
+[19:48:56]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:48:56]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x12 0xe 0xcb
+|| Uplink || Length: 25
+18	f0	c0	00	00	12	0e	cb	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	
+
+Unknown MsgID
+[19:49:00]  FDIR generated. scenarioid=0, commandid=0, flags=0, conf_scale=0.000000, thre_scale=0.000000, PacketLength=25
+[19:49:00]   Start Uplink Task.
+[19:49:00]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:49:00]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x12 0xe 0xcb
+|| Uplink || Length: 25
+18	f0	c0	00	00	12	0e	cb	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	
+
+[19:49:01]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:51:44]   Start Uplink Task.
+[19:51:44]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:51:44]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	01	d7	
+
+[19:51:45]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:51:58]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x773333E6, PacketCRC=0x45, PacketLength=154
+[19:51:58]   Start Uplink Task.
+[19:51:58]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:51:58]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0x45
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	45	46	5a	
+00	01	00	88	77	33	33	e6	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+[19:51:59]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:52:03]   Start Uplink Task.
+[19:52:03]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:52:03]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x7 0xd1
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	07	d1	
+
+[19:52:04]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:52:07]  FDIR generated. scenarioid=0, commandid=0, flags=0, conf_scale=0.000000, thre_scale=0.000000, PacketLength=25
+[19:52:07]   Start Uplink Task.
+[19:52:07]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:52:07]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x12 0xe 0xcb
+|| Uplink || Length: 25
+18	f0	c0	00	00	12	0e	cb	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	
+
+[19:52:08]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:53:10]  FDIR generated. scenarioid=1, commandid=0, flags=0, conf_scale=0.000000, thre_scale=0.000000, PacketLength=25
+[19:53:10]   Start Uplink Task.
+[19:53:10]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:53:10]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x12 0xe 0xca
+|| Uplink || Length: 25
+18	f0	c0	00	00	12	0e	ca	00	00	
+00	01	00	00	00	00	00	00	00	00	
+00	00	00	00	00	
+
+[19:53:11]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:53:19]   Start Uplink Task.
+[19:53:19]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:53:19]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x7 0xd1
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	07	d1	
+
+[19:53:19]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:53:24]  FDIR generated. scenarioid=1, commandid=0, flags=0, conf_scale=0.000000, thre_scale=0.000000, PacketLength=25
+[19:53:24]   Start Uplink Task.
+[19:53:24]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:53:24]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x12 0xe 0xca
+|| Uplink || Length: 25
+18	f0	c0	00	00	12	0e	ca	00	00	
+00	01	00	00	00	00	00	00	00	00	
+00	00	00	00	00	
+
+[19:53:24]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:53:40]   Start Uplink Task.
+[19:53:40]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:53:40]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	01	d7	
+
+[19:53:40]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:53:44]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x773333E6, PacketCRC=0x45, PacketLength=154
+[19:53:44]   Start Uplink Task.
+[19:53:44]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:53:44]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0x45
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	45	46	5a	
+00	01	00	88	77	33	33	e6	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+[19:53:45]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:53:50]   Start Uplink Task.
+[19:53:50]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:53:50]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x7 0xd1
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	07	d1	
+
+[19:53:50]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:53:54]  FDIR generated. scenarioid=1, commandid=0, flags=0, conf_scale=0.000000, thre_scale=0.000000, PacketLength=25
+[19:53:54]   Start Uplink Task.
+[19:53:54]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:53:54]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x12 0xe 0xca
+|| Uplink || Length: 25
+18	f0	c0	00	00	12	0e	ca	00	00	
+00	01	00	00	00	00	00	00	00	00	
+00	00	00	00	00	
+
+[19:53:55]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:54:39]   Start Uplink Task.
+[19:54:39]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:54:39]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	01	d7	
+
+[19:54:39]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:54:44]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x773333E6, PacketCRC=0x45, PacketLength=154
+[19:54:44]   Start Uplink Task.
+[19:54:44]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:54:44]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0x45
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	45	46	5a	
+00	01	00	88	77	33	33	e6	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+[19:54:45]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:54:48]   Start Uplink Task.
+[19:54:48]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:54:48]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x7 0xd1
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	07	d1	
+
+[19:54:49]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:54:53]  FDIR generated. scenarioid=1, commandid=0, flags=0, conf_scale=0.000000, thre_scale=0.000000, PacketLength=25
+[19:54:53]   Start Uplink Task.
+[19:54:53]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:54:53]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x12 0xe 0xca
+|| Uplink || Length: 25
+18	f0	c0	00	00	12	0e	ca	00	00	
+00	01	00	00	00	00	00	00	00	00	
+00	00	00	00	00	
+
+[19:54:54]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:55:01]   Start Uplink Task.
+[19:55:01]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:55:01]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x9 0xdf
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	09	df	
+
+[19:55:02]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:57:16]   Start Uplink Task.
+[19:57:16]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:57:16]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	01	d7	
+
+[19:57:17]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:57:24]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x773333E6, PacketCRC=0x45, PacketLength=154
+[19:57:24]   Start Uplink Task.
+[19:57:24]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:57:24]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0x45
+|| Uplink || Length: 154
+18	f0	c0	00	00	93	05	45	46	5a	
+00	01	00	88	77	33	33	e6	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	
+
+[19:57:24]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:57:31]   Start Uplink Task.
+[19:57:31]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:57:31]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x7 0xd1
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	07	d1	
+
+[19:57:32]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:57:38]  FDIR generated. scenarioid=1, commandid=0, flags=0, conf_scale=0.000000, thre_scale=0.000000, PacketLength=25
+[19:57:38]   Start Uplink Task.
+[19:57:38]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:57:38]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x12 0xe 0xca
+|| Uplink || Length: 25
+18	f0	c0	00	00	12	0e	ca	00	00	
+00	01	00	00	00	00	00	00	00	00	
+00	00	00	00	00	
+
+[19:57:38]  Received AIOBC TM from port : 29.
+
+Unknown MsgID
+[19:57:47]   Start Uplink Task.
+[19:57:47]  Send Packet of Ptype : 11. Check Terminal Log.
+[19:57:47]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x9 0xdf
+|| Uplink || Length: 8
+18	f0	c0	00	00	01	09	df	
+
+[19:57:47]  Received AIOBC TM from port : 29.
+

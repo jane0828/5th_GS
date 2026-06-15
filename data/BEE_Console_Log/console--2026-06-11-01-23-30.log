@@ -1,0 +1,20 @@
+2026-06-11 01:23
+[01:24:01]  Connect to Switch Box..............Failed.
+[01:24:01]  Connect to Rotator.................Failed.
+[01:24:01]  Connect to GS100..................Success.
+[01:24:01]  BEE-1000 BCN Port 31 bind success.
+[01:24:01]  BEE-1000 RPT Port 25 bind success.
+[01:24:01]  BEE-1000 Event Port 27 bind success.
+[01:24:01]  Rotator Read Failed. Please Check Again.
+[01:24:01]  BEE-100 FM Port 23 bind success.
+[01:24:01]  UEL-Y-Sys. BCN Port 12 bind success.
+[01:24:01]  UEL-Y-Sys. RPT Port 10 bind success.
+[01:24:01]  UEL-Y-Sys. Event Port 11 bind success.
+[01:24:01]  UEL-Y-Sys. FM Port 14 bind success.
+[01:24:01]  BEE-1012 BCN Port 17 bind success.
+[01:24:01]  BEE-1012 RPT Port 15 bind success.
+[01:24:01]  BEE-1012 Event Port 16 bind success.
+[01:24:01]  BEE-1012 FM Port 18 bind success.
+[01:24:05]  Cannot Read 20 parameters of Table 0.
+[01:24:08]  Cannot Read 13 parameters of Table 1.
+[01:24:11]  Cannot Read 18 parameters of Table 5.

@@ -6206,7 +6206,7 @@ static const SubsystemRange FilterRules[] = {
     { 19, 550, 589 }, // MEOW extended
     { 15, 590, 591 }, // PAYUEL_ROMA PAR_GET operation presets
     { 28, 592, 596 }, // adcs (UELYSYS requested operations)
-    { 32, 630, 630 }, // AIOBC
+    { 32, 630, 635 }, // AIOBC
 };
 
 static bool IsUelysysPayCommandIndex(int cmd_i)
@@ -6256,6 +6256,27 @@ static bool IsBusCommandIndex(int cmd_i)
            stx || gpio || ttc || meow || cosmic;
 }
 /*************************************************************************************************/
+
+// ── CRC-32/ISO-HDLC ──────────────────────────────────────────────────────────
+// init = 0xFFFFFFFF, poly = 0xEDB88320(reflected), xorout = 0xFFFFFFFF
+static uint32_t crc32_compute(const uint8_t* data, std::size_t len)
+{
+    uint32_t crc = 0xFFFFFFFFu;
+
+    for (std::size_t i = 0; i < len; ++i) {
+        crc ^= static_cast<uint32_t>(data[i]);
+
+        for (int j = 0; j < 8; ++j) {
+            crc = (crc >> 1) ^
+                  (0xEDB88320u &
+                   static_cast<uint32_t>(
+                       -(static_cast<int32_t>(crc & 1u))
+                   ));
+        }
+    }
+
+    return ~crc;
+}
 
 static void DrawCmdGeneratorBody(bool initial_mode)
 {
@@ -6360,10 +6381,50 @@ static void DrawCmdGeneratorBody(bool initial_mode)
     switch (gen_fnccode)
     {
 
+        case 630: // health check
+        {
+            static uint16_t msgid = 0x18F0;
+            static uint8_t fnccode = 1;
+            ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
+            ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
 
-case 630: { // AIOBC
+            if (ImGui::Button("Generate CMD"))
+            {
+                WriteSystemName(msgid);
+                pthread_join(p_thread[4], NULL);
+
+                packetsign* TestPacket = (packetsign*)malloc(2 + 2 + 4 + CFE_SB_CMD_HDR_SIZE);
+                TestPacket->Identifier = HVD_TEST;
+                TestPacket->PacketType = B12_UL_AIOBC;
+                TestPacket->Length = CFE_SB_CMD_HDR_SIZE;
+                memset(TestPacket->Data, 0, TestPacket->Length);
+
+                uint8_t cmd[CFE_SB_CMD_HDR_SIZE] = {0,};
+                uint16_t mid = htons(msgid);
+                memcpy(cmd, &mid, sizeof(uint16_t));
+                memcpy(cmd + 6, &fnccode, sizeof(uint8_t));
+                cmd[2] = 0xc0;    // seq
+                cmd[3] = 0x00;
+                cmd[4] = 0x00;
+                cmd[5] = 0x01;    //
+                cmd[7] = 0;
+
+                uint16_t len = CFE_SB_CMD_HDR_SIZE;
+                const uint8_t* byteptr = cmd;
+                uint8_t checksum = 0xFF;
+                while (len--) checksum ^= *(byteptr++);
+                cmd[7] = checksum;
+
+                memcpy(TestPacket->Data, cmd, sizeof(cmd));
+                pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void*)TestPacket);
+            }
+            break;
+        }
+
+
+case 631: { // AIOBC
     static uint16_t msgid = 0x18F0;
-    static uint8_t fnccode = 0;
+    static uint8_t fnccode = 3;
 
     ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
     ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
@@ -6431,6 +6492,355 @@ case 630: { // AIOBC
     break;
 }
 
+
+case 632: { // AIOBC Data Chunk
+    static uint16_t msgid = 0x18F0;
+    static uint8_t fnccode = 5;
+
+    static uint16_t envelope_magic = 0x465A;   // "FZ"
+    static uint16_t flags = 0x0000;
+    static uint16_t raw_data_length = 136;     // user input
+    static uint32_t chunk_crc32 = 0;
+
+    static float data_input[34] = {0.0f};
+
+    ImGui::InputScalar("msgid##aiobc_datachunk", ImGuiDataType_U16, &msgid);
+    ImGui::InputScalar("fnccode##aiobc_datachunk", ImGuiDataType_U8, &fnccode);
+
+    ImGui::InputScalar("EnvelopeMagic##aiobc_datachunk", ImGuiDataType_U16, &envelope_magic);
+    ImGui::InputScalar("flags##aiobc_datachunk", ImGuiDataType_U16, &flags);
+    ImGui::InputScalar("RawDataLength##aiobc_datachunk", ImGuiDataType_U16, &raw_data_length);
+
+    ImGui::Text("ChunkCRC32 = 0x%08X", chunk_crc32);
+
+    ImGui::Separator();
+    ImGui::TextUnformatted("Data[34]");
+
+    for (int i = 0; i < 34; ++i) {
+        char label[64];
+        snprintf(label, sizeof(label), "Data[%02d]##aiobc_datachunk", i);
+        ImGui::InputFloat(label, &data_input[i], 0.0f, 0.0f, "%.6f");
+    }
+
+    if (ImGui::Button("Generate CMD##aiobc_datachunk")) {
+        WriteSystemName(msgid);
+
+        AIOBC_DataChunkCmd_t &cmd = command->aiobcdatachunkcmd;
+
+        memset(&cmd, 0, sizeof(cmd));
+
+        uint16_t msgid_be = htons(msgid);
+        uint8_t sequence[2] = {0xC0, 0x00};
+
+        uint16_t packet_length =
+            static_cast<uint16_t>(sizeof(AIOBC_DataChunkCmd_t) - 7);
+
+        uint8_t length[2] = {
+            static_cast<uint8_t>(packet_length >> 8),
+            static_cast<uint8_t>(packet_length & 0xFF)
+        };
+
+        memcpy(cmd.CmdHeader + 0, &msgid_be, sizeof(msgid_be));
+        memcpy(cmd.CmdHeader + 2, sequence, sizeof(sequence));
+        memcpy(cmd.CmdHeader + 4, length, sizeof(length));
+        memcpy(cmd.CmdHeader + 6, &fnccode, sizeof(fnccode));
+
+        /*
+         * Copy user-input float data first.
+         * CRC will be calculated over the first raw_data_length bytes
+         * of this raw Data area.
+         */
+        for (int i = 0; i < 34; ++i) {
+            cmd.Data[i] = data_input[i];
+        }
+
+        /*
+         * raw_data_length is user input.
+         * But it must not exceed the real raw buffer size.
+         */
+        const uint16_t max_raw_len =
+            static_cast<uint16_t>(sizeof(cmd.Data));
+
+        if (raw_data_length > max_raw_len) {
+            console.AddLog(
+                "[ERROR]##AIOBC DataChunk RawDataLength too large: input=%u max=%u",
+                raw_data_length,
+                max_raw_len
+            );
+            break;
+        }
+
+        /*
+         * Envelope header fields.
+         */
+        cmd.EnvelopeMagic = csp_hton16(envelope_magic);
+        cmd.flags = csp_hton16(flags);
+        cmd.RawDataLength = csp_hton16(raw_data_length);
+
+        /*
+         * Calculate ChunkEnvelope CRC32.
+         *
+         * IMPORTANT:
+         * The CRC is calculated over exactly raw_data_length bytes,
+         * not always over the full Data[34] area.
+         */
+        chunk_crc32 = crc32_compute(
+            reinterpret_cast<const uint8_t *>(cmd.Data),
+            static_cast<std::size_t>(raw_data_length)
+        );
+
+        cmd.ChunkCRC32 = csp_hton32(chunk_crc32);
+
+        /*
+         * Packet-level XOR checksum.
+         * This must be calculated after ChunkCRC32 is filled.
+         */
+        cmd.CmdHeader[7] = 0;
+
+        uint8_t crc = 0xFF;
+        const uint8_t *p =
+            reinterpret_cast<const uint8_t *>(&cmd);
+
+        for (size_t i = 0; i < sizeof(cmd); ++i) {
+            crc ^= p[i];
+        }
+
+        cmd.CmdHeader[7] = crc;
+
+        packetsign *pkt = static_cast<packetsign *>(
+            malloc(2 + 2 + 4 + sizeof(cmd))
+        );
+
+        if (pkt == NULL) {
+            console.AddLog("[ERROR]##Failed to allocate AIOBC data chunk packet.");
+            break;
+        }
+
+        pkt->Identifier = HVD_TEST;
+        pkt->PacketType = B12_UL_AIOBC;
+        pkt->Length = static_cast<uint16_t>(sizeof(cmd));
+
+        memcpy(pkt->Data, &cmd, sizeof(cmd));
+
+        console.AddLog(
+            "[AIOBC]##DataChunk generated. Magic=0x%04X, RawDataLength=%u, ChunkCRC32=0x%08X, PacketCRC=0x%02X, PacketLength=%u",
+            envelope_magic,
+            raw_data_length,
+            chunk_crc32,
+            cmd.CmdHeader[7],
+            pkt->Length
+        );
+
+        pthread_join(p_thread[4], NULL);
+        pthread_create(
+            &p_thread[4],
+            NULL,
+            task_uplink_onorbit,
+            static_cast<void *>(pkt)
+        );
+    }
+
+    break;
+}
+
+
+case 633: { // AIOBC Data End
+               static uint16_t msgid = 0x18F0;
+            static uint8_t fnccode = 7;
+            ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
+            ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+            if (ImGui::Button("Generate CMD"))
+            {
+                WriteSystemName(msgid);
+                pthread_join(p_thread[4], NULL);
+
+                packetsign* TestPacket = (packetsign*)malloc(2 + 2 + 4 + CFE_SB_CMD_HDR_SIZE);
+                TestPacket->Identifier = HVD_TEST;
+                TestPacket->PacketType = B12_UL_AIOBC;
+                TestPacket->Length = CFE_SB_CMD_HDR_SIZE;
+                memset(TestPacket->Data, 0, TestPacket->Length);
+
+                uint8_t cmd[CFE_SB_CMD_HDR_SIZE] = {0,};
+                uint16_t mid = htons(msgid);
+                memcpy(cmd, &mid, sizeof(uint16_t));
+                memcpy(cmd + 6, &fnccode, sizeof(uint8_t));
+                cmd[2] = 0xc0;
+                cmd[3] = 0x00;
+                cmd[4] = 0x00;
+                cmd[5] = 0x01;
+                cmd[7] = 0;
+
+                uint16_t len = CFE_SB_CMD_HDR_SIZE;
+                const uint8_t* byteptr = cmd;
+                uint8_t checksum = 0xFF;
+                while (len--) checksum ^= *(byteptr++);
+                cmd[7] = checksum;
+
+                memcpy(TestPacket->Data, cmd, sizeof(cmd));
+                pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void*)TestPacket);
+            }
+            break;
+}
+
+case 634: { // AIOBC report check
+
+           static uint16_t msgid = 0x18F0;
+            static uint8_t fnccode = 9;
+            ImGui::InputScalar("msgid", ImGuiDataType_U16, &msgid);
+            ImGui::InputScalar("fnccode", ImGuiDataType_U8, &fnccode);
+
+            if (ImGui::Button("Generate CMD"))
+            {
+                WriteSystemName(msgid);
+                pthread_join(p_thread[4], NULL);
+
+                packetsign* TestPacket = (packetsign*)malloc(2 + 2 + 4 + CFE_SB_CMD_HDR_SIZE);
+                TestPacket->Identifier = HVD_TEST;
+                TestPacket->PacketType = B12_UL_AIOBC;
+                TestPacket->Length = CFE_SB_CMD_HDR_SIZE;
+                memset(TestPacket->Data, 0, TestPacket->Length);
+
+                uint8_t cmd[CFE_SB_CMD_HDR_SIZE] = {0,};
+                uint16_t mid = htons(msgid);
+                memcpy(cmd, &mid, sizeof(uint16_t));
+                memcpy(cmd + 6, &fnccode, sizeof(uint8_t));
+                cmd[2] = 0xc0;
+                cmd[3] = 0x00;
+                cmd[4] = 0x00;
+                cmd[5] = 0x01;
+                cmd[7] = 0;
+
+                uint16_t len = CFE_SB_CMD_HDR_SIZE;
+                const uint8_t* byteptr = cmd;
+                uint8_t checksum = 0xFF;
+                while (len--) checksum ^= *(byteptr++);
+                cmd[7] = checksum;
+
+                memcpy(TestPacket->Data, cmd, sizeof(cmd));
+                pthread_create(&p_thread[4], NULL, task_uplink_onorbit, (void*)TestPacket);
+            }
+            break;
+
+}
+
+
+case 635: { // AIOBC FDIR Request
+    static uint16_t msgid = 0x18F0;
+    static uint8_t fnccode = 14;
+
+    static uint32_t scenarioid = 0;
+    static uint8_t commandid = 0;
+    static uint32_t flags = 0;
+    static float conf_scale = 0.0f;
+    static float thre_scale = 0.0f;
+
+    ImGui::InputScalar("msgid##aiobc_fdir", ImGuiDataType_U16, &msgid);
+    ImGui::InputScalar("fnccode##aiobc_fdir", ImGuiDataType_U8, &fnccode);
+
+    ImGui::Separator();
+    ImGui::TextUnformatted("AIOBC FDIR Payload");
+
+    ImGui::InputScalar("scenarioid##aiobc_fdir", ImGuiDataType_U32, &scenarioid);
+    ImGui::InputScalar("commandid##aiobc_fdir", ImGuiDataType_U8, &commandid);
+    ImGui::InputScalar("flags##aiobc_fdir", ImGuiDataType_U32, &flags);
+    ImGui::InputFloat("conf_scale##aiobc_fdir", &conf_scale, 0.0f, 0.0f, "%.6f");
+    ImGui::InputFloat("thre_scale##aiobc_fdir", &thre_scale, 0.0f, 0.0f, "%.6f");
+
+    if (ImGui::Button("Generate CMD##aiobc_fdir")) {
+        WriteSystemName(msgid);
+
+        AIOBC_FDIRCmd_t &cmd = command->aiobcfdircmd;
+
+        /*
+         * Clear the whole command first.
+         * This prevents stale bytes from remaining in the packet.
+         */
+        memset(&cmd, 0, sizeof(cmd));
+
+        uint16_t msgid_be = htons(msgid);
+        uint8_t sequence[2] = {0xC0, 0x00};
+
+        uint16_t packet_length =
+            (uint16_t)(sizeof(AIOBC_FDIRCmd_t) - 7);
+
+        uint8_t length[2] = {
+            (uint8_t)(packet_length >> 8),
+            (uint8_t)(packet_length & 0xFF)
+        };
+
+        memcpy(cmd.CmdHeader + 0, &msgid_be, sizeof(msgid_be));
+        memcpy(cmd.CmdHeader + 2, sequence, sizeof(sequence));
+        memcpy(cmd.CmdHeader + 4, length, sizeof(length));
+        memcpy(cmd.CmdHeader + 6, &fnccode, sizeof(fnccode));
+
+        /*
+         * Payload fields.
+         * Integer fields are converted to network/big-endian.
+         * If the FSW expects little-endian, replace csp_hton32() with csp_htole32().
+         */
+        cmd.scenarioid = csp_hton32(scenarioid);
+        cmd.commandid = commandid;
+        cmd.flags = csp_hton32(flags);
+
+        /*
+         * Float fields are copied as native float binary.
+         * If the FSW expects a specific endian representation for float,
+         * this needs explicit byte swapping.
+         */
+        cmd.conf_scale = conf_scale;
+        cmd.thre_scale = thre_scale;
+
+        /*
+         * Calculate CCSDS checksum with checksum field cleared.
+         */
+        cmd.CmdHeader[7] = 0;
+
+        uint8_t crc = 0xFF;
+        const uint8_t *p =
+            reinterpret_cast<const uint8_t *>(&cmd);
+
+        for (size_t i = 0; i < sizeof(cmd); ++i)
+            crc ^= p[i];
+
+        cmd.CmdHeader[7] = crc;
+
+        packetsign *pkt = static_cast<packetsign *>(
+            malloc(2 + 2 + 4 + sizeof(cmd))
+        );
+
+        if (pkt == NULL) {
+            console.AddLog("[ERROR]##Failed to allocate AIOBC FDIR packet.");
+            break;
+        }
+
+        pkt->Identifier = HVD_TEST;
+        pkt->PacketType = B12_UL_AIOBC;
+        pkt->Length = (uint16_t)sizeof(cmd);
+
+        memcpy(pkt->Data, &cmd, sizeof(cmd));
+
+        console.AddLog(
+            "[AIOBC]##FDIR generated. scenarioid=%u, commandid=%u, flags=%u, conf_scale=%.6f, thre_scale=%.6f, PacketLength=%u",
+            scenarioid,
+            commandid,
+            flags,
+            conf_scale,
+            thre_scale,
+            pkt->Length
+        );
+
+        pthread_join(p_thread[4], NULL);
+        pthread_create(
+            &p_thread[4],
+            NULL,
+            task_uplink_onorbit,
+            static_cast<void *>(pkt)
+        );
+    }
+
+    break;
+}
 
         case 400: {
             UELYSYS_NoArgCmd_t &cmd = command->uelysys_noargcmd;
@@ -23338,6 +23748,11 @@ void Initialize_CMDLabels()
 
 
     snprintf(Templabels[630], 64, "AIOBC HEALTH CHECK");
+    snprintf(Templabels[631], 64, "AIOBC READY CHECK");
+    snprintf(Templabels[632], 64, "AIOBC DATA CHUNK");
+    snprintf(Templabels[633], 64, "AIOBC DATA END");
+    snprintf(Templabels[634], 64, "AIOBC REPORT CHECK");
+    snprintf(Templabels[635], 64, "AIOBC FDIR REQUEST");
     /*****************************************************************************************/
 }
 

@@ -25,7 +25,7 @@
 #define CSP_USE_I2C 1
 #define CSP_USE_KISS 1
 #define CSP_USE_ZMQHUB 1
-#define CSP_CONN_MAX 10
+#define CSP_CONN_MAX 32
 #define CSP_CONN_QUEUE_LENGTH 100
 #define CSP_FIFO_INPUT 100
 #define CSP_MAX_BIND_PORT 31

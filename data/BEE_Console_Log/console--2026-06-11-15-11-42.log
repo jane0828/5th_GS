@@ -1,0 +1,79 @@
+2026-06-11 15:11
+[15:11:58]  Connect to Switch Box..............Failed.
+[15:11:58]  Connect to Rotator.................Failed.
+[15:11:58]  Connect to GS100..................Success.
+[15:11:58]  BEE-1000 BCN Port 31 bind success.
+[15:11:58]  BEE-1000 RPT Port 25 bind success.
+[15:11:58]  BEE-1000 Event Port 27 bind success.
+[15:11:58]  Rotator Read Failed. Please Check Again.
+[15:11:58]  BEE-100 FM Port 23 bind success.
+[15:11:58]  UEL-Y-Sys. BCN Port 12 bind success.
+[15:11:58]  UEL-Y-Sys. RPT Port 10 bind success.
+[15:11:58]  UEL-Y-Sys. Event Port 11 bind success.
+[15:11:58]  UEL-Y-Sys. FM Port 14 bind success.
+[15:11:58]  BEE-1012 BCN Port 17 bind success.
+[15:11:58]  BEE-1012 RPT Port 15 bind success.
+[15:11:58]  BEE-1012 Event Port 16 bind success.
+[15:11:58]  BEE-1012 FM Port 18 bind success.
+[15:11:58]  BEE-1012 AIOBC Port 29 bind success.
+[15:12:04]  Ping Success at node 5, 432ms
+[15:12:09]  Received Report from port : 10.
+[15:12:10]  Received Report from port : 10.
+[15:12:10]  Received Report from port : 10.
+[15:12:10]  Received Report from port : 10.
+[15:12:11]  Received Report from port : 10.
+[15:12:11]  Received Report from port : 10.
+[15:12:30]  Received UELYSYS Beacon from port : 12.
+[15:12:32]  Received UELYSYS Beacon from port : 12.
+[15:12:32]  Received UELYSYS Beacon length mismatch. expected=208 actual=3
+[15:13:00]  Received UELYSYS Beacon from port : 12.
+[15:13:02]  Received UELYSYS Beacon from port : 12.
+[15:13:02]  Received UELYSYS Beacon length mismatch. expected=208 actual=3
+[15:13:19]  Changing GS HMAC Key for UELYSYS...
+[15:13:19]   Satellite Switched to: UELYSYS (TX HMAC enabled)
+[15:13:30]  Received UELYSYS Beacon from port : 12.
+[15:13:32]  Received UELYSYS Beacon from port : 12.
+[15:13:32]  Received UELYSYS Beacon length mismatch. expected=208 actual=3
+[15:14:00]  Received UELYSYS Beacon from port : 12.
+[15:14:02]  Received UELYSYS Beacon from port : 12.
+[15:14:02]  Received UELYSYS Beacon length mismatch. expected=208 actual=3
+[15:14:30]  Received UELYSYS Beacon from port : 12.
+[15:14:32]  Received UELYSYS Beacon from port : 12.
+[15:14:32]  Received UELYSYS Beacon length mismatch. expected=208 actual=3
+[15:15:00]  Received UELYSYS Beacon from port : 12.
+[15:15:02]  Received UELYSYS Beacon from port : 12.
+[15:15:02]  Received UELYSYS Beacon length mismatch. expected=208 actual=3
+[15:25:19]  Changing GS HMAC Key for BEE1000...
+[15:25:19]   Satellite Switched to: BEE1000 (TX HMAC disabled)
+[15:25:29]  Ping Success at node 5, 437ms
+[15:25:35]  Ping Success at node 14, 439ms
+[15:25:46]  Ping Success at node 14, 439ms
+[15:25:48]  Ping Success at node 14, 439ms
+[15:25:49]  Ping Success at node 14, 436ms
+[15:26:46]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x0 0xd6
+[15:28:08]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[15:36:55]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[15:45:06]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[15:46:12]  DataChunk generated. RawDataLength=0, PacketLength=154
+[15:46:12]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x93 0x5 0xd0
+[15:46:30]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x7 0xd1
+[15:47:08]  FDIR generated. scenarioid=0, commandid=0, flags=0, conf_scale=0.000000, thre_scale=0.000000, PacketLength=25
+[15:47:08]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x12 0xe 0xcb
+[15:47:27]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x9 0xdf
+[15:55:45]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[15:56:10]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[15:59:04]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[15:59:11]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[15:59:18]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[15:59:21]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[15:59:33]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[15:59:40]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[16:02:57]  Ping Success at node 14, 437ms
+[16:03:01]  Ping Success at node 14, 440ms
+[16:31:36]  Ping Success at node 14, 437ms
+[16:31:41]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[16:32:07]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[16:32:59]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[16:49:11]  Ping Success at node 14, 442ms
+[16:49:58]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[16:50:17]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7

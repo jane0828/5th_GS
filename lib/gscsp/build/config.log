@@ -1,4 +1,4 @@
-# project mimancsp (2.1.1) configured on Wed Jun 10 23:35:20 2026 by
+# project mimancsp (2.1.1) configured on Thu Jun 11 02:39:34 2026 by
 # waf 2.0.9 (abi 20, python 20712f0 on linux2)
 # using waf configure
 #
@@ -880,10 +880,10 @@ int use_ebcdic (int i) {
 extern int foo;
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_8b54beda317409d6f7aff6f5d74f5709/test.c[0m
+[1/2] Compiling [32mbuild/.conf_check_943abc583737f037b745365af6e3e1c0/test.c[0m
 
-['/usr/bin/gcc', '-std=gnu99', '-m64', '-O3', '-Wall', '-Wextra', '-Wshadow', '-Wcast-align', '-Wwrite-strings', '-Wno-unused-parameter', '-DGS_BUILD_INFO_MAJOR="2"', '-DGS_BUILD_INFO_APPNAME="mimancsp"', '-DGS_BUILD_INFO_TIMESTAMP="2026-06-10T14:35:20Z"', '-DGS_BUILD_INFO_FIX="1"', '-DGS_BUILD_INFO_TIME_CSP="14:35:20"', '-DGS_BUILD_INFO_VERSION="2.1.1"', '-DGS_BUILD_INFO_TIME="14:35:20Z"', '-DGS_BUILD_INFO_DATE="2026-06-10"', '-DGS_BUILD_INFO_VERSION_ONLY="2.1.1"', '-DGS_BUILD_INFO_MINOR="1"', '-DGS_BUILD_INFO_REVISION="2.1.1"', '-DPB_FIELD_16BIT', '../test.c', '-c', '-o/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/build/.conf_check_8b54beda317409d6f7aff6f5d74f5709/testbuild/test.c.1.o']
-[2/2] Processing [35mbuild/.conf_check_8b54beda317409d6f7aff6f5d74f5709/testbuild/test.c.1.o[0m
+['/usr/bin/gcc', '-std=gnu99', '-m64', '-O3', '-Wall', '-Wextra', '-Wshadow', '-Wcast-align', '-Wwrite-strings', '-Wno-unused-parameter', '-DGS_BUILD_INFO_MAJOR="2"', '-DGS_BUILD_INFO_APPNAME="mimancsp"', '-DGS_BUILD_INFO_TIMESTAMP="2026-06-10T17:39:34Z"', '-DGS_BUILD_INFO_FIX="1"', '-DGS_BUILD_INFO_TIME_CSP="17:39:34"', '-DGS_BUILD_INFO_VERSION="2.1.1"', '-DGS_BUILD_INFO_TIME="17:39:34Z"', '-DGS_BUILD_INFO_DATE="2026-06-10"', '-DGS_BUILD_INFO_VERSION_ONLY="2.1.1"', '-DGS_BUILD_INFO_MINOR="1"', '-DGS_BUILD_INFO_REVISION="2.1.1"', '-DPB_FIELD_16BIT', '../test.c', '-c', '-o/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/build/.conf_check_943abc583737f037b745365af6e3e1c0/testbuild/test.c.1.o']
+[2/2] Processing [35mbuild/.conf_check_943abc583737f037b745365af6e3e1c0/testbuild/test.c.1.o[0m
 
 little
 -----------------------------------------------------------------------------------------------------------------------------
@@ -903,10 +903,10 @@ int use_ebcdic (int i) {
 extern int foo;
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_4585db07b04237db4e18f033dc7a4dcb/test.c[0m
+[1/2] Compiling [32mbuild/.conf_check_48f5adf8176bd0389cf68347b96a8bf4/test.c[0m
 
-['/usr/bin/gcc', '-std=gnu99', '-m64', '-O3', '-Wall', '-Wextra', '-Wshadow', '-Wcast-align', '-Wwrite-strings', '-Wno-unused-parameter', '-DNANOPOWER_ENABLE_CONFIG_COMMANDS', '-I../../include', '-DGS_BUILD_INFO_MAJOR="2"', '-DGS_BUILD_INFO_APPNAME="mimancsp"', '-DGS_BUILD_INFO_TIMESTAMP="2026-06-10T14:35:20Z"', '-DGS_BUILD_INFO_FIX="1"', '-DGS_BUILD_INFO_TIME_CSP="14:35:20"', '-DGS_BUILD_INFO_VERSION="2.1.1"', '-DGS_BUILD_INFO_TIME="14:35:20Z"', '-DGS_BUILD_INFO_DATE="2026-06-10"', '-DGS_BUILD_INFO_VERSION_ONLY="2.1.1"', '-DGS_BUILD_INFO_MINOR="1"', '-DGS_BUILD_INFO_REVISION="2.1.1"', '-DPB_FIELD_16BIT', '-DGIT_REV="5ded8720"', '-DCSP_POSIX=1', '-DCSP_DEBUG=1', '-DCSP_USE_RDP=1', '-DCSP_USE_CRC32=1', '-DCSP_USE_HMAC=1', '-DCSP_USE_QOS=1', '-DCSP_USE_DEDUP=1', '-DCSP_USE_KISS=1', '-DCSP_CONN_MAX=10', '-DCSP_CONN_QUEUE_LENGTH=100', '-DCSP_FIFO_INPUT=100', '-DCSP_MAX_BIND_PORT=31', '-DCSP_RDP_MAX_WINDOW=20', '-DCSP_PADDING_BYTES=8', '-DCSP_CONNECTION_SO=64', '-DCSP_LOG_LEVEL_DEBUG=1', '-DCSP_LOG_LEVEL_INFO=1', '-DCSP_LOG_LEVEL_WARN=1', '-DCSP_LOG_LEVEL_ERROR=1', '../test.c', '-c', '-o/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/build/.conf_check_4585db07b04237db4e18f033dc7a4dcb/testbuild/test.c.1.o']
-[2/2] Processing [35mbuild/.conf_check_4585db07b04237db4e18f033dc7a4dcb/testbuild/test.c.1.o[0m
+['/usr/bin/gcc', '-std=gnu99', '-m64', '-O3', '-Wall', '-Wextra', '-Wshadow', '-Wcast-align', '-Wwrite-strings', '-Wno-unused-parameter', '-DNANOPOWER_ENABLE_CONFIG_COMMANDS', '-I../../include', '-DGS_BUILD_INFO_MAJOR="2"', '-DGS_BUILD_INFO_APPNAME="mimancsp"', '-DGS_BUILD_INFO_TIMESTAMP="2026-06-10T17:39:34Z"', '-DGS_BUILD_INFO_FIX="1"', '-DGS_BUILD_INFO_TIME_CSP="17:39:34"', '-DGS_BUILD_INFO_VERSION="2.1.1"', '-DGS_BUILD_INFO_TIME="17:39:34Z"', '-DGS_BUILD_INFO_DATE="2026-06-10"', '-DGS_BUILD_INFO_VERSION_ONLY="2.1.1"', '-DGS_BUILD_INFO_MINOR="1"', '-DGS_BUILD_INFO_REVISION="2.1.1"', '-DPB_FIELD_16BIT', '-DGIT_REV="89f825de"', '-DCSP_POSIX=1', '-DCSP_DEBUG=1', '-DCSP_USE_RDP=1', '-DCSP_USE_CRC32=1', '-DCSP_USE_HMAC=1', '-DCSP_USE_QOS=1', '-DCSP_USE_DEDUP=1', '-DCSP_USE_KISS=1', '-DCSP_CONN_MAX=10', '-DCSP_CONN_QUEUE_LENGTH=100', '-DCSP_FIFO_INPUT=100', '-DCSP_MAX_BIND_PORT=31', '-DCSP_RDP_MAX_WINDOW=20', '-DCSP_PADDING_BYTES=8', '-DCSP_CONNECTION_SO=64', '-DCSP_LOG_LEVEL_DEBUG=1', '-DCSP_LOG_LEVEL_INFO=1', '-DCSP_LOG_LEVEL_WARN=1', '-DCSP_LOG_LEVEL_ERROR=1', '../test.c', '-c', '-o/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/build/.conf_check_48f5adf8176bd0389cf68347b96a8bf4/testbuild/test.c.1.o']
+[2/2] Processing [35mbuild/.conf_check_48f5adf8176bd0389cf68347b96a8bf4/testbuild/test.c.1.o[0m
 
 little
 -----------------------------------------------------------------------------------------------------------------------------
@@ -920,10 +920,10 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_b4d9889c0aefa3f52b2223c917a36332/test.c[0m
+[1/2] Compiling [32mbuild/.conf_check_32716a21998e48639122e1aa7fa4b119/test.c[0m
 
-['/usr/bin/gcc', '-std=gnu99', '-m64', '-O3', '-Wall', '-Wextra', '-Wshadow', '-Wcast-align', '-Wwrite-strings', '-Wno-unused-parameter', '-DNANOPOWER_ENABLE_CONFIG_COMMANDS', '-I../../include', '-DGS_BUILD_INFO_MAJOR="2"', '-DGS_BUILD_INFO_APPNAME="mimancsp"', '-DGS_BUILD_INFO_TIMESTAMP="2026-06-10T14:35:20Z"', '-DGS_BUILD_INFO_FIX="1"', '-DGS_BUILD_INFO_TIME_CSP="14:35:20"', '-DGS_BUILD_INFO_VERSION="2.1.1"', '-DGS_BUILD_INFO_TIME="14:35:20Z"', '-DGS_BUILD_INFO_DATE="2026-06-10"', '-DGS_BUILD_INFO_VERSION_ONLY="2.1.1"', '-DGS_BUILD_INFO_MINOR="1"', '-DGS_BUILD_INFO_REVISION="2.1.1"', '-DPB_FIELD_16BIT', '-DGIT_REV="5ded8720"', '-DCSP_POSIX=1', '-DCSP_DEBUG=1', '-DCSP_USE_RDP=1', '-DCSP_USE_CRC32=1', '-DCSP_USE_HMAC=1', '-DCSP_USE_QOS=1', '-DCSP_USE_DEDUP=1', '-DCSP_USE_KISS=1', '-DCSP_CONN_MAX=10', '-DCSP_CONN_QUEUE_LENGTH=100', '-DCSP_FIFO_INPUT=100', '-DCSP_MAX_BIND_PORT=31', '-DCSP_RDP_MAX_WINDOW=20', '-DCSP_PADDING_BYTES=8', '-DCSP_CONNECTION_SO=64', '-DCSP_LOG_LEVEL_DEBUG=1', '-DCSP_LOG_LEVEL_INFO=1', '-DCSP_LOG_LEVEL_WARN=1', '-DCSP_LOG_LEVEL_ERROR=1', '-DCSP_LITTLE_ENDIAN=1', '../test.c', '-c', '-o/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/build/.conf_check_b4d9889c0aefa3f52b2223c917a36332/testbuild/test.c.1.o']
-[2/2] Linking [33mbuild/.conf_check_b4d9889c0aefa3f52b2223c917a36332/testbuild/libtestprog.a[0m
+['/usr/bin/gcc', '-std=gnu99', '-m64', '-O3', '-Wall', '-Wextra', '-Wshadow', '-Wcast-align', '-Wwrite-strings', '-Wno-unused-parameter', '-DNANOPOWER_ENABLE_CONFIG_COMMANDS', '-I../../include', '-DGS_BUILD_INFO_MAJOR="2"', '-DGS_BUILD_INFO_APPNAME="mimancsp"', '-DGS_BUILD_INFO_TIMESTAMP="2026-06-10T17:39:34Z"', '-DGS_BUILD_INFO_FIX="1"', '-DGS_BUILD_INFO_TIME_CSP="17:39:34"', '-DGS_BUILD_INFO_VERSION="2.1.1"', '-DGS_BUILD_INFO_TIME="17:39:34Z"', '-DGS_BUILD_INFO_DATE="2026-06-10"', '-DGS_BUILD_INFO_VERSION_ONLY="2.1.1"', '-DGS_BUILD_INFO_MINOR="1"', '-DGS_BUILD_INFO_REVISION="2.1.1"', '-DPB_FIELD_16BIT', '-DGIT_REV="89f825de"', '-DCSP_POSIX=1', '-DCSP_DEBUG=1', '-DCSP_USE_RDP=1', '-DCSP_USE_CRC32=1', '-DCSP_USE_HMAC=1', '-DCSP_USE_QOS=1', '-DCSP_USE_DEDUP=1', '-DCSP_USE_KISS=1', '-DCSP_CONN_MAX=10', '-DCSP_CONN_QUEUE_LENGTH=100', '-DCSP_FIFO_INPUT=100', '-DCSP_MAX_BIND_PORT=31', '-DCSP_RDP_MAX_WINDOW=20', '-DCSP_PADDING_BYTES=8', '-DCSP_CONNECTION_SO=64', '-DCSP_LOG_LEVEL_DEBUG=1', '-DCSP_LOG_LEVEL_INFO=1', '-DCSP_LOG_LEVEL_WARN=1', '-DCSP_LOG_LEVEL_ERROR=1', '-DCSP_LITTLE_ENDIAN=1', '../test.c', '-c', '-o/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/build/.conf_check_32716a21998e48639122e1aa7fa4b119/testbuild/test.c.1.o']
+[2/2] Linking [33mbuild/.conf_check_32716a21998e48639122e1aa7fa4b119/testbuild/libtestprog.a[0m
 
 ['/usr/bin/ar', 'rcs', 'libtestprog.a', 'test.c.1.o']
 yes

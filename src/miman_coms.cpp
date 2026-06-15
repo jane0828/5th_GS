@@ -1640,7 +1640,10 @@ csp_socket_t * DL_sock_initialize()
     if(!csp_bind(sock, 18)) {
         console.AddLog("[OK]##BEE-1012 FM Port 18 bind success.");
     }
-        
+    if(!csp_bind(sock, 29)) {
+        console.AddLog("[OK]##BEE-1012 AIOBC Port 29 bind success.");
+    }
+               
         
     // while(true) {
     //     if (csp_bind(sock, 23) == 0) { // Add for HVD_TMTC_TEST
@@ -3603,6 +3606,54 @@ void * task_downlink_onorbit(void * socketinfo)
                     break;
                 }
 
+
+
+                case 29: {
+                        char eventfilename[128];
+                        time_t tmtime = time(0);
+                        struct tm *local = localtime(&tmtime);
+
+                        sprintf(eventfilename,
+                                "../data/event/event--%04d-%02d-%02d-%02d-%02d-%02d--",
+                                local->tm_year + 1900,
+                                local->tm_mon + 1,
+                                local->tm_mday,
+                                local->tm_hour,
+                                local->tm_min,
+                                local->tm_sec);
+
+                        console.AddLog("Received AIOBC TM from port : %d.\n", dport);
+
+                        FILE *evnt_fp = fopen(eventfilename, "wb");
+                        printf("\TM Length: %u", packet->length);
+
+                        for (int i = 0; i < packet->length; i++) {
+                            if (!(i % 10) && i != 0) {
+                                printf("\n");
+                                if (evnt_fp) fprintf(evnt_fp, "\n");
+                            }
+                            printf("0x%x ", packet->data[i]);
+                            if (evnt_fp) fprintf(evnt_fp, "%02hhx\t", packet->data[i]);
+                        }
+
+                        memset(event, 0, sizeof(*event));
+                        memcpy(event, packet->data, BEE_LEN_EVENT);
+                        EventSaver(event);
+
+                        if (evnt_fp) fclose(evnt_fp);
+                    
+
+                    printf("AIOBC Packet Length: %u\n", packet->length);
+                    printf("===== AIOBC TM PACKET DUMP =====\n");
+                    for (int i = 0; i < packet->length; i++) {
+                        if (!(i % 10) && i != 0) printf("\n");
+                        printf("0x%02X ", packet->data[i]);
+                    }
+                    printf("\n===============================\n");
+                    break;
+                }
+
+                
                 case 25: {
                     FILE *rpt_fp = NULL;
 
@@ -4559,7 +4610,7 @@ void * task_uplink_onorbit(void * sign_)
             csp_packet_t * confirm_ = (csp_packet_t *)csp_buffer_get(MIM_LEN_PACKET);
             while(State.uplink_mode)
             {
-                if ((txconn = csp_connect(CSP_PRIO_HIGH, setup->obc_node, 13, MIM_DEFAULT_TIMEOUT, 0)) == NULL) {
+                if ((txconn = csp_connect(CSP_PRIO_HIGH, 14, 10, MIM_DEFAULT_TIMEOUT, 0)) == NULL) {
                 /*!!!!!!!!!!!Revise setup->obc_node!!!!!!!!!!*/ //-> Change to 28.
                 /*!!!!!!!!!!!!Need to revise Port!!!!!!!!!!!*/
                     continue;
