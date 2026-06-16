@@ -1,0 +1,21 @@
+# FTP_Ryu source baseline (source and port hashes must match per pair)
+230cdec0453720d5e61044f3d31baadd4cb42efcca03a863c7001800e9136c45  ../../../FTP_Ryu/client/inc/ftpnew_client.h
+230cdec0453720d5e61044f3d31baadd4cb42efcca03a863c7001800e9136c45  port/client/inc/ftpnew_client.h
+5349ee1d7bfda099fe0b862e48f76e3f66ea441c899aa3377bcbaf08280833d9  ../../../FTP_Ryu/client/inc/ftpnew_client_config.h
+5349ee1d7bfda099fe0b862e48f76e3f66ea441c899aa3377bcbaf08280833d9  port/client/inc/ftpnew_client_config.h
+43515728506b1f9b17c3ad86e90dfb7fa16af8a7c507c135a8a58e78ad8dda1a  ../../../FTP_Ryu/client/src/ftpnew_client.c
+43515728506b1f9b17c3ad86e90dfb7fa16af8a7c507c135a8a58e78ad8dda1a  port/client/src/ftpnew_client.c
+7fb32ce382f35c2c5f95393813a62e54a93ff77ab0a80d556495f25b8dca6d82  ../../../FTP_Ryu/client/src/ftpnew_client_crc32.c
+7fb32ce382f35c2c5f95393813a62e54a93ff77ab0a80d556495f25b8dca6d82  port/client/src/ftpnew_client_crc32.c
+28d194889dab22eddbc30a24895637e060055cbc65355b7fff57aec22fa71e71  ../../../FTP_Ryu/config/ftpnew_config.h
+28d194889dab22eddbc30a24895637e060055cbc65355b7fff57aec22fa71e71  port/config/ftpnew_config.h
+b962fbb5179a5d3f643c23baffd2bbea147c52c130c6ab845ba30ce62be86d05  ../../../FTP_Ryu/config/ftpnew_types.h
+b962fbb5179a5d3f643c23baffd2bbea147c52c130c6ab845ba30ce62be86d05  port/config/ftpnew_types.h
+b3db761c70739591957bdd785714d1dbac3771985cbd3cabe32a4701d1452f2f  ../../../FTP_Ryu/config/ftpnew_types_internal.h
+b3db761c70739591957bdd785714d1dbac3771985cbd3cabe32a4701d1452f2f  port/config/ftpnew_types_internal.h
+
+# Port-owned build and adapter files
+f67d31e6957c4b6a5adf7c243a51fff963926d01d153200c16cd74098330d59c  CMakeLists.txt
+6f18939caa0e9a0575bd11d015dc308144686094e9afc90864b51e11ed264cc4  adapter/include/ryu_ftp_compat.h
+5e7b46c522dc1c1a839659f11f20aabc367853e5549fccc1600e77c5575189e5  adapter/include/ryu_ftp_client_adapter.h
+ebe86e6f444626b391013d270491e038ade69c4f4b7c932c8a5660574412a80a  adapter/src/ryu_ftp_client_adapter.c

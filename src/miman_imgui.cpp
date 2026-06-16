@@ -16,6 +16,7 @@
 #include "miman_model.h"
 #include "miman_s_control.h"
 #include "miman_ftp.h"
+#include "miman_ftprdp_integration.h"
 #include "miman_autopilot.h"
 #include <mutex>
 
@@ -90,6 +91,25 @@ int NowTLE = 0;
 int Requested = -2;
 extern int NowFTP;
 extern Setup * setup;
+
+static int start_ryu_ftp_thread(void *(*worker)(void *))
+{
+    miman_ftp_worker_arg_t * arg =
+        miman_ftp_create_worker_arg(State.ftplistup[NowFTP].local_path,
+                                    State.ftplistup[NowFTP].remote_path);
+    if (arg == NULL) {
+        console.AddLog("[ERROR]##Failed to allocate Ryu FTP worker argument.");
+        return -1;
+    }
+
+    int ret = pthread_create(&p_thread[8], NULL, worker, arg);
+    if (ret != 0) {
+        miman_ftp_destroy_worker_arg(arg);
+        console.AddLog("[ERROR]##Failed to start Ryu FTP thread. Retcode : %d", ret);
+    }
+
+    return ret;
+}
 
 Ptable_0 rparam0;
 Ptable_1 rparam1;
@@ -22052,6 +22072,8 @@ void ImGui_CommandWindow(float fontscale)
     ImGui::SameLine();
     ImGui::RadioButton("V2      ##FTPVersionSelect2", &State.ftp_version, 2);
     ImGui::SameLine();
+    ImGui::RadioButton("Ryu     ##FTPVersionSelect3", &State.ftp_version, 3);
+    ImGui::SameLine();
     ImGui::Text("           ");
     ImGui::SameLine();
     ImGui::Text("Chunk Size ");
@@ -22190,6 +22212,8 @@ void ImGui_CommandWindow(float fontscale)
                 pthread_join(p_thread[8], NULL);
                 if(State.ftp_version == 1)
                     pthread_create(&p_thread[8], NULL, ftp_uplink_force, &State.ftplistup[NowFTP]);
+                else if(State.ftp_version == 3)
+                    start_ryu_ftp_thread(ftp_ryu_uplink_onorbit);
                 else
                     pthread_create(&p_thread[8], NULL, ftp_uplink_onorbit, &State.ftplistup[NowFTP]);
             }
@@ -22238,6 +22262,8 @@ void ImGui_CommandWindow(float fontscale)
                 pthread_join(p_thread[8], NULL);
                 if(State.ftp_version == 1)
                     pthread_create(&p_thread[8], NULL, ftp_downlink_force, &State.ftplistup[NowFTP]);
+                else if(State.ftp_version == 3)
+                    start_ryu_ftp_thread(ftp_ryu_downlink_onorbit);
                 else
                     pthread_create(&p_thread[8], NULL, ftp_downlink_onorbit, &State.ftplistup[NowFTP]);
             }

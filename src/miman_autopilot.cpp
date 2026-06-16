@@ -6,6 +6,7 @@
 #include "miman_radial.h"
 #include "miman_model.h"
 #include "miman_ftp.h"
+#include "miman_ftprdp_integration.h"
 #include "miman_autopilot.h"
 
 
@@ -20,6 +21,25 @@ extern int PingCounter;
 extern int BeaconCounter;
 extern CmdGenerator_GS * SatCMD[256];
 static bool wdt_notsent;
+
+static int start_ryu_ftp_thread(void *(*worker)(void *))
+{
+    miman_ftp_worker_arg_t * arg =
+        miman_ftp_create_worker_arg(State.ftplistup[NowFTP].local_path,
+                                    State.ftplistup[NowFTP].remote_path);
+    if (arg == NULL) {
+        console.AddLog("[ERROR]##[Auto]Failed to allocate Ryu FTP worker argument.");
+        return -1;
+    }
+
+    int ret = pthread_create(&p_thread[8], NULL, worker, arg);
+    if (ret != 0) {
+        miman_ftp_destroy_worker_arg(arg);
+        console.AddLog("[ERROR]##[Auto]Failed to start Ryu FTP thread. Retcode : %d", ret);
+    }
+
+    return ret;
+}
 
 // int FindValuablePath()
 // {
@@ -632,6 +652,8 @@ for (int i = 0; i < 2 && State.Autopilot; i++)
             }
             if(State.ftp_version == 1)
                 pthread_create(&p_thread[8], NULL, ftp_downlink_force, &State.ftplistup[NowFTP]);
+            else if(State.ftp_version == 3)
+                start_ryu_ftp_thread(ftp_ryu_downlink_onorbit);
             else
                 pthread_create(&p_thread[8], NULL, ftp_downlink_onorbit, &State.ftplistup[NowFTP]);
             
@@ -658,6 +680,8 @@ for (int i = 0; i < 2 && State.Autopilot; i++)
             }
             if(State.ftp_version == 1)
                 pthread_create(&p_thread[8], NULL, ftp_uplink_force, &State.ftplistup[NowFTP]);
+            else if(State.ftp_version == 3)
+                start_ryu_ftp_thread(ftp_ryu_uplink_onorbit);
             else
                 pthread_create(&p_thread[8], NULL, ftp_uplink_onorbit, &State.ftplistup[NowFTP]);
             
@@ -862,7 +886,6 @@ int TLE_Autoupdate_Test()
     State.Display_TLE = false;
     printf("Finish Autopilot.\n");
 }
-
 
 
 

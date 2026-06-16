@@ -1,0 +1,38 @@
+# NOT APPLIED - Phase 1 analysis-only diagnostic proposal
+#
+# Required implementation shape for a later approved diagnostic phase:
+#
+# 1. Add a diagnostic-only wrapper outside old client.c and outside Ryu source:
+#
+#    csp_conn_t *diag_csp_connect(
+#        const char *transfer_id,
+#        uint8_t prio, uint8_t dst, uint8_t dport,
+#        uint32_t timeout, uint32_t opts);
+#
+#    int diag_csp_close(
+#        const char *transfer_id,
+#        csp_conn_t *conn);
+#
+# 2. Before and after each wrapped call, log:
+#
+#    monotonic timestamp, transfer ID, connection pointer, connection index,
+#    return value, outer state, RDP state, src/dst, sport/dport, flags,
+#    connection timestamp, and RDP_CLOSE_WAIT age.
+#
+# 3. Add a diagnostic sampler using csp_conn_get_array(). Capture:
+#
+#    baseline, transfer peak, completion +0 s, +5 s, +10 s, and +30 s.
+#
+# 4. Keep all functions behind a diagnostic compile definition. The disabled
+#    build must compile to direct csp_connect/csp_close calls with no timeout,
+#    close, packet, transfer, or protocol behavior changes.
+#
+# 5. The integration owner supplies transfer IDs at the adapter boundary.
+#    Do not add FTP_Ryu code to lib/gscsp/lib/libftp_client/src/client.c.
+#
+# 6. Do not patch csp_rdp_close(), csp_close(), timeout values, packet layout,
+#    or transfer algorithms for diagnostic convenience.
+#
+# A concrete unified diff is intentionally deferred until the Ryu adapter and
+# final call boundary exist. Producing one against old client.c in Phase 1
+# would violate the migration ownership and hidden-mixture constraints.
