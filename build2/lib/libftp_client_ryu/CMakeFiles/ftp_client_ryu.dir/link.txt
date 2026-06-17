@@ -1,0 +1,2 @@
+/usr/bin/ar qc libftp_client_ryu.a CMakeFiles/ftp_client_ryu.dir/port/client/src/ftpnew_client.c.o CMakeFiles/ftp_client_ryu.dir/port/client/src/ftpnew_client_crc32.c.o CMakeFiles/ftp_client_ryu.dir/adapter/src/ryu_ftp_client_adapter.c.o
+/usr/bin/ranlib libftp_client_ryu.a

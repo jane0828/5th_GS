@@ -1,13 +1,13 @@
-# project mimancsp (2.1.1) configured on Thu Jun 11 02:39:34 2026 by
+# project mimancsp (2.1.1) configured on Wed Jun 17 22:25:51 2026 by
 # waf 2.0.9 (abi 20, python 20712f0 on linux2)
 # using waf configure
 #
 ----------------------------------------
 Setting top to
-/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp
+/home/hyvrid/Desktop/FTP_Ryu/lib/gscsp
 ----------------------------------------
 Setting out to
-/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/build
+/home/hyvrid/Desktop/FTP_Ryu/lib/gscsp/build
 ----------------------------------------
 Checking for waf version in 2.0.9-2.0.9
 ok
@@ -35,7 +35,7 @@ linux
 ----------------------------------------
 Checking for program 'gcc, cc'
 /usr/bin/gcc
-find program=['gcc', 'cc'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin', '/home/hyvrid/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', '/home/hyvrid/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'] var='CC' -> ['/usr/bin/gcc']
+find program=['gcc', 'cc'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin'] var='CC' -> ['/usr/bin/gcc']
 ['/usr/bin/gcc', '-dM', '-E', '-']
 out: #define __SSP_STRONG__ 3
 #define __DBL_MIN_EXP__ (-1021)
@@ -408,11 +408,11 @@ out: #define __SSP_STRONG__ 3
 ----------------------------------------
 Checking for program 'ar'
 /usr/bin/ar
-find program=['ar'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin', '/home/hyvrid/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', '/home/hyvrid/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'] var='AR' -> ['/usr/bin/ar']
+find program=['ar'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin'] var='AR' -> ['/usr/bin/ar']
 ----------------------------------------
 Checking for program 'g++, c++'
 /usr/bin/g++
-find program=['g++', 'c++'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin', '/home/hyvrid/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', '/home/hyvrid/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'] var='CXX' -> ['/usr/bin/g++']
+find program=['g++', 'c++'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin'] var='CXX' -> ['/usr/bin/g++']
 ['/usr/bin/g++', '-dM', '-E', '-']
 out: #define __SSP_STRONG__ 3
 #define __DBL_MIN_EXP__ (-1021)
@@ -785,42 +785,42 @@ out: #define __SSP_STRONG__ 3
 ----------------------------------------
 Checking for program 'ar'
 /usr/bin/ar
-find program=['ar'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin', '/home/hyvrid/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', '/home/hyvrid/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'] var='AR' -> ['/usr/bin/ar']
+find program=['ar'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin'] var='AR' -> ['/usr/bin/ar']
 ----------------------------------------
 Checking for program 'gas, gcc'
 /usr/bin/gcc
-find program=['gas', 'gcc'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin', '/home/hyvrid/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', '/home/hyvrid/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'] var='AS' -> ['/usr/bin/gcc']
+find program=['gas', 'gcc'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin'] var='AS' -> ['/usr/bin/gcc']
 ----------------------------------------
 Checking for program 'ar'
 /usr/bin/ar
-find program=['ar'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin', '/home/hyvrid/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', '/home/hyvrid/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'] var='AR' -> ['/usr/bin/ar']
+find program=['ar'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin'] var='AR' -> ['/usr/bin/ar']
 ----------------------------------------
 Checking for program 'gcc'
 /usr/bin/gcc
-find program=['gcc'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin', '/home/hyvrid/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', '/home/hyvrid/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'] var='CC' -> ['/usr/bin/gcc']
+find program=['gcc'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin'] var='CC' -> ['/usr/bin/gcc']
 ----------------------------------------
 Checking for program 'g++'
 /usr/bin/g++
-find program=['g++'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin', '/home/hyvrid/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', '/home/hyvrid/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'] var='CXX' -> ['/usr/bin/g++']
+find program=['g++'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin'] var='CXX' -> ['/usr/bin/g++']
 ----------------------------------------
 Checking for program 'as'
 /usr/bin/gcc
-find program=['as'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin', '/home/hyvrid/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', '/home/hyvrid/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'] var='AS' -> ['/usr/bin/gcc']
+find program=['as'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin'] var='AS' -> ['/usr/bin/gcc']
 ----------------------------------------
 Checking for program 'ar'
 /usr/bin/ar
-find program=['ar'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin', '/home/hyvrid/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', '/home/hyvrid/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'] var='AR' -> ['/usr/bin/ar']
+find program=['ar'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin'] var='AR' -> ['/usr/bin/ar']
 ----------------------------------------
 Compiler (CC) version
 11.4.0
------------------------------------------------------------------------------------------------------------------------------
-/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/tools/buildtools/waftool/gs_gcc.pyc.c:0:0: warning: Expected compiler (CC) version
+-------------------------------------------------------------------------------------------------------------------------
+/home/hyvrid/Desktop/FTP_Ryu/lib/gscsp/tools/buildtools/waftool/gs_gcc.pyc.c:0:0: warning: Expected compiler (CC) version
 5.4.0
------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
 Checking for program 'pkg-config'
 /usr/bin/pkg-config
-find program=['pkg-config'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin', '/home/hyvrid/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', '/home/hyvrid/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'] var='PKGCONFIG' -> ['/usr/bin/pkg-config']
------------------------------------------------------------------------------------------------------------------------------
+find program=['pkg-config'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin'] var='PKGCONFIG' -> ['/usr/bin/pkg-config']
+-------------------------------------------------------------------------------------------------------------------------
 Checking for 'python2'
 ['/usr/bin/pkg-config', '--cflags', '--libs', 'python2']
 err: Package python2 was not found in the pkg-config search path.
@@ -829,31 +829,31 @@ to the PKG_CONFIG_PATH environment variable
 No package 'python2' found
 
 not found
-from /home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp: The configuration failed
------------------------------------------------------------------------------------------------------------------------------
+from /home/hyvrid/Desktop/FTP_Ryu/lib/gscsp: The configuration failed
+-------------------------------------------------------------------------------------------------------------------------
 Checking for 'python3'
 ['/usr/bin/pkg-config', '--cflags', '--libs', 'python3']
 out: -I/usr/include/python3.10 -I/usr/include/x86_64-linux-gnu/python3.10
 
 yes
------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
 Repository rev.
 2.1.1
------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
 Checking for program 'protoc'
 not found
-find program=['protoc'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin', '/home/hyvrid/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', '/home/hyvrid/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'] var='PROTOC' -> None
-from /home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/lib/libnanopb: Could not find the program ['protoc']
------------------------------------------------------------------------------------------------------------------------------
+find program=['protoc'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin'] var='PROTOC' -> None
+from /home/hyvrid/Desktop/FTP_Ryu/lib/gscsp/lib/libnanopb: Could not find the program ['protoc']
+-------------------------------------------------------------------------------------------------------------------------
 Checking for program 'protoc-gen-doc'
 not found
-find program=['protoc-gen-doc'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin', '/home/hyvrid/.vscode/extensions/ms-python.debugpy-2026.6.0-linux-x64/bundled/scripts/noConfigScripts', '/home/hyvrid/.config/Code/User/globalStorage/github.copilot-chat/debugCommand'] var='PROTOC_GEN_DOC' -> None
-from /home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/lib/libnanopb: Could not find the program ['protoc-gen-doc']
------------------------------------------------------------------------------------------------------------------------------
+find program=['protoc-gen-doc'] paths=['/home/hyvrid/.nvm/versions/node/v22.19.0/bin', '/home/hyvrid/.local/bin', '/usr/local/sbin', '/usr/local/bin', '/usr/sbin', '/usr/bin', '/sbin', '/bin', '/usr/games', '/usr/local/games', '/snap/bin', '/snap/bin'] var='PROTOC_GEN_DOC' -> None
+from /home/hyvrid/Desktop/FTP_Ryu/lib/gscsp/lib/libnanopb: Could not find the program ['protoc-gen-doc']
+-------------------------------------------------------------------------------------------------------------------------
 Checking for program 'protoc-gen-nanopb'
-/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/lib/libnanopb/tools/generator/protoc-gen-nanopb
-find program=['protoc-gen-nanopb'] paths=['/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/lib/libnanopb/tools/generator/'] var='PROTOC_GEN_NANOPB' -> ['/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/lib/libnanopb/tools/generator/protoc-gen-nanopb']
------------------------------------------------------------------------------------------------------------------------------
+/home/hyvrid/Desktop/FTP_Ryu/lib/gscsp/lib/libnanopb/tools/generator/protoc-gen-nanopb
+find program=['protoc-gen-nanopb'] paths=['/home/hyvrid/Desktop/FTP_Ryu/lib/gscsp/lib/libnanopb/tools/generator/'] var='PROTOC_GEN_NANOPB' -> ['/home/hyvrid/Desktop/FTP_Ryu/lib/gscsp/lib/libnanopb/tools/generator/protoc-gen-nanopb']
+-------------------------------------------------------------------------------------------------------------------------
 Checking for 'cmocka'
 ['/usr/bin/pkg-config', '--cflags', '--libs', 'cmocka']
 err: Package cmocka was not found in the pkg-config search path.
@@ -862,8 +862,8 @@ to the PKG_CONFIG_PATH environment variable
 No package 'cmocka' found
 
 not found
-from /home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/lib/libutil: The configuration failed
------------------------------------------------------------------------------------------------------------------------------
+from /home/hyvrid/Desktop/FTP_Ryu/lib/gscsp/lib/libutil: The configuration failed
+-------------------------------------------------------------------------------------------------------------------------
 Checking for endianness
 ==>
 
@@ -880,13 +880,13 @@ int use_ebcdic (int i) {
 extern int foo;
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_943abc583737f037b745365af6e3e1c0/test.c[0m
+[1/2] Compiling [32mbuild/.conf_check_b180d518a39212af9a209193d7cf949f/test.c[0m
 
-['/usr/bin/gcc', '-std=gnu99', '-m64', '-O3', '-Wall', '-Wextra', '-Wshadow', '-Wcast-align', '-Wwrite-strings', '-Wno-unused-parameter', '-DGS_BUILD_INFO_MAJOR="2"', '-DGS_BUILD_INFO_APPNAME="mimancsp"', '-DGS_BUILD_INFO_TIMESTAMP="2026-06-10T17:39:34Z"', '-DGS_BUILD_INFO_FIX="1"', '-DGS_BUILD_INFO_TIME_CSP="17:39:34"', '-DGS_BUILD_INFO_VERSION="2.1.1"', '-DGS_BUILD_INFO_TIME="17:39:34Z"', '-DGS_BUILD_INFO_DATE="2026-06-10"', '-DGS_BUILD_INFO_VERSION_ONLY="2.1.1"', '-DGS_BUILD_INFO_MINOR="1"', '-DGS_BUILD_INFO_REVISION="2.1.1"', '-DPB_FIELD_16BIT', '../test.c', '-c', '-o/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/build/.conf_check_943abc583737f037b745365af6e3e1c0/testbuild/test.c.1.o']
-[2/2] Processing [35mbuild/.conf_check_943abc583737f037b745365af6e3e1c0/testbuild/test.c.1.o[0m
+['/usr/bin/gcc', '-std=gnu99', '-m64', '-O3', '-Wall', '-Wextra', '-Wshadow', '-Wcast-align', '-Wwrite-strings', '-Wno-unused-parameter', '-DGS_BUILD_INFO_MAJOR="2"', '-DGS_BUILD_INFO_APPNAME="mimancsp"', '-DGS_BUILD_INFO_TIMESTAMP="2026-06-17T13:25:51Z"', '-DGS_BUILD_INFO_FIX="1"', '-DGS_BUILD_INFO_TIME_CSP="13:25:51"', '-DGS_BUILD_INFO_VERSION="2.1.1"', '-DGS_BUILD_INFO_TIME="13:25:51Z"', '-DGS_BUILD_INFO_DATE="2026-06-17"', '-DGS_BUILD_INFO_VERSION_ONLY="2.1.1"', '-DGS_BUILD_INFO_MINOR="1"', '-DGS_BUILD_INFO_REVISION="2.1.1"', '-DPB_FIELD_16BIT', '../test.c', '-c', '-o/home/hyvrid/Desktop/FTP_Ryu/lib/gscsp/build/.conf_check_b180d518a39212af9a209193d7cf949f/testbuild/test.c.1.o']
+[2/2] Processing [35mbuild/.conf_check_b180d518a39212af9a209193d7cf949f/testbuild/test.c.1.o[0m
 
 little
------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
 Checking for endianness
 ==>
 
@@ -903,13 +903,13 @@ int use_ebcdic (int i) {
 extern int foo;
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_48f5adf8176bd0389cf68347b96a8bf4/test.c[0m
+[1/2] Compiling [32mbuild/.conf_check_2aafc86d70594e5bffee1759d63604ad/test.c[0m
 
-['/usr/bin/gcc', '-std=gnu99', '-m64', '-O3', '-Wall', '-Wextra', '-Wshadow', '-Wcast-align', '-Wwrite-strings', '-Wno-unused-parameter', '-DNANOPOWER_ENABLE_CONFIG_COMMANDS', '-I../../include', '-DGS_BUILD_INFO_MAJOR="2"', '-DGS_BUILD_INFO_APPNAME="mimancsp"', '-DGS_BUILD_INFO_TIMESTAMP="2026-06-10T17:39:34Z"', '-DGS_BUILD_INFO_FIX="1"', '-DGS_BUILD_INFO_TIME_CSP="17:39:34"', '-DGS_BUILD_INFO_VERSION="2.1.1"', '-DGS_BUILD_INFO_TIME="17:39:34Z"', '-DGS_BUILD_INFO_DATE="2026-06-10"', '-DGS_BUILD_INFO_VERSION_ONLY="2.1.1"', '-DGS_BUILD_INFO_MINOR="1"', '-DGS_BUILD_INFO_REVISION="2.1.1"', '-DPB_FIELD_16BIT', '-DGIT_REV="89f825de"', '-DCSP_POSIX=1', '-DCSP_DEBUG=1', '-DCSP_USE_RDP=1', '-DCSP_USE_CRC32=1', '-DCSP_USE_HMAC=1', '-DCSP_USE_QOS=1', '-DCSP_USE_DEDUP=1', '-DCSP_USE_KISS=1', '-DCSP_CONN_MAX=10', '-DCSP_CONN_QUEUE_LENGTH=100', '-DCSP_FIFO_INPUT=100', '-DCSP_MAX_BIND_PORT=31', '-DCSP_RDP_MAX_WINDOW=20', '-DCSP_PADDING_BYTES=8', '-DCSP_CONNECTION_SO=64', '-DCSP_LOG_LEVEL_DEBUG=1', '-DCSP_LOG_LEVEL_INFO=1', '-DCSP_LOG_LEVEL_WARN=1', '-DCSP_LOG_LEVEL_ERROR=1', '../test.c', '-c', '-o/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/build/.conf_check_48f5adf8176bd0389cf68347b96a8bf4/testbuild/test.c.1.o']
-[2/2] Processing [35mbuild/.conf_check_48f5adf8176bd0389cf68347b96a8bf4/testbuild/test.c.1.o[0m
+['/usr/bin/gcc', '-std=gnu99', '-m64', '-O3', '-Wall', '-Wextra', '-Wshadow', '-Wcast-align', '-Wwrite-strings', '-Wno-unused-parameter', '-DNANOPOWER_ENABLE_CONFIG_COMMANDS', '-I../../include', '-DGS_BUILD_INFO_MAJOR="2"', '-DGS_BUILD_INFO_APPNAME="mimancsp"', '-DGS_BUILD_INFO_TIMESTAMP="2026-06-17T13:25:51Z"', '-DGS_BUILD_INFO_FIX="1"', '-DGS_BUILD_INFO_TIME_CSP="13:25:51"', '-DGS_BUILD_INFO_VERSION="2.1.1"', '-DGS_BUILD_INFO_TIME="13:25:51Z"', '-DGS_BUILD_INFO_DATE="2026-06-17"', '-DGS_BUILD_INFO_VERSION_ONLY="2.1.1"', '-DGS_BUILD_INFO_MINOR="1"', '-DGS_BUILD_INFO_REVISION="2.1.1"', '-DPB_FIELD_16BIT', '-DGIT_REV="c195b0a41"', '-DCSP_POSIX=1', '-DCSP_DEBUG=1', '-DCSP_USE_RDP=1', '-DCSP_USE_CRC32=1', '-DCSP_USE_HMAC=1', '-DCSP_USE_QOS=1', '-DCSP_USE_DEDUP=1', '-DCSP_USE_KISS=1', '-DCSP_CONN_MAX=10', '-DCSP_CONN_QUEUE_LENGTH=100', '-DCSP_FIFO_INPUT=100', '-DCSP_MAX_BIND_PORT=31', '-DCSP_RDP_MAX_WINDOW=20', '-DCSP_PADDING_BYTES=8', '-DCSP_CONNECTION_SO=64', '-DCSP_LOG_LEVEL_DEBUG=1', '-DCSP_LOG_LEVEL_INFO=1', '-DCSP_LOG_LEVEL_WARN=1', '-DCSP_LOG_LEVEL_ERROR=1', '../test.c', '-c', '-o/home/hyvrid/Desktop/FTP_Ryu/lib/gscsp/build/.conf_check_2aafc86d70594e5bffee1759d63604ad/testbuild/test.c.1.o']
+[2/2] Processing [35mbuild/.conf_check_2aafc86d70594e5bffee1759d63604ad/testbuild/test.c.1.o[0m
 
 little
------------------------------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------------------------------------------
 Checking for header stdbool.h
 ==>
 #include <stdbool.h>
@@ -920,10 +920,10 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_32716a21998e48639122e1aa7fa4b119/test.c[0m
+[1/2] Compiling [32mbuild/.conf_check_a557c2a516c305e469c7448530745a04/test.c[0m
 
-['/usr/bin/gcc', '-std=gnu99', '-m64', '-O3', '-Wall', '-Wextra', '-Wshadow', '-Wcast-align', '-Wwrite-strings', '-Wno-unused-parameter', '-DNANOPOWER_ENABLE_CONFIG_COMMANDS', '-I../../include', '-DGS_BUILD_INFO_MAJOR="2"', '-DGS_BUILD_INFO_APPNAME="mimancsp"', '-DGS_BUILD_INFO_TIMESTAMP="2026-06-10T17:39:34Z"', '-DGS_BUILD_INFO_FIX="1"', '-DGS_BUILD_INFO_TIME_CSP="17:39:34"', '-DGS_BUILD_INFO_VERSION="2.1.1"', '-DGS_BUILD_INFO_TIME="17:39:34Z"', '-DGS_BUILD_INFO_DATE="2026-06-10"', '-DGS_BUILD_INFO_VERSION_ONLY="2.1.1"', '-DGS_BUILD_INFO_MINOR="1"', '-DGS_BUILD_INFO_REVISION="2.1.1"', '-DPB_FIELD_16BIT', '-DGIT_REV="89f825de"', '-DCSP_POSIX=1', '-DCSP_DEBUG=1', '-DCSP_USE_RDP=1', '-DCSP_USE_CRC32=1', '-DCSP_USE_HMAC=1', '-DCSP_USE_QOS=1', '-DCSP_USE_DEDUP=1', '-DCSP_USE_KISS=1', '-DCSP_CONN_MAX=10', '-DCSP_CONN_QUEUE_LENGTH=100', '-DCSP_FIFO_INPUT=100', '-DCSP_MAX_BIND_PORT=31', '-DCSP_RDP_MAX_WINDOW=20', '-DCSP_PADDING_BYTES=8', '-DCSP_CONNECTION_SO=64', '-DCSP_LOG_LEVEL_DEBUG=1', '-DCSP_LOG_LEVEL_INFO=1', '-DCSP_LOG_LEVEL_WARN=1', '-DCSP_LOG_LEVEL_ERROR=1', '-DCSP_LITTLE_ENDIAN=1', '../test.c', '-c', '-o/home/hyvrid/Desktop/0609/BEE_GS/lib/gscsp/build/.conf_check_32716a21998e48639122e1aa7fa4b119/testbuild/test.c.1.o']
-[2/2] Linking [33mbuild/.conf_check_32716a21998e48639122e1aa7fa4b119/testbuild/libtestprog.a[0m
+['/usr/bin/gcc', '-std=gnu99', '-m64', '-O3', '-Wall', '-Wextra', '-Wshadow', '-Wcast-align', '-Wwrite-strings', '-Wno-unused-parameter', '-DNANOPOWER_ENABLE_CONFIG_COMMANDS', '-I../../include', '-DGS_BUILD_INFO_MAJOR="2"', '-DGS_BUILD_INFO_APPNAME="mimancsp"', '-DGS_BUILD_INFO_TIMESTAMP="2026-06-17T13:25:51Z"', '-DGS_BUILD_INFO_FIX="1"', '-DGS_BUILD_INFO_TIME_CSP="13:25:51"', '-DGS_BUILD_INFO_VERSION="2.1.1"', '-DGS_BUILD_INFO_TIME="13:25:51Z"', '-DGS_BUILD_INFO_DATE="2026-06-17"', '-DGS_BUILD_INFO_VERSION_ONLY="2.1.1"', '-DGS_BUILD_INFO_MINOR="1"', '-DGS_BUILD_INFO_REVISION="2.1.1"', '-DPB_FIELD_16BIT', '-DGIT_REV="c195b0a41"', '-DCSP_POSIX=1', '-DCSP_DEBUG=1', '-DCSP_USE_RDP=1', '-DCSP_USE_CRC32=1', '-DCSP_USE_HMAC=1', '-DCSP_USE_QOS=1', '-DCSP_USE_DEDUP=1', '-DCSP_USE_KISS=1', '-DCSP_CONN_MAX=10', '-DCSP_CONN_QUEUE_LENGTH=100', '-DCSP_FIFO_INPUT=100', '-DCSP_MAX_BIND_PORT=31', '-DCSP_RDP_MAX_WINDOW=20', '-DCSP_PADDING_BYTES=8', '-DCSP_CONNECTION_SO=64', '-DCSP_LOG_LEVEL_DEBUG=1', '-DCSP_LOG_LEVEL_INFO=1', '-DCSP_LOG_LEVEL_WARN=1', '-DCSP_LOG_LEVEL_ERROR=1', '-DCSP_LITTLE_ENDIAN=1', '../test.c', '-c', '-o/home/hyvrid/Desktop/FTP_Ryu/lib/gscsp/build/.conf_check_a557c2a516c305e469c7448530745a04/testbuild/test.c.1.o']
+[2/2] Linking [33mbuild/.conf_check_a557c2a516c305e469c7448530745a04/testbuild/libtestprog.a[0m
 
 ['/usr/bin/ar', 'rcs', 'libtestprog.a', 'test.c.1.o']
 yes

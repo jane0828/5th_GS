@@ -54,19 +54,106 @@ void csp_debug_hook_set(csp_debug_hook_func_t f)
 	csp_debug_hook_func = f;
 }
 
+// void do_csp_debug(csp_debug_level_t level, const char *format, ...)
+// {
+// 	int color = COLOR_RESET;
+// 	va_list args;
+// 	char debugbuf[256];
+	
+// 	char str[256];
+// 	char tmp[256];
+// 	memset(debugbuf, 0 , sizeof(debugbuf));
+// 	memset(str, 0 , sizeof(str));
+// 	memset(tmp, 0 , sizeof(tmp));
+
+// 	/* Don't print anything if log level is disabled */
+// 	if (level > CSP_LOCK || !csp_debug_level_enabled[level])
+// 		return;
+
+// 	switch(level) {
+// 	case CSP_INFO:
+// 		color = COLOR_GREEN | COLOR_BOLD;
+// 		break;
+// 	case CSP_ERROR:
+// 		color = COLOR_RED | COLOR_BOLD;
+// 		break;
+// 	case CSP_WARN:
+// 		color = COLOR_YELLOW | COLOR_BOLD;
+// 		break;
+// 	case CSP_BUFFER:
+// 		color = COLOR_MAGENTA;
+// 		break;
+// 	case CSP_PACKET:
+// 		color = COLOR_GREEN;
+// 		break;
+// 	case CSP_PROTOCOL:
+// 		color = COLOR_BLUE;
+// 		break;
+// 	case CSP_LOCK:
+// 		color = COLOR_CYAN;
+// 		break;
+// 	default:
+// 		return;
+// 	}
+
+// 	va_start(args, format);
+// 	vsprintf(debugbuf, format, args);
+// 	if(strstr(debugbuf, "S 20") || strstr(debugbuf, "D 20") || strstr(debugbuf, "Dp 7") || strstr(debugbuf, "Sp 7"))
+// 	{
+// 		memset(debugbuf, 0, sizeof(debugbuf));
+// 		va_end(args);
+// 		return;
+// 	}
+
+// 	/* If csp_debug_hook symbol is defined, pass on the message.
+// 	 * Otherwise, just print with pretty colors ... */
+// 	if (csp_debug_hook_func) {
+// 		csp_sys_set_color(color);
+// 		printf(debugbuf);
+// 		printf("\r\n");
+// 		csp_sys_set_color(COLOR_RESET);
+// 		csp_debug_hook_func(filename);
+
+// 		time_t now = time(NULL);
+//     	struct tm _now_time;
+// 		_now_time = *localtime(&now);
+// 		FILE * fp;
+// 		fp = fopen(filename, "a+");
+
+// 		strftime(tmp, sizeof(tmp), "[%H:%M:%S]  ", &_now_time);
+// 		strcat(str, tmp);
+// 		strcat(str, debugbuf);
+// 		fprintf(fp, " %s\r\n", str);
+// 		fclose(fp);
+
+
+// 	} else {
+// 		csp_sys_set_color(color);
+// #ifdef __AVR__
+// 		vfprintf_P(stdout, format, args);
+// #else
+// 		vprintf(format, args);
+// #endif
+// 		printf("\r\n");
+// 		csp_sys_set_color(COLOR_RESET);
+// 	}
+
+// 	va_end(args);
+// }
+
+
 void do_csp_debug(csp_debug_level_t level, const char *format, ...)
 {
 	int color = COLOR_RESET;
 	va_list args;
 	char debugbuf[256];
-	
 	char str[256];
 	char tmp[256];
-	memset(debugbuf, 0 , sizeof(debugbuf));
-	memset(str, 0 , sizeof(str));
-	memset(tmp, 0 , sizeof(tmp));
 
-	/* Don't print anything if log level is disabled */
+	memset(debugbuf, 0, sizeof(debugbuf));
+	memset(str, 0, sizeof(str));
+	memset(tmp, 0, sizeof(tmp));
+
 	if (level > CSP_LOCK || !csp_debug_level_enabled[level])
 		return;
 
@@ -97,42 +184,62 @@ void do_csp_debug(csp_debug_level_t level, const char *format, ...)
 	}
 
 	va_start(args, format);
-	vsprintf(debugbuf, format, args);
-	if(strstr(debugbuf, "S 20") || strstr(debugbuf, "D 20") || strstr(debugbuf, "Dp 7") || strstr(debugbuf, "Sp 7"))
-	{
-		memset(debugbuf, 0, sizeof(debugbuf));
+	vsnprintf(debugbuf, sizeof(debugbuf), format, args);
+
+	if (strstr(debugbuf, "S 20") ||
+	    strstr(debugbuf, "D 20") ||
+	    strstr(debugbuf, "Dp 7") ||
+	    strstr(debugbuf, "Sp 7")) {
 		va_end(args);
 		return;
 	}
 
-	/* If csp_debug_hook symbol is defined, pass on the message.
-	 * Otherwise, just print with pretty colors ... */
 	if (csp_debug_hook_func) {
 		csp_sys_set_color(color);
-		printf(debugbuf);
+		printf("%s", debugbuf);
 		printf("\r\n");
 		csp_sys_set_color(COLOR_RESET);
+
+		memset(filename, 0, sizeof(filename));
 		csp_debug_hook_func(filename);
 
+		if (filename[0] == '\0') {
+			fprintf(stderr, "csp debug filename is empty\r\n");
+			va_end(args);
+			return;
+		}
+
 		time_t now = time(NULL);
-    	struct tm _now_time;
-		_now_time = *localtime(&now);
-		FILE * fp;
-		fp = fopen(filename, "a+");
+		struct tm _now_time;
+		struct tm *local = localtime(&now);
+
+		if (local == NULL) {
+			fprintf(stderr, "csp debug localtime failed\r\n");
+			va_end(args);
+			return;
+		}
+
+		_now_time = *local;
+
+		FILE *fp = fopen(filename, "a+");
+		if (fp == NULL) {
+			perror("csp debug fopen failed");
+			va_end(args);
+			return;
+		}
 
 		strftime(tmp, sizeof(tmp), "[%H:%M:%S]  ", &_now_time);
-		strcat(str, tmp);
-		strcat(str, debugbuf);
+		snprintf(str, sizeof(str), "%s%s", tmp, debugbuf);
+
 		fprintf(fp, " %s\r\n", str);
 		fclose(fp);
-
 
 	} else {
 		csp_sys_set_color(color);
 #ifdef __AVR__
 		vfprintf_P(stdout, format, args);
 #else
-		vprintf(format, args);
+		printf("%s", debugbuf);
 #endif
 		printf("\r\n");
 		csp_sys_set_color(COLOR_RESET);
@@ -140,6 +247,7 @@ void do_csp_debug(csp_debug_level_t level, const char *format, ...)
 
 	va_end(args);
 }
+
 
 void csp_debug_set_level(csp_debug_level_t level, bool value)
 {

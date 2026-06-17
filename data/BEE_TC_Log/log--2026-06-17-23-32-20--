@@ -1,0 +1,61 @@
+[23:32:27]  Connect to Switch Box..............Failed.
+[23:32:27]  Connect to Rotator.................Failed.
+[23:32:27]  Connect to GS100..................Success.
+[23:32:27]  BEE-1000 BCN Port 31 bind success.
+[23:32:27]  BEE-1000 RPT Port 25 bind success.
+[23:32:27]  BEE-1000 Event Port 27 bind success.
+[23:32:27]  BEE-100 FM Port 23 bind success.
+[23:32:27]  UEL-Y-Sys. BCN Port 12 bind success.
+[23:32:27]  UEL-Y-Sys. RPT Port 10 bind success.
+[23:32:27]  UEL-Y-Sys. Event Port 11 bind success.
+[23:32:27]  UEL-Y-Sys. FM Port 14 bind success.
+[23:32:27]  BEE-1012 BCN Port 17 bind success.
+[23:32:27]  BEE-1012 RPT Port 15 bind success.
+[23:32:27]  Rotator Read Failed. Please Check Again.
+[23:32:27]  BEE-1012 Event Port 16 bind success.
+[23:32:27]  BEE-1012 FM Port 18 bind success.
+[23:32:27]  BEE-1012 AIOBC Port 29 bind success.
+[23:32:29]  Ping Success at node 5, 453ms
+[23:32:48]  FTP_OLD_UPLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[23:32:49]  Start FTP OLD UPLOAD id=1.
+[23:32:49]  [FTP_OLD_TEST][id=1][UPLOAD] begin local=file://../meow_lib.so remote=file://./cf/uplinkkkkkkkkkk.so host=10 port=9 chunk=180
+[23:32:49]  Received FTP Upload Spec.
+[23:32:49]  Received FTP Upload File Spec. Filesize : 18416, CRC : 3758570869.
+[23:32:53]  Received FTP Status Reply.
+[23:32:53]  Start FTP Uplink. Total Chunk Size : 103
+[23:32:53]  Upload : 0/103
+[23:32:53]  [FTP_OLD_TEST][id=1][UPLOAD] progress 0/103 chunk=180
+[23:32:54]  Upload : 1/103
+[23:32:54]  [FTP_OLD_TEST][id=1][UPLOAD] progress 1/103 chunk=180
+[23:32:56]  Upload : 2/103
+[23:32:56]  [FTP_OLD_TEST][id=1][UPLOAD] progress 2/103 chunk=180
+[23:32:57]  Upload : 3/103
+[23:32:57]  [FTP_OLD_TEST][id=1][UPLOAD] progress 3/103 chunk=180
+[23:32:59]  Upload : 4/103
+[23:32:59]  [FTP_OLD_TEST][id=1][UPLOAD] progress 4/103 chunk=180
+[23:33:00]  Upload : 5/103
+[23:33:00]  [FTP_OLD_TEST][id=1][UPLOAD] progress 5/103 chunk=180
+[23:33:02]  Upload : 6/103
+[23:33:02]  [FTP_OLD_TEST][id=1][UPLOAD] progress 6/103 chunk=180
+[23:33:13]  Upload : 7/103
+[23:33:13]  [FTP_OLD_TEST][id=1][UPLOAD] progress 7/103 chunk=180
+[23:33:14]  Upload : 8/103
+[23:33:14]  [FTP_OLD_TEST][id=1][UPLOAD] progress 8/103 chunk=180
+[23:33:16]  Upload : 9/103
+[23:33:16]  [FTP_OLD_TEST][id=1][UPLOAD] progress 9/103 chunk=180
+[23:33:17]  Upload : 10/103
+[23:33:17]  [FTP_OLD_TEST][id=1][UPLOAD] progress 10/103 chunk=180
+[23:33:19]  Upload : 11/103
+[23:33:19]  [FTP_OLD_TEST][id=1][UPLOAD] progress 11/103 chunk=180
+[23:33:20]  Upload : 12/103
+[23:33:20]  [FTP_OLD_TEST][id=1][UPLOAD] progress 12/103 chunk=180
+[23:33:30]  Upload : 13/103
+[23:33:30]  [FTP_OLD_TEST][id=1][UPLOAD] progress 13/103 chunk=180
+[23:33:31]  Upload : 14/103
+[23:33:31]  [FTP_OLD_TEST][id=1][UPLOAD] progress 14/103 chunk=180
+[23:33:33]  Upload : 15/103
+[23:33:33]  [FTP_OLD_TEST][id=1][UPLOAD] progress 15/103 chunk=180
+[23:33:34]  Upload : 16/103
+[23:33:34]  [FTP_OLD_TEST][id=1][UPLOAD] progress 16/103 chunk=180
+[23:33:36]  Upload : 17/103
+[23:33:36]  [FTP_OLD_TEST][id=1][UPLOAD] progress 17/103 chunk=180

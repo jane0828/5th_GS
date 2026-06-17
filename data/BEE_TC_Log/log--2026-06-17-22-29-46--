@@ -1,0 +1,25 @@
+[22:29:57]  Connect to Switch Box..............Failed.
+[22:29:57]  Connect to Rotator.................Failed.
+[22:29:57]  Connect to GS100..................Success.
+[22:29:57]  BEE-1000 BCN Port 31 bind success.
+[22:29:57]  BEE-1000 RPT Port 25 bind success.
+[22:29:57]  BEE-1000 Event Port 27 bind success.
+[22:29:57]  BEE-100 FM Port 23 bind success.
+[22:29:57]  Rotator Read Failed. Please Check Again.
+[22:29:57]  UEL-Y-Sys. BCN Port 12 bind success.
+[22:29:57]  UEL-Y-Sys. RPT Port 10 bind success.
+[22:29:57]  UEL-Y-Sys. Event Port 11 bind success.
+[22:29:57]  UEL-Y-Sys. FM Port 14 bind success.
+[22:29:57]  BEE-1012 BCN Port 17 bind success.
+[22:29:57]  BEE-1012 RPT Port 15 bind success.
+[22:29:57]  BEE-1012 Event Port 16 bind success.
+[22:29:57]  BEE-1012 FM Port 18 bind success.
+[22:29:57]  BEE-1012 AIOBC Port 29 bind success.
+[22:30:00]  Changing GS HMAC Key for BEE1000...
+[22:30:00]   Satellite Switched to: BEE1000 (TX HMAC disabled)
+[22:30:25]  FTP_OLD_DOWNLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[22:30:25]  Start FTP OLD DOWNLOAD id=1.
+[22:30:25]  [FTP_OLD_TEST][id=1][DOWNLOAD] begin local=file://./jane.so remote=file://./cf/ci_lab.so host=10 port=9 chunk=180
+[22:30:37]  Ping Failed.
+[22:30:56]  [FTP_OLD_TEST][id=1][DOWNLOAD][ERROR] retcode=-5
+[22:30:56]  [FTP_OLD_TEST][id=1][DOWNLOAD] cleanup_done=1

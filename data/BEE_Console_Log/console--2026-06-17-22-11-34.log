@@ -1,0 +1,540 @@
+2026-06-17 22:11
+[22:11:47]  Connect to Switch Box..............Failed.
+[22:11:47]  Connect to Rotator.................Failed.
+[22:11:47]  Connect to GS100..................Success.
+[22:11:47]  BEE-1000 BCN Port 31 bind success.
+[22:11:47]  BEE-1000 RPT Port 25 bind success.
+[22:11:47]  BEE-1000 Event Port 27 bind success.
+[22:11:47]  BEE-100 FM Port 23 bind success.
+[22:11:47]  UEL-Y-Sys. BCN Port 12 bind success.
+[22:11:47]  UEL-Y-Sys. RPT Port 10 bind success.
+[22:11:47]  UEL-Y-Sys. Event Port 11 bind success.
+[22:11:47]  UEL-Y-Sys. FM Port 14 bind success.
+[22:11:47]  BEE-1012 BCN Port 17 bind success.
+[22:11:47]  BEE-1012 RPT Port 15 bind success.
+[22:11:47]  BEE-1012 Event Port 16 bind success.
+[22:11:47]  BEE-1012 FM Port 18 bind success.
+[22:11:47]  BEE-1012 AIOBC Port 29 bind success.
+[22:11:47]  Rotator Read Failed. Please Check Again.
+[22:12:43]  FTP_OLD_DOWNLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[22:12:43]  Start FTP OLD DOWNLOAD id=1.
+[22:12:43]  [FTP_OLD_TEST][id=1][DOWNLOAD] begin local=file://./hihi.so remote=file://./cf/ci_lab.so host=10 port=9 chunk=180
+[22:12:47]  Received FTP Download Spec.
+[22:12:47]  Received FTP Download Spec. Filesize : 45908, CRC : 4001345151.
+[22:12:48]  Received FTP Status Request.
+[22:12:48]  Start FTP Downlink. Total Chunk Size : 256
+[22:12:49]  Download : 0/256
+[22:12:49]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 0/256 chunk=180
+[22:12:50]  Download : 1/256
+[22:12:50]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 1/256 chunk=180
+[22:12:50]  Download : 2/256
+[22:12:50]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 2/256 chunk=180
+[22:12:50]  Download : 3/256
+[22:12:50]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 3/256 chunk=180
+[22:12:51]  Download : 4/256
+[22:12:51]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 4/256 chunk=180
+[22:12:51]  Download : 5/256
+[22:12:51]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 5/256 chunk=180
+[22:12:52]  Download : 6/256
+[22:12:52]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 6/256 chunk=180
+[22:12:52]  Download : 7/256
+[22:12:52]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 7/256 chunk=180
+[22:12:53]  Download : 8/256
+[22:12:53]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 8/256 chunk=180
+[22:12:54]  Download : 9/256
+[22:12:54]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 9/256 chunk=180
+[22:12:54]  Download : 10/256
+[22:12:54]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 10/256 chunk=180
+[22:12:54]  Download : 11/256
+[22:12:54]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 11/256 chunk=180
+[22:12:55]  Download : 12/256
+[22:12:55]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 12/256 chunk=180
+[22:12:55]  Download : 13/256
+[22:12:55]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 13/256 chunk=180
+[22:12:56]  Download : 14/256
+[22:12:56]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 14/256 chunk=180
+[22:12:56]  Download : 15/256
+[22:12:56]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 15/256 chunk=180
+[22:12:57]  Download : 16/256
+[22:12:57]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 16/256 chunk=180
+[22:12:57]  Download : 17/256
+[22:12:57]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 17/256 chunk=180
+[22:12:58]  Download : 18/256
+[22:12:58]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 18/256 chunk=180
+[22:12:58]  Download : 19/256
+[22:12:58]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 19/256 chunk=180
+[22:12:59]  Download : 20/256
+[22:12:59]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 20/256 chunk=180
+[22:12:59]  Download : 21/256
+[22:12:59]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 21/256 chunk=180
+[22:13:00]  Download : 22/256
+[22:13:00]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 22/256 chunk=180
+[22:13:00]  Download : 23/256
+[22:13:00]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 23/256 chunk=180
+[22:13:01]  Download : 24/256
+[22:13:01]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 24/256 chunk=180
+[22:13:01]  Download : 25/256
+[22:13:01]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 25/256 chunk=180
+[22:13:02]  Download : 26/256
+[22:13:02]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 26/256 chunk=180
+[22:13:02]  Download : 27/256
+[22:13:02]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 27/256 chunk=180
+[22:13:03]  Download : 28/256
+[22:13:03]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 28/256 chunk=180
+[22:13:03]  Download : 29/256
+[22:13:03]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 29/256 chunk=180
+[22:13:04]  Download : 30/256
+[22:13:04]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 30/256 chunk=180
+[22:13:04]  Download : 31/256
+[22:13:04]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 31/256 chunk=180
+[22:13:05]  Download : 32/256
+[22:13:05]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 32/256 chunk=180
+[22:13:05]  Download : 33/256
+[22:13:05]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 33/256 chunk=180
+[22:13:06]  Download : 34/256
+[22:13:06]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 34/256 chunk=180
+[22:13:06]  Download : 35/256
+[22:13:06]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 35/256 chunk=180
+[22:13:06]  Download : 36/256
+[22:13:06]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 36/256 chunk=180
+[22:13:07]  Download : 37/256
+[22:13:07]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 37/256 chunk=180
+[22:13:08]  Download : 38/256
+[22:13:08]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 38/256 chunk=180
+[22:13:08]  Download : 39/256
+[22:13:08]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 39/256 chunk=180
+[22:13:08]  Download : 40/256
+[22:13:08]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 40/256 chunk=180
+[22:13:09]  Download : 41/256
+[22:13:09]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 41/256 chunk=180
+[22:13:10]  Download : 42/256
+[22:13:10]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 42/256 chunk=180
+[22:13:10]  Download : 43/256
+[22:13:10]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 43/256 chunk=180
+[22:13:10]  Download : 44/256
+[22:13:10]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 44/256 chunk=180
+[22:13:11]  Download : 45/256
+[22:13:11]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 45/256 chunk=180
+[22:13:12]  Download : 46/256
+[22:13:12]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 46/256 chunk=180
+[22:13:12]  Download : 47/256
+[22:13:12]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 47/256 chunk=180
+[22:13:12]  Download : 48/256
+[22:13:12]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 48/256 chunk=180
+[22:13:13]  Download : 49/256
+[22:13:13]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 49/256 chunk=180
+[22:13:14]  Download : 50/256
+[22:13:14]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 50/256 chunk=180
+[22:13:14]  Download : 51/256
+[22:13:14]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 51/256 chunk=180
+[22:13:14]  Download : 52/256
+[22:13:14]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 52/256 chunk=180
+[22:13:15]  Download : 53/256
+[22:13:15]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 53/256 chunk=180
+[22:13:15]  Download : 54/256
+[22:13:15]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 54/256 chunk=180
+[22:13:16]  Download : 55/256
+[22:13:16]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 55/256 chunk=180
+[22:13:16]  Download : 56/256
+[22:13:16]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 56/256 chunk=180
+[22:13:17]  Download : 57/256
+[22:13:17]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 57/256 chunk=180
+[22:13:17]  Download : 58/256
+[22:13:17]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 58/256 chunk=180
+[22:13:18]  Download : 59/256
+[22:13:18]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 59/256 chunk=180
+[22:13:18]  Download : 60/256
+[22:13:18]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 60/256 chunk=180
+[22:13:19]  Download : 61/256
+[22:13:19]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 61/256 chunk=180
+[22:13:19]  Download : 62/256
+[22:13:19]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 62/256 chunk=180
+[22:13:20]  Download : 63/256
+[22:13:20]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 63/256 chunk=180
+[22:13:20]  Download : 64/256
+[22:13:20]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 64/256 chunk=180
+[22:13:21]  Download : 65/256
+[22:13:21]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 65/256 chunk=180
+[22:13:21]  Download : 66/256
+[22:13:21]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 66/256 chunk=180
+[22:13:22]  Download : 67/256
+[22:13:22]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 67/256 chunk=180
+[22:13:22]  Download : 68/256
+[22:13:22]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 68/256 chunk=180
+[22:13:23]  Download : 69/256
+[22:13:23]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 69/256 chunk=180
+[22:13:23]  Download : 70/256
+[22:13:23]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 70/256 chunk=180
+[22:13:24]  Download : 71/256
+[22:13:24]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 71/256 chunk=180
+[22:13:24]  Download : 72/256
+[22:13:24]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 72/256 chunk=180
+[22:13:25]  Download : 73/256
+[22:13:25]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 73/256 chunk=180
+[22:13:25]  Download : 74/256
+[22:13:25]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 74/256 chunk=180
+[22:13:26]  Download : 75/256
+[22:13:26]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 75/256 chunk=180
+[22:13:26]  Download : 76/256
+[22:13:26]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 76/256 chunk=180
+[22:13:27]  Download : 77/256
+[22:13:27]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 77/256 chunk=180
+[22:13:27]  Download : 78/256
+[22:13:27]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 78/256 chunk=180
+[22:13:28]  Download : 79/256
+[22:13:28]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 79/256 chunk=180
+[22:13:28]  Download : 80/256
+[22:13:28]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 80/256 chunk=180
+[22:13:29]  Download : 81/256
+[22:13:29]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 81/256 chunk=180
+[22:13:29]  Download : 82/256
+[22:13:29]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 82/256 chunk=180
+[22:13:30]  Download : 83/256
+[22:13:30]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 83/256 chunk=180
+[22:13:30]  Download : 84/256
+[22:13:30]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 84/256 chunk=180
+[22:13:31]  Download : 85/256
+[22:13:31]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 85/256 chunk=180
+[22:13:31]  Download : 86/256
+[22:13:31]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 86/256 chunk=180
+[22:13:32]  Download : 87/256
+[22:13:32]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 87/256 chunk=180
+[22:13:32]  Download : 88/256
+[22:13:32]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 88/256 chunk=180
+[22:13:33]  Download : 89/256
+[22:13:33]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 89/256 chunk=180
+[22:13:33]  Download : 90/256
+[22:13:33]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 90/256 chunk=180
+[22:13:34]  Download : 91/256
+[22:13:34]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 91/256 chunk=180
+[22:13:34]  Download : 92/256
+[22:13:34]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 92/256 chunk=180
+[22:13:35]  Download : 93/256
+[22:13:35]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 93/256 chunk=180
+[22:13:35]  Download : 94/256
+[22:13:35]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 94/256 chunk=180
+[22:13:35]  Download : 95/256
+[22:13:35]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 95/256 chunk=180
+[22:13:36]  Download : 96/256
+[22:13:36]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 96/256 chunk=180
+[22:13:37]  Download : 97/256
+[22:13:37]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 97/256 chunk=180
+[22:13:37]  Download : 98/256
+[22:13:37]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 98/256 chunk=180
+[22:13:37]  Download : 99/256
+[22:13:37]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 99/256 chunk=180
+[22:13:38]  Download : 100/256
+[22:13:38]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 100/256 chunk=180
+[22:13:39]  Download : 101/256
+[22:13:39]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 101/256 chunk=180
+[22:13:39]  Download : 102/256
+[22:13:39]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 102/256 chunk=180
+[22:13:39]  Download : 103/256
+[22:13:39]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 103/256 chunk=180
+[22:13:40]  Download : 104/256
+[22:13:40]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 104/256 chunk=180
+[22:13:41]  Download : 105/256
+[22:13:41]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 105/256 chunk=180
+[22:13:41]  Download : 106/256
+[22:13:41]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 106/256 chunk=180
+[22:13:41]  Download : 107/256
+[22:13:41]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 107/256 chunk=180
+[22:13:42]  Download : 108/256
+[22:13:42]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 108/256 chunk=180
+[22:13:43]  Download : 109/256
+[22:13:43]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 109/256 chunk=180
+[22:13:43]  Download : 110/256
+[22:13:43]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 110/256 chunk=180
+[22:13:43]  Download : 111/256
+[22:13:43]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 111/256 chunk=180
+[22:13:44]  Download : 112/256
+[22:13:44]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 112/256 chunk=180
+[22:13:44]  Download : 113/256
+[22:13:44]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 113/256 chunk=180
+[22:13:45]  Download : 114/256
+[22:13:45]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 114/256 chunk=180
+[22:13:45]  Download : 115/256
+[22:13:45]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 115/256 chunk=180
+[22:13:46]  Download : 116/256
+[22:13:46]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 116/256 chunk=180
+[22:13:46]  Download : 117/256
+[22:13:46]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 117/256 chunk=180
+[22:13:47]  Download : 118/256
+[22:13:47]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 118/256 chunk=180
+[22:13:47]  Download : 119/256
+[22:13:47]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 119/256 chunk=180
+[22:13:48]  Download : 120/256
+[22:13:48]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 120/256 chunk=180
+[22:13:48]  Download : 121/256
+[22:13:48]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 121/256 chunk=180
+[22:13:49]  Download : 122/256
+[22:13:49]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 122/256 chunk=180
+[22:13:49]  Download : 123/256
+[22:13:49]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 123/256 chunk=180
+[22:13:50]  Download : 124/256
+[22:13:50]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 124/256 chunk=180
+[22:13:50]  Download : 125/256
+[22:13:50]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 125/256 chunk=180
+[22:13:51]  Download : 126/256
+[22:13:51]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 126/256 chunk=180
+[22:13:51]  Download : 127/256
+[22:13:51]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 127/256 chunk=180
+[22:13:52]  Download : 128/256
+[22:13:52]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 128/256 chunk=180
+[22:13:52]  Download : 129/256
+[22:13:52]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 129/256 chunk=180
+[22:13:53]  Download : 130/256
+[22:13:53]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 130/256 chunk=180
+[22:13:53]  Download : 131/256
+[22:13:53]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 131/256 chunk=180
+[22:13:54]  Download : 132/256
+[22:13:54]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 132/256 chunk=180
+[22:13:54]  Download : 133/256
+[22:13:54]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 133/256 chunk=180
+[22:13:55]  Download : 134/256
+[22:13:55]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 134/256 chunk=180
+[22:13:55]  Download : 135/256
+[22:13:55]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 135/256 chunk=180
+[22:13:55]  Download : 136/256
+[22:13:55]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 136/256 chunk=180
+[22:13:56]  Download : 137/256
+[22:13:56]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 137/256 chunk=180
+[22:13:57]  Download : 138/256
+[22:13:57]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 138/256 chunk=180
+[22:13:57]  Download : 139/256
+[22:13:57]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 139/256 chunk=180
+[22:13:57]  Download : 140/256
+[22:13:57]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 140/256 chunk=180
+[22:13:58]  Download : 141/256
+[22:13:58]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 141/256 chunk=180
+[22:13:59]  Download : 142/256
+[22:13:59]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 142/256 chunk=180
+[22:13:59]  Download : 143/256
+[22:13:59]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 143/256 chunk=180
+[22:13:59]  Download : 144/256
+[22:13:59]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 144/256 chunk=180
+[22:14:00]  Download : 145/256
+[22:14:00]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 145/256 chunk=180
+[22:14:01]  Download : 146/256
+[22:14:01]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 146/256 chunk=180
+[22:14:01]  Download : 147/256
+[22:14:01]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 147/256 chunk=180
+[22:14:01]  Download : 148/256
+[22:14:01]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 148/256 chunk=180
+[22:14:02]  Download : 149/256
+[22:14:02]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 149/256 chunk=180
+[22:14:03]  Download : 150/256
+[22:14:03]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 150/256 chunk=180
+[22:14:03]  Download : 151/256
+[22:14:03]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 151/256 chunk=180
+[22:14:03]  Download : 152/256
+[22:14:03]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 152/256 chunk=180
+[22:14:04]  Download : 153/256
+[22:14:04]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 153/256 chunk=180
+[22:14:04]  Download : 154/256
+[22:14:04]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 154/256 chunk=180
+[22:14:05]  Download : 155/256
+[22:14:05]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 155/256 chunk=180
+[22:14:05]  Download : 156/256
+[22:14:05]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 156/256 chunk=180
+[22:14:06]  Download : 157/256
+[22:14:06]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 157/256 chunk=180
+[22:14:06]  Download : 158/256
+[22:14:06]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 158/256 chunk=180
+[22:14:07]  Download : 159/256
+[22:14:07]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 159/256 chunk=180
+[22:14:07]  Download : 160/256
+[22:14:07]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 160/256 chunk=180
+[22:14:08]  Download : 161/256
+[22:14:08]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 161/256 chunk=180
+[22:14:08]  Download : 162/256
+[22:14:08]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 162/256 chunk=180
+[22:14:09]  Download : 163/256
+[22:14:09]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 163/256 chunk=180
+[22:14:09]  Download : 164/256
+[22:14:09]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 164/256 chunk=180
+[22:14:10]  Download : 165/256
+[22:14:10]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 165/256 chunk=180
+[22:14:10]  Download : 166/256
+[22:14:10]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 166/256 chunk=180
+[22:14:11]  Download : 167/256
+[22:14:11]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 167/256 chunk=180
+[22:14:11]  Download : 168/256
+[22:14:11]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 168/256 chunk=180
+[22:14:12]  Download : 169/256
+[22:14:12]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 169/256 chunk=180
+[22:14:12]  Download : 170/256
+[22:14:12]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 170/256 chunk=180
+[22:14:13]  Download : 171/256
+[22:14:13]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 171/256 chunk=180
+[22:14:13]  Download : 172/256
+[22:14:13]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 172/256 chunk=180
+[22:14:14]  Download : 173/256
+[22:14:14]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 173/256 chunk=180
+[22:14:14]  Download : 174/256
+[22:14:14]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 174/256 chunk=180
+[22:14:15]  Download : 175/256
+[22:14:15]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 175/256 chunk=180
+[22:14:15]  Download : 176/256
+[22:14:15]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 176/256 chunk=180
+[22:14:16]  Download : 177/256
+[22:14:16]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 177/256 chunk=180
+[22:14:16]  Download : 178/256
+[22:14:16]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 178/256 chunk=180
+[22:14:17]  Download : 179/256
+[22:14:17]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 179/256 chunk=180
+[22:14:17]  Download : 180/256
+[22:14:17]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 180/256 chunk=180
+[22:14:18]  Download : 181/256
+[22:14:18]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 181/256 chunk=180
+[22:14:18]  Download : 182/256
+[22:14:18]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 182/256 chunk=180
+[22:14:19]  Download : 183/256
+[22:14:19]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 183/256 chunk=180
+[22:14:19]  Download : 184/256
+[22:14:19]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 184/256 chunk=180
+[22:14:20]  Download : 185/256
+[22:14:20]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 185/256 chunk=180
+[22:14:20]  Download : 186/256
+[22:14:20]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 186/256 chunk=180
+[22:14:21]  Download : 187/256
+[22:14:21]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 187/256 chunk=180
+[22:14:21]  Download : 188/256
+[22:14:21]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 188/256 chunk=180
+[22:14:22]  Download : 189/256
+[22:14:22]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 189/256 chunk=180
+[22:14:22]  Download : 190/256
+[22:14:22]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 190/256 chunk=180
+[22:14:23]  Download : 191/256
+[22:14:23]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 191/256 chunk=180
+[22:14:23]  Download : 192/256
+[22:14:23]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 192/256 chunk=180
+[22:14:24]  Download : 193/256
+[22:14:24]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 193/256 chunk=180
+[22:14:24]  Download : 194/256
+[22:14:24]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 194/256 chunk=180
+[22:14:24]  Download : 195/256
+[22:14:24]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 195/256 chunk=180
+[22:14:25]  Download : 196/256
+[22:14:25]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 196/256 chunk=180
+[22:14:26]  Download : 197/256
+[22:14:26]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 197/256 chunk=180
+[22:14:26]  Download : 198/256
+[22:14:26]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 198/256 chunk=180
+[22:14:26]  Download : 199/256
+[22:14:26]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 199/256 chunk=180
+[22:14:27]  Download : 200/256
+[22:14:27]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 200/256 chunk=180
+[22:14:28]  Download : 201/256
+[22:14:28]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 201/256 chunk=180
+[22:14:28]  Download : 202/256
+[22:14:28]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 202/256 chunk=180
+[22:14:28]  Download : 203/256
+[22:14:28]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 203/256 chunk=180
+[22:14:29]  Download : 204/256
+[22:14:29]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 204/256 chunk=180
+[22:14:30]  Download : 205/256
+[22:14:30]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 205/256 chunk=180
+[22:14:30]  Download : 206/256
+[22:14:30]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 206/256 chunk=180
+[22:14:30]  Download : 207/256
+[22:14:30]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 207/256 chunk=180
+[22:14:31]  Download : 208/256
+[22:14:31]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 208/256 chunk=180
+[22:14:32]  Download : 209/256
+[22:14:32]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 209/256 chunk=180
+[22:14:32]  Download : 210/256
+[22:14:32]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 210/256 chunk=180
+[22:14:32]  Download : 211/256
+[22:14:32]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 211/256 chunk=180
+[22:14:33]  Download : 212/256
+[22:14:33]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 212/256 chunk=180
+[22:14:33]  Download : 213/256
+[22:14:33]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 213/256 chunk=180
+[22:14:34]  Download : 214/256
+[22:14:34]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 214/256 chunk=180
+[22:14:34]  Download : 215/256
+[22:14:34]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 215/256 chunk=180
+[22:14:35]  Download : 216/256
+[22:14:35]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 216/256 chunk=180
+[22:14:35]  Download : 217/256
+[22:14:35]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 217/256 chunk=180
+[22:14:36]  Download : 218/256
+[22:14:36]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 218/256 chunk=180
+[22:14:36]  Download : 219/256
+[22:14:36]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 219/256 chunk=180
+[22:14:37]  Download : 220/256
+[22:14:37]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 220/256 chunk=180
+[22:14:37]  Download : 221/256
+[22:14:37]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 221/256 chunk=180
+[22:14:38]  Download : 222/256
+[22:14:38]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 222/256 chunk=180
+[22:14:38]  Download : 223/256
+[22:14:38]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 223/256 chunk=180
+[22:14:39]  Download : 224/256
+[22:14:39]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 224/256 chunk=180
+[22:14:39]  Download : 225/256
+[22:14:39]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 225/256 chunk=180
+[22:14:40]  Download : 226/256
+[22:14:40]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 226/256 chunk=180
+[22:14:40]  Download : 227/256
+[22:14:40]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 227/256 chunk=180
+[22:14:41]  Download : 228/256
+[22:14:41]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 228/256 chunk=180
+[22:14:41]  Download : 229/256
+[22:14:41]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 229/256 chunk=180
+[22:14:42]  Download : 230/256
+[22:14:42]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 230/256 chunk=180
+[22:14:42]  Download : 231/256
+[22:14:42]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 231/256 chunk=180
+[22:14:43]  Download : 232/256
+[22:14:43]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 232/256 chunk=180
+[22:14:43]  Download : 233/256
+[22:14:43]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 233/256 chunk=180
+[22:14:44]  Download : 234/256
+[22:14:44]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 234/256 chunk=180
+[22:14:44]  Download : 235/256
+[22:14:44]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 235/256 chunk=180
+[22:14:44]  Download : 236/256
+[22:14:44]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 236/256 chunk=180
+[22:14:45]  Download : 237/256
+[22:14:45]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 237/256 chunk=180
+[22:14:46]  Download : 238/256
+[22:14:46]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 238/256 chunk=180
+[22:14:46]  Download : 239/256
+[22:14:46]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 239/256 chunk=180
+[22:14:46]  Download : 240/256
+[22:14:46]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 240/256 chunk=180
+[22:14:47]  Download : 241/256
+[22:14:47]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 241/256 chunk=180
+[22:14:48]  Download : 242/256
+[22:14:48]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 242/256 chunk=180
+[22:14:48]  Download : 243/256
+[22:14:48]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 243/256 chunk=180
+[22:14:48]  Download : 244/256
+[22:14:48]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 244/256 chunk=180
+[22:14:49]  Download : 245/256
+[22:14:49]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 245/256 chunk=180
+[22:14:50]  Download : 246/256
+[22:14:50]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 246/256 chunk=180
+[22:14:50]  Download : 247/256
+[22:14:50]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 247/256 chunk=180
+[22:14:50]  Download : 248/256
+[22:14:50]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 248/256 chunk=180
+[22:14:51]  Download : 249/256
+[22:14:51]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 249/256 chunk=180
+[22:14:52]  Download : 250/256
+[22:14:52]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 250/256 chunk=180
+[22:14:52]  Download : 251/256
+[22:14:52]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 251/256 chunk=180
+[22:14:52]  Download : 252/256
+[22:14:52]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 252/256 chunk=180
+[22:14:53]  Download : 253/256
+[22:14:53]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 253/256 chunk=180
+[22:14:53]  Download : 254/256
+[22:14:53]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 254/256 chunk=180
+[22:14:54]  Download : 255/256
+[22:14:54]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 255/256 chunk=180
+[22:14:55]  FTP Transaction Completed.
+[22:14:55]  Calculate FTP CRC. Remote : 2142142446, Local : 2142142446.
+[22:14:55]  [FTP_OLD_TEST][id=1][DOWNLOAD] CRC remote=2142142446 local=2142142446
