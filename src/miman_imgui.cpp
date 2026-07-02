@@ -22205,18 +22205,34 @@ void ImGui_CommandWindow(float fontscale)
         ImGui::SameLine();
         if (ImGui::Button("Upload", ImVec2(ImGui::GetContentRegionAvail().x , ImGui::GetFontSize() * 1.5)))
         {
-            if(State.ftp_mode)
-                console.AddLog("[ERROR]##Still Uplink Thread is Running. Please Retry Later.");
-            else
-            {
-                pthread_join(p_thread[8], NULL);
-                if(State.ftp_version == 1)
+            // if(State.ftp_mode)
+                // console.AddLog("[ERROR]##Still Uplink Thread is Running. Please Retry Later.");
+            // else
+            // // {
+            //     pthread_join(p_thread[8], NULL);
+            //     if(State.ftp_version == 1)
+            //         pthread_create(&p_thread[8], NULL, ftp_uplink_force, &State.ftplistup[NowFTP]);
+            //     else if(State.ftp_version == 3)
+            //         start_ryu_ftp_thread(ftp_ryu_uplink_onorbit);
+            //     else
+            //         pthread_create(&p_thread[9], NULL, ftp_uplink_onorbit, &State.ftplistup[NowFTP]);
+
+
+                
+                if(State.ftp_version == 1) {
+                    pthread_join(p_thread[8], NULL);
                     pthread_create(&p_thread[8], NULL, ftp_uplink_force, &State.ftplistup[NowFTP]);
-                else if(State.ftp_version == 3)
+                }
+                else if(State.ftp_version == 3) {
+                    pthread_join(p_thread[8], NULL);
                     start_ryu_ftp_thread(ftp_ryu_uplink_onorbit);
-                else
-                    pthread_create(&p_thread[8], NULL, ftp_uplink_onorbit, &State.ftplistup[NowFTP]);
-            }
+                }
+                else {
+                    pthread_join(p_thread[9], NULL);
+                    pthread_create(&p_thread[9], NULL, ftp_uplink_onorbit, &State.ftplistup[NowFTP]);
+                }
+
+            // }
         }
         ImGui::Text("Local  ");
         ImGui::SameLine();
@@ -22255,18 +22271,33 @@ void ImGui_CommandWindow(float fontscale)
         ImGui::SameLine();
         if (ImGui::Button("Download", ImVec2(ImGui::GetContentRegionAvail().x, ImGui::GetFontSize() * 1.5)))
         {
-            if(State.ftp_mode)
-                console.AddLog("[ERROR]##Still Uplink Thread is Running. Please Retry Later.");
-            else
-            {
-                pthread_join(p_thread[8], NULL);
-                if(State.ftp_version == 1)
+            // if(State.ftp_mode)
+                // console.AddLog("[ERROR]##Still Uplink Thread is Running. Please Retry Later.");
+            // else
+            // // {
+            //     pthread_join(p_thread[8], NULL);
+            //     if(State.ftp_version == 1)
+            //         pthread_create(&p_thread[8], NULL, ftp_downlink_force, &State.ftplistup[NowFTP]);
+            //     else if(State.ftp_version == 3)
+            //         start_ryu_ftp_thread(ftp_ryu_downlink_onorbit);
+            //     else
+            //         pthread_create(&p_thread[8], NULL, ftp_downlink_onorbit, &State.ftplistup[NowFTP]);
+
+                
+                if(State.ftp_version == 1) {
+                    pthread_join(p_thread[8], NULL);
                     pthread_create(&p_thread[8], NULL, ftp_downlink_force, &State.ftplistup[NowFTP]);
-                else if(State.ftp_version == 3)
+                }
+                else if(State.ftp_version == 3) {
+                    pthread_join(p_thread[8], NULL);
                     start_ryu_ftp_thread(ftp_ryu_downlink_onorbit);
-                else
-                    pthread_create(&p_thread[8], NULL, ftp_downlink_onorbit, &State.ftplistup[NowFTP]);
-            }
+                }
+                else {
+                    pthread_join(p_thread[9], NULL);
+                    pthread_create(&p_thread[9], NULL, ftp_downlink_onorbit, &State.ftplistup[NowFTP]);
+                }
+
+            // }
         }
         ImGui::Text("Local  ");
         ImGui::SameLine();

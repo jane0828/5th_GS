@@ -1,0 +1,2114 @@
+2026-07-02 16:23
+[16:23:19]  Connect to Switch Box..............Failed.
+[16:23:19]  Connect to Rotator.................Failed.
+[16:23:19]  Connect to GS100..................Success.
+[16:23:19]  BEE-1000 BCN Port 31 bind success.
+[16:23:19]  Rotator Read Failed. Please Check Again.
+[16:23:19]  BEE-1000 RPT Port 25 bind success.
+[16:23:19]  BEE-1000 Event Port 27 bind success.
+[16:23:19]  BEE-100 FM Port 23 bind success.
+[16:23:19]  UEL-Y-Sys. BCN Port 12 bind success.
+[16:23:19]  UEL-Y-Sys. RPT Port 10 bind success.
+[16:23:19]  UEL-Y-Sys. Event Port 11 bind success.
+[16:23:19]  UEL-Y-Sys. FM Port 14 bind success.
+[16:23:19]  BEE-1012 BCN Port 17 bind success.
+[16:23:19]  BEE-1012 RPT Port 15 bind success.
+[16:23:19]  BEE-1012 Event Port 16 bind success.
+[16:23:19]  BEE-1012 FM Port 18 bind success.
+[16:23:19]  BEE-1012 AIOBC Port 29 bind success.
+[16:23:35]  FTP_OLD_UPLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[16:23:36]  Start FTP OLD UPLOAD id=1.
+[16:23:36]  [FTP_OLD_TEST][id=1][UPLOAD] begin local=file://./adcs.so remote=file://./cf/ftpold.so host=10 port=9 chunk=180
+[16:23:36]  Received FTP Upload Spec.
+[16:23:36]  Received FTP Upload File Spec. Filesize : 45908, CRC : 2142142446.
+[16:23:40]  Received FTP Status Reply.
+[16:23:40]  Start FTP Uplink. Total Chunk Size : 256
+[16:23:40]  Upload : 0/256
+[16:23:40]  [FTP_OLD_TEST][id=1][UPLOAD] progress 0/256 chunk=180
+[16:23:41]  Upload : 1/256
+[16:23:41]  [FTP_OLD_TEST][id=1][UPLOAD] progress 1/256 chunk=180
+[16:23:43]  Upload : 2/256
+[16:23:43]  [FTP_OLD_TEST][id=1][UPLOAD] progress 2/256 chunk=180
+[16:23:44]  Start FTP RYU UPLOAD id=2.
+[16:23:44]  [FTP_RYU_TEST][id=2][UPLOAD] begin local=file://./adcs.so remote=file://./cf/ftpnew.so host=10 port=19 chunk=180
+[16:23:44]  Received FTP Upload Spec.
+[16:23:44]  Received FTP Upload File Spec. Filesize : 45908, CRC : 2142142446.
+[16:23:44]  Upload : 3/256
+[16:23:44]  [FTP_OLD_TEST][id=1][UPLOAD] progress 3/256 chunk=180
+[16:23:46]  Upload : 4/256
+[16:23:46]  [FTP_OLD_TEST][id=1][UPLOAD] progress 4/256 chunk=180
+[16:23:47]  Received FTP Status Reply.
+[16:23:47]  Start FTP Uplink. Total Chunk Size : 256
+[16:23:47]  Upload : 0/256
+[16:23:47]  [FTP_RYU_TEST][id=2][UPLOAD] progress 0/256 chunk=180
+[16:23:48]  Upload : 5/256
+[16:23:48]  [FTP_OLD_TEST][id=1][UPLOAD] progress 5/256 chunk=180
+[16:23:48]  Upload : 1/256
+[16:23:48]  [FTP_RYU_TEST][id=2][UPLOAD] progress 1/256 chunk=180
+[16:23:49]  Upload : 2/256
+[16:23:49]  [FTP_RYU_TEST][id=2][UPLOAD] progress 2/256 chunk=180
+[16:23:49]  Upload : 6/256
+[16:23:49]  [FTP_OLD_TEST][id=1][UPLOAD] progress 6/256 chunk=180
+[16:23:49]  Upload : 3/256
+[16:23:49]  [FTP_RYU_TEST][id=2][UPLOAD] progress 3/256 chunk=180
+[16:23:50]  Upload : 4/256
+[16:23:50]  [FTP_RYU_TEST][id=2][UPLOAD] progress 4/256 chunk=180
+[16:23:50]  Upload : 5/256
+[16:23:50]  [FTP_RYU_TEST][id=2][UPLOAD] progress 5/256 chunk=180
+[16:23:51]  Upload : 6/256
+[16:23:51]  [FTP_RYU_TEST][id=2][UPLOAD] progress 6/256 chunk=180
+[16:23:58]  Upload : 7/256
+[16:23:58]  [FTP_OLD_TEST][id=1][UPLOAD] progress 7/256 chunk=180
+[16:24:00]  Upload : 8/256
+[16:24:00]  [FTP_OLD_TEST][id=1][UPLOAD] progress 8/256 chunk=180
+[16:24:01]  Upload : 9/256
+[16:24:01]  [FTP_OLD_TEST][id=1][UPLOAD] progress 9/256 chunk=180
+[16:24:03]  Upload : 10/256
+[16:24:03]  [FTP_OLD_TEST][id=1][UPLOAD] progress 10/256 chunk=180
+[16:24:04]  Upload : 11/256
+[16:24:04]  [FTP_OLD_TEST][id=1][UPLOAD] progress 11/256 chunk=180
+[16:24:06]  Upload : 7/256
+[16:24:06]  [FTP_RYU_TEST][id=2][UPLOAD] progress 7/256 chunk=180
+[16:24:06]  Upload : 12/256
+[16:24:06]  [FTP_OLD_TEST][id=1][UPLOAD] progress 12/256 chunk=180
+[16:24:06]  Upload : 8/256
+[16:24:06]  [FTP_RYU_TEST][id=2][UPLOAD] progress 8/256 chunk=180
+[16:24:07]  Upload : 9/256
+[16:24:07]  [FTP_RYU_TEST][id=2][UPLOAD] progress 9/256 chunk=180
+[16:24:07]  Upload : 10/256
+[16:24:07]  [FTP_RYU_TEST][id=2][UPLOAD] progress 10/256 chunk=180
+[16:24:08]  Upload : 11/256
+[16:24:08]  [FTP_RYU_TEST][id=2][UPLOAD] progress 11/256 chunk=180
+[16:24:08]  Upload : 12/256
+[16:24:08]  [FTP_RYU_TEST][id=2][UPLOAD] progress 12/256 chunk=180
+[16:24:15]  Upload : 13/256
+[16:24:15]  [FTP_OLD_TEST][id=1][UPLOAD] progress 13/256 chunk=180
+[16:24:17]  Upload : 14/256
+[16:24:17]  [FTP_OLD_TEST][id=1][UPLOAD] progress 14/256 chunk=180
+[16:24:18]  Upload : 15/256
+[16:24:18]  [FTP_OLD_TEST][id=1][UPLOAD] progress 15/256 chunk=180
+[16:24:20]  Upload : 16/256
+[16:24:20]  [FTP_OLD_TEST][id=1][UPLOAD] progress 16/256 chunk=180
+[16:24:21]  Upload : 17/256
+[16:24:21]  [FTP_OLD_TEST][id=1][UPLOAD] progress 17/256 chunk=180
+[16:24:23]  Upload : 13/256
+[16:24:23]  [FTP_RYU_TEST][id=2][UPLOAD] progress 13/256 chunk=180
+[16:24:23]  Upload : 18/256
+[16:24:23]  [FTP_OLD_TEST][id=1][UPLOAD] progress 18/256 chunk=180
+[16:24:23]  Upload : 14/256
+[16:24:23]  [FTP_RYU_TEST][id=2][UPLOAD] progress 14/256 chunk=180
+[16:24:24]  Upload : 15/256
+[16:24:24]  [FTP_RYU_TEST][id=2][UPLOAD] progress 15/256 chunk=180
+[16:24:25]  Upload : 16/256
+[16:24:25]  [FTP_RYU_TEST][id=2][UPLOAD] progress 16/256 chunk=180
+[16:24:25]  Upload : 17/256
+[16:24:25]  [FTP_RYU_TEST][id=2][UPLOAD] progress 17/256 chunk=180
+[16:24:26]  Upload : 18/256
+[16:24:26]  [FTP_RYU_TEST][id=2][UPLOAD] progress 18/256 chunk=180
+[16:24:32]  Upload : 19/256
+[16:24:32]  [FTP_OLD_TEST][id=1][UPLOAD] progress 19/256 chunk=180
+[16:24:34]  Upload : 20/256
+[16:24:34]  [FTP_OLD_TEST][id=1][UPLOAD] progress 20/256 chunk=180
+[16:24:35]  Upload : 21/256
+[16:24:35]  [FTP_OLD_TEST][id=1][UPLOAD] progress 21/256 chunk=180
+[16:24:37]  Upload : 22/256
+[16:24:37]  [FTP_OLD_TEST][id=1][UPLOAD] progress 22/256 chunk=180
+[16:24:38]  Upload : 23/256
+[16:24:38]  [FTP_OLD_TEST][id=1][UPLOAD] progress 23/256 chunk=180
+[16:24:40]  Upload : 19/256
+[16:24:40]  [FTP_RYU_TEST][id=2][UPLOAD] progress 19/256 chunk=180
+[16:24:41]  Upload : 20/256
+[16:24:41]  [FTP_RYU_TEST][id=2][UPLOAD] progress 20/256 chunk=180
+[16:24:41]  Upload : 21/256
+[16:24:41]  [FTP_RYU_TEST][id=2][UPLOAD] progress 21/256 chunk=180
+[16:24:42]  Upload : 22/256
+[16:24:42]  [FTP_RYU_TEST][id=2][UPLOAD] progress 22/256 chunk=180
+[16:24:43]  Upload : 23/256
+[16:24:43]  [FTP_RYU_TEST][id=2][UPLOAD] progress 23/256 chunk=180
+[16:24:43]  Upload : 24/256
+[16:24:43]  [FTP_RYU_TEST][id=2][UPLOAD] progress 24/256 chunk=180
+[16:24:44]  Upload : 25/256
+[16:24:44]  [FTP_RYU_TEST][id=2][UPLOAD] progress 25/256 chunk=180
+[16:24:44]  Upload : 26/256
+[16:24:44]  [FTP_RYU_TEST][id=2][UPLOAD] progress 26/256 chunk=180
+[16:24:50]  Upload : 24/256
+[16:24:50]  [FTP_OLD_TEST][id=1][UPLOAD] progress 24/256 chunk=180
+[16:24:52]  Upload : 25/256
+[16:24:52]  [FTP_OLD_TEST][id=1][UPLOAD] progress 25/256 chunk=180
+[16:24:53]  Upload : 26/256
+[16:24:53]  [FTP_OLD_TEST][id=1][UPLOAD] progress 26/256 chunk=180
+[16:24:55]  Upload : 27/256
+[16:24:55]  [FTP_OLD_TEST][id=1][UPLOAD] progress 27/256 chunk=180
+[16:24:56]  Upload : 28/256
+[16:24:56]  [FTP_OLD_TEST][id=1][UPLOAD] progress 28/256 chunk=180
+[16:24:58]  Upload : 29/256
+[16:24:58]  [FTP_OLD_TEST][id=1][UPLOAD] progress 29/256 chunk=180
+[16:25:00]  Upload : 27/256
+[16:25:00]  [FTP_RYU_TEST][id=2][UPLOAD] progress 27/256 chunk=180
+[16:25:01]  Upload : 28/256
+[16:25:01]  [FTP_RYU_TEST][id=2][UPLOAD] progress 28/256 chunk=180
+[16:25:01]  Upload : 29/256
+[16:25:01]  [FTP_RYU_TEST][id=2][UPLOAD] progress 29/256 chunk=180
+[16:25:02]  Upload : 30/256
+[16:25:02]  [FTP_RYU_TEST][id=2][UPLOAD] progress 30/256 chunk=180
+[16:25:03]  Upload : 31/256
+[16:25:03]  [FTP_RYU_TEST][id=2][UPLOAD] progress 31/256 chunk=180
+[16:25:03]  Upload : 32/256
+[16:25:03]  [FTP_RYU_TEST][id=2][UPLOAD] progress 32/256 chunk=180
+[16:25:07]  Upload : 30/256
+[16:25:07]  [FTP_OLD_TEST][id=1][UPLOAD] progress 30/256 chunk=180
+[16:25:09]  Upload : 31/256
+[16:25:09]  [FTP_OLD_TEST][id=1][UPLOAD] progress 31/256 chunk=180
+[16:25:10]  Upload : 32/256
+[16:25:10]  [FTP_OLD_TEST][id=1][UPLOAD] progress 32/256 chunk=180
+[16:25:12]  Upload : 33/256
+[16:25:12]  [FTP_OLD_TEST][id=1][UPLOAD] progress 33/256 chunk=180
+[16:25:13]  Upload : 34/256
+[16:25:13]  [FTP_OLD_TEST][id=1][UPLOAD] progress 34/256 chunk=180
+[16:25:15]  Upload : 35/256
+[16:25:15]  [FTP_OLD_TEST][id=1][UPLOAD] progress 35/256 chunk=180
+[16:25:17]  Upload : 33/256
+[16:25:17]  [FTP_RYU_TEST][id=2][UPLOAD] progress 33/256 chunk=180
+[16:25:18]  Upload : 34/256
+[16:25:18]  [FTP_RYU_TEST][id=2][UPLOAD] progress 34/256 chunk=180
+[16:25:18]  Upload : 35/256
+[16:25:18]  [FTP_RYU_TEST][id=2][UPLOAD] progress 35/256 chunk=180
+[16:25:19]  Upload : 36/256
+[16:25:19]  [FTP_RYU_TEST][id=2][UPLOAD] progress 36/256 chunk=180
+[16:25:20]  Upload : 37/256
+[16:25:20]  [FTP_RYU_TEST][id=2][UPLOAD] progress 37/256 chunk=180
+[16:25:20]  Upload : 38/256
+[16:25:20]  [FTP_RYU_TEST][id=2][UPLOAD] progress 38/256 chunk=180
+[16:25:24]  Upload : 36/256
+[16:25:24]  [FTP_OLD_TEST][id=1][UPLOAD] progress 36/256 chunk=180
+[16:25:26]  Upload : 37/256
+[16:25:26]  [FTP_OLD_TEST][id=1][UPLOAD] progress 37/256 chunk=180
+[16:25:27]  Upload : 38/256
+[16:25:27]  [FTP_OLD_TEST][id=1][UPLOAD] progress 38/256 chunk=180
+[16:25:29]  Upload : 39/256
+[16:25:29]  [FTP_OLD_TEST][id=1][UPLOAD] progress 39/256 chunk=180
+[16:25:30]  Upload : 40/256
+[16:25:30]  [FTP_OLD_TEST][id=1][UPLOAD] progress 40/256 chunk=180
+[16:25:32]  Upload : 41/256
+[16:25:32]  [FTP_OLD_TEST][id=1][UPLOAD] progress 41/256 chunk=180
+[16:25:35]  Upload : 39/256
+[16:25:35]  [FTP_RYU_TEST][id=2][UPLOAD] progress 39/256 chunk=180
+[16:25:35]  Upload : 40/256
+[16:25:35]  [FTP_RYU_TEST][id=2][UPLOAD] progress 40/256 chunk=180
+[16:25:36]  Upload : 41/256
+[16:25:36]  [FTP_RYU_TEST][id=2][UPLOAD] progress 41/256 chunk=180
+[16:25:36]  Upload : 42/256
+[16:25:36]  [FTP_RYU_TEST][id=2][UPLOAD] progress 42/256 chunk=180
+[16:25:37]  Upload : 43/256
+[16:25:37]  [FTP_RYU_TEST][id=2][UPLOAD] progress 43/256 chunk=180
+[16:25:37]  Upload : 44/256
+[16:25:37]  [FTP_RYU_TEST][id=2][UPLOAD] progress 44/256 chunk=180
+[16:25:41]  Upload : 42/256
+[16:25:41]  [FTP_OLD_TEST][id=1][UPLOAD] progress 42/256 chunk=180
+[16:25:42]  Upload : 43/256
+[16:25:42]  [FTP_OLD_TEST][id=1][UPLOAD] progress 43/256 chunk=180
+[16:25:44]  Upload : 44/256
+[16:25:44]  [FTP_OLD_TEST][id=1][UPLOAD] progress 44/256 chunk=180
+[16:25:46]  Upload : 45/256
+[16:25:46]  [FTP_OLD_TEST][id=1][UPLOAD] progress 45/256 chunk=180
+[16:25:47]  Upload : 46/256
+[16:25:47]  [FTP_OLD_TEST][id=1][UPLOAD] progress 46/256 chunk=180
+[16:25:49]  Upload : 47/256
+[16:25:49]  [FTP_OLD_TEST][id=1][UPLOAD] progress 47/256 chunk=180
+[16:25:53]  Upload : 45/256
+[16:25:53]  [FTP_RYU_TEST][id=2][UPLOAD] progress 45/256 chunk=180
+[16:25:54]  Upload : 46/256
+[16:25:54]  [FTP_RYU_TEST][id=2][UPLOAD] progress 46/256 chunk=180
+[16:25:54]  Upload : 47/256
+[16:25:54]  [FTP_RYU_TEST][id=2][UPLOAD] progress 47/256 chunk=180
+[16:25:55]  Upload : 48/256
+[16:25:55]  [FTP_RYU_TEST][id=2][UPLOAD] progress 48/256 chunk=180
+[16:25:55]  Upload : 49/256
+[16:25:55]  [FTP_RYU_TEST][id=2][UPLOAD] progress 49/256 chunk=180
+[16:25:56]  Upload : 50/256
+[16:25:56]  [FTP_RYU_TEST][id=2][UPLOAD] progress 50/256 chunk=180
+[16:25:58]  Upload : 48/256
+[16:25:58]  [FTP_OLD_TEST][id=1][UPLOAD] progress 48/256 chunk=180
+[16:26:00]  Upload : 49/256
+[16:26:00]  [FTP_OLD_TEST][id=1][UPLOAD] progress 49/256 chunk=180
+[16:26:01]  Upload : 50/256
+[16:26:01]  [FTP_OLD_TEST][id=1][UPLOAD] progress 50/256 chunk=180
+[16:26:03]  Upload : 51/256
+[16:26:03]  [FTP_OLD_TEST][id=1][UPLOAD] progress 51/256 chunk=180
+[16:26:04]  Upload : 52/256
+[16:26:04]  [FTP_OLD_TEST][id=1][UPLOAD] progress 52/256 chunk=180
+[16:26:06]  Upload : 53/256
+[16:26:06]  [FTP_OLD_TEST][id=1][UPLOAD] progress 53/256 chunk=180
+[16:26:10]  Upload : 51/256
+[16:26:10]  [FTP_RYU_TEST][id=2][UPLOAD] progress 51/256 chunk=180
+[16:26:11]  Upload : 52/256
+[16:26:11]  [FTP_RYU_TEST][id=2][UPLOAD] progress 52/256 chunk=180
+[16:26:11]  Upload : 53/256
+[16:26:11]  [FTP_RYU_TEST][id=2][UPLOAD] progress 53/256 chunk=180
+[16:26:12]  Upload : 54/256
+[16:26:12]  [FTP_RYU_TEST][id=2][UPLOAD] progress 54/256 chunk=180
+[16:26:13]  Upload : 55/256
+[16:26:13]  [FTP_RYU_TEST][id=2][UPLOAD] progress 55/256 chunk=180
+[16:26:13]  Upload : 56/256
+[16:26:13]  [FTP_RYU_TEST][id=2][UPLOAD] progress 56/256 chunk=180
+[16:26:15]  Upload : 57/256
+[16:26:15]  [FTP_RYU_TEST][id=2][UPLOAD] progress 57/256 chunk=180
+[16:26:16]  Upload : 58/256
+[16:26:16]  [FTP_RYU_TEST][id=2][UPLOAD] progress 58/256 chunk=180
+[16:26:16]  Upload : 54/256
+[16:26:16]  [FTP_OLD_TEST][id=1][UPLOAD] progress 54/256 chunk=180
+[16:26:16]  Upload : 59/256
+[16:26:16]  [FTP_RYU_TEST][id=2][UPLOAD] progress 59/256 chunk=180
+[16:26:17]  Upload : 60/256
+[16:26:17]  [FTP_RYU_TEST][id=2][UPLOAD] progress 60/256 chunk=180
+[16:26:17]  Upload : 55/256
+[16:26:17]  [FTP_OLD_TEST][id=1][UPLOAD] progress 55/256 chunk=180
+[16:26:19]  Upload : 56/256
+[16:26:19]  [FTP_OLD_TEST][id=1][UPLOAD] progress 56/256 chunk=180
+[16:26:21]  Upload : 57/256
+[16:26:21]  [FTP_OLD_TEST][id=1][UPLOAD] progress 57/256 chunk=180
+[16:26:22]  Upload : 58/256
+[16:26:22]  [FTP_OLD_TEST][id=1][UPLOAD] progress 58/256 chunk=180
+[16:26:24]  Upload : 59/256
+[16:26:24]  [FTP_OLD_TEST][id=1][UPLOAD] progress 59/256 chunk=180
+[16:26:34]  Upload : 61/256
+[16:26:34]  [FTP_RYU_TEST][id=2][UPLOAD] progress 61/256 chunk=180
+[16:26:34]  Upload : 62/256
+[16:26:34]  [FTP_RYU_TEST][id=2][UPLOAD] progress 62/256 chunk=180
+[16:26:35]  Upload : 60/256
+[16:26:35]  [FTP_OLD_TEST][id=1][UPLOAD] progress 60/256 chunk=180
+[16:26:35]  Upload : 63/256
+[16:26:35]  [FTP_RYU_TEST][id=2][UPLOAD] progress 63/256 chunk=180
+[16:26:36]  Upload : 64/256
+[16:26:36]  [FTP_RYU_TEST][id=2][UPLOAD] progress 64/256 chunk=180
+[16:26:36]  Upload : 65/256
+[16:26:36]  [FTP_RYU_TEST][id=2][UPLOAD] progress 65/256 chunk=180
+[16:26:36]  Upload : 61/256
+[16:26:36]  [FTP_OLD_TEST][id=1][UPLOAD] progress 61/256 chunk=180
+[16:26:37]  Upload : 66/256
+[16:26:37]  [FTP_RYU_TEST][id=2][UPLOAD] progress 66/256 chunk=180
+[16:26:38]  Upload : 67/256
+[16:26:38]  [FTP_RYU_TEST][id=2][UPLOAD] progress 67/256 chunk=180
+[16:26:38]  Upload : 62/256
+[16:26:38]  [FTP_OLD_TEST][id=1][UPLOAD] progress 62/256 chunk=180
+[16:26:38]  Upload : 68/256
+[16:26:38]  [FTP_RYU_TEST][id=2][UPLOAD] progress 68/256 chunk=180
+[16:26:40]  Upload : 63/256
+[16:26:40]  [FTP_OLD_TEST][id=1][UPLOAD] progress 63/256 chunk=180
+[16:26:41]  Upload : 64/256
+[16:26:41]  [FTP_OLD_TEST][id=1][UPLOAD] progress 64/256 chunk=180
+[16:26:43]  Upload : 65/256
+[16:26:43]  [FTP_OLD_TEST][id=1][UPLOAD] progress 65/256 chunk=180
+[16:26:52]  Upload : 66/256
+[16:26:52]  [FTP_OLD_TEST][id=1][UPLOAD] progress 66/256 chunk=180
+[16:26:53]  Upload : 67/256
+[16:26:53]  [FTP_OLD_TEST][id=1][UPLOAD] progress 67/256 chunk=180
+[16:26:55]  Upload : 69/256
+[16:26:55]  [FTP_RYU_TEST][id=2][UPLOAD] progress 69/256 chunk=180
+[16:26:55]  Upload : 68/256
+[16:26:55]  [FTP_OLD_TEST][id=1][UPLOAD] progress 68/256 chunk=180
+[16:26:55]  Upload : 70/256
+[16:26:55]  [FTP_RYU_TEST][id=2][UPLOAD] progress 70/256 chunk=180
+[16:26:56]  Upload : 71/256
+[16:26:56]  [FTP_RYU_TEST][id=2][UPLOAD] progress 71/256 chunk=180
+[16:26:56]  Upload : 72/256
+[16:26:56]  [FTP_RYU_TEST][id=2][UPLOAD] progress 72/256 chunk=180
+[16:26:56]  Upload : 69/256
+[16:26:56]  [FTP_OLD_TEST][id=1][UPLOAD] progress 69/256 chunk=180
+[16:26:57]  Upload : 73/256
+[16:26:57]  [FTP_RYU_TEST][id=2][UPLOAD] progress 73/256 chunk=180
+[16:26:58]  Upload : 74/256
+[16:26:58]  [FTP_RYU_TEST][id=2][UPLOAD] progress 74/256 chunk=180
+[16:26:58]  Upload : 70/256
+[16:26:58]  [FTP_OLD_TEST][id=1][UPLOAD] progress 70/256 chunk=180
+[16:27:00]  Upload : 71/256
+[16:27:00]  [FTP_OLD_TEST][id=1][UPLOAD] progress 71/256 chunk=180
+[16:27:10]  Upload : 72/256
+[16:27:10]  [FTP_OLD_TEST][id=1][UPLOAD] progress 72/256 chunk=180
+[16:27:12]  Upload : 73/256
+[16:27:12]  [FTP_OLD_TEST][id=1][UPLOAD] progress 73/256 chunk=180
+[16:27:12]  Upload : 75/256
+[16:27:12]  [FTP_RYU_TEST][id=2][UPLOAD] progress 75/256 chunk=180
+[16:27:13]  Upload : 76/256
+[16:27:13]  [FTP_RYU_TEST][id=2][UPLOAD] progress 76/256 chunk=180
+[16:27:13]  Upload : 74/256
+[16:27:13]  [FTP_OLD_TEST][id=1][UPLOAD] progress 74/256 chunk=180
+[16:27:13]  Upload : 77/256
+[16:27:13]  [FTP_RYU_TEST][id=2][UPLOAD] progress 77/256 chunk=180
+[16:27:14]  Upload : 78/256
+[16:27:14]  [FTP_RYU_TEST][id=2][UPLOAD] progress 78/256 chunk=180
+[16:27:14]  Upload : 79/256
+[16:27:14]  [FTP_RYU_TEST][id=2][UPLOAD] progress 79/256 chunk=180
+[16:27:15]  Upload : 75/256
+[16:27:15]  [FTP_OLD_TEST][id=1][UPLOAD] progress 75/256 chunk=180
+[16:27:15]  Upload : 80/256
+[16:27:15]  [FTP_RYU_TEST][id=2][UPLOAD] progress 80/256 chunk=180
+[16:27:16]  Upload : 76/256
+[16:27:16]  [FTP_OLD_TEST][id=1][UPLOAD] progress 76/256 chunk=180
+[16:27:29]  Upload : 77/256
+[16:27:29]  [FTP_OLD_TEST][id=1][UPLOAD] progress 77/256 chunk=180
+[16:27:30]  Upload : 81/256
+[16:27:30]  [FTP_RYU_TEST][id=2][UPLOAD] progress 81/256 chunk=180
+[16:27:30]  Upload : 82/256
+[16:27:30]  [FTP_RYU_TEST][id=2][UPLOAD] progress 82/256 chunk=180
+[16:27:30]  Upload : 78/256
+[16:27:30]  [FTP_OLD_TEST][id=1][UPLOAD] progress 78/256 chunk=180
+[16:27:31]  Upload : 83/256
+[16:27:31]  [FTP_RYU_TEST][id=2][UPLOAD] progress 83/256 chunk=180
+[16:27:31]  Upload : 84/256
+[16:27:31]  [FTP_RYU_TEST][id=2][UPLOAD] progress 84/256 chunk=180
+[16:27:32]  Upload : 79/256
+[16:27:32]  [FTP_OLD_TEST][id=1][UPLOAD] progress 79/256 chunk=180
+[16:27:32]  Upload : 85/256
+[16:27:32]  [FTP_RYU_TEST][id=2][UPLOAD] progress 85/256 chunk=180
+[16:27:32]  Upload : 86/256
+[16:27:32]  [FTP_RYU_TEST][id=2][UPLOAD] progress 86/256 chunk=180
+[16:27:33]  Upload : 80/256
+[16:27:33]  [FTP_OLD_TEST][id=1][UPLOAD] progress 80/256 chunk=180
+[16:27:35]  Upload : 81/256
+[16:27:35]  [FTP_OLD_TEST][id=1][UPLOAD] progress 81/256 chunk=180
+[16:27:36]  Upload : 82/256
+[16:27:36]  [FTP_OLD_TEST][id=1][UPLOAD] progress 82/256 chunk=180
+[16:27:46]  Upload : 83/256
+[16:27:46]  [FTP_OLD_TEST][id=1][UPLOAD] progress 83/256 chunk=180
+[16:27:47]  Upload : 87/256
+[16:27:47]  [FTP_RYU_TEST][id=2][UPLOAD] progress 87/256 chunk=180
+[16:27:47]  Upload : 84/256
+[16:27:47]  [FTP_OLD_TEST][id=1][UPLOAD] progress 84/256 chunk=180
+[16:27:48]  Upload : 88/256
+[16:27:48]  [FTP_RYU_TEST][id=2][UPLOAD] progress 88/256 chunk=180
+[16:27:48]  Upload : 89/256
+[16:27:48]  [FTP_RYU_TEST][id=2][UPLOAD] progress 89/256 chunk=180
+[16:27:49]  Upload : 85/256
+[16:27:49]  [FTP_OLD_TEST][id=1][UPLOAD] progress 85/256 chunk=180
+[16:27:49]  Upload : 90/256
+[16:27:49]  [FTP_RYU_TEST][id=2][UPLOAD] progress 90/256 chunk=180
+[16:27:49]  Upload : 91/256
+[16:27:49]  [FTP_RYU_TEST][id=2][UPLOAD] progress 91/256 chunk=180
+[16:27:50]  Upload : 92/256
+[16:27:50]  [FTP_RYU_TEST][id=2][UPLOAD] progress 92/256 chunk=180
+[16:27:50]  Upload : 86/256
+[16:27:50]  [FTP_OLD_TEST][id=1][UPLOAD] progress 86/256 chunk=180
+[16:27:52]  Upload : 87/256
+[16:27:52]  [FTP_OLD_TEST][id=1][UPLOAD] progress 87/256 chunk=180
+[16:27:53]  Upload : 88/256
+[16:27:53]  [FTP_OLD_TEST][id=1][UPLOAD] progress 88/256 chunk=180
+[16:28:02]  Upload : 89/256
+[16:28:02]  [FTP_OLD_TEST][id=1][UPLOAD] progress 89/256 chunk=180
+[16:28:04]  Upload : 90/256
+[16:28:04]  [FTP_OLD_TEST][id=1][UPLOAD] progress 90/256 chunk=180
+[16:28:05]  Upload : 93/256
+[16:28:05]  [FTP_RYU_TEST][id=2][UPLOAD] progress 93/256 chunk=180
+[16:28:05]  Upload : 94/256
+[16:28:05]  [FTP_RYU_TEST][id=2][UPLOAD] progress 94/256 chunk=180
+[16:28:06]  Upload : 91/256
+[16:28:06]  [FTP_OLD_TEST][id=1][UPLOAD] progress 91/256 chunk=180
+[16:28:06]  Upload : 95/256
+[16:28:06]  [FTP_RYU_TEST][id=2][UPLOAD] progress 95/256 chunk=180
+[16:28:06]  Upload : 96/256
+[16:28:06]  [FTP_RYU_TEST][id=2][UPLOAD] progress 96/256 chunk=180
+[16:28:07]  Upload : 97/256
+[16:28:07]  [FTP_RYU_TEST][id=2][UPLOAD] progress 97/256 chunk=180
+[16:28:07]  Upload : 92/256
+[16:28:07]  [FTP_OLD_TEST][id=1][UPLOAD] progress 92/256 chunk=180
+[16:28:08]  Upload : 98/256
+[16:28:08]  [FTP_RYU_TEST][id=2][UPLOAD] progress 98/256 chunk=180
+[16:28:09]  Upload : 93/256
+[16:28:09]  [FTP_OLD_TEST][id=1][UPLOAD] progress 93/256 chunk=180
+[16:28:10]  Upload : 94/256
+[16:28:10]  [FTP_OLD_TEST][id=1][UPLOAD] progress 94/256 chunk=180
+[16:28:19]  Upload : 95/256
+[16:28:19]  [FTP_OLD_TEST][id=1][UPLOAD] progress 95/256 chunk=180
+[16:28:21]  Upload : 96/256
+[16:28:21]  [FTP_OLD_TEST][id=1][UPLOAD] progress 96/256 chunk=180
+[16:28:22]  Upload : 99/256
+[16:28:22]  [FTP_RYU_TEST][id=2][UPLOAD] progress 99/256 chunk=180
+[16:28:22]  Upload : 100/256
+[16:28:22]  [FTP_RYU_TEST][id=2][UPLOAD] progress 100/256 chunk=180
+[16:28:22]  Upload : 97/256
+[16:28:22]  [FTP_OLD_TEST][id=1][UPLOAD] progress 97/256 chunk=180
+[16:28:23]  Upload : 101/256
+[16:28:23]  [FTP_RYU_TEST][id=2][UPLOAD] progress 101/256 chunk=180
+[16:28:23]  Upload : 102/256
+[16:28:23]  [FTP_RYU_TEST][id=2][UPLOAD] progress 102/256 chunk=180
+[16:28:24]  Upload : 103/256
+[16:28:24]  [FTP_RYU_TEST][id=2][UPLOAD] progress 103/256 chunk=180
+[16:28:24]  Upload : 98/256
+[16:28:24]  [FTP_OLD_TEST][id=1][UPLOAD] progress 98/256 chunk=180
+[16:28:26]  Upload : 99/256
+[16:28:26]  [FTP_OLD_TEST][id=1][UPLOAD] progress 99/256 chunk=180
+[16:28:27]  Upload : 100/256
+[16:28:27]  [FTP_OLD_TEST][id=1][UPLOAD] progress 100/256 chunk=180
+[16:28:27]  Upload : 104/256
+[16:28:27]  [FTP_RYU_TEST][id=2][UPLOAD] progress 104/256 chunk=180
+[16:28:28]  Upload : 105/256
+[16:28:28]  [FTP_RYU_TEST][id=2][UPLOAD] progress 105/256 chunk=180
+[16:28:28]  Upload : 106/256
+[16:28:28]  [FTP_RYU_TEST][id=2][UPLOAD] progress 106/256 chunk=180
+[16:28:29]  Upload : 107/256
+[16:28:29]  [FTP_RYU_TEST][id=2][UPLOAD] progress 107/256 chunk=180
+[16:28:29]  Upload : 108/256
+[16:28:29]  [FTP_RYU_TEST][id=2][UPLOAD] progress 108/256 chunk=180
+[16:28:30]  Upload : 109/256
+[16:28:30]  [FTP_RYU_TEST][id=2][UPLOAD] progress 109/256 chunk=180
+[16:28:38]  Upload : 101/256
+[16:28:38]  [FTP_OLD_TEST][id=1][UPLOAD] progress 101/256 chunk=180
+[16:28:39]  Upload : 102/256
+[16:28:39]  [FTP_OLD_TEST][id=1][UPLOAD] progress 102/256 chunk=180
+[16:28:41]  Upload : 103/256
+[16:28:41]  [FTP_OLD_TEST][id=1][UPLOAD] progress 103/256 chunk=180
+[16:28:42]  Upload : 104/256
+[16:28:42]  [FTP_OLD_TEST][id=1][UPLOAD] progress 104/256 chunk=180
+[16:28:44]  Upload : 105/256
+[16:28:44]  [FTP_OLD_TEST][id=1][UPLOAD] progress 105/256 chunk=180
+[16:28:45]  Upload : 110/256
+[16:28:45]  [FTP_RYU_TEST][id=2][UPLOAD] progress 110/256 chunk=180
+[16:28:45]  Upload : 111/256
+[16:28:45]  [FTP_RYU_TEST][id=2][UPLOAD] progress 111/256 chunk=180
+[16:28:45]  Upload : 106/256
+[16:28:45]  [FTP_OLD_TEST][id=1][UPLOAD] progress 106/256 chunk=180
+[16:28:46]  Upload : 112/256
+[16:28:46]  [FTP_RYU_TEST][id=2][UPLOAD] progress 112/256 chunk=180
+[16:28:46]  Upload : 113/256
+[16:28:46]  [FTP_RYU_TEST][id=2][UPLOAD] progress 113/256 chunk=180
+[16:28:47]  Upload : 114/256
+[16:28:47]  [FTP_RYU_TEST][id=2][UPLOAD] progress 114/256 chunk=180
+[16:28:47]  Upload : 115/256
+[16:28:47]  [FTP_RYU_TEST][id=2][UPLOAD] progress 115/256 chunk=180
+[16:28:55]  Upload : 107/256
+[16:28:55]  [FTP_OLD_TEST][id=1][UPLOAD] progress 107/256 chunk=180
+[16:28:56]  Upload : 108/256
+[16:28:56]  [FTP_OLD_TEST][id=1][UPLOAD] progress 108/256 chunk=180
+[16:28:58]  Upload : 109/256
+[16:28:58]  [FTP_OLD_TEST][id=1][UPLOAD] progress 109/256 chunk=180
+[16:28:59]  Upload : 110/256
+[16:28:59]  [FTP_OLD_TEST][id=1][UPLOAD] progress 110/256 chunk=180
+[16:29:01]  Upload : 111/256
+[16:29:01]  [FTP_OLD_TEST][id=1][UPLOAD] progress 111/256 chunk=180
+[16:29:02]  Upload : 112/256
+[16:29:02]  [FTP_OLD_TEST][id=1][UPLOAD] progress 112/256 chunk=180
+[16:29:03]  Upload : 116/256
+[16:29:03]  [FTP_RYU_TEST][id=2][UPLOAD] progress 116/256 chunk=180
+[16:29:03]  Upload : 117/256
+[16:29:03]  [FTP_RYU_TEST][id=2][UPLOAD] progress 117/256 chunk=180
+[16:29:04]  Upload : 113/256
+[16:29:04]  [FTP_OLD_TEST][id=1][UPLOAD] progress 113/256 chunk=180
+[16:29:04]  Upload : 118/256
+[16:29:04]  [FTP_RYU_TEST][id=2][UPLOAD] progress 118/256 chunk=180
+[16:29:04]  Upload : 119/256
+[16:29:04]  [FTP_RYU_TEST][id=2][UPLOAD] progress 119/256 chunk=180
+[16:29:05]  Upload : 120/256
+[16:29:05]  [FTP_RYU_TEST][id=2][UPLOAD] progress 120/256 chunk=180
+[16:29:05]  Upload : 114/256
+[16:29:05]  [FTP_OLD_TEST][id=1][UPLOAD] progress 114/256 chunk=180
+[16:29:06]  Upload : 121/256
+[16:29:06]  [FTP_RYU_TEST][id=2][UPLOAD] progress 121/256 chunk=180
+[16:29:07]  Upload : 122/256
+[16:29:07]  [FTP_RYU_TEST][id=2][UPLOAD] progress 122/256 chunk=180
+[16:29:08]  Upload : 123/256
+[16:29:08]  [FTP_RYU_TEST][id=2][UPLOAD] progress 123/256 chunk=180
+[16:29:09]  Upload : 124/256
+[16:29:09]  [FTP_RYU_TEST][id=2][UPLOAD] progress 124/256 chunk=180
+[16:29:17]  Upload : 115/256
+[16:29:17]  [FTP_OLD_TEST][id=1][UPLOAD] progress 115/256 chunk=180
+[16:29:18]  Upload : 116/256
+[16:29:18]  [FTP_OLD_TEST][id=1][UPLOAD] progress 116/256 chunk=180
+[16:29:20]  Upload : 117/256
+[16:29:20]  [FTP_OLD_TEST][id=1][UPLOAD] progress 117/256 chunk=180
+[16:29:21]  Upload : 118/256
+[16:29:21]  [FTP_OLD_TEST][id=1][UPLOAD] progress 118/256 chunk=180
+[16:29:23]  Upload : 119/256
+[16:29:23]  [FTP_OLD_TEST][id=1][UPLOAD] progress 119/256 chunk=180
+[16:29:24]  Upload : 120/256
+[16:29:24]  [FTP_OLD_TEST][id=1][UPLOAD] progress 120/256 chunk=180
+[16:29:25]  Upload : 125/256
+[16:29:25]  [FTP_RYU_TEST][id=2][UPLOAD] progress 125/256 chunk=180
+[16:29:26]  Upload : 126/256
+[16:29:26]  [FTP_RYU_TEST][id=2][UPLOAD] progress 126/256 chunk=180
+[16:29:26]  Upload : 127/256
+[16:29:26]  [FTP_RYU_TEST][id=2][UPLOAD] progress 127/256 chunk=180
+[16:29:27]  Upload : 128/256
+[16:29:27]  [FTP_RYU_TEST][id=2][UPLOAD] progress 128/256 chunk=180
+[16:29:27]  Upload : 129/256
+[16:29:27]  [FTP_RYU_TEST][id=2][UPLOAD] progress 129/256 chunk=180
+[16:29:28]  Upload : 130/256
+[16:29:28]  [FTP_RYU_TEST][id=2][UPLOAD] progress 130/256 chunk=180
+[16:29:34]  Upload : 121/256
+[16:29:34]  [FTP_OLD_TEST][id=1][UPLOAD] progress 121/256 chunk=180
+[16:29:35]  Upload : 122/256
+[16:29:35]  [FTP_OLD_TEST][id=1][UPLOAD] progress 122/256 chunk=180
+[16:29:37]  Upload : 123/256
+[16:29:37]  [FTP_OLD_TEST][id=1][UPLOAD] progress 123/256 chunk=180
+[16:29:38]  Upload : 124/256
+[16:29:38]  [FTP_OLD_TEST][id=1][UPLOAD] progress 124/256 chunk=180
+[16:29:40]  Upload : 125/256
+[16:29:40]  [FTP_OLD_TEST][id=1][UPLOAD] progress 125/256 chunk=180
+[16:29:41]  Upload : 126/256
+[16:29:41]  [FTP_OLD_TEST][id=1][UPLOAD] progress 126/256 chunk=180
+[16:29:43]  Upload : 131/256
+[16:29:43]  [FTP_RYU_TEST][id=2][UPLOAD] progress 131/256 chunk=180
+[16:29:44]  Upload : 132/256
+[16:29:44]  [FTP_RYU_TEST][id=2][UPLOAD] progress 132/256 chunk=180
+[16:29:44]  Upload : 133/256
+[16:29:44]  [FTP_RYU_TEST][id=2][UPLOAD] progress 133/256 chunk=180
+[16:29:45]  Upload : 134/256
+[16:29:45]  [FTP_RYU_TEST][id=2][UPLOAD] progress 134/256 chunk=180
+[16:29:45]  Upload : 135/256
+[16:29:45]  [FTP_RYU_TEST][id=2][UPLOAD] progress 135/256 chunk=180
+[16:29:46]  Upload : 136/256
+[16:29:46]  [FTP_RYU_TEST][id=2][UPLOAD] progress 136/256 chunk=180
+[16:29:50]  Upload : 127/256
+[16:29:50]  [FTP_OLD_TEST][id=1][UPLOAD] progress 127/256 chunk=180
+[16:29:52]  Upload : 128/256
+[16:29:52]  [FTP_OLD_TEST][id=1][UPLOAD] progress 128/256 chunk=180
+[16:29:54]  Upload : 129/256
+[16:29:54]  [FTP_OLD_TEST][id=1][UPLOAD] progress 129/256 chunk=180
+[16:29:55]  Upload : 130/256
+[16:29:55]  [FTP_OLD_TEST][id=1][UPLOAD] progress 130/256 chunk=180
+[16:29:57]  Upload : 131/256
+[16:29:57]  [FTP_OLD_TEST][id=1][UPLOAD] progress 131/256 chunk=180
+[16:29:58]  Upload : 132/256
+[16:29:58]  [FTP_OLD_TEST][id=1][UPLOAD] progress 132/256 chunk=180
+[16:30:00]  Upload : 137/256
+[16:30:00]  [FTP_RYU_TEST][id=2][UPLOAD] progress 137/256 chunk=180
+[16:30:01]  Upload : 138/256
+[16:30:01]  [FTP_RYU_TEST][id=2][UPLOAD] progress 138/256 chunk=180
+[16:30:02]  Upload : 139/256
+[16:30:02]  [FTP_RYU_TEST][id=2][UPLOAD] progress 139/256 chunk=180
+[16:30:02]  Upload : 140/256
+[16:30:02]  [FTP_RYU_TEST][id=2][UPLOAD] progress 140/256 chunk=180
+[16:30:03]  Upload : 141/256
+[16:30:03]  [FTP_RYU_TEST][id=2][UPLOAD] progress 141/256 chunk=180
+[16:30:03]  Upload : 142/256
+[16:30:03]  [FTP_RYU_TEST][id=2][UPLOAD] progress 142/256 chunk=180
+[16:30:07]  Upload : 133/256
+[16:30:07]  [FTP_OLD_TEST][id=1][UPLOAD] progress 133/256 chunk=180
+[16:30:09]  Upload : 134/256
+[16:30:09]  [FTP_OLD_TEST][id=1][UPLOAD] progress 134/256 chunk=180
+[16:30:10]  Upload : 135/256
+[16:30:10]  [FTP_OLD_TEST][id=1][UPLOAD] progress 135/256 chunk=180
+[16:30:12]  Upload : 136/256
+[16:30:12]  [FTP_OLD_TEST][id=1][UPLOAD] progress 136/256 chunk=180
+[16:30:14]  Upload : 137/256
+[16:30:14]  [FTP_OLD_TEST][id=1][UPLOAD] progress 137/256 chunk=180
+[16:30:15]  Upload : 138/256
+[16:30:15]  [FTP_OLD_TEST][id=1][UPLOAD] progress 138/256 chunk=180
+[16:30:18]  Upload : 143/256
+[16:30:18]  [FTP_RYU_TEST][id=2][UPLOAD] progress 143/256 chunk=180
+[16:30:19]  Upload : 144/256
+[16:30:19]  [FTP_RYU_TEST][id=2][UPLOAD] progress 144/256 chunk=180
+[16:30:19]  Upload : 145/256
+[16:30:19]  [FTP_RYU_TEST][id=2][UPLOAD] progress 145/256 chunk=180
+[16:30:20]  Upload : 146/256
+[16:30:20]  [FTP_RYU_TEST][id=2][UPLOAD] progress 146/256 chunk=180
+[16:30:20]  Upload : 147/256
+[16:30:20]  [FTP_RYU_TEST][id=2][UPLOAD] progress 147/256 chunk=180
+[16:30:21]  Upload : 148/256
+[16:30:21]  [FTP_RYU_TEST][id=2][UPLOAD] progress 148/256 chunk=180
+[16:30:24]  Upload : 139/256
+[16:30:24]  [FTP_OLD_TEST][id=1][UPLOAD] progress 139/256 chunk=180
+[16:30:26]  Upload : 140/256
+[16:30:26]  [FTP_OLD_TEST][id=1][UPLOAD] progress 140/256 chunk=180
+[16:30:27]  Upload : 141/256
+[16:30:27]  [FTP_OLD_TEST][id=1][UPLOAD] progress 141/256 chunk=180
+[16:30:29]  Upload : 142/256
+[16:30:29]  [FTP_OLD_TEST][id=1][UPLOAD] progress 142/256 chunk=180
+[16:30:30]  Upload : 143/256
+[16:30:30]  [FTP_OLD_TEST][id=1][UPLOAD] progress 143/256 chunk=180
+[16:30:32]  Upload : 144/256
+[16:30:32]  [FTP_OLD_TEST][id=1][UPLOAD] progress 144/256 chunk=180
+[16:30:35]  Upload : 149/256
+[16:30:35]  [FTP_RYU_TEST][id=2][UPLOAD] progress 149/256 chunk=180
+[16:30:36]  Upload : 150/256
+[16:30:36]  [FTP_RYU_TEST][id=2][UPLOAD] progress 150/256 chunk=180
+[16:30:36]  Upload : 151/256
+[16:30:36]  [FTP_RYU_TEST][id=2][UPLOAD] progress 151/256 chunk=180
+[16:30:37]  Upload : 152/256
+[16:30:37]  [FTP_RYU_TEST][id=2][UPLOAD] progress 152/256 chunk=180
+[16:30:37]  Upload : 153/256
+[16:30:37]  [FTP_RYU_TEST][id=2][UPLOAD] progress 153/256 chunk=180
+[16:30:38]  Upload : 154/256
+[16:30:38]  [FTP_RYU_TEST][id=2][UPLOAD] progress 154/256 chunk=180
+[16:30:41]  Upload : 145/256
+[16:30:41]  [FTP_OLD_TEST][id=1][UPLOAD] progress 145/256 chunk=180
+[16:30:43]  Upload : 146/256
+[16:30:43]  [FTP_OLD_TEST][id=1][UPLOAD] progress 146/256 chunk=180
+[16:30:44]  Upload : 147/256
+[16:30:44]  [FTP_OLD_TEST][id=1][UPLOAD] progress 147/256 chunk=180
+[16:30:46]  Upload : 148/256
+[16:30:46]  [FTP_OLD_TEST][id=1][UPLOAD] progress 148/256 chunk=180
+[16:30:47]  Upload : 149/256
+[16:30:47]  [FTP_OLD_TEST][id=1][UPLOAD] progress 149/256 chunk=180
+[16:30:49]  Upload : 150/256
+[16:30:49]  [FTP_OLD_TEST][id=1][UPLOAD] progress 150/256 chunk=180
+[16:30:52]  Upload : 155/256
+[16:30:52]  [FTP_RYU_TEST][id=2][UPLOAD] progress 155/256 chunk=180
+[16:30:53]  Upload : 156/256
+[16:30:53]  [FTP_RYU_TEST][id=2][UPLOAD] progress 156/256 chunk=180
+[16:30:54]  Upload : 157/256
+[16:30:54]  [FTP_RYU_TEST][id=2][UPLOAD] progress 157/256 chunk=180
+[16:30:54]  Upload : 158/256
+[16:30:54]  [FTP_RYU_TEST][id=2][UPLOAD] progress 158/256 chunk=180
+[16:30:55]  Upload : 159/256
+[16:30:55]  [FTP_RYU_TEST][id=2][UPLOAD] progress 159/256 chunk=180
+[16:30:55]  Upload : 160/256
+[16:30:55]  [FTP_RYU_TEST][id=2][UPLOAD] progress 160/256 chunk=180
+[16:30:58]  Upload : 151/256
+[16:30:58]  [FTP_OLD_TEST][id=1][UPLOAD] progress 151/256 chunk=180
+[16:31:00]  Upload : 152/256
+[16:31:00]  [FTP_OLD_TEST][id=1][UPLOAD] progress 152/256 chunk=180
+[16:31:01]  Upload : 153/256
+[16:31:01]  [FTP_OLD_TEST][id=1][UPLOAD] progress 153/256 chunk=180
+[16:31:03]  Upload : 154/256
+[16:31:03]  [FTP_OLD_TEST][id=1][UPLOAD] progress 154/256 chunk=180
+[16:31:04]  Upload : 155/256
+[16:31:04]  [FTP_OLD_TEST][id=1][UPLOAD] progress 155/256 chunk=180
+[16:31:06]  Upload : 156/256
+[16:31:06]  [FTP_OLD_TEST][id=1][UPLOAD] progress 156/256 chunk=180
+[16:31:11]  Upload : 161/256
+[16:31:11]  [FTP_RYU_TEST][id=2][UPLOAD] progress 161/256 chunk=180
+[16:31:11]  Upload : 162/256
+[16:31:11]  [FTP_RYU_TEST][id=2][UPLOAD] progress 162/256 chunk=180
+[16:31:12]  Upload : 163/256
+[16:31:12]  [FTP_RYU_TEST][id=2][UPLOAD] progress 163/256 chunk=180
+[16:31:12]  Upload : 164/256
+[16:31:12]  [FTP_RYU_TEST][id=2][UPLOAD] progress 164/256 chunk=180
+[16:31:13]  Upload : 165/256
+[16:31:13]  [FTP_RYU_TEST][id=2][UPLOAD] progress 165/256 chunk=180
+[16:31:14]  Upload : 166/256
+[16:31:14]  [FTP_RYU_TEST][id=2][UPLOAD] progress 166/256 chunk=180
+[16:31:16]  Upload : 157/256
+[16:31:16]  [FTP_OLD_TEST][id=1][UPLOAD] progress 157/256 chunk=180
+[16:31:18]  Upload : 158/256
+[16:31:18]  [FTP_OLD_TEST][id=1][UPLOAD] progress 158/256 chunk=180
+[16:31:19]  Upload : 159/256
+[16:31:19]  [FTP_OLD_TEST][id=1][UPLOAD] progress 159/256 chunk=180
+[16:31:21]  Upload : 160/256
+[16:31:21]  [FTP_OLD_TEST][id=1][UPLOAD] progress 160/256 chunk=180
+[16:31:23]  Upload : 161/256
+[16:31:23]  [FTP_OLD_TEST][id=1][UPLOAD] progress 161/256 chunk=180
+[16:31:24]  Upload : 162/256
+[16:31:24]  [FTP_OLD_TEST][id=1][UPLOAD] progress 162/256 chunk=180
+[16:31:30]  Upload : 167/256
+[16:31:30]  [FTP_RYU_TEST][id=2][UPLOAD] progress 167/256 chunk=180
+[16:31:30]  Upload : 168/256
+[16:31:30]  [FTP_RYU_TEST][id=2][UPLOAD] progress 168/256 chunk=180
+[16:31:31]  Upload : 169/256
+[16:31:31]  [FTP_RYU_TEST][id=2][UPLOAD] progress 169/256 chunk=180
+[16:31:31]  Upload : 170/256
+[16:31:31]  [FTP_RYU_TEST][id=2][UPLOAD] progress 170/256 chunk=180
+[16:31:32]  Upload : 171/256
+[16:31:32]  [FTP_RYU_TEST][id=2][UPLOAD] progress 171/256 chunk=180
+[16:31:33]  Upload : 172/256
+[16:31:33]  [FTP_RYU_TEST][id=2][UPLOAD] progress 172/256 chunk=180
+[16:31:35]  Upload : 163/256
+[16:31:35]  [FTP_OLD_TEST][id=1][UPLOAD] progress 163/256 chunk=180
+[16:31:36]  Upload : 164/256
+[16:31:36]  [FTP_OLD_TEST][id=1][UPLOAD] progress 164/256 chunk=180
+[16:31:38]  Upload : 165/256
+[16:31:38]  [FTP_OLD_TEST][id=1][UPLOAD] progress 165/256 chunk=180
+[16:31:39]  Upload : 166/256
+[16:31:39]  [FTP_OLD_TEST][id=1][UPLOAD] progress 166/256 chunk=180
+[16:31:41]  Upload : 167/256
+[16:31:41]  [FTP_OLD_TEST][id=1][UPLOAD] progress 167/256 chunk=180
+[16:31:42]  Upload : 168/256
+[16:31:42]  [FTP_OLD_TEST][id=1][UPLOAD] progress 168/256 chunk=180
+[16:31:48]  Upload : 173/256
+[16:31:48]  [FTP_RYU_TEST][id=2][UPLOAD] progress 173/256 chunk=180
+[16:31:48]  Upload : 174/256
+[16:31:48]  [FTP_RYU_TEST][id=2][UPLOAD] progress 174/256 chunk=180
+[16:31:49]  Upload : 175/256
+[16:31:49]  [FTP_RYU_TEST][id=2][UPLOAD] progress 175/256 chunk=180
+[16:31:50]  Upload : 176/256
+[16:31:50]  [FTP_RYU_TEST][id=2][UPLOAD] progress 176/256 chunk=180
+[16:31:50]  Upload : 177/256
+[16:31:50]  [FTP_RYU_TEST][id=2][UPLOAD] progress 177/256 chunk=180
+[16:31:51]  Upload : 178/256
+[16:31:51]  [FTP_RYU_TEST][id=2][UPLOAD] progress 178/256 chunk=180
+[16:31:53]  Upload : 179/256
+[16:31:53]  [FTP_RYU_TEST][id=2][UPLOAD] progress 179/256 chunk=180
+[16:31:53]  Upload : 169/256
+[16:31:53]  [FTP_OLD_TEST][id=1][UPLOAD] progress 169/256 chunk=180
+[16:31:53]  Upload : 180/256
+[16:31:53]  [FTP_RYU_TEST][id=2][UPLOAD] progress 180/256 chunk=180
+[16:31:54]  Upload : 181/256
+[16:31:54]  [FTP_RYU_TEST][id=2][UPLOAD] progress 181/256 chunk=180
+[16:31:55]  Upload : 170/256
+[16:31:55]  [FTP_OLD_TEST][id=1][UPLOAD] progress 170/256 chunk=180
+[16:31:56]  Upload : 171/256
+[16:31:56]  [FTP_OLD_TEST][id=1][UPLOAD] progress 171/256 chunk=180
+[16:31:58]  Upload : 172/256
+[16:31:58]  [FTP_OLD_TEST][id=1][UPLOAD] progress 172/256 chunk=180
+[16:31:59]  Upload : 173/256
+[16:31:59]  [FTP_OLD_TEST][id=1][UPLOAD] progress 173/256 chunk=180
+[16:32:01]  Upload : 174/256
+[16:32:01]  [FTP_OLD_TEST][id=1][UPLOAD] progress 174/256 chunk=180
+[16:32:10]  Upload : 182/256
+[16:32:10]  [FTP_RYU_TEST][id=2][UPLOAD] progress 182/256 chunk=180
+[16:32:10]  Upload : 175/256
+[16:32:10]  [FTP_OLD_TEST][id=1][UPLOAD] progress 175/256 chunk=180
+[16:32:11]  Upload : 183/256
+[16:32:11]  [FTP_RYU_TEST][id=2][UPLOAD] progress 183/256 chunk=180
+[16:32:11]  Upload : 184/256
+[16:32:11]  [FTP_RYU_TEST][id=2][UPLOAD] progress 184/256 chunk=180
+[16:32:12]  Upload : 185/256
+[16:32:12]  [FTP_RYU_TEST][id=2][UPLOAD] progress 185/256 chunk=180
+[16:32:12]  Upload : 176/256
+[16:32:12]  [FTP_OLD_TEST][id=1][UPLOAD] progress 176/256 chunk=180
+[16:32:12]  Upload : 186/256
+[16:32:12]  [FTP_RYU_TEST][id=2][UPLOAD] progress 186/256 chunk=180
+[16:32:13]  Upload : 187/256
+[16:32:13]  [FTP_RYU_TEST][id=2][UPLOAD] progress 187/256 chunk=180
+[16:32:13]  Upload : 177/256
+[16:32:13]  [FTP_OLD_TEST][id=1][UPLOAD] progress 177/256 chunk=180
+[16:32:15]  Upload : 178/256
+[16:32:15]  [FTP_OLD_TEST][id=1][UPLOAD] progress 178/256 chunk=180
+[16:32:17]  Upload : 179/256
+[16:32:17]  [FTP_OLD_TEST][id=1][UPLOAD] progress 179/256 chunk=180
+[16:32:18]  Upload : 180/256
+[16:32:18]  [FTP_OLD_TEST][id=1][UPLOAD] progress 180/256 chunk=180
+[16:32:27]  Upload : 188/256
+[16:32:27]  [FTP_RYU_TEST][id=2][UPLOAD] progress 188/256 chunk=180
+[16:32:28]  Upload : 181/256
+[16:32:28]  [FTP_OLD_TEST][id=1][UPLOAD] progress 181/256 chunk=180
+[16:32:28]  Upload : 189/256
+[16:32:28]  [FTP_RYU_TEST][id=2][UPLOAD] progress 189/256 chunk=180
+[16:32:28]  Upload : 190/256
+[16:32:28]  [FTP_RYU_TEST][id=2][UPLOAD] progress 190/256 chunk=180
+[16:32:29]  Upload : 191/256
+[16:32:29]  [FTP_RYU_TEST][id=2][UPLOAD] progress 191/256 chunk=180
+[16:32:29]  Upload : 182/256
+[16:32:29]  [FTP_OLD_TEST][id=1][UPLOAD] progress 182/256 chunk=180
+[16:32:30]  Upload : 192/256
+[16:32:30]  [FTP_RYU_TEST][id=2][UPLOAD] progress 192/256 chunk=180
+[16:32:30]  Upload : 193/256
+[16:32:30]  [FTP_RYU_TEST][id=2][UPLOAD] progress 193/256 chunk=180
+[16:32:31]  Upload : 183/256
+[16:32:31]  [FTP_OLD_TEST][id=1][UPLOAD] progress 183/256 chunk=180
+[16:32:32]  Upload : 184/256
+[16:32:32]  [FTP_OLD_TEST][id=1][UPLOAD] progress 184/256 chunk=180
+[16:32:34]  Upload : 185/256
+[16:32:34]  [FTP_OLD_TEST][id=1][UPLOAD] progress 185/256 chunk=180
+[16:32:35]  Upload : 186/256
+[16:32:35]  [FTP_OLD_TEST][id=1][UPLOAD] progress 186/256 chunk=180
+[16:32:45]  Upload : 194/256
+[16:32:45]  [FTP_RYU_TEST][id=2][UPLOAD] progress 194/256 chunk=180
+[16:32:45]  Upload : 187/256
+[16:32:45]  [FTP_OLD_TEST][id=1][UPLOAD] progress 187/256 chunk=180
+[16:32:45]  Upload : 195/256
+[16:32:45]  [FTP_RYU_TEST][id=2][UPLOAD] progress 195/256 chunk=180
+[16:32:46]  Upload : 196/256
+[16:32:46]  [FTP_RYU_TEST][id=2][UPLOAD] progress 196/256 chunk=180
+[16:32:46]  Upload : 197/256
+[16:32:46]  [FTP_RYU_TEST][id=2][UPLOAD] progress 197/256 chunk=180
+[16:32:47]  Upload : 188/256
+[16:32:47]  [FTP_OLD_TEST][id=1][UPLOAD] progress 188/256 chunk=180
+[16:32:47]  Upload : 198/256
+[16:32:47]  [FTP_RYU_TEST][id=2][UPLOAD] progress 198/256 chunk=180
+[16:32:48]  Upload : 199/256
+[16:32:48]  [FTP_RYU_TEST][id=2][UPLOAD] progress 199/256 chunk=180
+[16:32:48]  Upload : 189/256
+[16:32:48]  [FTP_OLD_TEST][id=1][UPLOAD] progress 189/256 chunk=180
+[16:32:50]  Upload : 190/256
+[16:32:50]  [FTP_OLD_TEST][id=1][UPLOAD] progress 190/256 chunk=180
+[16:32:51]  Upload : 191/256
+[16:32:51]  [FTP_OLD_TEST][id=1][UPLOAD] progress 191/256 chunk=180
+[16:32:53]  Upload : 192/256
+[16:32:53]  [FTP_OLD_TEST][id=1][UPLOAD] progress 192/256 chunk=180
+[16:33:02]  Upload : 200/256
+[16:33:02]  [FTP_RYU_TEST][id=2][UPLOAD] progress 200/256 chunk=180
+[16:33:02]  Upload : 193/256
+[16:33:02]  [FTP_OLD_TEST][id=1][UPLOAD] progress 193/256 chunk=180
+[16:33:03]  Upload : 201/256
+[16:33:03]  [FTP_RYU_TEST][id=2][UPLOAD] progress 201/256 chunk=180
+[16:33:03]  Upload : 202/256
+[16:33:03]  [FTP_RYU_TEST][id=2][UPLOAD] progress 202/256 chunk=180
+[16:33:04]  Upload : 203/256
+[16:33:04]  [FTP_RYU_TEST][id=2][UPLOAD] progress 203/256 chunk=180
+[16:33:04]  Upload : 194/256
+[16:33:04]  [FTP_OLD_TEST][id=1][UPLOAD] progress 194/256 chunk=180
+[16:33:04]  Upload : 204/256
+[16:33:04]  [FTP_RYU_TEST][id=2][UPLOAD] progress 204/256 chunk=180
+[16:33:05]  Upload : 205/256
+[16:33:05]  [FTP_RYU_TEST][id=2][UPLOAD] progress 205/256 chunk=180
+[16:33:05]  Upload : 195/256
+[16:33:05]  [FTP_OLD_TEST][id=1][UPLOAD] progress 195/256 chunk=180
+[16:33:07]  Upload : 196/256
+[16:33:07]  [FTP_OLD_TEST][id=1][UPLOAD] progress 196/256 chunk=180
+[16:33:08]  Upload : 197/256
+[16:33:08]  [FTP_OLD_TEST][id=1][UPLOAD] progress 197/256 chunk=180
+[16:33:10]  Upload : 198/256
+[16:33:10]  [FTP_OLD_TEST][id=1][UPLOAD] progress 198/256 chunk=180
+[16:33:20]  Upload : 199/256
+[16:33:20]  [FTP_OLD_TEST][id=1][UPLOAD] progress 199/256 chunk=180
+[16:33:21]  Upload : 206/256
+[16:33:21]  [FTP_RYU_TEST][id=2][UPLOAD] progress 206/256 chunk=180
+[16:33:21]  Upload : 200/256
+[16:33:21]  [FTP_OLD_TEST][id=1][UPLOAD] progress 200/256 chunk=180
+[16:33:21]  Upload : 207/256
+[16:33:21]  [FTP_RYU_TEST][id=2][UPLOAD] progress 207/256 chunk=180
+[16:33:22]  Upload : 208/256
+[16:33:22]  [FTP_RYU_TEST][id=2][UPLOAD] progress 208/256 chunk=180
+[16:33:22]  Upload : 209/256
+[16:33:22]  [FTP_RYU_TEST][id=2][UPLOAD] progress 209/256 chunk=180
+[16:33:23]  Upload : 201/256
+[16:33:23]  [FTP_OLD_TEST][id=1][UPLOAD] progress 201/256 chunk=180
+[16:33:23]  Upload : 210/256
+[16:33:23]  [FTP_RYU_TEST][id=2][UPLOAD] progress 210/256 chunk=180
+[16:33:24]  Upload : 211/256
+[16:33:24]  [FTP_RYU_TEST][id=2][UPLOAD] progress 211/256 chunk=180
+[16:33:24]  Upload : 202/256
+[16:33:24]  [FTP_OLD_TEST][id=1][UPLOAD] progress 202/256 chunk=180
+[16:33:26]  Upload : 203/256
+[16:33:26]  [FTP_OLD_TEST][id=1][UPLOAD] progress 203/256 chunk=180
+[16:33:27]  Upload : 204/256
+[16:33:27]  [FTP_OLD_TEST][id=1][UPLOAD] progress 204/256 chunk=180
+[16:33:29]  Upload : 205/256
+[16:33:29]  [FTP_OLD_TEST][id=1][UPLOAD] progress 205/256 chunk=180
+[16:33:38]  Upload : 212/256
+[16:33:38]  [FTP_RYU_TEST][id=2][UPLOAD] progress 212/256 chunk=180
+[16:33:39]  Upload : 213/256
+[16:33:39]  [FTP_RYU_TEST][id=2][UPLOAD] progress 213/256 chunk=180
+[16:33:39]  Upload : 214/256
+[16:33:39]  [FTP_RYU_TEST][id=2][UPLOAD] progress 214/256 chunk=180
+[16:33:40]  Upload : 215/256
+[16:33:40]  [FTP_RYU_TEST][id=2][UPLOAD] progress 215/256 chunk=180
+[16:33:40]  Upload : 216/256
+[16:33:40]  [FTP_RYU_TEST][id=2][UPLOAD] progress 216/256 chunk=180
+[16:33:41]  Upload : 217/256
+[16:33:41]  [FTP_RYU_TEST][id=2][UPLOAD] progress 217/256 chunk=180
+[16:33:43]  Upload : 206/256
+[16:33:43]  [FTP_OLD_TEST][id=1][UPLOAD] progress 206/256 chunk=180
+[16:33:45]  Upload : 207/256
+[16:33:45]  [FTP_OLD_TEST][id=1][UPLOAD] progress 207/256 chunk=180
+[16:33:46]  Upload : 208/256
+[16:33:46]  [FTP_OLD_TEST][id=1][UPLOAD] progress 208/256 chunk=180
+[16:33:48]  Upload : 209/256
+[16:33:48]  [FTP_OLD_TEST][id=1][UPLOAD] progress 209/256 chunk=180
+[16:33:49]  Upload : 210/256
+[16:33:49]  [FTP_OLD_TEST][id=1][UPLOAD] progress 210/256 chunk=180
+[16:33:51]  Upload : 211/256
+[16:33:51]  [FTP_OLD_TEST][id=1][UPLOAD] progress 211/256 chunk=180
+[16:33:56]  Upload : 218/256
+[16:33:56]  [FTP_RYU_TEST][id=2][UPLOAD] progress 218/256 chunk=180
+[16:33:56]  Upload : 219/256
+[16:33:56]  [FTP_RYU_TEST][id=2][UPLOAD] progress 219/256 chunk=180
+[16:33:57]  Upload : 220/256
+[16:33:57]  [FTP_RYU_TEST][id=2][UPLOAD] progress 220/256 chunk=180
+[16:33:58]  Upload : 221/256
+[16:33:58]  [FTP_RYU_TEST][id=2][UPLOAD] progress 221/256 chunk=180
+[16:33:58]  Upload : 222/256
+[16:33:58]  [FTP_RYU_TEST][id=2][UPLOAD] progress 222/256 chunk=180
+[16:33:59]  Upload : 223/256
+[16:33:59]  [FTP_RYU_TEST][id=2][UPLOAD] progress 223/256 chunk=180
+[16:34:01]  Upload : 212/256
+[16:34:01]  [FTP_OLD_TEST][id=1][UPLOAD] progress 212/256 chunk=180
+[16:34:02]  Upload : 213/256
+[16:34:02]  [FTP_OLD_TEST][id=1][UPLOAD] progress 213/256 chunk=180
+[16:34:04]  Upload : 214/256
+[16:34:04]  [FTP_OLD_TEST][id=1][UPLOAD] progress 214/256 chunk=180
+[16:34:05]  Upload : 215/256
+[16:34:05]  [FTP_OLD_TEST][id=1][UPLOAD] progress 215/256 chunk=180
+[16:34:07]  Upload : 216/256
+[16:34:07]  [FTP_OLD_TEST][id=1][UPLOAD] progress 216/256 chunk=180
+[16:34:08]  Upload : 217/256
+[16:34:08]  [FTP_OLD_TEST][id=1][UPLOAD] progress 217/256 chunk=180
+[16:34:13]  Upload : 224/256
+[16:34:13]  [FTP_RYU_TEST][id=2][UPLOAD] progress 224/256 chunk=180
+[16:34:14]  Upload : 225/256
+[16:34:14]  [FTP_RYU_TEST][id=2][UPLOAD] progress 225/256 chunk=180
+[16:34:14]  Upload : 226/256
+[16:34:14]  [FTP_RYU_TEST][id=2][UPLOAD] progress 226/256 chunk=180
+[16:34:15]  Upload : 227/256
+[16:34:15]  [FTP_RYU_TEST][id=2][UPLOAD] progress 227/256 chunk=180
+[16:34:15]  Upload : 228/256
+[16:34:15]  [FTP_RYU_TEST][id=2][UPLOAD] progress 228/256 chunk=180
+[16:34:16]  Upload : 229/256
+[16:34:16]  [FTP_RYU_TEST][id=2][UPLOAD] progress 229/256 chunk=180
+[16:34:18]  Upload : 218/256
+[16:34:18]  [FTP_OLD_TEST][id=1][UPLOAD] progress 218/256 chunk=180
+[16:34:20]  Upload : 219/256
+[16:34:20]  [FTP_OLD_TEST][id=1][UPLOAD] progress 219/256 chunk=180
+[16:34:21]  Upload : 220/256
+[16:34:21]  [FTP_OLD_TEST][id=1][UPLOAD] progress 220/256 chunk=180
+[16:34:23]  Upload : 221/256
+[16:34:23]  [FTP_OLD_TEST][id=1][UPLOAD] progress 221/256 chunk=180
+[16:34:24]  Upload : 222/256
+[16:34:24]  [FTP_OLD_TEST][id=1][UPLOAD] progress 222/256 chunk=180
+[16:34:26]  Upload : 223/256
+[16:34:26]  [FTP_OLD_TEST][id=1][UPLOAD] progress 223/256 chunk=180
+[16:34:30]  Upload : 230/256
+[16:34:30]  [FTP_RYU_TEST][id=2][UPLOAD] progress 230/256 chunk=180
+[16:34:31]  Upload : 231/256
+[16:34:31]  [FTP_RYU_TEST][id=2][UPLOAD] progress 231/256 chunk=180
+[16:34:31]  Upload : 232/256
+[16:34:31]  [FTP_RYU_TEST][id=2][UPLOAD] progress 232/256 chunk=180
+[16:34:32]  Upload : 233/256
+[16:34:32]  [FTP_RYU_TEST][id=2][UPLOAD] progress 233/256 chunk=180
+[16:34:32]  Upload : 234/256
+[16:34:32]  [FTP_RYU_TEST][id=2][UPLOAD] progress 234/256 chunk=180
+[16:34:33]  Upload : 235/256
+[16:34:33]  [FTP_RYU_TEST][id=2][UPLOAD] progress 235/256 chunk=180
+[16:34:35]  Upload : 224/256
+[16:34:35]  [FTP_OLD_TEST][id=1][UPLOAD] progress 224/256 chunk=180
+[16:34:37]  Upload : 225/256
+[16:34:37]  [FTP_OLD_TEST][id=1][UPLOAD] progress 225/256 chunk=180
+[16:34:38]  Upload : 226/256
+[16:34:38]  [FTP_OLD_TEST][id=1][UPLOAD] progress 226/256 chunk=180
+[16:34:40]  Upload : 227/256
+[16:34:40]  [FTP_OLD_TEST][id=1][UPLOAD] progress 227/256 chunk=180
+[16:34:41]  Upload : 228/256
+[16:34:41]  [FTP_OLD_TEST][id=1][UPLOAD] progress 228/256 chunk=180
+[16:34:43]  Upload : 229/256
+[16:34:43]  [FTP_OLD_TEST][id=1][UPLOAD] progress 229/256 chunk=180
+[16:34:47]  Upload : 236/256
+[16:34:47]  [FTP_RYU_TEST][id=2][UPLOAD] progress 236/256 chunk=180
+[16:34:48]  Upload : 237/256
+[16:34:48]  [FTP_RYU_TEST][id=2][UPLOAD] progress 237/256 chunk=180
+[16:34:48]  Upload : 238/256
+[16:34:48]  [FTP_RYU_TEST][id=2][UPLOAD] progress 238/256 chunk=180
+[16:34:49]  Upload : 239/256
+[16:34:49]  [FTP_RYU_TEST][id=2][UPLOAD] progress 239/256 chunk=180
+[16:34:50]  Upload : 240/256
+[16:34:50]  [FTP_RYU_TEST][id=2][UPLOAD] progress 240/256 chunk=180
+[16:34:50]  Upload : 241/256
+[16:34:50]  [FTP_RYU_TEST][id=2][UPLOAD] progress 241/256 chunk=180
+[16:34:52]  Upload : 230/256
+[16:34:52]  [FTP_OLD_TEST][id=1][UPLOAD] progress 230/256 chunk=180
+[16:34:54]  Upload : 231/256
+[16:34:54]  [FTP_OLD_TEST][id=1][UPLOAD] progress 231/256 chunk=180
+[16:34:55]  Upload : 232/256
+[16:34:55]  [FTP_OLD_TEST][id=1][UPLOAD] progress 232/256 chunk=180
+[16:34:57]  Upload : 233/256
+[16:34:57]  [FTP_OLD_TEST][id=1][UPLOAD] progress 233/256 chunk=180
+[16:34:59]  Upload : 234/256
+[16:34:59]  [FTP_OLD_TEST][id=1][UPLOAD] progress 234/256 chunk=180
+[16:35:05]  Upload : 242/256
+[16:35:05]  [FTP_RYU_TEST][id=2][UPLOAD] progress 242/256 chunk=180
+[16:35:05]  Upload : 243/256
+[16:35:05]  [FTP_RYU_TEST][id=2][UPLOAD] progress 243/256 chunk=180
+[16:35:06]  Upload : 244/256
+[16:35:06]  [FTP_RYU_TEST][id=2][UPLOAD] progress 244/256 chunk=180
+[16:35:06]  Upload : 245/256
+[16:35:06]  [FTP_RYU_TEST][id=2][UPLOAD] progress 245/256 chunk=180
+[16:35:07]  Upload : 246/256
+[16:35:07]  [FTP_RYU_TEST][id=2][UPLOAD] progress 246/256 chunk=180
+[16:35:07]  Upload : 247/256
+[16:35:07]  [FTP_RYU_TEST][id=2][UPLOAD] progress 247/256 chunk=180
+[16:35:10]  Upload : 235/256
+[16:35:10]  [FTP_OLD_TEST][id=1][UPLOAD] progress 235/256 chunk=180
+[16:35:12]  Upload : 236/256
+[16:35:12]  [FTP_OLD_TEST][id=1][UPLOAD] progress 236/256 chunk=180
+[16:35:13]  Upload : 237/256
+[16:35:13]  [FTP_OLD_TEST][id=1][UPLOAD] progress 237/256 chunk=180
+[16:35:15]  Upload : 238/256
+[16:35:15]  [FTP_OLD_TEST][id=1][UPLOAD] progress 238/256 chunk=180
+[16:35:16]  Upload : 239/256
+[16:35:16]  [FTP_OLD_TEST][id=1][UPLOAD] progress 239/256 chunk=180
+[16:35:18]  Upload : 240/256
+[16:35:18]  [FTP_OLD_TEST][id=1][UPLOAD] progress 240/256 chunk=180
+[16:35:22]  Upload : 248/256
+[16:35:22]  [FTP_RYU_TEST][id=2][UPLOAD] progress 248/256 chunk=180
+[16:35:22]  Upload : 249/256
+[16:35:22]  [FTP_RYU_TEST][id=2][UPLOAD] progress 249/256 chunk=180
+[16:35:23]  Upload : 250/256
+[16:35:23]  [FTP_RYU_TEST][id=2][UPLOAD] progress 250/256 chunk=180
+[16:35:23]  Upload : 251/256
+[16:35:23]  [FTP_RYU_TEST][id=2][UPLOAD] progress 251/256 chunk=180
+[16:35:24]  Upload : 252/256
+[16:35:24]  [FTP_RYU_TEST][id=2][UPLOAD] progress 252/256 chunk=180
+[16:35:24]  Upload : 253/256
+[16:35:24]  [FTP_RYU_TEST][id=2][UPLOAD] progress 253/256 chunk=180
+[16:35:27]  Upload : 241/256
+[16:35:27]  [FTP_OLD_TEST][id=1][UPLOAD] progress 241/256 chunk=180
+[16:35:28]  Upload : 242/256
+[16:35:28]  [FTP_OLD_TEST][id=1][UPLOAD] progress 242/256 chunk=180
+[16:35:30]  Upload : 243/256
+[16:35:30]  [FTP_OLD_TEST][id=1][UPLOAD] progress 243/256 chunk=180
+[16:35:31]  Upload : 244/256
+[16:35:31]  [FTP_OLD_TEST][id=1][UPLOAD] progress 244/256 chunk=180
+[16:35:33]  Upload : 245/256
+[16:35:33]  [FTP_OLD_TEST][id=1][UPLOAD] progress 245/256 chunk=180
+[16:35:35]  Upload : 246/256
+[16:35:35]  [FTP_OLD_TEST][id=1][UPLOAD] progress 246/256 chunk=180
+[16:35:39]  Upload : 254/256
+[16:35:39]  [FTP_RYU_TEST][id=2][UPLOAD] progress 254/256 chunk=180
+[16:35:39]  Upload : 255/256
+[16:35:39]  [FTP_RYU_TEST][id=2][UPLOAD] progress 255/256 chunk=180
+[16:35:41]  Received FTP Status Reply.
+[16:35:41]  Restart FTP Uplink from chunk : 256, to total : 256
+[16:35:41]  FTP Transaction Completed.
+[16:35:41]  Calculate FTP CRC. Remote : 2142142446, Local : 2142142446.
+[16:35:41]  [FTP_RYU_TEST][id=2][UPLOAD] CRC remote=2142142446 local=2142142446
+[16:35:42]  [FTP_RYU_TEST][id=2][UPLOAD][OK] retcode=0
+[16:35:42]  [FTP_RYU_TEST][id=2][UPLOAD] cleanup_done=1
+[16:35:44]  Upload : 247/256
+[16:35:44]  [FTP_OLD_TEST][id=1][UPLOAD] progress 247/256 chunk=180
+[16:35:45]  Upload : 248/256
+[16:35:45]  [FTP_OLD_TEST][id=1][UPLOAD] progress 248/256 chunk=180
+[16:35:47]  Upload : 249/256
+[16:35:47]  [FTP_OLD_TEST][id=1][UPLOAD] progress 249/256 chunk=180
+[16:35:48]  Upload : 250/256
+[16:35:48]  [FTP_OLD_TEST][id=1][UPLOAD] progress 250/256 chunk=180
+[16:35:50]  Upload : 251/256
+[16:35:50]  [FTP_OLD_TEST][id=1][UPLOAD] progress 251/256 chunk=180
+[16:35:52]  Upload : 252/256
+[16:35:52]  [FTP_OLD_TEST][id=1][UPLOAD] progress 252/256 chunk=180
+[16:36:02]  Upload : 253/256
+[16:36:02]  [FTP_OLD_TEST][id=1][UPLOAD] progress 253/256 chunk=180
+[16:36:04]  Upload : 254/256
+[16:36:04]  [FTP_OLD_TEST][id=1][UPLOAD] progress 254/256 chunk=180
+[16:36:05]  Upload : 255/256
+[16:36:05]  [FTP_OLD_TEST][id=1][UPLOAD] progress 255/256 chunk=180
+[16:36:07]  FTP Transaction Completed.
+[16:36:07]  Calculate FTP CRC. Remote : 2142142446, Local : 2142142446.
+[16:36:07]  [FTP_OLD_TEST][id=1][UPLOAD] CRC remote=2142142446 local=2142142446
+[16:36:10]  [FTP_OLD_TEST][id=1][UPLOAD][OK] retcode=0
+[16:36:10]  [FTP_OLD_TEST][id=1][UPLOAD] cleanup_done=1
+[16:38:03]  FTP_OLD_DOWNLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[16:38:03]  Start FTP OLD DOWNLOAD id=3.
+[16:38:03]  [FTP_OLD_TEST][id=3][DOWNLOAD] begin local=file://./0702jane.so remote=file://./cf/ftpold.so host=10 port=9 chunk=180
+[16:38:24]  Received FTP Download Spec.
+[16:38:24]  Received FTP Download Spec. Filesize : 45908, CRC : 2142142446.
+[16:38:25]  Received FTP Status Request.
+[16:38:25]  Start FTP Downlink. Total Chunk Size : 256
+[16:38:26]  Download : 0/256
+[16:38:26]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 0/256 chunk=180
+[16:38:26]  Download : 1/256
+[16:38:26]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 1/256 chunk=180
+[16:38:27]  Download : 2/256
+[16:38:27]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 2/256 chunk=180
+[16:38:27]  Download : 3/256
+[16:38:27]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 3/256 chunk=180
+[16:38:27]  Download : 4/256
+[16:38:27]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 4/256 chunk=180
+[16:38:28]  Download : 5/256
+[16:38:28]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 5/256 chunk=180
+[16:38:28]  Download : 6/256
+[16:38:28]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 6/256 chunk=180
+[16:38:29]  Download : 7/256
+[16:38:29]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 7/256 chunk=180
+[16:38:29]  Download : 8/256
+[16:38:29]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 8/256 chunk=180
+[16:38:30]  Download : 9/256
+[16:38:30]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 9/256 chunk=180
+[16:38:30]  Download : 10/256
+[16:38:30]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 10/256 chunk=180
+[16:38:31]  Download : 11/256
+[16:38:31]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 11/256 chunk=180
+[16:38:31]  Download : 12/256
+[16:38:31]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 12/256 chunk=180
+[16:38:32]  Download : 13/256
+[16:38:32]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 13/256 chunk=180
+[16:38:32]  Download : 14/256
+[16:38:32]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 14/256 chunk=180
+[16:38:33]  Download : 15/256
+[16:38:33]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 15/256 chunk=180
+[16:38:33]  Download : 16/256
+[16:38:33]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 16/256 chunk=180
+[16:38:34]  Download : 17/256
+[16:38:34]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 17/256 chunk=180
+[16:38:34]  Download : 18/256
+[16:38:34]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 18/256 chunk=180
+[16:38:35]  Download : 19/256
+[16:38:35]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 19/256 chunk=180
+[16:38:35]  Download : 20/256
+[16:38:35]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 20/256 chunk=180
+[16:38:36]  Download : 21/256
+[16:38:36]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 21/256 chunk=180
+[16:38:36]  Download : 22/256
+[16:38:36]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 22/256 chunk=180
+[16:38:37]  Download : 23/256
+[16:38:37]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 23/256 chunk=180
+[16:38:37]  Download : 24/256
+[16:38:37]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 24/256 chunk=180
+[16:38:38]  Download : 25/256
+[16:38:38]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 25/256 chunk=180
+[16:38:38]  Download : 26/256
+[16:38:38]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 26/256 chunk=180
+[16:38:38]  Start FTP RYU DOWNLOAD id=4.
+[16:38:38]  [FTP_RYU_TEST][id=4][DOWNLOAD] begin local=file://./0702yosi.so remote=file://./cf/ftpnew.so host=10 port=19 chunk=180
+[16:38:39]  Download : 27/256
+[16:38:39]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 27/256 chunk=180
+[16:38:39]  Download : 28/256
+[16:38:39]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 28/256 chunk=180
+[16:38:40]  Download : 29/256
+[16:38:40]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 29/256 chunk=180
+[16:38:40]  Download : 30/256
+[16:38:40]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 30/256 chunk=180
+[16:38:41]  Download : 31/256
+[16:38:41]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 31/256 chunk=180
+[16:38:41]  Download : 32/256
+[16:38:41]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 32/256 chunk=180
+[16:38:43]  Download : 33/256
+[16:38:43]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 33/256 chunk=180
+[16:38:43]  Download : 34/256
+[16:38:43]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 34/256 chunk=180
+[16:38:43]  Download : 35/256
+[16:38:43]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 35/256 chunk=180
+[16:38:43]  Download : 36/256
+[16:38:43]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 36/256 chunk=180
+[16:38:44]  Received FTP Download Spec.
+[16:38:44]  Received FTP Download Spec. Filesize : 45908, CRC : 4001345151.
+[16:38:44]  Received FTP Status Request.
+[16:38:44]  Start FTP Downlink. Total Chunk Size : 256
+[16:38:44]  Download : 37/256
+[16:38:44]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 37/256 chunk=180
+[16:38:45]  Download : 38/256
+[16:38:45]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 38/256 chunk=180
+[16:38:45]  Download : 39/256
+[16:38:45]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 39/256 chunk=180
+[16:38:46]  Download : 40/256
+[16:38:46]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 40/256 chunk=180
+[16:38:47]  Download : 0/256
+[16:38:47]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 0/256 chunk=180
+[16:38:47]  Download : 1/256
+[16:38:47]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 1/256 chunk=180
+[16:38:47]  Download : 2/256
+[16:38:47]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 2/256 chunk=180
+[16:38:48]  Download : 3/256
+[16:38:48]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 3/256 chunk=180
+[16:38:48]  Download : 4/256
+[16:38:48]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 4/256 chunk=180
+[16:38:49]  Download : 5/256
+[16:38:49]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 5/256 chunk=180
+[16:38:49]  Download : 41/256
+[16:38:49]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 41/256 chunk=180
+[16:38:49]  Download : 42/256
+[16:38:49]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 42/256 chunk=180
+[16:38:50]  Download : 43/256
+[16:38:50]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 43/256 chunk=180
+[16:38:50]  Download : 44/256
+[16:38:50]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 44/256 chunk=180
+[16:38:51]  Download : 6/256
+[16:38:51]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 6/256 chunk=180
+[16:38:52]  Download : 7/256
+[16:38:52]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 7/256 chunk=180
+[16:38:52]  Download : 8/256
+[16:38:52]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 8/256 chunk=180
+[16:38:52]  Download : 45/256
+[16:38:52]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 45/256 chunk=180
+[16:38:53]  Download : 46/256
+[16:38:53]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 46/256 chunk=180
+[16:38:53]  Download : 47/256
+[16:38:53]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 47/256 chunk=180
+[16:38:54]  Download : 48/256
+[16:38:54]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 48/256 chunk=180
+[16:38:54]  Download : 9/256
+[16:38:54]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 9/256 chunk=180
+[16:38:55]  Download : 10/256
+[16:38:55]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 10/256 chunk=180
+[16:38:55]  Download : 11/256
+[16:38:55]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 11/256 chunk=180
+[16:38:56]  Download : 12/256
+[16:38:56]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 12/256 chunk=180
+[16:38:56]  Download : 49/256
+[16:38:56]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 49/256 chunk=180
+[16:38:56]  Download : 50/256
+[16:38:56]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 50/256 chunk=180
+[16:38:57]  Download : 51/256
+[16:38:57]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 51/256 chunk=180
+[16:38:57]  Download : 52/256
+[16:38:57]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 52/256 chunk=180
+[16:38:58]  Download : 13/256
+[16:38:58]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 13/256 chunk=180
+[16:38:58]  Download : 14/256
+[16:38:58]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 14/256 chunk=180
+[16:38:59]  Download : 15/256
+[16:38:59]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 15/256 chunk=180
+[16:38:59]  Download : 16/256
+[16:38:59]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 16/256 chunk=180
+[16:39:00]  Download : 53/256
+[16:39:00]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 53/256 chunk=180
+[16:39:00]  Download : 54/256
+[16:39:00]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 54/256 chunk=180
+[16:39:00]  Download : 55/256
+[16:39:00]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 55/256 chunk=180
+[16:39:01]  Download : 56/256
+[16:39:01]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 56/256 chunk=180
+[16:39:02]  Download : 17/256
+[16:39:02]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 17/256 chunk=180
+[16:39:02]  Download : 18/256
+[16:39:02]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 18/256 chunk=180
+[16:39:02]  Download : 19/256
+[16:39:02]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 19/256 chunk=180
+[16:39:03]  Download : 20/256
+[16:39:03]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 20/256 chunk=180
+[16:39:03]  Download : 57/256
+[16:39:03]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 57/256 chunk=180
+[16:39:04]  Download : 58/256
+[16:39:04]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 58/256 chunk=180
+[16:39:04]  Download : 59/256
+[16:39:04]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 59/256 chunk=180
+[16:39:04]  Download : 60/256
+[16:39:04]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 60/256 chunk=180
+[16:39:05]  Download : 21/256
+[16:39:05]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 21/256 chunk=180
+[16:39:06]  Download : 22/256
+[16:39:06]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 22/256 chunk=180
+[16:39:06]  Download : 23/256
+[16:39:06]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 23/256 chunk=180
+[16:39:06]  Download : 24/256
+[16:39:06]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 24/256 chunk=180
+[16:39:07]  Download : 61/256
+[16:39:07]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 61/256 chunk=180
+[16:39:07]  Download : 62/256
+[16:39:07]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 62/256 chunk=180
+[16:39:08]  Download : 63/256
+[16:39:08]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 63/256 chunk=180
+[16:39:08]  Download : 64/256
+[16:39:08]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 64/256 chunk=180
+[16:39:09]  Download : 25/256
+[16:39:09]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 25/256 chunk=180
+[16:39:09]  Download : 26/256
+[16:39:09]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 26/256 chunk=180
+[16:39:10]  Download : 27/256
+[16:39:10]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 27/256 chunk=180
+[16:39:10]  Download : 28/256
+[16:39:10]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 28/256 chunk=180
+[16:39:11]  Download : 65/256
+[16:39:11]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 65/256 chunk=180
+[16:39:11]  Download : 66/256
+[16:39:11]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 66/256 chunk=180
+[16:39:11]  Download : 67/256
+[16:39:11]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 67/256 chunk=180
+[16:39:12]  Download : 68/256
+[16:39:12]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 68/256 chunk=180
+[16:39:13]  Download : 29/256
+[16:39:13]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 29/256 chunk=180
+[16:39:13]  Download : 30/256
+[16:39:13]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 30/256 chunk=180
+[16:39:13]  Download : 31/256
+[16:39:13]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 31/256 chunk=180
+[16:39:14]  Download : 32/256
+[16:39:14]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 32/256 chunk=180
+[16:39:14]  Download : 69/256
+[16:39:14]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 69/256 chunk=180
+[16:39:15]  Download : 70/256
+[16:39:15]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 70/256 chunk=180
+[16:39:15]  Download : 71/256
+[16:39:15]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 71/256 chunk=180
+[16:39:15]  Download : 72/256
+[16:39:15]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 72/256 chunk=180
+[16:39:16]  Download : 33/256
+[16:39:16]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 33/256 chunk=180
+[16:39:17]  Download : 34/256
+[16:39:17]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 34/256 chunk=180
+[16:39:17]  Download : 35/256
+[16:39:17]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 35/256 chunk=180
+[16:39:17]  Download : 36/256
+[16:39:17]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 36/256 chunk=180
+[16:39:18]  Download : 73/256
+[16:39:18]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 73/256 chunk=180
+[16:39:18]  Download : 74/256
+[16:39:18]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 74/256 chunk=180
+[16:39:19]  Download : 75/256
+[16:39:19]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 75/256 chunk=180
+[16:39:19]  Download : 76/256
+[16:39:19]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 76/256 chunk=180
+[16:39:20]  Download : 37/256
+[16:39:20]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 37/256 chunk=180
+[16:39:20]  Download : 38/256
+[16:39:20]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 38/256 chunk=180
+[16:39:21]  Download : 39/256
+[16:39:21]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 39/256 chunk=180
+[16:39:21]  Download : 40/256
+[16:39:21]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 40/256 chunk=180
+[16:39:21]  Download : 77/256
+[16:39:21]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 77/256 chunk=180
+[16:39:22]  Download : 78/256
+[16:39:22]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 78/256 chunk=180
+[16:39:22]  Download : 79/256
+[16:39:22]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 79/256 chunk=180
+[16:39:23]  Download : 80/256
+[16:39:23]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 80/256 chunk=180
+[16:39:23]  Download : 41/256
+[16:39:23]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 41/256 chunk=180
+[16:39:24]  Download : 42/256
+[16:39:24]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 42/256 chunk=180
+[16:39:24]  Download : 43/256
+[16:39:24]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 43/256 chunk=180
+[16:39:25]  Download : 44/256
+[16:39:25]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 44/256 chunk=180
+[16:39:25]  Download : 81/256
+[16:39:25]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 81/256 chunk=180
+[16:39:25]  Download : 82/256
+[16:39:25]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 82/256 chunk=180
+[16:39:26]  Download : 83/256
+[16:39:26]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 83/256 chunk=180
+[16:39:26]  Download : 84/256
+[16:39:26]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 84/256 chunk=180
+[16:39:27]  Download : 45/256
+[16:39:27]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 45/256 chunk=180
+[16:39:28]  Download : 46/256
+[16:39:28]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 46/256 chunk=180
+[16:39:28]  Download : 47/256
+[16:39:28]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 47/256 chunk=180
+[16:39:28]  Download : 48/256
+[16:39:28]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 48/256 chunk=180
+[16:39:29]  Download : 85/256
+[16:39:29]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 85/256 chunk=180
+[16:39:29]  Download : 86/256
+[16:39:29]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 86/256 chunk=180
+[16:39:30]  Download : 87/256
+[16:39:30]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 87/256 chunk=180
+[16:39:30]  Download : 88/256
+[16:39:30]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 88/256 chunk=180
+[16:39:31]  Download : 49/256
+[16:39:31]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 49/256 chunk=180
+[16:39:31]  Download : 50/256
+[16:39:31]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 50/256 chunk=180
+[16:39:32]  Download : 51/256
+[16:39:32]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 51/256 chunk=180
+[16:39:32]  Download : 52/256
+[16:39:32]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 52/256 chunk=180
+[16:39:32]  Download : 89/256
+[16:39:32]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 89/256 chunk=180
+[16:39:33]  Download : 90/256
+[16:39:33]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 90/256 chunk=180
+[16:39:33]  Download : 91/256
+[16:39:33]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 91/256 chunk=180
+[16:39:34]  Download : 92/256
+[16:39:34]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 92/256 chunk=180
+[16:39:34]  Download : 53/256
+[16:39:34]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 53/256 chunk=180
+[16:39:35]  Download : 54/256
+[16:39:35]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 54/256 chunk=180
+[16:39:35]  Download : 55/256
+[16:39:35]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 55/256 chunk=180
+[16:39:36]  Download : 56/256
+[16:39:36]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 56/256 chunk=180
+[16:39:36]  Download : 93/256
+[16:39:36]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 93/256 chunk=180
+[16:39:36]  Download : 94/256
+[16:39:36]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 94/256 chunk=180
+[16:39:37]  Download : 95/256
+[16:39:37]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 95/256 chunk=180
+[16:39:37]  Download : 96/256
+[16:39:37]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 96/256 chunk=180
+[16:39:38]  Download : 57/256
+[16:39:38]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 57/256 chunk=180
+[16:39:38]  Download : 58/256
+[16:39:38]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 58/256 chunk=180
+[16:39:39]  Download : 59/256
+[16:39:39]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 59/256 chunk=180
+[16:39:39]  Download : 60/256
+[16:39:39]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 60/256 chunk=180
+[16:39:40]  Download : 97/256
+[16:39:40]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 97/256 chunk=180
+[16:39:40]  Download : 98/256
+[16:39:40]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 98/256 chunk=180
+[16:39:40]  Download : 99/256
+[16:39:40]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 99/256 chunk=180
+[16:39:41]  Download : 100/256
+[16:39:41]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 100/256 chunk=180
+[16:39:42]  Download : 61/256
+[16:39:42]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 61/256 chunk=180
+[16:39:42]  Download : 62/256
+[16:39:42]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 62/256 chunk=180
+[16:39:42]  Download : 63/256
+[16:39:42]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 63/256 chunk=180
+[16:39:43]  Download : 64/256
+[16:39:43]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 64/256 chunk=180
+[16:39:43]  Download : 101/256
+[16:39:43]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 101/256 chunk=180
+[16:39:44]  Download : 102/256
+[16:39:44]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 102/256 chunk=180
+[16:39:44]  Download : 103/256
+[16:39:44]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 103/256 chunk=180
+[16:39:44]  Download : 104/256
+[16:39:44]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 104/256 chunk=180
+[16:39:45]  Download : 65/256
+[16:39:45]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 65/256 chunk=180
+[16:39:46]  Download : 66/256
+[16:39:46]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 66/256 chunk=180
+[16:39:46]  Download : 67/256
+[16:39:46]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 67/256 chunk=180
+[16:39:47]  Download : 68/256
+[16:39:47]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 68/256 chunk=180
+[16:39:47]  Download : 105/256
+[16:39:47]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 105/256 chunk=180
+[16:39:47]  Download : 106/256
+[16:39:47]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 106/256 chunk=180
+[16:39:48]  Download : 107/256
+[16:39:48]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 107/256 chunk=180
+[16:39:48]  Download : 108/256
+[16:39:48]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 108/256 chunk=180
+[16:39:49]  Download : 69/256
+[16:39:49]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 69/256 chunk=180
+[16:39:49]  Download : 70/256
+[16:39:49]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 70/256 chunk=180
+[16:39:50]  Download : 71/256
+[16:39:50]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 71/256 chunk=180
+[16:39:50]  Download : 72/256
+[16:39:50]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 72/256 chunk=180
+[16:39:51]  Download : 109/256
+[16:39:51]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 109/256 chunk=180
+[16:39:51]  Download : 110/256
+[16:39:51]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 110/256 chunk=180
+[16:39:51]  Download : 111/256
+[16:39:51]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 111/256 chunk=180
+[16:39:52]  Download : 112/256
+[16:39:52]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 112/256 chunk=180
+[16:39:53]  Download : 73/256
+[16:39:53]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 73/256 chunk=180
+[16:39:53]  Download : 74/256
+[16:39:53]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 74/256 chunk=180
+[16:39:53]  Download : 75/256
+[16:39:53]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 75/256 chunk=180
+[16:39:54]  Download : 76/256
+[16:39:54]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 76/256 chunk=180
+[16:39:54]  Download : 113/256
+[16:39:54]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 113/256 chunk=180
+[16:39:55]  Download : 114/256
+[16:39:55]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 114/256 chunk=180
+[16:39:55]  Download : 115/256
+[16:39:55]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 115/256 chunk=180
+[16:39:55]  Download : 116/256
+[16:39:55]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 116/256 chunk=180
+[16:39:56]  Download : 77/256
+[16:39:56]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 77/256 chunk=180
+[16:39:57]  Download : 78/256
+[16:39:57]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 78/256 chunk=180
+[16:39:57]  Download : 79/256
+[16:39:57]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 79/256 chunk=180
+[16:39:57]  Download : 80/256
+[16:39:57]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 80/256 chunk=180
+[16:39:58]  Download : 117/256
+[16:39:58]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 117/256 chunk=180
+[16:39:58]  Download : 118/256
+[16:39:58]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 118/256 chunk=180
+[16:39:59]  Download : 119/256
+[16:39:59]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 119/256 chunk=180
+[16:39:59]  Download : 120/256
+[16:39:59]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 120/256 chunk=180
+[16:40:00]  Download : 81/256
+[16:40:00]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 81/256 chunk=180
+[16:40:00]  Download : 82/256
+[16:40:00]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 82/256 chunk=180
+[16:40:01]  Download : 83/256
+[16:40:01]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 83/256 chunk=180
+[16:40:01]  Download : 84/256
+[16:40:01]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 84/256 chunk=180
+[16:40:01]  Download : 121/256
+[16:40:01]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 121/256 chunk=180
+[16:40:02]  Download : 122/256
+[16:40:02]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 122/256 chunk=180
+[16:40:02]  Download : 123/256
+[16:40:02]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 123/256 chunk=180
+[16:40:03]  Download : 124/256
+[16:40:03]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 124/256 chunk=180
+[16:40:04]  Download : 85/256
+[16:40:04]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 85/256 chunk=180
+[16:40:04]  Download : 86/256
+[16:40:04]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 86/256 chunk=180
+[16:40:04]  Download : 87/256
+[16:40:04]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 87/256 chunk=180
+[16:40:05]  Download : 88/256
+[16:40:05]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 88/256 chunk=180
+[16:40:05]  Download : 125/256
+[16:40:05]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 125/256 chunk=180
+[16:40:06]  Download : 126/256
+[16:40:06]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 126/256 chunk=180
+[16:40:06]  Download : 127/256
+[16:40:06]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 127/256 chunk=180
+[16:40:06]  Download : 128/256
+[16:40:06]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 128/256 chunk=180
+[16:40:07]  Download : 89/256
+[16:40:07]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 89/256 chunk=180
+[16:40:08]  Download : 90/256
+[16:40:08]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 90/256 chunk=180
+[16:40:08]  Download : 91/256
+[16:40:08]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 91/256 chunk=180
+[16:40:08]  Download : 92/256
+[16:40:08]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 92/256 chunk=180
+[16:40:09]  Download : 129/256
+[16:40:09]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 129/256 chunk=180
+[16:40:09]  Download : 130/256
+[16:40:09]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 130/256 chunk=180
+[16:40:10]  Download : 131/256
+[16:40:10]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 131/256 chunk=180
+[16:40:10]  Download : 132/256
+[16:40:10]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 132/256 chunk=180
+[16:40:11]  Download : 93/256
+[16:40:11]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 93/256 chunk=180
+[16:40:11]  Download : 94/256
+[16:40:11]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 94/256 chunk=180
+[16:40:12]  Download : 95/256
+[16:40:12]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 95/256 chunk=180
+[16:40:12]  Download : 96/256
+[16:40:12]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 96/256 chunk=180
+[16:40:12]  Download : 133/256
+[16:40:12]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 133/256 chunk=180
+[16:40:13]  Download : 134/256
+[16:40:13]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 134/256 chunk=180
+[16:40:13]  Download : 135/256
+[16:40:13]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 135/256 chunk=180
+[16:40:14]  Download : 136/256
+[16:40:14]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 136/256 chunk=180
+[16:40:14]  Download : 97/256
+[16:40:14]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 97/256 chunk=180
+[16:40:15]  Download : 98/256
+[16:40:15]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 98/256 chunk=180
+[16:40:15]  Download : 99/256
+[16:40:15]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 99/256 chunk=180
+[16:40:16]  Download : 100/256
+[16:40:16]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 100/256 chunk=180
+[16:40:16]  Download : 137/256
+[16:40:16]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 137/256 chunk=180
+[16:40:16]  Download : 138/256
+[16:40:16]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 138/256 chunk=180
+[16:40:17]  Download : 139/256
+[16:40:17]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 139/256 chunk=180
+[16:40:17]  Download : 140/256
+[16:40:17]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 140/256 chunk=180
+[16:40:18]  Download : 101/256
+[16:40:18]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 101/256 chunk=180
+[16:40:18]  Download : 102/256
+[16:40:18]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 102/256 chunk=180
+[16:40:19]  Download : 103/256
+[16:40:19]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 103/256 chunk=180
+[16:40:19]  Download : 104/256
+[16:40:19]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 104/256 chunk=180
+[16:40:20]  Download : 141/256
+[16:40:20]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 141/256 chunk=180
+[16:40:20]  Download : 142/256
+[16:40:20]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 142/256 chunk=180
+[16:40:20]  Download : 143/256
+[16:40:20]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 143/256 chunk=180
+[16:40:21]  Download : 144/256
+[16:40:21]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 144/256 chunk=180
+[16:40:22]  Download : 105/256
+[16:40:22]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 105/256 chunk=180
+[16:40:22]  Download : 106/256
+[16:40:22]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 106/256 chunk=180
+[16:40:23]  Download : 107/256
+[16:40:23]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 107/256 chunk=180
+[16:40:23]  Download : 108/256
+[16:40:23]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 108/256 chunk=180
+[16:40:23]  Download : 145/256
+[16:40:23]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 145/256 chunk=180
+[16:40:24]  Download : 146/256
+[16:40:24]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 146/256 chunk=180
+[16:40:24]  Download : 147/256
+[16:40:24]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 147/256 chunk=180
+[16:40:25]  Download : 148/256
+[16:40:25]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 148/256 chunk=180
+[16:40:25]  Download : 109/256
+[16:40:25]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 109/256 chunk=180
+[16:40:26]  Download : 110/256
+[16:40:26]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 110/256 chunk=180
+[16:40:26]  Download : 111/256
+[16:40:26]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 111/256 chunk=180
+[16:40:27]  Download : 112/256
+[16:40:27]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 112/256 chunk=180
+[16:40:27]  Download : 149/256
+[16:40:27]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 149/256 chunk=180
+[16:40:27]  Download : 150/256
+[16:40:27]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 150/256 chunk=180
+[16:40:28]  Download : 151/256
+[16:40:28]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 151/256 chunk=180
+[16:40:28]  Download : 152/256
+[16:40:28]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 152/256 chunk=180
+[16:40:29]  Download : 113/256
+[16:40:29]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 113/256 chunk=180
+[16:40:29]  Download : 114/256
+[16:40:29]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 114/256 chunk=180
+[16:40:30]  Download : 115/256
+[16:40:30]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 115/256 chunk=180
+[16:40:30]  Download : 116/256
+[16:40:30]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 116/256 chunk=180
+[16:40:31]  Download : 153/256
+[16:40:31]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 153/256 chunk=180
+[16:40:31]  Download : 154/256
+[16:40:31]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 154/256 chunk=180
+[16:40:31]  Download : 155/256
+[16:40:31]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 155/256 chunk=180
+[16:40:32]  Download : 156/256
+[16:40:32]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 156/256 chunk=180
+[16:40:33]  Download : 117/256
+[16:40:33]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 117/256 chunk=180
+[16:40:33]  Download : 118/256
+[16:40:33]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 118/256 chunk=180
+[16:40:33]  Download : 119/256
+[16:40:33]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 119/256 chunk=180
+[16:40:34]  Download : 120/256
+[16:40:34]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 120/256 chunk=180
+[16:40:34]  Download : 157/256
+[16:40:34]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 157/256 chunk=180
+[16:40:35]  Download : 158/256
+[16:40:35]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 158/256 chunk=180
+[16:40:35]  Download : 159/256
+[16:40:35]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 159/256 chunk=180
+[16:40:35]  Download : 160/256
+[16:40:35]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 160/256 chunk=180
+[16:40:36]  Download : 121/256
+[16:40:36]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 121/256 chunk=180
+[16:40:37]  Download : 122/256
+[16:40:37]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 122/256 chunk=180
+[16:40:37]  Download : 123/256
+[16:40:37]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 123/256 chunk=180
+[16:40:37]  Download : 124/256
+[16:40:37]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 124/256 chunk=180
+[16:40:38]  Download : 161/256
+[16:40:38]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 161/256 chunk=180
+[16:40:38]  Download : 162/256
+[16:40:38]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 162/256 chunk=180
+[16:40:39]  Download : 163/256
+[16:40:39]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 163/256 chunk=180
+[16:40:39]  Download : 164/256
+[16:40:39]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 164/256 chunk=180
+[16:40:40]  Download : 125/256
+[16:40:40]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 125/256 chunk=180
+[16:40:40]  Download : 126/256
+[16:40:40]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 126/256 chunk=180
+[16:40:41]  Download : 127/256
+[16:40:41]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 127/256 chunk=180
+[16:40:41]  Download : 128/256
+[16:40:41]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 128/256 chunk=180
+[16:40:42]  Download : 165/256
+[16:40:42]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 165/256 chunk=180
+[16:40:42]  Download : 166/256
+[16:40:42]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 166/256 chunk=180
+[16:40:42]  Download : 167/256
+[16:40:42]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 167/256 chunk=180
+[16:40:43]  Download : 168/256
+[16:40:43]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 168/256 chunk=180
+[16:40:44]  Download : 129/256
+[16:40:44]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 129/256 chunk=180
+[16:40:44]  Download : 130/256
+[16:40:44]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 130/256 chunk=180
+[16:40:44]  Download : 131/256
+[16:40:44]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 131/256 chunk=180
+[16:40:45]  Download : 132/256
+[16:40:45]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 132/256 chunk=180
+[16:40:45]  Download : 169/256
+[16:40:45]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 169/256 chunk=180
+[16:40:46]  Download : 170/256
+[16:40:46]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 170/256 chunk=180
+[16:40:46]  Download : 171/256
+[16:40:46]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 171/256 chunk=180
+[16:40:46]  Download : 172/256
+[16:40:46]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 172/256 chunk=180
+[16:40:47]  Download : 133/256
+[16:40:47]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 133/256 chunk=180
+[16:40:48]  Download : 134/256
+[16:40:48]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 134/256 chunk=180
+[16:40:48]  Download : 135/256
+[16:40:48]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 135/256 chunk=180
+[16:40:48]  Download : 136/256
+[16:40:48]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 136/256 chunk=180
+[16:40:49]  Download : 173/256
+[16:40:49]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 173/256 chunk=180
+[16:40:49]  Download : 174/256
+[16:40:49]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 174/256 chunk=180
+[16:40:50]  Download : 175/256
+[16:40:50]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 175/256 chunk=180
+[16:40:50]  Download : 176/256
+[16:40:50]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 176/256 chunk=180
+[16:40:51]  Download : 137/256
+[16:40:51]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 137/256 chunk=180
+[16:40:51]  Download : 138/256
+[16:40:51]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 138/256 chunk=180
+[16:40:52]  Download : 139/256
+[16:40:52]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 139/256 chunk=180
+[16:40:52]  Download : 140/256
+[16:40:52]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 140/256 chunk=180
+[16:40:52]  Download : 177/256
+[16:40:52]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 177/256 chunk=180
+[16:40:53]  Download : 178/256
+[16:40:53]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 178/256 chunk=180
+[16:40:53]  Download : 179/256
+[16:40:53]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 179/256 chunk=180
+[16:40:54]  Download : 180/256
+[16:40:54]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 180/256 chunk=180
+[16:40:54]  Download : 141/256
+[16:40:54]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 141/256 chunk=180
+[16:40:55]  Download : 142/256
+[16:40:55]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 142/256 chunk=180
+[16:40:55]  Download : 143/256
+[16:40:55]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 143/256 chunk=180
+[16:40:56]  Download : 144/256
+[16:40:56]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 144/256 chunk=180
+[16:40:56]  Download : 181/256
+[16:40:56]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 181/256 chunk=180
+[16:40:56]  Download : 182/256
+[16:40:56]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 182/256 chunk=180
+[16:40:57]  Download : 183/256
+[16:40:57]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 183/256 chunk=180
+[16:40:57]  Download : 184/256
+[16:40:57]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 184/256 chunk=180
+[16:40:58]  Download : 145/256
+[16:40:58]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 145/256 chunk=180
+[16:40:59]  Download : 146/256
+[16:40:59]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 146/256 chunk=180
+[16:40:59]  Download : 147/256
+[16:40:59]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 147/256 chunk=180
+[16:40:59]  Download : 148/256
+[16:40:59]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 148/256 chunk=180
+[16:41:00]  Download : 185/256
+[16:41:00]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 185/256 chunk=180
+[16:41:00]  Download : 186/256
+[16:41:00]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 186/256 chunk=180
+[16:41:01]  Download : 187/256
+[16:41:01]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 187/256 chunk=180
+[16:41:01]  Download : 188/256
+[16:41:01]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 188/256 chunk=180
+[16:41:02]  Download : 149/256
+[16:41:02]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 149/256 chunk=180
+[16:41:02]  Download : 150/256
+[16:41:02]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 150/256 chunk=180
+[16:41:03]  Download : 151/256
+[16:41:03]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 151/256 chunk=180
+[16:41:03]  Download : 152/256
+[16:41:03]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 152/256 chunk=180
+[16:41:03]  Download : 189/256
+[16:41:03]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 189/256 chunk=180
+[16:41:04]  Download : 190/256
+[16:41:04]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 190/256 chunk=180
+[16:41:04]  Download : 191/256
+[16:41:04]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 191/256 chunk=180
+[16:41:05]  Download : 192/256
+[16:41:05]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 192/256 chunk=180
+[16:41:05]  Download : 153/256
+[16:41:05]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 153/256 chunk=180
+[16:41:06]  Download : 154/256
+[16:41:06]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 154/256 chunk=180
+[16:41:06]  Download : 155/256
+[16:41:06]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 155/256 chunk=180
+[16:41:07]  Download : 156/256
+[16:41:07]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 156/256 chunk=180
+[16:41:07]  Download : 193/256
+[16:41:07]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 193/256 chunk=180
+[16:41:07]  Download : 194/256
+[16:41:07]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 194/256 chunk=180
+[16:41:08]  Download : 195/256
+[16:41:08]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 195/256 chunk=180
+[16:41:08]  Download : 196/256
+[16:41:08]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 196/256 chunk=180
+[16:41:09]  Download : 157/256
+[16:41:09]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 157/256 chunk=180
+[16:41:09]  Download : 158/256
+[16:41:09]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 158/256 chunk=180
+[16:41:10]  Download : 159/256
+[16:41:10]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 159/256 chunk=180
+[16:41:10]  Download : 160/256
+[16:41:10]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 160/256 chunk=180
+[16:41:11]  Download : 197/256
+[16:41:11]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 197/256 chunk=180
+[16:41:11]  Download : 198/256
+[16:41:11]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 198/256 chunk=180
+[16:41:11]  Download : 199/256
+[16:41:11]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 199/256 chunk=180
+[16:41:12]  Download : 200/256
+[16:41:12]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 200/256 chunk=180
+[16:41:13]  Download : 161/256
+[16:41:13]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 161/256 chunk=180
+[16:41:13]  Download : 162/256
+[16:41:13]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 162/256 chunk=180
+[16:41:13]  Download : 163/256
+[16:41:13]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 163/256 chunk=180
+[16:41:14]  Download : 164/256
+[16:41:14]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 164/256 chunk=180
+[16:41:14]  Download : 201/256
+[16:41:14]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 201/256 chunk=180
+[16:41:15]  Download : 202/256
+[16:41:15]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 202/256 chunk=180
+[16:41:15]  Download : 203/256
+[16:41:15]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 203/256 chunk=180
+[16:41:15]  Download : 204/256
+[16:41:15]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 204/256 chunk=180
+[16:41:16]  Download : 165/256
+[16:41:16]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 165/256 chunk=180
+[16:41:17]  Download : 166/256
+[16:41:17]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 166/256 chunk=180
+[16:41:17]  Download : 167/256
+[16:41:17]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 167/256 chunk=180
+[16:41:18]  Download : 168/256
+[16:41:18]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 168/256 chunk=180
+[16:41:18]  Download : 205/256
+[16:41:18]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 205/256 chunk=180
+[16:41:18]  Download : 206/256
+[16:41:18]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 206/256 chunk=180
+[16:41:19]  Download : 207/256
+[16:41:19]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 207/256 chunk=180
+[16:41:19]  Download : 208/256
+[16:41:19]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 208/256 chunk=180
+[16:41:20]  Download : 169/256
+[16:41:20]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 169/256 chunk=180
+[16:41:20]  Download : 170/256
+[16:41:20]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 170/256 chunk=180
+[16:41:21]  Download : 171/256
+[16:41:21]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 171/256 chunk=180
+[16:41:21]  Download : 172/256
+[16:41:21]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 172/256 chunk=180
+[16:41:22]  Download : 209/256
+[16:41:22]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 209/256 chunk=180
+[16:41:22]  Download : 210/256
+[16:41:22]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 210/256 chunk=180
+[16:41:22]  Download : 211/256
+[16:41:22]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 211/256 chunk=180
+[16:41:23]  Download : 212/256
+[16:41:23]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 212/256 chunk=180
+[16:41:24]  Download : 173/256
+[16:41:24]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 173/256 chunk=180
+[16:41:24]  Download : 174/256
+[16:41:24]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 174/256 chunk=180
+[16:41:24]  Download : 175/256
+[16:41:24]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 175/256 chunk=180
+[16:41:25]  Download : 176/256
+[16:41:25]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 176/256 chunk=180
+[16:41:25]  Download : 213/256
+[16:41:25]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 213/256 chunk=180
+[16:41:26]  Download : 214/256
+[16:41:26]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 214/256 chunk=180
+[16:41:26]  Download : 215/256
+[16:41:26]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 215/256 chunk=180
+[16:41:26]  Download : 216/256
+[16:41:26]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 216/256 chunk=180
+[16:41:27]  Download : 177/256
+[16:41:27]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 177/256 chunk=180
+[16:41:28]  Download : 178/256
+[16:41:28]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 178/256 chunk=180
+[16:41:28]  Download : 179/256
+[16:41:28]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 179/256 chunk=180
+[16:41:28]  Download : 180/256
+[16:41:28]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 180/256 chunk=180
+[16:41:29]  Download : 217/256
+[16:41:29]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 217/256 chunk=180
+[16:41:29]  Download : 218/256
+[16:41:29]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 218/256 chunk=180
+[16:41:30]  Download : 219/256
+[16:41:30]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 219/256 chunk=180
+[16:41:30]  Download : 220/256
+[16:41:30]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 220/256 chunk=180
+[16:41:31]  Download : 181/256
+[16:41:31]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 181/256 chunk=180
+[16:41:31]  Download : 182/256
+[16:41:31]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 182/256 chunk=180
+[16:41:32]  Download : 183/256
+[16:41:32]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 183/256 chunk=180
+[16:41:32]  Download : 184/256
+[16:41:32]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 184/256 chunk=180
+[16:41:32]  Download : 221/256
+[16:41:32]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 221/256 chunk=180
+[16:41:33]  Download : 222/256
+[16:41:33]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 222/256 chunk=180
+[16:41:33]  Download : 223/256
+[16:41:33]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 223/256 chunk=180
+[16:41:34]  Download : 224/256
+[16:41:34]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 224/256 chunk=180
+[16:41:35]  Download : 185/256
+[16:41:35]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 185/256 chunk=180
+[16:41:35]  Download : 186/256
+[16:41:35]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 186/256 chunk=180
+[16:41:35]  Download : 187/256
+[16:41:35]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 187/256 chunk=180
+[16:41:36]  Download : 188/256
+[16:41:36]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 188/256 chunk=180
+[16:41:36]  Download : 225/256
+[16:41:36]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 225/256 chunk=180
+[16:41:37]  Download : 226/256
+[16:41:37]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 226/256 chunk=180
+[16:41:37]  Download : 227/256
+[16:41:37]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 227/256 chunk=180
+[16:41:37]  Download : 228/256
+[16:41:37]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 228/256 chunk=180
+[16:41:38]  Download : 189/256
+[16:41:38]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 189/256 chunk=180
+[16:41:39]  Download : 190/256
+[16:41:39]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 190/256 chunk=180
+[16:41:39]  Download : 191/256
+[16:41:39]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 191/256 chunk=180
+[16:41:39]  Download : 192/256
+[16:41:39]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 192/256 chunk=180
+[16:41:40]  Download : 229/256
+[16:41:40]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 229/256 chunk=180
+[16:41:40]  Download : 230/256
+[16:41:40]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 230/256 chunk=180
+[16:41:41]  Download : 231/256
+[16:41:41]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 231/256 chunk=180
+[16:41:41]  Download : 232/256
+[16:41:41]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 232/256 chunk=180
+[16:41:42]  Download : 193/256
+[16:41:42]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 193/256 chunk=180
+[16:41:42]  Download : 194/256
+[16:41:42]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 194/256 chunk=180
+[16:41:43]  Download : 195/256
+[16:41:43]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 195/256 chunk=180
+[16:41:43]  Download : 196/256
+[16:41:43]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 196/256 chunk=180
+[16:41:43]  Download : 233/256
+[16:41:43]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 233/256 chunk=180
+[16:41:44]  Download : 234/256
+[16:41:44]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 234/256 chunk=180
+[16:41:44]  Download : 235/256
+[16:41:44]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 235/256 chunk=180
+[16:41:45]  Download : 236/256
+[16:41:45]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 236/256 chunk=180
+[16:41:45]  Download : 197/256
+[16:41:45]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 197/256 chunk=180
+[16:41:46]  Download : 198/256
+[16:41:46]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 198/256 chunk=180
+[16:41:46]  Download : 199/256
+[16:41:46]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 199/256 chunk=180
+[16:41:47]  Download : 200/256
+[16:41:47]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 200/256 chunk=180
+[16:41:47]  Download : 237/256
+[16:41:47]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 237/256 chunk=180
+[16:41:47]  Download : 238/256
+[16:41:47]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 238/256 chunk=180
+[16:41:48]  Download : 239/256
+[16:41:48]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 239/256 chunk=180
+[16:41:48]  Download : 240/256
+[16:41:48]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 240/256 chunk=180
+[16:41:49]  Download : 201/256
+[16:41:49]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 201/256 chunk=180
+[16:41:49]  Download : 202/256
+[16:41:49]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 202/256 chunk=180
+[16:41:50]  Download : 203/256
+[16:41:50]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 203/256 chunk=180
+[16:41:50]  Download : 204/256
+[16:41:50]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 204/256 chunk=180
+[16:41:51]  Download : 241/256
+[16:41:51]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 241/256 chunk=180
+[16:41:51]  Download : 242/256
+[16:41:51]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 242/256 chunk=180
+[16:41:51]  Download : 243/256
+[16:41:51]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 243/256 chunk=180
+[16:41:52]  Download : 244/256
+[16:41:52]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 244/256 chunk=180
+[16:41:53]  Download : 205/256
+[16:41:53]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 205/256 chunk=180
+[16:41:53]  Download : 206/256
+[16:41:53]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 206/256 chunk=180
+[16:41:54]  Download : 207/256
+[16:41:54]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 207/256 chunk=180
+[16:41:54]  Download : 208/256
+[16:41:54]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 208/256 chunk=180
+[16:41:54]  Download : 245/256
+[16:41:54]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 245/256 chunk=180
+[16:41:55]  Download : 246/256
+[16:41:55]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 246/256 chunk=180
+[16:41:55]  Download : 247/256
+[16:41:55]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 247/256 chunk=180
+[16:41:56]  Download : 248/256
+[16:41:56]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 248/256 chunk=180
+[16:41:56]  Download : 209/256
+[16:41:56]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 209/256 chunk=180
+[16:41:57]  Download : 210/256
+[16:41:57]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 210/256 chunk=180
+[16:41:57]  Download : 211/256
+[16:41:57]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 211/256 chunk=180
+[16:41:58]  Download : 212/256
+[16:41:58]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 212/256 chunk=180
+[16:41:58]  Download : 249/256
+[16:41:58]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 249/256 chunk=180
+[16:41:58]  Download : 250/256
+[16:41:58]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 250/256 chunk=180
+[16:41:59]  Download : 251/256
+[16:41:59]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 251/256 chunk=180
+[16:41:59]  Download : 252/256
+[16:41:59]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 252/256 chunk=180
+[16:42:00]  Download : 213/256
+[16:42:00]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 213/256 chunk=180
+[16:42:00]  Download : 214/256
+[16:42:00]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 214/256 chunk=180
+[16:42:01]  Download : 215/256
+[16:42:01]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 215/256 chunk=180
+[16:42:01]  Download : 216/256
+[16:42:01]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 216/256 chunk=180
+[16:42:02]  Download : 253/256
+[16:42:02]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 253/256 chunk=180
+[16:42:02]  Download : 254/256
+[16:42:02]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 254/256 chunk=180
+[16:42:02]  Download : 255/256
+[16:42:02]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 255/256 chunk=180
+[16:42:03]  Download : 217/256
+[16:42:03]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 217/256 chunk=180
+[16:42:03]  Download : 218/256
+[16:42:03]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 218/256 chunk=180
+[16:42:04]  Download : 219/256
+[16:42:04]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 219/256 chunk=180
+[16:42:04]  Download : 220/256
+[16:42:04]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 220/256 chunk=180
+[16:42:05]  Download : 221/256
+[16:42:05]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 221/256 chunk=180
+[16:42:05]  Download : 222/256
+[16:42:05]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 222/256 chunk=180
+[16:42:06]  Download : 223/256
+[16:42:06]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 223/256 chunk=180
+[16:42:06]  Download : 224/256
+[16:42:06]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 224/256 chunk=180
+[16:42:06]  FTP Transaction Completed.
+[16:42:06]  Calculate FTP CRC. Remote : 2142142446, Local : 2142142446.
+[16:42:06]  [FTP_OLD_TEST][id=3][DOWNLOAD] CRC remote=2142142446 local=2142142446
+[16:42:07]  Download : 225/256
+[16:42:07]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 225/256 chunk=180
+[16:42:08]  Download : 226/256
+[16:42:08]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 226/256 chunk=180
+[16:42:08]  Download : 227/256
+[16:42:08]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 227/256 chunk=180
+[16:42:09]  Download : 228/256
+[16:42:09]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 228/256 chunk=180
+[16:42:09]  Download : 229/256
+[16:42:09]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 229/256 chunk=180
+[16:42:10]  Download : 230/256
+[16:42:10]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 230/256 chunk=180
+[16:42:10]  Download : 231/256
+[16:42:10]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 231/256 chunk=180
+[16:42:11]  Download : 232/256
+[16:42:11]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 232/256 chunk=180
+[16:42:11]  Download : 233/256
+[16:42:11]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 233/256 chunk=180
+[16:42:12]  Download : 234/256
+[16:42:12]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 234/256 chunk=180
+[16:42:12]  Download : 235/256
+[16:42:12]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 235/256 chunk=180
+[16:42:12]  Download : 236/256
+[16:42:12]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 236/256 chunk=180
+[16:42:13]  Download : 237/256
+[16:42:13]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 237/256 chunk=180
+[16:42:14]  Download : 238/256
+[16:42:14]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 238/256 chunk=180
+[16:42:14]  Download : 239/256
+[16:42:14]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 239/256 chunk=180
+[16:42:14]  Download : 240/256
+[16:42:14]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 240/256 chunk=180
+[16:42:15]  Download : 241/256
+[16:42:15]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 241/256 chunk=180
+[16:42:16]  Download : 242/256
+[16:42:16]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 242/256 chunk=180
+[16:42:16]  Download : 243/256
+[16:42:16]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 243/256 chunk=180
+[16:42:16]  Download : 244/256
+[16:42:16]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 244/256 chunk=180
+[16:42:17]  Download : 245/256
+[16:42:17]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 245/256 chunk=180
+[16:42:18]  Download : 246/256
+[16:42:18]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 246/256 chunk=180
+[16:42:18]  Download : 247/256
+[16:42:18]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 247/256 chunk=180
+[16:42:18]  Download : 248/256
+[16:42:18]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 248/256 chunk=180
+[16:42:19]  Download : 249/256
+[16:42:19]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 249/256 chunk=180
+[16:42:20]  Download : 250/256
+[16:42:20]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 250/256 chunk=180
+[16:42:20]  Download : 251/256
+[16:42:20]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 251/256 chunk=180
+[16:42:20]  Download : 252/256
+[16:42:20]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 252/256 chunk=180
+[16:42:21]  Download : 253/256
+[16:42:21]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 253/256 chunk=180
+[16:42:21]  Download : 254/256
+[16:42:21]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 254/256 chunk=180
+[16:42:22]  Download : 255/256
+[16:42:22]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 255/256 chunk=180
+[16:42:22]  FTP Transaction Completed.
+[16:42:22]  Calculate FTP CRC. Remote : 2142142446, Local : 2142142446.
+[16:42:22]  [FTP_RYU_TEST][id=4][DOWNLOAD] CRC remote=2142142446 local=2142142446
+[16:42:23]  [FTP_RYU_TEST][id=4][DOWNLOAD][OK] retcode=0
+[16:42:23]  [FTP_RYU_TEST][id=4][DOWNLOAD] cleanup_done=1
+[16:42:39]  [FTP_OLD_TEST][id=3][DOWNLOAD][OK] retcode=0
+[16:42:39]  [FTP_OLD_TEST][id=3][DOWNLOAD] cleanup_done=1

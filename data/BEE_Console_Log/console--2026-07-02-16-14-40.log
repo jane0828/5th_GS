@@ -1,0 +1,27 @@
+2026-07-02 16:14
+[16:14:55]  Connect to Switch Box..............Failed.
+[16:14:55]  Connect to Rotator.................Failed.
+[16:14:55]  Connect to GS100..................Success.
+[16:14:55]  BEE-1000 BCN Port 31 bind success.
+[16:14:55]  BEE-1000 RPT Port 25 bind success.
+[16:14:55]  BEE-1000 Event Port 27 bind success.
+[16:14:55]  BEE-100 FM Port 23 bind success.
+[16:14:55]  UEL-Y-Sys. BCN Port 12 bind success.
+[16:14:55]  UEL-Y-Sys. RPT Port 10 bind success.
+[16:14:55]  Rotator Read Failed. Please Check Again.
+[16:14:55]  UEL-Y-Sys. Event Port 11 bind success.
+[16:14:55]  UEL-Y-Sys. FM Port 14 bind success.
+[16:14:55]  BEE-1012 BCN Port 17 bind success.
+[16:14:55]  BEE-1012 RPT Port 15 bind success.
+[16:14:55]  BEE-1012 Event Port 16 bind success.
+[16:14:55]  BEE-1012 FM Port 18 bind success.
+[16:14:55]  BEE-1012 AIOBC Port 29 bind success.
+[16:15:13]  FTP_OLD_UPLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[16:15:13]  Start FTP OLD UPLOAD id=1.
+[16:15:13]  [FTP_OLD_TEST][id=1][UPLOAD] begin local=file://./adcs.so remote=file://./hihiold.so host=10 port=9 chunk=180
+[16:15:13]  Received FTP Upload Spec.
+[16:15:13]  Received FTP Upload File Spec. Filesize : 45908, CRC : 2142142446.
+[16:15:34]  Received FTP Status Reply.
+[16:15:34]  Start FTP Uplink. Total Chunk Size : 256
+[16:15:34]  Upload : 0/256
+[16:15:34]  [FTP_OLD_TEST][id=1][UPLOAD] progress 0/256 chunk=180
