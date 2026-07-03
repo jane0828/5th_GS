@@ -1,0 +1,40 @@
+2026-07-03 21:06
+[21:06:44]  Connect to Switch Box..............Failed.
+[21:06:44]  Connect to Rotator.................Failed.
+[21:06:44]  Connect to GS100..................Success.
+[21:06:44]  BEE-1000 BCN Port 31 bind success.
+[21:06:44]  BEE-1000 RPT Port 25 bind success.
+[21:06:44]  BEE-1000 Event Port 27 bind success.
+[21:06:44]  BEE-100 FM Port 23 bind success.
+[21:06:44]  UEL-Y-Sys. BCN Port 12 bind success.
+[21:06:44]  UEL-Y-Sys. RPT Port 10 bind success.
+[21:06:44]  UEL-Y-Sys. Event Port 11 bind success.
+[21:06:44]  Rotator Read Failed. Please Check Again.
+[21:06:44]  Rotator Read Failed. Please Check Again.
+[21:06:44]  UEL-Y-Sys. FM Port 14 bind success.
+[21:06:44]  BEE-1012 BCN Port 17 bind success.
+[21:06:44]  BEE-1012 RPT Port 15 bind success.
+[21:06:44]  BEE-1012 Event Port 16 bind success.
+[21:06:44]  BEE-1012 FM Port 18 bind success.
+[21:06:44]  BEE-1012 AIOBC Port 29 bind success.
+[21:07:19]  FTP_OLD_UPLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[21:07:19]  Start FTP OLD UPLOAD id=1.
+[21:07:19]  [FTP_OLD_TEST][id=1][UPLOAD] begin local=file://./toyou.so remote=file://./cf/why.so host=10 port=9 chunk=180
+[21:07:19]  Received FTP Upload Spec.
+[21:07:19]  Received FTP Upload File Spec. Filesize : 45908, CRC : 2142142446.
+[21:07:23]  Received FTP Status Reply.
+[21:07:23]  Start FTP Uplink. Total Chunk Size : 256
+[21:07:23]  Upload : 0/256
+[21:07:23]  [FTP_OLD_TEST][id=1][UPLOAD] progress 0/256 chunk=180
+[21:07:24]  Upload : 1/256
+[21:07:24]  [FTP_OLD_TEST][id=1][UPLOAD] progress 1/256 chunk=180
+[21:07:26]  Upload : 2/256
+[21:07:26]  [FTP_OLD_TEST][id=1][UPLOAD] progress 2/256 chunk=180
+[21:07:27]  Upload : 3/256
+[21:07:27]  [FTP_OLD_TEST][id=1][UPLOAD] progress 3/256 chunk=180
+[21:07:29]  Upload : 4/256
+[21:07:29]  [FTP_OLD_TEST][id=1][UPLOAD] progress 4/256 chunk=180
+[21:07:30]  Upload : 5/256
+[21:07:30]  [FTP_OLD_TEST][id=1][UPLOAD] progress 5/256 chunk=180
+[21:07:32]  Upload : 6/256
+[21:07:32]  [FTP_OLD_TEST][id=1][UPLOAD] progress 6/256 chunk=180

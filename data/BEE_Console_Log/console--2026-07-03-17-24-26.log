@@ -1,0 +1,77 @@
+2026-07-03 17:24
+[17:24:44]  Connect to Switch Box..............Failed.
+[17:24:44]  Connect to Rotator.................Failed.
+[17:24:44]  Connect to GS100..................Success.
+[17:24:44]  BEE-1000 BCN Port 31 bind success.
+[17:24:44]  BEE-1000 RPT Port 25 bind success.
+[17:24:44]  BEE-1000 Event Port 27 bind success.
+[17:24:44]  BEE-100 FM Port 23 bind success.
+[17:24:44]  UEL-Y-Sys. BCN Port 12 bind success.
+[17:24:44]  Rotator Read Failed. Please Check Again.
+[17:24:44]  UEL-Y-Sys. RPT Port 10 bind success.
+[17:24:44]  UEL-Y-Sys. Event Port 11 bind success.
+[17:24:44]  UEL-Y-Sys. FM Port 14 bind success.
+[17:24:44]  BEE-1012 BCN Port 17 bind success.
+[17:24:44]  BEE-1012 RPT Port 15 bind success.
+[17:24:44]  BEE-1012 Event Port 16 bind success.
+[17:24:44]  BEE-1012 FM Port 18 bind success.
+[17:24:44]  BEE-1012 AIOBC Port 29 bind success.
+[17:26:11]  FTP_OLD_DOWNLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[17:26:11]  Start FTP OLD DOWNLOAD id=1.
+[17:26:11]  [FTP_OLD_TEST][id=1][DOWNLOAD] begin local=file://./yes.so remote=file://./hk_cpy_tbl.tbl host=10 port=9 chunk=180
+[17:26:47]  [FTP_OLD_TEST][id=1][DOWNLOAD][ERROR] retcode=-5
+[17:26:47]  [FTP_OLD_TEST][id=1][DOWNLOAD] cleanup_done=1
+[17:26:47]  FTP_OLD_DOWNLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[17:26:47]  Start FTP OLD DOWNLOAD id=2.
+[17:26:47]  [FTP_OLD_TEST][id=2][DOWNLOAD] begin local=file://./yes.so remote=file://./cf/hk_cpy_tbl.tbl host=10 port=9 chunk=180
+[17:26:51]  Received FTP Download Spec.
+[17:26:51]  Received FTP Download Spec. Filesize : 2164, CRC : 3359588829.
+[17:26:52]  Received FTP Status Request.
+[17:26:52]  Start FTP Downlink. Total Chunk Size : 13
+[17:26:53]  Download : 0/13
+[17:26:53]  [FTP_OLD_TEST][id=2][DOWNLOAD] progress 0/13 chunk=180
+[17:26:54]  Download : 1/13
+[17:26:54]  [FTP_OLD_TEST][id=2][DOWNLOAD] progress 1/13 chunk=180
+[17:26:54]  Download : 2/13
+[17:26:54]  [FTP_OLD_TEST][id=2][DOWNLOAD] progress 2/13 chunk=180
+[17:26:55]  Download : 3/13
+[17:26:55]  [FTP_OLD_TEST][id=2][DOWNLOAD] progress 3/13 chunk=180
+[17:26:55]  Download : 4/13
+[17:26:55]  [FTP_OLD_TEST][id=2][DOWNLOAD] progress 4/13 chunk=180
+[17:26:55]  Download : 5/13
+[17:26:55]  [FTP_OLD_TEST][id=2][DOWNLOAD] progress 5/13 chunk=180
+[17:26:56]  Download : 6/13
+[17:26:56]  [FTP_OLD_TEST][id=2][DOWNLOAD] progress 6/13 chunk=180
+[17:26:57]  Download : 7/13
+[17:26:57]  [FTP_OLD_TEST][id=2][DOWNLOAD] progress 7/13 chunk=180
+[17:26:57]  Download : 8/13
+[17:26:57]  [FTP_OLD_TEST][id=2][DOWNLOAD] progress 8/13 chunk=180
+[17:26:58]  Download : 9/13
+[17:26:58]  [FTP_OLD_TEST][id=2][DOWNLOAD] progress 9/13 chunk=180
+[17:26:58]  Download : 10/13
+[17:26:58]  [FTP_OLD_TEST][id=2][DOWNLOAD] progress 10/13 chunk=180
+[17:26:58]  Download : 11/13
+[17:26:58]  [FTP_OLD_TEST][id=2][DOWNLOAD] progress 11/13 chunk=180
+[17:26:59]  Download : 12/13
+[17:26:59]  [FTP_OLD_TEST][id=2][DOWNLOAD] progress 12/13 chunk=180
+[17:27:00]  FTP Transaction Completed.
+[17:27:00]  Calculate FTP CRC. Remote : 3359588829, Local : 3359588829.
+[17:27:00]  [FTP_OLD_TEST][id=2][DOWNLOAD] CRC remote=3359588829 local=3359588829
+[17:27:33]  [FTP_OLD_TEST][id=2][DOWNLOAD][OK] retcode=0
+[17:27:33]  [FTP_OLD_TEST][id=2][DOWNLOAD] cleanup_done=1
+[17:27:49]  FTP_OLD_DOWNLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[17:27:49]  Start FTP OLD DOWNLOAD id=3.
+[17:27:49]  [FTP_OLD_TEST][id=3][DOWNLOAD] begin local=file://./yes.so remote=file://./cf/hk_cpy_tbl.tbl host=10 port=9 chunk=180
+[17:27:53]  Received FTP Download Spec.
+[17:27:53]  Received FTP Download Spec. Filesize : 2164, CRC : 3359588829.
+[17:28:25]  [FTP_OLD_TEST][id=3][DOWNLOAD][ERROR] retcode=-17
+[17:28:25]  [FTP_OLD_TEST][id=3][DOWNLOAD] cleanup_done=1
+[17:28:54]  FTP_OLD_DOWNLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[17:28:54]  Start FTP OLD DOWNLOAD id=4.
+[17:28:54]  [FTP_OLD_TEST][id=4][DOWNLOAD] begin local=file://./no.so remote=file://./cf/hk_cpy_tbl.tbl host=10 port=9 chunk=180
+[17:28:58]  Received FTP Download Spec.
+[17:28:58]  Received FTP Download Spec. Filesize : 2164, CRC : 3359588829.
+[17:28:59]  Received FTP Status Request.
+[17:28:59]  Start FTP Downlink. Total Chunk Size : 13
+[17:29:00]  Download : 0/13
+[17:29:00]  [FTP_OLD_TEST][id=4][DOWNLOAD] progress 0/13 chunk=180

@@ -1,0 +1,248 @@
+[21:18:01]  Connect to Switch Box..............Failed.
+[21:18:01]  Connect to Rotator.................Failed.
+[21:18:01]  Connect to GS100..................Success.
+[21:18:01]  BEE-1000 BCN Port 31 bind success.
+[21:18:01]  BEE-1000 RPT Port 25 bind success.
+[21:18:01]  BEE-1000 Event Port 27 bind success.
+[21:18:01]  Rotator Read Failed. Please Check Again.
+[21:18:01]  BEE-100 FM Port 23 bind success.
+[21:18:01]  UEL-Y-Sys. BCN Port 12 bind success.
+[21:18:01]  UEL-Y-Sys. RPT Port 10 bind success.
+[21:18:01]  UEL-Y-Sys. Event Port 11 bind success.
+[21:18:01]  UEL-Y-Sys. FM Port 14 bind success.
+[21:18:01]  BEE-1012 BCN Port 17 bind success.
+[21:18:01]  BEE-1012 RPT Port 15 bind success.
+[21:18:01]  BEE-1012 Event Port 16 bind success.
+[21:18:01]  BEE-1012 FM Port 18 bind success.
+[21:18:01]  BEE-1012 AIOBC Port 29 bind success.
+[21:18:44]  FTP_OLD_DOWNLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[21:18:44]  Start FTP OLD DOWNLOAD id=1.
+[21:18:44]  [FTP_OLD_TEST][id=1][DOWNLOAD] begin local=file://./kill.so remote=file://./cf/hk_cpy_tbl.tbl host=10 port=9 chunk=180
+[21:18:48]  Received FTP Download Spec.
+[21:18:48]  Received FTP Download Spec. Filesize : 2164, CRC : 3359588829.
+[21:18:49]  Received FTP Status Request.
+[21:18:49]  Start FTP Downlink. Total Chunk Size : 13
+[21:18:50]  Download : 0/13
+[21:18:50]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 0/13 chunk=180
+[21:18:51]  Download : 1/13
+[21:18:51]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 1/13 chunk=180
+[21:18:51]  Download : 2/13
+[21:18:51]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 2/13 chunk=180
+[21:18:52]  Download : 3/13
+[21:18:52]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 3/13 chunk=180
+[21:18:52]  Download : 4/13
+[21:18:52]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 4/13 chunk=180
+[21:18:52]  Download : 5/13
+[21:18:52]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 5/13 chunk=180
+[21:18:53]  Download : 6/13
+[21:18:53]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 6/13 chunk=180
+[21:18:54]  Download : 7/13
+[21:18:54]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 7/13 chunk=180
+[21:18:54]  Download : 8/13
+[21:18:54]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 8/13 chunk=180
+[21:18:55]  Download : 9/13
+[21:18:55]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 9/13 chunk=180
+[21:18:55]  Download : 10/13
+[21:18:55]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 10/13 chunk=180
+[21:18:56]  Download : 11/13
+[21:18:56]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 11/13 chunk=180
+[21:18:56]  Download : 12/13
+[21:18:56]  [FTP_OLD_TEST][id=1][DOWNLOAD] progress 12/13 chunk=180
+[21:18:57]  FTP Transaction Completed.
+[21:18:57]  Calculate FTP CRC. Remote : 3359588829, Local : 3359588829.
+[21:18:57]  [FTP_OLD_TEST][id=1][DOWNLOAD] CRC remote=3359588829 local=3359588829
+[21:19:30]  [FTP_OLD_TEST][id=1][DOWNLOAD][OK] retcode=0
+[21:19:30]  [FTP_OLD_TEST][id=1][DOWNLOAD] cleanup_done=1
+[21:19:30]  FTP_OLD_UPLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[21:19:30]  Start FTP OLD UPLOAD id=2.
+[21:19:30]  [FTP_OLD_TEST][id=2][UPLOAD] begin local=file://./kill.so remote=file://./cf/yaya.tbl host=10 port=9 chunk=180
+[21:19:30]  Received FTP Upload Spec.
+[21:19:30]  Received FTP Upload File Spec. Filesize : 2164, CRC : 3359588829.
+[21:19:34]  Received FTP Status Reply.
+[21:19:34]  Start FTP Uplink. Total Chunk Size : 13
+[21:19:34]  Upload : 0/13
+[21:19:34]  [FTP_OLD_TEST][id=2][UPLOAD] progress 0/13 chunk=180
+[21:19:36]  Upload : 1/13
+[21:19:36]  [FTP_OLD_TEST][id=2][UPLOAD] progress 1/13 chunk=180
+[21:19:37]  Upload : 2/13
+[21:19:37]  [FTP_OLD_TEST][id=2][UPLOAD] progress 2/13 chunk=180
+[21:19:39]  Upload : 3/13
+[21:19:39]  [FTP_OLD_TEST][id=2][UPLOAD] progress 3/13 chunk=180
+[21:19:40]  Upload : 4/13
+[21:19:40]  [FTP_OLD_TEST][id=2][UPLOAD] progress 4/13 chunk=180
+[21:19:42]  Upload : 5/13
+[21:19:42]  [FTP_OLD_TEST][id=2][UPLOAD] progress 5/13 chunk=180
+[21:19:43]  Upload : 6/13
+[21:19:43]  [FTP_OLD_TEST][id=2][UPLOAD] progress 6/13 chunk=180
+[21:19:55]  Upload : 7/13
+[21:19:55]  [FTP_OLD_TEST][id=2][UPLOAD] progress 7/13 chunk=180
+[21:19:56]  Upload : 8/13
+[21:19:56]  [FTP_OLD_TEST][id=2][UPLOAD] progress 8/13 chunk=180
+[21:19:58]  Upload : 9/13
+[21:19:58]  [FTP_OLD_TEST][id=2][UPLOAD] progress 9/13 chunk=180
+[21:19:59]  Upload : 10/13
+[21:19:59]  [FTP_OLD_TEST][id=2][UPLOAD] progress 10/13 chunk=180
+[21:20:01]  Upload : 11/13
+[21:20:01]  [FTP_OLD_TEST][id=2][UPLOAD] progress 11/13 chunk=180
+[21:20:03]  Upload : 12/13
+[21:20:03]  [FTP_OLD_TEST][id=2][UPLOAD] progress 12/13 chunk=180
+[21:20:12]  FTP Transaction Completed.
+[21:20:12]  Calculate FTP CRC. Remote : 3359588829, Local : 3359588829.
+[21:20:12]  [FTP_OLD_TEST][id=2][UPLOAD] CRC remote=3359588829 local=3359588829
+[21:20:15]  [FTP_OLD_TEST][id=2][UPLOAD][OK] retcode=0
+[21:20:15]  [FTP_OLD_TEST][id=2][UPLOAD] cleanup_done=1
+[21:20:41]  FTP_OLD_DOWNLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[21:20:41]  Start FTP OLD DOWNLOAD id=3.
+[21:20:41]  [FTP_OLD_TEST][id=3][DOWNLOAD] begin local=file://./yeye.so remote=file://./cf/yaya.tbl host=10 port=9 chunk=180
+[21:20:46]  Received FTP Download Spec.
+[21:20:46]  Received FTP Download Spec. Filesize : 2164, CRC : 3359588829.
+[21:20:47]  Received FTP Status Request.
+[21:20:47]  Start FTP Downlink. Total Chunk Size : 13
+[21:20:48]  Download : 0/13
+[21:20:48]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 0/13 chunk=180
+[21:20:48]  Download : 1/13
+[21:20:48]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 1/13 chunk=180
+[21:20:48]  Download : 2/13
+[21:20:48]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 2/13 chunk=180
+[21:20:49]  Download : 3/13
+[21:20:49]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 3/13 chunk=180
+[21:20:49]  Download : 4/13
+[21:20:49]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 4/13 chunk=180
+[21:20:50]  Download : 5/13
+[21:20:50]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 5/13 chunk=180
+[21:20:50]  Download : 6/13
+[21:20:50]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 6/13 chunk=180
+[21:20:51]  Download : 7/13
+[21:20:51]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 7/13 chunk=180
+[21:20:51]  Download : 8/13
+[21:20:51]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 8/13 chunk=180
+[21:20:52]  Download : 9/13
+[21:20:52]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 9/13 chunk=180
+[21:20:52]  Download : 10/13
+[21:20:52]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 10/13 chunk=180
+[21:20:53]  Download : 11/13
+[21:20:53]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 11/13 chunk=180
+[21:20:53]  Download : 12/13
+[21:20:53]  [FTP_OLD_TEST][id=3][DOWNLOAD] progress 12/13 chunk=180
+[21:20:54]  FTP Transaction Completed.
+[21:20:54]  Calculate FTP CRC. Remote : 3359588829, Local : 3359588829.
+[21:20:54]  [FTP_OLD_TEST][id=3][DOWNLOAD] CRC remote=3359588829 local=3359588829
+[21:21:25]  Start FTP RYU DOWNLOAD id=4.
+[21:21:25]  [FTP_RYU_TEST][id=4][DOWNLOAD] begin local=file://./titi.so remote=file://./cf/yaya.tbl host=10 port=19 chunk=180
+[21:21:27]  Received FTP Download Spec.
+[21:21:27]  Received FTP Download Spec. Filesize : 2164, CRC : 3712040904.
+[21:21:27]  Received FTP Status Request.
+[21:21:27]  Start FTP Downlink. Total Chunk Size : 13
+[21:21:27]  [FTP_OLD_TEST][id=3][DOWNLOAD][OK] retcode=0
+[21:21:27]  [FTP_OLD_TEST][id=3][DOWNLOAD] cleanup_done=1
+[21:21:28]  Download : 0/13
+[21:21:28]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 0/13 chunk=180
+[21:21:28]  Download : 1/13
+[21:21:28]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 1/13 chunk=180
+[21:21:29]  Download : 2/13
+[21:21:29]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 2/13 chunk=180
+[21:21:29]  Download : 3/13
+[21:21:29]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 3/13 chunk=180
+[21:21:29]  Download : 4/13
+[21:21:29]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 4/13 chunk=180
+[21:21:30]  Download : 5/13
+[21:21:30]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 5/13 chunk=180
+[21:21:31]  Download : 6/13
+[21:21:31]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 6/13 chunk=180
+[21:21:31]  Download : 7/13
+[21:21:31]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 7/13 chunk=180
+[21:21:31]  Download : 8/13
+[21:21:31]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 8/13 chunk=180
+[21:21:32]  Download : 9/13
+[21:21:32]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 9/13 chunk=180
+[21:21:33]  Download : 10/13
+[21:21:33]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 10/13 chunk=180
+[21:21:33]  Download : 11/13
+[21:21:33]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 11/13 chunk=180
+[21:21:33]  Download : 12/13
+[21:21:33]  [FTP_RYU_TEST][id=4][DOWNLOAD] progress 12/13 chunk=180
+[21:21:34]  FTP Transaction Completed.
+[21:21:34]  Calculate FTP CRC. Remote : 3359588829, Local : 3359588829.
+[21:21:34]  [FTP_RYU_TEST][id=4][DOWNLOAD] CRC remote=3359588829 local=3359588829
+[21:21:34]  [FTP_RYU_TEST][id=4][DOWNLOAD][OK] retcode=0
+[21:21:34]  [FTP_RYU_TEST][id=4][DOWNLOAD] cleanup_done=1
+[21:21:49]  Start FTP RYU UPLOAD id=5.
+[21:21:49]  [FTP_RYU_TEST][id=5][UPLOAD] begin local=file://./titi.so remote=file://./cf/goodbyeftp.tbl host=10 port=19 chunk=180
+[21:21:49]  Received FTP Upload Spec.
+[21:21:49]  Received FTP Upload File Spec. Filesize : 2164, CRC : 3359588829.
+[21:21:52]  Received FTP Status Reply.
+[21:21:52]  Start FTP Uplink. Total Chunk Size : 13
+[21:21:52]  Upload : 0/13
+[21:21:52]  [FTP_RYU_TEST][id=5][UPLOAD] progress 0/13 chunk=180
+[21:21:53]  Upload : 1/13
+[21:21:53]  [FTP_RYU_TEST][id=5][UPLOAD] progress 1/13 chunk=180
+[21:21:54]  Upload : 2/13
+[21:21:54]  [FTP_RYU_TEST][id=5][UPLOAD] progress 2/13 chunk=180
+[21:21:54]  Upload : 3/13
+[21:21:54]  [FTP_RYU_TEST][id=5][UPLOAD] progress 3/13 chunk=180
+[21:21:55]  Upload : 4/13
+[21:21:55]  [FTP_RYU_TEST][id=5][UPLOAD] progress 4/13 chunk=180
+[21:21:55]  Upload : 5/13
+[21:21:55]  [FTP_RYU_TEST][id=5][UPLOAD] progress 5/13 chunk=180
+[21:21:56]  Upload : 6/13
+[21:21:56]  [FTP_RYU_TEST][id=5][UPLOAD] progress 6/13 chunk=180
+[21:22:10]  Upload : 7/13
+[21:22:10]  [FTP_RYU_TEST][id=5][UPLOAD] progress 7/13 chunk=180
+[21:22:11]  Upload : 8/13
+[21:22:11]  [FTP_RYU_TEST][id=5][UPLOAD] progress 8/13 chunk=180
+[21:22:12]  Upload : 9/13
+[21:22:12]  [FTP_RYU_TEST][id=5][UPLOAD] progress 9/13 chunk=180
+[21:22:12]  Upload : 10/13
+[21:22:12]  [FTP_RYU_TEST][id=5][UPLOAD] progress 10/13 chunk=180
+[21:22:13]  Upload : 11/13
+[21:22:13]  [FTP_RYU_TEST][id=5][UPLOAD] progress 11/13 chunk=180
+[21:22:14]  Upload : 12/13
+[21:22:14]  [FTP_RYU_TEST][id=5][UPLOAD] progress 12/13 chunk=180
+[21:22:29]  Received FTP Status Reply.
+[21:22:29]  Restart FTP Uplink from chunk : 13, to total : 13
+[21:22:29]  FTP Transaction Completed.
+[21:22:29]  Calculate FTP CRC. Remote : 3359588829, Local : 3359588829.
+[21:22:29]  [FTP_RYU_TEST][id=5][UPLOAD] CRC remote=3359588829 local=3359588829
+[21:22:30]  [FTP_RYU_TEST][id=5][UPLOAD][OK] retcode=0
+[21:22:30]  [FTP_RYU_TEST][id=5][UPLOAD] cleanup_done=1
+Unknown MsgID
+[21:23:31]   Start Uplink Task.
+[21:23:31]  Send Packet of Ptype : 10. Check Terminal Log.
+[21:23:31]  [OK]CMD Packet Header: 0x18 0x0 0xc0 0x0 0x0 0x15 0x5 0x3e
+|| Uplink || Length: 28
+18	00	c0	00	00	15	05	3e	46	54	
+50	5f	4f	52	49	47	49	4e	00	00	
+00	00	00	00	00	00	00	00	
+
+[21:23:49]  FTP_OLD_UPLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[21:23:49]  Start FTP OLD UPLOAD id=6.
+[21:23:49]  [FTP_OLD_TEST][id=6][UPLOAD] begin local=file://./titi.so remote=file://./cf/goodbyeftp.tbl host=10 port=9 chunk=180
+[21:23:49]  Received FTP Upload Spec.
+[21:23:49]  Received FTP Upload File Spec. Filesize : 2164, CRC : 3359588829.
+[21:25:25]  [FTP_OLD_TEST][id=6][UPLOAD][ERROR] retcode=-110
+[21:25:25]  [FTP_OLD_TEST][id=6][UPLOAD] cleanup_done=1
+Unknown MsgID
+[21:26:21]   Start Uplink Task.
+[21:26:21]  Send Packet of Ptype : 10. Check Terminal Log.
+[21:26:21]  [OK]CMD Packet Header: 0x18 0x0 0xc0 0x0 0x0 0x71 0x4 0x38
+|| Uplink || Length: 120
+18	00	c0	00	00	71	04	38	46	54	
+50	5f	4f	52	49	47	49	4e	00	00	
+00	00	00	00	00	00	00	00	46	54	
+50	5f	4f	52	49	47	49	4e	5f	4d	
+61	69	6e	00	00	00	00	00	2f	63	
+66	2f	66	74	70	5f	6f	72	69	67	
+69	6e	2e	73	6f	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+00	00	00	00	00	00	00	00	00	00	
+
+[21:27:20]  FTP_OLD_UPLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[21:27:20]  Start FTP OLD UPLOAD id=7.
+[21:27:20]  [FTP_OLD_TEST][id=7][UPLOAD] begin local=file://./titi.so remote=file://./cf/goodgoodbyeftp.tbl host=10 port=9 chunk=180
+[21:27:20]  Received FTP Upload Spec.
+[21:27:20]  Received FTP Upload File Spec. Filesize : 2164, CRC : 3359588829.
+[21:28:57]  [FTP_OLD_TEST][id=7][UPLOAD][ERROR] retcode=-110
+[21:28:57]  [FTP_OLD_TEST][id=7][UPLOAD] cleanup_done=1
