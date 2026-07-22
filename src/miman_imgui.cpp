@@ -956,8 +956,8 @@ static void ImGui_BEE1012BeaconWindow(float font_size)
     StateWindowColumnManager("bus_wdt_left"); ImGui::Text("%" PRIu32, bee1012_beacon->eps.pmu.bus_wdt_left);
 
     BeaconSectionHeader("EPS - PDU");
-    ImGui_BeaconI16Array("out_i[12]", bee1012_beacon->eps.pdu.out_i, 12);
-    ImGui_BeaconU8Array("out_en[12]", bee1012_beacon->eps.pdu.out_en, 12);
+    ImGui_BeaconI16Array("out_i[13]", bee1012_beacon->eps.pdu.out_i, 13);
+    ImGui_BeaconU8Array("out_en[13]", bee1012_beacon->eps.pdu.out_en, 13);
 
     BeaconSectionHeader("EPS - ACU");
     for (int unit = 0; unit < 2; unit++) {
@@ -1042,8 +1042,8 @@ static void ImGui_UELYSYSBeaconWindow(float font_size)
     StateWindowColumnManager("bus_wdt_left"); ImGui::Text("%" PRIu32, uelysys_beacon->eps.pmu.bus_wdt_left);
 
     BeaconSectionHeader("EPS - PDU");
-    ImGui_BeaconI16Array("out_i[12]", uelysys_beacon->eps.pdu.out_i, 12);
-    ImGui_BeaconU8Array("out_en[12]", uelysys_beacon->eps.pdu.out_en, 12);
+    ImGui_BeaconI16Array("out_i[13]", uelysys_beacon->eps.pdu.out_i, 13);
+    ImGui_BeaconU8Array("out_en[13]", uelysys_beacon->eps.pdu.out_en, 13);
 
     BeaconSectionHeader("EPS - ACU");
     for (int unit = 0; unit < 2; unit++) {
@@ -6226,7 +6226,7 @@ static const SubsystemRange FilterRules[] = {
     { 19, 550, 589 }, // MEOW extended
     { 15, 590, 591 }, // PAYUEL_ROMA PAR_GET operation presets
     { 28, 592, 596 }, // adcs (UELYSYS requested operations)
-    { 32, 630, 635 }, // AIOBC
+    { 32, 630, 636 }, // AIOBC
 };
 
 static bool IsUelysysPayCommandIndex(int cmd_i)
@@ -6513,7 +6513,6 @@ case 631: { // AIOBC
 }
 
 
-
 case 632: { // AIOBC Data Chunk
     static uint16_t msgid = 0x18F0;
     static uint8_t fnccode = 5;
@@ -6521,9 +6520,9 @@ case 632: { // AIOBC Data Chunk
     static uint16_t envelope_magic = 0x465A;   // "FZ"
     static uint16_t flags = 0x0000;
     static uint16_t raw_data_length = 136;     // user input
+    static uint16_t chunk_seq = 0;
+    static uint16_t total_chunks = 0;
     static uint32_t chunk_crc32 = 0;
-
-    //static float data_input[34] = {0.0f};
 
     ImGui::InputScalar("msgid##aiobc_datachunk", ImGuiDataType_U16, &msgid);
     ImGui::InputScalar("fnccode##aiobc_datachunk", ImGuiDataType_U8, &fnccode);
@@ -6531,17 +6530,13 @@ case 632: { // AIOBC Data Chunk
     ImGui::InputScalar("EnvelopeMagic##aiobc_datachunk", ImGuiDataType_U16, &envelope_magic);
     ImGui::InputScalar("flags##aiobc_datachunk", ImGuiDataType_U16, &flags);
     ImGui::InputScalar("RawDataLength##aiobc_datachunk", ImGuiDataType_U16, &raw_data_length);
+    ImGui::InputScalar("Chunk_seq##aiobc_datachunk", ImGuiDataType_U16, &chunk_seq);
+    ImGui::InputScalar("Tot_chunks##aiobc_datachunk", ImGuiDataType_U16, &total_chunks);
 
     ImGui::Text("ChunkCRC32 = 0x%08X", chunk_crc32);
 
     ImGui::Separator();
-    //ImGui::TextUnformatted("Data[34]");
 
-    // for (int i = 0; i < 34; ++i) {
-    //     char label[64];
-    //     snprintf(label, sizeof(label), "Data[%02d]##aiobc_datachunk", i);
-    //     ImGui::InputFloat(label, &data_input[i], 0.0f, 0.0f, "%.6f");
-    // }
     static char path[100];
     ImGui::InputText("data file path##aiobc_tc_data", path, sizeof(path));
 
@@ -6551,97 +6546,82 @@ case 632: { // AIOBC Data Chunk
     if (ImGui::Button("Generate CMD##aiobc_datachunk")) {
         vector<vector<float>> data = AIOBC_datachunk_parser(path);
 
-        if(data.empty()){
-            console.AddLog("data is empty");
+        if (data.empty()) {
+            console.AddLog("[ERROR]##data is empty");
             break;
         }
         WriteSystemName(msgid);
 
         AIOBC_DataChunkCmd_t &cmd = command->aiobcdatachunkcmd;
 
-        uint16_t msgid_be = htons(msgid);
-        uint8_t sequence[2] = {0xC0, 0x00};
+        // total_chunks가 UI에서 0으로 입력되었으면 파싱된 행 개수로 자동 설정
+        uint16_t actual_total_chunks = (total_chunks > 0) ? total_chunks : static_cast<uint16_t>(data.size());
 
-        uint16_t packet_length =
-            static_cast<uint16_t>(sizeof(AIOBC_DataChunkCmd_t) - 7);
-
-        uint8_t length[2] = {
-            static_cast<uint8_t>(packet_length >> 8),
-            static_cast<uint8_t>(packet_length & 0xFF)
-        };
-
-        memcpy(cmd.CmdHeader + 0, &msgid_be, sizeof(msgid_be));
-        memcpy(cmd.CmdHeader + 2, sequence, sizeof(sequence));
-        memcpy(cmd.CmdHeader + 4, length, sizeof(length));
-        memcpy(cmd.CmdHeader + 6, &fnccode, sizeof(fnccode));
-
-        uint8_t crc = 0xFF;
-        
-        for (int i = 0; i < data.size(); i++){
+        for (size_t i = 0; i < data.size(); i++) {
+            // 1. 패킷 버퍼 완전 초기화 (헤더 세팅 전 실행)
             memset(&cmd, 0, sizeof(cmd));
 
-            /*
-            * Copy user-input float data first.
-            * CRC will be calculated over the first raw_data_length bytes
-            * of this raw Data area.
-            */
+            // 2. CmdHeader 세팅
+            uint16_t msgid_be = htons(msgid);
+            uint8_t sequence[2] = {0xC0, 0x00};
+            uint16_t packet_length = static_cast<uint16_t>(sizeof(AIOBC_DataChunkCmd_t) - 7);
+            uint8_t length[2] = {
+                static_cast<uint8_t>(packet_length >> 8),
+                static_cast<uint8_t>(packet_length & 0xFF)
+            };
+
+            memcpy(cmd.CmdHeader + 0, &msgid_be, sizeof(msgid_be));
+            memcpy(cmd.CmdHeader + 2, sequence, sizeof(sequence));
+            memcpy(cmd.CmdHeader + 4, length, sizeof(length));
+            memcpy(cmd.CmdHeader + 6, &fnccode, sizeof(fnccode));
+
+            // 3. CSV 데이터 크기 안전 검사 (Crash 방지)
+            if (data[i].size() < 34) {
+                console.AddLog("[ERROR]##Row %zu data size insufficient (%zu/34)", i, data[i].size());
+                break;
+            }
+
+            // 4. Float 데이터 복사
             for (int j = 0; j < 34; ++j) {
                 cmd.Data[j] = data[i][j];
             }
 
-            /*
-            * raw_data_length is user input.
-            * But it must not exceed the real raw buffer size.
-            */
-            const uint16_t max_raw_len =
-                static_cast<uint16_t>(sizeof(cmd.Data));
-
+            const uint16_t max_raw_len = static_cast<uint16_t>(sizeof(cmd.Data));
             if (raw_data_length > max_raw_len) {
                 console.AddLog(
                     "[ERROR]##AIOBC DataChunk RawDataLength too large: input=%u max=%u",
-                    raw_data_length,
-                    max_raw_len
+                    raw_data_length, max_raw_len
                 );
                 break;
             }
 
-            /*
-            * Envelope header fields.
-            */
+            // 5. Envelope header 및 시퀀스/토탈 인자 세팅 (빅엔디안 변환)
             cmd.EnvelopeMagic = csp_hton16(envelope_magic);
             cmd.flags = csp_hton16(flags);
             cmd.RawDataLength = csp_hton16(raw_data_length);
+            
+            // 시퀀스 번호는 시작 값(chunk_seq)부터 인덱스에 따라 1씩 증가
+            cmd.chunk_seq = csp_hton16(static_cast<uint16_t>(chunk_seq + i));
+            cmd.total_chunks = csp_hton16(actual_total_chunks);
 
-            /*
-            * Calculate ChunkEnvelope CRC32.
-            *
-            * IMPORTANT:
-            * The CRC is calculated over exactly raw_data_length bytes,
-            * not always over the full Data[34] area.
-            */
+            // 6. ChunkEnvelope CRC32 계산
             chunk_crc32 = crc32_compute(
                 reinterpret_cast<const uint8_t *>(cmd.Data),
                 static_cast<std::size_t>(raw_data_length)
             );
-
             cmd.ChunkCRC32 = csp_hton32(chunk_crc32);
 
-            /*
-            * Packet-level XOR checksum.
-            * This must be calculated after ChunkCRC32 is filled.
-            */
+            // 7. Packet-level XOR Checksum 계산 (CmdHeader[7])
             cmd.CmdHeader[7] = 0;
+            uint8_t crc = 0xFF;
+            const uint8_t *p = reinterpret_cast<const uint8_t *>(&cmd);
 
-            crc = 0xFF;
-            const uint8_t *p =
-                reinterpret_cast<const uint8_t *>(&cmd);
-
-            for (size_t i = 0; i < sizeof(cmd); ++i) {
-                crc ^= p[i];
+            for (size_t k = 0; k < sizeof(cmd); ++k) {
+                crc ^= p[k];
             }
-
             cmd.CmdHeader[7] = crc;
 
+            // 8. 전송 패킷 할당 및 송신
             packetsign *pkt = static_cast<packetsign *>(
                 malloc(2 + 2 + 4 + sizeof(cmd))
             );
@@ -6654,16 +6634,16 @@ case 632: { // AIOBC Data Chunk
             pkt->Identifier = HVD_TEST;
             pkt->PacketType = B12_UL_AIOBC;
             pkt->Length = static_cast<uint16_t>(sizeof(cmd));
-
             memcpy(pkt->Data, &cmd, sizeof(cmd));
 
             console.AddLog(
-                "[AIOBC]##DataChunk generated. Magic=0x%04X, RawDataLength=%u, ChunkCRC32=0x%08X, PacketCRC=0x%02X, PacketLength=%u",
+                "[AIOBC]##DataChunk generated [%zu/%u]. Seq=%u, Magic=0x%04X, RawLen=%u, CRC32=0x%08X, PktCRC=0x%02X",
+                i + 1, actual_total_chunks,
+                chunk_seq + i,
                 envelope_magic,
                 raw_data_length,
                 chunk_crc32,
-                cmd.CmdHeader[7],
-                pkt->Length
+                cmd.CmdHeader[7]
             );
 
             pthread_join(p_thread[4], NULL);
@@ -6768,10 +6748,8 @@ case 635: { // AIOBC FDIR Request
     static uint8_t fnccode = 14;
 
     static uint32_t scenarioid = 0;
-    static uint8_t commandid = 0;
+    static uint8_t commandid = 14;
     static uint32_t flags = 0;
-    static float conf_scale = 0.0f;
-    static float thre_scale = 0.0f;
 
     ImGui::InputScalar("msgid##aiobc_fdir", ImGuiDataType_U16, &msgid);
     ImGui::InputScalar("fnccode##aiobc_fdir", ImGuiDataType_U8, &fnccode);
@@ -6864,6 +6842,120 @@ case 635: { // AIOBC FDIR Request
 
     break;
 }
+
+
+
+case 636: { // AIOBC AI Mode Command
+    static uint16_t msgid = 0x18F0;
+    static uint8_t fnccode = 5;            
+
+    static uint16_t envelope_magic = 0x465A; // "FZ"
+    static uint16_t flags = 1;
+    static uint16_t chunk_seq = 0;
+    static uint16_t total_chunks = 1;
+    static uint16_t raw_data_length = sizeof(uint32_t); 
+    static uint32_t scenario_id = 1;
+    static uint32_t chunk_crc32 = 0;
+
+
+    ImGui::InputScalar("msgid##aiobc_aimode", ImGuiDataType_U16, &msgid);
+    ImGui::InputScalar("fnccode##aiobc_aimode", ImGuiDataType_U8, &fnccode);
+
+    ImGui::InputScalar("EnvelopeMagic##aiobc_aimode", ImGuiDataType_U16, &envelope_magic);
+    ImGui::InputScalar("flags##aiobc_aimode", ImGuiDataType_U16, &flags);
+    ImGui::InputScalar("Chunk_seq##aiobc_aimode", ImGuiDataType_U16, &chunk_seq);
+    ImGui::InputScalar("Tot_chunks##aiobc_aimode", ImGuiDataType_U16, &total_chunks);
+    ImGui::InputScalar("RawDataLength##aiobc_aimode", ImGuiDataType_U16, &raw_data_length);
+    
+
+    ImGui::InputScalar("Scenario ID##aiobc_aimode", ImGuiDataType_U32, &scenario_id);
+
+    ImGui::Text("ChunkCRC32 = 0x%08X", chunk_crc32);
+
+    ImGui::Separator();
+
+
+    if (ImGui::Button("Generate CMD##aiobc_aimode")) {
+        WriteSystemName(msgid);
+
+        AIOBC_AIModeCmd_t &cmd = command->aiobcaimodecmd;
+
+
+        memset(&cmd, 0, sizeof(cmd));
+
+
+        uint16_t msgid_be = htons(msgid);
+        uint8_t sequence[2] = {0xC0, 0x00};
+        uint16_t packet_length = static_cast<uint16_t>(sizeof(AIOBC_AIModeCmd_t) - 7);
+        uint8_t length[2] = {
+            static_cast<uint8_t>(packet_length >> 8),
+            static_cast<uint8_t>(packet_length & 0xFF)
+        };
+
+        memcpy(cmd.CmdHeader + 0, &msgid_be, sizeof(msgid_be));
+        memcpy(cmd.CmdHeader + 2, sequence, sizeof(sequence));
+        memcpy(cmd.CmdHeader + 4, length, sizeof(length));
+        memcpy(cmd.CmdHeader + 6, &fnccode, sizeof(fnccode));
+
+        cmd.EnvelopeMagic = csp_hton16(envelope_magic);
+        cmd.flags         = csp_hton16(flags);
+        cmd.chunk_seq     = csp_hton16(chunk_seq);
+        cmd.total_chunks  = csp_hton16(total_chunks);
+        cmd.RawDataLength = csp_hton16(raw_data_length);
+        
+        cmd.scenario_id   = csp_hton32(scenario_id);
+
+        chunk_crc32 = crc32_compute(
+            reinterpret_cast<const uint8_t *>(&cmd.scenario_id),
+            static_cast<std::size_t>(raw_data_length)
+        );
+        cmd.ChunkCRC32 = csp_hton32(chunk_crc32);
+
+        cmd.CmdHeader[7] = 0;
+        uint8_t crc = 0xFF;
+        const uint8_t *p = reinterpret_cast<const uint8_t *>(&cmd);
+
+        for (size_t k = 0; k < sizeof(cmd); ++k) {
+            crc ^= p[k];
+        }
+        cmd.CmdHeader[7] = crc;
+
+        packetsign *pkt = static_cast<packetsign *>(
+            malloc(2 + 2 + 4 + sizeof(cmd))
+        );
+
+        if (pkt == NULL) {
+            console.AddLog("[ERROR]##Failed to allocate AIOBC AI Mode packet.");
+            break;
+        }
+
+        pkt->Identifier = HVD_TEST;
+        pkt->PacketType = B12_UL_AIOBC;
+        pkt->Length     = static_cast<uint16_t>(sizeof(cmd));
+        memcpy(pkt->Data, &cmd, sizeof(cmd));
+
+        console.AddLog(
+            "[AIOBC]##AIMode Cmd generated. ScenarioID=%u, Magic=0x%04X, CRC32=0x%08X, PacketCRC=0x%02X",
+            scenario_id,
+            envelope_magic,
+            chunk_crc32,
+            cmd.CmdHeader[7]
+        );
+
+        pthread_join(p_thread[4], NULL);
+        pthread_create(
+            &p_thread[4],
+            NULL,
+            task_uplink_onorbit,
+            static_cast<void *>(pkt)
+        );
+    }
+
+    break;
+}
+
+
+
 
         case 400: {
             UELYSYS_NoArgCmd_t &cmd = command->uelysys_noargcmd;
@@ -22257,7 +22349,7 @@ void ImGui_CommandWindow(float fontscale)
         ImGui::InputScalar("##ftp_dest_node", ImGuiDataType_U8, &State.dest_node);
         break;
     }
-    
+
     case FTP_DOWNLOAD_REQUEST :{
         ImGui::PushItemWidth(ImGui::GetContentRegionAvail().x * 0.8);
         if (ImGui::BeginCombo("##FTPCombobox", State.ftplistup[NowFTP].name))
@@ -23816,11 +23908,12 @@ void Initialize_CMDLabels()
 
 
     snprintf(Templabels[630], 64, "AIOBC HEALTH CHECK");
-    snprintf(Templabels[631], 64, "AIOBC READY CHECK");
+    snprintf(Templabels[631], 64, "AIOBC MISSION CLEAR");
     snprintf(Templabels[632], 64, "AIOBC DATA CHUNK");
     snprintf(Templabels[633], 64, "AIOBC DATA END");
     snprintf(Templabels[634], 64, "AIOBC REPORT CHECK");
     snprintf(Templabels[635], 64, "AIOBC FDIR REQUEST");
+    snprintf(Templabels[636], 64, "AIOBC AI MODE");
     /*****************************************************************************************/
 }
 

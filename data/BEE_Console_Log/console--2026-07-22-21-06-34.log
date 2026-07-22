@@ -1,0 +1,61 @@
+2026-07-22 21:06
+[21:06:41]  Connect to Switch Box..............Failed.
+[21:06:41]  Connect to Rotator.................Failed.
+[21:06:41]  Connect to GS100..................Success.
+[21:06:41]  BEE-1000 BCN Port 31 bind success.
+[21:06:41]  Rotator Read Failed. Please Check Again.
+[21:06:41]  BEE-1000 RPT Port 25 bind success.
+[21:06:41]  BEE-1000 Event Port 27 bind success.
+[21:06:41]  BEE-100 FM Port 23 bind success.
+[21:06:41]  UEL-Y-Sys. BCN Port 12 bind success.
+[21:06:41]  UEL-Y-Sys. RPT Port 10 bind success.
+[21:06:41]  UEL-Y-Sys. Event Port 11 bind success.
+[21:06:41]  UEL-Y-Sys. FM Port 14 bind success.
+[21:06:41]  BEE-1012 BCN Port 17 bind success.
+[21:06:41]  BEE-1012 RPT Port 15 bind success.
+[21:06:41]  BEE-1012 Event Port 16 bind success.
+[21:06:41]  BEE-1012 FM Port 18 bind success.
+[21:06:41]  BEE-1012 AIOBC Port 29 bind success.
+[21:06:45]  Ping Failed.
+[21:09:14]  Ping Success at node 5, 458ms
+[21:09:17]  Ping Success at node 5, 462ms
+[21:09:23]  Ping Success at node 5, 463ms
+[21:09:26]  Ping Success at node 5, 460ms
+[21:09:27]  Ping Success at node 5, 467ms
+[21:09:28]  Ping Success at node 5, 461ms
+[21:09:29]  Ping Success at node 5, 456ms
+[21:09:29]  Ping Success at node 5, 466ms
+[21:09:30]  Ping Success at node 5, 464ms
+[21:09:31]  Ping Success at node 5, 463ms
+[21:09:32]  Ping Success at node 5, 461ms
+[21:10:11]  You Tried Ping without Tracking. Please Check Again.
+[21:10:16]  Ping Success at node 14, 467ms
+[21:10:22]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[21:10:22]  Received AIOBC TM from port : 29.
+
+[21:10:30]  AIMode Cmd generated. ScenarioID=1, Magic=0x465A, CRC32=0x5643EF8A, PacketCRC=0xAA
+[21:10:30]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x13 0x6 0xaa
+[21:10:36]  AIMode Cmd generated. ScenarioID=1, Magic=0x465A, CRC32=0x5643EF8A, PacketCRC=0xAA
+[21:10:36]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x13 0x6 0xaa
+[21:11:39]  Ping Success at node 5, 472ms
+[21:11:45]  Ping Success at node 14, 460ms
+[21:11:50]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0xb5 0x3 0x61
+[21:11:51]  Received AIOBC TM from port : 29.
+
+[21:11:56]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x1 0xd7
+[21:11:56]  Received AIOBC TM from port : 29.
+
+[21:12:01]  AIMode Cmd generated. ScenarioID=1, Magic=0x465A, CRC32=0x5643EF8A, PacketCRC=0xA9
+[21:12:01]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x13 0x5 0xa9
+[21:12:01]  Received AIOBC TM from port : 29.
+
+[21:12:28]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x7 0xd1
+[21:12:28]  Received AIOBC TM from port : 29.
+
+[21:12:40]  FDIR generated. scenarioid=0, commandid=14, flags=1,  PacketLength=17
+[21:12:40]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0xa 0xe 0xdc
+[21:12:41]  Received AIOBC TM from port : 29.
+
+[21:12:57]  [OK]CMD Packet Header: 0x18 0xf0 0xc0 0x0 0x0 0x1 0x9 0xdf
+[21:12:58]  Received AIOBC TM from port : 29.
+

@@ -1,0 +1,28 @@
+[21:04:12]  Connect to Switch Box..............Failed.
+[21:04:12]  Connect to Rotator.................Failed.
+[21:04:12]  Connect to GS100..................Success.
+[21:04:12]  BEE-1000 BCN Port 31 bind success.
+[21:04:12]  Rotator Read Failed. Please Check Again.
+[21:04:12]  BEE-1000 RPT Port 25 bind success.
+[21:04:12]  BEE-1000 Event Port 27 bind success.
+[21:04:12]  BEE-100 FM Port 23 bind success.
+[21:04:12]  UEL-Y-Sys. BCN Port 12 bind success.
+[21:04:12]  UEL-Y-Sys. RPT Port 10 bind success.
+[21:04:12]  UEL-Y-Sys. Event Port 11 bind success.
+[21:04:12]  UEL-Y-Sys. FM Port 14 bind success.
+[21:04:12]  BEE-1012 BCN Port 17 bind success.
+[21:04:12]  BEE-1012 RPT Port 15 bind success.
+[21:04:12]  BEE-1012 Event Port 16 bind success.
+[21:04:12]  BEE-1012 FM Port 18 bind success.
+[21:04:12]  BEE-1012 AIOBC Port 29 bind success.
+[21:04:14]  Changing GS HMAC Key for BEE1012...
+[21:04:14]   Satellite Switched to: BEE1012 (TX HMAC enabled)
+[21:05:14]  Ping Failed.
+[21:05:21]  Ping Failed.
+[21:05:25]  Ping Failed.
+[21:05:30]  Changing GS HMAC Key for BEE1012...
+[21:05:30]   Satellite Switched to: BEE1012 (TX HMAC enabled)
+[21:05:36]  Ping Failed.
+[21:05:51]  Ping Failed.
+[21:05:56]  Ping Failed.
+[21:06:08]  Ping Failed.

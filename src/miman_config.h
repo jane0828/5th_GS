@@ -5656,11 +5656,25 @@ typedef struct AIOBC_DataChunkCmd
 {
     uint8_t                  CmdHeader[CFE_SB_CMD_HDR_SIZE]; /**< \brief Command header */
     uint16_t                  EnvelopeMagic;        /**< \brief Command payload */
-    uint16_t                   flags;
+    uint16_t                 flags;
+    uint16_t                 chunk_seq;
+    uint16_t                 total_chunks;
     uint16_t                 RawDataLength;
     uint32_t                 ChunkCRC32;
-    float                  Data[34];
+    float                    Data[34];
 } __attribute__((packed)) AIOBC_DataChunkCmd_t;
+
+typedef struct AIOBC_AIModeCmd
+{
+    uint8_t                  CmdHeader[CFE_SB_CMD_HDR_SIZE]; /**< \brief Command header */
+    uint16_t                  EnvelopeMagic;        /**< \brief Command payload */
+    uint16_t                 flags;
+    uint16_t                 chunk_seq;
+    uint16_t                 total_chunks;
+    uint16_t                 RawDataLength;
+    uint32_t                 ChunkCRC32;
+    uint32_t                 scenario_id;
+} __attribute__((packed)) AIOBC_AIModeCmd_t;
 
 typedef struct AIOBC_DataEndCmd
 {
@@ -7027,6 +7041,7 @@ typedef struct {
 
     AIOBC_HealthChckCmd_t                   aiobchealthchckcmd;
     AIOBC_DataChunkCmd_t                    aiobcdatachunkcmd;
+    AIOBC_AIModeCmd_t                       aiobcaimodecmd;
     AIOBC_DataEndCmd_t                      aiobcdataend;
     AIOBC_FDIRCmd_t                         aiobcfdircmd;
 
