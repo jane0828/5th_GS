@@ -1,0 +1,559 @@
+[16:18:59]  Connect to Switch Box..............Failed.
+[16:18:59]  Connect to Rotator.................Failed.
+[16:18:59]  Connect to GS100..................Success.
+[16:18:59]  BEE-1000 BCN Port 31 bind success.
+[16:18:59]  Rotator Read Failed. Please Check Again.
+[16:18:59]  BEE-1000 RPT Port 25 bind success.
+[16:18:59]  BEE-1000 Event Port 27 bind success.
+[16:18:59]  BEE-100 FM Port 23 bind success.
+[16:18:59]  UEL-Y-Sys. BCN Port 12 bind success.
+[16:18:59]  UEL-Y-Sys. RPT Port 10 bind success.
+[16:18:59]  UEL-Y-Sys. Event Port 11 bind success.
+[16:18:59]  UEL-Y-Sys. FM Port 14 bind success.
+[16:18:59]  BEE-1012 BCN Port 17 bind success.
+[16:18:59]  BEE-1012 RPT Port 15 bind success.
+[16:18:59]  BEE-1012 Event Port 16 bind success.
+[16:18:59]  BEE-1012 FM Port 18 bind success.
+[16:18:59]  BEE-1012 AIOBC Port 29 bind success.
+[16:19:47]  Ping Success at node 5, 448ms
+[16:19:52]  Changing GS HMAC Key for BEE1012...
+[16:19:52]   Satellite Switched to: BEE1012 (TX HMAC enabled)
+[16:19:58]  FTP_OLD_UPLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[16:19:59]  Start FTP OLD UPLOAD id=1.
+[16:19:59]  [FTP_OLD_TEST][id=1][UPLOAD] begin local=file://./test.png remote=file:///home/bee/data/test.png host=11 port=9 chunk=180
+[16:19:59]  Received FTP Upload Spec.
+[16:19:59]  Received FTP Upload File Spec. Filesize : 3103, CRC : 230144794.
+[16:20:19]  Received FTP Status Reply.
+[16:20:19]  Start FTP Uplink. Total Chunk Size : 18
+[16:20:19]  Upload : 0/18
+[16:20:19]  [FTP_OLD_TEST][id=1][UPLOAD] progress 0/18 chunk=180
+[16:20:21]  Upload : 1/18
+[16:20:21]  [FTP_OLD_TEST][id=1][UPLOAD] progress 1/18 chunk=180
+[16:20:22]  Upload : 2/18
+[16:20:22]  [FTP_OLD_TEST][id=1][UPLOAD] progress 2/18 chunk=180
+[16:20:24]  Upload : 3/18
+[16:20:24]  [FTP_OLD_TEST][id=1][UPLOAD] progress 3/18 chunk=180
+[16:20:25]  Upload : 4/18
+[16:20:25]  [FTP_OLD_TEST][id=1][UPLOAD] progress 4/18 chunk=180
+[16:20:27]  Upload : 5/18
+[16:20:27]  [FTP_OLD_TEST][id=1][UPLOAD] progress 5/18 chunk=180
+[16:20:28]  Upload : 6/18
+[16:20:28]  [FTP_OLD_TEST][id=1][UPLOAD] progress 6/18 chunk=180
+[16:20:30]  Upload : 7/18
+[16:20:30]  [FTP_OLD_TEST][id=1][UPLOAD] progress 7/18 chunk=180
+[16:20:31]  Upload : 8/18
+[16:20:31]  [FTP_OLD_TEST][id=1][UPLOAD] progress 8/18 chunk=180
+[16:20:33]  Upload : 9/18
+[16:20:33]  [FTP_OLD_TEST][id=1][UPLOAD] progress 9/18 chunk=180
+[16:20:35]  Upload : 10/18
+[16:20:35]  [FTP_OLD_TEST][id=1][UPLOAD] progress 10/18 chunk=180
+[16:20:36]  Upload : 11/18
+[16:20:36]  [FTP_OLD_TEST][id=1][UPLOAD] progress 11/18 chunk=180
+[16:20:38]  Upload : 12/18
+[16:20:38]  [FTP_OLD_TEST][id=1][UPLOAD] progress 12/18 chunk=180
+[16:20:39]  Upload : 13/18
+[16:20:39]  [FTP_OLD_TEST][id=1][UPLOAD] progress 13/18 chunk=180
+[16:20:41]  Upload : 14/18
+[16:20:41]  [FTP_OLD_TEST][id=1][UPLOAD] progress 14/18 chunk=180
+[16:20:42]  Upload : 15/18
+[16:20:42]  [FTP_OLD_TEST][id=1][UPLOAD] progress 15/18 chunk=180
+[16:20:44]  Upload : 16/18
+[16:20:44]  [FTP_OLD_TEST][id=1][UPLOAD] progress 16/18 chunk=180
+[16:20:45]  Upload : 17/18
+[16:20:45]  [FTP_OLD_TEST][id=1][UPLOAD] progress 17/18 chunk=180
+[16:20:47]  FTP Transaction Completed.
+[16:20:47]  Calculate FTP CRC. Remote : 230144794, Local : 230144794.
+[16:20:47]  [FTP_OLD_TEST][id=1][UPLOAD] CRC remote=230144794 local=230144794
+[16:20:51]  [FTP_OLD_TEST][id=1][UPLOAD][OK] retcode=0
+[16:20:51]  [FTP_OLD_TEST][id=1][UPLOAD] cleanup_done=1
+[16:35:21]  Changing GS HMAC Key for BEE1000...
+[16:35:21]   Satellite Switched to: BEE1000 (TX HMAC disabled)
+Unknown MsgID
+[16:35:26]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0xACC0B48B, PacketCRC=0x77, PacketLength=154
+[16:35:26]   Start Uplink Task.
+[16:35:26]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:35:26]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x77
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	77	46	5a	
+00	00	00	88	ac	c0	b4	8b	2d	b2	
+cd	3f	10	58	c9	3f	6f	12	83	3a	
+7f	6a	4c	40	8f	c2	b5	3f	d1	62	
+8b	42	ec	51	28	40	d9	ce	57	3f	
+6a	bc	f4	3e	81	95	03	3f	e5	d0	
+02	3f	62	50	ab	42	ae	47	b1	3f	
+0a	d7	e3	41	98	6e	ea	c0	7b	14	
+ae	3e	33	33	33	3f	ac	1c	da	3e	
+b4	c8	d3	41	02	2b	c7	3e	0a	17	
+d7	42	7f	6a	9c	3f	91	ed	dc	3f	
+0c	02	a7	40	ae	47	e1	3f	ae	47	
+81	3f	d7	a3	50	3f	6a	bc	f4	3e	
+0c	02	0b	3f	7f	6a	fc	3e	df	4f	
+3d	40	85	eb	91	3e	79	e9	cf	41	
+e3	a5	1b	41	
+
+[16:35:27]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x547141BA, PacketCRC=0x4F, PacketLength=154
+[16:35:27]   Start Uplink Task.
+[16:35:27]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:35:27]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x4f
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	4f	46	5a	
+00	00	00	88	54	71	41	ba	d3	4d	
+02	3f	fa	7e	ca	3f	6f	12	83	3a	
+2d	b2	4d	40	be	9f	ba	3f	3d	ca	
+89	42	42	60	3d	40	b4	c8	56	3f	
+7d	3f	f5	3e	81	95	03	3f	d3	4d	
+02	3f	df	4f	ab	42	e7	fb	a9	3f	
+00	00	e1	41	b8	1e	e9	c0	d7	a3	
+b0	3e	db	f9	3e	3f	e7	fb	09	3f	
+c7	4b	bd	41	d5	78	e9	3e	b2	5d	
+d4	42	46	b6	83	3f	8b	6c	e7	3f	
+ec	51	a0	40	25	06	e1	3f	62	10	
+78	3f	85	eb	51	3f	6d	e7	fb	3e	
+56	0e	0d	3f	5a	64	fb	3e	b0	72	
+40	40	f0	a7	86	3e	f4	fd	d0	41	
+b2	9d	11	41	
+
+[16:35:28]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x2AAB27E2, PacketCRC=0x86, PacketLength=154
+[16:35:28]   Start Uplink Task.
+[16:35:28]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:35:28]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x86
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	86	46	5a	
+00	00	00	88	2a	ab	27	e2	7d	3f	
+85	3f	83	c0	ba	3f	6f	12	83	3a	
+12	83	50	40	79	e9	a6	3f	2f	5d	
+89	42	f8	53	33	40	06	81	55	3f	
+fc	a9	f1	3e	f8	53	03	3f	e5	d0	
+02	3f	79	a9	ab	42	cd	cc	bc	3f	
+5c	8f	e2	41	37	89	e9	c0	ec	51	
+b8	3e	3d	0a	37	3f	8b	6c	07	3f	
+98	6e	9e	41	d1	22	db	3e	fe	54	
+d6	42	ee	7c	5f	3f	58	39	d4	3f	
+56	0e	a9	40	a4	70	cd	3f	c9	76	
+7e	3f	cf	f7	53	3f	25	06	01	3f	
+68	91	0d	3f	91	ed	fc	3e	87	16	
+39	40	25	06	81	3e	ba	49	ce	41	
+2b	87	1c	41	
+
+[16:35:29]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0xB06A7050, PacketCRC=0xE0, PacketLength=154
+[16:35:29]   Start Uplink Task.
+[16:35:29]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:35:29]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xe0
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	e0	46	5a	
+00	00	00	88	b0	6a	70	50	ac	1c	
+9a	3e	00	00	b0	3f	6f	12	83	3a	
+56	0e	4d	40	a4	70	bd	3f	50	8d	
+86	42	a4	70	45	40	e1	7a	54	3f	
+d9	ce	f7	3e	e5	d0	02	3f	6f	12	
+03	3f	8f	82	ab	42	ac	1c	ba	3f	
+ba	49	e0	41	be	9f	ea	c0	77	be	
+9f	3e	1b	2f	3d	3f	d9	ce	f7	3e	
+33	33	c4	41	64	3b	df	3e	aa	71	
+d1	42	48	e1	12	40	79	e9	d6	3f	
+14	ae	a7	40	0a	d7	d3	3f	1d	5a	
+64	3f	73	68	51	3f	37	89	01	3f	
+56	0e	0d	3f	7d	3f	f5	3e	f8	53	
+2b	40	93	18	84	3e	f2	d2	c4	41	
+d9	ce	1f	41	
+
+[16:35:30]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x76F1842E, PacketCRC=0xAE, PacketLength=154
+[16:35:30]   Start Uplink Task.
+[16:35:30]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:35:30]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xae
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	ae	46	5a	
+00	00	00	88	76	f1	84	2e	06	81	
+d5	be	3d	0a	b7	3f	6f	12	83	3a	
+ac	1c	42	40	73	68	c1	3f	48	e1	
+86	42	54	e3	3d	40	73	68	51	3f	
+0e	2d	f2	3e	81	95	03	3f	81	95	
+03	3f	60	25	ab	42	6f	12	c3	3f	
+7f	6a	de	41	f2	d2	e9	c0	39	b4	
+88	3e	5a	64	3b	3f	44	8b	ec	3e	
+37	89	c0	41	b4	c8	f6	3e	a0	5a	
+ce	42	71	3d	6a	3f	f6	28	dc	3f	
+42	60	b1	40	ee	7c	cf	3f	35	5e	
+7a	3f	46	b6	53	3f	25	06	01	3f	
+33	33	13	3f	d9	ce	f7	3e	e7	fb	
+49	40	db	f9	7e	3e	f4	fd	c5	41	
+0c	02	27	41	
+
+[16:35:31]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x3F499C7C, PacketCRC=0xCE, PacketLength=154
+[16:35:31]   Start Uplink Task.
+[16:35:31]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:35:31]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xce
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	ce	46	5a	
+00	00	00	88	3f	49	9c	7c	23	db	
+79	bf	12	83	c0	3f	6f	12	83	3a	
+7f	6a	34	40	f6	28	cc	3f	f0	27	
+8c	42	cb	a1	2d	40	4e	62	50	3f	
+8d	97	ee	3e	1d	5a	04	3f	0a	d7	
+03	3f	0a	17	ab	42	a4	70	bd	3f	
+e3	a5	dc	41	b4	c8	e6	c0	98	6e	
+92	3e	62	10	38	3f	04	56	0e	3f	
+9c	c4	d6	41	c1	ca	01	3f	a0	5a	
+d1	42	dd	24	06	be	d9	ce	e7	3f	
+73	68	ad	40	a6	9b	c4	3f	bc	74	
+73	3f	85	eb	51	3f	89	41	00	3f	
+fc	a9	11	3f	4a	0c	02	3f	0e	2d	
+4a	40	4a	0c	82	3e	7b	14	d4	41	
+87	16	29	41	
+
+Unknown MsgID
+[16:36:11]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0xACC0B48B, PacketCRC=0x77, PacketLength=154
+[16:36:11]   Start Uplink Task.
+[16:36:11]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:36:11]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x77
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	77	46	5a	
+00	00	00	88	ac	c0	b4	8b	2d	b2	
+cd	3f	10	58	c9	3f	6f	12	83	3a	
+7f	6a	4c	40	8f	c2	b5	3f	d1	62	
+8b	42	ec	51	28	40	d9	ce	57	3f	
+6a	bc	f4	3e	81	95	03	3f	e5	d0	
+02	3f	62	50	ab	42	ae	47	b1	3f	
+0a	d7	e3	41	98	6e	ea	c0	7b	14	
+ae	3e	33	33	33	3f	ac	1c	da	3e	
+b4	c8	d3	41	02	2b	c7	3e	0a	17	
+d7	42	7f	6a	9c	3f	91	ed	dc	3f	
+0c	02	a7	40	ae	47	e1	3f	ae	47	
+81	3f	d7	a3	50	3f	6a	bc	f4	3e	
+0c	02	0b	3f	7f	6a	fc	3e	df	4f	
+3d	40	85	eb	91	3e	79	e9	cf	41	
+e3	a5	1b	41	
+
+[16:36:12]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x547141BA, PacketCRC=0x4F, PacketLength=154
+[16:36:12]   Start Uplink Task.
+[16:36:12]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:36:12]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x4f
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	4f	46	5a	
+00	00	00	88	54	71	41	ba	d3	4d	
+02	3f	fa	7e	ca	3f	6f	12	83	3a	
+2d	b2	4d	40	be	9f	ba	3f	3d	ca	
+89	42	42	60	3d	40	b4	c8	56	3f	
+7d	3f	f5	3e	81	95	03	3f	d3	4d	
+02	3f	df	4f	ab	42	e7	fb	a9	3f	
+00	00	e1	41	b8	1e	e9	c0	d7	a3	
+b0	3e	db	f9	3e	3f	e7	fb	09	3f	
+c7	4b	bd	41	d5	78	e9	3e	b2	5d	
+d4	42	46	b6	83	3f	8b	6c	e7	3f	
+ec	51	a0	40	25	06	e1	3f	62	10	
+78	3f	85	eb	51	3f	6d	e7	fb	3e	
+56	0e	0d	3f	5a	64	fb	3e	b0	72	
+40	40	f0	a7	86	3e	f4	fd	d0	41	
+b2	9d	11	41	
+
+[16:36:13]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x2AAB27E2, PacketCRC=0x86, PacketLength=154
+[16:36:13]   Start Uplink Task.
+[16:36:13]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:36:13]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x86
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	86	46	5a	
+00	00	00	88	2a	ab	27	e2	7d	3f	
+85	3f	83	c0	ba	3f	6f	12	83	3a	
+12	83	50	40	79	e9	a6	3f	2f	5d	
+89	42	f8	53	33	40	06	81	55	3f	
+fc	a9	f1	3e	f8	53	03	3f	e5	d0	
+02	3f	79	a9	ab	42	cd	cc	bc	3f	
+5c	8f	e2	41	37	89	e9	c0	ec	51	
+b8	3e	3d	0a	37	3f	8b	6c	07	3f	
+98	6e	9e	41	d1	22	db	3e	fe	54	
+d6	42	ee	7c	5f	3f	58	39	d4	3f	
+56	0e	a9	40	a4	70	cd	3f	c9	76	
+7e	3f	cf	f7	53	3f	25	06	01	3f	
+68	91	0d	3f	91	ed	fc	3e	87	16	
+39	40	25	06	81	3e	ba	49	ce	41	
+2b	87	1c	41	
+
+[16:36:14]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0xB06A7050, PacketCRC=0xE0, PacketLength=154
+[16:36:14]   Start Uplink Task.
+[16:36:14]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:36:14]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xe0
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	e0	46	5a	
+00	00	00	88	b0	6a	70	50	ac	1c	
+9a	3e	00	00	b0	3f	6f	12	83	3a	
+56	0e	4d	40	a4	70	bd	3f	50	8d	
+86	42	a4	70	45	40	e1	7a	54	3f	
+d9	ce	f7	3e	e5	d0	02	3f	6f	12	
+03	3f	8f	82	ab	42	ac	1c	ba	3f	
+ba	49	e0	41	be	9f	ea	c0	77	be	
+9f	3e	1b	2f	3d	3f	d9	ce	f7	3e	
+33	33	c4	41	64	3b	df	3e	aa	71	
+d1	42	48	e1	12	40	79	e9	d6	3f	
+14	ae	a7	40	0a	d7	d3	3f	1d	5a	
+64	3f	73	68	51	3f	37	89	01	3f	
+56	0e	0d	3f	7d	3f	f5	3e	f8	53	
+2b	40	93	18	84	3e	f2	d2	c4	41	
+d9	ce	1f	41	
+
+[16:36:15]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x76F1842E, PacketCRC=0xAE, PacketLength=154
+[16:36:15]   Start Uplink Task.
+[16:36:15]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:36:15]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xae
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	ae	46	5a	
+00	00	00	88	76	f1	84	2e	06	81	
+d5	be	3d	0a	b7	3f	6f	12	83	3a	
+ac	1c	42	40	73	68	c1	3f	48	e1	
+86	42	54	e3	3d	40	73	68	51	3f	
+0e	2d	f2	3e	81	95	03	3f	81	95	
+03	3f	60	25	ab	42	6f	12	c3	3f	
+7f	6a	de	41	f2	d2	e9	c0	39	b4	
+88	3e	5a	64	3b	3f	44	8b	ec	3e	
+37	89	c0	41	b4	c8	f6	3e	a0	5a	
+ce	42	71	3d	6a	3f	f6	28	dc	3f	
+42	60	b1	40	ee	7c	cf	3f	35	5e	
+7a	3f	46	b6	53	3f	25	06	01	3f	
+33	33	13	3f	d9	ce	f7	3e	e7	fb	
+49	40	db	f9	7e	3e	f4	fd	c5	41	
+0c	02	27	41	
+
+[16:36:16]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x3F499C7C, PacketCRC=0xCE, PacketLength=154
+[16:36:16]   Start Uplink Task.
+[16:36:16]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:36:16]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xce
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	ce	46	5a	
+00	00	00	88	3f	49	9c	7c	23	db	
+79	bf	12	83	c0	3f	6f	12	83	3a	
+7f	6a	34	40	f6	28	cc	3f	f0	27	
+8c	42	cb	a1	2d	40	4e	62	50	3f	
+8d	97	ee	3e	1d	5a	04	3f	0a	d7	
+03	3f	0a	17	ab	42	a4	70	bd	3f	
+e3	a5	dc	41	b4	c8	e6	c0	98	6e	
+92	3e	62	10	38	3f	04	56	0e	3f	
+9c	c4	d6	41	c1	ca	01	3f	a0	5a	
+d1	42	dd	24	06	be	d9	ce	e7	3f	
+73	68	ad	40	a6	9b	c4	3f	bc	74	
+73	3f	85	eb	51	3f	89	41	00	3f	
+fc	a9	11	3f	4a	0c	02	3f	0e	2d	
+4a	40	4a	0c	82	3e	7b	14	d4	41	
+87	16	29	41	
+
+Unknown MsgID
+[16:36:24]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0xACC0B48B, PacketCRC=0x77, PacketLength=154
+[16:36:24]   Start Uplink Task.
+[16:36:24]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:36:24]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x77
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	77	46	5a	
+00	00	00	88	ac	c0	b4	8b	2d	b2	
+cd	3f	10	58	c9	3f	6f	12	83	3a	
+7f	6a	4c	40	8f	c2	b5	3f	d1	62	
+8b	42	ec	51	28	40	d9	ce	57	3f	
+6a	bc	f4	3e	81	95	03	3f	e5	d0	
+02	3f	62	50	ab	42	ae	47	b1	3f	
+0a	d7	e3	41	98	6e	ea	c0	7b	14	
+ae	3e	33	33	33	3f	ac	1c	da	3e	
+b4	c8	d3	41	02	2b	c7	3e	0a	17	
+d7	42	7f	6a	9c	3f	91	ed	dc	3f	
+0c	02	a7	40	ae	47	e1	3f	ae	47	
+81	3f	d7	a3	50	3f	6a	bc	f4	3e	
+0c	02	0b	3f	7f	6a	fc	3e	df	4f	
+3d	40	85	eb	91	3e	79	e9	cf	41	
+e3	a5	1b	41	
+
+[16:36:25]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x547141BA, PacketCRC=0x4F, PacketLength=154
+[16:36:25]   Start Uplink Task.
+[16:36:25]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:36:25]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x4f
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	4f	46	5a	
+00	00	00	88	54	71	41	ba	d3	4d	
+02	3f	fa	7e	ca	3f	6f	12	83	3a	
+2d	b2	4d	40	be	9f	ba	3f	3d	ca	
+89	42	42	60	3d	40	b4	c8	56	3f	
+7d	3f	f5	3e	81	95	03	3f	d3	4d	
+02	3f	df	4f	ab	42	e7	fb	a9	3f	
+00	00	e1	41	b8	1e	e9	c0	d7	a3	
+b0	3e	db	f9	3e	3f	e7	fb	09	3f	
+c7	4b	bd	41	d5	78	e9	3e	b2	5d	
+d4	42	46	b6	83	3f	8b	6c	e7	3f	
+ec	51	a0	40	25	06	e1	3f	62	10	
+78	3f	85	eb	51	3f	6d	e7	fb	3e	
+56	0e	0d	3f	5a	64	fb	3e	b0	72	
+40	40	f0	a7	86	3e	f4	fd	d0	41	
+b2	9d	11	41	
+
+[16:36:26]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x2AAB27E2, PacketCRC=0x86, PacketLength=154
+[16:36:26]   Start Uplink Task.
+[16:36:26]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:36:26]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x86
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	86	46	5a	
+00	00	00	88	2a	ab	27	e2	7d	3f	
+85	3f	83	c0	ba	3f	6f	12	83	3a	
+12	83	50	40	79	e9	a6	3f	2f	5d	
+89	42	f8	53	33	40	06	81	55	3f	
+fc	a9	f1	3e	f8	53	03	3f	e5	d0	
+02	3f	79	a9	ab	42	cd	cc	bc	3f	
+5c	8f	e2	41	37	89	e9	c0	ec	51	
+b8	3e	3d	0a	37	3f	8b	6c	07	3f	
+98	6e	9e	41	d1	22	db	3e	fe	54	
+d6	42	ee	7c	5f	3f	58	39	d4	3f	
+56	0e	a9	40	a4	70	cd	3f	c9	76	
+7e	3f	cf	f7	53	3f	25	06	01	3f	
+68	91	0d	3f	91	ed	fc	3e	87	16	
+39	40	25	06	81	3e	ba	49	ce	41	
+2b	87	1c	41	
+
+[16:36:27]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0xB06A7050, PacketCRC=0xE0, PacketLength=154
+[16:36:27]   Start Uplink Task.
+[16:36:27]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:36:27]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xe0
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	e0	46	5a	
+00	00	00	88	b0	6a	70	50	ac	1c	
+9a	3e	00	00	b0	3f	6f	12	83	3a	
+56	0e	4d	40	a4	70	bd	3f	50	8d	
+86	42	a4	70	45	40	e1	7a	54	3f	
+d9	ce	f7	3e	e5	d0	02	3f	6f	12	
+03	3f	8f	82	ab	42	ac	1c	ba	3f	
+ba	49	e0	41	be	9f	ea	c0	77	be	
+9f	3e	1b	2f	3d	3f	d9	ce	f7	3e	
+33	33	c4	41	64	3b	df	3e	aa	71	
+d1	42	48	e1	12	40	79	e9	d6	3f	
+14	ae	a7	40	0a	d7	d3	3f	1d	5a	
+64	3f	73	68	51	3f	37	89	01	3f	
+56	0e	0d	3f	7d	3f	f5	3e	f8	53	
+2b	40	93	18	84	3e	f2	d2	c4	41	
+d9	ce	1f	41	
+
+[16:36:28]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x76F1842E, PacketCRC=0xAE, PacketLength=154
+[16:36:28]   Start Uplink Task.
+[16:36:28]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:36:28]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xae
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	ae	46	5a	
+00	00	00	88	76	f1	84	2e	06	81	
+d5	be	3d	0a	b7	3f	6f	12	83	3a	
+ac	1c	42	40	73	68	c1	3f	48	e1	
+86	42	54	e3	3d	40	73	68	51	3f	
+0e	2d	f2	3e	81	95	03	3f	81	95	
+03	3f	60	25	ab	42	6f	12	c3	3f	
+7f	6a	de	41	f2	d2	e9	c0	39	b4	
+88	3e	5a	64	3b	3f	44	8b	ec	3e	
+37	89	c0	41	b4	c8	f6	3e	a0	5a	
+ce	42	71	3d	6a	3f	f6	28	dc	3f	
+42	60	b1	40	ee	7c	cf	3f	35	5e	
+7a	3f	46	b6	53	3f	25	06	01	3f	
+33	33	13	3f	d9	ce	f7	3e	e7	fb	
+49	40	db	f9	7e	3e	f4	fd	c5	41	
+0c	02	27	41	
+
+[16:36:29]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x3F499C7C, PacketCRC=0xCE, PacketLength=154
+[16:36:29]   Start Uplink Task.
+[16:36:29]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:36:29]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xce
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	ce	46	5a	
+00	00	00	88	3f	49	9c	7c	23	db	
+79	bf	12	83	c0	3f	6f	12	83	3a	
+7f	6a	34	40	f6	28	cc	3f	f0	27	
+8c	42	cb	a1	2d	40	4e	62	50	3f	
+8d	97	ee	3e	1d	5a	04	3f	0a	d7	
+03	3f	0a	17	ab	42	a4	70	bd	3f	
+e3	a5	dc	41	b4	c8	e6	c0	98	6e	
+92	3e	62	10	38	3f	04	56	0e	3f	
+9c	c4	d6	41	c1	ca	01	3f	a0	5a	
+d1	42	dd	24	06	be	d9	ce	e7	3f	
+73	68	ad	40	a6	9b	c4	3f	bc	74	
+73	3f	85	eb	51	3f	89	41	00	3f	
+fc	a9	11	3f	4a	0c	02	3f	0e	2d	
+4a	40	4a	0c	82	3e	7b	14	d4	41	
+87	16	29	41	
+
+Unknown MsgID
+[16:44:59]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x82D6C0E9, PacketCRC=0xF0, PacketLength=154
+[16:44:59]   Start Uplink Task.
+[16:44:59]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:44:59]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xf0
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	f0	46	5a	
+00	00	00	88	82	d6	c0	e9	19	04	
+16	bf	a8	c6	ab	3f	a6	9b	44	3b	
+3f	35	ba	40	87	16	e9	3f	a8	46	
+8b	42	87	16	41	40	52	b8	5e	3f	
+c1	ca	01	3f	02	2b	47	3f	b6	f3	
+3d	3f	5c	4f	b7	42	8f	c2	b1	40	
+e9	26	df	41	50	8d	e7	c0	d3	4d	
+a2	3e	0a	d7	23	3f	8b	6c	e7	3e	
+2d	b2	83	41	d3	4d	02	3f	0a	17	
+d2	42	73	68	b1	bf	fa	7e	ca	3f	
+83	c0	aa	40	a0	1a	af	3f	37	89	
+61	3f	58	39	54	3f	c3	f5	08	3f	
+d3	4d	02	3f	42	60	05	3f	aa	f1	
+32	40	f0	a7	86	3e	1b	2f	9e	41	
+17	d9	28	41	
+
+Unknown MsgID
+[16:45:19]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x6B94E02B, PacketCRC=0x7D, PacketLength=154
+[16:45:19]   Start Uplink Task.
+[16:45:19]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:45:19]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x7d
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	7d	46	5a	
+00	00	00	88	6b	94	e0	2b	8f	c2	
+35	bf	6a	bc	b4	3f	6f	12	83	3a	
+a6	9b	34	40	dd	24	b6	3f	14	ee	
+8b	42	f8	53	33	40	3b	df	4f	3f	
+e9	26	f1	3e	6a	bc	34	3f	ac	1c	
+3a	3f	c7	4b	ab	42	79	e9	b6	3f	
+44	8b	e2	41	b4	c8	ea	c0	62	10	
+98	3e	98	6e	32	3f	c1	ca	01	3f	
+fa	fe	8d	42	d7	a3	90	3f	e1	3a	
+cd	42	83	c0	0a	c0	8d	97	46	40	
+14	ae	1b	41	44	8b	bc	3f	c1	ca	
+81	3f	10	58	59	3f	a6	9b	04	3f	
+27	31	08	3f	b4	c8	f6	3e	73	68	
+19	40	db	f9	7e	3e	fa	7e	c6	41	
+f4	fd	10	41	
+
+[16:45:20]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x7ECE639F, PacketCRC=0x13, PacketLength=154
+[16:45:20]   Start Uplink Task.
+[16:45:20]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:45:20]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x13
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	13	46	5a	
+00	00	00	88	7e	ce	63	9f	dd	24	
+06	bf	46	b6	c3	3f	6f	12	83	3a	
+cb	a1	3d	40	02	2b	c7	3f	b0	72	
+8f	42	96	43	33	40	60	e5	50	3f	
+33	33	f3	3e	7f	6a	3c	3f	23	db	
+39	3f	04	16	ab	42	fe	d4	a8	3f	
+00	00	e4	41	98	6e	ea	c0	50	8d	
+97	3e	0e	2d	32	3f	c9	76	fe	3e	
+cb	a1	8c	42	c1	ca	91	3f	6d	e7	
+cf	42	25	06	01	bf	8d	97	46	40	
+98	6e	1a	41	31	08	bc	3f	d3	4d	
+82	3f	5a	64	5b	3f	14	ae	07	3f	
+a8	c6	0b	3f	10	58	f9	3e	66	66	
+36	40	39	b4	88	3e	d5	78	c0	41	
+fa	7e	1c	41	
+
+[16:45:21]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0xE2EB6EC1, PacketCRC=0x40, PacketLength=154
+[16:45:21]   Start Uplink Task.
+[16:45:21]  Send Packet of Ptype : 11. Check Terminal Log.
+[16:45:21]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x40
+|| Uplink || Length: 154
+00	00	00	00	00	00	00	40	46	5a	
+00	00	00	88	e2	eb	6e	c1	be	9f	
+9a	3e	cf	f7	c3	3f	6f	12	83	3a	
+02	2b	2f	40	9c	c4	d0	3f	25	06	
+8e	42	7d	3f	3d	40	aa	f1	52	3f	
+8d	97	ee	3e	7f	6a	3c	3f	7f	6a	
+3c	3f	db	39	ab	42	c7	4b	b7	3f	
+08	ac	e1	41	fe	d4	e8	c0	1b	2f	
+9d	3e	e9	26	31	3f	1d	5a	04	3f	
+df	8f	8a	42	4a	0c	92	3f	31	48	
+d1	42	be	9f	3a	3f	a6	9b	44	40	
+f4	fd	1a	41	0e	2d	c2	3f	d9	ce	
+77	3f	06	81	55	3f	27	31	08	3f	
+e7	fb	09	3f	c1	ca	01	3f	21	b0	
+42	40	00	00	80	3e	b6	f3	ba	41	
+fa	7e	24	41	
+

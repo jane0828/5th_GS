@@ -1,0 +1,115 @@
+2026-07-22 16:18
+[16:18:59]  Connect to Switch Box..............Failed.
+[16:18:59]  Connect to Rotator.................Failed.
+[16:18:59]  Connect to GS100..................Success.
+[16:18:59]  BEE-1000 BCN Port 31 bind success.
+[16:18:59]  Rotator Read Failed. Please Check Again.
+[16:18:59]  BEE-1000 RPT Port 25 bind success.
+[16:18:59]  BEE-1000 Event Port 27 bind success.
+[16:18:59]  BEE-100 FM Port 23 bind success.
+[16:18:59]  UEL-Y-Sys. BCN Port 12 bind success.
+[16:18:59]  UEL-Y-Sys. RPT Port 10 bind success.
+[16:18:59]  UEL-Y-Sys. Event Port 11 bind success.
+[16:18:59]  UEL-Y-Sys. FM Port 14 bind success.
+[16:18:59]  BEE-1012 BCN Port 17 bind success.
+[16:18:59]  BEE-1012 RPT Port 15 bind success.
+[16:18:59]  BEE-1012 Event Port 16 bind success.
+[16:18:59]  BEE-1012 FM Port 18 bind success.
+[16:18:59]  BEE-1012 AIOBC Port 29 bind success.
+[16:19:47]  Ping Success at node 5, 448ms
+[16:19:52]  Changing GS HMAC Key for BEE1012...
+[16:19:52]   Satellite Switched to: BEE1012 (TX HMAC enabled)
+[16:19:58]  FTP_OLD_UPLOAD received legacy shared ftpinfo argument; pre-start pthread_create race remains until caller uses miman_ftp_create_worker_arg().
+[16:19:59]  Start FTP OLD UPLOAD id=1.
+[16:19:59]  [FTP_OLD_TEST][id=1][UPLOAD] begin local=file://./test.png remote=file:///home/bee/data/test.png host=11 port=9 chunk=180
+[16:19:59]  Received FTP Upload Spec.
+[16:19:59]  Received FTP Upload File Spec. Filesize : 3103, CRC : 230144794.
+[16:20:19]  Received FTP Status Reply.
+[16:20:19]  Start FTP Uplink. Total Chunk Size : 18
+[16:20:19]  Upload : 0/18
+[16:20:19]  [FTP_OLD_TEST][id=1][UPLOAD] progress 0/18 chunk=180
+[16:20:21]  Upload : 1/18
+[16:20:21]  [FTP_OLD_TEST][id=1][UPLOAD] progress 1/18 chunk=180
+[16:20:22]  Upload : 2/18
+[16:20:22]  [FTP_OLD_TEST][id=1][UPLOAD] progress 2/18 chunk=180
+[16:20:24]  Upload : 3/18
+[16:20:24]  [FTP_OLD_TEST][id=1][UPLOAD] progress 3/18 chunk=180
+[16:20:25]  Upload : 4/18
+[16:20:25]  [FTP_OLD_TEST][id=1][UPLOAD] progress 4/18 chunk=180
+[16:20:27]  Upload : 5/18
+[16:20:27]  [FTP_OLD_TEST][id=1][UPLOAD] progress 5/18 chunk=180
+[16:20:28]  Upload : 6/18
+[16:20:28]  [FTP_OLD_TEST][id=1][UPLOAD] progress 6/18 chunk=180
+[16:20:30]  Upload : 7/18
+[16:20:30]  [FTP_OLD_TEST][id=1][UPLOAD] progress 7/18 chunk=180
+[16:20:31]  Upload : 8/18
+[16:20:31]  [FTP_OLD_TEST][id=1][UPLOAD] progress 8/18 chunk=180
+[16:20:33]  Upload : 9/18
+[16:20:33]  [FTP_OLD_TEST][id=1][UPLOAD] progress 9/18 chunk=180
+[16:20:35]  Upload : 10/18
+[16:20:35]  [FTP_OLD_TEST][id=1][UPLOAD] progress 10/18 chunk=180
+[16:20:36]  Upload : 11/18
+[16:20:36]  [FTP_OLD_TEST][id=1][UPLOAD] progress 11/18 chunk=180
+[16:20:38]  Upload : 12/18
+[16:20:38]  [FTP_OLD_TEST][id=1][UPLOAD] progress 12/18 chunk=180
+[16:20:39]  Upload : 13/18
+[16:20:39]  [FTP_OLD_TEST][id=1][UPLOAD] progress 13/18 chunk=180
+[16:20:41]  Upload : 14/18
+[16:20:41]  [FTP_OLD_TEST][id=1][UPLOAD] progress 14/18 chunk=180
+[16:20:42]  Upload : 15/18
+[16:20:42]  [FTP_OLD_TEST][id=1][UPLOAD] progress 15/18 chunk=180
+[16:20:44]  Upload : 16/18
+[16:20:44]  [FTP_OLD_TEST][id=1][UPLOAD] progress 16/18 chunk=180
+[16:20:45]  Upload : 17/18
+[16:20:45]  [FTP_OLD_TEST][id=1][UPLOAD] progress 17/18 chunk=180
+[16:20:47]  FTP Transaction Completed.
+[16:20:47]  Calculate FTP CRC. Remote : 230144794, Local : 230144794.
+[16:20:47]  [FTP_OLD_TEST][id=1][UPLOAD] CRC remote=230144794 local=230144794
+[16:20:51]  [FTP_OLD_TEST][id=1][UPLOAD][OK] retcode=0
+[16:20:51]  [FTP_OLD_TEST][id=1][UPLOAD] cleanup_done=1
+[16:35:21]  Changing GS HMAC Key for BEE1000...
+[16:35:21]   Satellite Switched to: BEE1000 (TX HMAC disabled)
+[16:35:26]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0xACC0B48B, PacketCRC=0x77, PacketLength=154
+[16:35:26]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x77
+[16:35:27]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x547141BA, PacketCRC=0x4F, PacketLength=154
+[16:35:27]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x4f
+[16:35:28]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x2AAB27E2, PacketCRC=0x86, PacketLength=154
+[16:35:28]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x86
+[16:35:29]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0xB06A7050, PacketCRC=0xE0, PacketLength=154
+[16:35:29]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xe0
+[16:35:30]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x76F1842E, PacketCRC=0xAE, PacketLength=154
+[16:35:30]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xae
+[16:35:31]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x3F499C7C, PacketCRC=0xCE, PacketLength=154
+[16:35:31]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xce
+[16:36:11]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0xACC0B48B, PacketCRC=0x77, PacketLength=154
+[16:36:11]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x77
+[16:36:12]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x547141BA, PacketCRC=0x4F, PacketLength=154
+[16:36:12]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x4f
+[16:36:13]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x2AAB27E2, PacketCRC=0x86, PacketLength=154
+[16:36:13]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x86
+[16:36:14]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0xB06A7050, PacketCRC=0xE0, PacketLength=154
+[16:36:14]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xe0
+[16:36:15]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x76F1842E, PacketCRC=0xAE, PacketLength=154
+[16:36:15]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xae
+[16:36:16]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x3F499C7C, PacketCRC=0xCE, PacketLength=154
+[16:36:16]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xce
+[16:36:24]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0xACC0B48B, PacketCRC=0x77, PacketLength=154
+[16:36:24]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x77
+[16:36:25]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x547141BA, PacketCRC=0x4F, PacketLength=154
+[16:36:25]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x4f
+[16:36:26]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x2AAB27E2, PacketCRC=0x86, PacketLength=154
+[16:36:26]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x86
+[16:36:27]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0xB06A7050, PacketCRC=0xE0, PacketLength=154
+[16:36:27]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xe0
+[16:36:28]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x76F1842E, PacketCRC=0xAE, PacketLength=154
+[16:36:28]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xae
+[16:36:29]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x3F499C7C, PacketCRC=0xCE, PacketLength=154
+[16:36:29]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xce
+[16:44:59]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x82D6C0E9, PacketCRC=0xF0, PacketLength=154
+[16:44:59]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0xf0
+[16:45:19]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x6B94E02B, PacketCRC=0x7D, PacketLength=154
+[16:45:19]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x7d
+[16:45:20]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0x7ECE639F, PacketCRC=0x13, PacketLength=154
+[16:45:20]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x13
+[16:45:21]  DataChunk generated. Magic=0x465A, RawDataLength=136, ChunkCRC32=0xE2EB6EC1, PacketCRC=0x40, PacketLength=154
+[16:45:21]  [OK]CMD Packet Header: 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x40

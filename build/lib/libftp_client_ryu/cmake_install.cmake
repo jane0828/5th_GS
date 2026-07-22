@@ -1,4 +1,4 @@
-# Install script for directory: /mnt/c/Users/energ/Desktop/ACL/GS/0721/FTP_Ryu/lib/libftp_client_ryu
+# Install script for directory: /home/acl_cleanroom_3/Desktop/jane/5th_GS/lib/libftp_client_ryu
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

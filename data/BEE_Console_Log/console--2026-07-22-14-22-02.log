@@ -1,0 +1,45 @@
+2026-07-22 14:22
+[14:22:10]  Connect to Switch Box..............Failed.
+[14:22:10]  Connect to Rotator.................Failed.
+[14:22:10]  Connect to GS100..................Success.
+[14:22:10]  BEE-1000 BCN Port 31 bind success.
+[14:22:10]  BEE-1000 RPT Port 25 bind success.
+[14:22:10]  BEE-1000 Event Port 27 bind success.
+[14:22:10]  BEE-100 FM Port 23 bind success.
+[14:22:10]  Rotator Read Failed. Please Check Again.
+[14:22:10]  UEL-Y-Sys. BCN Port 12 bind success.
+[14:22:10]  UEL-Y-Sys. RPT Port 10 bind success.
+[14:22:10]  UEL-Y-Sys. Event Port 11 bind success.
+[14:22:10]  UEL-Y-Sys. FM Port 14 bind success.
+[14:22:10]  BEE-1012 BCN Port 17 bind success.
+[14:22:10]  BEE-1012 RPT Port 15 bind success.
+[14:22:10]  BEE-1012 Event Port 16 bind success.
+[14:22:10]  BEE-1012 FM Port 18 bind success.
+[14:22:10]  BEE-1012 AIOBC Port 29 bind success.
+[14:22:14]  Changing GS HMAC Key for BEE1012...
+[14:22:14]   Satellite Switched to: BEE1012 (TX HMAC enabled)
+[14:22:19]  Ping Failed.
+[14:22:26]  Ping Failed.
+[14:22:30]  Ping Failed.
+[14:26:27]  Ping Success at node 5, 467ms
+[14:26:31]  Ping Success at node 5, 464ms
+[14:27:25]  Ping Success at node 5, 455ms
+[14:27:26]  Ping Success at node 5, 451ms
+[14:27:27]  Ping Success at node 5, 467ms
+[14:27:34]  Ping Success at node 10, 452ms
+[14:28:28]  Ping Failed.
+[14:28:31]  Ping Failed.
+[14:32:39]  Ping Success at node 5, 468ms
+[14:32:44]  Ping Failed at node 10.
+[14:32:59]  Ping Failed at node 11.
+[14:33:00]  Ping Success at node 5, 467ms
+[14:34:57]  Ping Failed at node 11.
+[14:34:58]  Ping Success at node 5, 460ms
+[14:35:02]  Ping Failed at node 11.
+[14:44:06]  Ping Success at node 5, 465ms
+[14:44:12]  Ping Failed at node 13.
+[14:44:15]  Ping Success at node 10, 459ms
+[14:56:04]  Ping Success at node 5, 460ms
+[14:57:28]  Ping Success at node 10, 455ms
+[14:57:35]  Ping Failed at node 11.
+[14:57:39]  Ping Failed at node 13.

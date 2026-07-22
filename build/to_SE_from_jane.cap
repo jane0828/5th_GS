@@ -1,0 +1,135 @@
+param     
+nanocom-ax # parm am list 0
+Parameter list 0:
+  0x0000 rssi_offset     	I8  -11 
+  0x0002 max_temp        	I16 60 
+  0x0004 bgndrssi_ema    	FLT 0.500000 
+  0x0008 csp_node        	U8  20 
+  0x0009 i2c_en          	BL  true 
+  0x000B can_en          	BL  true 
+  0x000C extptt_en       	BL  false 
+  0x000D led_en          	BL  true 
+  0x000E kiss_usart      	I8  2 
+  0x000F gosh_usart      	I8  2 
+  0x0010 i2c_addr        	U8  5 
+  0x0012 i2c_khz         	U16 400 
+  0x0014 can_khz         	U16 1000 
+  0x0018 reboot_in       	U16 0 
+  0x001C tx_inhibit      	U32 0 
+  0x0020 log_store       	U8  0 
+  0x0021 tx_pwr          	U8  0 
+  0x002C max_tx_time     	U16 10 
+  0x002E max_idle_time   	U16 3600 
+  0x0030 csp_rtable      	STR "8/5 KISS, 0/0 AX100" 
+  0x0090 legacy_hmac     	BL  true 
+  0x0094 kiss_baud       	U32 500000 
+nanocom-ax # param list 1
+Parameter list 1:
+  0x0000 freq            	U32 436500000 
+  0x0004 baud            	U32 4800 
+  0x0008 modindex        	FLT 0.000000 
+  0x000C guard           	U16 0 
+  0x000E pllrang         	U8  9 
+  0x000F mode            	U8  5 
+  0x0010 csp_hmac        	BL  false 
+  0x0011 csp_rs          	BL  true 
+  0x0012 csp_crc         	BL  true 
+  0x0013 csp_rand        	BL  true 
+  0x0020 csp_hmac_key    	DAT 00000000000000000000000000000000 
+  0x0030 ax25_call       	STR "      " 
+  0x0040 bw              	U32 0 
+  0x0044 afcrange        	I32 -4 
+nanocom-ax # param list 5
+Parameter list 5:
+  0x0000 freq            	U32 436500000 
+  0x0004 baud            	U32 4800 
+  0x0008 modindex        	FLT 0.000000 
+  0x000C guard           	U16 50 
+  0x000E pllrang         	U8  9 
+  0x000F mode            	U8  5 
+  0x0010 csp_hmac        	BL  true 
+  0x0011 csp_rs          	BL  true 
+  0x0012 csp_crc         	BL  true 
+  0x0013 csp_rand        	BL  true 
+  0x0020 csp_hmac_key    	DAT 42454531303132000000000000000000 
+  0x0030 ax25_call       	STR "      " 
+  0x0040 preamb          	X8  0xAA 
+  0x0041 preamblen       	U8  50 
+  0x0042 preambflags     	U8  56 
+  0x0043 intfrm          	X8  0xAA 
+  0x0044 intfrmlen       	U8  0 
+  0x0045 intfrmflags     	U8  56 
+  0x0048 rssibusy        	I16 -95 
+  0x004A kup_delay       	U8  0 
+  0x004C pa_level        	X16 0x04A9 
+  0x0050 ber             	FLT 0.000000 
+nanocom-ax # config update_d                                       nanocom-ax # config update_default all
+Table CRC 32445
+Data CRC 5780
+Updated settings in FRAM for table 0, saving to file 0: OK
+Table CRC 32445
+Data CRC 5780
+Updated default factory settings in FRAM for table 0, saving to file 24: OK
+Table CRC 57481
+Data CRC 51030
+Updated settings in FRAM for table 1, saving to file 1: OK
+Table CRC 57481
+Data CRC 51030
+Updated default factory settings in FRAM for table 1, saving to file 25: OK
+Table CRC 56172
+Data CRC 56421
+Updated settings in FRAM for table 5, saving to file 5: OK
+Table CRC 56172
+Data CRC 56421
+Updated default factory settings in FRAM for table 5, saving to file 29: OK
+nanocom-ax # 
+nanocom-ax # 
+nanocom-ax # param list 4
+Parameter list 4:
+  0x0000 temp_brd        	I16 277 
+  0x0002 temp_pa         	I16 274 
+  0x0004 last_rssi       	I16 -122 
+  0x0006 last_rferr      	I16 -1055 
+  0x0008 tx_count        	U32 1620 
+  0x000C rx_count        	U32 5498 
+  0x0010 tx_bytes        	U32 128562 
+  0x0014 rx_bytes        	U32 980277 
+  0x0018 active_conf     	U8  2 
+  0x0020 boot_count      	U16 2226 
+  0x0024 boot_cause      	X32 0x00000100 
+  0x0028 last_contact    	U32 3120361815 
+  0x002C bgnd_rssi       	I16 -122 
+  0x002E tx_duty         	U8  2 
+  0x0030 tot_tx_count    	U32 65441 
+  0x0034 tot_rx_count    	U32 97019 
+  0x0038 tot_tx_bytes    	U32 6456730 
+  0x003C tot_rx_bytes    	U32 12358147 
+nanocom-ax # reset
+
+
+3120362437.000 reset: On-chip debug system
+3120362437.001 reset: gndwdt 56792
+3120362437.005 can: can_init: bit_rate: 1000000 osc: 16000000 phs1:1 phs2:1 pres:1 prs:2 sjw:1 sm:0
+3120362437.008 default: Route load 8/5 KISS, 0/0 AX100
+3120362437.012 default: Init complete CPU: 64000000, PBA: 32000000
+nanocom-ax # param list 4
+Parameter list 4:
+  0x0000 temp_brd        	I16 277 
+  0x0002 temp_pa         	I16 274 
+  0x0004 last_rssi       	I16 0 
+  0x0006 last_rferr      	I16 0 
+  0x0008 tx_count        	U32 0 
+  0x000C rx_count        	U32 0 
+  0x0010 tx_bytes        	U32 0 
+  0x0014 rx_bytes        	U32 0 
+  0x0018 active_conf     	U8  2 
+  0x0020 boot_count      	U16 2227 
+  0x0024 boot_cause      	X32 0x00000100 
+  0x0028 last_contact    	U32 3120361815 
+  0x002C bgnd_rssi       	I16 -107 
+  0x002E tx_duty         	U8  0 
+  0x0030 tot_tx_count    	U32 65441 
+  0x0034 tot_rx_count    	U32 97019 
+  0x0038 tot_tx_bytes    	U32 6456730 
+  0x003C tot_rx_bytes    	U32 12358147 
+nanocom-ax # 

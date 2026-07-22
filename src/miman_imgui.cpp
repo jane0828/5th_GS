@@ -22071,8 +22071,8 @@ void ImGui_CommandWindow(float fontscale)
     ImGui::BeginChild("##FTPSending", ImVec2(ImGui::GetContentRegionAvail().x, ImGui::GetContentRegionAvail().y), true, mim_winflags);
     ImGui::Text("FTP  ");
     ImGui::SameLine();
-    ImGui::RadioButton("V1      ##FTPVersionSelect1", &State.ftp_version, 1);
-    ImGui::SameLine();
+    // ImGui::RadioButton("V1      ##FTPVersionSelect1", &State.ftp_version, 1);
+    // ImGui::SameLine();
     ImGui::RadioButton("V2      ##FTPVersionSelect2", &State.ftp_version, 2);
     ImGui::SameLine();
     ImGui::RadioButton("Ryu     ##FTPVersionSelect3", &State.ftp_version, 3);
@@ -22091,8 +22091,8 @@ void ImGui_CommandWindow(float fontscale)
     ImGui::SameLine();
     ImGui::RadioButton("Download##FTPTaskSelect02", &State.ftp_task, FTP_DOWNLOAD_REQUEST);
     ImGui::SameLine();
-    ImGui::RadioButton("Listup  ##FTPTaskSelect07", &State.ftp_task, FTP_LIST_REQUEST);
-    ImGui::SameLine();
+    // ImGui::RadioButton("Listup  ##FTPTaskSelect07", &State.ftp_task, FTP_LIST_REQUEST);
+    // ImGui::SameLine();
     ImGui::SetNextItemWidth(ImGui::GetContentRegionAvail().x);
 
     if(!State.AMPON)
@@ -22248,8 +22248,16 @@ void ImGui_CommandWindow(float fontscale)
         ImGui::InputText("##FTP_remote_filepath : ", State.ftplistup[NowFTP].remote_path, sizeof(State.ftplistup[NowFTP].remote_path));
         ImGui::PopItemWidth();
         ImGui::Text(State.FTPWindowBuffer);
+
+        ImGui::Text("Destination Node    ");
+        ImGui::Text("Dest Node  ");
+        ImGui::SameLine();
+        ImGui::SetNextItemWidth(ImGui::GetContentRegionAvail().x);
+
+        ImGui::InputScalar("##ftp_dest_node", ImGuiDataType_U8, &State.dest_node);
         break;
     }
+    
     case FTP_DOWNLOAD_REQUEST :{
         ImGui::PushItemWidth(ImGui::GetContentRegionAvail().x * 0.8);
         if (ImGui::BeginCombo("##FTPCombobox", State.ftplistup[NowFTP].name))

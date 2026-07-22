@@ -496,6 +496,8 @@ struct StateCheckUnit{
     SatelliteObject * Fatellites;
     TLEinfo * tleinfolistup[64];
     ftpinfo ftplistup[64];
+
+    uint8_t dest_node;
 };
 
 #ifdef __cplusplus

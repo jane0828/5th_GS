@@ -102,6 +102,7 @@ struct miman_ftp_worker_copy_t {
     miman_ftp_engine_t engine;
     miman_ftp_direction_t direction;
     uint32_t transfer_id;
+
 };
 
 struct miman_ftp_worker_arg {
@@ -258,7 +259,7 @@ static bool ftp_copy_worker_param(void * param, miman_ftp_worker_copy_t * job,
         miman_ftp_destroy_worker_arg(owned_arg);
     }
     job->settings.mode = GS_FTP_MODE_STANDARD;
-    job->settings.host = setup->obc_node;
+    job->settings.host = State.dest_node;
     job->settings.port = ftp_rdp_port_for_engine(engine);
     job->settings.timeout = 30000;
     job->settings.chunk_size = State.chunk_sz;
@@ -463,7 +464,7 @@ void * ftp_ryu_uplink_onorbit(void * param){
 void * ftp_list_onorbit(void *){
     gs_ftp_settings_t ftp_config;
     ftp_config.mode = GS_FTP_MODE_STANDARD;
-    ftp_config.host = setup->obc_node;
+    ftp_config.host = State.dest_node;
     ftp_config.port = FTP_RDP_PORT_OLD;
     ftp_config.timeout = setup->default_timeout + setup->guard_delay; //default timeout value
     ftp_config.chunk_size = 200; //default chunk size value
@@ -482,7 +483,7 @@ void * ftp_list_onorbit(void *){
 void * ftp_move_onorbit(void *){
     gs_ftp_settings_t ftp_config;
     ftp_config.mode = GS_FTP_MODE_STANDARD;
-    ftp_config.host = setup->obc_node;
+    ftp_config.host = State.dest_node;
     ftp_config.port = FTP_RDP_PORT_OLD;
     ftp_config.timeout = setup->default_timeout + setup->guard_delay; //default timeout value
     ftp_config.chunk_size = 200; //default chunk size value
@@ -500,7 +501,7 @@ void * ftp_move_onorbit(void *){
 void * ftp_remove_onorbit(void *){
     gs_ftp_settings_t ftp_config;
     ftp_config.mode = GS_FTP_MODE_STANDARD;
-    ftp_config.host = setup->obc_node;
+    ftp_config.host = State.dest_node;
     ftp_config.port = FTP_RDP_PORT_OLD;
     ftp_config.timeout = setup->default_timeout + setup->guard_delay; //default timeout value
     ftp_config.chunk_size = 200; //default chunk size value
@@ -518,7 +519,7 @@ void * ftp_remove_onorbit(void *){
 void * ftp_copy_onorbit(void *){
     gs_ftp_settings_t ftp_config;
     ftp_config.mode = GS_FTP_MODE_STANDARD;
-    ftp_config.host = setup->obc_node;
+    ftp_config.host = State.dest_node;
     ftp_config.port = FTP_RDP_PORT_OLD;
     ftp_config.timeout = setup->default_timeout + setup->guard_delay; //default timeout value
     ftp_config.chunk_size = 200; //default chunk size value
@@ -537,7 +538,7 @@ void * ftp_mkdir_onorbit(void *){
     uint32_t mode = 0;
     gs_ftp_settings_t ftp_config;
     ftp_config.mode = GS_FTP_MODE_STANDARD;
-    ftp_config.host = setup->obc_node;
+    ftp_config.host = State.dest_node;
     ftp_config.port = FTP_RDP_PORT_OLD;
     ftp_config.timeout = setup->default_timeout + setup->guard_delay; //default timeout value
     ftp_config.chunk_size = 200; //default chunk size value
@@ -555,7 +556,7 @@ void * ftp_mkdir_onorbit(void *){
 void * ftp_rmdir_onorbit(void *){
     gs_ftp_settings_t ftp_config;
     ftp_config.mode = GS_FTP_MODE_STANDARD;
-    ftp_config.host = setup->obc_node;
+    ftp_config.host = State.dest_node;
     ftp_config.port = FTP_RDP_PORT_OLD;
     ftp_config.timeout = setup->default_timeout + setup->guard_delay; //default timeout value
     ftp_config.chunk_size = 200; //default chunk size value

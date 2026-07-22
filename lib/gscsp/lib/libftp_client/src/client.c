@@ -1025,7 +1025,7 @@ static gs_error_t ftp_data(int count)
     ftpavailable = true;
     switch_to_tx(destination);
     usleep(switch_delay(destination));
-    printf("chunk size : %d\n", state.chunk_size);
+    printf("chunk size : %d\n, destination node : %d\n", state.chunk_size, state.dest_node);
     for (i = 0; i < state.last_entries; i++) {
         ftp_status_element_t * n = &state.last_status[i];
         if(!state.conn)
