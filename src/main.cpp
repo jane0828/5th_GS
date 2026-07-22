@@ -216,7 +216,7 @@ int main(int, char**)
     char logfilename[128] ={0,};
     time_t tmtime = time(0);
     struct tm * local = localtime(&tmtime);
-    sprintf(logfilename, "../data/BEE_TC_Log/log--%04d-%02d-%02d-%02d-%02d-%02d--", local->tm_year+1900, local->tm_mon+1, local->tm_mday,local->tm_hour, local->tm_min, local->tm_sec);
+    sprintf(logfilename, "../log/TC_Log/log--%04d-%02d-%02d-%02d-%02d-%02d--", local->tm_year+1900, local->tm_mon+1, local->tm_mday,local->tm_hour, local->tm_min, local->tm_sec);
     log_ptr = fopen(logfilename, "wb");
     if(log_ptr == NULL) {
         printf("Invalid log file pointer.\n");

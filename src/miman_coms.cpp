@@ -1719,7 +1719,7 @@ int BEE1000BeaconSaver(BEE1000_Beacon_t* bec)
     struct tm* local = localtime(&tmtime);
 
     sprintf(filename,
-            "../data/beacon/BEE1000Beacon--%04d-%02d-%02d-%02d-%02d-%02d--.txt",
+            "../data/beacon/beacon_parsed/BEE1000Beacon--%04d-%02d-%02d-%02d-%02d-%02d--.txt",
             local->tm_year + 1900, local->tm_mon + 1, local->tm_mday,
             local->tm_hour, local->tm_min, local->tm_sec);
 
@@ -1909,7 +1909,7 @@ int BEE1012BeaconSaver(BEE1012_Beacon_t* bec)
     struct tm* local = localtime(&tmtime);
 
     sprintf(filename,
-            "../data/BEE1000/beacon/beacon_parsed/BEE1012Beacon--%04d-%02d-%02d-%02d-%02d-%02d--.txt",
+            "../data/BEE1012/beacon/beacon_parsed/BEE1012Beacon--%04d-%02d-%02d-%02d-%02d-%02d--.txt",
             local->tm_year + 1900, local->tm_mon + 1, local->tm_mday,
             local->tm_hour, local->tm_min, local->tm_sec);
 
@@ -3614,7 +3614,7 @@ void * task_downlink_onorbit(void * socketinfo)
                         struct tm *local = localtime(&tmtime);
 
                         sprintf(eventfilename,
-                                "../data/event/event--%04d-%02d-%02d-%02d-%02d-%02d--",
+                                "../data/BEE1012/AIOBC/aiobc--%04d-%02d-%02d-%02d-%02d-%02d--",
                                 local->tm_year + 1900,
                                 local->tm_mon + 1,
                                 local->tm_mday,
@@ -3662,7 +3662,7 @@ void * task_downlink_onorbit(void * socketinfo)
                     struct tm *local = localtime(&tmtime);
 
                     sprintf(rptpktfilename,
-                            "../data/report/rpt_raw--%04d-%02d-%02d-%02d-%02d-%02d--",
+                            "../data/BEE1000/report/rpt_raw--%04d-%02d-%02d-%02d-%02d-%02d--",
                             local->tm_year + 1900,
                             local->tm_mon + 1,
                             local->tm_mday,

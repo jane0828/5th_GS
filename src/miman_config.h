@@ -187,7 +187,7 @@ Console()
     time_t t = time(NULL);
     struct tm* lt = localtime(&t);
 
-    sprintf(hist_name, "../data/BEE_Console_Log/console--%04d-%02d-%02d-%02d-%02d-%02d.log",
+    sprintf(hist_name, "../log/Console_Log/console--%04d-%02d-%02d-%02d-%02d-%02d.log",
             lt->tm_year + 1900,
             lt->tm_mon + 1,
             lt->tm_mday,
@@ -195,7 +195,7 @@ Console()
             lt->tm_min,
             lt->tm_sec);
 
-    sprintf(dbg_name, "../data/BEE_Debug_Log/debug--%04d-%02d-%02d-%02d-%02d-%02d.log",
+    sprintf(dbg_name, "../log/Debug_Log/debug--%04d-%02d-%02d-%02d-%02d-%02d.log",
             lt->tm_year + 1900,
             lt->tm_mon + 1,
             lt->tm_mday,
@@ -213,7 +213,7 @@ Console()
 
 
 
-    Console(float x_pos, float y_pos, float width, float height, const char * const log_name = "../data/BEE_Console_Log/console.log", const char * const debug_name = "../data/BEE_Debug_Log/debug.log")
+    Console(float x_pos, float y_pos, float width, float height, const char * const log_name = "../log/Console_Log/console.log", const char * const debug_name = "../log/Debug_Log/debug.log")
     : _x_pos(x_pos), _y_pos(y_pos), _width(width), _height(height), _push_to_bottom(false), _history_fs(log_name, std::fstream::in | std::fstream::out | std::fstream::app), _debug_fs(debug_name, std::fstream::in | std::fstream::out | std::fstream::app)
     {
         Initializer();
@@ -3606,6 +3606,7 @@ typedef struct UELYSYS_PACK {
     uint32_t timeout_ms;
     uint8_t spare[4];
 } UELYSYS_MEOW_ShellExecSyncCmd_t;
+
 
 typedef struct UELYSYS_PACK {
     uint8_t CmdHeader[CFE_SB_CMD_HDR_SIZE];
