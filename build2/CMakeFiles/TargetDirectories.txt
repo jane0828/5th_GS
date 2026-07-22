@@ -1,6 +1,0 @@
-/home/hyvrid/Desktop/FTP_Ryu/build2/CMakeFiles/BEE-1000.dir
-/home/hyvrid/Desktop/FTP_Ryu/build2/CMakeFiles/edit_cache.dir
-/home/hyvrid/Desktop/FTP_Ryu/build2/CMakeFiles/rebuild_cache.dir
-/home/hyvrid/Desktop/FTP_Ryu/build2/lib/libftp_client_ryu/CMakeFiles/ftp_client_ryu.dir
-/home/hyvrid/Desktop/FTP_Ryu/build2/lib/libftp_client_ryu/CMakeFiles/edit_cache.dir
-/home/hyvrid/Desktop/FTP_Ryu/build2/lib/libftp_client_ryu/CMakeFiles/rebuild_cache.dir

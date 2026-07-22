@@ -22,7 +22,7 @@
 
 #define CMD_LABEL_MAX 700
 extern FILE *log_ptr;
-bool raw_data = true;
+bool raw_data = true; 
 Console console;
 bool p_open;
 ImGuiWindowFlags mim_winflags = ImGuiWindowFlags_NoMove |
@@ -6513,6 +6513,7 @@ case 631: { // AIOBC
 }
 
 
+
 case 632: { // AIOBC Data Chunk
     static uint16_t msgid = 0x18F0;
     static uint8_t fnccode = 5;
@@ -6522,7 +6523,7 @@ case 632: { // AIOBC Data Chunk
     static uint16_t raw_data_length = 136;     // user input
     static uint32_t chunk_crc32 = 0;
 
-    static float data_input[34] = {0.0f};
+    //static float data_input[34] = {0.0f};
 
     ImGui::InputScalar("msgid##aiobc_datachunk", ImGuiDataType_U16, &msgid);
     ImGui::InputScalar("fnccode##aiobc_datachunk", ImGuiDataType_U8, &fnccode);
@@ -6534,20 +6535,29 @@ case 632: { // AIOBC Data Chunk
     ImGui::Text("ChunkCRC32 = 0x%08X", chunk_crc32);
 
     ImGui::Separator();
-    ImGui::TextUnformatted("Data[34]");
+    //ImGui::TextUnformatted("Data[34]");
 
-    for (int i = 0; i < 34; ++i) {
-        char label[64];
-        snprintf(label, sizeof(label), "Data[%02d]##aiobc_datachunk", i);
-        ImGui::InputFloat(label, &data_input[i], 0.0f, 0.0f, "%.6f");
-    }
+    // for (int i = 0; i < 34; ++i) {
+    //     char label[64];
+    //     snprintf(label, sizeof(label), "Data[%02d]##aiobc_datachunk", i);
+    //     ImGui::InputFloat(label, &data_input[i], 0.0f, 0.0f, "%.6f");
+    // }
+    static char path[100];
+    ImGui::InputText("data file path##aiobc_tc_data", path, sizeof(path));
+
+    static uint8_t intercmd_delay = 1;
+    ImGui::InputScalar("InterCommand Delay##TC Delay", ImGuiDataType_U8, &intercmd_delay);
 
     if (ImGui::Button("Generate CMD##aiobc_datachunk")) {
+        vector<vector<float>> data = AIOBC_datachunk_parser(path);
+
+        if(data.empty()){
+            console.AddLog("data is empty");
+            break;
+        }
         WriteSystemName(msgid);
 
         AIOBC_DataChunkCmd_t &cmd = command->aiobcdatachunkcmd;
-
-        memset(&cmd, 0, sizeof(cmd));
 
         uint16_t msgid_be = htons(msgid);
         uint8_t sequence[2] = {0xC0, 0x00};
@@ -6565,99 +6575,107 @@ case 632: { // AIOBC Data Chunk
         memcpy(cmd.CmdHeader + 4, length, sizeof(length));
         memcpy(cmd.CmdHeader + 6, &fnccode, sizeof(fnccode));
 
-        /*
-         * Copy user-input float data first.
-         * CRC will be calculated over the first raw_data_length bytes
-         * of this raw Data area.
-         */
-        for (int i = 0; i < 34; ++i) {
-            cmd.Data[i] = data_input[i];
-        }
-
-        /*
-         * raw_data_length is user input.
-         * But it must not exceed the real raw buffer size.
-         */
-        const uint16_t max_raw_len =
-            static_cast<uint16_t>(sizeof(cmd.Data));
-
-        if (raw_data_length > max_raw_len) {
-            console.AddLog(
-                "[ERROR]##AIOBC DataChunk RawDataLength too large: input=%u max=%u",
-                raw_data_length,
-                max_raw_len
-            );
-            break;
-        }
-
-        /*
-         * Envelope header fields.
-         */
-        cmd.EnvelopeMagic = csp_hton16(envelope_magic);
-        cmd.flags = csp_hton16(flags);
-        cmd.RawDataLength = csp_hton16(raw_data_length);
-
-        /*
-         * Calculate ChunkEnvelope CRC32.
-         *
-         * IMPORTANT:
-         * The CRC is calculated over exactly raw_data_length bytes,
-         * not always over the full Data[34] area.
-         */
-        chunk_crc32 = crc32_compute(
-            reinterpret_cast<const uint8_t *>(cmd.Data),
-            static_cast<std::size_t>(raw_data_length)
-        );
-
-        cmd.ChunkCRC32 = csp_hton32(chunk_crc32);
-
-        /*
-         * Packet-level XOR checksum.
-         * This must be calculated after ChunkCRC32 is filled.
-         */
-        cmd.CmdHeader[7] = 0;
-
         uint8_t crc = 0xFF;
-        const uint8_t *p =
-            reinterpret_cast<const uint8_t *>(&cmd);
+        
+        for (int i = 0; i < data.size(); i++){
+            memset(&cmd, 0, sizeof(cmd));
 
-        for (size_t i = 0; i < sizeof(cmd); ++i) {
-            crc ^= p[i];
+            /*
+            * Copy user-input float data first.
+            * CRC will be calculated over the first raw_data_length bytes
+            * of this raw Data area.
+            */
+            for (int j = 0; j < 34; ++j) {
+                cmd.Data[j] = data[i][j];
+            }
+
+            /*
+            * raw_data_length is user input.
+            * But it must not exceed the real raw buffer size.
+            */
+            const uint16_t max_raw_len =
+                static_cast<uint16_t>(sizeof(cmd.Data));
+
+            if (raw_data_length > max_raw_len) {
+                console.AddLog(
+                    "[ERROR]##AIOBC DataChunk RawDataLength too large: input=%u max=%u",
+                    raw_data_length,
+                    max_raw_len
+                );
+                break;
+            }
+
+            /*
+            * Envelope header fields.
+            */
+            cmd.EnvelopeMagic = csp_hton16(envelope_magic);
+            cmd.flags = csp_hton16(flags);
+            cmd.RawDataLength = csp_hton16(raw_data_length);
+
+            /*
+            * Calculate ChunkEnvelope CRC32.
+            *
+            * IMPORTANT:
+            * The CRC is calculated over exactly raw_data_length bytes,
+            * not always over the full Data[34] area.
+            */
+            chunk_crc32 = crc32_compute(
+                reinterpret_cast<const uint8_t *>(cmd.Data),
+                static_cast<std::size_t>(raw_data_length)
+            );
+
+            cmd.ChunkCRC32 = csp_hton32(chunk_crc32);
+
+            /*
+            * Packet-level XOR checksum.
+            * This must be calculated after ChunkCRC32 is filled.
+            */
+            cmd.CmdHeader[7] = 0;
+
+            crc = 0xFF;
+            const uint8_t *p =
+                reinterpret_cast<const uint8_t *>(&cmd);
+
+            for (size_t i = 0; i < sizeof(cmd); ++i) {
+                crc ^= p[i];
+            }
+
+            cmd.CmdHeader[7] = crc;
+
+            packetsign *pkt = static_cast<packetsign *>(
+                malloc(2 + 2 + 4 + sizeof(cmd))
+            );
+
+            if (pkt == NULL) {
+                console.AddLog("[ERROR]##Failed to allocate AIOBC data chunk packet.");
+                break;
+            }
+
+            pkt->Identifier = HVD_TEST;
+            pkt->PacketType = B12_UL_AIOBC;
+            pkt->Length = static_cast<uint16_t>(sizeof(cmd));
+
+            memcpy(pkt->Data, &cmd, sizeof(cmd));
+
+            console.AddLog(
+                "[AIOBC]##DataChunk generated. Magic=0x%04X, RawDataLength=%u, ChunkCRC32=0x%08X, PacketCRC=0x%02X, PacketLength=%u",
+                envelope_magic,
+                raw_data_length,
+                chunk_crc32,
+                cmd.CmdHeader[7],
+                pkt->Length
+            );
+
+            pthread_join(p_thread[4], NULL);
+            pthread_create(
+                &p_thread[4],
+                NULL,
+                task_uplink_onorbit,
+                static_cast<void *>(pkt)
+            );
+
+            sleep(intercmd_delay);
         }
-
-        cmd.CmdHeader[7] = crc;
-
-        packetsign *pkt = static_cast<packetsign *>(
-            malloc(2 + 2 + 4 + sizeof(cmd))
-        );
-
-        if (pkt == NULL) {
-            console.AddLog("[ERROR]##Failed to allocate AIOBC data chunk packet.");
-            break;
-        }
-
-        pkt->Identifier = HVD_TEST;
-        pkt->PacketType = B12_UL_AIOBC;
-        pkt->Length = static_cast<uint16_t>(sizeof(cmd));
-
-        memcpy(pkt->Data, &cmd, sizeof(cmd));
-
-        console.AddLog(
-            "[AIOBC]##DataChunk generated. Magic=0x%04X, RawDataLength=%u, ChunkCRC32=0x%08X, PacketCRC=0x%02X, PacketLength=%u",
-            envelope_magic,
-            raw_data_length,
-            chunk_crc32,
-            cmd.CmdHeader[7],
-            pkt->Length
-        );
-
-        pthread_join(p_thread[4], NULL);
-        pthread_create(
-            &p_thread[4],
-            NULL,
-            task_uplink_onorbit,
-            static_cast<void *>(pkt)
-        );
     }
 
     break;
@@ -6764,8 +6782,6 @@ case 635: { // AIOBC FDIR Request
     ImGui::InputScalar("scenarioid##aiobc_fdir", ImGuiDataType_U32, &scenarioid);
     ImGui::InputScalar("commandid##aiobc_fdir", ImGuiDataType_U8, &commandid);
     ImGui::InputScalar("flags##aiobc_fdir", ImGuiDataType_U32, &flags);
-    ImGui::InputFloat("conf_scale##aiobc_fdir", &conf_scale, 0.0f, 0.0f, "%.6f");
-    ImGui::InputFloat("thre_scale##aiobc_fdir", &thre_scale, 0.0f, 0.0f, "%.6f");
 
     if (ImGui::Button("Generate CMD##aiobc_fdir")) {
         WriteSystemName(msgid);
@@ -6803,17 +6819,6 @@ case 635: { // AIOBC FDIR Request
         cmd.commandid = commandid;
         cmd.flags = csp_hton32(flags);
 
-        /*
-         * Float fields are copied as native float binary.
-         * If the FSW expects a specific endian representation for float,
-         * this needs explicit byte swapping.
-         */
-        cmd.conf_scale = conf_scale;
-        cmd.thre_scale = thre_scale;
-
-        /*
-         * Calculate CCSDS checksum with checksum field cleared.
-         */
         cmd.CmdHeader[7] = 0;
 
         uint8_t crc = 0xFF;
@@ -6841,12 +6846,10 @@ case 635: { // AIOBC FDIR Request
         memcpy(pkt->Data, &cmd, sizeof(cmd));
 
         console.AddLog(
-            "[AIOBC]##FDIR generated. scenarioid=%u, commandid=%u, flags=%u, conf_scale=%.6f, thre_scale=%.6f, PacketLength=%u",
+            "[AIOBC]##FDIR generated. scenarioid=%u, commandid=%u, flags=%u,  PacketLength=%u",
             scenarioid,
             commandid,
             flags,
-            conf_scale,
-            thre_scale,
             pkt->Length
         );
 

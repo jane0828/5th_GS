@@ -1,3 +1,0 @@
-/home/hyvrid/Desktop/0609/BEE_GS/AIOBC/CMakeFiles/BEE-1000.dir
-/home/hyvrid/Desktop/0609/BEE_GS/AIOBC/CMakeFiles/edit_cache.dir
-/home/hyvrid/Desktop/0609/BEE_GS/AIOBC/CMakeFiles/rebuild_cache.dir

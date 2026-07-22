@@ -1955,9 +1955,9 @@ int BEE1012BeaconSaver(BEE1012_Beacon_t* bec)
     fprintf(fp, "bus_wdt_left            : %" PRIu32 "\n", bec->eps.pmu.bus_wdt_left);
 
     fprintf(fp, "\n[EPS - PDU]\nout_i                   : ");
-    for (int i = 0; i < 12; i++) fprintf(fp, "%" PRId16 " ", bec->eps.pdu.out_i[i]);
+    for (int i = 0; i < 13; i++) fprintf(fp, "%" PRId16 " ", bec->eps.pdu.out_i[i]);
     fprintf(fp, "\nout_en                  : ");
-    for (int i = 0; i < 12; i++) fprintf(fp, "%" PRIu8 " ", bec->eps.pdu.out_en[i]);
+    for (int i = 0; i < 13; i++) fprintf(fp, "%" PRIu8 " ", bec->eps.pdu.out_en[i]);
     fprintf(fp, "\n");
 
     fprintf(fp, "\n[EPS - ACU]\n");
@@ -2054,9 +2054,9 @@ int UELYSYSBeaconSaver(UELYSYS_Beacon_t* bec)
     fprintf(fp, "bus_wdt_left            : %" PRIu32 "\n", bec->eps.pmu.bus_wdt_left);
 
     fprintf(fp, "\n[EPS - PDU]\nout_i                   : ");
-    for (int i = 0; i < 12; i++) fprintf(fp, "%" PRId16 " ", bec->eps.pdu.out_i[i]);
+    for (int i = 0; i < 13; i++) fprintf(fp, "%" PRId16 " ", bec->eps.pdu.out_i[i]);
     fprintf(fp, "\nout_en                  : ");
-    for (int i = 0; i < 12; i++) fprintf(fp, "%" PRIu8 " ", bec->eps.pdu.out_en[i]);
+    for (int i = 0; i < 13; i++) fprintf(fp, "%" PRIu8 " ", bec->eps.pdu.out_en[i]);
     fprintf(fp, "\n");
 
     fprintf(fp, "\n[EPS - ACU]\n");
@@ -4685,6 +4685,40 @@ packetsign * PacketDecoder(csp_packet_t * packet)
     sign->Length = packet->length-4;
     memcpy(sign->Data, packet->data + 4, sign->Length);
     return sign;
+}
+
+vector<vector<float>> AIOBC_datachunk_parser(string path)
+{
+    vector<vector<float>> data;
+    ifstream file(path);
+
+    if (!file.is_open()){
+        console.AddLog("Fail to open TC File");
+        return data;
+    }
+
+    string line;
+    while(getline(file, line)){
+        string cell;
+        stringstream ss(line);
+        int num_field = 34;
+
+        vector<float> row;
+
+        for (int i = 0 ; i < num_field ; i++)
+        {
+            if(!getline(ss, cell, ',')){
+                break;
+            }
+
+            row.push_back(stof(cell));
+        }
+
+        data.push_back(row);
+    }
+
+    file.close();
+    return data;
 }
 
 packetsign * CmdGenerator_GS::GenerateCMDPacket(void)

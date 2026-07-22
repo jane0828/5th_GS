@@ -5674,8 +5674,6 @@ typedef struct AIOBC_FDIRCmd
     uint32_t                 scenarioid;
     uint8_t                  commandid;        /**< \brief Command payload */
     uint32_t                 flags;
-    float                    conf_scale;
-    float                    thre_scale;
 } __attribute__((packed)) AIOBC_FDIRCmd_t;
 
 
